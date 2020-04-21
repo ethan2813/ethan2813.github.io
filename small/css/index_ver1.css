@@ -1,0 +1,34 @@
+.banner2{
+    position: relative;
+    
+    
+}
+
+
+.banner2_img{
+    background-image:url("../img/banner02.jpg") ;
+    width: 100%;
+    height: 100vh;
+     background-position: center;
+     background-size: cover;
+     transition: 0.3s;
+     opacity: 0.6;
+
+}
+@media screen and (max-width:768px){
+    .banner2_img{
+        height: 70vh;
+    }
+}
+
+.banner2 .article{
+    position: absolute ;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* left:calc(20% );
+    top:calc(20% );  */
+    color: black;
+    font-size: 15px;
+    /* padding: 0 200px 50px 50px ; */
+}

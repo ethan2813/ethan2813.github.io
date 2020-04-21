@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/index.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 500vh;
+        }
+
+        .container{
+            width: 1140px;
+            margin: auto;
+            /* background-color: black; */
+        }
+
+        .nav{
+            width: 100%;
+            height: 100px;
+            background-color: #C87029;
+            opacity: 0;
+            position: fixed;
+            transition: 0.3s;
+        }
+
+        .nav.active{
+           opacity: 1;
+       }
+
+        .logo{
+            width: 90px;
+            /* background-color: aliceblue; */
+        }
+
+        .logo img{
+            width: 100%;
+        }
+
+        .banner img{
+            width: 100%;
+            /* height: calc(100vh - 100px); */
+            background-size: contain;
+
+        }
+        .banner{
+            height: 100vh;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="./img/banner01.jpg" alt="">
+        </div>
+    </header>
+
+    <!-- 內文 -->
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+         var navOn = document.querySelector('.nav')
+        window.onscroll = function() {myfunction ()};
+        function myfunction(){
+
+            //onscroll 特別之處就是safari、chrome是不同寫法的
+            // Safari使用的
+            // console.log(document.body.scrollTop);
+
+            // Gooogle Chrome使用的
+            // console.log(document.documentElement.scrollTop);
+
+            var nowScrollTop_safari = document.body.scrollTop
+            var nowScrollTop_google = document.documentElement.scrollTop
+            var nowScrollTop = document.documentElement.scrollTop
+
+            console.log(nowScrollTop_google)
+            //scrollTop 是指滾軸上方的空間
+            if(nowScrollTop_safari > 10 ||  nowScrollTop_google > 10){
+                navOn.classList.add('active')
+            }else{
+                navOn.classList.remove('active')
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
