@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="./css/layout_ver1.css">
     <link rel="stylesheet" href="./css/index_ver1.css">
     <style>
+        /* 關於我們 */
         #about_us {
-            background-color: rgb(221, 171, 131)
+            padding: 70px 0 30px 0;
+            /* font-size: 50px; */
+            font-weight: bolder;
         }
 
         .btn-myColor1 {
@@ -24,39 +27,53 @@
 
 
 
-        /* #menu {
-            height: 100vh;
-        } */
-
-
         .menu_item {
             display: none;
         }
 
-        /* .banner1{
-            width: 100%;
-            height: 100vh
-            background-image: url("./img/banner01.jpg");
-        } */
+        /* 關於我們在768以下會發生的事 */
+        @media(max-width: 768px) {
+            #time {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            #time .picture {
+                width: 100%;
+            }
+
+            #time .article {
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: unset;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                /* padding: 10px !important; */
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- 導覽列 -->
+
+
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
                 <div class="logo"><img src="./img/logo.png" alt=""></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarText">
-                    <div class="navbar-nav ml-auto " id="bbb">
-                        <a class="abc nav-item nav-link" href="#">關於我們</a>
-                        <a class="abc nav-item nav-link" href="#">幸福滋味</a>
-                        <a class="abc nav-item nav-link" href="#">來找我們</a>
-                        <a class="abc nav-item nav-link" href="#">活動消息</a>
+                    <div class="navbar-nav ml-auto">
+                        <a class=" nav-item nav-link" href="#">關於我們</a>
+                        <a class=" nav-item nav-link" href="#">幸福滋味</a>
+                        <a class=" nav-item nav-link" href="#">來找我們</a>
+                        <a class=" nav-item nav-link" href="#">活動消息</a>
                         <!-- 看不懂的 class:disabled  tabindex="-1" aria-disabled="true"-->
                         <!-- active：搭配in一起使用，表示這是一開始就要活動的頁面，如果沒有這個的話，網友一開始進到home這個頁面時也不會有任何內容。 -->
                     </div>
@@ -71,30 +88,30 @@
     <!-- 內文 -->
     <main>
         <section>
-            <div class="about_us" style="background-color: #F5F2EB;">
+            <div class="about_us" style="background-color: #F5F2E2;">
                 <div class="container">
-                    <h1 id="about_us" class="d-flex justify-content-center ">關於我們</h1>
+                    <h1 id="about_us" class="">關於我們</h1>
 
                     <!-- 創立時間 -->
-                    <div class="row d-flex align-items-center vh-50">
-                        <div class="col-12 col-md-6">
+                    <div id="time" class="row d-flex align-items-center vh-50">
+                        <div class="picture col-12 col-md-6">
                             <img class="about_us_img_1 w-100" src="./img/about_us_1.jpg" alt="">
                         </div>
-                        <div class="col-12 col-md-6 order-1 order-md-0 p-5">
+                        <div class="article col-12 col-md-6 order-1 order-md-0 p-5 p-md-1 ">
                             <h2>創立時間</h2>
                             <p class="about_us_article_1">
                                 坐落在台中烏日的小林陳舍，從原本近乎荒廢的古厝，花了1年的時間修建，創立於2016年，改造過程超乎當初的想像，店內的擺飾，桌椅都相當考究，保留許多現代無法看到的家電器具。
                             </p>
                         </div>
-                        
+
                     </div>
                     <!-- 創辦故事 -->
                     <div class="row d-flex align-items-center vh-50">
                         <div class="col-12 col-md-6 order-1 order-md-0 p-5">
                             <h2>創辦故事</h2>
                             <p class="about_us_article_2">
-                                我是陳尚泊，一個咖啡廳老闆。回想起四年的碩生歷程，起床看著燒杯，睡前握著滴管，日復日、年復年，還沒離開那窄小的實驗室，對於化工的熱情早就被消磨殆盡。踏出校園的那天，我給自己放了一個假，回到老家，這反而才是真的讓我的人生產生化學反應!
-                                回到老家，擺在客廳的那張書桌，那張被我畫滿塗鴉的書桌，像是在告訴我讀書和藝術哪一個才是我所喜愛的。蟬鳴依舊響亮，那晚我買了一杯最常喝的咖啡，靜靜地坐在桌前，輕輕地撫過那些塗鴉，問了自己:「我做過什麼自己所喜愛的事情呢?」我做實驗的時候就是要找出組合，我為甚麼不能將我喜愛的事物做組合呢?
+                                我是陳尚泊，一個咖啡廳老闆。回想起四年的碩生歷程，起床看著燒杯，睡前握著滴管，日復日、年復年，對於化工的熱情早就被消磨殆盡。問了自己:「我做過什麼自己所喜愛的事情呢?」我做實驗的時候就是要找出組合，我為甚麼不能將我喜愛的事物做組合呢?
+
                             </p>
                         </div>
                         <div class="col-12 col-md-6">
@@ -110,7 +127,7 @@
                         <div class="col-12 col-md-6 p-5">
                             <h2>存在使命</h2>
                             <p class="about_us_article_3">
-                                現今的都市裡，有多久沒有好好放鬆自我了呢，平時忙碌的生活，總是覺得該好好找個時間靜下來，享受片刻寧靜的悠閒午後，店內的擺設就像時光機器般，可以讓人看見舊時的光景，每位登門的旅人都能夠體會這份純粹的美好，館內提供許多陳年老物，以及好喝的咖啡、茶及甜點，在喝茶的同時也能細細品味周圍的環境，使老屋不再是空置蕭條，它是有生命力的，它的溫度來自於每個拜訪的旅人。
+                                現今的都市裡，有多久沒有好好放鬆自我了呢，平時忙碌的生活，總是覺得該好好找個時間靜下來，享受片刻寧靜的悠閒午後，店內的擺設就像時光機器般，可以讓人看見舊時的光景，每位登門的旅人都使老屋不再是空置蕭條，它是有生命力的，它的溫度來自於每個拜訪的旅人。
                             </p>
                         </div>
                     </div>
