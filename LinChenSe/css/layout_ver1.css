@@ -6,7 +6,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F5F2E2
 }
+
 
 
 .navbar{
@@ -68,8 +70,7 @@ navbar在992以下的下拉式選單
 ---------------------------*/
 @media(max-width: 768px){
     .nav-item{
-        text-align: right;
-        margin-right: 20px
+        text-align: center;
      }
     nav .container #navbarText .navbar-nav{
                             

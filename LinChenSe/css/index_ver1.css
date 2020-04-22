@@ -72,7 +72,7 @@ banner3 的設定
 
 .banner3 .article{
     position: absolute ;
-    bottom: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     /* left:calc(20% );
@@ -83,6 +83,21 @@ banner3 的設定
 }
 .nav-item{
     text-align: center;
+}
+
+
+
+/* ----------
+菜單
+----------- */
+
+
+
+
+
+/* 飲品 */
+.accordion .card{
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* 預計nav 要加入的 hover 效果 */
