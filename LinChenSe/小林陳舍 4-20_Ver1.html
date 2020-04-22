@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/layout_ver1.css">
+    <link rel="stylesheet" href="./css/index_ver1.css">
+    <style>
+        /* 關於我們 */
+        #about_us {
+            padding: 70px 0 30px 0;
+            /* font-size: 50px; */
+            font-weight: bolder;
+        }
+
+        .btn-myColor1 {
+            background-color: rgb(221, 171, 131)
+        }
+
+        .menu_btn {
+            display: inline;
+        }
+
+
+
+        .menu_item {
+            display: none;
+        }
+
+        /* 關於我們在768以下會發生的事 */
+        @media(max-width: 768px) {
+            #time {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            #time .picture {
+                width: 100%;
+            }
+
+            #time .article {
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: unset;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <div class="navbar-nav ml-auto">
+                        <a class=" nav-item nav-link" href="#">關於我們</a>
+                        <a class=" nav-item nav-link" href="#">幸福滋味</a>
+                        <a class=" nav-item nav-link" href="#">來找我們</a>
+                        <a class=" nav-item nav-link" href="#">活動消息</a>
+                        <!-- 看不懂的 class:disabled  tabindex="-1" aria-disabled="true"-->
+                        <!-- active：搭配in一起使用，表示這是一開始就要活動的頁面，如果沒有這個的話，網友一開始進到home這個頁面時也不會有任何內容。 -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner1">
+            <img src="./img/banner01.jpg" alt="">
+        </div>
+    </header>
+
+    <!-- 內文 -->
+    <main>
+        <section>
+            <div class="about_us" style="background-color: #F5F2E2;">
+                <div class="container">
+                    <h1 id="about_us" class="">關於我們</h1>
+
+                    <!-- 創立時間 -->
+                    <div id="time" class="row d-flex align-items-center vh-50">
+                        <div class="picture col-12 col-md-6">
+                            <img class="about_us_img_1 w-100" src="./img/about_us_1.jpg" alt="">
+                        </div>
+                        <div class="article col-12 col-md-6 order-1 order-md-0 p-5 p-md-1 ">
+                            <h2>創立時間</h2>
+                            <p class="about_us_article_1">
+                                坐落在台中烏日的小林陳舍，從原本近乎荒廢的古厝，花了1年的時間修建，創立於2016年，改造過程超乎當初的想像，店內的擺飾，桌椅都相當考究，保留許多現代無法看到的家電器具。
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- 創辦故事 -->
+                    <div class="row d-flex align-items-center vh-50">
+                        <div class="col-12 col-md-6 order-1 order-md-0 p-5">
+                            <h2>創辦故事</h2>
+                            <p class="about_us_article_2">
+                                我是陳尚泊，一個咖啡廳老闆。回想起四年的碩生歷程，起床看著燒杯，睡前握著滴管，日復日、年復年，對於化工的熱情早就被消磨殆盡。問了自己:「我做過什麼自己所喜愛的事情呢?」我做實驗的時候就是要找出組合，我為甚麼不能將我喜愛的事物做組合呢?
+
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="about_us_img_2 w-100" src="./img/about_us_2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 存在使命 -->
+                    <div class="row d-flex align-items-center vh-50">
+                        <div class="col-12 col-md-6">
+                            <img class="about_us_img_3 w-100" src="./img/about_us_3.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 p-5">
+                            <h2>存在使命</h2>
+                            <p class="about_us_article_3">
+                                現今的都市裡，有多久沒有好好放鬆自我了呢，平時忙碌的生活，總是覺得該好好找個時間靜下來，享受片刻寧靜的悠閒午後，店內的擺設就像時光機器般，可以讓人看見舊時的光景，每位登門的旅人都使老屋不再是空置蕭條，它是有生命力的，它的溫度來自於每個拜訪的旅人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="banner2">
+                <div class="banner2_img"></div>
+                <!-- <img src="./img/banner02.jpg" alt=""> -->
+                <div class="article">
+                    <div class="container d-flex justify-content-start">
+                        <div class="col-12 col-md-8 ">
+                            <h3>每一個老物，都是獨一無二的歷史記憶</h3>
+                            <span>物以稀為貴，這個道理在這裡不一定行得通，正因為它們「貼近回憶」才如此珍貴，至今幾十餘年，在這裡不管是牆上的蓑衣，或是靠在牆邊的黑膠唱片機，一件一件都
+                                有它的故事與回憶，如果你的記憶深處有著一瓶冒著氣泡的彈珠汽水；有著放學路上
+                                總是想鑽進去一回的柑仔店；有著一把不怎麼精緻但很威風的小木劍，那麼歡迎您跟
+                                著小林陳舍，一起展開一趟回憶的旅程。</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+        <!-- 菜單的按鈕 -->
+        <section>
+            <div class="container">
+                <nav class="accordion" id="accordion_menu">
+
+                    <div class="row justify-content-center">
+                        <button class=" btn btn-myColor1 rounded-pill" type="button" data-toggle="collapse"
+                            data-target="#coffee_item">
+                            咖啡
+                        </button>
+                        <button class="btn btn-myColor1 rounded-pill" type="button" data-toggle="collapse"
+                            data-target="#au_lait_item">
+                            歐蕾
+                        </button>
+                        <button class="btn btn-myColor1 rounded-pill" type="button" data-toggle="collapse"
+                            data-target="#hand_coffee_item">
+                            手沖
+                        </button>
+                        <button class="btn btn-myColor1 rounded-pill" type="button" data-toggle="collapse"
+                            data-target="#taiwan_tee_item">
+                            台灣茶
+                        </button>
+                        <button class="btn btn-myColor1 rounded-pill" type="button" data-toggle="collapse"
+                            data-target="#flower_tee_item">
+                            花草茶
+                        </button>
+                        </h2>
+                    </div>
+
+                    <!-- 咖啡 -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div id="coffee_item" class="collapse text-center" data-parent="#accordion_menu">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <table class="table  table-borderless ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">品項</th>
+                                                    <th scope="col">冰</th>
+                                                    <th scope="col">熱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">美式咖啡</th>
+                                                    <td>70元</td>
+                                                    <td>90元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">拿鐵咖啡</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">精品拿鐵</th>
+                                                    <td>110元</td>
+                                                    <td>130元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">義式咖啡</th>
+                                                    <td>80元</td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">冰磚咖啡</th>
+                                                    <td></td>
+                                                    <td>120元</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 歐蕾 -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div id="au_lait_item" class="collapse text-center" data-parent="#accordion_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table class="table  table-borderless ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">品項</th>
+                                                    <th scope="col">冰</th>
+                                                    <th scope="col">熱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">紅茶歐蕾</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">抹茶歐蕾</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">焙茶歐蕾</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">可可歐蕾</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 手沖 -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div id="hand_coffee_item" class="collapse text-center" data-parent="#accordion_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table class="table  table-borderless ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">品項</th>
+                                                    <th scope="col">壺</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">耶家雪夫日曬</th>
+                                                    <td>200元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">耶家雪夫水洗</th>
+                                                    <td>200元</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">黃金曼特寧</th>
+                                                    <td>250元</td>
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 台灣茶 -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div id="taiwan_tee_item" class="collapse  text-center" data-parent="#accordion_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table class="table  table-borderless ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">品項</th>
+                                                    <th scope="col">冰</th>
+                                                    <th scope="col">熱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">蜜香紅茶</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">蜜香烏龍</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">紅玉紅茶</th>
+                                                    <td>90元</td>
+                                                    <td>110元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">阿薩姆紅茶</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">紅韻紅茶</th>
+                                                    <td>100元</td>
+                                                    <td>120元</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 花草茶 -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div id="flower_tee_item" class="collapse text-center" data-parent="#accordion_menu">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table class="table  table-borderless ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">品項</th>
+                                                    <th scope="col">冰</th>
+                                                    <th scope="col">熱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">玫瑰檸檬草茶</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">薄荷馬鞭草茶</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">甘菊薰衣草茶</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">乾燥藍莓果茶</th>
+                                                    <td>80元</td>
+                                                    <td>100元</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer">2020 ©小林陳舍 版權所有</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- <script>
+        var menu_btn = document.querySelectorAll('.menu_btn')
+        var menu_item = document.querySelectorAll('.menu_item')
+
+        console.log(menu_btn)
+
+        for (let index = 0; index < menu_btn.length; index++) {
+            const menu_btns = menu_btn[index];
+            const menu_items = menu_item[index];
+
+            // console.log(menu_btns)
+            menu_btns.onclick = function () {
+                clearAllActive()
+                // menu_btns.classList.add('active')
+                menu_items.classList.add('active')
+
+
+            }
+        }
+
+
+        function clearAllActive() {
+            for (let index = 0; index < menu_btn.length; index++) {
+                const menu_btns = menu_btn[index];
+                const menu_items = menu_item[index];
+
+
+                // menu_btns.classList.remove('active')
+                menu_items.classList.remove('active')
+
+                $(".collapse").removeClass("show");
+
+            }
+        }
+    </script> -->
+
+
+</body>
+
+</html>

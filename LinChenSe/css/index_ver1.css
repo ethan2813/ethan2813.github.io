@@ -32,3 +32,20 @@
     font-size: 15px;
     /* padding: 0 200px 50px 50px ; */
 }
+
+.nav-item{
+    text-align: center;
+}
+
+/* 預計nav 要加入的 hover 效果 */
+/* .nav-item:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:rgb(184, 184, 184);
+    width: 150px;
+    transition:1s;
+}
+
+.nav-item:active{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:white;
+} */

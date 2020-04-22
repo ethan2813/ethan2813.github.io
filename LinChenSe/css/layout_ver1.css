@@ -67,11 +67,11 @@ footer#footer{
 navbar在992以下的下拉式選單  
 ---------------------------*/
 @media(max-width: 768px){
-    .abc{
+    .nav-item{
         text-align: right;
         margin-right: 20px
      }
-    nav .container #navbarText #bbb{
+    nav .container #navbarText .navbar-nav{
                             
         background-color:white;
         border-radius: 30px;
