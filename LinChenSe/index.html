@@ -56,6 +56,28 @@
         } */
 
 
+        /* 小林藝廊 */
+
+        @media (max-width:768px){
+            .art_photo{
+                /* height: 20vh; */
+            }
+        }
+
+
+        .art_photo{
+            overflow: hidden;
+        }
+
+        .art_photo img{
+            transform:scale(1,1);
+            transition: all 1s ease-in-out;
+        }
+
+        .art_photo img:hover{
+            transform:scale(1.3,1.3)
+        }
+
         
     </style>
 </head>
@@ -73,9 +95,9 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarText">
                     <div class="navbar-nav ml-auto">
-                        <a class=" nav-item nav-link" href="#">關於我們</a>
-                        <a class=" nav-item nav-link" href="#">幸福滋味</a>
-                        <a class=" nav-item nav-link" href="#">來找我們</a>
+                        <a class=" nav-item nav-link" href="#about_us">關於我們</a>
+                        <a class=" nav-item nav-link" href="#menu">幸福滋味</a>
+                        <a class=" nav-item nav-link" href="#art_gallery">小林藝廊</a>
                         <a class=" nav-item nav-link" href="#">活動消息</a>
                         <!-- 看不懂的 class:disabled  tabindex="-1" aria-disabled="true"-->
                         <!-- active：搭配in一起使用，表示這是一開始就要活動的頁面，如果沒有這個的話，網友一開始進到home這個頁面時也不會有任何內容。 -->
@@ -496,6 +518,47 @@
 
         </section>
 
+        <section>
+            <div id="art_gallery">
+                    <!-- <h1 id="art_gallery_text" class="title container">小林藝廊</h1> -->
+                    <div class="row">
+                        <div class="col-6 col-md-4 p-1">
+                            <div class="art_photo">
+                                <img src="./img/art_1.jpg" class="w-100 "alt="">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 p-1">
+                            <div class="art_photo">
+                                <img src="./img/art_2.jpg" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 p-1">
+                            <div class="art_photo">
+                                <img src="./img/art_3.jpg" class="w-100"alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 p-1">
+                            <div class="art_photo">
+                            <img src="./img/art_4.jpg" class="w-100"alt="">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 p-1">
+                            <div class="art_photo">
+                            <img src="./img/art_5.jpg" class="w-100"alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 p-1">
+                            <div class="art_photo">
+                            <img src="./img/art_6.jpg" class="w-100"alt="">
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
     </main>
 
 

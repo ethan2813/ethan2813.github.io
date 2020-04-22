@@ -132,12 +132,31 @@ banner3 的設定
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* 預計nav 要加入的 hover 效果 */
-.nav-item:hover{
+.navbar-light .navbar-nav .nav-item{
+    min-width: 80px;
+    transition:1s;
+}
+
+/* 預計nav 要加入的 hover 效果
+.navbar-light .navbar-nav .nav-item:hover{
     background-color:rgba(0, 0, 0, 0.8);
     color:rgb(184, 184, 184);
-    width: 150px;
-    transition:1s;
+    min-width: 150px;
+}
+
+.nav-item:active{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:white;
+} */
+
+/* 預計nav 要加入的 hover 效果 */
+.navbar-light .navbar-nav .nav-item:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:rgb(184, 184, 184);
+    min-width: 150px;
+    border-radius:50px;
+
+
 }
 
 .nav-item:active{
