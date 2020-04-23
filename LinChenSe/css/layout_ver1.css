@@ -9,6 +9,10 @@ body {
     background-color: #F5F2E2
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 
 .navbar{
