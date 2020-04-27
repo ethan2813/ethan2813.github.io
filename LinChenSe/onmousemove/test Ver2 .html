@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            position: absolute;
+            top: calc(0% + 200px);
+            left: calc( 200px);
+            /* border-radius: 50%; */
+            /* background-image: url("./img/logo.png"); */
+            background-size: cover;
+            background-color: blue;
+            /* z-index: 2; */
+        }
+
+        .big_box1 {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: calc(0);
+            left: calc( 0);
+            background-color: rgba(255, 0, 0, 0.425);
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            position: absolute;
+            top: calc(0% + 200px);
+            left: calc(100% - 300px);
+            /* border-radius: 50%; */
+            /* background-image: url("./img/logo.png"); */
+            background-size: cover;
+            background-color: blue;
+            /* z-index: 2; */
+        }
+
+        .big_box2 {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: calc(0);
+            left: calc(100% - 500px);
+            background-color: rgba(255, 0, 0, 0.425);
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 因為下了position，以下兩個物件順序要特別注意，
+    因此box要放在big_box上一層，不然順序調換的話，數標要離開box 才會使box移動-->
+    <div class="box1"></div>
+    <div class="big_box1"></div>
+    <div class="box2"></div>
+    <div class="big_box2"></div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // 以下次檢查目前屬標的xy座標值
+        $(document).ready(function () {
+            $(document).mousemove(function (e) {
+                // console.log("x" + e.pageX + " " + "y" + e.pageY);
+            });
+        });
+
+    
+        // 為何不能用以下方式查出X,Y座標??????????
+        // $(document).mousemove = function (event) {
+        //         let nowPosiotionX = event.pageX;
+        //         let nowPosiotionY = event.pageY;
+        //         console.log("x" + nowPosiotionX + " " + "y" + nowPosiotionY);
+        // }
+
+       
+
+
+        var box2 = document.querySelector('.box2')
+        //宣告box2_centerX為物體左方的距離+物體寬度的一半 = 中心點x座標
+        var box2_centerX = box2.offsetLeft
+        box2_centerX += 50
+
+        console.log(box2_centerX)
+        //宣告box2_centerX為物體上方的距離+物體寬度的一半 = 中心點y座標
+        var box2_centerY = box2.offsetTop
+        box2_centerY += 50
+
+        console.log(box2_centerX , box2_centerY);
+        
+
+
+
+        var big_box2 = document.querySelector('.big_box2')
+        var offsetX;
+        var offsetY;
+
+
+        // 如果數標離開big_box2 會顯示"離開了喔"
+        big_box2.onmouseleave = function (event) {
+            console.log("離開了喔");
+        }
+
+
+        // 使 nowPosiotionX與nowPosiotionY的值只會在big_box2範圍內顯示，
+        // 超出big_box2的範圍外 則不會有任何動作
+        big_box2.onmousemove = function (event) {
+            let nowPosiotionX = event.pageX;
+            let nowPosiotionY = event.pageY;
+            // console.log("x" + nowPosiotionX + " " + "y" + nowPosiotionY);
+
+
+
+
+
+            // 鼠標的距離 = 現在數標位置 - 小方框的中心座標
+            offsetX = nowPosiotionX - box2_centerX
+            offsetY = nowPosiotionY - box2_centerY
+            // console.log(nowPosiotionX , box2_centerX )
+
+            // box2位移量 = 數標距離除5
+            box2.style.transform = `translate(${offsetX /= 5}px , ${offsetY /= 5}px)`
+
+
+
+
+
+            // if (nowPosiotion > 960) {
+            //     if (nowPosiotion >= right) {
+            //         offsetX = 110
+            //         box2.style.transform = `translateX(${offsetX}px)`
+            //     } else {
+            //         offsetX = Math.floor(nowPosiotion / 10)
+            //         box2.style.transform = `translateX(${offsetX}px)`
+            //     }
+            // }
+
+            // if (nowPosiotion < 960) {
+            //     if (event.pageX <= left) {
+            //         offsetX = 7
+            //     } else {
+            //         offsetX = Math.floor(nowPosiotion / 100)
+            //     }
+            // }
+
+
+            // console.log("X : " + event.pageX + " " + "Y : "+event.pageY);
+        }
+
+    </script>
+</body>
+
+</html>

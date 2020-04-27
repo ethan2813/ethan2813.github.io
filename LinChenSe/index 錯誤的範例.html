@@ -17,18 +17,33 @@
 
     <!-- Animate 套件 -->
     <link rel="stylesheet" href="./css/Animate.css">
-
-    <!-- AOS 套件 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        .my_photo1 {
+            background-image: url("./img/牛1.png");
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 10%;
+            height: 10%;
+            background-size: contain;
+            top: 20%;
+            left: 5%;
+            z-index: 3;
+        }
 
-
+        .my_photo2 {
+            background-image: url("./img/牛1.png");
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 10%;
+            height: 10%;
+            background-size: contain;
+            top: 50%;
+            right: 5%;
+            z-index: 3;
+        }
         
 
-
-        
-
-
+    
     </style>
 </head>
 
@@ -82,9 +97,7 @@
             <div id="about_us" class="mb-5">
                 <div class="my_photo1 cow"></div>
                 <div class="my_photo2 cow"></div>
-                <div class="my_photo3 cow"></div>
-
-
+                
 
 
                 <!-- <div class="my_photo2 cow2"></div> -->
@@ -181,18 +194,6 @@
         ------------------->
         <section>
             <div id="menu" class="">
-                <div class="menu_photo menu_photo4 d-flex justify-content-start" data-aos="fade-right">
-                    <img src="./img/甜食1_去背.png" width="15% alt=">
-                </div>
-
-                <div class="menu_photo menu_photo5  d-flex justify-content-end" data-aos="fade-right">
-                    <img src="./img/甜食2_去背.png" width="15% alt=">
-                </div>
-
-                <div class="menu_photo menu_photo6  d-flex justify-content-start" data-aos="fade-right">
-                    <img src="./img/甜食3_去背.png" width="15% alt=">
-                </div>
-
                 <div class="container">
                     <h1 id="menu_text" class="title animated bounce">幸福滋味</h1>
                     <div class="row">
@@ -627,13 +628,8 @@
         crossorigin="anonymous"></script>
     <!-- swiper套件 -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <!-- AOS套件 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        // AOS重置
-        AOS.init();
-
         // navbar 滑動時消失特效
         var lastScrollTop = 0;
         // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
@@ -659,57 +655,65 @@
         //------------------
         //隨著滑鼠移動特效
         //------------------
+
+        var my_photo1 = document.querySelector('.my_photo1')
+        var my_photo2 = document.querySelector('.my_photo2')
+
+        //宣告box_centerX為物體左方的距離+物體寬度的一半 = 中心點x座標
+        var my_photo1_centerX1 = my_photo1.offsetLeft
+        my_photo1_centerX1 += 50
+
+        //宣告my_photo1_centerX為物體上方的距離+物體寬度的一半 = 中心點y座標
+        var my_photo1_centerY1 = my_photo1.offsetTop
+        my_photo1_centerY1 += 50
         
-        var my_photo1 = $('.cow')
-        console.log(my_photo1)
-        document.onmousemove = function (event) {
-            $.each(my_photo1, function (index, val) {
-                // console.log('index=', index);
-                var my_photo1_centerX = my_photo1[index].offsetLeft
-                my_photo1_centerX += 50
-                // console.log(my_photo1_centerX)
-                var my_photo1_centerY = my_photo1[index].offsetTop
-                my_photo1_centerY += 50
-                var offsetX;
-                var offsetY;
+        var my_photo2_centerX2 = my_photo2.offsetLeft
+        my_photo2_centerX2 += 50
+
+        var my_photo2_centerY2 = my_photo2.offsetTop
+        my_photo2_centerY2 += 50
 
 
-                let nowPosiotionX = event.pageX;
-                let nowPosiotionY = event.pageY;
-                // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
+        var offsetX1;
+        var offsetY1;
+        var offsetX2;
+        var offsetY2;
+
+        document.onmousemove = function (event1,event2) {
+
+            let nowPosiotionX1 = event1.pageX;
+            let nowPosiotionY1 = event1.pageY;
+            // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
 
 
-                // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
-                offsetX = nowPosiotionX - my_photo1_centerX
-                offsetY = nowPosiotionY - my_photo1_centerY
-                my_photo1[index].style.transform = `translate(${offsetX /= 20}px , ${offsetY /= 20}px)`
+            // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
+            offsetX1 = nowPosiotionX1 - my_photo1_centerX
+            offsetY1 = nowPosiotionY1 - my_photo1_centerY
+            my_photo1.style.transform = `translate(${offsetX1 /= 20}px , ${offsetY1 /= 20}px)`
+
+            let nowPosiotionX2 = event2.pageX;
+            let nowPosiotionY2 = event2.pageY;
+
+            offsetX2 = nowPosiotionX2 - my_photo2_centerX2
+            offsetY2 = nowPosiotionY2 - my_photo2_centerY2
+            my_photo2.style.transform = `translate(${offsetX2 /=10 }px , ${offsetY2 /= 10}px)`
+        }
+
+        //-----------------------------------------------------------------
 
 
-            })
-        };
-        // //宣告box_centerX為物體左方的距離+物體寬度的一半 = 中心點x座標
-        // var my_photo1_centerX = my_photo1.offsetLeft
-        // my_photo1_centerX += 50
 
-        // //宣告my_photo1_centerX為物體上方的距離+物體寬度的一半 = 中心點y座標
-        // var my_photo1_centerY = my_photo1.offsetTop
-        // my_photo1_centerY += 50
-
-        // var offsetX;
-        // var offsetY;
-
-        // document.onmousemove = function (event) {
-
-        //     let nowPosiotionX = event.pageX;
-        //     let nowPosiotionY = event.pageY;
-        //     // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
+        document.onmousemove = function (event2) {
 
 
-        //     // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
-        //     offsetX = nowPosiotionX - my_photo1_centerX
-        //     offsetY = nowPosiotionY - my_photo1_centerY
-        //     my_photo1.style.transform = `translate(${offsetX /= 20}px , ${offsetY /= 20}px)`
-        // }
+
+            
+
+        }
+
+
+
+
 
 
 

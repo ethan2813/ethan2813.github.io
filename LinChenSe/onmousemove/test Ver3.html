@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .d-flex{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border-radius: 50%;
+            /* background-image: url("./img/logo.png"); */
+            background-size: cover;
+            background-color: blue;
+            z-index: 2;
+        }
+
+        .big_box{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            /* top: calc(50% - 250px);
+            left: calc(50% - 250px); */
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="big_box">
+            <div class="box"></div>
+        </div>
+        
+       
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // $(document).ready(function () {
+        //     $(document).mousemove(function (e) {
+        //         console.log("x" + e.pageX + " " + "y" + e.pageY);
+
+        //     });
+        // });
+
+        //中心點X960 Y470
+        //  
+
+
+        var box = document.querySelector('.box')
+
+        // var left = 760;
+        // var right = 1160
+
+        // var top = 270;
+        // var bottom = 670;
+
+         
+        //宣告box_centerX為物體上方的距離+物體寬度的一半 = 中心點x座標
+        var box_centerX = box.offsetWidth
+        box_centerX+=1080
+
+        //宣告box_centerX為物體上方的距離+物體寬度的一半 = 中心點y座標
+        var box_centerY = box.offsetTop
+        box_centerY+=50
+        
+    
+        
+        var big_box = document.querySelector('.big_box')
+        var offsetX;
+        var offsetY;
+
+        big_box.onmouseleave = function (event) {
+            console.log("離開嘞喔");
+            
+        }
+
+        big_box.onmousemove = function (event) {
+    
+            let nowPosiotionX = event.pageX;
+            let nowPosiotionY = event.pageY;
+
+            
+
+
+            console.log("X " + nowPosiotionX + " " + nowPosiotionY);
+            // console.log();
+            
+            // if (nowPosiotionX > 1060) {
+            //     nowPosiotionX = 1060
+            // }
+
+            // if (nowPosiotionX < 860) {
+            //     nowPosiotionX  = 860
+            // }
+
+            // if (nowPosiotionY > 570) {
+            //     nowPosiotionY = 570
+            // }
+
+            // if (nowPosiotionY < 370) {
+            //     nowPosiotionY = 370
+            // }
+            // console.log(nowPosiotionX);
+            
+            offsetX = nowPosiotionX  - box_centerX 
+            offsetY = nowPosiotionY  - box_centerY 
+
+            // if(box.style.transform = translate(250px , 250px)){
+
+            // }else{
+            //     box.style.transform = `translate(${box_centerX}px , ${box_centerY}px)`
+            // }
+            box.style.transform = `translate(${offsetX /=10 }px , ${offsetY /=10 }px)`
+
+                
+            
+
+
+            // if (nowPosiotion > 960) {
+            //     if (nowPosiotion >= right) {
+            //         offsetX = 110
+            //         box.style.transform = `translateX(${offsetX}px)`
+            //     } else {
+            //         offsetX = Math.floor(nowPosiotion / 10)
+            //         box.style.transform = `translateX(${offsetX}px)`
+            //     }
+            // }
+
+            // if (nowPosiotion < 960) {
+            //     if (event.pageX <= left) {
+            //         offsetX = 7
+            //     } else {
+            //         offsetX = Math.floor(nowPosiotion / 100)
+            //     }
+            // }
+
+
+            // console.log("X : " + event.pageX + " " + "Y : "+event.pageY);
+        }
+
+    </script>
+</body>
+
+</html>

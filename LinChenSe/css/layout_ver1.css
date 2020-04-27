@@ -1,26 +1,67 @@
 * {
     box-sizing: border-box;
     font-family: 微軟正黑體;
+    
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #F5F2E2
+  
 }
-
 html{
     scroll-behavior: smooth;
 }
 
 
+/* 文字特效連續撥放 */
+.bounce{
+ animation-iteration-count: infinite;   
+}
 
+
+/* 照片放大效果要加.hover_photo 這標籤 */
+  .hover_photo {
+    overflow: hidden;
+}
+.hover_photo img {
+    /* transform: scale(0.9, 0.9); */
+    transition: all 1s ease-in-out;
+}
+.hover_photo img:hover {
+    transform: scale(1.3, 1.3)
+}
+
+
+/* 圓角效果 */
+.rounded-20{
+    border-radius: 20%;
+}
+
+
+/* nav特效 */
+#navGroup{
+    height: 0;
+    position: relative;
+}
 .navbar{
     width: 100%;
     /* height: 100px; */
     background-color: rgb(221, 171, 131);
-    
+    /* opacity: 0; */
+    transition: 0.5s;
+    position: fixed;
+    left: 0;
+    top: -150px;
+    z-index: 2;
 }
+.fixed{
+    position: fixed;
+    top:0;
+    /* opacity: 1; */
+}
+
 
 .logo{
     width: 90px;
@@ -84,4 +125,54 @@ navbar在992以下的下拉式選單
          margin-right: unset !important;
     }       
 }
+
+
+
+#toggle {
+    width: 50px;
+    height: 50px;
+    /* margin: 10px auto; */
+}
+
+#toggle div {
+    width: 100%;
+    height: 4px;
+    background: white;
+    margin: 7px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+   
+}
+
+#toggle.on .one {
+    transform: rotate(45deg) translate(7px, 8px);
+}
+  
+#toggle.on .two {
+    opacity: 0;
+}
+  
+#toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#mnavbarText {
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    display: none;
+  }
+
+
+
+
+
+
 

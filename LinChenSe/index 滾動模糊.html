@@ -4,52 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver1</title>
+    <title>Ver2</title>
 
     <!-- bootstrap套件 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/layout_ver1.css">
-    <link rel="stylesheet" href="./css/index_ver1.css">
+    <link rel="stylesheet" href="./css/layout_ver2.css">
+    <link rel="stylesheet" href="./css/index_ver2.css">
 
     <!-- swiper套件 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 
     <!-- Animate 套件 -->
     <link rel="stylesheet" href="./css/Animate.css">
-
-    <!-- AOS 套件 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        /* 關於我們 */
+        .title {
+            padding: 70px 0 30px 0;
+            /* font-size: 50px; */
+            font-weight: bolder;
+        }
+
+        .btn-myColor1 {
+            background-color: rgb(221, 171, 131)
+        }
+
+        .menu_btn {
+            display: inline;
+        }
 
 
-        
+
+        .menu_item {
+            display: none;
+        }
 
 
-        
 
+        /* 照片放大效果要加.hover_photo 這標籤 */
+        .hover_photo {
+            overflow: hidden;
+        }
 
+        .hover_photo img {
+            /* transform: scale(1, 1); */
+            transition: all 1s ease-in-out;
+        }
+
+        .hover_photo img:hover {
+            transform: scale(1.3, 1.3)
+        }
+
+        /* banner 效果 */
+        .bg {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-attachment: fixed;
+            background-image: url(./img/banner01.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .blank_page{
+            width: 100%;
+            height: 100vh;
+        }
+
+      
     </style>
 </head>
 
 <body>
-    <!-----------------
-    ------導覽列------- 
-    ------------------->
+    <!-- 導覽列 -->
+
+
     <header>
-        <div id="navGroup">
-            <nav class="navbar navbar-expand-md navbar-light fixed">
+        <div id="navGroup ">
+            <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container">
                     <div class="logo hover_photo"><img src="./img/logo.png" alt=""></div>
-
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
                         <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                    <div id="toggle" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
+                    </button>
                     <div class="collapse navbar-collapse " id="navbarText">
                         <div class="navbar-nav ml-auto">
                             <a class=" nav-item nav-link" href="#about_us">關於我們</a>
@@ -66,28 +114,26 @@
 
 
         </div>
-        <div class="banner1">
+        <!-- <div class="banner1">
             <img src="./img/banner01.jpg" alt="">
+        </div> -->
+        <div class="bg">
+            <div class="mask"></div>
         </div>
+
     </header>
 
-    <!-----------------
-    -------內文-------- 
-    ------------------->
+    <!-- 內文 -->
     <main>
+
         <!-----------------
         -----關於我們------ 
         ------------------->
         <section>
+
+            <div class="blank_page"></div>
+
             <div id="about_us" class="mb-5">
-                <div class="my_photo1 cow"></div>
-                <div class="my_photo2 cow"></div>
-                <div class="my_photo3 cow"></div>
-
-
-
-
-                <!-- <div class="my_photo2 cow2"></div> -->
                 <div class="container">
                     <h1 id="about_us_text" class="title animated bounce">關於我們</h1>
 
@@ -181,20 +227,8 @@
         ------------------->
         <section>
             <div id="menu" class="">
-                <div class="menu_photo menu_photo4 d-flex justify-content-start" data-aos="fade-right">
-                    <img src="./img/甜食1_去背.png" width="15% alt=">
-                </div>
-
-                <div class="menu_photo menu_photo5  d-flex justify-content-end" data-aos="fade-right">
-                    <img src="./img/甜食2_去背.png" width="15% alt=">
-                </div>
-
-                <div class="menu_photo menu_photo6  d-flex justify-content-start" data-aos="fade-right">
-                    <img src="./img/甜食3_去背.png" width="15% alt=">
-                </div>
-
                 <div class="container">
-                    <h1 id="menu_text" class="title animated bounce">幸福滋味</h1>
+                    <h1 id="menu_text" class="title">幸福滋味</h1>
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <div class="bbb border border-success d-flex flex-column">
@@ -609,10 +643,51 @@
             </div>
         </section>
     </main>
-    <!-----------------
-    --------頁尾------- 
-    ------------------->
+
     <footer id="footer">2020 ©小林陳舍 版權所有</footer>
+
+    <!-- swiper套件 -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+    <script>
+        var lastScrollTop = 0;
+
+        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+        window.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+            var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (nowScrollTop > lastScrollTop) {
+                console.log(nowScrollTop)
+                // downscroll code
+                $('.navbar').removeClass('fixed')
+            } else {
+                // upscroll code
+                $('.navbar').addClass('fixed')
+            }
+            lastScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop; // For Mobile or negative scrolling
+        }, false);
+
+        //banner 模糊效果
+        window.onscroll = function () {
+
+            var target = document.querySelector('.bg')
+            console.log(target.getAttribute("style"));
+
+            // chrome
+            // console.log(document.documentElement.scrollTop);
+
+            //safari
+            // console.log(document.body.scrollTop);
+
+            var nowScrollTop = document.documentElement.scrollTop
+            var blurLevel = (Math.round(nowScrollTop / 100)) + 1
+            target.setAttribute("style", `-webkit-filter:blur(${blurLevel}px);`)
+
+        }
+
+    </script>
+  
+
+    
 
 
     <!-- bootstrap套件 -->
@@ -625,95 +700,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- swiper套件 -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <!-- AOS套件 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        // AOS重置
-        AOS.init();
 
-        // navbar 滑動時消失特效
-        var lastScrollTop = 0;
-        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-        window.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-            var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (nowScrollTop > lastScrollTop) {
-                // console.log(nowScrollTop)
-                // downscroll code
-                $('.navbar').removeClass('fixed')
-            } else {
-                // upscroll code
-                $('.navbar').addClass('fixed')
+
+    <!-- <script>
+        var menu_btn = document.querySelectorAll('.menu_btn')
+        var menu_item = document.querySelectorAll('.menu_item')
+
+        console.log(menu_btn)
+
+        for (let index = 0; index < menu_btn.length; index++) {
+            const menu_btns = menu_btn[index];
+            const menu_items = menu_item[index];
+
+            // console.log(menu_btns)
+            menu_btns.onclick = function () {
+                clearAllActive()
+                // menu_btns.classList.add('active')
+                menu_items.classList.add('active')
+
+
             }
-            lastScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop; // For Mobile or negative scrolling
-        }, false);
-
-        // nav 漢堡條特效
-        $("#toggle").click(function () {
-            $(this).toggleClass("on");
-            $("#navbarText").slideToggle();
-        });
-
-        //------------------
-        //隨著滑鼠移動特效
-        //------------------
-        
-        var my_photo1 = $('.cow')
-        console.log(my_photo1)
-        document.onmousemove = function (event) {
-            $.each(my_photo1, function (index, val) {
-                // console.log('index=', index);
-                var my_photo1_centerX = my_photo1[index].offsetLeft
-                my_photo1_centerX += 50
-                // console.log(my_photo1_centerX)
-                var my_photo1_centerY = my_photo1[index].offsetTop
-                my_photo1_centerY += 50
-                var offsetX;
-                var offsetY;
+        }
 
 
-                let nowPosiotionX = event.pageX;
-                let nowPosiotionY = event.pageY;
-                // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
+        function clearAllActive() {
+            for (let index = 0; index < menu_btn.length; index++) {
+                const menu_btns = menu_btn[index];
+                const menu_items = menu_item[index];
 
 
-                // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
-                offsetX = nowPosiotionX - my_photo1_centerX
-                offsetY = nowPosiotionY - my_photo1_centerY
-                my_photo1[index].style.transform = `translate(${offsetX /= 20}px , ${offsetY /= 20}px)`
+                // menu_btns.classList.remove('active')
+                menu_items.classList.remove('active')
 
+                $(".collapse").removeClass("show");
 
-            })
-        };
-        // //宣告box_centerX為物體左方的距離+物體寬度的一半 = 中心點x座標
-        // var my_photo1_centerX = my_photo1.offsetLeft
-        // my_photo1_centerX += 50
-
-        // //宣告my_photo1_centerX為物體上方的距離+物體寬度的一半 = 中心點y座標
-        // var my_photo1_centerY = my_photo1.offsetTop
-        // my_photo1_centerY += 50
-
-        // var offsetX;
-        // var offsetY;
-
-        // document.onmousemove = function (event) {
-
-        //     let nowPosiotionX = event.pageX;
-        //     let nowPosiotionY = event.pageY;
-        //     // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
-
-
-        //     // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
-        //     offsetX = nowPosiotionX - my_photo1_centerX
-        //     offsetY = nowPosiotionY - my_photo1_centerY
-        //     my_photo1.style.transform = `translate(${offsetX /= 20}px , ${offsetY /= 20}px)`
-        // }
-
-
-
-    </script>
+            }
+        }
+    </script> -->
 
 
 </body>
