@@ -29,38 +29,38 @@
 
 /* 關於我們會動的圖 */
 .my_photo1 {
-    background-image: url("../img/牛1.png");
+    background-image: url("../img/復古_photo1.png");
     position: absolute;
     background-repeat: no-repeat;
     width: 10%;
     height: 10%;
     background-size: contain;
     top: 20%;
-    left: 5%;
+    right: 0%;
     z-index: 3;
 }
 
 .my_photo2 {
-    background-image: url("../img/牛1.png");
+    background-image: url("../img/復古_photo2.png");
     position: absolute;
     background-repeat: no-repeat;
     width: 10%;
     height: 10%;
     background-size: contain;
     top: 50%;
-    right: 5%;
+    left: 0%;
     z-index: 3;
 }
 
 .my_photo3 {
-    background-image: url("../img/牛1.png");
+    background-image: url("../img/復古_photo3.png");
     position: absolute;
     background-repeat: no-repeat;
     width: 10%;
     height: 10%;
     background-size: contain;
     top: 80%;
-    left: 5%;
+    right: 0%;
     z-index: 3;
 }
 
@@ -220,22 +220,36 @@ banner3 的設定
     position: absolute;
     top: 120%;
     left: 5%;
-    width: 100%;
-
+    width: 10%;
 }
+
+.menu_photo4 img{
+    width: 200%;
+}
+
 
 .menu_photo5{
     position: absolute;
-    top: 220%;
+    top: 200%;
     right: 5%;
-    width: 100%;
+    width: 10%;
 }
+
+.menu_photo5 img{
+    width: 200%;
+}
+
+
 .menu_photo6{
     position: absolute;
-    top: 320%;
+    top: 300%;
     left: 5%;
-    width: 100%;
+    width: 10%;
     
+}
+
+.menu_photo6 img{
+    width: 200%;
 }
 
 @media (max-width: 768px){
