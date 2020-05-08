@@ -1,21 +1,14 @@
 
 
 
- #main-content #banner{
-     width: 100%;
-     height:calc(100vh - 80px);
-     background-color: rgb(0, 0, 0);
-     background-image: url(../img/01.jpg);
-     background-position: center;
-     background-size: contain;
-     background-repeat: no-repeat;
 
- }
+
+ 
 
 /*-------------staff 演員介紹 ------------*/
 
 
-#main-content #staff-title{
+#main-content #staff-title{ 
     color: blanchedalmond;
     text-align: center;
     font-size: 50px;
