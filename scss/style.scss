@@ -1,0 +1,204 @@
+$fontStyle_noto:'Noto Serif TC', serif;
+$color-wt:#F2F2F2;
+$color-dwt:rgb(214, 214, 214);
+
+
+body{
+    background-color: $color-wt;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family:$fontStyle_noto;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+hr{
+    margin: 30px 0; 
+  }
+
+#psWorks > .container {
+    div:first-child > h1{
+        text-align: center;
+        background-color: $color-dwt;
+        padding: 50px 0;
+    }
+
+    //////////////////////
+    /////作品-廢墟程式/////
+    /////////////////////
+    #ruinsCity > .row  {
+        padding: 0;
+        
+        .ruinsCity_picture{
+            margin: 0 0 0 0;
+            
+
+            img{
+                width: 100%;
+            }
+
+            img:first-child{
+                margin: 0 0 0 0;
+            }
+            img:last-child{
+                margin: 0 0 10px 0;
+            }
+            
+            h3{
+                margin: 10px 0;
+            }
+
+        }   
+        .ruinsCity_article{
+            p{
+                line-height: 25px; 
+                // font-size: 2vmin;
+                margin: 0;
+        }
+
+                h3:nth-child(1){
+                margin: 0 0 50px 0 ;
+            }
+            p:last-child{
+                margin: 50px 0 0 0 ;
+            }
+        }
+    }
+
+
+    //////////////////////
+    ///////作品-冰雪///////
+    /////////////////////
+    #elsaSnow  {
+        .elsaSnow_picture_L{
+            img{
+                width: 100%;
+            }
+            img:first-child{
+                margin: 0 0 0 0;
+            }
+
+            img:last-child{
+                margin: 0 0 10px 0;
+            
+            }
+        }
+
+        .elsaSnow_picture_R{
+            img{
+                width: 100%;
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+    
+}
+  
+
+
+
+
+
+#aiWorks > .container{
+    div:first-child > h1 {
+        text-align: center;
+        background-color: $color-dwt;
+        padding: 50px 0;
+        
+    }
+
+    #penTool{
+        // background-color: $color-dwt;
+        padding: 20px 0 0 0 ;
+
+
+        >h2{
+            text-align: center;
+        }
+
+        >p{
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .penTool_picture_L{
+            img{
+                width: 100%;
+            }
+            P{
+                text-align: center;
+            }
+        }
+
+        .penTool_picture_R{
+            img{
+                width: 100%;
+            }
+            P{
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+
+    #meshTool{
+        padding: 20px 0 0 0 ;
+
+        >h2{
+            text-align: center;
+        }
+        >p{
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .meshTool_picture_top_L{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            
+            >img{
+                width: 50%;
+            }
+            
+        }
+
+        .meshTool_picture_top_R{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+
+            >img{
+                width: 50%;
+            }
+        }
+        .meshTool_picture_bot_L{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            
+            >img{
+                width: 50%;
+            }
+            
+        }
+
+        .meshTool_picture_bot_R{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+
+            >img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+
+
+
