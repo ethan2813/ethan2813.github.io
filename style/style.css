@@ -90,6 +90,10 @@ hr {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+#psWorks .container #ruinsCity {
+  padding: 20px 0 0 0;
+}
+
 #psWorks .container #ruinsCity > .row {
   padding: 0;
 }
@@ -156,7 +160,7 @@ hr {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-position: cover;
+  background-size: cover;
   background-position: center;
   -webkit-animation: slide2 15s infinite;
           animation: slide2 15s infinite;
@@ -164,17 +168,17 @@ hr {
 }
 
 #aiWorks .title .slide > div:nth-child(1) {
-  background-image: url(../img/ps_banner_1.jpg);
+  background-image: url(../img/ai_banner_1.jpg);
 }
 
 #aiWorks .title .slide > div:nth-child(2) {
-  background-image: url(../img/ps_banner_2.jpg);
+  background-image: url(../img/ai_banner_2.jpg);
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
 
 #aiWorks .title .slide > div:nth-child(3) {
-  background-image: url(../img/ps_banner_3.jpg);
+  background-image: url(../img/ai_banner_3.jpg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
@@ -182,6 +186,7 @@ hr {
 @-webkit-keyframes slide2 {
   10% {
     opacity: 1;
+    left: 0px;
   }
   20% {
     opacity: 1;
@@ -192,12 +197,14 @@ hr {
   40% {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
+    right: 0px;
   }
 }
 
 @keyframes slide2 {
   10% {
     opacity: 1;
+    left: 0px;
   }
   20% {
     opacity: 1;
@@ -208,6 +215,7 @@ hr {
   40% {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
+    right: 0px;
   }
 }
 
@@ -302,6 +310,46 @@ hr {
   width: 50%;
 }
 
+#aiWorks .container #meshTool .meshTool_picture_mid_L {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aiWorks .container #meshTool .meshTool_picture_mid_L > img {
+  width: 50%;
+}
+
+#aiWorks .container #meshTool .meshTool_picture_mid_R {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aiWorks .container #meshTool .meshTool_picture_mid_R > img {
+  width: 50%;
+}
+
 #aiWorks .container #meshTool .meshTool_picture_bot_L {
   display: -webkit-box;
   display: -webkit-flex;
@@ -342,7 +390,7 @@ hr {
   width: 50%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   #aiWorks .container #meshTool img {
     width: 100% !important;
   }
@@ -361,11 +409,15 @@ hr {
   padding: 30px 20px;
 }
 
-#aiWorks .container #perspective .perspective_L img {
+#aiWorks .container #perspective .perspective_L > img {
   width: 100%;
 }
 
-#aiWorks .container #perspective .perspective_R {
+#aiWorks .container #perspective .perspective_L > p {
+  text-align: center;
+}
+
+#aiWorks .container #perspective .perspective_R > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -381,17 +433,40 @@ hr {
           align-items: center;
 }
 
-#aiWorks .container #perspective .perspective_R img {
+#aiWorks .container #perspective .perspective_R > div > img {
   width: 50%;
 }
 
-@media (max-width: 720px) {
+#aiWorks .container #perspective .perspective_R > div :nth-child(2) {
+  margin: 0;
+}
+
+#aiWorks .container #perspective .perspective_R > div > p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
   #aiWorks .container #perspective .perspective_R {
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-    -webkit-flex-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
+  #aiWorks .container #perspective .perspective_R > div > img {
+    width: 100%;
+  }
+}
+
+#aiWorks .container #low_poly {
+  padding: 20px 0 0 0;
+}
+
+#aiWorks .container #low_poly > h2 {
+  text-align: center;
+}
+
+#aiWorks .container #low_poly > p {
+  text-align: center;
+  padding: 30px 20px;
 }
 /*# sourceMappingURL=style.css.map */

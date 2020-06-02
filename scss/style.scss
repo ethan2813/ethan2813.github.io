@@ -81,6 +81,10 @@ hr{
         //////////////////////
         /////作品-廢墟程式/////
         /////////////////////
+        #ruinsCity {
+            padding: 20px 0 0 0;
+        }
+
         #ruinsCity > .row  {
             padding: 0;
             
@@ -157,12 +161,8 @@ hr{
 
 
 #aiWorks {
-
-
-    
-
     .title{
-        position: relative;
+        position: relative; 
         height: 30vh;
         width: 100%;
         overflow: hidden;
@@ -173,7 +173,7 @@ hr{
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                background-position: cover;
+                background-size: cover;
                 background-position: center;
                 animation: slide2 15s infinite;
                 opacity: 0;
@@ -182,25 +182,26 @@ hr{
             }
 
             >div:nth-child(1){
-                background-image: url(../img/ps_banner_1.jpg);
+                background-image: url(../img/ai_banner_1.jpg);
+                
             }
 
             >div:nth-child(2){
-                background-image: url(../img/ps_banner_2.jpg);
+                background-image: url(../img/ai_banner_2.jpg);
                 animation-delay: 5s;
             }
 
             >div:nth-child(3){
-                background-image: url(../img/ps_banner_3.jpg);
+                background-image: url(../img/ai_banner_3.jpg);
                 animation-delay: 10s;
             }
         }
 
         @keyframes slide2 {
-            10%{ opacity: 1}
+            10%{ opacity: 1;left:0px}
             20%{ opacity: 1}
             60%{ opacity: 0}
-            40%{transform: scale(1.3)}
+            40%{transform: scale(1.3);right:0px}
         }
 
         h1{
@@ -281,6 +282,26 @@ hr{
                     width: 50%;
                 }
             }
+            .meshTool_picture_mid_L{
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                
+                >img{
+                    width: 50%;
+                }
+                
+            }
+    
+            .meshTool_picture_mid_R{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+    
+                >img{
+                    width: 50%;
+                }
+            }
             .meshTool_picture_bot_L{
                 display: flex;
                 flex-direction:column;
@@ -301,9 +322,9 @@ hr{
                     width: 50%;
                 }
             }
-        }
 
-        @media (max-width:720px){
+        }
+        @media (max-width:768px){
             #meshTool img {
                 width: 100% !important;
             }
@@ -323,30 +344,60 @@ hr{
             }
     
             .perspective_L{
-                img{
+                >img{
                     width: 100%;
+                }
+                >p{
+                    text-align: center;
                 }
             }
     
-            .perspective_R{
+            .perspective_R >div{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
     
-                img{
+                >img{
                     width: 50%;
+                }
+                
+                :nth-child(2) {
+                    margin: 0;
                 }
 
                 
+                >p{
+                    text-align: center;
+                }
             }
+
+            
 
             
     
     
         }
-        @media (max-width:720px){
+        @media (max-width:768px){
             #perspective  .perspective_R {
-                flex-direction:unset;
+                display: flex;
+
+                >div{
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #low_poly{
+            padding: 20px 0 0 0 ;
+    
+            >h2{
+                text-align: center;
+            }
+            >p{
+                text-align: center;
+                padding: 30px 20px;
             }
         }
     }
