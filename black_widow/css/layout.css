@@ -132,6 +132,12 @@
             background-color: gray;
         }
 
+        footer#footer >p{
+            text-align: center;
+            margin: 0;
+            line-height: 80px;
+        }   
+
         @media (max-width:1140px){
             .container{
                 width: 1024px;

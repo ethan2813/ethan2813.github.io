@@ -15,10 +15,13 @@ hr {
   margin: 30px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav#navagation {
   width: 100%;
-  height: 100px;
-  background-color: rgba(141, 149, 173, 0.247);
+  position: fixed;
   z-index: 4;
   position: fixed;
   display: -webkit-box;
@@ -39,54 +42,6 @@ nav#navagation .slide > div {
           animation: slide 15s infinite;
 }
 
-nav#navagation .slide > div:nth-child(1) {
-  background-color: #81A680;
-}
-
-nav#navagation .slide > div:nth-child(2) {
-  background-color: #387336;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-
-nav#navagation .slide > div:nth-child(3) {
-  background-color: #455945;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-
-@-webkit-keyframes slide {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-  40% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes slide {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-  40% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
 nav#navagation > ul {
   width: 100%;
   display: -webkit-box;
@@ -105,19 +60,20 @@ nav#navagation > ul {
 }
 
 nav#navagation > ul > li {
-  width: 100px;
+  margin: 0 10px;
 }
 
 nav#navagation > ul > li > a {
   text-decoration: none;
   font-size: 20px;
   color: black;
-  position: relative;
   padding: 10px 10px;
+  background-color: #1bddc3;
+  border-radius: 5px;
 }
 
 nav#navagation > ul > li > a:hover {
-  background-color: rgba(9, 11, 134, 0.384);
+  background-color: #126b5f;
   border-radius: 5px;
   -webkit-transition: ease-in-out 0.5s;
   -o-transition: ease-in-out 0.5s;
@@ -126,15 +82,54 @@ nav#navagation > ul > li > a:hover {
   color: beige;
 }
 
-nav#navagation > .burger {
+nav#navagation > ul :nth-child(4) ul {
+  text-decoration: none;
+  list-style: none;
+  display: none;
+  text-align: center;
+  padding: 0;
+  line-height: 50px;
+}
+
+nav#navagation > ul :nth-child(4) ul li {
+  width: 120px;
+}
+
+nav#navagation > ul :nth-child(4) ul li a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: #1bddc3;
+  border-radius: 5px;
+}
+
+nav#navagation > ul :nth-child(4) ul li a:hover {
+  background-color: #126b5f;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  color: beige;
+}
+
+nav#navagation > ul :nth-child(4):hover ul {
+  display: block;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  text-align: center;
+}
+
+nav#navagation .burger {
   cursor: pointer;
-  margin: auto 10px;
+  margin: 20px 10px;
   margin-left: auto;
   display: none;
   z-index: 5;
 }
 
-nav#navagation > .burger > div {
+nav#navagation .burger > div {
   width: 25px;
   height: 3px;
   background-color: black;
@@ -152,6 +147,7 @@ nav#navagation > .burger > div {
     opacity: 0;
     position: fixed;
     height: 50vh;
+    line-height: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -159,8 +155,8 @@ nav#navagation > .burger > div {
             flex-direction: column;
     right: -100%;
     width: 100%;
-    top: 100px;
-    background-color: #F2F2F2;
+    top: 0px;
+    background-color: rgba(242, 242, 242, 0.74);
     -webkit-transition: ease-in-out 0.5s;
     -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
@@ -168,6 +164,9 @@ nav#navagation > .burger > div {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  nav#navagation > ul :nth-child(4) ul {
+    display: block;
   }
   nav#navagation .nav_active {
     right: 0%;
@@ -192,15 +191,23 @@ nav#navagation > .burger > div {
   }
 }
 
+nav.nav {
+  top: -150px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0px;
+}
+
 #aboutme > .title {
   overflow: hidden;
   position: relative;
   height: 100px;
   width: 100%;
-}
-
-#aboutme .container > #me {
-  margin: 50px auto;
 }
 
 #aboutme .container > #me > div {
@@ -321,6 +328,22 @@ nav#navagation > .burger > div {
   background-image: url(../img/webDesign_banner03.jpg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
+}
+
+@-webkit-keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 @keyframes slide {
@@ -859,5 +882,17 @@ nav#navagation > .burger > div {
   #aiWorks .container #low_poly .low_poly_R > div > img {
     width: 80%;
   }
+}
+
+footer#footer {
+  width: 100%;
+  height: 100px;
+  background-color: #1bddc3;
+}
+
+footer#footer > p {
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
