@@ -132,7 +132,7 @@ nav#navagation {
            flex-direction: column;
            right: -100%;
            width: 100%;
-           top: 80px;
+           top: 100px;
            background-color:$color-wt;
            transition: ease-in-out 0.5s;
            align-items: center;
@@ -144,6 +144,7 @@ nav#navagation {
             right: 0%;
             opacity: 1;
             transition: ease-in-out 0.5s;
+            z-index: 5;
           }
 
         .burger_active .line1{
