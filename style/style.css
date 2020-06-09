@@ -207,7 +207,7 @@ nav#navagation > .burger > div {
   text-align: center;
 }
 
-#aboutme .container > #me .title > h2 {
+#aboutme .container > #me .title > h1 {
   padding: 20px 0px;
   text-align: left;
 }
@@ -218,6 +218,7 @@ nav#navagation > .burger > div {
 
 #aboutme .container > #me .me_article > p {
   line-height: 35px;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -233,36 +234,142 @@ nav#navagation > .burger > div {
   margin: 50px auto;
 }
 
-#aboutme .container > #experience .title > h2 {
-  padding: 0 0px 20px 0px;
+#aboutme .container > #experience .title > h1 {
+  margin: 0 0 40px 0;
 }
 
-#aboutme .container > #experience .experience_article h4 {
+#aboutme .container > #experience .RWD .experience_1_article h4 {
   padding: 0;
 }
 
-#aboutme .container > #experience .experience_article p {
+#aboutme .container > #experience .RWD .experience_1_article p {
   line-height: 35px;
   padding: 0px 0px;
-  text-align: center;
+  text-align: left;
 }
 
-#aboutme .container > #experience .experience_article > :nth-child(3) {
+#aboutme .container > #experience .RWD .experience_1_article > :nth-child(3) {
   text-align: left;
   margin: 0;
 }
 
-#aboutme .container > #experience .experience_picture > img {
+#aboutme .container > #experience .RWD .experience_1_picture > img {
   width: 100%;
+}
+
+#aboutme .container > #experience .taiwanPatent {
+  margin: 100px 0 0 0;
+}
+
+#aboutme .container > #experience .taiwanPatent .experience_2_picture > img {
+  width: 100%;
+}
+
+#aboutme .container > #experience .taiwanPatent .experience_2_article p {
+  line-height: 30px;
+  padding: 0px 0px;
+  text-align: left;
+}
+
+#aboutme .container > #experience .taiwanPatent .experience_2_article > :nth-child(3) {
+  text-align: left;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
   #aboutme .container > #experience .title {
     text-align: center;
   }
-  #aboutme .container > #experience .experience_article {
+  #aboutme .container > #experience .RWD .experience_1_article {
     margin: 20px 0;
   }
+  #aboutme .container > #experience .taiwanPatent .experience_2_article {
+    margin: 20px 0;
+  }
+}
+
+#webDesign > .title {
+  overflow: hidden;
+  position: relative;
+  background-color: #F2F2F2;
+  height: 30vh;
+  width: 100%;
+}
+
+#webDesign > .title .slide > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: slide 15s infinite;
+          animation: slide 15s infinite;
+  opacity: 0;
+}
+
+#webDesign > .title .slide > div:nth-child(1) {
+  background-image: url(../img/webDesign_banner01.jpg);
+}
+
+#webDesign > .title .slide > div:nth-child(2) {
+  background-image: url(../img/webDesign_banner02.jpg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+#webDesign > .title .slide > div:nth-child(3) {
+  background-image: url(../img/webDesign_banner03.jpg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+#webDesign > .title h1 {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 115px);
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#webDesign .container > .webDesign {
+  text-align: center;
+}
+
+#webDesign .container > .webDesign img {
+  width: 100%;
+  opacity: 1;
+}
+
+#webDesign .container > .webDesign .hover_photo {
+  margin: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#webDesign .container > .webDesign .hover_photo a :hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0.7;
 }
 
 #psWorks > .title {

@@ -218,7 +218,7 @@ nav#navagation {
 
             //關於我標題
             .title{
-                >h2{
+                >h1{
                     padding:20px 0px;
                     text-align: left;
                 }
@@ -233,6 +233,7 @@ nav#navagation {
             .me_article{
                 >p{
                     line-height: 35px;
+                    text-align: left;
                 }
             }
         }
@@ -255,32 +256,61 @@ nav#navagation {
 
             
            .title{
-               >h2{
-                   padding: 0 0px 20px 0px;
+
+
+               >h1{
+                   margin:0 0 40px 0;
                }
            }
 
-           .experience_article{
-               h4{
-                   padding: 0; 
-               }
-               p{
-                   line-height: 35px;
-                   padding: 0px 0px;
-                   text-align: center;
-               }
-               //日期
-               >:nth-child(3){
-                    text-align: left;
-                    margin: 0;
-               }
+           .RWD{
+                .experience_1_article{
+                    h4{
+                        padding: 0; 
+                    }
+                    p{
+                        line-height: 35px;
+                        padding: 0px 0px;
+                        text-align: left;
+                    }
+                    //日期
+                    >:nth-child(3){
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+    
+                .experience_1_picture{
+                    >img{
+                        width: 100%;
+                    }
+                } 
             }
 
-            .experience_picture{
-                >img{
-                    width: 100%;
+            .taiwanPatent{
+                margin:100px 0 0 0;
+
+                .experience_2_picture{
+                    >img{
+                        width: 100%;
+                    }
+                }
+
+                .experience_2_article{
+                    p{
+                        line-height: 30px;
+                        padding: 0px 0px;
+                        text-align: left;
+                    }
+
+                    //日期
+                    >:nth-child(3){
+                        text-align: left;
+                        margin: 0;
+                    }
                 }
             }
+           
         }
 
         @media(max-width:768px){
@@ -288,10 +318,17 @@ nav#navagation {
                 .title{
                     text-align: center;
                 }
-                .experience_article{
-                    margin: 20px 0;
-
+                .RWD{
+                    .experience_1_article{
+                        margin: 20px 0;
+                    }
                 }
+                .taiwanPatent{
+                    .experience_2_article{
+                        margin: 20px 0;
+                    }
+                }
+                
             }
         }
     }
@@ -299,7 +336,110 @@ nav#navagation {
 }
 
 #webDesign{
+    >.title{
+        overflow: hidden;
+        position: relative;
+        background-color:$color-wt;
+        height: 30vh;
+        width: 100%;
+       
+        
+        .slide {
+            >div{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                animation: slide 15s infinite;
+                opacity: 0;
+            }
 
+            >div:nth-child(1){
+                background-image: url(../img/webDesign_banner01.jpg);  
+                // animation-delay: 0s; 
+
+            }
+            >div:nth-child(2){
+                background-image: url(../img/webDesign_banner02.jpg);
+                animation-delay: 5s; 
+            }
+            >div:nth-child(3){
+                background-image: url(../img/webDesign_banner03.jpg); 
+                animation-delay: 10s; 
+            }
+        }
+
+        
+        @keyframes slide{
+            10%{ opacity: 1}
+            20%{ opacity: 1}
+            80%{ opacity: 0}
+            40%{transform: scale(1.1)}
+        }
+
+        h1{
+            position: absolute;
+            top: calc(50% - 25px);
+            left:calc(50% - 115px);
+            color: white; 
+            text-shadow: black 0.1em 0.1em 0.2em
+         }
+        
+
+        
+
+    }
+    .container >.webDesign{
+        text-align: center;
+
+        img{
+            width: 100%;
+            opacity: 1;
+        }
+
+        // .lin{
+        //     overflow: hidden;
+        //     margin: 50px 0;
+        // }
+        // .blackWindow{
+        //     margin: 50px 0;
+        // }
+        .hover_photo {
+            // width: 100%;
+            // height: 100%;
+            margin: 50px 0;
+            overflow: hidden;
+            position: relative;
+            
+            
+            
+            a :hover {
+                transform: scale(1.1,1.1);
+                transition: all 1s ease-in-out;
+                opacity: 0.7;
+
+            }
+            // .mask{
+            //   width: 100%;
+            //   height: 100%;
+            //   left: 0;
+            //      top: 0%;
+            //   background-color: rgba(0, 0, 0, 0.5);
+            //   position: absolute;
+            //   transition: .5s;
+            //   opacity: 0;
+            // }
+            // a :hover{
+            //     opacity: 1;
+                
+    
+            // }
+            
+        }
+      
+        
+    }
 }
 /////////////////////////////////////////////////////////////////////////////
 #psWorks {
