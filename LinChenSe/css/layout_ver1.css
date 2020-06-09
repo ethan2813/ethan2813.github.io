@@ -14,18 +14,7 @@ html{
     scroll-behavior: smooth;
 }
 
-(function () {
-    $(document).mousemove(function (e) {
-        // console.log(e);
-        // console.log("x" + e.pageX + " " + "y" + e.pageY);
-        var mx = e.pageX;
-        var my = e.pageY;
-        // $('.wave-position').css({ top: my, left: mx });
 
-        // 去改變點的位置為滑鼠的yx座標
-        $('.wave-position').css("left", mx).css("top", my);
-    });
-})();
 
 /* 文字特效連續撥放 */
 .bounce{
