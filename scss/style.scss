@@ -25,9 +25,7 @@ html{
     scroll-behavior: smooth;
 }
 
-
-/////////////////////////////////////////////////////////////////////////////
-
+//////////////////////////////////////////////////////////////////////
 nav#navagation {
     width: 100%;
     // height: 500px;
@@ -398,7 +396,7 @@ nav.fixed{
     }
 
 }
-
+//////////////////////////////////////////////////////////////////////
 #webDesign{
     >.title{
         overflow: hidden;
@@ -462,50 +460,135 @@ nav.fixed{
             opacity: 1;
         }
 
-        // .lin{
-        //     overflow: hidden;
-        //     margin: 50px 0;
-        // }
-        // .blackWindow{
-        //     margin: 50px 0;
-        // }
+        
+        
         .hover_photo {
-            // width: 100%;
-            // height: 100%;
-            margin: 50px 0;
+            margin: 20px 0 50px 0;
             overflow: hidden;
-            position: relative;
             
-            
-            
-            a :hover {
-                transform: scale(1.1,1.1);
-                transition: all 1s ease-in-out;
-                opacity: 0.7;
 
-            }
-            // .mask{
-            //   width: 100%;
-            //   height: 100%;
-            //   left: 0;
-            //      top: 0%;
-            //   background-color: rgba(0, 0, 0, 0.5);
-            //   position: absolute;
-            //   transition: .5s;
-            //   opacity: 0;
-            // }
-            // a :hover{
-            //     opacity: 1;
+            >.hover_photo_in{
+                position: relative;
+
                 
-    
-            // }
+
+                >img{
+                    width: 100%;
+                    position: relative; 
+                }
+               
+
+                >a >p{
+                    position: absolute;
+                    top: calc(50% - 27px);
+                    left: calc(50% - 108px);
+                    color: aliceblue;
+                    text-shadow: 0.1em 0.1em 0.2em black;
+                    font-size: 36px;
+                }
+
+                >.hover_photo_in_h2_after >p{
+                    opacity: 0;
+                }
+
+
+                &:hover img{
+                    opacity: 0.3;
+                    transition: 1s;
+                }
+
+                &:hover {
+                    transform: scale(1.1,1.1);
+                    transition: all 1s ease-in-out;
+                }
+
+                &:hover >.hover_photo_in_h2_before >p{
+                    opacity: 0;
+                    transition: 1s;
+                }
+                &:hover >.hover_photo_in_h2_after >p{
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
+            
+            
+            
+           
             
         }
       
         
     }
 }
-/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+#graphicDesign{
+    >.title{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background-color:$color-wt;
+
+        .slide{
+            >div{
+                width: 100%;
+                height: 100%;
+                position: absolute; 
+                background-position: center;
+                background-size: cover;
+                opacity: 0;
+                animation: slide 15s infinite;
+            }
+            
+            >div:nth-child(1){
+                background-image: url(../img/ps_banner_1.jpg);  
+            }
+            >div:nth-child(2){
+                background-image: url(../img/ps_banner_2.jpg); 
+                animation-delay: 5s; 
+                
+            }
+            >div:nth-child(2){
+                background-image: url(../img/ps_banner_2.jpg); 
+                animation-delay: 10s; 
+
+            }
+        }
+        @keyframes slide {
+            10%{opacity: 1;}
+            20%{opacity: 1;}
+            80%{opacity: 0;}
+            40%{transform: scale(1.1)}
+        }
+        >h1{
+            position: absolute;
+            top: calc(50% - 29px);
+            left:calc(50% - 150px);
+            color: white; 
+            text-shadow: black 0.1em 0.1em 0.2em
+        }
+
+    }
+    
+    >.container{
+        .aaa{
+            width: 100%;
+            height: 25vh;
+            margin: 20px 0;
+
+            
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+            
+
+
+        }
+    }
+}
+//////////////////////////////////////////////////////////////////////
 #psWorks {
     >.title{
         overflow: hidden;
@@ -636,8 +719,7 @@ nav.fixed{
     }
   
 }
-
-/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 #aiWorks {
     .title{
         position: relative; 
@@ -908,9 +990,44 @@ nav.fixed{
         }
     }
 }
+//////////////////////////////////////////////////////////////////////
+button.toTop{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+
+    &::before,&::after{
+        width: 20px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: #f90;
+        position: absolute;
+        content: "";
+
+    }
+
+    &::before{
+        transform: rotate(-45deg) translate(0%, -90%);
+        left: 0.5rem;
+    }
+    &::after{
+        transform: rotate(45deg) translate(0%, -90%);
+        right: 0.5rem;
+    }
 
 
-
+}
+//////////////////////////////////////////////////////////////////////
 footer#footer{
     width: 100%;
     height: 100px;

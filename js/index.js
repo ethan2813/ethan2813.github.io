@@ -1,45 +1,37 @@
 
-//宣告一個 navSlide 函式
-const navSlide = () =>{
-    const burger = document.querySelector('.burger');
-    const nav_links = document.querySelector('.nav_links');
-
-    
-    
-    
-    //漢堡條click事件
-    burger.addEventListener('click',()=>{
-        
-        // nav滑進來
-        nav_links.classList.toggle('nav_active');
-        //漢堡條變成x
-        burger.classList.toggle('burger_active');
-    })
-}
-
-// 執行navSlide函式
-navSlide();
-
-let lastScrollTop = 0;
-window.addEventListener('scroll',()=>{
-    var navagation = document.querySelector('.nav');
-    var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    
-    if(nowScrollTop > lastScrollTop){
-        navagation.classList.add('fixed');
+//toTop
+$('.toTop').click(function(){
+    $('html,body').animate({scrollTop:0},300);
+});
+$(window).scroll(function(){
+    if($(this).scrollTop() > 500){
+        $('.toTop').fadeIn(200);
     }else{
-        navagation.classList.remove('fixed');
+        $('.toTop').stop().fadeOut(200);
     }
-
-    lastScrollTop = ( nowScrollTop <= 0 ) ? 0 : nowScrollTop; // For Mobile or negative scrolling
-
-    console.log(nowScrollTop);
-    console.log(lastScrollTop);
+})
 
 
-    
-}, false);
+//漢堡條
+$('.burger').click(()=>{
+    // console.log("12313");
+    $('.nav_links').toggleClass('nav_active');
+    $('.burger').toggleClass('burger_active')
+})
+
+//nav隱藏
+let lastScrollTop = 0;
+$(window).scroll(function(){
+    if($(this).scrollTop() > lastScrollTop){
+        $('.nav').removeClass('fixed');
+    }else{
+        $('.nav').addClass('fixed');
+    }
+    lastScrollTop = ( $(this).scrollTop() <= 0 ) ? 0 : $(this).scrollTop();
+})
+
+
+
 
 
 
