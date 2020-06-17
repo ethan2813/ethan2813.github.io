@@ -69,7 +69,7 @@ nav#navagation > ul {
 }
 
 nav#navagation > ul > li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav#navagation > ul > li > a {
@@ -91,7 +91,7 @@ nav#navagation > ul > li > a:hover {
   color: beige;
 }
 
-nav#navagation > ul :nth-child(4) ul {
+nav#navagation > ul ul {
   text-decoration: none;
   list-style: none;
   display: none;
@@ -100,11 +100,7 @@ nav#navagation > ul :nth-child(4) ul {
   line-height: 50px;
 }
 
-nav#navagation > ul :nth-child(4) ul li {
-  width: 120px;
-}
-
-nav#navagation > ul :nth-child(4) ul li a {
+nav#navagation > ul ul li a {
   color: black;
   padding: 10px 10px;
   text-decoration: none;
@@ -112,7 +108,7 @@ nav#navagation > ul :nth-child(4) ul li a {
   border-radius: 5px;
 }
 
-nav#navagation > ul :nth-child(4) ul li a:hover {
+nav#navagation > ul ul li a:hover {
   background-color: #126b5f;
   border-radius: 5px;
   text-align: center;
@@ -175,7 +171,7 @@ nav#navagation .burger > div {
         -ms-flex-align: center;
             align-items: center;
   }
-  nav#navagation > ul :nth-child(4) ul {
+  nav#navagation > ul ul {
     display: block;
   }
   nav#navagation .nav_active {
