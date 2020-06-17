@@ -23,9 +23,9 @@ $('.burger').click(()=>{
 let lastScrollTop = 0;
 $(window).scroll(function(){
     if($(this).scrollTop() > lastScrollTop){
-        $('.nav').removeClass('fixed');
+        $('#navagation').removeClass('fixed');
     }else{
-        $('.nav').addClass('fixed');
+        $('#navagation').addClass('fixed');
     }
     lastScrollTop = ( $(this).scrollTop() <= 0 ) ? 0 : $(this).scrollTop();
 })
