@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAA,CACA,MAAM,CAAE,MAAM,CACjB",
+    "sources": [
+        "../../scss/Portfolio_bc.scss"
+    ],
+    "names": [],
+    "file": "Portfolio_bc.min.css"
+}

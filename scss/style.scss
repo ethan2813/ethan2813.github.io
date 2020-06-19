@@ -1,206 +1,5 @@
-$fontStyle_noto:'Noto Serif TC', serif;
-$color-wt:#F2F2F2;
-$color-dwt:rgb(214, 214, 214);
 
-
-body{
-    background-color: $color-wt;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family:$fontStyle_noto;
-}
-
-
-
-* {
-    box-sizing: border-box;
-  }
-
-hr{
-    margin: 30px 0; 
-  }
-
-html{
-    scroll-behavior: smooth;
-}
-
-//////////////////////////////////////////////////////////////////////
-nav#navagation {
-    width: 100%;
-    // height: 500px;
-    // background-color: rgba(141, 149, 173, 0.247);
-    position: fixed;
-    z-index: 4;
-    position: fixed;
-    display: flex;
-    overflow: hidden;
-    top:-150px;
-    transition: 0.5s;
-    // margin: 0 0 50px 0;
-
-    //配合js nav特效
-    &.fixed{
-        position: fixed;
-        top:0px;
-    }
-
-    .slide{
-        >div{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            opacity: 0;
-            animation: slide 15s infinite;
-        }
-    }
-    >ul{
-        width: 100%;
-        display: flex;
-        justify-content: center ;
-        list-style: none;
-        line-height: 100px;
-        text-align: center;
-        padding: 0;
-        z-index: 5;
-        
-
-  
-        >li{
-            // width: 120px;
-            margin: 0 20px;
-            
-
-           >a{
-                text-decoration:none;
-                font-size: 20px;
-                color: black;
-                // position: relative;
-                padding: 10px 10px;
-                background-color:rgb(27, 221, 195);
-                border-radius: 5px;
-
-
-
-                &:hover{
-                    background-color:rgb(18, 107, 95);
-                    border-radius: 5px;
-                    transition: ease-in-out 0.5s;
-                    // width: 120px;
-                    text-align: center;
-                    color: beige;
-                }
-            }
-        }
-    }
-    >ul ul{
-        text-decoration: none;
-        list-style: none;
-        display: none; 
-        text-align: center; 
-        padding: 0;
-        line-height: 50px;
-        
-
-        li{
-            // width: 140px;
-
-            a{
-                
-                color: black;
-                padding: 10px 10px;
-                text-decoration:none;
-                background-color:rgb(27, 221, 195);
-                border-radius: 5px;
-
-
-                
-
-                &:hover{
-                    background-color:rgb(18, 107, 95);
-                    border-radius: 5px;
-                    text-align: center;
-                    transition: ease-in-out 0.5s;
-                    color: beige;
-
-
-
-                }
-            }
-
-        }
-    }
-    >ul :nth-child(4):hover ul{
-        display: block;
-        transition: ease-in-out 0.5s;
-        text-align: center;
-    }
-   
-    .burger{
-        cursor: pointer;
-        margin: 20px 10px;
-        margin-left: auto;
-        display: none;
-        z-index: 5;
-
-
-        >div {
-            width: 25px;
-            height: 3px;
-            background-color: black;
-            margin: 5px;
-            transition: ease-in 0.3s;
-        }
-    }
-
-    @media (max-width:768px) {
-        .burger{
-            display: block;
-        }
-
-        .nav_links{
-            
-           opacity: 0;
-           position: fixed;
-           height: 50vh;
-           line-height: 60px;
-           flex-direction: column;
-           right: -100%;
-           width: 100%;
-           top: 0px;
-           background-color:rgba(242, 242, 242, 0.74);
-            z-index: 5;
-           transition: ease-in-out 0.5s;
-           align-items: center;
-        }
-
-        >ul ul{
-            display: block;
-        }
-
-        .nav_active {
-            right: 0%;
-            opacity: 1;
-            transition: ease-in-out 0.5s;
-            z-index: 5;
-          }
-
-        .burger_active .line1{
-            transform: rotate(45deg) translate(5px, 6px);
-        }
-        .burger_active .line2{
-            opacity: 0;
-        }
-        .burger_active .line3{
-            transform: rotate(-45deg) translate(5px, -6px);
-        }
-
-
-    }
-}
-
+/////////////////////////////////////////////////////////////////////
 #aboutme {
     
     >.title{
@@ -432,12 +231,7 @@ nav#navagation {
     .container >.webDesign{
         text-align: center;
 
-        img{
-            width: 100%;
-            opacity: 1;
-        }
-
-        
+    
         
         .hover_photo {
             margin: 20px 0 50px 0;
@@ -447,15 +241,24 @@ nav#navagation {
             >.hover_photo_in{
                 position: relative;
 
-                
-
-                >img{
+                >a >img{
                     width: 100%;
-                    position: relative; 
+                }
+
+                &:hover img{
+                    opacity: 0.3;
+                    transition: 1s;
+                }
+                //圖片hover效果
+                &:hover {
+                    transform: scale(1.1,1.1);
+                    transition: all 1s ease-in-out;
                 }
                
 
-                >a >p{
+
+                //hover前的before文字位置
+                >.hover_photo_in_before >p{
                     position: absolute;
                     top: calc(50% - 27px);
                     left: calc(50% - 108px);
@@ -463,39 +266,29 @@ nav#navagation {
                     text-shadow: 0.1em 0.1em 0.2em black;
                     font-size: 36px;
                 }
-
-                >.hover_photo_in_h2_after >p{
-                    opacity: 0;
-                }
-
-
-                &:hover img{
-                    opacity: 0.3;
-                    transition: 1s;
-                }
-
-                &:hover {
-                    transform: scale(1.1,1.1);
-                    transition: all 1s ease-in-out;
-                }
-
-                &:hover >.hover_photo_in_h2_before >p{
+                //hover後的before文字特效
+                &:hover >.hover_photo_in_before >p{
                     opacity: 0;
                     transition: 1s;
                 }
-                &:hover >.hover_photo_in_h2_after >p{
+                //hover後的before文字位置
+                >.hover_photo_in_after >p{
+                    position: absolute;
+                    top: calc(50% - 27px);
+                    left: calc(50% - 108px);
+                    color: aliceblue;
+                    text-shadow: 0.1em 0.1em 0.2em black;
+                    font-size: 36px;
+                    opacity: 0;
+
+                }
+                //hover後的before文字特效
+                &:hover >.hover_photo_in_after >p{
+                    transition: 1s;
                     opacity: 1;
-                    transition: 1s;
-                }
+                }  
             }
-            
-            
-            
-           
-            
         }
-      
-        
     }
 }
 //////////////////////////////////////////////////////////////////////
@@ -553,13 +346,58 @@ nav#navagation {
             
             margin: 20px 0;
 
-            
-            >img{
-                width: 100%;
+            .hover_photo{
+                overflow: hidden;
+
+                .hover_photo_in{
+                    position: relative;
+
+
+                    >a >img{
+                        width: 100%;
+                    }
+
+                    &:hover img{
+                        opacity: 0.3;
+                        transition: 1s;
+                    }
+
+                    //圖片hover效果
+                    &:hover {
+                        transform: scale(1.1) ;
+                        transition: all 1s ease-in-out;
+                    }
+                    //hover前的before文字位置
+                    >.hover_photo_in_before >p{
+                        position: absolute;
+                        top: calc(50% - 27px);
+                        left: calc(50% - 152px);
+                        color: aliceblue;
+                        text-shadow: 0.1em 0.1em 0.2em black;
+                        font-size: 36px;
+                    }
+                    //hover後的before文字特效
+                    &:hover .hover_photo_in_before >p{
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    //hover前的after文字位置與特效
+                    >.hover_photo_in_after >p{
+                        position: absolute;
+                        top: calc(50% - 27px);
+                        left: calc(50% - 72px);
+                        color: aliceblue;
+                        text-shadow: 0.1em 0.1em 0.2em black;
+                        font-size: 36px;
+                        opacity: 0;
+                    }
+                    //hover之後的after文字特效
+                    &:hover .hover_photo_in_after >p{
+                        opacity: 1;
+                        transition: 1s;
+                    }
+                }
             }
-            
-
-
         }
     }
 }
@@ -966,54 +804,7 @@ nav#navagation {
     }
 }
 //////////////////////////////////////////////////////////////////////
-button.toTop{
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    border-radius: 33%;
-    opacity: 0.6;
-    background: #000;
-    cursor: pointer;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    display: none;
 
-    &::before,&::after{
-        width: 20px;
-        height: 5px;
-        border-radius: 3px;
-        background-color: #f90;
-        position: absolute;
-        content: "";
-
-    }
-
-    &::before{
-        transform: rotate(-45deg) translate(0%, -90%);
-        left: 0.5rem;
-    }
-    &::after{
-        transform: rotate(45deg) translate(0%, -90%);
-        right: 0.5rem;
-    }
-
-
-}
-//////////////////////////////////////////////////////////////////////
-footer#footer{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(27, 221, 195);
-
-    >p{
-        text-align: center;
-        line-height: 100px;
-        margin: 0;
-    }
-}
 
 
 
