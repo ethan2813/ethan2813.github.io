@@ -159,7 +159,7 @@ nav#navagation .burger > div {
   }
   nav#navagation .nav_links {
     position: fixed;
-    height: 70vh;
+    height: 600px;
     line-height: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
