@@ -1,4 +1,6 @@
-
+$fontStyle_noto:'Noto Serif TC', serif;
+$color-wt:#F2F2F2;
+$color-dwt:rgb(214, 214, 214);
 
 
 #psWorks {
@@ -94,6 +96,8 @@
                     line-height: 25px; 
                     // font-size: 2vmin;
                     margin: 0;
+                    font-size: 18px;
+                    
             }
 
                     h3:nth-child(1){

@@ -1,4 +1,6 @@
-
+$fontStyle_noto:'Noto Serif TC', serif;
+$color-wt:#F2F2F2;
+$color-dwt:rgb(214, 214, 214);
 
 #aiWorks {
     .title{
@@ -35,15 +37,17 @@
                 background-image: url(../img/ai_banner_3.jpg);
                 animation-delay: 10s;
             }
+
+            @keyframes slide2 {
+                10%{ opacity: 1;left:0px}
+                20%{ opacity: 1}
+                60%{ opacity: 0}
+                40%{transform: scale(1.1);right:0px}
+            }
+    
         }
 
-        @keyframes slide2 {
-            10%{ opacity: 1;left:0px}
-            20%{ opacity: 1}
-            60%{ opacity: 0}
-            40%{transform: scale(1.1);right:0px}
-        }
-
+        
         h1{
             position: absolute;
             top: calc(50% - 25px);

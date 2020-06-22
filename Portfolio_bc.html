@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url"content="https://ethan2813.github.io/">
+    <meta property="og:title"content="張益昇個人履歷">
+
+
     <title>Document</title>
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -18,7 +24,8 @@
 </head>
 <body>
     <h1 class="sr-only">My Portfolio</h1>
-    <nav id="navagation" class="nav fixed">
+    <nav id="navagation"
+        class="nav fixed">
         <h2 class="sr-only">導覽列</h2>
         <div class="slide">
             <div></div>
@@ -28,11 +35,18 @@
         <ul class="nav_links">
             <li><a href="index.html#aboutme">關於我</a></li>
             <li><a href="index.html#experience">個人經歷</a></li>
-            <li><a href="index.html#webDesign">網站設計</a></li>
-            <li><a href="">設計作品集</a>
-                <ul>
-                    <li><a href="#psWorks">Photoshop</a></li>
-                    <li><a href="#aiWorks">Illustrator</a></li>
+            <li><a href="index.html#webDesign">網站設計</a>
+                <ul class="webDesign_ul">
+                    <li><a href="./LinChenSe/index.html">小林陳設網站</a></li>
+                    <li><a href="./black_widow/index.html">黑寡婦電影介紹</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#graphicDesign">設計作品集</a>
+                <ul class="graphicDesign_ul">
+                    <li><a href="Portfolio_ps.html">Photoshop</a></li>
+                    <li><a href="Portfolio_ai.html">Illustrator</a></li>
+                    <li><a href="./Portfolio_bc.html">BusinessCard</a></li>
+
 
                 </ul>
             </li>
@@ -45,7 +59,77 @@
 
     </nav>
     <main>
-        
+        <section id="businessCard">
+            <div class="title">
+                <div class="slide">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>business Card Design</h1>
+
+            </div>
+
+            <div class="container">
+                <div class="businessCard_1">
+                    <h1 class="sr-only">橫式名片</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="businessCard_1_top">
+                                <img src="./img/businessCard_1_top.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="businessCard_1_bot_L">
+                                <img src="./img/businessCard_1_bot_1.jpg" alt="">
+                                <img src="./img/businessCard_1_bot_2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="businessCard_1_bot_R">
+                                <H2>創作理念</H2>
+                                <P>希望呈現的風格較為簡單且具有質感，該名片正面左右兩旁的留白，凸顯了中間的訊息，能夠迅速吸引人們的注意。背面的部份加重了Slogan的字體表現，在字句結尾的問號使眼睛的視覺動向帶向右方聯絡資訊，再以順時針的視覺動向將下方的文字區塊流暢地帶過，讓使用者的視覺動態體驗有如順暢的體驗。</P>
+                                <p>使用軟體：photoshop、Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="businessCard_2">
+                    <h1 class="sr-only">直式名片</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="businessCard_2_top">
+                                <img src="./img/businessCard_2_top.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-7">
+                            <div class="businessCard_2_bot_L">
+                                <img src="./img/businessCard_2_bot_1.jpg" alt="">
+                                <img src="./img/businessCard_2_bot_2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="businessCard_2_bot_R">
+                                <H2>創作理念</H2>
+                                <P>正反面以三種不同基調的顏色區分出不同的視覺區塊，鮮明的對比得以凸顯重要的資訊，以固定的配色排列出相互呼應的顏色區塊，使整體視覺感受產生一種協調之美。</p>
+                                <p>使用軟體：photoshop、Illustrator</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                
+
+            </div>
+        </section>
+
+
         <button class="toTop"></button>
     </main>
     <footer id="footer">
