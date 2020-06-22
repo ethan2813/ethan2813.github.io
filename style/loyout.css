@@ -137,7 +137,7 @@ nav#navagation .nav_links > li:nth-child(4):hover .graphicDesign_ul {
 
 nav#navagation .burger {
   cursor: pointer;
-  margin: 20px 10px 100px 10px;
+  margin: 20px 10px 100vh 10px;
   margin-left: auto;
   display: none;
   z-index: 5;
@@ -165,6 +165,11 @@ nav#navagation .burger > div {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 50px;
     right: -100%;
     width: 100%;
     top: 0px;
