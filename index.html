@@ -23,6 +23,8 @@
     <link rel="shortcut icon"
         href="./img/icon.png"
         type="image/x-icon">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -63,7 +65,7 @@
 
     </nav>
     <main>
-        <section id="aboutme">
+        <section id="aboutme" >
             <div class="title">
                 <!-- <div class="slide">
                     <div></div>
@@ -72,7 +74,7 @@
                 </div> -->
             </div>
             <div class="container">
-                <div id="me">
+                <div id="me" data-aos="fade-up">
                     <div class="row">
                         <div class="col-12 col-md-6  offset-md-6">
                             <div class="title">
@@ -91,7 +93,7 @@
 
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="me_article">
+                            <div class="me_article" >
                                 <p> 我叫張益昇，目標往前端工程師發展，而生在這個資訊爆炸的年代，也必須保持對新知識的渴望來跟進時代的科技演變，程式語言對我來說一直都非常感興趣，未來希望可以朝向前端工程師的職務發展，雖然轉職的道路會比一般人更加辛苦，但在這個年代，每個人都有可能身兼多職，只有更努力才能達到自己的目標!
                                 </p>
                             </div>
@@ -101,7 +103,7 @@
                 </div>
                 <hr>
 
-                <div id="experience">
+                <div id="experience" >
                     <div class="row">
                         <div class="col-12 col-md-6 ">
                             <div class="title">
@@ -110,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="RWD">
+                    <div class="RWD" data-aos="fade-up">
                         <div class="row ">
                             <div class="col-12 col-md-6 order-1 order-md-0">
                                 <div class="experience_1_article">
@@ -130,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="taiwanPatent">
+                    <div class="taiwanPatent" data-aos="fade-up">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="experience_2_picture">
@@ -176,9 +178,9 @@
 
                     </div> -->
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6" >
                             <h2 class="sr-only">小林陳舍網站</h2>
-                            <div class="hover_photo">
+                            <div class="hover_photo" data-aos="fade-up">
                                 <div class="hover_photo_in">
                                     <a href="./LinChenSe/index.html">
                                         <img src="./img/LinChenSe01.jpg"
@@ -202,7 +204,7 @@
 
                         <div class="col-12 col-md-6">
                             <h2 class="sr-only">黑寡婦電影介紹</h2>
-                            <div class="hover_photo">
+                            <div class="hover_photo" data-aos="fade-up">
                                 <div class="hover_photo_in">
                                     <a href="./black_widow/index.html">
                                         <img src="./img/black_widow01.jpg"
@@ -238,7 +240,7 @@
             </div>
 
             <div class="container">
-                <div class="ps">
+                <div class="ps" data-aos="fade-up">
                     <h2 class="sr-only">Photoshop 作品集</h2>
 
                     <div class="hover_photo">
@@ -256,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ai">
+                <div class="ai" data-aos="fade-up">
                     <h2 class="sr-only">Illustration 作品集</h2>
 
                     <div class="hover_photo">
@@ -274,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bc">
+                <div class="bc" data-aos="fade-up">
                     <h2 class="sr-only">Business Card 作品集</h2>
 
                     <div class="hover_photo">
@@ -332,6 +334,13 @@
     <!-- js 掛載 -->
     <script src="/js/index.js"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS初始化 -->
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
