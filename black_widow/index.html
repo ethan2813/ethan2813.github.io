@@ -3,11 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>黑寡婦電影介紹</title>
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="./css/layout.css">
+    <link rel="stylesheet"
+        href="./css/index.css">
+    <link rel="shortcut icon"
+        href="./img/icon.png"
+        type="image/x-icon">
 
     <style>
         #logo img {
@@ -20,74 +25,55 @@
             }
         }
 
-        
 
         #main-content #bg {
+            
+            position: relative;
+            height: 100%;
             width: 100%;
             height: 100vh;
-            background-color: rgb(0, 0, 0);
-            background-image: url(./img/01.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: absolute;
+            background: #000000;
+            padding: 2rem;
+            background: url("./img/01.jpg") no-repeat fixed;
             overflow: hidden;
-
-
+            background-size: cover;
+            background-position: center;
             
         }
 
-        .wave-position {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /* transition: 0.3s; */
-        }
+        
 
         .wave {
-            position: absolute;
-            /* top: calc((50% - 300px)/2);
-            left: calc((10% - 300px)/2); */
-
-            top: -150px;
-            left: -150px;
-            /* transform: translate(-50%, -50%); */
-            width: 300px;
-            height: 300px;
-            border-radius: 300px;
-            background: url('./img/01_2.jpg');
-            background-attachment: fixed;
-            background-size: contain;
-            box-shadow: 0 0 10px 10px rgba(199, 199, 199, 0.5);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
             
-
-
-            /* z-index: 2; */
-            /* background-size: auto 200%; */
+            z-index: 5;
+            position: absolute;
+            top: calc(50% - 10rem);
+            left: calc(50% - 10rem);
+            width: 30rem;
+            height: 30rem;
+            background: url("./img/01_2.jpg") no-repeat fixed;
+            border-radius: 50%;
+            background-size:cover;
+            background-position: center;
+            -webkit-mask-image: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 56%, rgba(255, 255, 255, 0) 70%);
         }
 
-        /* section {
-            position: relative;
-        } */
 
-        #main-content{
-            position: relative;
-        }
+
     </style>
 </head>
 
 <body>
     <nav id="nav">
-        <i id="han" class="fas fa-bars "></i>
+        <i id="han"
+            class="fas fa-bars "></i>
         <div class="container d-flex justify-content-around">
             <div id="logo">
-                <img src="./img/logo.jpg" alt="">
+                <img src="./img/logo.jpg"
+                    alt="">
             </div>
-            <div id="nav-menu" class="d-flex justify-content-end align-items-center">
+            <div id="nav-menu"
+                class="d-flex justify-content-end align-items-center">
                 <a href="#indroduction">
                     <div class="nav-btn">電影介紹</div>
                 </a>
@@ -107,13 +93,13 @@
 
     <!-- 主要要填的區塊 -->
     <main id="main-content">
-        <section id="bg" class="parallax">
-            <div class="wave-position">
-                <div class="wave"></div>
-            </div>
+        <section id="bg"
+            class="parallax">
+            <div class="wave"></div>
         </section>
 
-        <section id="indroduction" class="">
+        <section id="indroduction"
+            class="">
             <div class="container">
                 <div class="information d-flex">
                     <div class="text">
@@ -136,8 +122,10 @@
             </div>
         </section>
 
-        <section id="staff" class="">
-            <div id="staff-title" class="container">主要角色</div>
+        <section id="staff"
+            class="">
+            <div id="staff-title"
+                class="container">主要角色</div>
             <div class="container d-flex">
 
                 <div class="card">
@@ -169,11 +157,13 @@
             </div>
         </section>
 
-        <section id="parallax" class="d-flex justify-content-center align-items-center">
+        <section id="parallax"
+            class="d-flex justify-content-center align-items-center">
             <div class="text-box">你可以在靠近一點</div>
         </section>
 
-        <section id="course" class="section-padding">
+        <section id="course"
+            class="section-padding">
             <div class="container d-flex">
                 <div class="photo"></div>
                 <div class="text">
@@ -184,7 +174,8 @@
             </div>
         </section>
 
-        <a href="#"><i id="gotop" class="fas fa-chevron-circle-up"></i></a>
+        <a href="#"><i id="gotop"
+                class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
@@ -200,7 +191,8 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"
-        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -210,23 +202,14 @@
 
 
     <script>
-        (function () {
-            // var bg = document.querySelector('#bg')
-
-            $('#bg').mousemove(function (e) {
-                console.log("124");
-
-                // console.log(e);
-                // console.log("x" + e.pageX + " " + "y" + e.pageY);
-                var mx = e.pageX;
-                var my = e.pageY;
-                // $('.wave-position').css({ top: my, left: mx });
-
-                // 去改變點的位置為滑鼠的yx座標
-                $('.wave-position').css("left", mx).css("top", my);
+        //CODEPEN複製的撥云見霧效果
+        $(document).ready(function () {
+            var $reveal = $(".wave"),
+                revealWHalf = $reveal.width() / 2;
+            $(document).on("mousemove", function (e) {
+                $reveal.css({ "left": e.pageX - revealWHalf, "top": e.pageY - revealWHalf });
             });
-        })();
-
+        });
 
     </script>
 

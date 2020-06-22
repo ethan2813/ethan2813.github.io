@@ -90,6 +90,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  #aboutme .container #me .title > h1 {
+    text-align: center;
+  }
+}
+
 #webDesign > .title {
   overflow: hidden;
   position: relative;

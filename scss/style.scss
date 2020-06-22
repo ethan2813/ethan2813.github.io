@@ -27,6 +27,7 @@ $color-dwt:rgb(214, 214, 214);
                     padding:20px 0px;
                     text-align: left;
                 }
+
             }
             //關於我照片
             .me_picture{
@@ -135,6 +136,18 @@ $color-dwt:rgb(214, 214, 214);
                 }
                 
             }
+        }
+    }
+
+    @media(max-width: 768px){
+        .container{
+                #me{
+                    .title{
+                        >h1{
+                            text-align: center;
+                        }
+                    }
+                }
         }
     }
 
