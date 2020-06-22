@@ -60,7 +60,7 @@ nav#navagation {
     //第一層選單
     .nav_links{
         width: 100%;
-        height: 100%;
+        height: 70vh;
         display: flex;
         justify-content: center ;
         list-style: none;
@@ -162,7 +162,7 @@ nav#navagation {
         .nav_links{
         //    opacity: 0;
            position: fixed;
-           height: 600px;
+           height: 70vh;
            line-height: 60px;
            flex-direction: column;
            right: -100%;
