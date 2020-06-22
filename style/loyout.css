@@ -129,10 +129,10 @@ nav#navagation .burger {
 }
 
 nav#navagation .burger > div {
-  width: 25px;
-  height: 3px;
+  width: 40px;
+  height: 4px;
   background-color: black;
-  margin: 5px;
+  margin: 10px;
   -webkit-transition: ease-in 0.3s;
   -o-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
@@ -188,24 +188,24 @@ nav#navagation .burger > div {
     z-index: 5;
   }
   nav#navagation .burger_active .line1 {
-    -webkit-transform: rotate(45deg) translate(5px, 6px);
-        -ms-transform: rotate(45deg) translate(5px, 6px);
-            transform: rotate(45deg) translate(5px, 6px);
+    -webkit-transform: rotate(45deg) translate(13px, 6px);
+        -ms-transform: rotate(45deg) translate(13px, 6px);
+            transform: rotate(45deg) translate(13px, 6px);
   }
   nav#navagation .burger_active .line2 {
     opacity: 0;
   }
   nav#navagation .burger_active .line3 {
-    -webkit-transform: rotate(-45deg) translate(5px, -6px);
-        -ms-transform: rotate(-45deg) translate(5px, -6px);
-            transform: rotate(-45deg) translate(5px, -6px);
+    -webkit-transform: rotate(-45deg) translate(13px, -6px);
+        -ms-transform: rotate(-45deg) translate(13px, -6px);
+            transform: rotate(-45deg) translate(13px, -6px);
   }
 }
 
 button.toTop {
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -214,16 +214,16 @@ button.toTop {
   background: #000;
   cursor: pointer;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 20px;
   display: none;
 }
 
 button.toTop::before, button.toTop::after {
-  width: 20px;
+  width: 37px;
   height: 5px;
   border-radius: 3px;
-  background-color: #f90;
+  background-color: #e7ca9f;
   position: absolute;
   content: "";
 }
