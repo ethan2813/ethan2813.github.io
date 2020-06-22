@@ -58,8 +58,9 @@ nav#navagation {
     }
 
     //第一層選單
-    >ul{
+    .nav_links{
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center ;
         list-style: none;
@@ -67,9 +68,7 @@ nav#navagation {
         text-align: center;
         padding: 0;
         z-index: 5;
-        
 
-  
         >li{
             // width: 120px;
             margin: 0 20px;
@@ -95,61 +94,49 @@ nav#navagation {
                     color: beige;
                 }
             }
-        }
-    }
-    //第二層選單
-    >ul ul{
-        text-decoration: none;
-        list-style: none;
-        display: none; 
-        text-align: center; 
-        padding: 0;
-        line-height: 50px;
-        
+            >ul{
+                text-decoration: none;
+                list-style: none;
+                display: none; 
+                text-align: center; 
+                padding: 0;
+                line-height: 50px;
 
-        li{
-            // width: 140px;
+                >li{
+                    a{
+                        color: black;
+                        padding: 10px 10px;
+                        text-decoration:none;
+                        background-color:rgb(27, 221, 195);
+                        border-radius: 5px;
 
-            a{
-                
-                color: black;
-                padding: 10px 10px;
-                text-decoration:none;
-                background-color:rgb(27, 221, 195);
-                border-radius: 5px;
+                        &:hover{
+                            background-color:rgb(18, 107, 95);
+                            border-radius: 5px;
+                            text-align: center;
+                            transition: ease-in-out 0.5s;
+                            color: beige;
+                        }
+                    }
 
-
-                
-
-                &:hover{
-                    background-color:rgb(18, 107, 95);
-                    border-radius: 5px;
-                    text-align: center;
-                    transition: ease-in-out 0.5s;
-                    color: beige;
-
-
-
+                    
+                    
                 }
             }
 
+            //第二層選單
+            &:nth-child(3):hover .webDesign_ul{
+                display: block;
+                text-align: center;
+                transition: ease-in-out 0.5s;
+            }
+            &:nth-child(4):hover .graphicDesign_ul{
+                display: block;
+                text-align: center;
+                transition: ease-in-out 0.5s;
+            }
         }
     }
-   >ul li:nth-child(3):hover .webDesign_ul{
-       display: block;
-       text-align: center;
-       transition: ease-in-out 0.5s;
-
-
-
-   } 
-
-    >ul >li:nth-child(4):hover .graphicDesign_ul{
-        display: block;
-        transition: ease-in-out 0.5s;
-        text-align: center;
-    }
-   
     .burger{
         cursor: pointer;
         margin: 20px 10px;

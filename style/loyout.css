@@ -51,8 +51,9 @@ nav#navagation .slide > div {
           animation: slide 15s infinite;
 }
 
-nav#navagation > ul {
+nav#navagation .nav_links {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,11 +69,11 @@ nav#navagation > ul {
   z-index: 5;
 }
 
-nav#navagation > ul > li {
+nav#navagation .nav_links > li {
   margin: 0 20px;
 }
 
-nav#navagation > ul > li > a {
+nav#navagation .nav_links > li > a {
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -81,7 +82,7 @@ nav#navagation > ul > li > a {
   border-radius: 5px;
 }
 
-nav#navagation > ul > li > a:hover {
+nav#navagation .nav_links > li > a:hover {
   background-color: #126b5f;
   border-radius: 5px;
   -webkit-transition: ease-in-out 0.5s;
@@ -91,7 +92,7 @@ nav#navagation > ul > li > a:hover {
   color: beige;
 }
 
-nav#navagation > ul ul {
+nav#navagation .nav_links > li > ul {
   text-decoration: none;
   list-style: none;
   display: none;
@@ -100,7 +101,7 @@ nav#navagation > ul ul {
   line-height: 50px;
 }
 
-nav#navagation > ul ul li a {
+nav#navagation .nav_links > li > ul > li a {
   color: black;
   padding: 10px 10px;
   text-decoration: none;
@@ -108,7 +109,7 @@ nav#navagation > ul ul li a {
   border-radius: 5px;
 }
 
-nav#navagation > ul ul li a:hover {
+nav#navagation .nav_links > li > ul > li a:hover {
   background-color: #126b5f;
   border-radius: 5px;
   text-align: center;
@@ -118,7 +119,7 @@ nav#navagation > ul ul li a:hover {
   color: beige;
 }
 
-nav#navagation > ul li:nth-child(3):hover .webDesign_ul {
+nav#navagation .nav_links > li:nth-child(3):hover .webDesign_ul {
   display: block;
   text-align: center;
   -webkit-transition: ease-in-out 0.5s;
@@ -126,12 +127,12 @@ nav#navagation > ul li:nth-child(3):hover .webDesign_ul {
   transition: ease-in-out 0.5s;
 }
 
-nav#navagation > ul > li:nth-child(4):hover .graphicDesign_ul {
+nav#navagation .nav_links > li:nth-child(4):hover .graphicDesign_ul {
   display: block;
+  text-align: center;
   -webkit-transition: ease-in-out 0.5s;
   -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
-  text-align: center;
 }
 
 nav#navagation .burger {
