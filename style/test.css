@@ -1,4 +1,4 @@
-.nav_links {
+#navagation .nav_links {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -15,11 +15,11 @@
   padding: 0;
 }
 
-.nav_links > li {
+#navagation .nav_links > li {
   margin: 0 20px;
 }
 
-.nav_links > li > a {
+#navagation .nav_links > li > a {
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -28,7 +28,7 @@
   border-radius: 5px;
 }
 
-.nav_links > li > a:hover {
+#navagation .nav_links > li > a:hover {
   background-color: #126b5f;
   border-radius: 5px;
   -webkit-transition: ease-in-out 0.5s;
@@ -38,7 +38,7 @@
   color: beige;
 }
 
-.nav_links > li > ul {
+#navagation .nav_links > li > ul {
   text-decoration: none;
   list-style: none;
   display: none;
@@ -47,7 +47,7 @@
   line-height: 50px;
 }
 
-.nav_links > li > ul > li a {
+#navagation .nav_links > li > ul > li a {
   color: black;
   padding: 10px 10px;
   text-decoration: none;
@@ -55,7 +55,7 @@
   border-radius: 5px;
 }
 
-.nav_links > li > ul > li a:hover {
+#navagation .nav_links > li > ul > li a:hover {
   background-color: #126b5f;
   border-radius: 5px;
   text-align: center;
@@ -65,7 +65,7 @@
   color: beige;
 }
 
-.nav_links > li:nth-child(3):hover .webDesign_ul {
+#navagation .nav_links > li:nth-child(3):hover .webDesign_ul {
   display: block;
   text-align: center;
   -webkit-transition: ease-in-out 0.5s;
@@ -73,7 +73,7 @@
   transition: ease-in-out 0.5s;
 }
 
-.nav_links > li:nth-child(4):hover .graphicDesign_ul {
+#navagation .nav_links > li:nth-child(4):hover .graphicDesign_ul {
   display: block;
   text-align: center;
   -webkit-transition: ease-in-out 0.5s;
@@ -81,7 +81,7 @@
   transition: ease-in-out 0.5s;
 }
 
-.burger {
+#navagation .burger {
   cursor: pointer;
   margin: 20px 10px 20px 10px;
   margin-left: auto;
@@ -89,7 +89,7 @@
   z-index: 4;
 }
 
-.burger > div {
+#navagation .burger > div {
   width: 25px;
   height: 3px;
   background-color: black;
@@ -100,10 +100,10 @@
 }
 
 @media (max-width: 768px) {
-  .burger {
+  #navagation .burger {
     display: block;
   }
-  .nav_links {
+  #navagation .nav_links {
     height: calc(100vh - 69px);
     opacity: 0;
     position: fixed;
@@ -130,10 +130,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .nav_links .webDesign_ul, .nav_links .graphicDesign_ul {
+  #navagation .nav_links .webDesign_ul, #navagation .nav_links .graphicDesign_ul {
     display: block;
   }
-  .nav_active {
+  #navagation .nav_active {
     right: 0%;
     opacity: 1;
     -webkit-transition: ease-in-out 0.5s;
@@ -141,15 +141,15 @@
     transition: ease-in-out 0.5s;
     z-index: 5;
   }
-  .burger_active .line1 {
+  #navagation .burger_active .line1 {
     -webkit-transform: rotate(45deg) translate(5px, 6px);
         -ms-transform: rotate(45deg) translate(5px, 6px);
             transform: rotate(45deg) translate(5px, 6px);
   }
-  .burger_active .line2 {
+  #navagation .burger_active .line2 {
     opacity: 0;
   }
-  .burger_active .line3 {
+  #navagation .burger_active .line3 {
     -webkit-transform: rotate(-45deg) translate(5px, -6px);
         -ms-transform: rotate(-45deg) translate(5px, -6px);
             transform: rotate(-45deg) translate(5px, -6px);
