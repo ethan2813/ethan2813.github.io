@@ -28,10 +28,10 @@ html{
 
 nav#navagation {
     width: 100%;
-    // height: 500px;
+    // height: 100%;
+    
     // background-color: rgba(141, 149, 173, 0.247);
-    position: fixed;
-    z-index: 4;
+    z-index: 3;
     position: fixed;
     display: flex;
     overflow: hidden;
@@ -41,7 +41,7 @@ nav#navagation {
 
     //配合js nav特效
     &.fixed{
-        position: fixed;
+        // position: fixed;
         top:0px;
     }
 
@@ -59,7 +59,8 @@ nav#navagation {
 
     //第一層選單
     .nav_links{
-        
+       
+        // z-index: 3;
         width: 100%;
         height: 100%;
         display: flex;

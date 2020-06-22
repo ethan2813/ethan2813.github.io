@@ -21,8 +21,7 @@ html {
 
 nav#navagation {
   width: 100%;
-  position: fixed;
-  z-index: 4;
+  z-index: 3;
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -36,7 +35,6 @@ nav#navagation {
 }
 
 nav#navagation.fixed {
-  position: fixed;
   top: 0px;
 }
 
