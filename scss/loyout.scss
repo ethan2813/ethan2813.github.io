@@ -160,7 +160,6 @@ nav#navagation {
         }
 
         .nav_links{
-            
            opacity: 0;
            position: fixed;
            height: 70vh;
@@ -173,12 +172,14 @@ nav#navagation {
             z-index: 5;
            transition: ease-in-out 0.5s;
            align-items: center;
-        }
 
-        >ul ul{
+           .webDesign_ul,.graphicDesign_ul{
             display: block;
+
+           }
         }
 
+    
         .nav_active {
             right: 0%;
             opacity: 1;

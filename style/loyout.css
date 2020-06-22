@@ -180,7 +180,7 @@ nav#navagation .burger > div {
         -ms-flex-align: center;
             align-items: center;
   }
-  nav#navagation > ul ul {
+  nav#navagation .nav_links .webDesign_ul, nav#navagation .nav_links .graphicDesign_ul {
     display: block;
   }
   nav#navagation .nav_active {
