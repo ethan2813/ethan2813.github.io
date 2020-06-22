@@ -27,7 +27,9 @@ nav#navagation {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   top: -150px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -38,19 +40,7 @@ nav#navagation.fixed {
   top: 0px;
 }
 
-nav#navagation .slide > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  opacity: 0;
-  -webkit-animation: slide 15s infinite;
-          animation: slide 15s infinite;
-}
-
 nav#navagation .nav_links {
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -135,9 +125,7 @@ nav#navagation .nav_links > li:nth-child(4):hover .graphicDesign_ul {
 nav#navagation .burger {
   cursor: pointer;
   margin: 20px 10px 20px 10px;
-  margin-left: auto;
   display: none;
-  z-index: 4;
 }
 
 nav#navagation .burger > div {
@@ -151,6 +139,12 @@ nav#navagation .burger > div {
 }
 
 @media (max-width: 768px) {
+  nav#navagation {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   nav#navagation .burger {
     display: block;
   }

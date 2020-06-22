@@ -1,4 +1,15 @@
+body{
+    height: 500vh;
+}
+
 #navagation{
+    position: fixed;
+    top:-150px;
+    transition: 0.5s;
+
+    &.fixed{
+        top:0px;
+    }
     .nav_links{
         
         width: 100%;
