@@ -158,7 +158,6 @@ nav#navagation .burger > div {
     display: block;
   }
   nav#navagation .nav_links {
-    opacity: 0;
     position: fixed;
     height: 70vh;
     line-height: 60px;
