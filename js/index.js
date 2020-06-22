@@ -1,7 +1,8 @@
 
 //toTop
 $('.toTop').click(function(){
-    $('html,body').animate({scrollTop:0},300);
+
+    $('html,body', parent.document).animate({scrollTop:0},300);
 });
 $(window).scroll(function(){
     if($(this).scrollTop() > 500){
