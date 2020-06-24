@@ -209,12 +209,27 @@ $color-dwt:rgb(214, 214, 214);
 
     }
     .container >.webDesign{
-        text-align: center;
+        // text-align: center;
 
+        .subtitle{
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        //文字
+        .article{
+            margin: 10px 0 40px 0;
+
+            >p{
+                margin: 0;
+                line-height: 30px;
+            }
+
+
+        }
     
-        
+        //圖片效果
         .hover_photo {
-            margin: 20px 0 50px 0;
+            margin: 10px 0 10px 0;
             overflow: hidden;
             
 

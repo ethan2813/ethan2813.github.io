@@ -171,12 +171,22 @@
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-#webDesign .container > .webDesign {
-  text-align: center;
+#webDesign .container > .webDesign .subtitle {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+#webDesign .container > .webDesign .article {
+  margin: 10px 0 40px 0;
+}
+
+#webDesign .container > .webDesign .article > p {
+  margin: 0;
+  line-height: 30px;
 }
 
 #webDesign .container > .webDesign .hover_photo {
-  margin: 20px 0 50px 0;
+  margin: 10px 0 10px 0;
   overflow: hidden;
 }
 
