@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div class="app">
+        路人a體脂肪：<input type="text" v-model='a'>
+        <br>
+        路人b體脂肪：<input type="text" v-model='b'>
+
+        <ul>
+            <li>
+                誰的體脂比較重？：{{whoHeavy}}
+            </li>
+        </ul>
+    </div>
+<body>
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 使用 v-model 雙向繫結 input 輸入內容與資料 data -->
+    <!-- 使用 @keyup.enter 和 methods 關聯事件 -->
+    <div class="app">
+        <input type="text"
+            placeholder='請輸入代辦事項'
+            v-model='newtodo'
+            @keyup.enter='addtodo(newtodo)'>
+
+        <h2>事項列表</h2>
+        <ul>
+            <li v-for='todo in todos'>
+                {{todo.content}}
+                <button type='button' @click.prevent='removetodo(todo)'>刪除</button>
+            </li>
+        </ul>
+    </div>
+
+ 
+
+
+
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

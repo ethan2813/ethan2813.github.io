@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var time = 7000;//倒數7秒
+  !function MyCounter(){
+    if(time<=0){
+      //倒數完成
+    }else{
+        document.write((time/1000 + 'sec...'))
+    //   console.log((time/1000) + " sec...");
+      setTimeout(MyCounter, 1000);
+    }
+    time-=1000; 
+  }();
+    </script>
+</body>
+</html>

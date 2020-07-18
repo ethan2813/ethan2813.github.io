@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text"
+            v-model="message">
+        <div class="hi">
+            {{message}}
+        </div>
+        <h2>顏色列表</h2>
+        <ul>
+            <li v-for='color in colors'>
+                {{color}}
+            </li>
+        </ul>
+        <h2>各家庭的父親</h2>
+        <ul>
+            <li v-for='item in home'
+                v-on:click='myFa(item.father)'>
+                {{item.father}}
+            </li>
+        </ul>
+    </div>
+
+    
+
+
+
+    <!-- Vue -->
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

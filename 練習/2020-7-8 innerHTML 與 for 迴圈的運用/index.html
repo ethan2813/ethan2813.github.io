@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="list"> </ul>
+
+    <script>
+        //innerHTML 與 for 迴圈的運用
+   
+        var names=[
+            {
+                name:'ethan'
+            },
+            {
+                name:'joanne'
+            },
+            {
+                name:'eason'
+            }
+        ];
+
+        var el = document.querySelector('.list');
+        var Len = names.length;
+        var str = "";
+        // .innerHTML 有一個特性每次輸出前會清空所有的設定，所以所有的標籤跟文字都會不見
+        //他是為了要解決 .innerHTML 這個問題，所以創造來存放累加字串的
+
+        for(var i=0;i<Len;i++){
+            var content =`<li>${names[i].name}</li>`
+            str += content
+            console.log(str)
+        }
+
+        el.innerHTML = str;
+
+  
+
+    </script>
+</body>
+
+</html>

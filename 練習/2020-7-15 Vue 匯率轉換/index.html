@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>輸入台幣：<input type="text" V-model='NT'></p>
+        <ul>
+            <li>日幣：{{JPY}}</li>
+            <li>美金：{{USD}}</li>
+        </ul>
+    </div>
+
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
