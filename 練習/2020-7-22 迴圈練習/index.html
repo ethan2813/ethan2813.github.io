@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var people_filter = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+        // filter() 
+        //會回傳一個陣列，其條件是 return 後方為 true 的物件，很適合用在搜尋符合條件的資料。
+        var filterEmpty = people_filter.filter(function (item, index, array) {
+        });
+        console.log(filterEmpty)// 沒有條件，會是一個空陣列
+
+
+
+        var filterAge5 = people_filter.filter(function (item, index, array) {
+            return item.age > 5;
+        });
+        console.log(filterAge5) //取得大於五歲的
+
+
+
+        var filterDouble = people_filter.filter(function (item, index, array) {
+            return index % 2 === 1;
+        })
+            ; console.log(filterDouble) //取得陣列中雙數的物件
+
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        var people_find = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+        //find()
+        //find() 與 filter() 很像，但 find() 只會回傳一次值，且是第一次為 true 的值。
+        var findEmpty = people_find.find(function (item, index, array) {
+        });
+        console.log(findEmpty) // 沒有條件，會是 undefined
+
+
+
+        var findAge = people_find.find(function (item, index, array) {
+            return item.age > 5;  // 取得大於五歲的
+        });
+        console.log(findAge) // 雖然答案有兩個，但只會回傳第一次為true的物件。
+
+
+
+        var findLike = people_find.find(function (item, index, array) {
+            return item.like === '蘿蔔泥';
+        });
+        console.log(findLike)
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        var people_forEach = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+        //forEach()
+        //forEach 是最簡單的陣列涵式，不會額外回傳值，只會單純執行陣列中的值或是物件。
+        var forEachIt = people_forEach.forEach(function (item, index, array) {
+            console.log(item, index, array); // 物件, 索引, 全部陣列
+            return item //forEach 沒在return，所以寫了也沒用
+        });
+        console.log(forEachIt) //會顯示 undefined
+
+
+
+        people_forEach.forEach(function (item, index, array) {
+            item.age = item.age + 1; // forEach 就如同 for，不過寫法更容易
+        });
+        console.log(people_forEach) //全部age +1
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        var people_map = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+        //map()
+        //使用map()需要回傳一個值，會透過涵式內回傳的值組成一個陣列，
+        //如果不回傳則是 undefined，回傳數量等於原始陣列的長度，
+        //很適合將原始的變數運算後重新組合一個新的陣列。
+        var mapEmpty = people_map.map(function (item, index, array) {
+        });
+        console.log(mapEmpty) // [undefined, undefined, undefined, undefined]
+
+
+        var mapAge5 = people_map.map(function (item, index, array) {
+            return item.age > 5; //比較大於5歲的
+        });
+        console.log(mapAge5)
+
+
+
+
+        var mapEat = people_map.map(function (item, index, array) {
+            if (item.like !== '蘿蔔泥') {
+                // return item.like +'好吃';
+                return `${item.like} 好吃`;   //不是蘿蔔泥會加一個好吃
+            } else {
+                // return item.like +'不好吃'
+                return `${item.like} 不好吃` //是蘿蔔泥會加一個不好吃
+            }
+        });
+        console.log(mapEat)
+
+
+
+        var myArr = people_map.map(function (item, index, array) {
+            return item.age + 1;
+        })
+        console.log(myArr) ////全部age +1
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        var people_every = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+
+        // every()
+        //every() 可以檢查所有的陣列是否符合條件，這僅會回傳一個值 true or false，可以用來檢查陣列中的內容是否符合特定條件。
+        var ans = people_every.every(function (item, index, array) {
+            return item.age > 10
+        });
+        console.log(ans)// false: 只要有部分不符合，則為 false
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        var people_some = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+        //some()
+        //some() 與 every() 非常接近，都是回傳 true or false，差異僅在 every() 需完全符合，some() 僅需要部分符合。
+        var ans2 = people_some.some(function (item) {
+            return item.age > 10;
+        })
+        console.log(ans2) // true: 只要有部分符合，則為 true
+
+        ///////////////////////////////////////////////////////////////////////////
+
+        //reduce()
+        //reduce() 和其他幾個差異就很大了，他可以與前一個回傳的值再次作運算，參數包含以下：
+        //accumulator: 前一個參數，如果是第一個陣列的話，值是以另外傳入或初始化的值
+        //currentValue: 當前變數
+        //currentIndex: 當前索引
+        //array: 全部陣列
+
+
+        var people_reduce = [
+            {
+                name: 'Ethan',
+                like: '玉米濃湯',
+                age: 28
+            },
+            {
+                name: 'Joanne',
+                like: '韓式料理',
+                age: 26
+            },
+            {
+                name: 'Bobo',
+                like: '蘿蔔泥',
+                age: 1
+            },
+            {
+                name: '滷蛋',
+                like: '蘿蔔泥',
+                age: 3
+            }
+        ];
+
+
+        var ageAdd = people_reduce.reduce(function (accumulator, currentValue, currentIndex, array) {
+            return accumulator + currentValue.age;
+            // return currentValue;
+        }, 0);
+        console.log(ageAdd) //年紀的加總
+
+        var myArr = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        var newArr = myArr.reduce(function (accumulator, currentValue, currentIndex, array) {
+            return accumulator.concat(currentValue)
+           
+        }, []);
+        console.log(newArr)
+
+
+        var myArr = [
+            'C/C++',
+            'JavaScript',
+            'Ruby',
+            'Java',
+            'Objective-C',
+            'JavaScript',
+            'PHP',
+        
+
+        ];
+        
+
+        var newARR = myArr.reduce(function(aaa,bbb){
+            if(aaa.hasOwnProperty(bbb)){
+                aaa[bbb]++
+            }else{
+                aaa[bbb] = 1
+            }
+            return aaa;
+        },{});
+
+        console.log(newARR)
+
+
+    </script>
+</body>
+
+</html>
