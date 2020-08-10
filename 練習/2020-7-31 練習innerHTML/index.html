@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 100%;
+            height: 300px;
+            background: gray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .boxin {
+            width: 100px;
+            height: 300px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head"></div>
+    <div class="box"
+        onclick="creatbox(1)">1</div>
+    <div class="box"
+        onclick="creatbox(2)">2</div>
+    <div class="box"
+        onclick="creatbox(3)">3</div>
+    <div class="box"
+        onclick="creatbox(4)">4</div>
+
+       
+
+    <script>
+        var head = document.querySelector('.head');
+        var box = document.querySelector('.box');
+        var clickout = 0;
+
+        // function creatbox(count) {
+        //     if (clickout < 4) {
+        //         for (let index = 0; index < count; index++) {
+        //             head.innerHTML += '<div class="boxin"></div>';
+        //             clickout += 1;
+        //         }
+
+        //     } else {
+        //         console.log('超過數目了')
+        //     }
+        // }
+
+      function creatbox(count){
+          if(clickout < 4){
+              for(let index = 0 ; index < count ; index++){
+                  head.innerHTML += '<div class="boxin"></div>'
+                  clickout += 1;
+              }
+
+          }else{
+              console.log('超過了')
+          }
+      }
+
+
+
+
+        
+    </script>
+</body>
+
+</html>

@@ -297,26 +297,29 @@
             }
         ];
 
-
+        //年紀的加總
         var ageAdd = people_reduce.reduce(function (accumulator, currentValue, currentIndex, array) {
             return accumulator + currentValue.age;
-            // return currentValue;
         }, 0);
-        console.log(ageAdd) //年紀的加總
+        console.log(ageAdd)
 
-        var myArr = [
+
+        //資料扁平化
+        var maxArr = [
             [1, 2, 3],
             [4, 5, 6],
             [7, 8, 9]
         ];
 
-        var newArr = myArr.reduce(function (accumulator, currentValue, currentIndex, array) {
-            return accumulator.concat(currentValue)
-           
+        var max = maxArr.reduce(function (aaa, bbb) {
+            return aaa.concat(bbb)
         }, []);
-        console.log(newArr)
+        console.log(max)
 
 
+
+
+        //利用 .reduce() 進行資料歸納和統計
         var myArr = [
             'C/C++',
             'JavaScript',
@@ -325,21 +328,66 @@
             'Objective-C',
             'JavaScript',
             'PHP',
-        
-
         ];
-        
-
-        var newARR = myArr.reduce(function(aaa,bbb){
-            if(aaa.hasOwnProperty(bbb)){
+        var maxArr = myArr.reduce(function (aaa, bbb) {
+            if (aaa.hasOwnProperty(bbb)) {
                 aaa[bbb]++
-            }else{
-                aaa[bbb] = 1
+            } else {
+                aaa[bbb] = 1;
             }
-            return aaa;
-        },{});
+            return aaa
+        }, []);
+        console.log(maxArr)
 
-        console.log(newARR)
+
+
+
+        //把 .map() 和 .reduce() 串接起來
+        var abcArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var result = abcArr
+            .map(function (item) {
+                if (item > 5)
+                    item = 5
+                return item
+            })
+            .reduce(function (accumulator, currentValue) {
+                return accumulator + currentValue
+            }, 0)
+        console.log(result)
+
+        //如果想要處理的資料是 Object 的形式
+        var data = {
+            'Fred': 1,
+            'Leon': 2,
+            'Wesley': 3,
+            'Chuck': 4,
+            'Denny': 5,
+        };
+
+        console.log(Object.keys(data))
+        // console.log(data2)
+
+
+        var obj = Object.keys(data).reduce(function (accumulator, currentValue) {
+            // return accumulator +  data[currentValue] 
+            return accumulator + data[currentValue]
+        }, 0)
+        console.log(obj)
+
+        // var data2 = [
+        //     { 'Fred': 1 },
+        //     { 'Leon': 2 },
+        //     { 'Wesley': 3 }
+        // ]
+        // var bbb2 = data2.reduce(function (accumulator, currentValue) {
+        //     return accumulator + Object.values(currentValue)
+        // },0)
+        // console.log(bbb2)
+
+
+
+
+
 
 
     </script>

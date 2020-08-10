@@ -12,26 +12,7 @@
             padding: 0;
             list-style: none;
         }
-
-
         /* .table{
-            display: grid;
-            grid-template-columns: repeat(9 , 1fr);
-            grid-auto-rows: minmax(1px,auto);
-            max-width: 560px;
-            margin: 10px 0;
-            padding: 10px;
-            background: #fff;
-            color: black;
-            box-shadow: 2px 2px 3px 0 #ddd;
-        }
-
-        .abc{
-            padding: 10px;
-            text-align: center;
-        } */
-
-        .table{
             display: grid;
             grid-template-columns: repeat(9,1fr);
             max-width: 560px;
@@ -44,8 +25,23 @@
         .abc{
             padding: 10px;
             text-align: center;
+        } */
+
+        .table{
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            max-width: 560px;
+            padding: 10px 0;
+            margin: 10px 0;
+            color: black;
+            background: #fff;
+            box-shadow: 2px 2px 3px 0 #ddd;
         }
 
+        .abc{
+            text-align: center;
+            padding: 10px;
+        }
 
      
     </style>
@@ -54,53 +50,63 @@
 
 <body>
 
-
+<div class="abc"></div>
 
     </div>
     <script>
 
 
-        // let gb_color
+        
+            
+        // let bg_color
         // document.write('<h1>九九乘法表</h1>');
         // document.write('<ul class="table">');
-
+        
         // for(var i=1;i<10;i++){
         //     for(var j=1;j<10;j++){
-
         //         if(i==j){
-        //             bg_color='#716746'
+        //             bg_color='gray'
         //         }else if(i==1){
-        //             bg_color='rgba(187,212,61,0.2)'
+        //             bg_color='blue'
         //         }else if(j==1){
-        //             bg_color = "rgba(244,240,165,0.5)";
-
+        //             bg_color='red'
         //         }else{
         //             bg_color='#fff'
         //         }
 
-        //         document.write('<li class="abc" style="background:'+bg_color+'">'+ i*j + '</li>');
+        //         document.write(`<li class="abc" style="background:${bg_color}">${i*j}</li>`);
+        //         // document.write('<li class="abc" style="background:'+bg_color+'">'+ i*j + '</li>');
         //     }
         // }
-            
-        let bg_color
-        document.write('<h1>九九乘法表</h1>');
-        document.write('<ul class="table">');
-        
-        for(var i=1;i<10;i++){
+
+        var bg_color
+        document.write('<h1>99乘法表</h1>')
+        document.write('<ul class ="table">')
+
+        for (var i=1;i<10;i++){
             for(var j=1;j<10;j++){
                 if(i==j){
-                    bg_color='gray'
-                }else if(i==1){
                     bg_color='blue'
+                }else if(i==1){
+                    bg_color='gray'
                 }else if(j==1){
                     bg_color='red'
                 }else{
                     bg_color='#fff'
                 }
 
-                document.write(`<li class="abc" style="background:${bg_color}">${i*j}</li>`)
+                // document.write(`<li class='abc' style="background:${bg_color}">${i*j}</li>`)
+                // document.write("<li class='abc' style='background:"+bg_color+"'>"+i*j+'</li>')
+                document.write('<li class="abc" style="background:'+bg_color+'">'+i*j+'</li>')
+                
+                
+               
+
             }
         }
+     
+       
+        
 
     </script>
 </body>
