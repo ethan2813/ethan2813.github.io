@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">1
+        <div class="two">2</div>
+    </div>
+    
+
+
+    <script>
+        var one = document.querySelector('.one');
+        var two = document.querySelector('.two');
+
+        one.addEventListener('click',abc);
+        //父元素綁定了事件(one)
+
+        function abc(e){
+            console.log(e.target);
+            //會顯示兩個one class
+            console.log(e.currentTarget)
+            //先顯示two 在顯示one
+        }
+
+        //單擊了子元素（根據事件流，在不阻止事件流的前提下他會傳遞至父元素，導致父元素的事件處理函數執行），這時候currentTarget指向的是父元素，因為他是綁定事件的對象，而target指向了子元素，因為他是觸發事件的那個具體對象
+
+
+
+    </script>
+</body>
+</html>
