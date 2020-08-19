@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 100%;
+            height: 300px;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .boxin {
+            width: 100px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head"></div>
+    <div class="box" onclick="creatbox(1)">只跳一個</div>
+    <div class="box" onclick="creatbox(2)">跳出兩個</div>
+    <div class="box" onclick="creatbox(3)">跳出三個</div>
+
+    <div class="box" onclick="creatbox(4)">4</div>
+
+    <script>
+        var head = document.querySelector('.head');
+        var box = document.querySelector('.box');
+        var clickount = 0;
+
+        function creatbox(count) {
+            if (clickount < 4) {
+
+                for (let index = 0; index < count; index++) {
+
+                    head.innerHTML += '<div class="boxin"></div>'
+                    clickount += 1
+                    console.log('現在點擊次數' + clickount)
+                }
+            } else {
+                console.log('已經大於4次了')
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

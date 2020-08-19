@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .tab_btn_ground {
@@ -23,7 +22,7 @@
             cursor: pointer;
         }
 
-        .tab_btn.display_block{
+        .tab_btn.display_block {
             background: burlywood;
             transition: .3s;
         }
@@ -48,9 +47,9 @@
 
 <body>
     <div class="tab_btn_ground">
-        <div class="tab_btn">按鈕一</div>
-        <div class="tab_btn">按鈕二</div>
-        <div class="tab_btn">按紐三</div>
+        <div class="tab_btn" data-btnid="1">按鈕一</div>
+        <div class="tab_btn" data-btnid="2">按鈕二</div>
+        <div class="tab_btn" data-btnid="3">按紐三</div>
     </div>
     <div class="tab_content_ground">
         <div class="tab_content">
@@ -74,25 +73,22 @@
     </div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script>
+        // for迴圈寫法
         // var tab_btn = document.querySelectorAll('.tab_btn');
         // var tab_content = document.querySelectorAll('.tab_content');
 
         // for (let index = 0; index < tab_btn.length; index++) {
         //     const tab_btns = tab_btn[index];
         //     const tab_contents = tab_content[index];
-
-        //     debugger;
         //     // 賦予function 給 onclick
         //     tab_btns.onclick = function () {
         //         clear()
         //         tab_contents.classList.add('display_block')
         //         tab_btns.classList.add('display_block')
         //     }
-          
         // }
         // function clear() {
         //     for (let index = 0; index < tab_btn.length; index++) {
@@ -104,39 +100,32 @@
         // }
 
 
-        var tab_btn = document.querySelectorAll('.tab_btn');
-        var tab_content = document.querySelectorAll('.tab_content');
+////////////////////////////////////////////////////////////////////////////////////////////////////
+        // //jQuery(data_attribute)
+        // $('.tab_btn').click(function(){
+        //     $('.tab_btn').removeClass('display_block')
+        //     $('.tab_content').removeClass('display_block')
+        //     $(this).addClass('display_block')
+        //     // console.log('.tab_content:nth-child('+this.dataset.btnid+')')
+        //     //add this content display_block 這個 class
+        //     $('.tab_content:nth-child('+this.dataset.btnid+')').addClass('display_block')
+        // })
 
-        for (let index = 0; index < tab_btn.length; index++) {
-            const tab_btns = tab_btn[index];
-            const tab_contents = tab_content[index];
-            
+        
+////////////////////////////////////////////////////////////////////////////////////////////////////
+        index() 寫法
+        $('.tab_btn').click(function(){
+            $('.tab_content').removeClass('display_block')
 
-            
-            tab_btns.onclick = function(){
-                clear()
-                tab_contents.classList.add('display_block');
-                tab_btns.classList.add('display_block');
-
-
-            }
-            
-        }
-
-        function clear(){
-            for (let index = 0; index < tab_btn.length; index++) {
-                const tab_btns = tab_btn[index];
-                const tab_contents = tab_content[index];
-                tab_contents.classList.remove('display_block');
-                tab_btns.classList.remove('display_block');
-
-                
-                
-            }
-        }
+            $('.tab_btn').removeClass('display_block')
+            $(this).addClass('display_block')
 
 
+            // console.log($(this).index())
+            var index = $('.tab_btn').index(this) + 1
+            $('.tab_content:nth-child('+index+')').addClass('display_block')
 
+        })
     </script>
 
 
