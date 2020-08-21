@@ -17,7 +17,6 @@ $(window).scroll(function(){
 
 
 
-
 //漢堡條
 // $('.burger').click(function(){
 //     // console.log("12313");
@@ -58,6 +57,7 @@ $(window).scroll(function(){
     // 存儲上一個滾動位置，然後查看新滾動位置是否大於或小於該滾動位置。
     lastScrollTop =  $(this).scrollTop();
 })
+
 
 
 
