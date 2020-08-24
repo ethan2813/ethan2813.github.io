@@ -119,49 +119,48 @@
   </style>
 
   <script>
-    ;(function(){
-      const second = document.querySelector('.second-hand');
-      const min = document.querySelector('.min-hand');
-      const hour = document.querySelector('.hour-hand');
+    // ;(function(){
+    //   const second = document.querySelector('.second-hand');
+    //   const min = document.querySelector('.min-hand');
+    //   const hour = document.querySelector('.hour-hand');
 
-      function setClock(){
-        let data = new Date()
+    //   function setClock(){
+    //     let data = new Date()
 
-        let secondDeg = data.getSeconds()*6  //(360/60)
-        let minDeg = data.getMinutes()*6 + data.getSeconds() *6 / 60            //(360度/60分鐘=每分鐘6度 + 每秒*每分鐘6度/60秒)  
-        let hourDeg = data.getHours()*30 + data.getMinutes() * 30 / 60     //(360度/12小時=每小時30度 + 每分鐘*每小時30度/60分鐘)  
+    //     let secondDeg = data.getSeconds()*6  //(360/60)
+    //     let minDeg = data.getMinutes()*6 + data.getSeconds() *6 / 60            //(360度/60分鐘=每分鐘6度 + 每秒*每分鐘6度/60秒)  
+    //     let hourDeg = data.getHours()*30 + data.getMinutes() * 30 / 60     //(360度/12小時=每小時30度 + 每分鐘*每小時30度/60分鐘)  
 
-        second.style.transform = `rotate(${secondDeg}deg)`
-        min.style.transform =`rotate(${minDeg}deg)`
-        hour.style.transform =`rotate(${hourDeg}deg)`
-      }
+    //     second.style.transform = `rotate(${secondDeg}deg)`
+    //     min.style.transform =`rotate(${minDeg}deg)`
+    //     hour.style.transform =`rotate(${hourDeg}deg)`
+    //   }
 
-      function timeoutHandler(){
-        setClock()
-        setTimeout(timeoutHandler,1000) //做完這個function，設定下一次，所以才會一直run
-      }
+    //   function timeoutHandler(){
+    //     setClock()
+    //     setTimeout(timeoutHandler,1000) //做完這個function，設定下一次，所以才會一直run
+    //   }
 
-      function animationHandler (){
-        setClock()
-        window.requestAnimationFrame(animationHandler) //也需要自己呼叫自己
+    //   function animationHandler (){
+    //     setClock()
+    //     window.requestAnimationFrame(animationHandler) //也需要自己呼叫自己
 
-      }
+    //   }
 
-      setClock() //初始化
+    //   setClock() //初始化
 
-      //計時器 setInterval 、 setTimeout 、 requestAnimationFrame
-      //處理畫面 建議使用requestAnimationFrame
-      //處理程式邏輯面 建議使用 setTimeout
+    //   //計時器 setInterval 、 setTimeout 、 requestAnimationFrame
+    //   //處理畫面 建議使用requestAnimationFrame
+    //   //處理程式邏輯面 建議使用 setTimeout
 
-      setInterval(setClock,1000) //設定一次 連續執行 ，不要寫在function裡面，不然會一直執行
+    //   setInterval(setClock,1000) //設定一次 連續執行 ，不要寫在function裡面，不然會一直執行
 
-      // setTimeout(timeoutHandler,1000)  //設定延遲 執行一次
+    //   // setTimeout(timeoutHandler,1000)  //設定延遲 執行一次
 
-      // window.requestAnimationFrame(animationHandler) //處理畫面的setTimeout，觸發的點是靠畫面硬體更新，
+    //   // window.requestAnimationFrame(animationHandler) //處理畫面的setTimeout，觸發的點是靠畫面硬體更新，
 
-    })()
+    // })()
 
-  
 
   </script>
 </body>
