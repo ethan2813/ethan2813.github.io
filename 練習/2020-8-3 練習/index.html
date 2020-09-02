@@ -98,8 +98,6 @@
         //         tab_btns.classList.remove('display_block')
         //     }
         // }
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
         // //jQuery(data_attribute)
         // $('.tab_btn').click(function(){
@@ -111,21 +109,20 @@
         //     $('.tab_content:nth-child('+this.dataset.btnid+')').addClass('display_block')
         // })
 
-        
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-        index() 寫法
-        $('.tab_btn').click(function(){
-            $('.tab_content').removeClass('display_block')
+        // index() 寫法
+        // $('.tab_btn').click(function(){
+        //     $('.tab_content').removeClass('display_block')
 
-            $('.tab_btn').removeClass('display_block')
-            $(this).addClass('display_block')
+        //     $('.tab_btn').removeClass('display_block')
+        //     $(this).addClass('display_block')
 
 
-            // console.log($(this).index())
-            var index = $('.tab_btn').index(this) + 1
-            $('.tab_content:nth-child('+index+')').addClass('display_block')
+        //     // console.log($(this).index())
+        //     var index = $('.tab_btn').index(this) + 1
+        //     $('.tab_content:nth-child('+index+')').addClass('display_block')
 
-        })
+        // })
     </script>
 
 

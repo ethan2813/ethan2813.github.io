@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
 </head>
+
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
@@ -20,20 +22,52 @@
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
+  
   <style>
+    /* :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    } */
+
+    :root {
+      --base: #ffc600;
+      --blur: 10px;
+      --spacing: 10px;
+    }
+
+    img {
+      background: var(--base);
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
 
     /*
       misc styles, nothing to do with CSS variables
     */
-
     body {
       text-align: center;
       background: #193549;
       color: white;
-      font-family: 'helvetica neue', sans-serif;
       font-weight: 100;
       font-size: 50px;
+      font-family: 'helvetica neue', sans-serif;
     }
+
 
     .controls {
       margin-bottom: 50px;
@@ -42,10 +76,63 @@
     input {
       width: 100px;
     }
+
+    
   </style>
 
   <script>
+    // ; (function () {
+    //   const inputs = document.querySelectorAll('.controls input');
+
+    //   inputs.forEach(function (input) {
+    //     input.addEventListener('change', handler)
+    //     input.addEventListener('mousemove', handler)
+    //   });
+
+    //   function handler() {
+    //     console.log(this.name,this.value) //檢查是否有抓到數值
+
+    //   //document.documentElement = document.querySelector(':root') = document.querySelector('html')
+
+    //   const suffix = this.dataset.sizing || '';
+    //   document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix)
+
+    //   // 不是太好的例子 盡量用資料去綁定
+    //     // switch (this.name) {
+    //     //   case 'spacing':
+    //     //     document.querySelector('img').style.padding = `${this.value}px`;
+    //     //     break
+    //     //   case 'blur':
+    //     //     document.querySelector('img').style.filter = `blur(${this.value}px)`;
+    //     //     break
+    //     //   case 'base':
+    //     //     document.querySelector('img').style.background = this.value;
+    //     //     document.querySelector('.hl').style.color = this.value;
+    //     //     break
+    //     // }
+    //   }
+    // })()
+
+
+
+    ; (function () {
+      let inputs = document.querySelectorAll('.controls input');
+
+      console.log(inputs)
+
+      function handler(){
+        let unit = this.dataset.sizing||'';
+        document.documentElement.style.setProperty(`--${this.name}`,this.value + unit)
+      }
+
+      inputs.forEach(function (input) {
+        input.addEventListener('change',handler);
+        input.addEventListener('mousemove',handler);
+      })
+    })()
+
   </script>
 
 </body>
+
 </html>
