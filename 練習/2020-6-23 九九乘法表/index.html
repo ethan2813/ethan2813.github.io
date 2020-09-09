@@ -28,20 +28,21 @@
         } */
 
         .table{
-            display: grid;
-            grid-template-columns: repeat(9,1fr);
-            max-width: 560px;
-            padding: 10px 0;
-            margin: 10px 0;
-            color: black;
+            display:grid;
+            grid-template-columns:repeat(9,1fr);
+            max-width: 600px;
+            box-shadow: 2px 2px 2px 0 #ddd;
+            margin: 10px;
+            padding: 10px;
             background: #fff;
-            box-shadow: 2px 2px 3px 0 #ddd;
         }
 
-        .abc{
-            text-align: center;
+        li{
             padding: 10px;
+            text-align: center;
+
         }
+     
 
      
     </style>
@@ -78,32 +79,27 @@
         //         // document.write('<li class="abc" style="background:'+bg_color+'">'+ i*j + '</li>');
         //     }
         // }
+        
+        let bg_color;
+        document.write('<h1>九九乘法表</h1>');
+        document.write('<ul class="table">')
 
-        var bg_color
-        document.write('<h1>99乘法表</h1>')
-        document.write('<ul class ="table">')
-
-        for (var i=1;i<10;i++){
-            for(var j=1;j<10;j++){
+        for(let i=1;i<10;i++){
+            for(let j=1;j<10;j++){
                 if(i==j){
-                    bg_color='blue'
+                    bg_color = 'gray'
                 }else if(i==1){
-                    bg_color='gray'
+                    bg_color = 'blue'
                 }else if(j==1){
-                    bg_color='red'
+                    bg_color = 'red'
                 }else{
-                    bg_color='#fff'
+                    bg_color = '#fff'
                 }
 
-                // document.write(`<li class='abc' style="background:${bg_color}">${i*j}</li>`)
-                // document.write("<li class='abc' style='background:"+bg_color+"'>"+i*j+'</li>')
-                document.write('<li class="abc" style="background:'+bg_color+'">'+i*j+'</li>')
-                
-                
-               
-
+                document.write(`<li style="background:${bg_color}">${i*j}</li>`)
             }
         }
+      
      
        
         

@@ -26,21 +26,34 @@
             }
         ];
 
+        // var el = document.querySelector('.list');
+        // var Len = names.length;
+        // var str = "";
+        // // .innerHTML 有一個特性每次輸出前會清空所有的設定，所以所有的標籤跟文字都會不見
+        // //他是為了要解決 .innerHTML 這個問題，所以創造來存放累加字串的
+
+        // for(var i=0;i<Len;i++){
+        //     var content =`<li>${names[i].name}</li>`
+        //     str += content
+        //     console.log(str)
+        // }
+
+        // el.innerHTML = str;
+        
         var el = document.querySelector('.list');
-        var Len = names.length;
-        var str = "";
-        // .innerHTML 有一個特性每次輸出前會清空所有的設定，所以所有的標籤跟文字都會不見
-        //他是為了要解決 .innerHTML 這個問題，所以創造來存放累加字串的
-
-        for(var i=0;i<Len;i++){
-            var content =`<li>${names[i].name}</li>`
+        var len = name.length;
+        var str = '';
+            
+        names.forEach((i,j)=>{
+            var content = `<li>${names[j].name}</li>`
             str += content
-            console.log(str)
-        }
+           
 
+        })
         el.innerHTML = str;
 
-  
+        
+        
 
     </script>
 </body>

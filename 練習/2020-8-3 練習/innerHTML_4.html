@@ -47,19 +47,33 @@
         var box = document.querySelector('.box');
         var clickount = 0;
 
-        function creatbox(count) {
-            if (clickount < 4) {
+        // function creatbox(count) {
+        //     if (clickount < 4) {
 
-                for (let index = 0; index < count; index++) {
+        //         for (let index = 0; index < count; index++) {
 
-                    head.innerHTML += '<div class="boxin"></div>'
+        //             head.innerHTML += '<div class="boxin"></div>'
+        //             clickount += 1
+        //             console.log('現在點擊次數' + clickount)
+        //         }
+        //     } else {
+        //         console.log('已經大於4次了')
+        //     }
+        // }
+
+        function creatbox(count){
+            if(clickount < 4){
+                for (let index = 0; index < count; index++){
+                    head.innerHTML += '<div class="boxin">'
                     clickount += 1
-                    console.log('現在點擊次數' + clickount)
+                    console.log('1')
                 }
-            } else {
-                console.log('已經大於4次了')
+            }else{
+                console.log('2')
             }
         }
+
+
     </script>
     
 </body>
