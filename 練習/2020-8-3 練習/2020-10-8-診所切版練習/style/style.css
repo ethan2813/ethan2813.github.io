@@ -47,12 +47,13 @@
 
 #quote .quote_img .content .content_pc {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #quote .quote_img .content .content_sm {
   font-size: 16px;
   text-align: left;
+  margin: 0 15px;
 }
 
 #quote .quote_img:before {
@@ -139,14 +140,13 @@
   border-radius: 50%;
 }
 
-#main .main_1 .main_1_article p {
+#main .main_1 .main_1_article > p {
   font-size: 16px;
   letter-spacing: 3px;
-  text-align: right;
   margin-top: 20px;
 }
 
-#main .main_1 .main_1_article p .project_btn {
+#main .main_1 .main_1_article > p .project_btn {
   background-color: #edca7e;
   font-size: 20px;
   text-align: right;
@@ -158,6 +158,13 @@
   text-decoration: none;
   color: white;
   letter-spacing: 0;
+}
+
+#main .main_1 .main_1_article > p .project_btn:hover {
+  background-color: #656456;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 #main .main_1 .main_1_img {
@@ -259,6 +266,7 @@
 #main .main_2 .main_2_article p {
   margin: 20px 0;
   font-size: 16px;
+  letter-spacing: 3px;
 }
 
 #main .main_2 .main_2_article p .project_btn_r {
@@ -273,4 +281,12 @@
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  text-decoration: none;
+}
+
+#main .main_2 .main_2_article p .project_btn_r:hover {
+  background-color: #656456;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }

@@ -1,5 +1,6 @@
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 
@@ -18,11 +19,16 @@ body{
 
 
 nav.nav{
+    transition: 1s;
+    top: 0;
 
-    // &.active{
-    //     height: 50px;
+    &.active{
 
-    // }
+        opacity: 0.9;
+        transition: 0.5s;
+        top: -10px;
+
+    }
 
     z-index: 2;
     background: white;
@@ -43,6 +49,7 @@ nav.nav{
         img{
             height: 70px;
             transition: 1s;
+            margin-top: 20px;
     
 
 
@@ -56,6 +63,7 @@ nav.nav{
     margin: 0;
     list-style: none;
     line-height: 100px;
+    
     // flex: 1;
     // display: flex;
 
@@ -69,6 +77,13 @@ nav.nav{
                 font-size: 1.8rem;
                 text-decoration: none;
                 display: block;
+                transition: 1s;
+
+                &:hover{
+                color: #265a61;
+                letter-spacing: 2px;
+
+                }
             }
 
             .dropdown-menu{
@@ -119,6 +134,21 @@ nav.nav{
     // }
 }
 
+.gototop{
+     background-color: #5dc2d0;
+     position: fixed;
+     right: 20px;
+     bottom: 50px;
+     z-index: 99;
+     border-radius: 20%;
+     padding: 10px;
+     opacity: 0.6;
+     display: none;
+
+     img{
+        width: 30px;
+     }
+}
 footer#footer{
     color: white;
     background-color: #4a4a4a;

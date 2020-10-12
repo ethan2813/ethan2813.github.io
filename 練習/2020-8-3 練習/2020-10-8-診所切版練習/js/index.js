@@ -32,9 +32,22 @@ var swiper = new Swiper('.swiper2', {
 
     $(window).scroll(function(){
         if($(window).scrollTop() > 80){
-            
+            $('.nav').addClass('active')
+        }else{
+            $('.nav').removeClass('active')
+        } 
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 200){
+            $('.gototop').fadeIn(200);
+        }else{
+            $('.gototop').stop().fadeOut(200);
         }
-        
-    })
+    });
+    
+
 })()
+
+
 

@@ -5,6 +5,10 @@
         padding: 0;
         margin: 0;
 
+        &.active{
+            top: -2px;
+        }
+
         .nav_logo{
             padding: 16px;
             img{
@@ -65,7 +69,6 @@
 
         }
     }
-
     #banner{
         .swiper-container {
             padding-top: 70px;
@@ -111,9 +114,16 @@
 
 }
 @media(min-width:768px){
-    .main_1_subtitle{
-        text-align: right;
+    .main_1_article{
+        .main_1_subtitle{
+            text-align: right;
+        }
+        p{
+            text-align: right;
+
+        }
     }
+    
 }
 
 
@@ -144,8 +154,17 @@
 
 
     }
+    #main{
+        .main_1{
+           .main_1_article{
+               .project_btn{
+                font-size: 16px;
+               }
+           }
+        }
     
-}
+    }
+}   
 
 @media(min-width:576px){
 

@@ -52,11 +52,12 @@
            
             .content_pc{
                 text-align: center;
-                font-size: 16px;
+                font-size: 18px;
             }
             .content_sm{
                 font-size: 16px;
                 text-align: left;
+                margin: 0 15px;
                 // display: none;
             }
             
@@ -147,11 +148,11 @@
                 }
 
             }
-            p{
+            >p{
                 font-size: 16px;
                 // line-height: 24px;
                 letter-spacing: 3px;
-                text-align: right;
+                // text-align: right;
                 margin-top: 20px;
            
                 .project_btn{
@@ -167,6 +168,11 @@
                     text-decoration: none;
                     color: white;
                     letter-spacing: 0;
+
+                    &:hover{
+                        background-color: #656456;
+                        transition: 1s;
+                    }
                     
                 }
             }
@@ -266,6 +272,7 @@
             p{
                 margin: 20px 0 ;
                 font-size: 16px;
+                letter-spacing: 3px;
 
                 .project_btn_r{
                     font-size: 20px;
@@ -277,6 +284,12 @@
                     color: white;
                     margin-top: 60px;
                     transition:  0.4s;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #656456;
+                        transition: 1s;
+                    }
                 }
 
             }
