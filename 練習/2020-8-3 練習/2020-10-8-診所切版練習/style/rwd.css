@@ -13,6 +13,7 @@
   }
   nav.nav .nav_logo img {
     height: 60px;
+    margin: 0;
   }
   nav.nav .burger {
     display: block;
