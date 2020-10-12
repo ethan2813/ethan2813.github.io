@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- swiper CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+    <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <!-- layout 掛載 -->
+    <link rel="stylesheet" href="./style/layout.css">
+    <!-- style 掛載-->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- rwd -->
+    <link rel="stylesheet" href="./style/rwd.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <nav class='nav'>
+
+        <a href="#" class="nav_logo">
+            <img src="./img/nav_logo.png" alt="">
+        </a>
+
+        <div class="burger">
+            <div class='line line1'></div>
+            <div class='line line2'></div>
+            <div class='line line3'></div>
+
+
+        </div>
+        <ul class='nav_links '>
+            <li><a href="#">品森理念</a></li>
+            <li><a href="#">環境設備</a></li>
+            <li><a href="#">醫療團隊</a></li>
+            <li><a href="#"role="button" class='dropdown-toggle'  data-toggle="dropdown">診療項目</a>
+            
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">微笑美學</a>
+                    <a class="dropdown-item" href="#">數位人工植牙</a>
+                    <a class="dropdown-item" href="#">數位隱形牙套</a>
+                    <a class="dropdown-item" href="#">顯微輔助根管治療</a>
+                    <a class="dropdown-item" href="#">全方位牙周照護</a>
+                    <a class="dropdown-item" href="#">兒童牙科</a>
+                    <a class="dropdown-item" href="#">全人牙科診治</a>
+
+
+                </div>
+            </li>
+            
+
+        </ul>
+    
+    </nav>
+    <section id="banner">
+        <!-- Swiper -->
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://pinsen-dental.com.tw/images/banner/banner-01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://pinsen-dental.com.tw/images/banner/banner-02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://pinsen-dental.com.tw/images/banner/banner-03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://pinsen-dental.com.tw/images/banner/banner-04.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-container swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner-sm-01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner-sm-02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner-sm-03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner-sm-04.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- <section>
+        <ul>
+            <li><a href="" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3131332 </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+            
+            </li>
+        </ul>
+        <div class="dropdown1">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            
+          </div>
+    </section> -->
+    <section id='quote'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 quote_img">
+                    <div class="content wow">
+                        <div class='slogan'>
+                            <span class='slogan_big_up'>品</span>
+                            <span>味</span>
+                            <span class="slogan_big_down">森</span>
+                            <span>活，從齒開始</span>
+                        </div>
+                        <div class='content_pc'>
+                            <span>
+                                【品森】
+                                <br>
+                                源⾃我們對牙齒治療品質的追求與堅持，
+                                <br>
+                                並提供每個人如沐自然的看診感受。
+                                <br>
+                                <br>
+                                【美學】
+                                <br>
+                                品森將每個笑容都當作一件精緻的藝術品，
+                                <br>
+                                付出耐心精細雕磨，讓您獲得如鑽石般的美麗笑容。
+                                <br>
+                                <br>
+                                對【品森】而言
+                                <br>
+                                讓您擁有健康的口腔環境，能再度品嘗美食是我們的使命，
+                                <br>
+                                量身打造，給予您超然脫俗的清新笑容更是追求的目標。
+                                <br>
+                                <br>
+                                讓品森的用心，用專業的醫療技術與態度，
+                                <br>
+                                給予全⽅位的⼝腔治療、發掘出您深藏已久的笑容韻味。
+                                <br>
+                                讓每位患者在離開【品森】的時候，
+                                <br>
+                                都能帶著發自內心的幸福笑顏。
+                            </span>
+                        </div>
+                        <div class='content_sm'>
+                            <span>
+                                【品森】
+                                <br>
+                                源⾃我們對牙齒治療品質的追求與堅持，並提供每個人如沐自然的看診感受。
+                                <br>
+                                <br>
+                                【美學】
+                                <br>
+                                品森將每個笑容都當作一件精緻的藝術品，付出耐心精細雕磨，讓您獲得如鑽石般的美麗笑容。
+                                <br>
+                                <br>
+                                對【品森】而言
+                                <br>
+                                讓您擁有健康的口腔環境，能再度品嘗美食是我們的使命，量身打造，給予您超然脫俗的清新笑容更是追求的目標。
+                                <br>
+                                <br>
+                                讓品森的用心，用專業的醫療技術與態度，給予全⽅位的⼝腔治療、發掘出您深藏已久的笑容韻味。讓每位患者在離開【品森】的時候，都能帶著發自內心的幸福笑顏。
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id='main'>
+        <div class="container">
+            <div class="main_1">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-1 order-md-0">
+                        <div class="main_1_article wow">
+
+                            <span class='main_1_title'>
+                                <span class='main_1_title_big'>DSD</span>微笑曲線
+                            </span>
+                            <span class='main_1_subtitle'>
+                                用心雕琢您的一顰一笑，
+                                <br>
+                                精緻刻劃您的專屬笑容。
+                            </span>
+                            <p>
+                                DSD全名為Digital Smile
+                                Design，意即數位微笑設計。顧名思義即是以數位化設備全方位蒐集口腔資訊，瞭解您的笑容、說話習慣及面部肌肉運動方式，並設計出黃金笑容比例。也常常搭配於專業植牙推薦療程或顯微根管治療計畫，以全瓷冠、全瓷貼片調整前牙齒色、齒型及位置，替您找回專屬的全新自信笑容。
+                                <br>
+                                <a href="#" class="project_btn">微笑美學</a>
+                                <a href="#" class="project_btn">隱形牙套</a>
+                                <a href="#" class="project_btn">全瓷美白</a>
+                                <a href="#" class="project_btn">數位植牙</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 order-0 order-md-1">
+                        <div class="main_1_img wow">
+                            <img src="./img/main1_img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_2">
+                <div class="row ">
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <div class="main_2_img wow">
+                            <img src="./img/main2_img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="main_2_article wow">
+                            <span class="main_2_title">
+                                輕透晶鑽<span class='main_2_title_big'>亮白</span>
+                            </span>
+                            <span class="main_2_subtitle">
+                                打造亮白輕盈，
+                                <br>
+                                如鑽石般晶瑩剔透的白皙牙齒。
+                            </span>
+                            <p>
+                                有別於一般坊間的牙齒亮白，品森提供了專業的諮詢與評估，為您訂製專屬的亮白計畫，並詳盡講解整體亮白流程。新莊品森美學牙醫更特別建置了獨立的牙齒亮白空間，保留個人隱私空間外，也能在舒服安心的氛圍中，享受專屬於您的亮白時光。
+                                <br>
+                                <a href="#" class="project_btn_r">諮詢預約</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="footer_up">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer_icon">
+                            <img src="./img/footer_logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6">
+                        <div class="Contact_Us">
+                            <h3>Contact Us</h3>
+                            <p>
+                                <a href="tel:0222760060">
+                                    <img src="./img/phone_icon.png" alt="">
+                                    <span>02-2276-0060</span>
+                                </a>
+
+                                <a href="加入line">
+                                    <img src="./img/line_icon.png" alt="">
+                                    <span>加入line官方</span>
+                                </a>
+                                <a href="掌握最新消息">
+                                    <img src="./img/fb-icon.png" alt="">
+                                    <span>掌握最新消息</span>
+                                </a>
+                                <a href="掌握最新消息">
+                                    <img src="./img/map (2).png" alt="">
+                                    <span>新北市新莊區思源路130號</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="opening">
+                            <h3>Opening hours</h3>
+                            <p>
+                                <span>每週六晚上休診、日固定休</span>
+                                <span>09:30-12:30</span>
+                                <span>14:00-17:30</span>
+                                <span>18:00-21:30</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="map">
+                            <img src="./img/map.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer_under">
+                <div class="col-12">
+                    <p>
+                        僅網站為張益昇仿切網站，Copyright©2020 leyi company 保留一切權利。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- swiper CDN -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
+    <!-- js掛載 -->
+    <script src="./js/index.js"></script>
+    <!-- wow.js -->
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

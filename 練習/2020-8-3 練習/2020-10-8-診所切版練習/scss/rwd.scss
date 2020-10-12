@@ -1,0 +1,240 @@
+@media(max-width:768px){
+    nav.nav{
+        height: 70px;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        .nav_logo{
+            padding: 16px;
+            img{
+                height: 60px;
+                
+            }
+        }
+
+        .burger{
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 18px;
+            
+
+        }
+
+        .nav_links{
+            padding: 0;
+            line-height: 45px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #84c5cf;
+            position: absolute;
+            // top: -500px;
+            // top: 0;
+            // display: none;
+            top: -200px;
+            opacity: 0;
+            transition: ease-in-out 0.5s;
+
+
+            
+
+            
+
+            li{
+                border-bottom: 0.5px solid #abccd1;
+                margin: 0;
+                >a{
+                    color: white;
+                    padding: 0 16px;
+                };
+                .dropdown-menu{
+                    width: 100%;
+                    text-align: left;
+                }
+
+                
+            }
+        }
+        .active{
+            // position: absolute;
+            top: 70px;
+            transition: ease-in-out 0.5s;
+            opacity: 1;
+
+        }
+    }
+
+    #banner{
+        .swiper-container {
+            padding-top: 70px;
+        }
+
+    }
+    #quote{
+        .quote_img{
+            &:before{
+                bottom: -50px;
+                right: 0px;
+                width: 160px;
+                height: 125px;
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+                
+            }
+        }
+    }
+    #main{
+        .main_1{
+            .main_1_article{
+                .main_1_title{
+                    text-align: left;
+                    
+                    }
+                }
+                .main_1_subtitle{
+                    text-align: left;
+                }
+                p{
+                    text-align: left;
+                }
+            }
+            .main_1_img{
+                &:before{
+                    display: none;
+                }
+            }
+    
+    }
+
+}
+@media(min-width:768px){
+    .main_1_subtitle{
+        text-align: right;
+    }
+}
+
+
+@media(max-width:576px){
+
+
+    #banner{
+        
+        .swiper1{
+            display: none;
+        }
+        .swiper2{
+            display: block;
+        }
+    } 
+    #quote{
+        .quote_img{
+            &:before{
+                bottom: -100px;
+            }
+        }
+        .content_pc{
+            display: none;
+        }
+        .content_sm{
+            display: block;
+        }
+
+
+    }
+    
+}
+
+@media(min-width:576px){
+
+    #banner{
+        .swiper1{
+            display: block;
+        }
+        .swiper2{
+            display: none;
+        }
+    }
+    #quote{
+        
+        .content_pc{
+            
+            display: block;
+
+        }
+        .content_sm{
+            
+            display: none;
+
+        }
+
+
+    }
+    
+}
+@media(max-width:996px){
+    #main{
+        .main_1{
+            .main_1_article{
+                margin-top: 0px;
+                .main_1_title{
+                   
+                    font-size: 30px;
+                    letter-spacing: 6px;
+                    .main_1_title_big{
+                        font-size: 30px;
+                        letter-spacing: 6px;
+                    }
+                }
+                .main_1_subtitle{
+                    font-size: 20px;
+                    line-height: 24px
+                }
+            }
+        }
+        .main_2{
+            .main_2_article{
+                margin-top: 0px;
+                .main_2_title{
+                   
+                    font-size: 30px;
+                    letter-spacing: 6px;
+                    .main_2_title_big{
+                        font-size: 30px;
+                        letter-spacing: 6px;
+                    }
+                }
+                .main_2_subtitle{
+                    font-size: 20px;
+                    line-height: 24px
+                }
+            }
+        }
+    }
+    footer#footer{
+        .footer_up{
+            padding: 20px 20px;
+            .footer_icon{
+                display: none;
+            }
+
+        }
+    
+    }
+}
+@media(max-width:1140px){
+   #main{
+       .main_1{
+           .main_1_article{
+               p{
+                   .project_btn{
+                    margin-right: 3px;
+                    margin-top: 10px;
+                   }
+               }
+           }
+       }
+   } 
+}

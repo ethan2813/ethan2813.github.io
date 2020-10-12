@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        input{
+            margin: 0;
+            padding: 0;
+
+        }
+        label {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            background: orange;
+            display: block;
+        }
+
+        label:before {
+            content: "check me";
+        }
+
+        #a1:checked~label{
+            background: #B0095C;
+
+
+        }
+
+        
+        #a1:checked~label:before{
+            content: "Checkbox is checked";
+            /* text-decoration: line-through; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="checkbox" id="a1">
+    <label for="a1"></label>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas</title>
+</head>
+
+<body>
+    <canvas id="draw" width="800" height="800"></canvas>
+    <script>
+
+        ; (function () {
+            let canvas = document.querySelector('#draw');
+            let ctx = canvas.getContext('2d')
+            colorDeg = 0;
+            ctx.strokeStyle = `hsl(${colorDeg},100%,50%)`;
+            ctx.lineWidth = 100;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+
+
+
+            let down = false;
+            let drawing = false;
+            let x = 0;
+            let y = 0;
+            let direction = true;
+            let alpha = 1;
+            let alphaDirection = true;
+
+            function move(e) {
+                if (!down || !drawing) return;
+
+                // if(alpha >= 1 || alpha <= 0.1){
+                //     alphaDirection = !alphaDirection
+                // }
+                // if(alphaDirection){
+                //     alpha += 0.1;
+                // }else{
+                //     alpha -= 0.1;
+                // }
+                // console.log(alpha)
+
+                ctx.strokeStyle = `hsla(${colorDeg},100%,50%,${alpha})`;
+
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(e.offsetX, e.offsetY);
+                [x, y] = [e.offsetX, e.offsetY];
+                ctx.stroke();
+                console.log(x, y)
+
+                colorDeg = colorDeg < 360 ? colorDeg + 1 : 0
+
+                if (ctx.lineWidth >= 100 || ctx.lineWidth <= 20) {
+                    direction = !direction
+                }
+                if (direction) {
+                    ctx.lineWidth++
+                } else {
+                    ctx.lineWidth--
+                }
+
+
+
+            }
+
+            canvas.addEventListener('mousedown', (e) => {
+                down = true;
+                [x, y] = [e.offsetX, e.offsetY];
+
+
+            })
+            canvas.addEventListener('mousemove', move)
+            document.addEventListener('mouseup', () => { down = false })
+            canvas.addEventListener('mouseenter', () => { drawing = true })
+            canvas.addEventListener('mouseleave', () => { drawing = false })
+        })
+
+            ; (function () {
+                let canvas = document.querySelector('#draw');
+                let ctx = canvas.getContext('2d');
+                let colorDeg = 0;
+                ctx.strokeStyle = `hsl(${colorDeg},100%,50%)`
+                ctx.lineWidth = 50;
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'rhound';
+
+                let drawing = false;
+                let down = false;
+                let x = 0;
+                let y = 0;
+                let direction = true;
+
+                function move(e) {
+                    if (!drawing || !down) return;
+                    ctx.strokeStyle = `hsl(${colorDeg},100%,50%)`
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(e.offsetX, e.offsetY);
+                    [x, y] = [e.offsetX, e.offsetY];
+                    ctx.stroke();
+
+                    colorDeg = colorDeg < 360 ? colorDeg + 1 : 0 ;
+
+                    if(ctx.lineWidth >= 50 || ctx.lineWidth <= 10){
+                        direction = !direction;
+                    }
+
+                    if(direction){
+                        ctx.lineWidth += 1;
+                    }else{
+                        ctx.lineWidth -= 1;
+                    }
+
+
+
+                }
+
+
+                canvas.addEventListener('mousedown', (e) => {
+                    down = true;
+                    [x, y] = [e.offsetX, e.offsetY]
+                });
+                canvas.addEventListener('mousemove', move);
+                document.addEventListener('mouseup', () => { down = false });
+                canvas.addEventListener('mouseenter', (e) => {
+                    drawing = true;
+                    [x, y] = [e.offsetX, e.offsetY]
+                });
+                canvas.addEventListener('mouseleave', () => { drawing = false });
+
+
+
+
+            })()
+
+
+
+
+
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            border: 1px solid;
+        }
+    </style>
+
+</body>
+
+</html>

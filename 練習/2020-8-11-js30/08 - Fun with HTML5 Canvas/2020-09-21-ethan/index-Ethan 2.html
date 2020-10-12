@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+
+<body>
+  <canvas id="draw" width="800" height="800"></canvas>
+  <script>
+    ; (function () {
+      let canvas = document.querySelector('#draw');
+      let ctx = canvas.getContext('2d'); //一開始要先宣告的
+      let colorDeg = 0;
+      let alpha = 1;
+      let alpahDirection = true;
+      ctx.strokeStyle = `hsla(${colorDeg},100%,50%,${alpha})`;
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = 100;
+      ctx.lineCap = "round";
+
+      let drawing = false; // 要不要畫
+      let down = false;  //有沒有按
+      let x = 0;
+      let y = 0;
+      let direction = true;  //direction 第一種方式
+      let direction2 = -1; ////direction 第二種方式
+
+
+      function draw(e) {
+        if (!drawing || !down) return; //如果沒有按 跟 超出畫面 就不會執行
+        console.log(down, drawing)
+
+        // if (alpha >=1 || alpha <= 0.1) {
+        //   alpahDirection = !alpahDirection
+        // }
+        // if(alpahDirection){
+        //   alpha += 0.1
+        // }else{
+        //   alpha -= 0.1
+        // }
+
+        ctx.strokeStyle = `hsla(${colorDeg},100%,50%,${alpha})`;
+
+        ctx.beginPath(); // 開始畫圖
+        ctx.moveTo(x, y); // 點移動到鼠標的位置
+        ctx.lineTo(e.offsetX, e.offsetY); //移動到的位置
+        [x, y] = [e.offsetX, e.offsetY];
+        ctx.stroke();
+        // console.log(x,y,e.offsetX, e.offsetY)
+
+
+        colorDeg = colorDeg < 360 ? colorDeg + 1 : 0;
+
+
+        // 第一種方式
+        //ctx.lineWidth大於100或小於1 會交換direction的方向
+        if (ctx.lineWidth >= 100 || ctx.lineWidth <= 10) {
+          direction = !direction;
+        }
+        // console.log(ctx.lineWidth)
+
+        if (direction) {
+          ctx.lineWidth++;
+        } else {
+          ctx.lineWidth--;
+        }
+        // // 第二種方式
+        // if( ctx.lineWidth <= 1 || ctx.lineWidth >100){
+        //   direction2 *= -1;
+        // }
+        // ctx.lineWidth += direction2;
+        // console.log(direction2,ctx.lineWidth)
+      }
+      canvas.addEventListener('mousedown', (e) => {
+        down = true;
+        [x, y] = [e.offsetX, e.offsetY];
+        // console.log([x,y] )
+
+      })
+      canvas.addEventListener('mousemove', draw)
+      document.addEventListener('mouseup', () => { down = false })
+      canvas.addEventListener('mouseleave', () => { drawing = false })
+      canvas.addEventListener('mouseenter', (e) => {
+        drawing = true;
+        [x, y] = [e.offsetX, e.offsetY];
+      })
+
+    })()
+  </script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+
+    canvas {
+      border: 1px solid;
+    }
+  </style>
+
+</body>
+
+</html>

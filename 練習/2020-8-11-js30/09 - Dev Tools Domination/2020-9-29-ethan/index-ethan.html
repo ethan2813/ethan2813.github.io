@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+
+    ; (function () {
+      const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+      function makeGreen() {
+        const p = document.querySelector('p');
+        p.style.color = '#BADA55';
+        p.style.fontSize = '50px';
+      }
+
+      let console = {
+        isDev: true,
+        log(...args) {
+          if (!this.isDev) return;
+          window.console.log(...args);
+        },
+        warn(...args) {
+          if (!this.isDev) return;
+          window.console.warn(...args);
+        },
+        error(...args) {
+          if (!this.isDev) return;
+          window.console.error(...args);
+        },
+        info(...args) {
+          if (!this.isDev) return;
+          window.console.info(...args);
+        },
+        assert(...args) {
+          if (!this.isDev) return;
+          window.console.assert(...args);
+        },
+        dir(...args) {
+          if (!this.isDev) return;
+          window.console.dir(...args);
+        },
+        table(...args) {
+          if (!this.isDev) return;
+          window.console.table(...args);
+        },
+        count(...args) {
+          if (!this.isDev) return;
+          window.console.count(...args);
+        },
+        time(...args) {
+          if (!this.isDev) return;
+          window.console.time(...args);
+        },
+        timeEnd(...args) {
+          if (!this.isDev) return;
+          window.console.timeEnd(...args);
+        },
+      }
+
+      let name = 'Ethan'
+
+
+
+      // Regular
+      console.log('hello')
+
+      // Interpolated
+
+      //以前的做法
+      console.log('my name is %s !!!', 'Ethan'); // %s 字串
+      console.log('my name is %f !!!', 3.14); // %f 浮點數
+      console.log('my name is %d !!!', 3.14); // %d 整數
+
+      //現在推薦es6的做法
+      console.log(`my name is ${name}!!!`)
+
+      // Styled
+
+      // warning!
+      console.warn('警告123')
+
+      // Error :|
+      console.error('錯誤123')
+
+
+      // Info
+      console.info('不知道跟log有什麼差別')
+
+      // Testing
+      console.assert(false, '訊息');
+      console.assert('', '訊息');
+      console.assert(0, '訊息');
+      console.assert(NaN, '訊息');
+      console.assert(null, '訊息');
+      console.assert(undefined, '訊息');
+
+
+      // clearing
+      //ctrl+L
+
+      // Viewing DOM Elements
+      const p = document.querySelector('p');
+      console.dir(p); //這個對象有哪些方法可以操作，可以展開這些對象的所有屬性跟功能
+
+      // Grouping together
+
+      // counting
+      //每印一個，它會跟你說做了幾次
+      console.count('Wes');
+      console.count('Wes');
+      console.count('Steve');
+      console.count('Steve');
+      console.count('Wes');
+      console.count('Steve');
+      console.count('Wes');
+      console.count('Steve');
+      console.count('Steve');
+      console.count('Steve');
+      console.count('Steve');
+      console.count('Steve');
+
+      // timing
+      //測試test1與test2 的執行時間
+      console.time('test1');
+      let i;
+      let j;
+      for (i = 1; i < 100000000; i++) {
+        j = i
+      }
+      console.timeEnd('test1');
+
+      console.time('test2');
+
+      for (let i = 1; i < 100000000; i++) {
+        let j = i
+      }
+      console.timeEnd('test2');
+
+      //////////////////////////
+
+      console.time('test ary1')
+      let ary1 = [];
+      for (let i = 1; i < 1000000; i++) {
+        ary1.push(i)
+      }
+      ary1.forEach(item=>{
+        let j = item;
+      })
+      console.timeEnd('test ary1')
+
+      console.time('test ary2')
+      let ary2 = [];
+      for (let i = 1; i < 1000000; i++) {
+        ary2.push({ count: i })
+      }
+      ary2.forEach(item=>{
+        let j = item;
+      })
+      console.timeEnd('test ary2')
+
+      console.time('test ary3')
+      let ary3 = [];
+      for (let i = 1; i < 1000000; i++) {
+        ary3.push(i % 2 ? i : { count: i })
+      }
+      ary3.forEach(item=>{
+        let j = item;
+      })
+      console.timeEnd('test ary3')
+      console.log(ary3[1000000 - 2])
+
+    })()
+
+
+
+
+
+  </script>
+</body>
+
+</html>

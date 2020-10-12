@@ -29,6 +29,9 @@
       { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
     ];
 
+
+
+
     const wiki = ['Boulevards of Paris', 'City walls of Paris', 'Thiers wall', 'Wall of Charles V', 'Wall of Philip II Augustus', 'Haussmanns renovation of Paris', 'Boulevards of the Marshals', 'Boulevard Auguste-Blanqui', 'Boulevard Barbès', 'Boulevard Beaumarchais', 'Boulevard de lAmiral-Bruix', 'Boulevard Mortier', 'Boulevard Poniatowski'];
 
 
@@ -55,7 +58,8 @@
       console.table(ans1_1) //顯示1500~1600出生的人
 
     })()
-    
+      
+
       // Array.prototype.map()
       // 2. Give us an array of the inventors first and last names
       ; (function () {
@@ -71,7 +75,7 @@
         console.table(ans2) //first last 合併
 
       })()
-      
+     
 
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
@@ -86,7 +90,7 @@
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
       ; (function () {
-        
+
         //以前的做法
         // let total = 0
         // inventors.forEach(inventor => {
@@ -100,7 +104,7 @@
         }, 0)
         console.log(ans4)
       })()
-        
+      
       // 5. Sort the inventors by years lived
       ; (function () {
         let ans5 = inventors.sort((a, b) => {
@@ -108,8 +112,8 @@
         })
         console.table(ans5)
       })()
+
       
-  
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
@@ -125,7 +129,7 @@
       ; (function () {
         let alpha = people.sort((a, b) => {
           let [aFirst, aLast] = a.split(', ');
-          console.log([aFirst, aLast])
+          // console.log([aFirst, aLast])
           let [bFirst, bLast] = b.split(', ');
           return aLast > bLast ? 1 : aLast < bLast ? -1 : 0 // 整個字母排列
           // return aLast[0] > bLast[0] ? 1 : aLast[0] < bLast[0] ? -1 : 0 // 字母第一個字排列
@@ -137,7 +141,8 @@
         let str11 = str.split(' ')
         // console.log(str.indexOf('brown'))
       })()
-    
+     
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
@@ -159,8 +164,8 @@
       }, {})
       console.table(ans8)
     })()
-    
 
+    
   </script>
 </body>
 

@@ -99,8 +99,13 @@
         //     }
         // }
 
-      
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         // //jQuery(data_attribute)
         // $('.tab_btn').click(function(){
         //     $('.tab_btn').removeClass('display_block')
@@ -111,7 +116,28 @@
         //     $('.tab_content:nth-child('+this.dataset.btnid+')').addClass('display_block')
         // })
 
-        
+        // $('.tab_btn').on('click',function(){
+        //     console.log(this)
+        // })
+
+        $('.tab_btn').on('click', (b) => {
+            $(b.currentTarget).addClass('display_block')
+        })
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
         // index() 寫法
         // $('.tab_btn').click(function(){

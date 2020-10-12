@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+</head>
+
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+    ; (function () {
+      let ans1 = people.some(e => {
+        return new Date().getUTCFullYear() - e.year >= 19
+      })
+      console.log(ans1)
+    })()
+
+
+      // Array.prototype.every() // is everyone 19 or older?
+      ; (function () {
+        let ans2 = people.every(e => {
+          return new Date().getUTCFullYear() - e.year >= 19
+        })
+        console.log(ans2)
+      })()
+
+
+      // Array.prototype.find()
+      // Find is like filter, but instead returns just the one you are looking for
+      // find the comment with the ID of 823423
+      ; (function () {
+        let ans3 = comments.find(e => {
+          return e.id === 823423
+        })
+        console.log(ans3)
+      })()
+
+      // Array.prototype.findIndex()
+      // Find the comment with this ID
+      ; (function () {
+        ans4 = comments.findIndex(e => {
+          return e.id === 823423
+        })
+        console.log(ans4)
+      })()
+
+      // delete the comment with the ID of 823423
+      //slice 會創到一個新陣列
+      //splice 會直接去更改原始的資料
+      ; (function () {
+        ans4 = comments.findIndex(e => e.id === 823423)
+
+        let ans5 = comments.slice(0, ans4) // 從一開始到id=823423(不包含id=823423)
+        let ans6 = comments.slice(ans4 + 1) //從id=823423之後開始第一個開始
+        let ans7 = [...ans5, ...ans6] // 把ans5 ans6 合在一起 
+        console.log(ans7) //此筆是有刪除 id=823423 這筆資料
+
+        let ans8 = [...comments].splice(ans4, 1)
+        console.log(ans8) //回傳被刪除的那筆資料
+      })()
+
+
+      ////更新id3 數量為4
+      ; (function () {
+        let cart = [
+          { id: 1, count: 1 },
+          { id: 2, count: 1 },
+          { id: 3, count: 1 },
+          { id: 4, count: 1 },
+        ];
+
+        let item = cart.find(e => {
+          // console.log(e.id)
+          return e.id === 3
+        })
+        item.count = 4
+        console.log(cart)
+      })()
+
+      //陣列是新的 物件是舊的
+      ; (function () {
+
+        //陣列使用解構.slice()會複製一個新的陣列，
+        //因此修改新的陣列時，並不會影響到原有的陣列
+        let people = ['ethan', 'joanne', 'eason']
+        let newpeople = [...people]
+        newpeople[2] = 'henry'
+        console.log(people[2], newpeople[2]) //eason henry        
+
+        //以下陣列雖然用解構.slice()複製一個新的陣列，
+        //但新陣列內的物件{}，還是原本舊陣列的物件{}
+        //所以即便定義新的物件內容，舊的物件依然會被改動
+        let people2 = [
+          { id: 1, name: 'ethan' },
+          { id: 2, name: 'joanne' },
+          { id: 3, name: 'eason' }];
+        let newpeople2 = [...people2]
+        newpeople2[2].name = 'henry'
+        console.log(people2[2], newpeople2[2]) //{id: 3, name: "henry"} {id: 3, name: "henry"}
+
+      })()
+
+      // 複製物件
+      ; (function () {
+
+        let people3 = { id: 1, name: 'ethan' };
+
+        //方法一:使用Object.assign() 
+        let newpeople3 = Object.assign({}, people3);
+        console.log(newpeople3) //{ id: 1, name: 'ethan' }
+
+
+
+        //方法二:JSON.parse(JSON.stringify())  把物件轉為json，再把sjon轉為物件，
+        //避免裡面有function，純資料可以使用
+        let newpeople3_2 = JSON.parse(JSON.stringify(people3))
+        console.log(newpeople3_2) //{ id: 1, name: 'ethan' }
+      })()
+
+      //複製陣列包物件
+      ; (function () {
+        let people4 = [
+          { id: 1, name: 'ethan' },
+          { id: 2, name: 'joanne' },
+          { id: 3, name: 'eason' }];
+
+        //使用map在使用Object.assign()
+        let newpeople4 = people4.map(e => {
+          return Object.assign({}, e)
+        })
+        console.log(newpeople4)
+
+        ////方法二:JSON.parse(JSON.stringify())  把物件轉為json，再把sjon轉為物件
+        let newpeople4_2 = JSON.parse(JSON.stringify(people4))
+        console.log(newpeople4_2)
+
+
+
+
+
+
+      })()
+ 
+    //傳值
+    ; (function () {
+      let obj1 = { count: 1 };
+      let obj2 = obj1;
+      let obj3 = Object.assign({}, obj1);
+      obj1.count = 5;
+      let obj4 = JSON.parse(JSON.stringify(obj2))
+
+
+
+      console.log(obj1.count + obj2.count + obj3.count + obj4.count) //5 5 1 5 = 16
+
+
+    })()
+
+
+  </script>
+</body>
+
+</html>

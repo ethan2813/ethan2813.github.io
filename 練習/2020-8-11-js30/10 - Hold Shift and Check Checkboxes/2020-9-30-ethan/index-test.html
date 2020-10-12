@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background: orange;
+        }
+
+        .inbox {
+            max-width: 500px;
+            background: white;
+            margin: 50px auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #D1E2FF;
+        }
+
+        .item:last-child {
+            border-bottom: 0;
+        }
+
+        input:checked+p {
+            text-decoration: line-through;
+            background: #F9F9F9;
+        }
+
+        input[type='checkbox'] {
+            margin: 20px;
+        }
+        input[type='button']{
+            width: 50px;
+            height: 30px;
+        }
+        label{
+            width: 100px;
+            height: 100px;
+            background: rgb(77, 27, 170);
+            display: block;
+            float: right;
+        }
+
+
+        p {
+            margin: 0;
+            padding: 20px;
+            flex: 1;
+            font-size: 20px;
+            font-weight: 200;
+            border-left: 1px solid #D1E2FF;
+            transition: background 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inbox">
+        <div class="item">
+            <input type="checkbox">
+            <p>測試1</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>測試2</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>測試3</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>測試4</p>
+        </div>
+        <input id='btn' type="button" value="重置">
+        <input type="checkbox" id='bbb'>
+        <label for="btn" class='lab'>123</label>
+    </div>
+
+    <script>
+        let checkboxes = Array.from(
+            document.querySelectorAll('.inbox input[type="checkbox"]')
+        );
+        let reset = document.querySelector('.inbox input[type="button"]')
+
+        
+        let lastcheck = null;
+
+        function clickHandler(e) {
+            if (this.checked) {
+                if (lastcheck !== null && e.shiftKey) {
+                    console.log('123')
+                    let newcheck = checkboxes.indexOf(this);
+                    let range = checkboxes.slice(
+                        Math.min(newcheck, lastcheck),
+                        Math.max(newcheck, lastcheck)
+                    );
+                    range.forEach(input=>{
+                        input.checked = true;
+                    })
+                }
+                lastcheck = checkboxes.indexOf(this);
+
+
+            } else {
+                lastcheck = null;
+            }
+        }
+
+        function resetHandler(e){
+            checkboxes.forEach(input=>{
+                input.checked = false;
+            })
+        }
+
+        checkboxes.forEach(input => {
+            input.addEventListener('click', clickHandler);
+        });
+        reset.addEventListener('click',resetHandler)
+    </script>
+</body>
+
+</html>
