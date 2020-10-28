@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體, sans-serif ;
+    position: relative;
+}
+
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    // color: #595959;
+    color: #4d4d4d;
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    padding: 0!important;
+}
+
+.row{
+    margin: 0!important;
+}
+.col{
+    margin: 0!important;
+}
+///////////// nav
+nav#nav{
+    padding: 0 10px;
+    position: fixed;
+    height: 70px;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    // background-color: blue;
+    transition:  1s;
+    // -webkit-backface-visibility: hidden;
+
+
+    &.move{
+        height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    >div{
+        height: 100%;
+    }
+    .nav_countainer{
+        // max-height: 70px;
+        height: 100%;
+        // margin: 0 100px;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            text-decoration: none;
+            img:nth-child(1){
+                // max-height: 50px;
+                // line-height: 50px;
+                // margin-top: 10px;
+                height: 80%;
+                margin: auto 0 ;
+                
+                
+            }
+            img:nth-child(2){
+                height: 25px;
+                margin:  auto 0;
+                margin-left: 10px;
+            }
+            
+        }
+        .nav_links{
+            display: flex;
+            list-style-type: none;
+            margin-bottom: 0;
+            padding: 0;
+
+            // li:first-child a{
+            //     margin-left: 0;
+            // }
+            // li:last-child a{
+            //     margin-right: 0;
+            // }
+            
+
+            .part{
+                font-size: 2rem;
+                // line-height: 100%;
+                text-align: center;
+            }
+
+            li{
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                a{
+                    color: #666666;
+                    margin: 0 35px;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    // line-height: 100%;
+                    text-align: center;
+                }
+
+            }
+            
+           
+        }
+        .burger{
+            cursor: pointer;
+            margin: auto 0 ;
+            display: none;
+
+            >div{
+                width: 40px;
+                height: 3px;
+                background-color:#595959;
+                margin: 10px;
+                transition: ease-in 0.3s;
+            }
+            
+        }
+
+
+        .burger_active .line1{
+            transform: rotate(45deg) translate(13px, 6px);
+        }
+        .burger_active .line2{
+            opacity: 0;
+        }
+        .burger_active .line3{
+            transform: rotate(-45deg) translate(13px, -6px);
+        }
+
+    }
+}
+
+footer#footer{
+    #gototop{
+        img{
+            width: 50px;
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            z-index: 5;
+            cursor: pointer;
+            opacity: 0.9;
+            
+            
+        }
+    }
+    
+    .footer_top{
+
+        padding: 80px 0;
+        // padding: 0 200px;
+        background-color: black;
+
+        .footer_title{
+            text-align: center;
+            font-size: 30px;
+            padding: 0 0 80px 0;
+            color: #ffffff;
+        }
+        //footer的LOGO
+
+        .logo{
+            display: flex;
+            justify-content: center;
+
+            >div{
+                display: flex;
+            }
+
+            .logo_btn{
+                img{
+                    width: 70px;
+                }
+                
+            }
+            .inner{
+                    
+                display: flex;
+                align-items: flex-end;
+                font-size: 20px;
+                color: #ffffff;
+                    text-decoration: none;
+                    list-style-type: none;
+                
+
+            }
+
+        }
+        
+        //footer 聯絡資訊
+        .contact{
+            display: flex;
+            justify-content: center;
+            >div{
+                h2{
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                
+
+                .list{
+                    
+
+                    img{
+                        height: 100%;
+                        margin-right: 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        list-style-type: none;
+                        color: #ffffff;
+                        font-size: 14px;
+
+                    }
+                    
+                }
+            }
+        }
+
+        //footer 營業時間
+        .opening{
+            display: flex;
+            
+            justify-content: center;
+
+            >div{
+                h2{
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                    text-align: center;
+
+    
+                }
+                // .list{
+                //     p{
+                //         color: #ffffff;
+                //         font-size: 16px;
+                //         margin: 0;
+
+                //     }
+    
+                // }
+                .table_opening{
+                
+
+                    margin:0 auto;
+                    font-size: 14px;
+                    
+                    td{
+                        padding: 3px 5px;
+                        color: #ffffff;
+                    }
+                }
+
+            }
+            
+        }
+    }
+    .footer_bot{
+        position: relative;
+        .copyright{
+            padding: 175px 200px 200px 200px;
+            h2{
+                
+
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                
+            }
+        }
+
+        .rwd_map {
+            display: block; 
+            position: relative;
+            overflow: hidden; 
+            height: 100%; 
+            padding: 0;
+            width: 100%;
+            // padding-bottom: 50%;
+
+            iframe {
+                position: absolute;
+                height: 100%; 
+                width: 100%;
+                left: 0; 
+                top: 0;
+                }
+        }
+        .footer_bot{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+

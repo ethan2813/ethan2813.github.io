@@ -1,0 +1,650 @@
+
+@media(max-width:1200px){
+    footer#footer{
+        .footer_bot{
+            .copyright{
+                padding: 20px 20px 20px 20px;
+            }
+
+            .rwd_map{
+                height: 300px;
+                width: 100%;
+                
+            }
+        }
+        
+    }
+}
+@media(max-width:992px){
+    nav#nav{
+        .nav_countainer{
+            .nav_links{
+                
+                position: absolute;
+                flex-direction: column;
+                top: 80px;
+                right: -300px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 2px 2px 2px #ddd;
+                transition: 0.5s ease-in-out;
+                li{
+                    padding: 20px 0;
+                }
+                .part{
+                    display: none;
+                }
+
+                &.nav_active{
+                    top: 80px;
+                    right: 5px;
+                }
+            }
+            .burger{
+                display: block;
+            }
+        }
+    }
+    footer#footer{
+        .footer_top{
+            .opening{
+                margin-top: 50px;
+            }
+        }
+        
+    }
+
+    
+
+    main#pagi_main{
+
+        section#pagi_banner{
+            .content{
+                .banner_cube{
+                    width: 350px;
+                    height: 80px;
+
+                    &:before{
+                        left: 52%;
+                        height: 60px;
+                    }
+                    .cube_text{
+                        h2{
+                            font-size: 25px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        section#artificial-dental{
+            .title{
+                .implant{
+                    width: 40px;
+                }
+                .text{
+                    font-size: 20px;
+
+                    &:before{
+                        top: 50%;
+                    }
+                }
+            }
+        }
+        section#all-ceramic{
+            .content{
+                .L{
+                    display: none;
+                }
+                .R{
+                    display: none;
+                }
+                .mobile{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .article{
+                left: 50%;
+                top: 75%;
+                background-color: rgba(255, 255, 255, 0.8);
+
+                img{
+                    width: 30px;
+                }
+                .title{
+                    font-size: 20px;
+                    padding-bottom: 30px;
+
+                    &:before{
+                        top: 40px;
+                    }
+                }
+            }
+        }
+
+        section#qa{
+            .content{
+                height: 80vh;
+                position: relative;
+                .photo{
+                    display: flex;
+                    flex-direction: column;
+                    height: 600px;
+                    background-image: unset ;
+                    background-color: unset;
+                    img{
+                        
+                        width: 60%;
+                        opacity: 0.5;
+                        position: absolute;
+                        display: none;
+                    }
+                    .photo_top,.photo_bot{
+                        display: block;
+                        // color: white;
+                        padding: 0 40px;
+                        h2{
+                            font-size: 24px;
+                        }
+                        .text{
+                            z-index: 2;
+                            ul{
+                                padding-left: 10px;
+                                li{
+                                    // color: black;
+                                    font-size: 14px;
+                                    list-style-type:decimal ;
+
+                                    
+                                }
+                            }
+                        }
+                    }
+                    
+
+                }
+                .article{
+                    // height: 0px;
+                    position: absolute;
+                    top: 0;
+                    display: none;
+
+
+                    >div{
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+@media(max-width:820px){
+    main#main{
+        section#team{
+            .team_title{
+                margin: 75px 0 70px 0;
+            }
+            .content_{
+                height: 125vh;
+                .doctor_row{
+                    display: flex;
+                    flex-direction: column;
+    
+                    .doctor{
+                        background-color: rgba(255, 255, 255, 0.781);
+                        padding: 10px;
+                        // border-radius: 30px;
+                        // border: 1px rgb(182, 181, 181) solid;
+                        
+                        
+                        margin: 12px auto;
+                        width: 330px;
+                        height: auto;
+                        
+                        >div{
+                            margin-right: auto;
+    
+                            
+                            
+                            .top{
+                        
+                                display: flex;
+                                img{
+                                    height: 60px;
+                                    width: 50px;
+                                    // display: none;
+                              
+                                }
+                                span{
+                                    margin-top: 30px ;
+                                    margin-left: 10px;
+                                    font-size: 20px ;
+                                }
+                            }
+                            .bot{
+                                .text{
+                                    
+                                    ul{
+                                        padding: 0;
+                                        margin: 0;
+
+                                        
+                                        li{
+                                            
+                                            font-size: 13px;
+                                            letter-spacing: 2px;
+
+                                        }
+                                    }
+                                 
+                                    
+                                }
+                            }
+                        }
+    
+                        &:hover{
+                            transform: none;  
+                            box-shadow: none; 
+                            // background-color: transparent;
+                        }
+    
+    
+    
+                    }
+                }
+            }
+        }
+
+    }
+    
+
+    main#pagi_main{
+        section#artificial-dental{
+            // .team_title{
+            //     margin: 75px 0 70px 0;
+            // }
+            .content_{
+                height: 140vh;
+                .doctor_row{
+                    display: flex;
+                    flex-direction: column;
+    
+                    .doctor{
+                        background-color: transparent;
+                        
+                        // border-radius: 30px;
+                        
+                        
+                        
+                        margin: 15px auto;
+                        width: 100%;
+                        height: auto;
+                        
+                        >div{
+                            background-color: rgba(255, 255, 255, 0.918);
+                            position: relative;
+                            // border-radius: 10px; 
+                            padding: 10px;   
+
+                            .top{
+                                img{
+                                    // position: absolute;
+                                    // display: none;
+                                    width: 50px;
+                                    height: 100%;
+                                    
+                                }
+
+                                &:before{
+                                    width: 80%;
+                                    // display: none;
+                                }
+
+
+                            }
+                            .bot{
+                                
+                                .title{
+                                    font-size: 20px;
+                                    
+                                }
+                                .text{
+                                    padding: 0 ;
+                                    ul{
+                                        padding: 0;
+                                        
+                                        li{
+                                            list-style-type: none;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                    
+    
+                        }
+                        &:hover{
+                            transform: none;  
+                            box-shadow: none; 
+                            background-color: transparent;
+                        }
+                    }
+
+                    .doctor_4{
+                        >div{
+                            .bot{
+                                .text{
+                                    ul{
+                                        li{
+                                            margin: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+       
+
+    
+    
+    }
+}
+@media(max-width:700px){
+    main#main{
+        section#team{
+            .team_title{
+                h2{
+                    font-size: 20px;
+                }
+                
+            }
+        }
+        section#setting{
+            .setting_article{
+                img{
+                    width: 50px;
+                    margin: 30px 0 30px 0;
+                    
+                }
+                .setting_title{
+                    font-size: 20px;
+                }
+                .text{
+                    padding: 0 20px;
+    
+                    p{
+                        letter-spacing: 0px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+
+}
+@media(max-width:600px){
+
+    main#main{
+        section#banner{
+            .content_1{
+                
+                .banner{
+                    display: none;
+                }
+                .banner_mobile{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .content_2{
+                .logo_float{
+                    height: 150px;
+                    top: 0%;
+                }
+                .cup_icon{
+                    width: 50px;
+                padding-top: 160px;
+    
+                }
+    
+                .content_2_text{
+                    // padding-top: 70px;
+                    // padding-bottom: 170px;
+                    padding: 30px 30px 50px 30px;
+                    p{
+                        padding-bottom: 10px;
+                        font-size: 16px;
+                        text-align: unset;
+                        font-weight: 800;
+                    }
+                }
+            }
+            .content_3{
+                .opening{
+                width: 80%;
+                height: 25vh;
+                    
+                    h2{
+                        margin-top: 10px;
+                        font-size: 18px;
+                        font-weight: 0;
+                    } 
+                    .bl{
+                        font-size: 18px;
+                        margin: 0;
+                    }
+    
+    
+                    .table_opening{
+                        // margin:0 auto;
+                        font-size: 14px;
+                    
+                    td{
+                        padding: 3px 5px;
+                    }
+                    }
+                }
+            }
+           
+        }
+
+    }
+
+    main#pagi_main{
+        section#pagi_banner{
+            .content{
+                .pagi_banner{
+                    display: none;
+                }
+                .pagi_banner_mobile{
+                    display: block;
+                }
+                .banner_R{
+                    display: none;
+                }
+                .banner_cube{
+                    width: 200px;
+                    height: 50px;
+                    bottom: -5%;
+
+                    &:before{
+                        left: 55%;
+                        height: 30px;
+                    }
+                    .cube_text{
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
+
+
+}
+@media(max-width:576px){
+    nav#nav{
+        .nav_countainer{
+            .logo{
+                img:nth-child(1){
+                    height: 60%;
+                }
+                img:nth-child(2){
+                    width: 60%;
+	                height: auto;
+	                
+                }
+                
+            }
+        }
+    }
+
+    footer#footer{
+        
+            
+            .footer_top{
+                padding: 20px 0;
+                .footer_title{
+                    padding: 0 0 10px 0;
+                    font-size: 18px;
+                }
+                .logo{
+                    justify-content: left;
+                    
+                    margin-bottom: 20px;
+        
+                    >div{
+                        display: flex;
+                    }
+        
+                    .logo_btn{
+                        img{
+                            width: 30px;
+                        }
+                        
+                    }
+                    .inner{
+                            
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 16px;
+                        color: #ffffff;
+                            text-decoration: none;
+                            list-style-type: none;
+                        
+        
+                    }
+        
+                }
+                .contact{
+                    justify-content: left;
+                    >div{
+                        h2{
+                            display: none;
+                            text-align: left;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                .opening{
+                    justify-content: left;
+                    margin-top: 20px;
+
+                    >div{
+                        h2{
+                            display: none;
+                            text-align: left;
+                            margin-bottom: 5px;
+
+                        }
+                        .table_opening{
+                            tr{
+                                td{
+                                    padding: 3px 10px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+
+    
+    main#main{
+        section#team{
+            .content_{
+                height: 132vh;
+            }
+        }
+        section#setting{
+            .setting_article{
+                img{
+                    width: 50px;
+                    margin: 30px 0 30px 0;
+                }
+    
+            }
+        }
+
+    }
+    
+
+    main#pagi_main{
+
+        section#pagi_banner{
+            .content{
+                img.banner_logo{
+                    top: 105%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        section#artificial-dental{
+            .content_{
+                height: 170vh;
+
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    nav#nav{
+        .nav_countainer{
+            .logo{
+                width: 70%;
+            }
+        }
+    }
+    
+    // main#pagi_main{
+    //     section#qu{
+    //         .content{
+
+    //         }
+    //     }
+    // }
+}
