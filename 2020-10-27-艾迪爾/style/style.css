@@ -502,6 +502,7 @@ main#pagi_main section#artificial-dental .content_ {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position: left;
   width: 100%;
   position: relative;
 }
