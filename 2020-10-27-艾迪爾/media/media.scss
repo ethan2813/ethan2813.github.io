@@ -195,7 +195,7 @@
                 margin: 75px 0 70px 0;
             }
             .content_{
-                height: 125vh;
+               
                 .doctor_row{
                     display: flex;
                     flex-direction: column;
@@ -593,11 +593,6 @@
 
     
     main#main{
-        section#team{
-            .content_{
-                height: 132vh;
-            }
-        }
         section#setting{
             .setting_article{
                 img{
@@ -622,12 +617,7 @@
                 }
             }
         }
-        // section#artificial-dental{
-        //     .content_{
-        //         height: 170vh;
-
-        //     }
-        // }
+      
     }
 }
 @media(max-width:400px){

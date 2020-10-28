@@ -148,9 +148,6 @@
   main#main section#team .team_title {
     margin: 75px 0 70px 0;
   }
-  main#main section#team .content_ {
-    height: 125vh;
-  }
   main#main section#team .content_ .doctor_row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -421,9 +418,6 @@
   }
   footer#footer .footer_top .opening > div .table_opening tr td {
     padding: 3px 10px;
-  }
-  main#main section#team .content_ {
-    height: 132vh;
   }
   main#main section#setting .setting_article img {
     width: 50px;
