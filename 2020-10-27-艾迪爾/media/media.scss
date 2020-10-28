@@ -296,43 +296,37 @@
                             padding: 10px;   
 
                             .top{
-                                position: relative;
+                        
+                                display: flex;
                                 img{
-                                    // position: absolute;
+                                    height: 60px;
+                                    width: 50px;
                                     // display: none;
-                                    width: 60px;
-                                    height: auto;
-                                    // position: absolute;
-                                    z-index: 1;
-                                    // bottom: -200%;
-                                    // transform: translate(-50%,-50%);
-                                    
+                              
                                 }
-
-                                &:before{
-                                    width: 50%;
-                                    
-                                    // display: none;
+                                span{
+                                    margin-top: 30px ;
+                                    margin-left: 10px;
+                                    font-size: 20px ;
                                 }
-
-
                             }
                             .bot{
-                                
-                                .title{
-                                    font-size: 20px;
-                                    
-                                }
                                 .text{
-                                    padding: 0 ;
+                                    
                                     ul{
                                         padding: 0;
+                                        margin: 0;
+
                                         
                                         li{
-                                            list-style-type: none;
+                                            
+                                            font-size: 13px;
+                                            letter-spacing: 2px;
+
                                         }
-                                        
                                     }
+                                 
+                                    
                                 }
                             }
                     
