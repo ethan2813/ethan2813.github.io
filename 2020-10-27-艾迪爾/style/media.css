@@ -65,29 +65,29 @@
   main#pagi_main section#artificial-dental .title .text:before {
     top: 50%;
   }
-  main#pagi_main section#banner_logo .content .L {
+  main#pagi_main section#all-ceramic .content .L {
     display: none;
   }
-  main#pagi_main section#banner_logo .content .R {
+  main#pagi_main section#all-ceramic .content .R {
     display: none;
   }
-  main#pagi_main section#banner_logo .content .mobile {
+  main#pagi_main section#all-ceramic .content .mobile {
     width: 100%;
     display: block;
   }
-  main#pagi_main section#banner_logo .article {
+  main#pagi_main section#all-ceramic .article {
     left: 50%;
     top: 75%;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  main#pagi_main section#banner_logo .article img {
+  main#pagi_main section#all-ceramic .article img {
     width: 30px;
   }
-  main#pagi_main section#banner_logo .article .title {
+  main#pagi_main section#all-ceramic .article .title {
     font-size: 20px;
     padding-bottom: 30px;
   }
-  main#pagi_main section#banner_logo .article .title:before {
+  main#pagi_main section#all-ceramic .article .title:before {
     top: 40px;
   }
   main#pagi_main section#qa .content {
@@ -221,12 +221,16 @@
     position: relative;
     padding: 10px;
   }
+  main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top {
+    position: relative;
+  }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top img {
-    width: 50px;
-    height: 100%;
+    width: 60px;
+    height: auto;
+    z-index: 1;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top:before {
-    width: 80%;
+    width: 50%;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .title {
     font-size: 20px;

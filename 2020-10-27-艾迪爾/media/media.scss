@@ -93,7 +93,7 @@
                 }
             }
         }
-        section#banner_logo{
+        section#all-ceramic{
             .content{
                 .L{
                     display: none;
@@ -296,16 +296,22 @@
                             padding: 10px;   
 
                             .top{
+                                position: relative;
                                 img{
                                     // position: absolute;
                                     // display: none;
-                                    width: 50px;
-                                    height: 100%;
+                                    width: 60px;
+                                    height: auto;
+                                    // position: absolute;
+                                    z-index: 1;
+                                    // bottom: -200%;
+                                    // transform: translate(-50%,-50%);
                                     
                                 }
 
                                 &:before{
-                                    width: 80%;
+                                    width: 50%;
+                                    
                                     // display: none;
                                 }
 
