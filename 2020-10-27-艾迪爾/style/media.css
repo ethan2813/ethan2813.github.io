@@ -348,10 +348,11 @@
 
 @media (max-width: 576px) {
   nav#nav .nav_countainer .logo img:nth-child(1) {
-    height: 60%;
+    width: 40px;
+    height: auto;
   }
   nav#nav .nav_countainer .logo img:nth-child(2) {
-    width: 60%;
+    width: 150px;
     height: auto;
   }
   footer#footer .footer_top {

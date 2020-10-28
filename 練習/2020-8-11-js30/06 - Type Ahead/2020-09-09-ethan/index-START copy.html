@@ -24,42 +24,39 @@
       .then(blob => blob.json())
       .then(data => (cities = data))
 
-    function findMatches(wordToMatch, cities) {
-
-      // console.log(wordToMatch,cities)
-      return cities.filter(place => {
-
-        let regexp = new RegExp(wordToMatch, 'gi');
-
+    function findMatches(wordToMatch,cities){
+      return cities.filter(place=>{
+        let regexp = new RegExp(wordToMatch,'gi')
         return place.city.match(regexp) || place.state.match(regexp)
       })
-
-    }
-    function numberWithCommas(e) {
-      return (e*1).toLocaleString();
     }
 
-    function keyHandler() {
-      let matchArray = findMatches(this.value, cities)
-      let html = matchArray.map(place => {
-        let regexp = new RegExp(this.value, 'gi');
-        let cityName = place.city.replace(regexp, `<span class='hl'>${this.value}</span>`);
-        let stateName = place.state.replace(regexp, `<span class='hl'>${this.value}</span>`);
+    function numberWithCommas(x){
+      return (x*1).toLocaleString();
+    }
 
+    function keyHandler(){
+      let matchArray = findMatches(this.value,cities)
+      let html = matchArray.map(place=>{
+        let regexp = new RegExp(this.value,'gi');
+        let cityName = place.city.replace(regexp,`<span class='hl'>${this.value}</span>`);
+        let stateName = place.state.replace(regexp,`<span class='hl'>${this.value}</span>`);
         return `
         <li>
-          <span class='name'>${cityName}, ${stateName}</span>
-          <span class="population">${numberWithCommas(place.population)}</span>
+          <span>${cityName}, ${stateName}</span>
+          <span>${numberWithCommas(place.population)}</span>
         </li>
         `
       }).join('')
 
       suggestions.innerHTML = html;
+
+      
     }
 
-    const suggestions = document.querySelector('.suggestions')
-    document.querySelector('.search').addEventListener('keyup', keyHandler)
 
+    document.querySelector('.search').addEventListener('keyup',keyHandler)
+    let suggestions = document.querySelector('.suggestions')
 
   </script>
 </body>

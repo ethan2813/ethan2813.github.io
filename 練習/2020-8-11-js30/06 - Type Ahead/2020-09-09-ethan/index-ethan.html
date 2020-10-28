@@ -46,7 +46,7 @@
     
     function keyHandler() {
       // console.log(e)
-      const matchArray = findMatches(this.value, cities);
+      const matchArray = findMatches(this.value, cies);
       console.log(matchArray)
       const html = matchArray.map(place=>{
         const regex = new RegExp(this.value,'gi');

@@ -46,11 +46,13 @@
         input[type='checkbox'] {
             margin: 20px;
         }
-        input[type='button']{
+
+        input[type='button'] {
             width: 50px;
             height: 30px;
         }
-        label{
+
+        label {
             width: 100px;
             height: 100px;
             background: rgb(77, 27, 170);
@@ -95,45 +97,50 @@
     </div>
 
     <script>
-        let checkboxes = Array.from(
-            document.querySelectorAll('.inbox input[type="checkbox"]')
-        );
-        let reset = document.querySelector('.inbox input[type="button"]')
+
+        ; (function () {
+            let checkboxes = Array.from(
+                document.querySelectorAll('.inbox input[type="checkbox"]')
+            );
+            let reset = document.querySelector('.inbox input[type="button"]')
+
+
+            let lastcheck = null;
+
+            function clickHandler(e) {
+                if (this.checked) {
+                    if (lastcheck !== null && e.shiftKey) {
+                        console.log('123')
+                        let newcheck = checkboxes.indexOf(this);
+                        let range = checkboxes.slice(
+                            Math.min(newcheck, lastcheck),
+                            Math.max(newcheck, lastcheck)
+                        );
+                        range.forEach(input => {
+                            input.checked = true;
+                        })
+                    }
+                    lastcheck = checkboxes.indexOf(this);
+
+
+                } else {
+                    lastcheck = null;
+                }
+            }
+
+            function resetHandler(e) {
+                checkboxes.forEach(input => {
+                    input.checked = false;
+                })
+            }
+
+            checkboxes.forEach(input => {
+                input.addEventListener('click', clickHandler);
+            });
+            reset.addEventListener('click', resetHandler)
+        })
 
         
-        let lastcheck = null;
-
-        function clickHandler(e) {
-            if (this.checked) {
-                if (lastcheck !== null && e.shiftKey) {
-                    console.log('123')
-                    let newcheck = checkboxes.indexOf(this);
-                    let range = checkboxes.slice(
-                        Math.min(newcheck, lastcheck),
-                        Math.max(newcheck, lastcheck)
-                    );
-                    range.forEach(input=>{
-                        input.checked = true;
-                    })
-                }
-                lastcheck = checkboxes.indexOf(this);
-
-
-            } else {
-                lastcheck = null;
-            }
-        }
-
-        function resetHandler(e){
-            checkboxes.forEach(input=>{
-                input.checked = false;
-            })
-        }
-
-        checkboxes.forEach(input => {
-            input.addEventListener('click', clickHandler);
-        });
-        reset.addEventListener('click',resetHandler)
     </script>
 </body>
 

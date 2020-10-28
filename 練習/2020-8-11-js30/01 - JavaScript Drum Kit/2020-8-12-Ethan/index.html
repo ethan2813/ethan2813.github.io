@@ -8,9 +8,9 @@
 </head>
 
 <body>
-<!--12313-->
+  <!--12313-->
 
-<!-- <div>你好 安安我是內容</div> -->
+  <!-- <div>你好 安安我是內容</div> -->
 
 
   <div class="keys">
@@ -63,64 +63,67 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
   <script>
-    (function(){
+    (function () {
 
 
-      window.addEventListener('keydown',playHandler)
+      window.addEventListener('keydown', playHandler)
 
-      function playHandler(e){
+      function playHandler(e) {
 
         //play music
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        if(audio){
+        if (audio) {
           audio.currentTime = 0;  //設成0，重覆撥放效果較為明顯
-          audio.play() 
+          audio.play()
         }
 
         //dom style 
         const dom = document.querySelector(`div[data-key="${e.keyCode}"]`);
-        if(dom)dom.classList.add('playing')
+        if (dom) dom.classList.add('playing')
         //如果找到dom，就增加class
       }
 
       //每個key做完動畫時，要去remove class
-      document.querySelectorAll('.key').forEach(function(key){
-        key.addEventListener('transitionend',transitionendHandler)
+      document.querySelectorAll('.key').forEach(function (key) {
+        key.addEventListener('transitionend', transitionendHandler)
         //當按下按鍵(key)時，會添加transtitionend事件
 
       })
-      function transitionendHandler(e){
+      function transitionendHandler(e) {
 
-        if(e.propertyName == 'transform'){
+        if (e.propertyName == 'transform') {
           e.currentTarget.classList.remove('playing')
-            //currentTarger是綁事件的對象
+          //currentTarger是綁事件的對象
         }
       }
-    })()
+    })
 
-    ;(function(){
-     
-    })()
+      ; (function () {
 
-  
+        window.addEventListener('keydown',keyHandler)
 
+        function keyHandler(e){
+          let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+          if(audio){
+            audio.currentTime =  0;
+            audio.play();
+          }
 
+          let dom = document.querySelector(`div[data-key="${e.keyCode}"]`)
+          if(dom) dom.classList.add('playing')
+        };
 
+        function end(e){
+          if(e.propertyName == 'transform'){
+            e.currentTarget.classList.remove('playing')
+          }
+        }
 
-    
+        document.querySelectorAll('.key').forEach(key=>{
+          key.addEventListener('transitionend',end)
+        })
 
-   
- 
-
-   
-
-   
-
-    
-
-  
-
-
+      })()
 
 
 

@@ -509,10 +509,11 @@
         .nav_countainer{
             .logo{
                 img:nth-child(1){
-                    height: 60%;
+                    width: 40px;
+                    height: auto;
                 }
                 img:nth-child(2){
-                    width: 60%;
+                    width: 150px;
 	                height: auto;
 	                
                 }

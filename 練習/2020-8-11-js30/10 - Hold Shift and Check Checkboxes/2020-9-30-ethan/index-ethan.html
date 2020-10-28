@@ -132,32 +132,9 @@
       checkboxes.forEach(input => {
         input.addEventListener('click', clickHandler)
       })
-    })
-
-    ;(function(){
-      let checkboxes = Array.from(document.querySelectorAll('.inbox input[type="checkbox"]'))
-
-      let lastCheck = null;
-      function checkHandler(e){
-        if(this.checked){
-          if( e.shiftKey && lastCheck !== null ){
-            newCheck = checkboxes.indexOf(this);
-            let range = checkboxes.slice(Math.min(newCheck,lastCheck),Math.max(newCheck,lastCheck))
-            range.forEach(input=>{
-              input.checked = true;
-            })
-            
-          }
-          lastCheck = checkboxes.indexOf(this);
-          
-        }else{
-          lastCheck = null;
-        }
-
-      }
-
-      checkboxes.forEach(input=>{input.addEventListener('click',checkHandler)})
     })()
+
+   
 
 
 

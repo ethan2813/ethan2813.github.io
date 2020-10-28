@@ -96,16 +96,20 @@
     .panel p:nth-child(2) {
       font-size: 4em;
     }
-    .panel p:first-child{
+
+    .panel p:first-child {
       transform: translateY(-100%);
     }
-    .panel p:last-child{
+
+    .panel p:last-child {
       transform: translateY(100%);
     }
-    .panel.open-active p:first-child{
+
+    .panel.open-active p:first-child {
       transform: translateY(0%);
     }
-    .panel.open-active p:last-child{
+
+    .panel.open-active p:last-child {
       transform: translateY(0%);
     }
 
@@ -113,7 +117,7 @@
       font-size: 40px;
       flex: 5;
       background-position: bottom;
-      
+
 
     }
   </style>
@@ -148,25 +152,52 @@
   </div>
 
   <script>
-   let panels = document.querySelectorAll('.panel')
 
-   function clickHandler(e){
-    // console.log(this)
-    this.classList.toggle('open')
-   }
+    (function () {
+      let panels = document.querySelectorAll('.panel')
 
-   function end(e){
-    console.log(e)
-    if(e.propertyName.indexOf('flex')!==-1){
-      e.currentTarget.classList.toggle('open-active')
-    }
-   }
-   
-   panels.forEach(panel=>{
-     panel.addEventListener('click',clickHandler);
-     panel.addEventListener('transitionend',end);
+      function clickHandler(e) {
+        // console.log(this)
+        this.classList.toggle('open')
+      }
 
-   })
+      function end(e) {
+        console.log(e)
+        if (e.propertyName.indexOf('flex') !== -1) {
+          e.currentTarget.classList.toggle('open-active')
+        }
+      }
+
+      panels.map(panel => {
+        
+        panel.addEventListener('click', clickHandler);
+        panel.addEventListener('transitionend', end);
+
+      })
+
+    })
+
+    ;(function(){
+      let panels = document.querySelectorAll('.panel')
+
+      function clickHandler(){
+        this.classList.toggle('open')
+      }
+      function end(e){
+        console.log(e)
+        if(e.propertyName.indexOf('flex')!==-1){
+          e.currentTarget.classList.toggle('open-active')
+        }
+      }
+      
+      panels.forEach(panel=>{
+        panel.addEventListener('click',clickHandler)
+        panel.addEventListener('transitionend',end)
+      })
+
+      
+    })()
+
   </script>
 
 
