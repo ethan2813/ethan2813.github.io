@@ -643,6 +643,8 @@ main#pagi_main{
             }
         }
     }
+
+    //全齒冠
     section#all-ceramic{
         margin-top: 50px;
         position: relative;
@@ -722,11 +724,12 @@ main#pagi_main{
         
         
     
-    }   
+    }  
+    //為什麼 
     section#qa{
         
         .content{
-            background-image: url(../img/pagination/qa_bg.webp);
+            background-image: url(../img/pagination/qa_bg.png);
             // background-attachment: fixed;   
             background-repeat: no-repeat;
             background-size: cover;
