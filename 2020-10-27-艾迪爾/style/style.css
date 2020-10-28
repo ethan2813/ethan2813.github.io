@@ -616,18 +616,19 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor:hover {
 }
 
 main#pagi_main section#all-ceramic {
-  margin-top: 50px;
   position: relative;
 }
 
 main#pagi_main section#all-ceramic .content {
+  width: 100%;
+  position: relative;
+}
+
+main#pagi_main section#all-ceramic .content .pc {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
 main#pagi_main section#all-ceramic .content .L {
@@ -671,7 +672,6 @@ main#pagi_main section#all-ceramic .article {
   padding: 10px 20px;
   -webkit-box-shadow: 2px 2px 10px black;
           box-shadow: 2px 2px 10px black;
-  border-radius: 10px;
 }
 
 main#pagi_main section#all-ceramic .article img {
