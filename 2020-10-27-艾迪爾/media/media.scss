@@ -93,7 +93,7 @@
                 }
             }
         }
-        section#all-ceramic{
+        section#banner_logo{
             .content{
                 .L{
                     display: none;
@@ -273,7 +273,7 @@
             //     margin: 75px 0 70px 0;
             // }
             .content_{
-                height: 140vh;
+                // height: 140vh;
                 .doctor_row{
                     display: flex;
                     flex-direction: column;
@@ -625,12 +625,12 @@
                 }
             }
         }
-        section#artificial-dental{
-            .content_{
-                height: 170vh;
+        // section#artificial-dental{
+        //     .content_{
+        //         height: 170vh;
 
-            }
-        }
+        //     }
+        // }
     }
 }
 @media(max-width:400px){

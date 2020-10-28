@@ -408,6 +408,7 @@ main#pagi_main{
                 right: 10%;
                 transform: translate(-10%,-50%);
                 height: 30%;
+                z-index: 2;
             }
             .banner_cube{
                 z-index: 1;
@@ -516,7 +517,7 @@ main#pagi_main{
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 110vh;
+            // height: 110vh;
             position: relative;
             // z-index: -1;
 

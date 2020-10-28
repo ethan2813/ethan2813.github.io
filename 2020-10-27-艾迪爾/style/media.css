@@ -65,29 +65,29 @@
   main#pagi_main section#artificial-dental .title .text:before {
     top: 50%;
   }
-  main#pagi_main section#all-ceramic .content .L {
+  main#pagi_main section#banner_logo .content .L {
     display: none;
   }
-  main#pagi_main section#all-ceramic .content .R {
+  main#pagi_main section#banner_logo .content .R {
     display: none;
   }
-  main#pagi_main section#all-ceramic .content .mobile {
+  main#pagi_main section#banner_logo .content .mobile {
     width: 100%;
     display: block;
   }
-  main#pagi_main section#all-ceramic .article {
+  main#pagi_main section#banner_logo .article {
     left: 50%;
     top: 75%;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  main#pagi_main section#all-ceramic .article img {
+  main#pagi_main section#banner_logo .article img {
     width: 30px;
   }
-  main#pagi_main section#all-ceramic .article .title {
+  main#pagi_main section#banner_logo .article .title {
     font-size: 20px;
     padding-bottom: 30px;
   }
-  main#pagi_main section#all-ceramic .article .title:before {
+  main#pagi_main section#banner_logo .article .title:before {
     top: 40px;
   }
   main#pagi_main section#qa .content {
@@ -198,9 +198,6 @@
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  main#pagi_main section#artificial-dental .content_ {
-    height: 140vh;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row {
     display: -webkit-box;
@@ -431,9 +428,6 @@
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-  }
-  main#pagi_main section#artificial-dental .content_ {
-    height: 170vh;
   }
 }
 
