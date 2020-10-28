@@ -73,6 +73,7 @@ nav#nav .nav_countainer .logo {
 nav#nav .nav_countainer .logo img:nth-child(1) {
   height: 80%;
   margin: auto 0;
+  width: auto;
 }
 
 nav#nav .nav_countainer .logo img:nth-child(2) {
