@@ -114,7 +114,6 @@ main#main section#banner .content_3 .content_ .cloud_bot img {
 main#main section#banner .content_3 .opening {
   position: absolute;
   width: 600px;
-  height: 35vh;
   background-color: rgba(255, 255, 255, 0.9);
   top: 50%;
   left: 50%;
@@ -122,10 +121,10 @@ main#main section#banner .content_3 .opening {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  padding: 20px 0;
 }
 
 main#main section#banner .content_3 .opening h2 {
-  margin-top: 50px;
   font-size: 18px;
   font-weight: 0;
 }

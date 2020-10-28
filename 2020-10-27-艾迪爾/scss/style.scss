@@ -116,16 +116,15 @@ main#main{
         .opening{
             position: absolute;
             width: 600px;
-            height: 35vh;
             background-color: rgba(255, 255, 255, 0.9);
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             text-align: center;
+            padding: 20px 0 ;
         
 
             h2{
-                margin-top: 50px;
                 font-size: 18px;
                 font-weight: 0;
             } 
