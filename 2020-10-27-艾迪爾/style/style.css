@@ -191,7 +191,6 @@ main#main section#team .team_title h2 {
 
 main#main section#team .content_ {
   background-image: url(../img/team_bg.png);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -467,6 +466,7 @@ main#pagi_main section#pagi_banner .content .banner_cube .cube_text p {
 main#pagi_main section#artificial-dental .title {
   width: 100%;
   position: relative;
+  background-color: white;
 }
 
 main#pagi_main section#artificial-dental .title .implant {
@@ -496,29 +496,20 @@ main#pagi_main section#artificial-dental .title .text:before {
 }
 
 main#pagi_main section#artificial-dental .content_ {
-  background-image: url(../img/pagination/Artificial_dental_bg.webp);
-  background-attachment: fixed;
+  background-image: url(../img/pagination/Artificial_dental_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 110vh;
   position: relative;
-}
-
-main#pagi_main section#artificial-dental .content_ .mask {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -1;
 }
 
 main#pagi_main section#artificial-dental .content_ .team_shadow {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: -5%;
 }
 
 main#pagi_main section#artificial-dental .content_ .team_shadow img {
@@ -702,11 +693,6 @@ main#pagi_main section#all-ceramic .article .article_in {
 }
 
 main#pagi_main section#qa .content {
-  background-image: url(../img/pagination/qa_bg.webp);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -717,6 +703,7 @@ main#pagi_main section#qa .content {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 main#pagi_main section#qa .content .photo {

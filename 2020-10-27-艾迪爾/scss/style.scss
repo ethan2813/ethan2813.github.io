@@ -199,7 +199,7 @@ section#team{
     }
     .content_{
         background-image: url(../img/team_bg.png);
-        background-attachment: fixed;
+        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -464,6 +464,7 @@ main#pagi_main{
             width: 100%;
             // background-color: gray;
             position: relative;
+            background-color: white;
 
             .implant{
                 width: 50px;
@@ -509,29 +510,33 @@ main#pagi_main{
             // }
         }
         .content_{
-            background-image: url(../img/pagination/Artificial_dental_bg.webp);
-
-            background-attachment: fixed;
+            background-image: url(../img/pagination/Artificial_dental_bg.jpg);
+            // background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             width: 100%;
             height: 110vh;
             position: relative;
+            z-index: -1;
+            
+            
 
-            .mask{
-                width: 100%;
-                height: 100%;
-                background-color: rgba(255, 255, 255, 0.7);
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
+            
+
+            // .mask{
+            //     width: 100%;
+            //     height: 100vh;
+            //     background-color: rgba(255, 255, 255, 0.7);
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            // }
     
             .team_shadow{
                 position: absolute;
                 width: 100%;
-                top: 0;
+                top: -5%;
                 img{
                     width: 100% ;
                 
@@ -706,15 +711,18 @@ main#pagi_main{
     section#qa{
         
         .content{
-            background-image: url(../img/pagination/qa_bg.webp);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            // background-image: url(../img/pagination/qa_bg.webp);
+            // background-attachment: fixed;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
             width: 100%;
             height: 100vh;
             display: flex;
             align-items: center;
+            z-index: 1;
+
+    
             
            .photo{
                width: 100%;
@@ -730,6 +738,7 @@ main#pagi_main{
                    width: 60%;
                }
                .photo_top,.photo_bot{
+
                    display: none;
                }
            }
