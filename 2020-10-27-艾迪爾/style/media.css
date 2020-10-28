@@ -164,8 +164,8 @@
   }
   main#main section#team .content_ .doctor_row .doctor {
     background-color: rgba(255, 255, 255, 0.781);
-    padding: 10px;
-    margin: 12px auto;
+    padding: 5px 10px;
+    margin: 8px auto;
     width: 330px;
     height: auto;
   }
@@ -307,7 +307,7 @@
   }
   main#main section#banner .content_3 .opening {
     width: 80%;
-    height: 25vh;
+    height: 30vh;
   }
   main#main section#banner .content_3 .opening h2 {
     margin-top: 10px;
