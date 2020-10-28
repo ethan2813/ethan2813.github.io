@@ -494,6 +494,7 @@ main#pagi_main section#artificial-dental .title .text:before {
   position: absolute;
   left: 50%;
   top: 50px;
+  z-index: 1;
 }
 
 main#pagi_main section#artificial-dental .content_ {
@@ -742,6 +743,8 @@ main#pagi_main section#qa .content .photo {
 
 main#pagi_main section#qa .content .photo img {
   width: 60%;
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
 }
 
 main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {

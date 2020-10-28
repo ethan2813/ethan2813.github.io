@@ -84,13 +84,7 @@ main#main{
                     img{
                         width: 100%;
                     }
-                    // .open_L{
-                    //     animation: fadeInLeft 1.5s ease-in-out;
-                    // }
-                    // .open_R{
-                    //     animation: fadeInRight 1.5s ease-in-out;
-
-                    // }
+                   
                 }
             }
 
@@ -99,7 +93,7 @@ main#main{
                 position: absolute;
                 top: 0px;
                 animation: fadeInDown 1s ease-in-out;
-                // animation-delay: 1s;
+               
 
 
                 img{
@@ -490,6 +484,7 @@ main#pagi_main{
                     position: absolute;
                     left: 50%;
                     top: 50px;
+                    z-index: 1;
                 }
             }
             // .icon{
@@ -674,6 +669,7 @@ main#pagi_main{
             }
             .mobile{
                 display: none;
+
             }
 
             .cloud_top{
@@ -762,6 +758,7 @@ main#pagi_main{
                background-size: cover;
                img{
                    width: 60%;
+                   animation: fadeIn 2s ease-in-out;
                }
                .photo_top,.photo_bot{
 

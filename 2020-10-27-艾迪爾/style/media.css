@@ -74,6 +74,8 @@
   main#pagi_main section#all-ceramic .content .mobile {
     width: 100%;
     display: block;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
   }
   main#pagi_main section#all-ceramic .article {
     left: 50%;
