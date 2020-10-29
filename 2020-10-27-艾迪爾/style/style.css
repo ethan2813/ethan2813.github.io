@@ -481,6 +481,7 @@ main#pagi_main section#artificial-dental .title .text {
   text-align: center;
   position: relative;
   padding-bottom: 50px;
+  z-index: 2;
 }
 
 main#pagi_main section#artificial-dental .title .text:before {
