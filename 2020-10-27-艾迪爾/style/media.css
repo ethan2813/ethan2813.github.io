@@ -41,7 +41,7 @@
     display: block;
   }
   footer#footer .footer_top .opening {
-    padding-top: 20px;
+    display: none;
   }
   main#pagi_main section#pagi_banner .content .banner_cube {
     width: 350px;
@@ -80,8 +80,11 @@
   }
   main#pagi_main section#all-ceramic .article {
     left: 50%;
-    top: 75%;
+    top: 50%;
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main#pagi_main section#all-ceramic .article img {
     width: 30px;
@@ -94,10 +97,10 @@
     top: 40px;
   }
   main#pagi_main section#qa .content {
-    height: 80vh;
     position: relative;
   }
   main#pagi_main section#qa .content .photo {
+    padding: 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -107,7 +110,6 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 600px;
     background-image: unset;
     background-color: unset;
   }
@@ -119,7 +121,6 @@
   }
   main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {
     display: block;
-    padding: 0 40px;
   }
   main#pagi_main section#qa .content .photo .photo_top h2, main#pagi_main section#qa .content .photo .photo_bot h2 {
     font-size: 24px;
@@ -133,6 +134,8 @@
   main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
     font-size: 14px;
     list-style-type: decimal;
+    letter-spacing: 2px;
+    margin: 10px 0;
   }
   main#pagi_main section#qa .content .article {
     position: absolute;
@@ -212,8 +215,8 @@
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
     background-color: transparent;
+    width: 350px;
     margin: 15px auto;
-    width: 100%;
     height: auto;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div {
@@ -331,18 +334,23 @@
   }
   main#pagi_main section#pagi_banner .content .banner_cube {
     width: 200px;
-    height: 50px;
-    bottom: -5%;
+    height: 70px;
+    top: 6%;
+    left: 8%;
   }
   main#pagi_main section#pagi_banner .content .banner_cube:before {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: 55%;
-    height: 30px;
+    height: 80%;
+    width: 1px;
   }
   main#pagi_main section#pagi_banner .content .banner_cube .cube_text h2 {
     font-size: 20px;
   }
   main#pagi_main section#pagi_banner .content .banner_cube .cube_text p {
-    display: none;
+    margin-bottom: 0;
   }
 }
 
@@ -434,5 +442,14 @@
 @media (max-width: 400px) {
   nav#nav .nav_countainer .logo {
     width: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
+    width: 100%;
+  }
+  main#pagi_main section#all-ceramic .article {
+    width: 100%;
   }
 }
