@@ -453,6 +453,9 @@
 }
 
 @media (max-width: 370px) {
+  main#main section#team .content_ .doctor_row .doctor {
+    width: 95%;
+  }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
     width: 95%;
   }
