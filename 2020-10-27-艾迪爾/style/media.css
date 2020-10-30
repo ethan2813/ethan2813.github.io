@@ -216,7 +216,7 @@
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
     background-color: transparent;
     width: 350px;
-    margin: 15px auto;
+    margin: 5px auto;
     height: auto;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div {
@@ -254,6 +254,9 @@
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: transparent;
+  }
+  main#pagi_main section#artificial-dental .content_ .doctor_row .doctor_4 {
+    margin: 5px auto 15px auto;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor_4 > div .bot .text ul li {
     margin: 0px;
@@ -449,11 +452,12 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
-    width: 100%;
+    width: 95%;
   }
   main#pagi_main section#all-ceramic .article {
-    width: 100%;
+    width: 95%;
+    padding: 15px 10px;
   }
 }

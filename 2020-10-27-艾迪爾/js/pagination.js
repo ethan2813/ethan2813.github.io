@@ -2,11 +2,14 @@
     
     //banner LOGO 滑動效果
     let logo_float = document.querySelector('#pagi_main .banner_logo')
-
+    
+    
     $(window).scroll(e => {
         let top = $(this).scrollTop() / 3.5
+        // console.log(top)
         // console.log($(this).scrollTop())
         logo_float.style.transform = `translate(-50%,-${top}px)`
+        
     })
     
     
@@ -32,7 +35,7 @@
         let top =   15 - ($(this).scrollTop() / 15)
         top = top > 0 ? top : top = 0
         
-        console.log(top)
+        // console.log(top)
         // console.log(top)
         $('#pagi_banner .banner_R').css({
             'filter':`blur(${top}px)`
