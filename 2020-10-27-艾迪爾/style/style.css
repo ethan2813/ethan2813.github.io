@@ -772,10 +772,6 @@ main#pagi_main section#qa .content .photo img {
           animation: fadeIn 2s ease-in-out;
 }
 
-main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {
-  display: none;
-}
-
 main#pagi_main section#qa .content .article {
   width: 100%;
   padding: 20px 0;

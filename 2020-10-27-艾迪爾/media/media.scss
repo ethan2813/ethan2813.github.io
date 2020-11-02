@@ -135,26 +135,17 @@
             .content{
                 // height: 80vh;    
                 position: relative;
-                .photo{
+                .mobile_article{
+                    padding: 10px 0;
                     width: 100%;
-                    padding: 30px 0 ;
-                    padding-left: 10px;
-                    // 這邊要拿掉
                     display: flex;
                     flex-direction: column;
-                    // height: 600px;
-                    background-image: unset ;
-                    background-color: unset;
                     align-items: center;
-                    img{
-                        display: none;
-                    }
+
                     .photo_top,.photo_bot{
                         width: 95%;
                         
                         display: block;
-                        // color: white;
-                        // padding: 0 20px;
                         h2{
                             font-size: 30px;
                         }
@@ -181,6 +172,11 @@
                             }
                         }
                     }
+                }
+                .photo{
+                    display: none; 
+    
+                    
                     
 
                 }

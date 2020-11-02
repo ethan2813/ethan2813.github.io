@@ -99,10 +99,9 @@
   main#pagi_main section#qa .content {
     position: relative;
   }
-  main#pagi_main section#qa .content .photo {
+  main#pagi_main section#qa .content .mobile_article {
+    padding: 10px 0;
     width: 100%;
-    padding: 30px 0;
-    padding-left: 10px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -112,36 +111,34 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: unset;
-    background-color: unset;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  main#pagi_main section#qa .content .photo img {
-    display: none;
-  }
-  main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {
+  main#pagi_main section#qa .content .mobile_article .photo_top, main#pagi_main section#qa .content .mobile_article .photo_bot {
     width: 95%;
     display: block;
   }
-  main#pagi_main section#qa .content .photo .photo_top h2, main#pagi_main section#qa .content .photo .photo_bot h2 {
+  main#pagi_main section#qa .content .mobile_article .photo_top h2, main#pagi_main section#qa .content .mobile_article .photo_bot h2 {
     font-size: 30px;
   }
-  main#pagi_main section#qa .content .photo .photo_top .text, main#pagi_main section#qa .content .photo .photo_bot .text {
+  main#pagi_main section#qa .content .mobile_article .photo_top .text, main#pagi_main section#qa .content .mobile_article .photo_bot .text {
     z-index: 2;
   }
-  main#pagi_main section#qa .content .photo .photo_top .text ul, main#pagi_main section#qa .content .photo .photo_bot .text ul {
+  main#pagi_main section#qa .content .mobile_article .photo_top .text ul, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul {
     padding-left: 20px;
   }
-  main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
+  main#pagi_main section#qa .content .mobile_article .photo_top .text ul li, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul li {
     font-size: 19px;
     list-style-type: decimal;
     margin: 10px 0;
   }
-  main#pagi_main section#qa .content .photo .photo_top .text ul li::marker, main#pagi_main section#qa .content .photo .photo_bot .text ul li::marker {
+  main#pagi_main section#qa .content .mobile_article .photo_top .text ul li::marker, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul li::marker {
     text-align: right;
+  }
+  main#pagi_main section#qa .content .photo {
+    display: none;
   }
   main#pagi_main section#qa .content .article {
     position: absolute;
