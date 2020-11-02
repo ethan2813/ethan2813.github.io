@@ -137,6 +137,7 @@
                 position: relative;
                 .photo{
                     padding: 30px;
+                    padding-left: 10px;
                     display: flex;
                     flex-direction: column;
                     // height: 600px;
@@ -167,7 +168,7 @@
                                     // color: black;
                                     font-size: 19px;
                                     list-style-type:decimal;
-                                    list-style-position: inside;
+                                    // list-style-position: outside;
                                     // letter-spacing: 2px;
                                     margin: 10px 0;
 
