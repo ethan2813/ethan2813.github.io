@@ -44,7 +44,8 @@
     display: none;
   }
   main#pagi_main section#pagi_banner .content .banner_cube {
-    display: none;
+    width: 420px;
+    height: 80px;
   }
   main#pagi_main section#pagi_banner .content .banner_cube:before {
     left: 52%;
@@ -129,7 +130,7 @@
   }
   main#pagi_main section#qa .content .photo .photo_top .text ul, main#pagi_main section#qa .content .photo .photo_bot .text ul {
     margin-left: 1px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
     font-size: 19px;
@@ -338,8 +339,9 @@
   main#pagi_main section#pagi_banner .content .banner_cube {
     width: 200px;
     height: 70px;
+    top: 6%;
+    left: 8%;
     bottom: -100px;
-    left: calc(50% - 109px);
   }
   main#pagi_main section#pagi_banner .content .banner_cube:before {
     -webkit-transform: translate(-50%, -50%);
