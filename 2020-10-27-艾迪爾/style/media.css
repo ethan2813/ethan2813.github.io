@@ -130,6 +130,10 @@
   main#pagi_main section#qa .content .photo .photo_top .text, main#pagi_main section#qa .content .photo .photo_bot .text {
     z-index: 2;
   }
+  main#pagi_main section#qa .content .photo .photo_top .text ul, main#pagi_main section#qa .content .photo .photo_bot .text ul {
+    -webkit-padding-start: 20px;
+            padding-inline-start: 20px;
+  }
   main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
     font-size: 19px;
     list-style-type: decimal;
