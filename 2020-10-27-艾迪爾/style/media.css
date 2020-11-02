@@ -136,9 +136,9 @@
     list-style: none;
     margin: 10px 0;
     position: relative;
-    counter-increment: list;
   }
   main#pagi_main section#qa .content .mobile_article .photo_top .text ul li:before, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul li:before {
+    counter-increment: list;
     content: counter(list) ".";
     margin-right: 5px;
     position: absolute;
