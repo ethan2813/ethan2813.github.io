@@ -120,9 +120,6 @@
             align-items: center;
   }
   main#pagi_main section#qa .content .photo img {
-    width: 60%;
-    opacity: 0.5;
-    position: absolute;
     display: none;
   }
   main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {
