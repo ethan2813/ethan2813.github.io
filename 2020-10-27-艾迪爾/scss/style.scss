@@ -12,10 +12,13 @@ main#main{
             width: 100%;
             // position: absolute;
             position: relative;
+            margin-top: 70px;
             
         }
         .banner_mobile{
             display: none;
+            margin-top: 70px;
+
         }
         .banner_button_L{
             width: 105%;
@@ -44,6 +47,7 @@ main#main{
             transform: translate(-50%,0);
             z-index: 2;
             transition: 0.5s;
+            width: 200px;
             
         }
 
@@ -56,12 +60,13 @@ main#main{
         }
 
         .content_2_text{
+
             padding-top: 70px;
             padding-bottom: 170px;
             p{
-                font-size: 16px;
+                font-size: 23px;
                 text-align: center;
-                font-weight: 800;
+                font-weight: 550;
             }
         }
     }
@@ -139,6 +144,7 @@ main#main{
                 
                 td{
                     padding: 5px 12px;
+                    font-family: 微軟正黑體;
                 }
             }
    
@@ -182,7 +188,7 @@ section#team{
             transform: translate(-50%,0);
         }
         h2{
-            font-size: 26px;
+            font-size: 40px;
             text-align: center;
             // line-height: 150px;
 
@@ -247,20 +253,18 @@ section#team{
                         span{
                             margin-top: 50px ;
                             margin-left: 10px;
-                            font-size: 26px ;
+                            font-size: 36px ;
                         }
                     }
                     .bot{
                         .text{
-                            font-size: 16px;
-                            letter-spacing: 3px;
-
-
+            
                             ul{
                                 margin-right: auto;
                                 margin-left: 15px;
                                 li{
-                                    font-size: 14px;
+                                    // font-family: 微軟正黑體;
+                                    font-size: 19px;
                                     letter-spacing: 3px;
                                     list-style-type: none
 
@@ -316,7 +320,7 @@ section#setting{
         }
         .setting_title{
             display: block;
-            font-size: 26px;
+            font-size: 40px;
             position: relative;
 
 
@@ -344,8 +348,9 @@ section#setting{
                 margin: 34px 0;
             }
             p{
+                // font-family: 微軟正黑體;
                 margin: 4px 0;
-                font-size: 16px;
+                font-size: 23px;
                 letter-spacing: 3px;
             }
         }
@@ -454,6 +459,7 @@ main#pagi_main{
 
 
                     h2{
+                        font-family: 微軟正黑體;
                         font-size: 30px;
                     }
                     p{
@@ -482,7 +488,7 @@ main#pagi_main{
                 padding-top: 160px;
             }
             .text{
-                font-size: 26px;
+                font-size: 40px;
                 text-align: center;
                 position: relative;
                 padding-bottom: 50px;
@@ -577,7 +583,7 @@ main#pagi_main{
                             span{
                                 margin-top: 50px ;
                                 margin-left: 10px;
-                                font-size: 26px ;
+                                font-size: 36px ;
                             }
                             &:before{
                                 content: '';
@@ -601,8 +607,8 @@ main#pagi_main{
                                 
                                 ul{
                                     li{
-                                        
-                                        font-size: 16px;
+                                        // font-family: 微軟正黑體;
+                                        font-size: 19px;
                                         margin-top: 10px;
                                         transition: 1s ease-in-out;
                                         letter-spacing: 2px;
@@ -703,7 +709,7 @@ main#pagi_main{
                 width: 50px;
             }
             .title{
-                font-size: 26px;
+                font-size: 40px;
                 text-align: center;
                 position: relative;
                 padding-bottom: 50px;
@@ -716,11 +722,12 @@ main#pagi_main{
                     background-color: #595959;
                     position: absolute;
                     left: 50%;
-                    top: 50px;
+                    top: 60px;
                 }
             }
             .article_in{
-                font-size: 16px;
+                // font-family: 微軟正黑體;
+                font-size: 19px;
                 letter-spacing: 3px;
             }
         }
@@ -781,12 +788,14 @@ main#pagi_main{
                     
                    h2{
                        text-align: left;
+                       font-size: 36px;
                    }
                    .text{
                        ul{
                            li{
+                            //    font-family: 微軟正黑體;
                                margin-top: 15px;
-                               font-size: 16px;
+                               font-size: 19px;
                                letter-spacing: 3px;
                                list-style-type:decimal ;
                            }

@@ -87,7 +87,7 @@
                     width: 40px;
                 }
                 .text{
-                    font-size: 20px;
+                    font-size: 30px;
 
                     &:before{
                         top: 50%;
@@ -119,7 +119,7 @@
                     width: 30px;
                 }
                 .title{
-                    font-size: 20px;
+                    font-size: 30px;
                     padding-bottom: 30px;
 
                     &:before{
@@ -153,15 +153,16 @@
                         // color: white;
                         // padding: 0 20px;
                         h2{
-                            font-size: 24px;
+                            font-size: 30px;
                         }
                         .text{
                             z-index: 2;
                             ul{
                                 padding-left: 10px;
                                 li{
+                                    // font-family: 微軟正黑體;
                                     // color: black;
-                                    font-size: 14px;
+                                    font-size: 16px;
                                     list-style-type:decimal ;
                                     letter-spacing: 2px;
                                     margin: 10px 0;
@@ -232,7 +233,7 @@
                                 span{
                                     margin-top: 30px ;
                                     margin-left: 10px;
-                                    font-size: 20px ;
+                                    font-size: 26px ;
                                 }
                             }
                             .bot{
@@ -245,7 +246,7 @@
                                         
                                         li{
                                             
-                                            font-size: 13px;
+                                            font-size: 16px;
                                             letter-spacing: 2px;
 
                                         }
@@ -271,14 +272,13 @@
 
     }
     
-
     main#pagi_main{
         section#artificial-dental{
             // .team_title{
             //     margin: 75px 0 70px 0;
             // }
             .content_{
-                // height: 140vh;
+                
                 .doctor_row{
                     display: flex;
                     flex-direction: column;
@@ -308,7 +308,7 @@
                                 span{
                                     margin-top: 30px ;
                                     margin-left: 10px;
-                                    font-size: 20px ;
+                                    font-size: 26px;
                                 }
                             }
                             .bot{
@@ -321,7 +321,7 @@
                                         
                                         li{
                                             
-                                            font-size: 13px;
+                                            font-size: 16px;
                                             letter-spacing: 2px;
 
                                         }
@@ -361,7 +361,7 @@
         section#all-ceramic{
             .article{
                 .article_in{
-                    font-size: 14px;
+                    font-size: 16px;
                     letter-spacing: 2px;
                 }
             }
@@ -378,7 +378,7 @@
         section#team{
             .team_title{
                 h2{
-                    font-size: 20px;
+                    font-size: 30px;
                 }
                 
             }
@@ -391,14 +391,14 @@
                     
                 }
                 .setting_title{
-                    font-size: 20px;
+                    font-size: 30px;
                 }
                 .text{
                     padding: 0 20px;
     
                     p{
                         letter-spacing: 0px;
-                        font-size: 15px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -424,7 +424,7 @@
             }
             .content_2{
                 .logo_float{
-                    height: 150px;
+                    width: 100px;
                     top: 0%;
                 }
                 .cup_icon{
@@ -439,9 +439,9 @@
                     padding: 30px 30px 50px 30px;
                     p{
                         padding-bottom: 10px;
-                        font-size: 16px;
+                        font-size: 18px;
                         text-align: unset;
-                        font-weight: 800;
+                        
                     }
                 }
             }
@@ -462,7 +462,7 @@
     
                     .table_opening{
                         // margin:0 auto;
-                        font-size: 14px;
+                        font-size: 16px;
                     
                     td{
                         padding: 3px 5px;
@@ -634,6 +634,7 @@
                     top: 105%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    width: 100px;
                 }
             }
         }
@@ -648,17 +649,34 @@
             }
         }
     }
-    
-    // main#pagi_main{
-    //     section#qu{
-    //         .content{
 
-    //         }
-    //     }
-    // }
+
+    
+    footer#footer{
+        #gototop{
+            img{
+                width: 40px;
+            }
+        }
+        #line_btn{
+            a{
+                img{
+                    width: 40px;
+                    bottom: 65px;
+                }
+            }
+        }
+    }
 }
 @media(max-width:370px){
     main#main{
+        section#banner{
+            .content_3{
+                .opening{
+                    width: 90%;
+                }
+            }
+        }
         section#team{
             .content_{
                 .doctor_row{
@@ -694,4 +712,20 @@
     }
 
     
+}
+
+@media(max-width:320px){
+    main#main{
+        section#setting{
+            .setting_article{
+                .text{
+                    p{
+                        // letter-spacing: -1px;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+    }
 }

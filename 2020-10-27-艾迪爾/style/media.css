@@ -61,7 +61,7 @@
     width: 40px;
   }
   main#pagi_main section#artificial-dental .title .text {
-    font-size: 20px;
+    font-size: 30px;
   }
   main#pagi_main section#artificial-dental .title .text:before {
     top: 50%;
@@ -90,7 +90,7 @@
     width: 30px;
   }
   main#pagi_main section#all-ceramic .article .title {
-    font-size: 20px;
+    font-size: 30px;
     padding-bottom: 30px;
   }
   main#pagi_main section#all-ceramic .article .title:before {
@@ -123,7 +123,7 @@
     display: block;
   }
   main#pagi_main section#qa .content .photo .photo_top h2, main#pagi_main section#qa .content .photo .photo_bot h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
   main#pagi_main section#qa .content .photo .photo_top .text, main#pagi_main section#qa .content .photo .photo_bot .text {
     z-index: 2;
@@ -132,7 +132,7 @@
     padding-left: 10px;
   }
   main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
-    font-size: 14px;
+    font-size: 16px;
     list-style-type: decimal;
     letter-spacing: 2px;
     margin: 10px 0;
@@ -185,14 +185,14 @@
   main#main section#team .content_ .doctor_row .doctor > div .top span {
     margin-top: 30px;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 26px;
   }
   main#main section#team .content_ .doctor_row .doctor > div .bot .text ul {
     padding: 0;
     margin: 0;
   }
   main#main section#team .content_ .doctor_row .doctor > div .bot .text ul li {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
   main#main section#team .content_ .doctor_row .doctor:hover {
@@ -237,14 +237,14 @@
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top span {
     margin-top: 30px;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 26px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .text ul {
     padding: 0;
     margin: 0;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .text ul li {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor:hover {
@@ -262,28 +262,28 @@
     margin: 0px;
   }
   main#pagi_main section#all-ceramic .article .article_in {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
 }
 
 @media (max-width: 700px) {
   main#main section#team .team_title h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   main#main section#setting .setting_article img {
     width: 50px;
     margin: 30px 0 30px 0;
   }
   main#main section#setting .setting_article .setting_title {
-    font-size: 20px;
+    font-size: 30px;
   }
   main#main section#setting .setting_article .text {
     padding: 0 20px;
   }
   main#main section#setting .setting_article .text p {
     letter-spacing: 0px;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -296,7 +296,7 @@
     display: block;
   }
   main#main section#banner .content_2 .logo_float {
-    height: 150px;
+    width: 100px;
     top: 0%;
   }
   main#main section#banner .content_2 .cup_icon {
@@ -308,9 +308,8 @@
   }
   main#main section#banner .content_2 .content_2_text p {
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: unset;
-    font-weight: 800;
   }
   main#main section#banner .content_3 .opening {
     width: 80%;
@@ -325,7 +324,7 @@
     margin: 0;
   }
   main#main section#banner .content_3 .opening .table_opening {
-    font-size: 14px;
+    font-size: 16px;
   }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
@@ -443,6 +442,7 @@
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    width: 100px;
   }
 }
 
@@ -450,9 +450,19 @@
   nav#nav .nav_countainer .logo {
     width: 70%;
   }
+  footer#footer #gototop img {
+    width: 40px;
+  }
+  footer#footer #line_btn a img {
+    width: 40px;
+    bottom: 65px;
+  }
 }
 
 @media (max-width: 370px) {
+  main#main section#banner .content_3 .opening {
+    width: 90%;
+  }
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
   }
@@ -462,5 +472,11 @@
   main#pagi_main section#all-ceramic .article {
     width: 95%;
     padding: 15px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  main#main section#setting .setting_article .text p {
+    font-size: 15px;
   }
 }

@@ -1,9 +1,10 @@
 @charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 body {
   margin: 0;
   padding: 0;
-  font-family: 微軟正黑體, sans-serif;
   position: relative;
+  font-family: 'cwTeXFangSong',微軟正黑體,serif;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
           box-sizing: border-box;
   color: #4d4d4d;
   scroll-behavior: smooth;
-  font-family: 微軟正黑體, sans-serif;
+  font-family: 'cwTeXFangSong', 微軟正黑體,serif;
 }
 
 .container-fluid {
@@ -72,13 +73,13 @@ nav#nav .nav_countainer .logo {
 }
 
 nav#nav .nav_countainer .logo img:nth-child(1) {
-  height: 80%;
+  width: 40px;
   margin: auto 0;
-  width: auto;
+  height: auto;
 }
 
 nav#nav .nav_countainer .logo img:nth-child(2) {
-  height: 25px;
+  width: 200px;
   margin: auto 0;
   margin-left: 10px;
 }
@@ -111,11 +112,37 @@ nav#nav .nav_countainer .nav_links li {
 }
 
 nav#nav .nav_countainer .nav_links li a {
-  color: #666666;
+  font-family: 微軟正黑體;
+  color: #4d4d4d;
   margin: 0 35px;
   font-size: 1.8rem;
   text-decoration: none;
   text-align: center;
+  position: relative;
+}
+
+nav#nav .nav_countainer .nav_links li a:hover:before {
+  width: 100%;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+nav#nav .nav_countainer .nav_links li a:hover {
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+nav#nav .nav_countainer .nav_links li a:before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+  background-color: #4d4d4d;
 }
 
 nav#nav .nav_countainer .burger {
@@ -160,6 +187,15 @@ footer#footer #gototop img {
   opacity: 0.9;
 }
 
+footer#footer #line_btn a img {
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+  z-index: 5;
+  width: 50px;
+  height: auto;
+}
+
 footer#footer .footer_top {
   padding: 80px 0;
   background-color: black;
@@ -170,6 +206,7 @@ footer#footer .footer_top .footer_title {
   font-size: 30px;
   padding: 0 0 80px 0;
   color: #ffffff;
+  font-family: 微軟正黑體;
 }
 
 footer#footer .footer_top .logo {
@@ -195,6 +232,7 @@ footer#footer .footer_top .logo .logo_btn img {
 }
 
 footer#footer .footer_top .logo .inner {
+  font-family: 微軟正黑體;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -221,6 +259,7 @@ footer#footer .footer_top .contact {
 }
 
 footer#footer .footer_top .contact > div h2 {
+  font-family: 微軟正黑體;
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
@@ -232,6 +271,7 @@ footer#footer .footer_top .contact > div .list img {
 }
 
 footer#footer .footer_top .contact > div .list a {
+  font-family: 微軟正黑體;
   text-decoration: none;
   list-style-type: none;
   color: #ffffff;
@@ -250,6 +290,7 @@ footer#footer .footer_top .opening {
 }
 
 footer#footer .footer_top .opening > div h2 {
+  font-family: 微軟正黑體;
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
@@ -261,6 +302,7 @@ footer#footer .footer_top .opening > div .table_opening {
 }
 
 footer#footer .footer_top .opening > div .table_opening td {
+  font-family: 微軟正黑體;
   padding: 3px 5px;
   color: #ffffff;
 }
@@ -272,13 +314,16 @@ footer#footer .footer_bot {
 footer#footer .footer_bot .copyright {
   padding: 175px 200px 200px 200px;
   background-color: white;
+  font-family: 微軟正黑體;
 }
 
 footer#footer .footer_bot .copyright h2 {
+  font-family: 微軟正黑體;
   text-align: center;
 }
 
 footer#footer .footer_bot .copyright p {
+  font-family: 微軟正黑體;
   text-align: center;
 }
 

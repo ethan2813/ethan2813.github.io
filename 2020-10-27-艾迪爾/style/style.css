@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main#main section#banner {
   position: relative;
 }
@@ -10,10 +11,12 @@ main#main section#banner .content_1 {
 main#main section#banner .content_1 .banner {
   width: 100%;
   position: relative;
+  margin-top: 70px;
 }
 
 main#main section#banner .content_1 .banner_mobile {
   display: none;
+  margin-top: 70px;
 }
 
 main#main section#banner .content_1 .banner_button_L {
@@ -47,6 +50,7 @@ main#main section#banner .content_2 .logo_float {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  width: 200px;
 }
 
 main#main section#banner .content_2 .cup_icon {
@@ -61,9 +65,9 @@ main#main section#banner .content_2 .content_2_text {
 }
 
 main#main section#banner .content_2 .content_2_text p {
-  font-size: 16px;
+  font-size: 23px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 550;
 }
 
 main#main section#banner .content_3 {
@@ -140,6 +144,7 @@ main#main section#banner .content_3 .opening .table_opening {
 
 main#main section#banner .content_3 .opening .table_opening td {
   padding: 5px 12px;
+  font-family: 微軟正黑體;
 }
 
 main#main section#banner .shadow_ .shadow_L {
@@ -184,7 +189,7 @@ main#main section#team .team_title:before {
 }
 
 main#main section#team .team_title h2 {
-  font-size: 26px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -266,12 +271,7 @@ main#main section#team .content_ .doctor_row .doctor > div .top img:nth-child(2)
 main#main section#team .content_ .doctor_row .doctor > div .top span {
   margin-top: 50px;
   margin-left: 10px;
-  font-size: 26px;
-}
-
-main#main section#team .content_ .doctor_row .doctor > div .bot .text {
-  font-size: 16px;
-  letter-spacing: 3px;
+  font-size: 36px;
 }
 
 main#main section#team .content_ .doctor_row .doctor > div .bot .text ul {
@@ -280,7 +280,7 @@ main#main section#team .content_ .doctor_row .doctor > div .bot .text ul {
 }
 
 main#main section#team .content_ .doctor_row .doctor > div .bot .text ul li {
-  font-size: 14px;
+  font-size: 19px;
   letter-spacing: 3px;
   list-style-type: none;
 }
@@ -335,7 +335,7 @@ main#main section#setting .setting_article img {
 
 main#main section#setting .setting_article .setting_title {
   display: block;
-  font-size: 26px;
+  font-size: 40px;
   position: relative;
 }
 
@@ -369,7 +369,7 @@ main#main section#setting .setting_article .text hr:first-child, main#main secti
 
 main#main section#setting .setting_article .text p {
   margin: 4px 0;
-  font-size: 16px;
+  font-size: 23px;
   letter-spacing: 3px;
 }
 
@@ -471,6 +471,7 @@ main#pagi_main section#pagi_banner .content .banner_cube .cube_text {
 }
 
 main#pagi_main section#pagi_banner .content .banner_cube .cube_text h2 {
+  font-family: 微軟正黑體;
   font-size: 30px;
 }
 
@@ -493,7 +494,7 @@ main#pagi_main section#artificial-dental .title .implant {
 }
 
 main#pagi_main section#artificial-dental .title .text {
-  font-size: 26px;
+  font-size: 40px;
   text-align: center;
   position: relative;
   padding-bottom: 50px;
@@ -585,7 +586,7 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .to
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top span {
   margin-top: 50px;
   margin-left: 10px;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top:before {
@@ -611,7 +612,7 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bo
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .text ul li {
-  font-size: 16px;
+  font-size: 19px;
   margin-top: 10px;
   -webkit-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
@@ -709,7 +710,7 @@ main#pagi_main section#all-ceramic .article img {
 }
 
 main#pagi_main section#all-ceramic .article .title {
-  font-size: 26px;
+  font-size: 40px;
   text-align: center;
   position: relative;
   padding-bottom: 50px;
@@ -723,11 +724,11 @@ main#pagi_main section#all-ceramic .article .title:before {
   background-color: #595959;
   position: absolute;
   left: 50%;
-  top: 50px;
+  top: 60px;
 }
 
 main#pagi_main section#all-ceramic .article .article_in {
-  font-size: 16px;
+  font-size: 19px;
   letter-spacing: 3px;
 }
 
@@ -807,11 +808,12 @@ main#pagi_main section#qa .content .article > div {
 
 main#pagi_main section#qa .content .article > div h2 {
   text-align: left;
+  font-size: 36px;
 }
 
 main#pagi_main section#qa .content .article > div .text ul li {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 19px;
   letter-spacing: 3px;
   list-style-type: decimal;
 }
