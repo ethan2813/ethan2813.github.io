@@ -132,7 +132,7 @@
     padding-left: 10px;
   }
   main#pagi_main section#qa .content .photo .photo_top .text ul li, main#pagi_main section#qa .content .photo .photo_bot .text ul li {
-    font-size: 16px;
+    font-size: 18px;
     list-style-type: decimal;
     letter-spacing: 2px;
     margin: 10px 0;
@@ -192,8 +192,7 @@
     margin: 0;
   }
   main#main section#team .content_ .doctor_row .doctor > div .bot .text ul li {
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 18px;
   }
   main#main section#team .content_ .doctor_row .doctor:hover {
     -webkit-transform: none;
@@ -244,8 +243,7 @@
     margin: 0;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .text ul li {
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 18px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor:hover {
     -webkit-transform: none;
@@ -262,7 +260,7 @@
     margin: 0px;
   }
   main#pagi_main section#all-ceramic .article .article_in {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 2px;
   }
 }
@@ -283,7 +281,7 @@
   }
   main#main section#setting .setting_article .text p {
     letter-spacing: 0px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -324,7 +322,7 @@
     margin: 0;
   }
   main#main section#banner .content_3 .opening .table_opening {
-    font-size: 16px;
+    font-size: 18px;
   }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
@@ -401,7 +399,7 @@
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
     list-style-type: none;

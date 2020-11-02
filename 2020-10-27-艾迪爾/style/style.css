@@ -280,8 +280,7 @@ main#main section#team .content_ .doctor_row .doctor > div .bot .text ul {
 }
 
 main#main section#team .content_ .doctor_row .doctor > div .bot .text ul li {
-  font-size: 19px;
-  letter-spacing: 3px;
+  font-size: 20px;
   list-style-type: none;
 }
 
@@ -612,12 +611,11 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bo
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .bot .text ul li {
-  font-size: 19px;
+  font-size: 20px;
   margin-top: 10px;
   -webkit-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  letter-spacing: 2px;
   list-style-type: none;
 }
 
@@ -728,7 +726,7 @@ main#pagi_main section#all-ceramic .article .title:before {
 }
 
 main#pagi_main section#all-ceramic .article .article_in {
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: 3px;
 }
 
@@ -813,7 +811,6 @@ main#pagi_main section#qa .content .article > div h2 {
 
 main#pagi_main section#qa .content .article > div .text ul li {
   margin-top: 15px;
-  font-size: 19px;
-  letter-spacing: 3px;
+  font-size: 20px;
   list-style-type: decimal;
 }
