@@ -811,4 +811,5 @@ main#pagi_main section#qa .content .article > div .text ul li {
   margin-top: 15px;
   font-size: 20px;
   list-style-type: decimal;
+  list-style-position: inside;
 }
