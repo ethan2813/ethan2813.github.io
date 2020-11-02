@@ -153,6 +153,8 @@
                             z-index: 2;
                             ul{ 
                                 padding-left: 20px;
+                                counter-reset: list;
+                                list-style: none;
                                 
                                 li{
                                     // font-family: 微軟正黑體;
@@ -161,12 +163,20 @@
                                     // list-style-type:decimal;
                                     // list-style-position: outside;
                                     // letter-spacing: 2px;
+                                    list-style: none;
                                     margin: 10px 0;
+                                    position: relative;
+                                    counter-increment: list;
+
+
 
                                    
-                                    &::marker{
-                                        text-align: right;
-                                    }
+                                    &:before {
+                                        content: counter(list)'.';
+                                        margin-right: 5px;
+                                        position: absolute;
+                                        right: 100%;
+                                      }
                                     
                                 }
                             }
