@@ -63,7 +63,7 @@
         section#pagi_banner{
             .content{
                 .banner_cube{
-                    width: 350px;
+                    width: 420px;
                     height: 80px;
 
                     &:before{
@@ -213,7 +213,7 @@
                         background-color: rgba(255, 255, 255, 0.781);
                         padding: 5px 10px;
                         margin: 8px auto;
-                        width: 330px;
+                        width: 420px;
                         height: auto;
                         
                         >div{
@@ -285,7 +285,7 @@
     
                     .doctor{
                         background-color: transparent;
-                        width: 350px;
+                        width: 420px;
                         margin: 5px auto;
                         
                         height: auto;
@@ -640,6 +640,40 @@
         }
       
     }
+}
+@media(max-width:420px){
+    main#main{
+        section#team{
+            .content_{
+                .doctor_row{
+                    .doctor{
+                        width: 95%;
+                    }
+                }
+            }
+        } 
+    } 
+
+
+    main#pagi_main{
+        section#artificial-dental{
+            .content_{
+                .doctor_row{
+                    .doctor{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+
+        section#all-ceramic{
+            .article{
+                width: 95%;
+            }
+        }
+    }
+
+    
 }
 @media(max-width:400px){
     nav#nav{

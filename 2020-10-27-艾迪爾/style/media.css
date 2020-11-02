@@ -44,7 +44,7 @@
     display: none;
   }
   main#pagi_main section#pagi_banner .content .banner_cube {
-    width: 350px;
+    width: 420px;
     height: 80px;
   }
   main#pagi_main section#pagi_banner .content .banner_cube:before {
@@ -163,7 +163,7 @@
     background-color: rgba(255, 255, 255, 0.781);
     padding: 5px 10px;
     margin: 8px auto;
-    width: 330px;
+    width: 420px;
     height: auto;
   }
   main#main section#team .content_ .doctor_row .doctor > div {
@@ -211,7 +211,7 @@
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
     background-color: transparent;
-    width: 350px;
+    width: 420px;
     margin: 5px auto;
     height: auto;
   }
@@ -438,6 +438,18 @@
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  main#main section#team .content_ .doctor_row .doctor {
+    width: 95%;
+  }
+  main#pagi_main section#artificial-dental .content_ .doctor_row .doctor {
+    width: 95%;
+  }
+  main#pagi_main section#all-ceramic .article {
+    width: 95%;
   }
 }
 
