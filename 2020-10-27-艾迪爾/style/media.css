@@ -100,7 +100,7 @@
     position: relative;
   }
   main#pagi_main section#qa .content .photo {
-    width: 95%;
+    width: 100%;
     padding: 30px 0;
     padding-left: 10px;
     display: -webkit-box;
@@ -114,6 +114,10 @@
             flex-direction: column;
     background-image: unset;
     background-color: unset;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main#pagi_main section#qa .content .photo img {
     width: 60%;
@@ -122,6 +126,7 @@
     display: none;
   }
   main#pagi_main section#qa .content .photo .photo_top, main#pagi_main section#qa .content .photo .photo_bot {
+    width: 95%;
     display: block;
   }
   main#pagi_main section#qa .content .photo .photo_top h2, main#pagi_main section#qa .content .photo .photo_bot h2 {
