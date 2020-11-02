@@ -809,3 +809,7 @@ main#pagi_main section#qa .content .article > div .text ul li {
   list-style-type: decimal;
   list-style-position: outside;
 }
+
+main#pagi_main section#qa .content .mobile_article {
+  display: none;
+}
