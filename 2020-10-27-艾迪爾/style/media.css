@@ -131,7 +131,6 @@
   }
   main#pagi_main section#qa .content .mobile_article .photo_top .text ul li, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul li {
     font-size: 19px;
-    list-style-type: decimal;
     margin: 10px 0;
   }
   main#pagi_main section#qa .content .mobile_article .photo_top .text ul li::marker, main#pagi_main section#qa .content .mobile_article .photo_bot .text ul li::marker {
