@@ -135,6 +135,9 @@
     list-style-type: decimal;
     margin: 10px 0;
   }
+  main#pagi_main section#qa .content .photo .photo_top .text ul li::marker, main#pagi_main section#qa .content .photo .photo_bot .text ul li::marker {
+    text-align: right;
+  }
   main#pagi_main section#qa .content .article {
     position: absolute;
     top: 0;
