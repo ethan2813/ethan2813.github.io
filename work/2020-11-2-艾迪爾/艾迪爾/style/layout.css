@@ -343,8 +343,3 @@ footer#footer .footer_bot .footer_bot {
   bottom: 0;
   width: 100%;
 }
-
-.fb_dialog_content > iframe {
-  opacity: 0.85;
-  right: -7px !important;
-}
