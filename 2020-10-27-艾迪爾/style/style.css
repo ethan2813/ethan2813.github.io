@@ -1,4 +1,3 @@
-@charset "UTF-8";
 main#main section#banner {
   position: relative;
 }
@@ -153,12 +152,11 @@ main#main section#banner .content_3 .opening .bl {
 
 main#main section#banner .content_3 .opening .table_opening {
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 main#main section#banner .content_3 .opening .table_opening td {
   padding: 5px 12px;
-  font-family: 微軟正黑體;
 }
 
 main#main section#banner .shadow_ .shadow_L {
