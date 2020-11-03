@@ -25,6 +25,7 @@ main#main section#banner .content_1 .banner_article {
 main#main section#banner .content_1 .banner_article p {
   color: white;
   text-shadow: 3px 3px 4px black;
+  font-weight: 500;
 }
 
 main#main section#banner .content_1 .banner_mobile {

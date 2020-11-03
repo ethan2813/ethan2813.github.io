@@ -190,7 +190,7 @@ footer#footer{
         img{
             width: 60px;
             position: fixed;
-            right: 23px;
+            right: 5px;
             bottom: 155px;
             z-index: 5;
             cursor: pointer;
@@ -203,7 +203,7 @@ footer#footer{
         a{
             img{
                 position: fixed;
-                right: 23px;
+                right: 5px;
                 bottom: 90px;
                 z-index: 5;
                 width: 60px;
@@ -369,6 +369,7 @@ footer#footer{
 .fb_dialog_content{
     >iframe{
         opacity: 0.85;
+        right: -7px!important;
     }
 }
 

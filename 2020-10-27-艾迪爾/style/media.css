@@ -491,16 +491,6 @@
   nav#nav .nav_countainer .logo {
     width: 70%;
   }
-  footer#footer #gototop img {
-    width: 60px;
-    right: 23px;
-    bottom: 155px;
-  }
-  footer#footer #line_btn a img {
-    width: 60px;
-    bottom: 90px;
-    right: 23px;
-  }
 }
 
 @media (max-width: 370px) {
