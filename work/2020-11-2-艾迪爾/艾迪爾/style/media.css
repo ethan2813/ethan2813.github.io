@@ -1,3 +1,47 @@
+@media (max-width: 1700px) {
+  main#main section#setting .setting_article img {
+    margin-top: 50px;
+  }
+  main#main section#setting .setting_article .text {
+    padding: 0 100px;
+    margin-top: 75px;
+  }
+  main#main section#setting .setting_article .text p {
+    font-size: 24px;
+    margin: 0px 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  main#main section#setting .setting_article img {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  main#main section#setting .setting_article .text {
+    padding: 0 100px;
+    margin-top: 60px;
+  }
+  main#main section#setting .setting_article .text p {
+    font-size: 24px;
+    margin: 0px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  main#main section#setting .setting_article img {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  main#main section#setting .setting_article .text {
+    padding: 0 100px;
+    margin-top: 50px;
+  }
+  main#main section#setting .setting_article .text p {
+    font-size: 20px;
+    margin: 0px 0;
+  }
+}
+
 @media (max-width: 1200px) {
   footer#footer .footer_bot .copyright {
     padding: 20px 20px 20px 20px;
@@ -11,6 +55,18 @@
   }
   main#main section#banner .content_1 .banner_article p {
     font-size: 30px;
+  }
+  main#main section#setting .setting_article img {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  main#main section#setting .setting_article .text {
+    padding: 0 50px;
+    margin-top: 60px;
+  }
+  main#main section#setting .setting_article .text p {
+    font-size: 20px;
+    margin: 0px 0;
   }
 }
 

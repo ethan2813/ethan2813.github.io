@@ -588,14 +588,16 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .to
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top img {
   width: 80px;
+  margin: 10px 0;
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top img:nth-child(2) {
   display: none;
 }
 
-main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top span {
-  margin-top: 50px;
+main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top > p {
+  margin-top: 20px;
+  margin-bottom: 0;
   margin-left: 10px;
   font-size: 36px;
 }
@@ -603,11 +605,11 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .to
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top:before {
   content: '';
   display: block;
-  width: 70%;
+  width: 100%;
   height: 1px;
   background-color: #4d4d4d;
   position: absolute;
-  bottom: -10%;
+  bottom: 0%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
