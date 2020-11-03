@@ -194,7 +194,7 @@ footer#footer{
             bottom: 155px;
             z-index: 5;
             cursor: pointer;
-            opacity: 0.9;
+            opacity: 0.85;
             
             
         }
@@ -208,6 +208,7 @@ footer#footer{
                 z-index: 5;
                 width: 60px;
                 height: auto;
+                opacity: 0.85;
 
             }
         }
@@ -362,6 +363,12 @@ footer#footer{
             bottom: 0;
             width: 100%;
         }
+    }
+}
+
+.fb_dialog_content{
+    >iframe{
+        opacity: 0.85;
     }
 }
 

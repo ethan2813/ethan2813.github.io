@@ -184,7 +184,7 @@ footer#footer #gototop img {
   bottom: 155px;
   z-index: 5;
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 footer#footer #line_btn a img {
@@ -194,6 +194,7 @@ footer#footer #line_btn a img {
   z-index: 5;
   width: 60px;
   height: auto;
+  opacity: 0.85;
 }
 
 footer#footer .footer_top {
@@ -348,4 +349,8 @@ footer#footer .footer_bot .footer_bot {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.fb_dialog_content > iframe {
+  opacity: 0.85;
 }
