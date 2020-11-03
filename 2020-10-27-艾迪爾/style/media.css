@@ -107,7 +107,7 @@
   }
   main#pagi_main section#qa .content .mobile_article {
     margin-top: 50px;
-    padding: 10px 0;
+    padding: 10px 15px;
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
