@@ -1,6 +1,8 @@
 main#main{
     section#banner{
     position: relative;
+
+
     
     .content_1{
         // width: 100%;
@@ -14,6 +16,20 @@ main#main{
             position: relative;
             margin-top: 70px;
             
+        }
+        .banner_article{
+            position: absolute;
+            bottom: 100px;
+            right: 220px;
+            display: block;
+            z-index: 2;
+            font-size: 40px;
+
+            p{
+                color: white;
+                text-shadow: 3px 3px 4px black;
+
+            }
         }
         .banner_mobile{
             display: none;
