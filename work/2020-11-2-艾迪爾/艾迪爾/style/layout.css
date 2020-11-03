@@ -121,20 +121,14 @@ nav#nav .nav_countainer .nav_links li a {
   position: relative;
 }
 
-nav#nav .nav_countainer .nav_links li a:hover:before {
+nav#nav .nav_countainer .nav_links li a:hover::after {
   width: 100%;
+}
+
+nav#nav .nav_countainer .nav_links li a::after {
   -webkit-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-}
-
-nav#nav .nav_countainer .nav_links li a:hover {
-  -webkit-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-nav#nav .nav_countainer .nav_links li a:before {
   content: '';
   display: block;
   height: 1px;
