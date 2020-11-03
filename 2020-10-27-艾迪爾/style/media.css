@@ -486,6 +486,13 @@
   }
   main#pagi_main section#all-ceramic .article {
     width: 95%;
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 500px) {
+  main#pagi_main section#all-ceramic .article {
+    width: 500px;
   }
 }
 

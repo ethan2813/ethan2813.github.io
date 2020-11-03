@@ -709,7 +709,7 @@ main#pagi_main section#all-ceramic .article {
   width: 420px;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  padding: 30px 15px;
+  padding: 40px 30px;
   -webkit-box-shadow: 2px 2px 10px black;
           box-shadow: 2px 2px 10px black;
 }
@@ -787,7 +787,7 @@ main#pagi_main section#qa .content .photo img {
 
 main#pagi_main section#qa .content .article {
   width: 100%;
-  padding: 20px 0;
+  padding: 50px 20px;
   background-color: rgba(255, 255, 255, 0.795);
   display: -webkit-box;
   display: -webkit-flex;
@@ -808,7 +808,7 @@ main#pagi_main section#qa .content .article {
 }
 
 main#pagi_main section#qa .content .article > div {
-  width: 700px;
+  width: 90%;
 }
 
 main#pagi_main section#qa .content .article > div h2 {
@@ -821,6 +821,10 @@ main#pagi_main section#qa .content .article > div .text ul li {
   font-size: 20px;
   list-style-type: decimal;
   list-style-position: outside;
+}
+
+main#pagi_main section#qa .content .article .article_bot {
+  margin-top: 50px;
 }
 
 main#pagi_main section#qa .content .mobile_article {
