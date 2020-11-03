@@ -181,7 +181,7 @@
   }
   main#main section#team .content_ .doctor_row .doctor {
     background-color: rgba(255, 255, 255, 0.781);
-    padding: 5px 10px;
+    padding: 5px 15px;
     margin: 8px auto;
     width: 420px;
     height: auto;
@@ -238,7 +238,7 @@
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div {
     background-color: rgba(255, 255, 255, 0.918);
     position: relative;
-    padding: 10px;
+    padding: 10px 15px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top {
     display: -webkit-box;
@@ -367,6 +367,7 @@
     display: none;
   }
   main#pagi_main section#pagi_banner .content .banner_cube {
+    display: none;
     width: 200px;
     height: 70px;
     top: 6%;

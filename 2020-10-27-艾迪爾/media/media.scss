@@ -237,7 +237,7 @@
     
                     .doctor{
                         background-color: rgba(255, 255, 255, 0.781);
-                        padding: 5px 10px;
+                        padding: 5px 15px;
                         margin: 8px auto;
                         width: 420px;
                         height: auto;
@@ -321,7 +321,7 @@
                             background-color: rgba(255, 255, 255, 0.918);
                             position: relative;
                             // border-radius: 10px; 
-                            padding: 10px;   
+                            padding: 10px 15px;   
 
                             .top{
                         
@@ -541,6 +541,7 @@
                     display: none;
                 }
                 .banner_cube{
+                    display: none;
                     width: 200px;
                     height: 70px;
                     top: 6%;
