@@ -162,8 +162,8 @@
     position: relative;
   }
   main#pagi_main section#qa .content .mobile_article {
-    margin-top: 50px;
-    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px 15px;
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -206,6 +206,9 @@
     margin-right: 5px;
     position: absolute;
     right: 100%;
+  }
+  main#pagi_main section#qa .content .mobile_article .photo_bot {
+    margin-top: 30px;
   }
   main#pagi_main section#qa .content .photo {
     display: none;
@@ -488,7 +491,7 @@
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
     text-decoration: none;
     list-style-type: none;

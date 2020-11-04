@@ -753,7 +753,7 @@ main#pagi_main section#all-ceramic .article .article_in {
 }
 
 main#pagi_main section#qa .content {
-  background-image: url(../img/pagination/qa_bg.png);
+  background-image: url(../img/pagination/qa_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -799,7 +799,7 @@ main#pagi_main section#qa .content .photo img {
 main#pagi_main section#qa .content .article {
   width: 100%;
   padding: 50px 20px;
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0.8);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
