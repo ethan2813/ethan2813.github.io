@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
-    
+
     <!-- bootstrapcdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <nav id='nav'>
         <div class="menu">
             <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <ul class='nav_list'>
                 <li><a href="#">診療項目</a></li>
                 <li><a href="#">醫師介紹</a></li>
@@ -29,9 +36,35 @@
 
             </ul>
 
-            </div>
+        </div>
         </div>
     </nav>
+    <main id="main_home">
+        <div class="banner">
+            <div class="banner_top">
+            </div>
+            <div class="banner_bot">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/banner_L.png" alt="banner_L">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner_M.png" alt="banner_M">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner_R.png" alt="banner_R">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -47,12 +80,14 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-    <!-- js掛載 -->
-    <script src="./js/index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     <!-- wow.js -->
     <script src="./js/wow.js"></script>
+
+    <!-- js掛載 -->
+    <script src="./js/index.js"></script>
     <script>
         new WOW().init();
     </script>

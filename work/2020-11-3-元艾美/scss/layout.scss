@@ -1,3 +1,7 @@
+$black1 : #000000;
+$black2 : #272727;
+$black3 : #3C3C3C;
+
 body{
     margin: 0;
     padding: 0;
@@ -10,6 +14,13 @@ body{
     box-sizing: border-box;
 }
 
+//row跟col設定無margin、padding
+.row,.col-4{
+    margin: 0!important;
+    padding: 0!important;
+
+}
+
 
 
 
@@ -18,19 +29,33 @@ nav#nav{
     .menu{
         z-index: 5;
         position: fixed;
-        height: 100vh;
+        margin-top: 40px;
+        height: calc(100vh - 40px);
         width: 120px;
-        background-color: #b17d7d28;
+        // background-color: #b17d7d28;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
 
         .nav_logo{
-            width: 80%; 
+            width: 60%; 
+            margin-top: 20px;
         }
         .nav_list{
             list-style-type: none;
-            
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            align-items: center;
+            margin-top: 30px;
             li{
+                margin-bottom: 10px;
+               
+                
                 a{
                     text-decoration: none;
+                    color: $black3;
+                    
                 }
             }
         }

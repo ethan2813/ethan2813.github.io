@@ -1,0 +1,16 @@
+main#main_home{
+    .banner{
+        .banner_top{
+            background-image: url(../img/banner_top.png);
+            height: 40px;
+            width: 100%;
+            background-size:cover;
+            background-position: center;
+        }
+        .banner_bot{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
