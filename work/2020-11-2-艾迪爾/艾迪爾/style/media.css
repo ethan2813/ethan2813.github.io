@@ -227,6 +227,9 @@
   main#main section#team .team_title {
     margin: 75px 0 70px 0;
   }
+  main#main section#team .team_title:before {
+    height: 20px;
+  }
   main#main section#team .content_ .doctor_row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -276,6 +279,9 @@
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  main#main section#setting .setting_article .setting_title:before {
+    height: 20px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row {
     display: -webkit-box;

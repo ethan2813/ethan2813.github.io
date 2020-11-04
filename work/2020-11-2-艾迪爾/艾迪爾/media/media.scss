@@ -311,6 +311,10 @@
         section#team{
             .team_title{
                 margin: 75px 0 70px 0;
+
+                &:before{
+                    height: 20px;
+                }
             }
             .content_{
                
@@ -375,6 +379,15 @@
     
     
     
+                    }
+                }
+            }
+        }
+        section#setting{
+            .setting_article{
+                .setting_title{
+                    &:before{
+                        height: 20px;
                     }
                 }
             }
@@ -476,6 +489,8 @@
                 }
             }
         }
+       
+        
 
        
 
