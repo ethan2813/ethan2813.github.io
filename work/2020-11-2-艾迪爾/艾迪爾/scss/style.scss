@@ -257,11 +257,12 @@ section#team{
                     
 
                     .top{
-                    
                         display: flex;
+                        align-items: baseline;
                         img{
                             width: 80px;
                             transition: 5;
+                            height: auto;   //test
                         }
                         img:nth-child(2){
                             display: none;
@@ -591,6 +592,7 @@ main#pagi_main{
                             position: relative;
                             // overflow: hidden;
                             display: flex;
+                            align-items: baseline;
                             img{
                                 width: 80px;  
                                 margin: 10px 0;
@@ -599,7 +601,7 @@ main#pagi_main{
                                 display: none;
                             }
                             >p{
-                                margin-top: 30px ;
+                                margin-top: 50px ;
                                 margin-bottom: 0;
                                 margin-left: 10px;
                                 font-size: 36px ;

@@ -268,6 +268,10 @@ main#main section#team .content_ .doctor_row .doctor > div .top {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 main#main section#team .content_ .doctor_row .doctor > div .top img {
@@ -275,6 +279,7 @@ main#main section#team .content_ .doctor_row .doctor > div .top img {
   -webkit-transition: 5;
   -o-transition: 5;
   transition: 5;
+  height: auto;
 }
 
 main#main section#team .content_ .doctor_row .doctor > div .top img:nth-child(2) {
@@ -584,6 +589,10 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .to
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top img {
@@ -596,7 +605,7 @@ main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .to
 }
 
 main#pagi_main section#artificial-dental .content_ .doctor_row .doctor > div .top > p {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0;
   margin-left: 10px;
   font-size: 36px;
