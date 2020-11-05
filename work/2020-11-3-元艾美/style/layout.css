@@ -17,10 +17,15 @@ body {
 }
 
 nav#nav .menu {
+  -webkit-box-shadow: 1px 1px px #3C3C3C;
+          box-shadow: 1px 1px px #3C3C3C;
   z-index: 5;
   position: fixed;
-  margin-top: 40px;
-  height: calc(100vh - 40px);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  top: 50%;
+  height: calc(100vh - 79px);
   width: 120px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -29,6 +34,38 @@ nav#nav .menu {
 nav#nav .menu .nav_logo {
   width: 60%;
   margin-top: 20px;
+}
+
+nav#nav .menu .burger {
+  cursor: pointer;
+  margin: auto 0;
+  display: none;
+}
+
+nav#nav .menu .burger > div {
+  width: 40px;
+  height: 3px;
+  background-color: #595959;
+  margin: 10px;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+nav#nav .menu .burger.burger_active .line1 {
+  -webkit-transform: rotate(45deg) translate(13px, 6px);
+      -ms-transform: rotate(45deg) translate(13px, 6px);
+          transform: rotate(45deg) translate(13px, 6px);
+}
+
+nav#nav .menu .burger.burger_active .line2 {
+  opacity: 0;
+}
+
+nav#nav .menu .burger.burger_active .line3 {
+  -webkit-transform: rotate(-45deg) translate(13px, -6px);
+      -ms-transform: rotate(-45deg) translate(13px, -6px);
+          transform: rotate(-45deg) translate(13px, -6px);
 }
 
 nav#nav .menu .nav_list {

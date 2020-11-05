@@ -79,12 +79,11 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 80px;
+    top: 70px;
     right: -100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 2px #ddd;
-            box-shadow: 2px 2px 2px #ddd;
+    -webkit-box-shadow: 2px 5px 6px -3px black;
+            box-shadow: 2px 5px 6px -3px black;
+    background-color: white;
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -96,8 +95,8 @@
     display: none;
   }
   nav#nav .nav_countainer .nav_links.nav_active {
-    top: 80px;
-    right: 5px;
+    top: 70px;
+    right: 0;
   }
   nav#nav .nav_countainer .burger {
     display: block;
@@ -362,10 +361,10 @@
     margin: 30px 0 30px 0;
   }
   main#main section#setting .setting_article .setting_title {
-    font-size: 30px;
+    font-size: 28px;
   }
   main#main section#setting .setting_article .text {
-    padding: 0 20px;
+    padding: 0px;
   }
   main#main section#setting .setting_article .text p {
     letter-spacing: 0px;
@@ -409,7 +408,7 @@
   }
   main#main section#banner .content_3 .opening h2 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 0;
   }
   main#main section#banner .content_3 .opening .bl {
@@ -567,6 +566,13 @@
   }
 }
 
+@media (max-width: 350px) {
+  main#main section#setting .setting_article .text p {
+    font-size: 15;
+    letter-spacing: -1px;
+  }
+}
+
 @media (max-width: 370px) {
   main#main section#banner .content_3 .opening {
     width: 90%;
@@ -583,9 +589,23 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   main#main section#setting .setting_article .text p {
-    letter-spacing: -2px;
-    font-size: 18px;
+    letter-spacing: 0px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 313px) {
+  main#main section#setting .setting_article .text p {
+    letter-spacing: 0px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  main#main section#setting .setting_article .text p {
+    letter-spacing: 0px;
+    font-size: 14px;
   }
 }

@@ -6,6 +6,58 @@ main#main_home .banner .banner_top {
   background-position: center;
 }
 
-main#main_home .banner .banner_bot img {
+main#main_home .banner .banner_mid img {
   width: 100%;
+}
+
+main#main_home .banner .banner_bot {
+  height: 380px;
+  width: 100%;
+  text-align: center;
+  padding: 120px 0;
+}
+
+main#main_home .banner .banner_bot p {
+  color: #60a993;
+  font-size: 24px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+
+main#main_home .doctor {
+  width: 100%;
+  height: 1600px;
+  background-image: url(../img/doctor_back.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main#main_home .doctor .doctor_title {
+  text-align: center;
+  padding: 150px 0 0 0;
+}
+
+main#main_home .doctor .doctor_title h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #435556;
+}
+
+main#main_home .doctor .doctor_title hr {
+  width: 260px;
+  height: 1px;
+  background-color: #60a993;
+}
+
+main#main_home .doctor .doctor_title p {
+  color: white;
+  font-size: 20px;
+}
+
+main#main_home .doctor .doctor_content .doctor_article {
+  background-color: white;
+  width: 350px;
+  height: 270px;
+  text-align: center;
 }

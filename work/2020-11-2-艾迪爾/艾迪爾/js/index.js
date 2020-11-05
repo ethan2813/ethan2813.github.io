@@ -32,6 +32,7 @@
         // console.log(e.currentTarget)
         $(e.currentTarget).toggleClass('burger_active')
         $('.nav_links').toggleClass('nav_active')
+
     })
 
 
@@ -47,8 +48,6 @@
         $('html,body').animate({scrollTop:0},300);
     })
 
-   
-
     //totop隱藏效果
     $(window).scroll(function(){
         if($(this).scrollTop() > 400){
@@ -59,9 +58,6 @@
 
         console.log($(this).scrollTop())
     })
-
-
-
 })()
 
     

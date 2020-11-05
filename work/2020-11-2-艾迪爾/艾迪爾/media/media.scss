@@ -116,11 +116,10 @@
                 width: 100%;
                 position: absolute;
                 flex-direction: column;
-                top: 80px;
+                top: 70px;
                 right: -100%;
-                background-color: rgba(255, 255, 255, 0.95);
-                border-radius: 10px;
-                box-shadow: 2px 2px 2px #ddd;
+                box-shadow: 2px 5px 6px -3px black;
+                background-color: white;
                 transition: 0.5s ease-in-out;
                 li{
                     padding: 20px 0;
@@ -130,8 +129,8 @@
                 }
 
                 &.nav_active{
-                    top: 80px;
-                    right: 5px;
+                    top: 70px;
+                    right: 0;
                 }
             }
             .burger{
@@ -531,10 +530,10 @@
                     
                 }
                 .setting_title{
-                    font-size: 30px;
+                    font-size: 28px;
                 }
                 .text{
-                    padding: 0 20px;
+                    padding: 0px;
     
                     p{
                         letter-spacing: 0px;
@@ -602,7 +601,7 @@
                     
                     h2{
                         margin-top: 10px;
-                        font-size: 18px;
+                        font-size: 26px;
                         font-weight: 0;
                     } 
                     .bl{
@@ -854,6 +853,20 @@
     
     
 }
+@media(max-width:350px){
+    main#main{
+        section#setting{
+            .setting_article{
+                .text{
+                    p{
+                        font-size: 15;
+                        letter-spacing: -1px;
+                    }
+                }
+                }
+            }
+    }
+}
 @media(max-width:370px){
     main#main{
         section#banner{
@@ -900,14 +913,44 @@
     
 }
 
-@media(max-width:320px){
+@media(max-width:330px){
     main#main{
         section#setting{
             .setting_article{
                 .text{
                     p{
-                        letter-spacing: -2px;
-                        font-size: 18px;
+                        letter-spacing: 0px;
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media(max-width:313px){
+    main#main{
+        section#setting{
+            .setting_article{
+                .text{
+                    p{
+                        letter-spacing: 0px;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media(max-width:300px){
+    main#main{
+        section#setting{
+            .setting_article{
+                .text{
+                    p{
+                        letter-spacing: 0px;
+                        font-size: 14px;
                     }
                 }
 

@@ -1,3 +1,8 @@
+$black1 : #000000;
+$black2 : #272727;
+$black3 : #3C3C3C;
+$title1 : #60a993;
+
 main#main_home{
     .banner{
         .banner_top{
@@ -7,10 +12,64 @@ main#main_home{
             background-size:cover;
             background-position: center;
         }
-        .banner_bot{
+        .banner_mid{
             img{
                 width: 100%;
             }
         }
+        .banner_bot{
+            height: 380px;
+            width: 100%;
+            text-align: center;
+            padding: 120px 0;
+            p{
+                color: $title1;
+                font-size: 24px;
+                margin-bottom: 6px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .doctor{
+        width: 100%;
+        height: 1600px; //暫時定義 之後會刪除
+        background-image: url(../img/doctor_back.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+            .doctor_title{
+                text-align: center;
+                padding: 150px 0 0 0;
+
+                //醫師介紹
+                h1{ 
+                    font-size: 36px;
+                    font-weight: 800;
+                    color: #435556;
+                }
+                
+                hr{
+                    width: 260px;
+                    height: 1px;
+                    background-color: #60a993; 
+                }
+
+                //Doctor introduction
+                p{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+            .doctor_content{
+                .doctor_article{
+                    
+                    background-color: white;
+                    width: 350px;
+                    height: 270px;
+                    text-align: center;
+                }
+            }
+
     }
 }

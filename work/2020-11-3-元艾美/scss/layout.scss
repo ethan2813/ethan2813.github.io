@@ -1,6 +1,7 @@
 $black1 : #000000;
 $black2 : #272727;
 $black3 : #3C3C3C;
+$title1 : #60a993;
 
 body{
     margin: 0;
@@ -18,19 +19,16 @@ body{
 .row,.col-4{
     margin: 0!important;
     padding: 0!important;
-
 }
-
-
-
-
 
 nav#nav{
     .menu{
+        box-shadow: 1px 1px px $black3;
         z-index: 5;
         position: fixed;
-        margin-top: 40px;
-        height: calc(100vh - 40px);
+        transform: translate(0,-50%);
+        top: 50%;
+        height: calc(100vh - 79px);
         width: 120px;
         // background-color: #b17d7d28;
         background-color: rgba(255, 255, 255, 0.8);
@@ -39,6 +37,31 @@ nav#nav{
         .nav_logo{
             width: 60%; 
             margin-top: 20px;
+        }
+        .burger{
+            cursor: pointer;
+            margin: auto 0 ;
+            // display: none;
+            display: none;
+
+            >div{
+                width: 40px;
+                height: 3px;
+                background-color:#595959;
+                margin: 10px;
+                transition: ease-in 0.3s;
+            }
+
+            &.burger_active .line1{
+                transform: rotate(45deg) translate(13px, 6px);
+            }
+            &.burger_active .line2{
+                opacity: 0;
+            }
+            &.burger_active .line3{
+                transform: rotate(-45deg) translate(13px, -6px);
+            }
+            
         }
         .nav_list{
             list-style-type: none;
