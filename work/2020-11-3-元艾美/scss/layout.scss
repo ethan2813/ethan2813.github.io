@@ -87,6 +87,25 @@ nav#nav{
     }
 }
 footer#footer{
-    height: 20vh;
+    padding-top: 20px;
     background-color: #60a993;
+
+    .opening{
+        
+        .table_opening{
+            width: 80%;
+            tr{
+
+                td:nth-child(1){
+                    width: 100px;
+                }
+                td{
+                    padding: 3px 5px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+        
+    }
 }
