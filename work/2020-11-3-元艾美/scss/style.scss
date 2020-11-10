@@ -46,6 +46,8 @@ main#main_home{
             
         }
     }
+
+    //醫師介紹
     .doctor{
         width: 100%;
         background-position: center;
@@ -54,7 +56,9 @@ main#main_home{
         position: relative;
         overflow: hidden;
         padding-bottom: 10px;
-            
+        
+
+            //醫師介紹上方圖
             .doctor_back_top{
                 position: absolute;
                 left: 50%;
@@ -63,6 +67,7 @@ main#main_home{
                 width: 100px;
                 transition: 0.5s;
             }
+            //標題
             .doctor_title{
                 background-color: #badbab;
                 text-align: center;
@@ -143,12 +148,107 @@ main#main_home{
                     }
                 }
             }
+            //醫師介紹下方圖
+            .doctor_back_bot{
+                width: 100%;
+            }
 
     }
-    .doctor_back_bot{
-        // position: absolute;
+
+    //診療項目
+    .items{
+        //標題
+        .items_title{
+            background-color: white;
+            text-align: center;
+             padding: 70px 0 70px 0;
+
+             //診所項目
+             h1{ 
+                font-size: 36px;
+                font-weight: 800;
+                color: #435556;
+                
+            }
+            
+            hr{
+                width: 260px;
+                height: 1px;
+                background-color: #60a993; 
+            }
+
+            //Treatment Items
+            p{
+                color: #e3a7a5;
+                font-size: 20px;
+            }
+                
+
+                
+        }
+
+        // 診療項目內容
+        .items_content{
+            //診療項目的照片
+            .items_photo{
+                text-align: right;
+
+                img{
+                width: 80%;
+                border: 15px #60a993 solid;
+                }
+            }
+            //診療項目的文章
+            .items_article{
+                padding: 0 20px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+    
+                p{
+                    font-size: 16px;
+                }
+            }
+            //診療項目的項目
+            .items_items{
+                margin-top: 120px;
+
+                //各項目
+                .items_item{
+                    padding: 0 20px;
+                    margin-bottom: 60px;
+                    position: relative;
+                    h2{
+                        font-size: 22px;
+                        color: #62825f;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    .number{
+                        width: 35px;
+                        height: 35px;
+                        background-color: #62825f;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 35px;
+                        color: white;
+                        position: absolute;
+                        left: 0;
+                        top: -38px;
+                        // transform: translate(-50%,-50%);
+                    }
+                }
+
+            }
+
+        }
+
         
-        width: 100%;
         
+    
     }
+    
 }
