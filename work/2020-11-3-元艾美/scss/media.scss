@@ -14,13 +14,61 @@
                 }
             }
         }
+        .project{
+            .line{
+                a:nth-child(1){
+                    >.btn{
+                        left: 28%;
+                    }
+                }
+                a:nth-child(2){
+                    >.btn{
+                        right: 28%;
+                    }
+                }
+            }
+        }
     }
 }
+
+@media(max-width:992px){
+    main#main_home{
+        .project{
+            .line{
+                a:nth-child(1){
+                    >.btn{
+                        left: 22%;
+                    }
+                }
+                a:nth-child(2){
+                    >.btn{
+                        right: 22%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:768px){
     main#main_home{
         .doctor{
             .doctor_back_top{
                 width: 50px;
+            }
+        }
+        .project{
+            .line{
+                a:nth-child(1){
+                    >.btn{
+                        left: 15%;
+                    }
+                }
+                a:nth-child(2){
+                    >.btn{
+                        right: 15%;
+                    }
+                }
             }
         }
     }
@@ -89,6 +137,13 @@
         .items{
             // 診療項目內容
             .items_content{
+
+                //手機板植牙btn
+                .btn1_mobile{
+                    display: block;
+                    margin-bottom: 50px;
+                }
+
                 // 診療項目的照片
                 .items_photo{
                     text-align: center;
@@ -97,6 +152,19 @@
                     
                     }
                 }
+
+                //診療項目的文章
+                .items_article{
+                    .btn1{
+                        display: none;
+                    }
+                } 
+            }
+        }
+        // 下方按鈕
+        .project{
+            .tooth{
+                width: 400px;
             }
         }
     }
@@ -142,6 +210,14 @@
 
 }
 
+@media(max-width:768px){
+    .bot_banner{
+        .bot_banner_R{
+            display: none;
+        }
+    }
+}
+
 @media(max-width:576px){
     // 主要內容
     main#main_home{
@@ -168,6 +244,18 @@
         .items{
             // 診療項目內容
             .items_content{
+
+                //左邊的葉子
+                .items_leaf_L{
+                    display: none;
+                }
+                //右邊的葉子
+                .items_leaf_R{
+                    display: none;
+                }
+
+                
+                
                 // 診療項目的照片
                 .items_photo{
                     text-align: center;
@@ -203,6 +291,53 @@
                     }
                 }
 
+            }
+        }
+        //下方按鈕
+        .project{
+            .tooth{
+                width: 70%;
+                transform: translate(50%,-50%);
+                top: -200px;
+                right: 50%;
+                display: none;
+            }
+            .line{
+                margin: 150px 0;
+                //兩個按鈕
+                a{
+                    >.btn{
+                        width: 150px;
+
+                        img{
+                            width: 100px;
+                        }
+                        
+                        //按鈕內的文字
+                        .title{
+                            position: absolute;
+                            left: 48%;
+                            top: 40%;
+                            transform: translate(-50% , -50%);
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        //按鈕下面的文字
+                        .text{
+                            top: 130px;
+                        }
+                    }
+                }
+                //左邊的按鈕 DSD
+                a:nth-child(1) >.btn{
+                    top: -120px;
+                    left: 5%;
+                }
+                //右邊的按鈕 全瓷美學
+                a:nth-child(2) >.btn{
+                    top: -120px;
+                    right: 5%;
+                }
             }
         }
     }

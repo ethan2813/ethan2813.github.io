@@ -28,8 +28,9 @@ nav#nav{
         z-index: 5;
         position: fixed;
         transform: translate(0,-50%);
-        top: 50%;
-        height: calc(100vh - 79px);
+        // top: 50%;    //原本的
+        // height: calc(100vh - 79px);  //原本的
+        top: 144px;
         width: 120px;
         // background-color: #b17d7d28;
         background-color: rgba(255, 255, 255, 0.8);
@@ -84,4 +85,8 @@ nav#nav{
             }
         }
     }
+}
+footer#footer{
+    height: 20vh;
+    background-color: #60a993;
 }
