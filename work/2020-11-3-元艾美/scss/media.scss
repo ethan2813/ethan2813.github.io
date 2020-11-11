@@ -28,6 +28,24 @@
                 }
             }
         }
+        // 診療項目
+        .items{
+            // 診療項目內容
+            .items_content{
+                // 左邊的葉子
+                .items_leaf_L{
+                    width: 230px;
+                    left: 5%;
+                    top: -50%;
+                }
+                // 右邊的葉子
+                .items_leaf_R{
+                    width: 200px;
+                    right: 0%;
+                    top: 0%;
+                }
+            }
+        }
     }
 }
 
@@ -139,10 +157,24 @@
 
             }
         }
+        
         // 診療項目
         .items{
             // 診療項目內容
             .items_content{
+
+                // 左邊的葉子
+                .items_leaf_L{
+                    width: 150px;
+                    left: 0%;
+                    top: -15%;
+                }
+                // 右邊的葉子
+                .items_leaf_R{
+                    width: 150px;
+                    right: 0%;
+                    top: -5%;
+                }
 
                 //手機板植牙btn
                 .btn1_mobile{
@@ -235,9 +267,28 @@
 }
 
 @media(max-width:768px){
-    .bot_banner{
-        .bot_banner_R{
-            display: none;
+    main#main_home{
+        .items{
+            .items_title{
+                padding: 40px 0 40px 0;
+            }
+        }
+        .bot_banner{
+            .bot_banner_R{
+                display: none;
+            }
+        }
+    }
+    
+    footer#footer{
+        .opening{
+            .table_opening{
+                tr{
+                    td{
+                        padding: 4px 1px;
+                    }
+                }
+            }
         }
     }
 }
@@ -252,14 +303,10 @@
                     font-size: 18px;
                 }
                 .leaf_L{
-                    left: 50px;
-                    top: -60%;
-                    width: 250px;
+                    display: none;
                 }
                 .leaf_R{
-                    right: 50px;
-                    top: -40%;
-                    width: 150px;
+                    display: none;
                 }
 
             }
@@ -376,10 +423,10 @@
             }
             .table_opening{
                 margin-left: 0;
-                width: 90%;
+                width: 100%;
                 tr{
                     td{
-                        padding: 2px 5px;
+                        padding: 2px 2px;
                     }
                     td:nth-child(1){
                         width: 100px;
@@ -422,6 +469,58 @@
                 }
                 img{
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:370px){
+    main#main_home{
+        .banner{
+            .banner_bot{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:345px){
+    main#main_home{
+        .banner{
+            .banner_bot{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .doctor{
+            .doctor_content{
+                .doctor_article{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .items{
+            .items_content{
+                .items_article{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .items_items{
+                    .items_item{
+                        h2{
+                            font-size: 17px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }

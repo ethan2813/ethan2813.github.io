@@ -44,6 +44,7 @@ var swiper = new Swiper('.swiper-container', {
         }
     })
 
+    //選單隱藏
     $('.nav_list').on('click','a',()=>{
         $('.burger').click();
     })
