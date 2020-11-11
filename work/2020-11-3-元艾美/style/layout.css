@@ -96,6 +96,25 @@ nav#nav .menu .nav_list li {
 nav#nav .menu .nav_list li a {
   text-decoration: none;
   color: #3C3C3C;
+  position: relative;
+}
+
+nav#nav .menu .nav_list li a::after {
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  background-color: #435556;
+}
+
+nav#nav .menu .nav_list li a:hover::after {
+  width: 100%;
 }
 
 footer#footer {

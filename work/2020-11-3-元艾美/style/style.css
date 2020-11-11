@@ -175,7 +175,7 @@ main#main_home .items .items_content {
 
 main#main_home .items .items_content .btn1_mobile {
   display: none;
-  width: 150px;
+  width: 160px;
   margin: 0 auto;
   position: relative;
 }
@@ -322,12 +322,12 @@ main#main_home .project .line a > .btn {
 }
 
 main#main_home .project .line a > .btn img {
-  width: 150px;
+  width: 170px;
 }
 
 main#main_home .project .line a > .btn .title {
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 40%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -340,7 +340,7 @@ main#main_home .project .line a > .btn .text {
   text-align: center;
   position: absolute;
   left: 47%;
-  top: 200px;
+  top: 220px;
   -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
@@ -348,7 +348,7 @@ main#main_home .project .line a > .btn .text {
 }
 
 main#main_home .project .line a:nth-child(1) > .btn {
-  top: -175px;
+  top: -197px;
   left: 35%;
 }
 
@@ -357,7 +357,7 @@ main#main_home .project .line a:nth-child(1) > .btn .title {
 }
 
 main#main_home .project .line a:nth-child(2) > .btn {
-  top: -175px;
+  top: -197px;
   right: 35%;
 }
 

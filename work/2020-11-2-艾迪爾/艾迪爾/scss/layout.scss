@@ -54,7 +54,7 @@ nav#nav{
     &.move{
         height: 80px;
         background-color: rgb(255, 255, 255,);
-        box-shadow: 2px 2px 5px  rgb(46 47 47);
+        box-shadow: 2px 2px 5px  black;
 
 
     }
@@ -251,7 +251,6 @@ footer#footer{
         .contact{
             display: flex;
             justify-content: center;
-            
             >div{
                 h2{
                     font-family: 微軟正黑體;

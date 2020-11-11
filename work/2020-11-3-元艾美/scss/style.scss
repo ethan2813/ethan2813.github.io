@@ -198,7 +198,7 @@ main#main_home{
             //手機板植牙btn
             .btn1_mobile{
                 display: none;
-                width: 150px;
+                width: 160px;
                 margin: 0 auto;
                 position: relative;
                 span{
@@ -333,13 +333,13 @@ main#main_home{
                     width: 200px;
                     text-align: center;
                     img{
-                        width: 150px;
+                        width: 170px;
                         
                     }
                     //按鈕內的文字
                     .title{
                         position: absolute;
-                        left: 50%;
+                        left: 48%;
                         top: 40%;
                         transform: translate(-50% , -50%);
                         font-size: 30px;
@@ -350,7 +350,7 @@ main#main_home{
                         text-align: center;
                         position: absolute;
                         left: 47%;
-                        top: 200px;
+                        top: 220px;
                         transform: translate(-50%,0%);
                         color: #7ba85d;
                     }
@@ -360,7 +360,7 @@ main#main_home{
             }
             //左邊的按鈕 DSD
             a:nth-child(1) >.btn{
-                top: -175px;
+                top: -197px;
                 left: 35%;
 
                 //按鈕內的文字
@@ -370,7 +370,7 @@ main#main_home{
             }
             //右邊的按鈕 全瓷美學
             a:nth-child(2) >.btn{
-                top: -175px;
+                top: -197px;
                 right: 35%;
 
                 //按鈕內的文字

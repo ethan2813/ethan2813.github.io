@@ -46,8 +46,8 @@ nav#nav {
 nav#nav.move {
   height: 80px;
   background-color: white;
-  -webkit-box-shadow: 3px 3px 8px black;
-          box-shadow: 3px 3px 8px black;
+  -webkit-box-shadow: 2px 2px 5px  black;
+          box-shadow: 2px 2px 5px  black;
 }
 
 nav#nav > div {

@@ -66,6 +66,7 @@ nav#nav{
             
         }
         .nav_list{
+            
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -80,7 +81,24 @@ nav#nav{
                 a{
                     text-decoration: none;
                     color: $black3;
+                    position: relative;
+
+                    &::after{
+                        transition: 1s ease-in-out;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        width: 0;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0px;
+                        background-color: #435556;   
+                    }
+                    &:hover::after{
+                        width: 100%;
                     
+                   
+                }
                 }
             }
         }
