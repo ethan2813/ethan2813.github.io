@@ -16,6 +16,20 @@ main#main_home{
             img{
                 width: 100%;
             }
+            .banner_M{
+                position: relative;
+            }
+            .banner_M_text{
+                position: absolute;
+                left: 5%;
+                top: 10%;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                text-align : justify;
+                color: white;
+                font-size: 35px;
+                text-shadow: 1px 1px 5px #333;
+            }
         }
         .banner_bot{
             width: 100%;

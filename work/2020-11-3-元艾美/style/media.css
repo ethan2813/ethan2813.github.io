@@ -1,4 +1,7 @@
 @media (max-width: 1300px) {
+  main#main_home .banner .banner_mid .banner_M_text {
+    font-size: 30px;
+  }
   main#main_home .banner .banner_bot .leaf_L {
     left: 100px;
     top: -30%;
@@ -24,18 +27,6 @@
     width: 200px;
     right: 0%;
     top: 0%;
-  }
-}
-
-@media (max-width: 768px) {
-  main#main_home .doctor .doctor_back_top {
-    width: 50px;
-  }
-  main#main_home .project .line a:nth-child(1) > .btn {
-    left: 15%;
-  }
-  main#main_home .project .line a:nth-child(2) > .btn {
-    right: 15%;
   }
 }
 
@@ -97,6 +88,9 @@
   main#main_home .banner .banner_top {
     height: 70px;
   }
+  main#main_home .banner .banner_mid .banner_M_text {
+    font-size: 26px;
+  }
   main#main_home .banner .banner_bot {
     padding: 50px 0;
   }
@@ -150,16 +144,15 @@
   }
 }
 
-@media (max-width: 820px) {
-  main#main_home .banner .banner_bot .leaf_L {
-    left: 0px;
-    top: -30%;
-    width: 170px;
+@media (max-width: 768px) {
+  main#main_home .doctor .doctor_back_top {
+    width: 50px;
   }
-  main#main_home .banner .banner_bot .leaf_R {
-    right: 0px;
-    top: -10%;
-    width: 100px;
+  main#main_home .project .line a:nth-child(1) > .btn {
+    left: 15%;
+  }
+  main#main_home .project .line a:nth-child(2) > .btn {
+    right: 15%;
   }
 }
 
