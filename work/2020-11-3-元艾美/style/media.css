@@ -246,7 +246,7 @@
     padding: 2px 5px;
   }
   footer#footer .opening .table_opening tr td:nth-child(1) {
-    width: 90px;
+    width: 100px;
     text-align: left;
   }
   footer#footer .contact {
@@ -259,7 +259,7 @@
     margin: 20px 0 5px 0;
   }
   footer#footer .contact .list > div {
-    margin: 0;
+    margin: 5px;
   }
   footer#footer .copyright p {
     font-size: 12px;
