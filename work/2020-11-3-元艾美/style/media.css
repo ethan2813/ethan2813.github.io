@@ -237,7 +237,7 @@
     text-align: left;
   }
   footer#footer .opening > h2 {
-    margin: 20px 0 5px 0;
+    margin: 20px 0 10px 0;
   }
   footer#footer .opening .table_opening {
     margin-left: 0;
@@ -256,7 +256,7 @@
             align-items: flex-start;
   }
   footer#footer .contact > h2 {
-    margin: 20px 0 5px 0;
+    margin: 20px 0 10px 0;
   }
   footer#footer .contact .list > div {
     margin: 5px;
