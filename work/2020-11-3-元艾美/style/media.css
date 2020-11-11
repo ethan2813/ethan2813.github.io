@@ -270,8 +270,8 @@
 
 @media (max-width: 450px) {
   main#main_home .banner .banner_bot p {
-    text-align: left;
     font-size: 14px;
+    letter-spacing: 1px;
   }
   main#main_home .banner .banner_bot img {
     display: none;

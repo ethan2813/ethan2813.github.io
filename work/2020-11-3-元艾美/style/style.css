@@ -100,6 +100,7 @@ main#main_home .doctor .doctor_content .doctor_article {
 }
 
 main#main_home .doctor .doctor_content .doctor_article h2 {
+  color: #60a993;
   font-size: 24px;
   padding: 25px 0 20px 0;
   margin: 0;
