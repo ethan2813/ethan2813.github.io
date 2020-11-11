@@ -103,8 +103,21 @@ footer#footer {
   background-color: #60a993;
 }
 
+footer#footer .opening {
+  text-align: center;
+}
+
+footer#footer .opening > h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px #333;
+  font-weight: 600;
+}
+
 footer#footer .opening .table_opening {
-  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
 }
 
 footer#footer .opening .table_opening tr td:nth-child(1) {
@@ -112,7 +125,92 @@ footer#footer .opening .table_opening tr td:nth-child(1) {
 }
 
 footer#footer .opening .table_opening tr td {
-  padding: 3px 5px;
+  padding: 4px 3px;
+  margin: 3px 3px;
   text-align: center;
+  color: white;
+}
+
+footer#footer .contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer#footer .contact > h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px #333;
+}
+
+footer#footer .contact .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+
+footer#footer .contact .list > div {
+  margin-bottom: 5px;
+}
+
+footer#footer .contact .list > div > img {
+  width: 10px;
+  margin-right: 5px;
+}
+
+footer#footer .contact .list > div > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer#footer .contact .list > .phone > img {
+  width: 12px;
+}
+
+footer#footer .logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer#footer .logo img {
+  width: 70%;
+}
+
+footer#footer .copyright p {
+  font-size: 13px;
   color: white;
 }

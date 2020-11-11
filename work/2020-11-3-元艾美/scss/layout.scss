@@ -90,22 +90,100 @@ footer#footer{
     padding-top: 20px;
     background-color: #60a993;
 
+    //營業時間
     .opening{
-        
+        text-align: center;
+        >h2{
+            color: white;
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 5px #333;
+            font-weight: 600;
+            
+        }
+    
+        //營業時間的表格
         .table_opening{
-            width: 80%;
+            margin: 0 auto;
+            
+            font-size: 14px;
             tr{
 
                 td:nth-child(1){
                     width: 100px;
                 }
                 td{
-                    padding: 3px 5px;
+                    padding: 4px 3px;
+                    margin: 3px 3px;
                     text-align: center;
                     color: white;
                 }
             }
         }
         
+    }
+
+    //聯絡資訊
+    .contact{
+        display: flex;
+        align-items: center;
+        // align-items: flex-start;
+        flex-direction: column;
+        
+        >h2{
+            color: white;
+            font-size: 24px;
+            // text-align: left;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-shadow: 1px 1px 5px #333
+            
+        }
+
+        .list{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+            // 各項目
+            font-size: 14px;
+            >div{
+                margin-bottom: 5px;
+                >img{
+                    width: 10px;
+                    margin-right: 5px;
+                }
+                >a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            >.phone{
+                >img{
+                    width: 12px;
+                }
+            }
+        }
+    }
+
+    //logo圖
+    .logo{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            
+            width: 70%;
+        }
+    }
+
+    //版權聲明
+    .copyright{
+        p{
+            font-size: 13px;
+            color: white;
+        }
     }
 }

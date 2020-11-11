@@ -169,6 +169,11 @@
         }
     }
 
+    footer#footer{
+        .logo{
+            display: none;
+        }
+    }
 }
 
 @media(max-width:820px){
@@ -338,6 +343,49 @@
                     top: -120px;
                     right: 5%;
                 }
+            }
+        }
+    }
+
+    footer#footer{
+        // 營業時間
+        .opening{
+            
+            text-align: left;
+            >h2{
+                margin: 20px 0 5px 0;
+            }
+            .table_opening{
+                margin-left: 0;
+                tr{
+                    td{
+                        padding: 2px 5px;
+                    }
+                    td:nth-child(1){
+                        width: 90px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        //聯絡資訊
+        .contact{
+            align-items: flex-start;
+
+            >h2{
+                margin: 20px 0 5px 0;
+            }
+            .list{
+                >div{
+                    margin: 0;
+                }
+            }
+            
+        }
+        .copyright{
+            p{
+                font-size: 12px;
+                color: white;
             }
         }
     }
