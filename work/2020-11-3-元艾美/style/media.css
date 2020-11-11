@@ -241,6 +241,7 @@
   }
   footer#footer .opening .table_opening {
     margin-left: 0;
+    width: 90%;
   }
   footer#footer .opening .table_opening tr td {
     padding: 2px 5px;
