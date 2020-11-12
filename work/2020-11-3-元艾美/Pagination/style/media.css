@@ -1,0 +1,230 @@
+@media (max-width: 1300px) {
+  main#main_pagination .all-ceramic .content .all_top_L {
+    margin: 0px 0px;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content {
+    margin: 0px 0px;
+  }
+  main#main_pagination .all-ceramic .content .all_top_R img {
+    width: 80%;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L {
+    margin: 5px 5px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R {
+    margin: 5px 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav#nav .menu {
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 50px;
+    top: 0;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  nav#nav .menu.move {
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 5px  black;
+            box-shadow: 2px 2px 5px  black;
+    height: 75px;
+  }
+  nav#nav .menu .nav_logo {
+    width: 60px;
+    margin-top: 0;
+  }
+  nav#nav .menu .burger {
+    display: inline-block;
+  }
+  nav#nav .menu .nav_list {
+    background-color: white;
+    -webkit-box-shadow: 2px 5px 6px -3px black;
+            box-shadow: 2px 5px 6px -3px black;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 0 10px 20px;
+    position: absolute;
+    left: 100%;
+    top: 40px;
+  }
+  nav#nav .menu .nav_list.nav_active {
+    left: 0;
+  }
+  main#main_pagination {
+    margin-left: 0;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content {
+    margin: 0px 0;
+  }
+  main#main_pagination .all-ceramic .content .all_top_R img {
+    width: 100%;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L {
+    margin: 10px 0;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L .all_bot_L_text {
+    max-width: none;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R {
+    margin: 10px 0;
+    border: none;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R .all_bot_R_text {
+    max-width: none;
+  }
+  main#main_pagination .need .need_content {
+    padding-top: 80px;
+    padding: 0 15px;
+    -webkit-box-align: self-start;
+    -webkit-align-items: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    display: inline-block;
+  }
+  main#main_pagination .need .need_content .need_content_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main#main_pagination .need .need_content .need_content_row .need_content_col {
+    padding-left: 0px;
+    min-width: unset;
+    margin-bottom: 20px;
+  }
+  footer#footer {
+    margin-left: 0;
+  }
+  footer#footer .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer#footer .opening .table_opening tr td {
+    padding: 4px 1px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer#footer .opening {
+    text-align: left;
+  }
+  footer#footer .opening > h2 {
+    margin: 20px 0 10px 0;
+  }
+  footer#footer .opening .table_opening {
+    margin-left: 0;
+    width: 100%;
+  }
+  footer#footer .opening .table_opening tr td {
+    padding: 2px 2px;
+  }
+  footer#footer .opening .table_opening tr td:nth-child(1) {
+    width: 100px;
+    text-align: left;
+  }
+  footer#footer .contact {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer#footer .contact > h2 {
+    margin: 20px 0 10px 0;
+  }
+  footer#footer .contact .list > div {
+    margin: 5px;
+  }
+  footer#footer .copyright p {
+    font-size: 12px;
+    color: white;
+  }
+}
+
+@media (max-width: 450px) {
+  main#main_pagination .all-ceramic .content .all_top_L {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content {
+    padding: 60px 15px 60px 15px;
+    width: 100%;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content h2:nth-child(1) {
+    font-size: 30px;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content h2:nth-child(2) {
+    font-size: 26px;
+  }
+  main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content p {
+    letter-spacing: 1px;
+    line-height: none;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L {
+    margin: 10px 0;
+    width: 100%;
+    padding: 60px 15px 60px 15px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L h2:nth-child(1) {
+    font-size: 30px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L h2:nth-child(2) {
+    font-size: 26px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_L .all_bot_L_text p {
+    letter-spacing: 1px;
+    line-height: none;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R {
+    margin: 10px 0;
+    width: 100%;
+    padding: 60px 15px 60px 15px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R h2:nth-child(1) {
+    font-size: 30px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R h2:nth-child(2) {
+    font-size: 26px;
+  }
+  main#main_pagination .all-ceramic .content .all_bot_R .all_bot_R_text p {
+    letter-spacing: 1px;
+    line-height: none;
+  }
+}

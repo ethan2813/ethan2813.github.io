@@ -85,6 +85,9 @@
   nav#nav .menu .nav_list.nav_active {
     left: 0;
   }
+  main#main_home {
+    margin-left: 0;
+  }
   main#main_home .banner .banner_top {
     height: 70px;
   }
@@ -138,6 +141,9 @@
   }
   main#main_home .project .line a:nth-child(2) > .btn {
     right: 22%;
+  }
+  footer#footer {
+    margin-left: 0;
   }
   footer#footer .logo {
     display: none;

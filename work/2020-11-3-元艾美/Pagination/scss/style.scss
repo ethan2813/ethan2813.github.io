@@ -1,0 +1,292 @@
+$black1 : #000000;
+$black2 : #272727;
+$black3 : #3C3C3C;
+$title1 : #60a993;
+
+
+
+
+
+main#main_pagination{
+    margin-left: 120px;
+    //最上方banner   
+    .banner{
+        .banner_top{
+            background-image: url(../img/banner_top.png);
+            height: 40px;
+            width: 100%;
+            background-size:cover;
+            background-position: center;
+        }
+        .banner_mid{
+            img{
+                width: 100%;
+            }
+            .banner_M{
+                position: relative;
+            }
+            .banner_M_text{
+                position: absolute;
+                left: 5%;
+                top: 10%;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                text-align : justify;
+                color: white;
+                font-size: 35px;
+                text-shadow: 1px 1px 5px #333;
+            }
+        }
+       
+    }
+
+    //全瓷美學
+    .all-ceramic{
+        background-image: url(../img/all_back.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        padding-bottom: 90px;
+        
+
+        // 標題
+        .all_title{
+            background-color: white;
+            text-align: center;
+             padding: 70px 0 70px 0;
+    
+             //全瓷美學
+             h1{ 
+                font-size: 36px;
+                font-weight: 800;
+                color: #435556;
+                
+            }
+            
+            hr{
+                width: 260px;
+                height: 1px;
+                background-color: #60a993; 
+            }
+    
+            //All-ceramic aesthetics
+            p{
+                color: #e3a7a5;
+                font-size: 20px;
+            }
+                
+    
+                
+        }
+
+        //內容
+        .content{
+            // 全瓷美學左上方
+            .all_top_L{
+                background-color: #60a993;
+                // padding: 120px 4vw 120px 12vw;
+                display: flex;
+                justify-content: flex-end;
+                
+
+                .all_top_L_content{
+                    padding: 60px 5vw 60px 5vw;
+                    width: 85%;
+                    margin: 100px 0;
+
+                    h2{
+                        color: white;
+                    }
+    
+                    //上標題
+                    h2:nth-child(1){
+                        font-size: 40px;
+                    }
+                    //下標題
+                    h2:nth-child(2){
+                        margin-bottom: 30px;
+                        font-size: 36px; 
+                        font-weight: 600;    
+                    }
+    
+                    
+                    p{
+                        letter-spacing: 2px;
+                        margin : 30px 0;
+                        line-height: 35px;
+                        color: white;
+    
+                    }
+                }
+
+                
+            }
+            // 全瓷美學右上方
+            .all_top_R{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                }
+            }
+
+            //全瓷美學左下方
+            .all_bot_L{
+                
+                padding: 60px 5vw 60px 5vw;
+                width: 85%;
+                box-shadow: 2px 2px  10px -2px $black3;
+                margin: 100px 5px;
+                min-height: 600px;
+
+                
+                
+
+                // 上標題
+                h2:nth-child(1){
+                    font-size: 40px;
+                }
+                // 下標題
+                h2:nth-child(2){
+                    font-size: 36px;
+                    font-weight: 600;
+                    color: #435556;
+                    letter-spacing: 3px;
+                }
+                
+
+                .all_bot_L_text{
+                    max-width: 480px;
+                    margin-left: auto;
+
+                    p{
+                        margin : 30px 0; 
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            //全瓷美學右下方
+            .all_bot_R{
+                padding: 60px 5vw 60px 5vw;
+                width: 85%;
+                box-shadow: 2px 2px  10px -2px $black3;
+                margin: 100px 5px;
+                min-height: 600px;
+                border: 4px #60a993 solid;
+
+                //上標題
+                h2:nth-child(1){
+                    font-size: 40px;
+                }
+
+                h2:nth-child(2){
+                    font-size: 36px;
+                    font-weight: 600;
+                    color: #435556;
+                    letter-spacing: 3px;
+                }
+                
+
+                .all_bot_R_text{
+                    max-width: 480px;
+                    margin-left: auto;
+
+                    p{
+                        margin : 30px 0; 
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // 我需要DSD微笑設計嗎？
+    .need{
+        
+        background-image: url(../img/need_back.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: conver;
+        width: 100%;
+        padding-top: 150px;
+        text-align: center;
+
+        // 標題的部分
+        .need_title{
+            max-width: 850px;
+            margin: 0 auto;
+
+            h2{
+                font-size: 36px;
+                color: white;
+                font-weight: 600;
+                text-align: center; 
+            }
+            p{
+                font-size: 22px;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 3px;
+                margin-top: 40px;
+            }
+
+        }
+        // 中間的圖
+        >img{
+            max-width: 900px;
+            width: 100%;
+            border: 15px solid white;
+            margin-top: 120px;
+            
+        }
+        // 內容
+        .need_content{
+            padding-top: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            // 上下半部
+            .need_content_row{
+                
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                //內容
+                .need_content_col{
+                    min-width: 475px;
+                    text-align: left;
+                    margin-bottom: 50px;
+                    padding-left: 100px;
+                    h2{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #62825f;
+                        display: inline-block;
+                    }
+                    p{
+                        font-size:16px;
+                        display: inline-block;
+                    }
+                }
+            }
+            
+            
+           
+
+            
+            
+        }
+        
+    }
+    
+
+}

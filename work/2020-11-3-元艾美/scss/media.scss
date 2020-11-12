@@ -113,6 +113,7 @@
     }
     // 主要內容
     main#main_home{
+        margin-left: 0;
         .banner{
             .banner_top{
                 height: 70px;
@@ -206,6 +207,7 @@
     }
 
     footer#footer{
+        margin-left: 0;
         .logo{
             display: none;
         }

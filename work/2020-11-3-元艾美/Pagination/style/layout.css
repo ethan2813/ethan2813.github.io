@@ -116,8 +116,8 @@ nav#nav .menu .nav_list li a:hover::after {
 }
 
 footer#footer {
-  padding-top: 20px;
   margin-left: 120px;
+  padding-top: 20px;
   background-color: #60a993;
 }
 

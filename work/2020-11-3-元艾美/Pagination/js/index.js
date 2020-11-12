@@ -21,7 +21,6 @@ var swiper = new Swiper('.swiper-container', {
     }
 });
 
-
 (function(){
     // 漢堡條動畫 & nav_list滑出
     $('.burger').on('click',(e)=>{
@@ -37,6 +36,7 @@ var swiper = new Swiper('.swiper-container', {
     
     $(window).scroll(()=>{
         if($(this).scrollTop() > 10){
+            console.log('123')
             nav.classList.add('move')
         }else{
             nav.classList.remove('move')
