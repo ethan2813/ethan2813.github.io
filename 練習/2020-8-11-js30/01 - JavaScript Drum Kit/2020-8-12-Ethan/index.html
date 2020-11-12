@@ -64,8 +64,6 @@
 
   <script>
     (function () {
-
-
       window.addEventListener('keydown', playHandler)
 
       function playHandler(e) {
@@ -98,7 +96,7 @@
       }
     })
 
-      ; (function () {
+    ; (function () {
 
         window.addEventListener('keydown',keyHandler)
 
@@ -114,6 +112,7 @@
         };
 
         function end(e){
+          
           if(e.propertyName == 'transform'){
             e.currentTarget.classList.remove('playing')
           }
@@ -122,9 +121,10 @@
         document.querySelectorAll('.key').forEach(key=>{
           key.addEventListener('transitionend',end)
         })
-
       })()
 
+   
+      
 
 
   </script>
