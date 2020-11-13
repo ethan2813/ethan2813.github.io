@@ -288,5 +288,77 @@ main#main_pagination{
         
     }
     
+    //設計流程
+    .design{
+        //左邊的文章
+        .design_article{
+            background-color: #badbab;
+            // padding: 150px 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .design_article_content{
+                padding: 55px 80px;
+                max-width: 600px;
+                height: 80%;
+                background-color: white;
+                box-shadow: 2px 2px 10px -2px #3C3C3C;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                >h2:nth-child(1){
+                    color: #62825f;
+                    font-size: 40px;
+                }
+                >h2:nth-child(2){
+                    color: #435556;
+                    font-size: 36px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
+
+                .design_article_content_items{
+                    .design_item{
+                        position: relative;
+                        margin-top: 60px;
+
+                        
+                        h3{
+                            font-size: 22px;
+                            color: #62825f;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        .number{
+                            width: 35px;
+                            height: 35px;
+                            background-color: #62825f;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 35px;
+                            color: white;
+                            position: absolute;
+                            top: -35px;
+                            left: -15px;
+                        }
+                    }
+                }
+
+                
+                
+            }
+        }
+
+        .design_photo{
+            img{
+                width: 100%;
+            }
+        }
+    }
 
 }

@@ -27,16 +27,26 @@
 <body>
     <nav id='nav'>
         <div class="menu">
-            <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
+            <a href="./index.html">
+                <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
+            </a>
+            
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class='nav_list'>
-                <li><a href="#">診療項目</a></li>
-                <li><a href="#">醫師介紹</a></li>
+                <li><a  href="#">醫師介紹</a></li>
                 <li><a href="#">營業時間</a></li>
+                <li class="nav_list_first"><a href="#">診療項目</a>
+                    <ul class='nav_list2'>
+                        <li><a href="">人工植牙</a></li>
+                        <li><a href="">全瓷美學</a></li>
+                        <li><a href="">DSD微笑設計</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
 
@@ -263,7 +273,7 @@
             <div class='line'>
                 <!-- 左邊的按鈕DSD -->
 
-                <a href="#">
+                <a href="./Pagination/Pagination.html#need">
                     <div class='left_btn btn'>
                         <img src="./img/DSD.svg" alt="DSD">
                         <p class='title'>DSD</p>
@@ -275,7 +285,7 @@
 
 
                 <!-- 右邊的按鈕全瓷美學 -->
-                <a href="#">
+                <a href="./Pagination/Pagination.html#all-ceramic">
                     <div class='right_btn btn'>
                         <img src="./img/全瓷美學.svg" alt="全瓷美學">
                         <p class='title'>全瓷<br>美學</p>

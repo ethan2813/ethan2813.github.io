@@ -44,7 +44,22 @@ var swiper = new Swiper('.swiper-container', {
     })
 
     //選單隱藏
-    $('.nav_list').on('click','a',()=>{
+    $('.nav_list').on('click','li:not(.nav_list_first)',(e)=>{
         $('.burger').click();
+        
+        console.log('123')
+        
+        
     })
+
+    // $('.nav_list_first').on('click',(e)=>{
+    //     e.currentTarget.style.marginBottom = "100px";
+      
+        
+    //     $(document).one('click',()=>{
+    //         // $('.nav_list_first').style.marginBottom = "0px";
+    //         console.log('132')
+    //     });
+        
+    // })
 })();

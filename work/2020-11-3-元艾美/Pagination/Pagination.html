@@ -23,16 +23,26 @@
 <body>
     <nav id='nav'>
         <div class="menu">
-            <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
+            <a href="../index.html">
+                <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
+            </a>
+            
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class='nav_list'>
-                <li><a href="#">診療項目</a></li>
-                <li><a href="#">醫師介紹</a></li>
+                <li><a  href="#">醫師介紹</a></li>
                 <li><a href="#">營業時間</a></li>
+                <li class="nav_list_first"><a href="#">診療項目</a>
+                    <ul class='nav_list2'>
+                        <li><a href="">人工植牙</a></li>
+                        <li><a href="">全瓷美學</a></li>
+                        <li><a href="">DSD微笑設計</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
 
@@ -68,7 +78,7 @@
         </div>
 
         <!-- 全瓷美學 -->
-        <div class="all-ceramic">
+        <div class="all-ceramic" id='all-ceramic'>
             <!-- 標題 -->
             <div class="all_title">
                 <h1>全瓷美學</h1>
@@ -138,10 +148,10 @@
         </div>
 
         <!--我需要DSD微笑設計嗎？-->
-        <div class="need">
+        <div class="need" id="need">
             <!-- 標題的部分 -->
             <div class="need_title">
-                <h2>我需要DSD 微笑設計嗎？</h2>
+                <h2>我需要DSD微笑設計嗎？</h2>
 
                 <p>現代人在意牙齒美觀，常常會選擇齒顎矯正來改善，但其實如果是輕微的牙齒外觀問題，可以選擇透過DSD微笑設計來變美哦！</p>
                 <p>如果您有齒列不整、牙色很黃、牙縫太大，或是前牙、齒型不對稱等困擾，不妨考慮使用DSD微笑曲線設計，搭配全瓷美學，打造屬於自己的獨特笑容！</p>
@@ -194,7 +204,45 @@
         <div class="design">
             <div class="countainer-fluid">
                 <div class="row">
-                    
+                    <div class="col-12  col-lg-7 p-0 order-1 order-lg-0">
+                        <div class="design_article">
+                            <div class="design_article_content">
+                                <h2>Design Flow</h2>
+                                <h2>設計流程</h2>
+                                
+                                <!-- 設計流程的清單 -->
+                                <div class="design_article_content_items">
+                                    <div class="design_item">
+                                        <div class="number">1</div>
+                                        <h3>數位掃描：</h3>
+                                        <p>運用3D口內掃描儀，將口腔內的狀況製成電腦影像。</p>
+                                    </div>
+                                    <div class="design_item">
+                                        <div class="number">2</div>
+                                        <h3>設計模擬：</h3>
+                                        <p>透過電腦和醫生專業的知識，為您設計客製化的模擬圖。</p>
+                                    </div>
+                                    <div class="design_item">
+                                        <div class="number">3</div>
+                                        <h3>製作全瓷貼片或牙冠：</h3>
+                                        <p>將完成圖研磨成美白貼片或是全瓷牙冠。</p>
+                                    </div>
+                                    <div class="design_item">
+                                        <div class="number">4</div>
+                                        <h3>裝上牙齒：</h3>
+                                        <p>進行成品微調並試戴。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-lg-5 p-0 order-0 order-lg-1">
+                        <div class="design_photo">
+                            <img src="./img/design_photo.jpg" alt="design_photo">
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>

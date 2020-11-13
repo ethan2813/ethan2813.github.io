@@ -149,6 +149,22 @@
             // 診療項目內容
             .items_content{
 
+                //診療項目的項目
+                .items_items{
+                    .items_item{
+                        h2{
+                            padding-left: 30px;
+                        }
+                        .number{
+                            width: 28px;
+                            height: 28px;
+                            line-height: 28px;
+                            top: -2px;
+                            left: 15px;
+                        }
+                    }
+                }
+
                 // 左邊的葉子
                 .items_leaf_L{
                     width: 150px;

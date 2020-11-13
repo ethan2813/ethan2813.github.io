@@ -1,3 +1,26 @@
+@media (max-width: 1700px) {
+  main#main_pagination .design .design_article .design_article_content {
+    padding: 20px 80px;
+    height: 90%;
+  }
+  main#main_pagination .design .design_article .design_article_content h2:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1500px) {
+  main#main_pagination .design .design_article .design_article_content {
+    padding: 20px 80px;
+    height: 90%;
+  }
+  main#main_pagination .design .design_article .design_article_content h2:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item {
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 1300px) {
   main#main_pagination .all-ceramic .content .all_top_L {
     margin: 0px 0px;
@@ -13,6 +36,33 @@
   }
   main#main_pagination .all-ceramic .content .all_bot_R {
     margin: 5px 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main#main_pagination .design .design_article .design_article_content {
+    height: 100%;
+    padding: 0px 30px;
+  }
+  main#main_pagination .design .design_article .design_article_content h2:nth-child(1) {
+    font-size: 36px;
+  }
+  main#main_pagination .design .design_article .design_article_content h2:nth-child(2) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item {
+    margin-top: 30px;
+  }
+  main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item .number {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    top: 0px;
+    left: -5px;
+  }
+  main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item > h3 {
+    padding-left: 25px;
   }
 }
 
@@ -88,16 +138,28 @@
   }
   main#main_pagination .all-ceramic .content .all_bot_L {
     margin: 10px 0;
+    min-height: unset;
   }
   main#main_pagination .all-ceramic .content .all_bot_L .all_bot_L_text {
     max-width: none;
   }
   main#main_pagination .all-ceramic .content .all_bot_R {
     margin: 10px 0;
+    min-height: unset;
     border: none;
   }
   main#main_pagination .all-ceramic .content .all_bot_R .all_bot_R_text {
     max-width: none;
+  }
+  main#main_pagination .need .need_title {
+    padding: 0 15px 0 15px;
+  }
+  main#main_pagination .need .need_title h2 {
+    font-size: 26px;
+  }
+  main#main_pagination .need .need_title p {
+    font-size: 18px;
+    letter-spacing: 1px;
   }
   main#main_pagination .need .need_content {
     padding-top: 80px;

@@ -86,18 +86,19 @@ nav#nav .menu .nav_list {
   margin-top: 30px;
 }
 
-nav#nav .menu .nav_list li {
+nav#nav .menu .nav_list > li {
   margin-bottom: 10px;
 }
 
-nav#nav .menu .nav_list li a {
+nav#nav .menu .nav_list > li > a {
   text-decoration: none;
   color: #3C3C3C;
   position: relative;
   font-size: 20px;
+  letter-spacing: 4px;
 }
 
-nav#nav .menu .nav_list li a::after {
+nav#nav .menu .nav_list > li > a::after {
   -webkit-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
@@ -111,8 +112,58 @@ nav#nav .menu .nav_list li a::after {
   background-color: #435556;
 }
 
-nav#nav .menu .nav_list li a:hover::after {
+nav#nav .menu .nav_list > li > a:hover::after {
   width: 100%;
+}
+
+nav#nav .menu .nav_list > li .nav_list2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav#nav .menu .nav_list > li .nav_list2 > li {
+  margin: 10px 0;
+}
+
+nav#nav .menu .nav_list > li .nav_list2 > li > a {
+  text-decoration: none;
+  color: #3C3C3C;
+  position: relative;
+}
+
+nav#nav .menu .nav_list > li .nav_list2 > li > a::after {
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  background-color: #435556;
+}
+
+nav#nav .menu .nav_list > li .nav_list2 > li > a:hover::after {
+  width: 100%;
+}
+
+nav#nav .menu .nav_list > .nav_list_first:hover .nav_list2 {
+  display: block;
 }
 
 footer#footer {

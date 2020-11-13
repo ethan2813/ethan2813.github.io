@@ -110,6 +110,16 @@
     top: -40%;
     width: 150px;
   }
+  main#main_home .items .items_content .items_items .items_item h2 {
+    padding-left: 30px;
+  }
+  main#main_home .items .items_content .items_items .items_item .number {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    top: -2px;
+    left: 15px;
+  }
   main#main_home .items .items_content .items_leaf_L {
     width: 150px;
     left: 0%;
