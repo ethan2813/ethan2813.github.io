@@ -47,16 +47,20 @@ main#main_home{
             .leaf_L{
                 z-index: 2 ;
                 position: absolute;
-                left: 100px;
+                left: 0;
                 top: -50%;
-                width: 400px;
+                // width: 400px;
+                width: 25vw;
+                animation: fadeInDown  2s ease-in-out;
             }
             .leaf_R{
                 z-index: 2;
                 position: absolute;
-                right: 50px;
+                right: 0;
                 top: -50%;
-                width: 300px;
+                // width: 300px;
+                width: 15vw;
+                animation: fadeInDown  2s ease-in-out;
             }
             
         }
@@ -305,17 +309,21 @@ main#main_home{
             // 左邊的葉子
             .items_leaf_L{
                 position: absolute;
-                width: 300px;
+                // width: 300px;
+                width: 15vw;
                 left: 5%;
                 top: -60%;
                 transform: rotate(0.5turn) ; 
+                animation: fadeInDown  2s ease-in-out;
             }
             // 右邊的葉子
             .items_leaf_R{
                 position: absolute;
-                width: 300px;
+                // width: 300px;
+                width: 15vw;
                 right: 0% ;
                 top: -20%;
+                animation: fadeInDown  2s ease-in-out;
             }
         }
 

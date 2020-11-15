@@ -49,17 +49,21 @@ main#main_home .banner .banner_bot p {
 main#main_home .banner .banner_bot .leaf_L {
   z-index: 2;
   position: absolute;
-  left: 100px;
+  left: 0;
   top: -50%;
-  width: 400px;
+  width: 25vw;
+  -webkit-animation: fadeInDown  2s ease-in-out;
+          animation: fadeInDown  2s ease-in-out;
 }
 
 main#main_home .banner .banner_bot .leaf_R {
   z-index: 2;
   position: absolute;
-  right: 50px;
+  right: 0;
   top: -50%;
-  width: 300px;
+  width: 15vw;
+  -webkit-animation: fadeInDown  2s ease-in-out;
+          animation: fadeInDown  2s ease-in-out;
 }
 
 main#main_home .doctor {
@@ -303,19 +307,23 @@ main#main_home .items .items_content .items_items .items_item .number {
 
 main#main_home .items .items_content .items_leaf_L {
   position: absolute;
-  width: 300px;
+  width: 15vw;
   left: 5%;
   top: -60%;
   -webkit-transform: rotate(0.5turn);
       -ms-transform: rotate(0.5turn);
           transform: rotate(0.5turn);
+  -webkit-animation: fadeInDown  2s ease-in-out;
+          animation: fadeInDown  2s ease-in-out;
 }
 
 main#main_home .items .items_content .items_leaf_R {
   position: absolute;
-  width: 300px;
+  width: 15vw;
   right: 0%;
   top: -20%;
+  -webkit-animation: fadeInDown  2s ease-in-out;
+          animation: fadeInDown  2s ease-in-out;
 }
 
 main#main_home .project {

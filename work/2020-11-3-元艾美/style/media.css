@@ -2,16 +2,6 @@
   main#main_home .banner .banner_mid .banner_M_text {
     font-size: 30px;
   }
-  main#main_home .banner .banner_bot .leaf_L {
-    left: 100px;
-    top: -30%;
-    width: 250px;
-  }
-  main#main_home .banner .banner_bot .leaf_R {
-    right: 50px;
-    top: -30%;
-    width: 200px;
-  }
   main#main_home .project .line a:nth-child(1) > .btn {
     left: 28%;
   }
@@ -58,7 +48,7 @@
             box-shadow: 2px 2px 5px  black;
     height: 75px;
   }
-  nav#nav .menu .nav_logo {
+  nav#nav .menu .logo_content .nav_logo {
     width: 60px;
     margin-top: 0;
   }
@@ -99,16 +89,6 @@
   }
   main#main_home .banner .banner_bot p {
     font-size: 18px;
-  }
-  main#main_home .banner .banner_bot .leaf_L {
-    left: 50px;
-    top: -60%;
-    width: 250px;
-  }
-  main#main_home .banner .banner_bot .leaf_R {
-    right: 50px;
-    top: -40%;
-    width: 150px;
   }
   main#main_home .items .items_content .items_items .items_item h2 {
     padding-left: 30px;
@@ -169,19 +149,6 @@
   }
   main#main_home .project .line a:nth-child(2) > .btn {
     right: 15%;
-  }
-}
-
-@media (max-width: 820px) {
-  main#main_home .banner .banner_bot .leaf_L {
-    left: 0px;
-    top: -10%;
-    width: 150px;
-  }
-  main#main_home .banner .banner_bot .leaf_R {
-    right: 0px;
-    top: -30%;
-    width: 100px;
   }
 }
 

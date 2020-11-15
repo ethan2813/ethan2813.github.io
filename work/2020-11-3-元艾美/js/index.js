@@ -29,7 +29,34 @@ var swiper = new Swiper('.swiper-container', {
         $(e.currentTarget).toggleClass('burger_active')
         $('.nav_list').toggleClass('nav_active')
 
+
+        //還在測試要怎麼點選空白地方關閉清單
+        if($('.nav_list').hasClass('nav_active')){
+            console.log('123')
+            // let nav_list = document.querySelector('.nav_list')
+            // $(document).on('click',(e)=>{
+            //     if(e.target !==nav_list){
+            //      $('.nav_list').removeClass('nav_active')
+            //     }
+            // })
+        }
+
     })
+    
+
+    
+
+    // let burger = document.querySelector('.burger')
+    // let nav_list = document.querySelector('.nav_list')
+    // $(document).on('click',(e)=>{
+    //     if(e.target !== burger){
+    //         $('.nav_list').removeClass('nav_active')
+    //     }
+       
+    // })
+    
+    
+
 
 
     //nav 縮效果
@@ -48,3 +75,4 @@ var swiper = new Swiper('.swiper-container', {
         $('.burger').click();
     })
 })();
+
