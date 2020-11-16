@@ -1,3 +1,25 @@
+@media(max-width:1500px){
+    main#main_home{
+        .project{
+            .line{
+                a:nth-child(1){
+                    >.btn{
+                        left: 32%;
+                    }
+                }
+                a:nth-child(2){
+                    >.btn{
+                        right: 32%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
 @media(max-width:1300px){
     main#main_home{
         .banner{
@@ -6,18 +28,7 @@
                     font-size: 30px;
                 }
             }
-            // .banner_bot{
-                // .leaf_L{
-                //     left: 100px;
-                //     top: -30%;
-                //     width: 250px;
-                // }
-                // .leaf_R{
-                //     right: 50px;
-                //     top: -30%;
-                //     width: 200px;
-                // }
-            // }
+           
         }
         .project{
             .line{
@@ -279,6 +290,12 @@
 
 @media(max-width:768px){
     main#main_home{
+
+        .doctor{
+            .doctor_content{
+                padding-bottom: 50px;
+            }
+        }
         .items{
             .items_title{
                 padding: 40px 0 40px 0;
@@ -473,10 +490,17 @@
     main#main_home{
         .banner{
             .banner_bot{
+                padding: 30px 0;
                 p{
                     // text-align: left;
-                    font-size: 14px;
+                    // font-size: 14px;
                     letter-spacing: 1px;
+                    margin: 15px 0;
+                    
+
+                    .banner_br{
+                        display: block;
+                    }
                 }
                 img{
                     display: none;
@@ -487,15 +511,15 @@
 }
 
 @media(max-width:370px){
-    main#main_home{
-        .banner{
-            .banner_bot{
-                p{
-                    font-size: 13px;
-                }
-            }
-        }
-    }
+    // main#main_home{
+    //     .banner{
+    //         .banner_bot{
+    //             p{
+    //                 font-size: 13px;
+    //             }
+    //         }
+    //     }
+    // }
 }
 @media(max-width:345px){
     main#main_home{

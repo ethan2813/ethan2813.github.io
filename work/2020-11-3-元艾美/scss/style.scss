@@ -42,6 +42,10 @@ main#main_home{
                 font-size: 24px;
                 margin-bottom: 6px;
                 letter-spacing: 2px;
+
+                br{
+                    display: none;
+                }
                
             }
             .leaf_L{
@@ -51,7 +55,7 @@ main#main_home{
                 top: -50%;
                 // width: 400px;
                 width: 25vw;
-                animation: fadeInDown  2s ease-in-out;
+                animation: fadeInDown  3s ease-in-out;
             }
             .leaf_R{
                 z-index: 2;
@@ -60,7 +64,7 @@ main#main_home{
                 top: -50%;
                 // width: 300px;
                 width: 15vw;
-                animation: fadeInDown  2s ease-in-out;
+                animation: fadeInDown  3s ease-in-out;
             }
             
         }
@@ -313,8 +317,8 @@ main#main_home{
                 width: 15vw;
                 left: 5%;
                 top: -60%;
-                transform: rotate(0.5turn) ; 
-                animation: fadeInDown  2s ease-in-out;
+                // transform: rotate(0.5turn) ; 
+                animation: fadeInDown  3s ease-in-out;
             }
             // 右邊的葉子
             .items_leaf_R{
@@ -323,7 +327,7 @@ main#main_home{
                 width: 15vw;
                 right: 0% ;
                 top: -20%;
-                animation: fadeInDown  2s ease-in-out;
+                animation: fadeInDown  3s ease-in-out;
             }
         }
 
@@ -411,6 +415,7 @@ main#main_home{
     .bot_banner{
         background-image: url(../img/bot_banner.svg);
         width: 100%;
+        padding-bottom: 50px;
         // height: 80vh;
         background-position: center;
         background-repeat: no-repeat;

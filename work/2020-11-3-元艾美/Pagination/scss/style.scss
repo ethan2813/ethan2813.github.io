@@ -39,6 +39,7 @@ main#main_pagination{
         }
        
     }
+    
 
     //全瓷美學
     .all-ceramic{
@@ -80,15 +81,27 @@ main#main_pagination{
                 
         }
 
+        
         //內容
         .content{
             // 全瓷美學左上方
             .all_top_L{
                 background-color: #60a993;
-                // padding: 120px 4vw 120px 12vw;
+                position: relative;
                 display: flex;
                 justify-content: flex-end;
                 
+
+                .leaf_L{
+                    position: absolute;
+                    left: 0;
+                    top: -30%;
+                    width: 20vw;
+                    animation: fadeInDown  3s ease-in-out;
+                    
+                    
+                    
+                }
 
                 .all_top_L_content{
                     padding: 60px 5vw 60px 5vw;
@@ -217,11 +230,25 @@ main#main_pagination{
         width: 100%;
         padding-top: 150px;
         text-align: center;
+        position: relative;
+        z-index: 0;
 
+        //右邊的葉子
+        .leaf_R{
+            position: absolute;
+            right: 0;
+            top: -10%;
+            width: 20vw;
+            border: 0;
+            z-index: -1;
+            animation: fadeInDown  3s ease-in-out;
+        }
+        
         // 標題的部分
         .need_title{
             max-width: 850px;
             margin: 0 auto;
+            z-index: 2;
 
             h2{
                 font-size: 36px;
@@ -298,8 +325,20 @@ main#main_pagination{
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+
+            //左下角的葉子
+            .leaf_L{
+                position: absolute;
+                left: -15%;
+                bottom: 0;
+                width: 25vw;
+                animation: fadeInDown  3s ease-in-out;
+                
+            }
             
             .design_article_content{
+                z-index: 1  ;
                 padding: 55px 80px;
                 max-width: 600px;
                 height: 80%;

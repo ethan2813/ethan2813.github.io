@@ -46,14 +46,18 @@ main#main_home .banner .banner_bot p {
   letter-spacing: 2px;
 }
 
+main#main_home .banner .banner_bot p br {
+  display: none;
+}
+
 main#main_home .banner .banner_bot .leaf_L {
   z-index: 2;
   position: absolute;
   left: 0;
   top: -50%;
   width: 25vw;
-  -webkit-animation: fadeInDown  2s ease-in-out;
-          animation: fadeInDown  2s ease-in-out;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_home .banner .banner_bot .leaf_R {
@@ -62,8 +66,8 @@ main#main_home .banner .banner_bot .leaf_R {
   right: 0;
   top: -50%;
   width: 15vw;
-  -webkit-animation: fadeInDown  2s ease-in-out;
-          animation: fadeInDown  2s ease-in-out;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_home .doctor {
@@ -310,11 +314,8 @@ main#main_home .items .items_content .items_leaf_L {
   width: 15vw;
   left: 5%;
   top: -60%;
-  -webkit-transform: rotate(0.5turn);
-      -ms-transform: rotate(0.5turn);
-          transform: rotate(0.5turn);
-  -webkit-animation: fadeInDown  2s ease-in-out;
-          animation: fadeInDown  2s ease-in-out;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_home .items .items_content .items_leaf_R {
@@ -322,8 +323,8 @@ main#main_home .items .items_content .items_leaf_R {
   width: 15vw;
   right: 0%;
   top: -20%;
-  -webkit-animation: fadeInDown  2s ease-in-out;
-          animation: fadeInDown  2s ease-in-out;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_home .project {
@@ -398,6 +399,7 @@ main#main_home .project .line a:nth-child(2) > .btn .title {
 main#main_home .bot_banner {
   background-image: url(../img/bot_banner.svg);
   width: 100%;
+  padding-bottom: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

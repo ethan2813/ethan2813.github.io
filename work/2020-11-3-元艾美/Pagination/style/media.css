@@ -201,6 +201,12 @@
 }
 
 @media (max-width: 576px) {
+  main#main_pagination .all-ceramic .content .all_top_L .leaf_L {
+    display: none;
+  }
+  main#main_pagination .need .leaf_R {
+    display: none;
+  }
   footer#footer .opening {
     text-align: left;
   }

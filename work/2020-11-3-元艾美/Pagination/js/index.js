@@ -46,10 +46,6 @@ var swiper = new Swiper('.swiper-container', {
     //選單隱藏
     $('.nav_list').on('click','li:not(.nav_list_first)',(e)=>{
         $('.burger').click();
-        
-        console.log('123')
-        
-        
     })
 
     // $('.nav_list_first').on('click',(e)=>{
@@ -62,4 +58,21 @@ var swiper = new Swiper('.swiper-container', {
     //     });
         
     // })
+
+
+    //totop
+    $('#gototop').on('click',()=>{
+        $('html,body').animate({scrollTop:0},300);
+    })
+
+    //totop隱藏效果
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 400){
+            $('#gototop').fadeIn(200);
+        }else{
+            $('#gototop').stop().fadeOut(200)
+        }
+
+        console.log($(this).scrollTop())
+    })
 })();

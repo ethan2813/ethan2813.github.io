@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>元艾美牙醫診所</title>
 
-    <link rel="icon" href="./img/mini.png"  type="image/ico">
+    <link rel="icon" href="./img/mini.png" type="image/ico">
     <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
@@ -30,20 +30,20 @@
             <a class='logo_content ' href="./index.html">
                 <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
             </a>
-            
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class='nav_list'>
-                <li><a  href="#">醫師介紹</a></li>
-                <li><a href="#">營業時間</a></li>
-                <li class="nav_list_first"><a href="#">診療項目</a>
+                <li><a href="#doctor">醫師介紹</a></li>
+                <li><a href="#footer">營業時間</a></li>
+                <li class="nav_list_first"><a href="#items">診療項目</a>
                     <ul class='nav_list2'>
-                        <li><a href="">人工植牙</a></li>
-                        <li><a href="">全瓷美學</a></li>
-                        <li><a href="">DSD微笑設計</a></li>
+                        <li><a href="#items">人工植牙</a></li>
+                        <li><a href="./Pagination/Pagination.html#all-ceramic">全瓷美學</a></li>
+                        <li><a href="./Pagination/Pagination.html#need">DSD微笑設計</a></li>
 
                     </ul>
                 </li>
@@ -62,14 +62,14 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class='banner_L' src="./img/banner_L.png" alt="banner_L">
+                            <img class='banner_L' src="./img/banner_L.jpg" alt="banner_L">
                         </div>
                         <div class="swiper-slide">
-                            <img  class='banner_M' src="./img/banner_M.png" alt="banner_M">
+                            <img class='banner_M' src="./img/banner_M.jpg" alt="banner_M">
                             <p class='banner_M_text'>牙齒的事,<br>就是我的們事!</p>
                         </div>
                         <div class="swiper-slide">
-                            <img  class='banner_R' src="./img/banner_R.png" alt="banner_R">
+                            <img class='banner_R' src="./img/banner_R.jpg" alt="banner_R">
                         </div>
                     </div>
                     <!-- Add Pagination -->
@@ -78,11 +78,11 @@
 
             </div>
             <div class="banner_bot">
-                <p>你不必日日夜夜，仔細清潔卻害怕忽略蛀牙</p>
-                <p>不必緊閉雙唇，隱藏泛黃又微亂的笑容</p>
-                <p>不必戰戰兢兢，深怕脆弱的牙齒扛不起美食</p>
-                <p>元艾美牙醫替您專心守護，消滅一切有關牙齒的煩惱</p>
-                <img class='leaf_L wow'  src="./img/leaf_L.svg" alt="leaf_L">
+                <p>你不必日日夜夜，<br class='banner_br'>仔細清潔卻害怕忽略蛀牙。</p>
+                <p>不必緊閉雙唇，<br class='banner_br'>隱藏泛黃又微亂的笑容。</p>
+                <p>不必戰戰兢兢，<br class='banner_br'>深怕脆弱的牙齒扛不起美食。</p>
+                <p>元艾美牙醫替您專心守護，<br class='banner_br'>消滅一切有關牙齒的煩惱。</p>
+                <img class='leaf_L wow' src="./img/leaf_L.svg" alt="leaf_L">
                 <img class='leaf_R wow' src="./img/leaf-R.svg" alt="leaf_R">
             </div>
 
@@ -90,7 +90,7 @@
         </div>
 
         <!-- 醫師介紹 -->
-        <div class="doctor">
+        <div class="doctor" id='doctor'>
             <!-- 標題 -->
             <div class="doctor_title">
                 <h1>醫師介紹</h1>
@@ -166,7 +166,7 @@
         </div>
 
         <!-- 診療項目 -->
-        <div class="items">
+        <div class="items" id='items'>
             <!-- 標題 -->
             <div class="items_title">
                 <h1>診療項目</h1>
@@ -176,7 +176,7 @@
             <!-- 診療項目內容 -->
             <div class="items_content">
                 <!-- 左邊的葉子 -->
-                <img class='items_leaf_L wow' src="./img/leaf-R.svg" alt="items_leaf_L">
+                <img class='items_leaf_L wow' src="./img/leaf_R_rotate.svg" alt="items_leaf_L">
                 <!-- 右邊的葉子 -->
                 <img class='items_leaf_R wow' src="./img/leaf-R.svg" alt="items_leaf_R">
                 <div class="container">
@@ -323,6 +323,14 @@
 
     </main>
     <footer id=footer>
+        <div id='gototop'>
+            <img src="./img/gototop.svg" alt="gototop">
+        </div>
+        <div id='line_btn'>
+            <a href="#">
+                <img src="./img/line_icon.svg" alt="加入好友" border="0">
+            </a>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
@@ -388,14 +396,12 @@
                             <!-- 臉書fb -->
                             <div class="fb">
                                 <img src="./img/fb_icon.svg" alt="fb_icon">
-                                <a
-                                    href="https://www.facebook.com/ibeauty347/">元艾美牙醫診所</a>
+                                <a href="https://www.facebook.com/ibeauty347/">元艾美牙醫診所</a>
                             </div>
                             <!-- 地址 -->
                             <div class="place">
                                 <img src="./img/place_icon.svg" alt="place_icon">
-                                <a
-                                    href="https://goo.gl/maps/HnQeZLzpzb6wZsRm8">406台中市北屯區遼寧路一段145號</a>
+                                <a href="https://goo.gl/maps/HnQeZLzpzb6wZsRm8">406台中市北屯區遼寧路一段145號</a>
                             </div>
                         </div>
                     </div>
@@ -406,7 +412,7 @@
                         <a href="#">
                             <img src="./img/logo_2.svg" alt="logo_2">
                         </a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -417,12 +423,35 @@
                     <p>Copyright©2020 leyan company保留一切權利。 </p>
                     <p>禁止任何網際網路服務業者轉錄其網路資訊知內容供人點閱。但以網路搜尋或超連結方式，進入醫療機構知網址(域)直接點閱者，不在此限。網頁相容性建議使用Chrome瀏覽器閱覽。</p>
                 </div>
-                
+
             </div>
 
 
         </div>
     </footer>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="708060305929417" theme_color="#d4a88c"
+        logged_in_greeting="「您好，請問有什麼需要幫助嗎?」" logged_out_greeting="「您好，請問有什麼需要幫助嗎?」">
+    </div>
 
 
     <!-- bootstrap -->

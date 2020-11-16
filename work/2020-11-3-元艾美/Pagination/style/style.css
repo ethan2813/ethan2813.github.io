@@ -66,6 +66,7 @@ main#main_pagination .all-ceramic .all_title p {
 
 main#main_pagination .all-ceramic .content .all_top_L {
   background-color: #60a993;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,6 +75,15 @@ main#main_pagination .all-ceramic .content .all_top_L {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+main#main_pagination .all-ceramic .content .all_top_L .leaf_L {
+  position: absolute;
+  left: 0;
+  top: -30%;
+  width: 20vw;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content {
@@ -194,11 +204,25 @@ main#main_pagination .need {
   width: 100%;
   padding-top: 150px;
   text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+main#main_pagination .need .leaf_R {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 20vw;
+  border: 0;
+  z-index: -1;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_pagination .need .need_title {
   max-width: 850px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 main#main_pagination .need .need_title h2 {
@@ -289,9 +313,20 @@ main#main_pagination .design .design_article {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+main#main_pagination .design .design_article .leaf_L {
+  position: absolute;
+  left: -15%;
+  bottom: 0;
+  width: 25vw;
+  -webkit-animation: fadeInDown  3s ease-in-out;
+          animation: fadeInDown  3s ease-in-out;
 }
 
 main#main_pagination .design .design_article .design_article_content {
+  z-index: 1;
   padding: 55px 80px;
   max-width: 600px;
   height: 80%;

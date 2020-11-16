@@ -16,6 +16,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
@@ -26,20 +27,20 @@
             <a class='logo_content' href="../index.html">
                 <img class='nav_logo' src="./img/logo.svg" alt="nav_logo">
             </a>
-            
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class='nav_list'>
-                <li><a  href="#">醫師介紹</a></li>
-                <li><a href="#">營業時間</a></li>
-                <li class="nav_list_first"><a href="#">診療項目</a>
+                <li><a href="../index.html#doctor">醫師介紹</a></li>
+                <li><a href="../index.html#footer">營業時間</a></li>
+                <li class="nav_list_first"><a href="../index.html#items">診療項目</a>
                     <ul class='nav_list2'>
-                        <li><a href="">人工植牙</a></li>
-                        <li><a href="">全瓷美學</a></li>
-                        <li><a href="">DSD微笑設計</a></li>
+                        <li><a href="../index.html#items">人工植牙</a></li>
+                        <li><a href="#all-ceramic">全瓷美學</a></li>
+                        <li><a href="#need">DSD微笑設計</a></li>
 
                     </ul>
                 </li>
@@ -77,6 +78,10 @@
 
         </div>
 
+
+
+
+
         <!-- 全瓷美學 -->
         <div class="all-ceramic" id='all-ceramic'>
             <!-- 標題 -->
@@ -100,6 +105,8 @@
                                     </p>
                                     <p>全瓷冠全陶瓷製成，相較於傳統金屬假牙，不僅生物相容性較高，且解決了金屬材質導致的過敏問題，不會造成牙齦發黑，顏色也跟真牙相近，是牙套的完美選擇。</p>
                                 </div>
+                                <!-- 左邊的葉子 -->
+                                <img class='leaf_L wow' src="./img/leaf_R_rotate.svg" alt="leaf_L">
 
                             </div>
                         </div>
@@ -149,12 +156,16 @@
 
         <!--我需要DSD微笑設計嗎？-->
         <div class="need" id="need">
+            <!-- 右邊的葉子 -->
+            <img class='leaf_R wow' src="./img/leaf-R.svg" alt="leaf_R">
             <!-- 標題的部分 -->
             <div class="need_title">
                 <h2>我需要DSD微笑設計嗎？</h2>
 
                 <p>現代人在意牙齒美觀，常常會選擇齒顎矯正來改善，但其實如果是輕微的牙齒外觀問題，可以選擇透過DSD微笑設計來變美哦！</p>
                 <p>如果您有齒列不整、牙色很黃、牙縫太大，或是前牙、齒型不對稱等困擾，不妨考慮使用DSD微笑曲線設計，搭配全瓷美學，打造屬於自己的獨特笑容！</p>
+
+
             </div>
             <!-- 中間的圖 -->
             <img src="./img/need_img.jpg" alt="need_img">
@@ -209,7 +220,7 @@
                             <div class="design_article_content">
                                 <h2>Design Flow</h2>
                                 <h2>設計流程</h2>
-                                
+
                                 <!-- 設計流程的清單 -->
                                 <div class="design_article_content_items">
                                     <div class="design_item">
@@ -234,6 +245,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <img class='leaf_L wow' src="./img/leaf_L.svg" alt="leaf_L">
                         </div>
                     </div>
                     <div class="col-12  col-lg-5 p-0 order-0 order-lg-1">
@@ -249,6 +261,14 @@
     </main>
 
     <footer id=footer>
+        <div id='gototop'>
+            <img src="./img/gototop.svg" alt="gototop">
+        </div>
+        <div id='line_btn'>
+            <a href="#">
+                <img src="./img/line_icon.svg" alt="加入好友" border="0">
+            </a>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
@@ -348,6 +368,29 @@
         </div>
     </footer>
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="708060305929417" theme_color="#d4a88c"
+        logged_in_greeting="「您好，請問有什麼需要幫助嗎?」" logged_out_greeting="「您好，請問有什麼需要幫助嗎?」">
+    </div>
+
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -367,10 +410,12 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     <!-- wow.js -->
-    <script src="./js/wow.js"></script>
+    <!-- <script src="./js/wow.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <!-- js掛載 -->
     <script src="./js/index.js"></script>
+
     <script>
         new WOW().init();
     </script>
