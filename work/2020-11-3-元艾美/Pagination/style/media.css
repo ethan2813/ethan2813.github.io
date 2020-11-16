@@ -79,7 +79,7 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 5vw;
     top: 0;
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
