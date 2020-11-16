@@ -88,7 +88,7 @@
 
             .logo_content{
                 .nav_logo{   
-                    width: 60px; 
+                    width: 80px; 
                     margin-top: 0;
                 }
             }
@@ -249,6 +249,28 @@
         .doctor{
             .doctor_back_top{
                 width: 50px;
+            }
+            
+            .doctor_content{
+                .doctor_article{
+                    height: unset;
+                    padding: 0 0 20px 0;
+
+                    p{
+                        margin: 5px 0;
+                    }
+
+                    
+                }
+                .doctor_content_bot{
+                    .doctor_content_bot_r{
+                        img{
+                            top: 5%;
+                            left: 95%;
+                        }
+                    }
+                }
+                
             }
         }
         .project{

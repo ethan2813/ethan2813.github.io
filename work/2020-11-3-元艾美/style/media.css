@@ -58,7 +58,7 @@
     height: 75px;
   }
   nav#nav .menu .logo_content .nav_logo {
-    width: 60px;
+    width: 80px;
     margin-top: 0;
   }
   nav#nav .menu .burger {
@@ -152,6 +152,17 @@
 @media (max-width: 768px) {
   main#main_home .doctor .doctor_back_top {
     width: 50px;
+  }
+  main#main_home .doctor .doctor_content .doctor_article {
+    height: unset;
+    padding: 0 0 20px 0;
+  }
+  main#main_home .doctor .doctor_content .doctor_article p {
+    margin: 5px 0;
+  }
+  main#main_home .doctor .doctor_content .doctor_content_bot .doctor_content_bot_r img {
+    top: 5%;
+    left: 95%;
   }
   main#main_home .project .line a:nth-child(1) > .btn {
     left: 15%;

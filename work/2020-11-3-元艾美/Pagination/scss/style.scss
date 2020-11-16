@@ -394,6 +394,11 @@ main#main_pagination{
         }
 
         .design_photo{
+            background-color: #badbab;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
                 width: 100%;
             }

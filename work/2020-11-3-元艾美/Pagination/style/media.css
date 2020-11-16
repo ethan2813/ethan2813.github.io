@@ -42,7 +42,7 @@
 @media (max-width: 1200px) {
   main#main_pagination .design .design_article .design_article_content {
     height: 100%;
-    padding: 0px 30px;
+    padding: 30px 30px;
   }
   main#main_pagination .design .design_article .design_article_content h2:nth-child(1) {
     font-size: 36px;
@@ -95,7 +95,7 @@
     height: 75px;
   }
   nav#nav .menu .logo_content .nav_logo {
-    width: 60px;
+    width: 80px;
     margin-top: 0;
   }
   nav#nav .menu .burger {
@@ -162,8 +162,7 @@
     letter-spacing: 1px;
   }
   main#main_pagination .need .need_content {
-    padding-top: 80px;
-    padding: 0 15px;
+    padding: 30px 15px;
     -webkit-box-align: self-start;
     -webkit-align-items: self-start;
         -ms-flex-align: self-start;
@@ -243,6 +242,9 @@
 }
 
 @media (max-width: 450px) {
+  main#main_pagination .all-ceramic {
+    padding-bottom: 0;
+  }
   main#main_pagination .all-ceramic .content .all_top_L {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -250,7 +252,7 @@
             justify-content: center;
   }
   main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content {
-    padding: 60px 15px 60px 15px;
+    padding: 60px 15px 0px 15px;
     width: 100%;
   }
   main#main_pagination .all-ceramic .content .all_top_L .all_top_L_content h2:nth-child(1) {
