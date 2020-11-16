@@ -38,7 +38,6 @@ main#main_pagination .all-ceramic {
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
   padding-bottom: 90px;
 }
 
@@ -201,7 +200,6 @@ main#main_pagination .need {
   background-image: url(../img/資產6.png);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
   width: 100%;
   padding-top: 150px;
   text-align: center;
