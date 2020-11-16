@@ -102,7 +102,7 @@ nav#nav .menu .nav_list {
 }
 
 nav#nav .menu .nav_list > li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 nav#nav .menu .nav_list > li > a {
@@ -150,7 +150,7 @@ nav#nav .menu .nav_list > li .nav_list2 {
 }
 
 nav#nav .menu .nav_list > li .nav_list2 > li {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 nav#nav .menu .nav_list > li .nav_list2 > li > a {

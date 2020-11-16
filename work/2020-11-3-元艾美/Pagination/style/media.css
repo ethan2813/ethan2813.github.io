@@ -185,6 +185,9 @@
     min-width: unset;
     margin-bottom: 20px;
   }
+  main#main_pagination .need .need_content .need_content_row .need_content_col:before, main#main_pagination .need .need_content .need_content_row .need_content_col:after {
+    display: none;
+  }
   footer#footer {
     margin-left: 0;
   }

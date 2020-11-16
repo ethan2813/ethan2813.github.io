@@ -269,7 +269,9 @@ main#main_home{
                         color: #49725a;
                         font-weight: 600;
                     }
+
                     
+                
                 }
     
                 p{
@@ -359,8 +361,15 @@ main#main_home{
                     position: absolute;
                     width: 200px;
                     text-align: center;
+                    
+
+                   
                     img{
                         width: 170px;
+                        transition: 0.5s ease-in-out;
+                        
+
+                        
                         
                     }
                     //按鈕內的文字
@@ -386,25 +395,34 @@ main#main_home{
                 
             }
             //左邊的按鈕 DSD
-            a:nth-child(1) >.btn{
-                top: -197px;
-                left: 35%;
+            a:nth-child(1){
+                >.btn{
+                    top: -197px;
+                    left: 35%;
 
-                //按鈕內的文字
-                .title{
-                    color: #fcdd9a;
+                    //按鈕內的文字
+                    .title{
+                        color: #fcdd9a;
+                    }
                 }
+                
             }
+            
+            
             //右邊的按鈕 全瓷美學
-            a:nth-child(2) >.btn{
-                top: -197px;
-                right: 35%;
-
-                //按鈕內的文字
-                .title{
-                    color: white;
+            a:nth-child(2){
+                >.btn{
+                    top: -197px;
+                    right: 35%;
+    
+                    //按鈕內的文字
+                    .title{
+                        color: white;
+                    }
                 }
             }
+            
+            
 
            
 

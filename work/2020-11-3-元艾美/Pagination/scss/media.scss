@@ -235,6 +235,10 @@
                         padding-left: 0px;
                         min-width: unset;
                         margin-bottom: 20px;
+
+                        &:before,&:after{
+                            display: none;
+                        }
                         
                     }
                 }

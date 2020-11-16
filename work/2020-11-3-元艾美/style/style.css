@@ -354,6 +354,9 @@ main#main_home .project .line a > .btn {
 
 main#main_home .project .line a > .btn img {
   width: 170px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 main#main_home .project .line a > .btn .title {
