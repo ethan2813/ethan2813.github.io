@@ -24,6 +24,13 @@ body{
     padding: 0!important;
 }
 
+.fb_dialog_content{
+    >iframe{
+        opacity: 0.85;
+        right: -7px!important;
+    }
+}
+
 nav#nav{
     .menu{
         box-shadow: 2px 2px 26px -7px #3C3C3C;
