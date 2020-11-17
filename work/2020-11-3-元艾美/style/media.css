@@ -330,7 +330,7 @@
 
 @media (max-width: 345px) {
   main#main_home .banner .banner_bot p {
-    font-size: 12px;
+    font-size: 16px;
   }
   main#main_home .doctor .doctor_content .doctor_article p {
     font-size: 14px;
