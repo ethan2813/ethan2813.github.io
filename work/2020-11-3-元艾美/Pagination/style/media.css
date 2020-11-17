@@ -13,11 +13,20 @@
     padding: 20px 80px;
     height: 90%;
   }
+  main#main_pagination .design .design_article .design_article_content h2:nth-child(1) {
+    margin-top: 20px;
+  }
   main#main_pagination .design .design_article .design_article_content h2:nth-child(2) {
     margin-bottom: 30px;
   }
   main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item {
-    margin-top: 40px;
+    margin-top: 50px;
+  }
+  main#main_pagination .design .design_article .design_article_content .design_article_content_items .design_item .number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    top: -35px;
   }
 }
 
@@ -213,7 +222,7 @@
     text-align: left;
   }
   footer#footer .opening > h2 {
-    margin: 20px 0 10px 0;
+    margin: 0px 0 10px 0;
   }
   footer#footer .opening .table_opening {
     margin-left: 0;
@@ -231,6 +240,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 10px;
   }
   footer#footer .contact > h2 {
     margin: 20px 0 10px 0;

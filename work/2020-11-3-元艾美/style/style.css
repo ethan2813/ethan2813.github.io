@@ -30,6 +30,7 @@ main#main_home .banner .banner_mid .banner_M_text {
   color: white;
   font-size: 35px;
   text-shadow: 1px 1px 5px #333;
+  letter-spacing: 5px;
 }
 
 main#main_home .banner .banner_bot {
@@ -408,6 +409,34 @@ main#main_home .bot_banner {
   background-size: cover;
 }
 
-main#main_home .bot_banner .bot_banner_L img, main#main_home .bot_banner .bot_banner_R img {
+main#main_home .bot_banner .bot_banner_L, main#main_home .bot_banner .bot_banner_R {
+  position: relative;
+}
+
+main#main_home .bot_banner .bot_banner_L img:nth-child(1), main#main_home .bot_banner .bot_banner_R img:nth-child(1) {
   width: 100%;
+}
+
+main#main_home .bot_banner .bot_banner_L:before {
+  content: url(../img/flower_banner_1.svg);
+  position: absolute;
+  display: block;
+  left: -5%;
+  bottom: 15%;
+  width: 20%;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+main#main_home .bot_banner .bot_banner_L:after {
+  content: url(../img/flower_banner_2.svg);
+  position: absolute;
+  display: block;
+  right: -5%;
+  bottom: 10%;
+  width: 20%;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }

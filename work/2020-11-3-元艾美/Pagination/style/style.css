@@ -247,7 +247,7 @@ main#main_pagination .need > img {
 }
 
 main#main_pagination .need .need_content {
-  padding-top: 140px;
+  padding: 80px 0 30px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -447,8 +447,8 @@ main#main_pagination .design .design_article .design_article_content .design_art
   line-height: 35px;
   color: white;
   position: absolute;
-  top: -35px;
-  left: -15px;
+  top: -43px;
+  left: -10px;
 }
 
 main#main_pagination .design .design_photo {

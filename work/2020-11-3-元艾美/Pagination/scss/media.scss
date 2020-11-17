@@ -22,13 +22,24 @@
                     padding: 20px 80px;
                     height: 90%;
 
+                    h2:nth-child(1){
+                        margin-top: 20px;
+                    }
+
                     h2:nth-child(2){
                         margin-bottom: 30px;
                     }
 
                     .design_article_content_items{
                         .design_item{
-                            margin-top: 40px;
+                            margin-top: 50px;
+
+                            .number{
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                top: -35px;
+                            }
                         }
                     }
                 }
@@ -304,7 +315,7 @@
             
             text-align: left;
             >h2{
-                margin: 20px 0 10px 0;
+                margin: 0px 0 10px 0;
             }
             .table_opening{
                 margin-left: 0;
@@ -323,6 +334,7 @@
         //聯絡資訊
         .contact{
             align-items: flex-start;
+            margin-top: 10px;
 
             >h2{
                 margin: 20px 0 10px 0;

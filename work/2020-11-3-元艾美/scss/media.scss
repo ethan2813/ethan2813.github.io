@@ -28,7 +28,6 @@
                     font-size: 30px;
                 }
             }
-           
         }
         .project{
             .line{
@@ -61,6 +60,13 @@
                     top: 0%;
                 }
             }
+        }
+    }
+}
+@media(max-width:1200px){
+    footer#footer{
+        .logo:before{
+            top: -65px;
         }
     }
 }
@@ -469,7 +475,7 @@
             
             text-align: left;
             >h2{
-                margin: 20px 0 10px 0;
+                margin: 0px 0 10px 0;
             }
             .table_opening{
                 margin-left: 0;
@@ -488,6 +494,7 @@
         //聯絡資訊
         .contact{
             align-items: flex-start;
+            margin-top: 10px;
 
             >h2{
                 margin: 20px 0 10px 0;

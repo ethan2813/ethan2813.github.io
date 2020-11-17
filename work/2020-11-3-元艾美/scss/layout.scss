@@ -26,7 +26,7 @@ body{
 
 nav#nav{
     .menu{
-        box-shadow: 1px 1px 3px $black3;
+        box-shadow: 2px 2px 26px -7px #3C3C3C;
         z-index: 5;
         position: fixed;
         top: 0px;   
@@ -167,7 +167,7 @@ nav#nav{
 }
 footer#footer{
     margin-left: 120px;
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: #60a993;
 
     //回到最上方
@@ -207,20 +207,24 @@ footer#footer{
             color: white;
             font-size: 24px;
             margin-bottom: 25px;
-            text-shadow: 1px 1px 5px #333;
+            // text-shadow: 1px 1px 1px #333;
             font-weight: 600;
+            margin-left: 20px;
+            text-align: left;
             
         }
     
         //營業時間的表格
         .table_opening{
-            margin: 0 auto;
+            // margin: 0 auto;
+            margin-left: 20px;
             
             font-size: 15px;
             tr{
 
                 td:nth-child(1){
                     width: 100px;
+                    text-align: left;
                 }
                 td{
                     padding: 4px 3px;
@@ -236,7 +240,7 @@ footer#footer{
     //聯絡資訊
     .contact{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         // align-items: flex-start;
         flex-direction: column;
         
@@ -246,7 +250,7 @@ footer#footer{
             // text-align: left;
             margin-bottom: 25px;
             font-weight: 600;
-            text-shadow: 1px 1px 5px #333
+            // text-shadow: 1px 1px 5px #333
             
         }
 
@@ -283,9 +287,22 @@ footer#footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         img{
             
             width: 70%;
+
+            
+        }
+        &:before{
+            content: url(../img/flower_footer.svg);
+            position: absolute;
+            display: block;
+            top: -95px;
+            width: 35%;
+            right: 15%;
+            
+
         }
     }
 

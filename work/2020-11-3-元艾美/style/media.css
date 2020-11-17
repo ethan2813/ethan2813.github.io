@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  footer#footer .logo:before {
+    top: -65px;
+  }
+}
+
 @media (max-width: 992px) {
   nav#nav .menu {
     width: 100%;
@@ -274,7 +280,7 @@
     text-align: left;
   }
   footer#footer .opening > h2 {
-    margin: 20px 0 10px 0;
+    margin: 0px 0 10px 0;
   }
   footer#footer .opening .table_opening {
     margin-left: 0;
@@ -292,6 +298,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 10px;
   }
   footer#footer .contact > h2 {
     margin: 20px 0 10px 0;

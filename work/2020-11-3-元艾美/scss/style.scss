@@ -30,6 +30,7 @@ main#main_home{
                 color: white;
                 font-size: 35px;
                 text-shadow: 1px 1px 5px #333;
+                letter-spacing: 5px;
             }
         }
         .banner_bot{
@@ -440,9 +441,40 @@ main#main_home{
         background-size: cover;
 
         .bot_banner_L,.bot_banner_R{
-            img{
+            position: relative;
+            
+            img:nth-child(1){
                 width: 100%;
+                
+
+                
             }
+            
+        }
+        //左邊的圖
+        .bot_banner_L{
+            &:before{
+                content: url(../img/flower_banner_1.svg);
+                // content: '';
+                position: absolute;
+                display: block;
+                left: -5%;
+                bottom: 15%;
+                width: 20%;
+                transform: scaleX(-1);
+            }
+            &:after{
+                content: url(../img/flower_banner_2.svg);
+                // content: '';
+                position: absolute;
+                display: block;
+                right: -5%;
+                bottom: 10%;
+                width: 20%;
+                transform: scale(0.8);
+                
+            }
+            
         }
     }
     
