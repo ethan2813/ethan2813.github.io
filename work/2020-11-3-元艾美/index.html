@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<!-- 
-    ibeauty-dental.com
-
-    original-ibeauty.com -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="元艾美牙醫替您專心守護，消滅一切有關牙齒的煩惱。" />
     <title>元艾美牙醫診所</title>
 
     <link rel="icon" href="./img/mini.png" type="image/ico">
@@ -67,7 +64,7 @@
                         </div>
                         <div class="swiper-slide">
                             <img class='banner_M' src="./img/banner_M.jpg" alt="banner_M">
-                            <p class='banner_M_text'>牙齒的事,<br>就是我的們事!</p>
+                            <p class='banner_M_text'>牙齒的事,<br>就是我們的事!</p>
                         </div>
                         <div class="swiper-slide">
                             <img class='banner_R' src="./img/banner_R.jpg" alt="banner_R">
@@ -212,7 +209,7 @@
                             </div>
                         </div>
 
-                    </div>  
+                    </div>
                     <!-- 診療項目的項目 -->
                     <div class="items_items">
                         <div class="row">
@@ -305,14 +302,17 @@
                     <div class="col-12   col-md-6  col-xl-5 offset-xl-1">
                         <!-- 下方banner 左圖 -->
                         <div class="bot_banner_L">
-                            <img src="./img/bot_banner_L.png" alt="bot_banner_L">
                             
+                            <img src="./img/bot_banner_L.png" alt="bot_banner_L">
+
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-5">
                         <!-- 下方banner 右圖 -->
                         <div class="bot_banner_R">
                             <img src="./img/bot_banner_R.png" alt="bot_banner_R">
+                            <!-- <img src="./img/未命名-1_工作區域 1.png" alt="bot_banner_R"> -->
+
                         </div>
 
                     </div>
@@ -325,8 +325,15 @@
 
     </main>
     <footer id=footer>
+        <!-- 回到頂端 -->
         <div id='gototop'>
             <img src="./img/gototop.svg" alt="gototop">
+        </div>
+        <!-- 電話 -->
+        <div id="phone_right">
+            <a href="tel:0422450032">
+                <img src="./img/phone_right.svg" alt="phone_right">
+            </a>
         </div>
         <!-- <div id='line_btn'>
             <a href="#">
@@ -352,31 +359,31 @@
                             </tr>
                             <tr name='第二行'>
                                 <td>09:00-12:00</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
                                 <td></td>
-                                <td>●</td>
-                                <td>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
                                 <td></td>
                             </tr>
                             <tr name='第三行'>
                                 <td>14:30-17:30</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
                                 <td></td>
                             </tr>
                             <tr name='第四行'>
                                 <td>18:00-21:30</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
-                                <td>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
+                                <td class='point'>●</td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -432,28 +439,7 @@
         </div>
     </footer>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v9.0'
-            });
-        };
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="708060305929417" theme_color="#67b868"
-        logged_in_greeting="「您好，請問有什麼需要幫助嗎?」" logged_out_greeting="「您好，請問有什麼需要幫助嗎?」">
-    </div>
 
 
     <!-- bootstrap -->

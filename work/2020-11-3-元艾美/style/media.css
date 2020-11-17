@@ -72,8 +72,8 @@
   }
   nav#nav .menu .nav_list {
     background-color: white;
-    -webkit-box-shadow: 2px 5px 6px -3px black;
-            box-shadow: 2px 5px 6px -3px black;
+    -webkit-box-shadow: 13px 13px 26px -15px #3C3C3C;
+            box-shadow: 13px 13px 26px -15px #3C3C3C;
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;

@@ -203,6 +203,17 @@ footer#footer #gototop img {
   cursor: pointer;
 }
 
+footer#footer #phone_right {
+  position: fixed;
+  right: 5px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .opening {
   text-align: center;
 }
@@ -231,6 +242,10 @@ footer#footer .opening .table_opening tr td {
   margin: 3px 3px;
   text-align: center;
   color: white;
+}
+
+footer#footer .opening .table_opening tr .point {
+  font-size: 13px;
 }
 
 footer#footer .contact {
@@ -324,4 +339,8 @@ footer#footer .logo:before {
 footer#footer .copyright p {
   font-size: 13px;
   color: white;
+}
+
+footer#footer .copyright p:nth-child(1) {
+  margin-bottom: 3px;
 }

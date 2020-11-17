@@ -192,6 +192,19 @@ footer#footer{
         }
     }
 
+    #phone_right{
+            position: fixed;
+            right: 5px;
+            // bottom: 155px;
+            bottom: 24px;
+            z-index: 5;
+            width: 60px;
+            height: auto;
+            opacity: 0.85;
+            cursor: pointer;
+
+    }
+
     //回到最上方
     //有三個欄位的時候
     // #gototop{
@@ -255,6 +268,9 @@ footer#footer{
                     margin: 3px 3px;
                     text-align: center;
                     color: white;
+                }
+                .point{
+                    font-size: 13px;
                 }
             }
         }
@@ -333,6 +349,9 @@ footer#footer{
         p{
             font-size: 13px;
             color: white;
+        }
+        p:nth-child(1){
+            margin-bottom: 3px;
         }
     }
 }
