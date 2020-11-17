@@ -188,16 +188,6 @@ footer#footer {
 }
 
 footer#footer #gototop img {
-  width: 60px;
-  position: fixed;
-  right: 5px;
-  bottom: 155px;
-  z-index: 5;
-  cursor: pointer;
-  opacity: 0.85;
-}
-
-footer#footer #line_btn a img {
   position: fixed;
   right: 5px;
   bottom: 90px;
