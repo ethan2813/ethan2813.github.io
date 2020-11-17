@@ -59,8 +59,8 @@
   }
   nav#nav .menu.move {
     background-color: white;
-    -webkit-box-shadow: 2px 2px 5px  black;
-            box-shadow: 2px 2px 5px  black;
+    -webkit-box-shadow: 2px 2px 26px -7px #3C3C3C;
+            box-shadow: 2px 2px 26px -7px #3C3C3C;
     height: 75px;
   }
   nav#nav .menu .logo_content .nav_logo {

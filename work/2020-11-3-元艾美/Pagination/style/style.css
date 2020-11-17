@@ -9,6 +9,18 @@ main#main_pagination .banner .banner_top {
   width: 100%;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+main#main_pagination .banner .banner_top img {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100px;
+  z-index: 3;
 }
 
 main#main_pagination .banner .banner_mid img {
