@@ -226,6 +226,44 @@
                 bottom: -150px;
             }
         }
+        // 牙齒矯正
+        .correct{
+            margin-top: 0px;
+            .correct_top{
+                .correct_article{
+                    .btn2{
+                        width: 160px;
+                    }
+                    .correct_photo_mobile{
+                        margin-bottom: 50px;
+                        display: block;
+                        img{
+                            width: 100%;
+                            border: 15px #67b8689f solid;
+                        }
+                    }
+                    p{
+                        letter-spacing: 0;
+                    }
+                }
+                .correct_photo{
+                    display: none;
+                }
+            }
+            .correct_bot{
+                margin-top: 60px;
+                .correct_R{
+                    margin-top: 20px;
+                }
+                .correct_L, .correct_R{
+                    .correct_L_article,.correct_R_article{
+                        p{
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+        }
         // 下方按鈕
         .project{
             

@@ -142,6 +142,35 @@
     width: 400px;
     bottom: -150px;
   }
+  main#main_home .correct {
+    margin-top: 0px;
+  }
+  main#main_home .correct .correct_top .correct_article .btn2 {
+    width: 160px;
+  }
+  main#main_home .correct .correct_top .correct_article .correct_photo_mobile {
+    margin-bottom: 50px;
+    display: block;
+  }
+  main#main_home .correct .correct_top .correct_article .correct_photo_mobile img {
+    width: 100%;
+    border: 15px #67b8689f solid;
+  }
+  main#main_home .correct .correct_top .correct_article p {
+    letter-spacing: 0;
+  }
+  main#main_home .correct .correct_top .correct_photo {
+    display: none;
+  }
+  main#main_home .correct .correct_bot {
+    margin-top: 60px;
+  }
+  main#main_home .correct .correct_bot .correct_R {
+    margin-top: 20px;
+  }
+  main#main_home .correct .correct_bot .correct_L .correct_L_article p, main#main_home .correct .correct_bot .correct_L .correct_R_article p, main#main_home .correct .correct_bot .correct_R .correct_L_article p, main#main_home .correct .correct_bot .correct_R .correct_R_article p {
+    letter-spacing: 0;
+  }
   main#main_home .project .line a:nth-child(1) > .btn {
     left: 22%;
   }

@@ -397,6 +397,10 @@ main#main_home .correct .correct_top .correct_article .btn2 span {
   line-height: 45px;
 }
 
+main#main_home .correct .correct_top .correct_article .correct_photo_mobile {
+  display: none;
+}
+
 main#main_home .correct .correct_top .correct_article p {
   letter-spacing: 2px;
 }
@@ -428,7 +432,7 @@ main#main_home .correct .correct_bot {
 }
 
 main#main_home .correct .correct_bot .correct_L h2, main#main_home .correct .correct_bot .correct_R h2 {
-  font-size: 36px;
+  font-size: 22px;
   color: #62825f;
   font-weight: 600;
   margin-bottom: 20px;
