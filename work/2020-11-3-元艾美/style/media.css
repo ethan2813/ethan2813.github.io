@@ -144,6 +144,7 @@
   }
   main#main_home .correct {
     margin-top: 0px;
+    padding-top: 50px;
   }
   main#main_home .correct .correct_top .correct_article .btn2 {
     width: 160px;
