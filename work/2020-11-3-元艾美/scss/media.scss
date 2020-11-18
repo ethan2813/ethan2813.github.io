@@ -220,12 +220,15 @@
                     }
                 } 
             }
+            // 牙齒圖
+            .tooth{
+                width: 400px;
+                bottom: -150px;
+            }
         }
         // 下方按鈕
         .project{
-            .tooth{
-                width: 400px;
-            }
+            
 
             .line{
                 a:nth-child(1){
@@ -271,8 +274,8 @@
                 .doctor_content_bot{
                     .doctor_content_bot_r{
                         img{
-                            top: 5%;
-                            left: 95%;
+                            top: 19%;
+                            left: 74%;
                         }
                     }
                 }
@@ -327,6 +330,10 @@
         .items{
             .items_title{
                 padding: 40px 0 40px 0;
+            }
+            //牙齒圖
+            .tooth{
+                display: none;
             }
         }
         .bot_banner{
@@ -419,16 +426,11 @@
                 }
 
             }
+            
         }
         //下方按鈕
         .project{
-            .tooth{
-                width: 70%;
-                transform: translate(50%,-50%);
-                top: -200px;
-                right: 50%;
-                display: none;
-            }
+            
             .line{
                 margin: 150px 0;
                 //兩個按鈕

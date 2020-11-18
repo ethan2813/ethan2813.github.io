@@ -11,74 +11,65 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
     //RWD(以上)
-    breakpoints:{
-        800:{
+    breakpoints: {
+        800: {
             slidesPerView: 3,
         },
-        450:{
+        450: {
             slidesPerView: 2,
         }
     }
 });
 
 
-(function(){
+(function () {
     // 漢堡條動畫 & nav_list滑出
-    $('.burger').on('click',(e)=>{
+    $('.burger').on('click', (e) => {
         // console.log(e.currentTarget)
         $(e.currentTarget).toggleClass('burger_active')
         $('.nav_list').toggleClass('nav_active')
-
-
-        
-
     })
-    
-    //還在測試要怎麼點選空白地方關閉清單
-    console.log($(document))
-        
-            
-        // let nav_list = document.querySelector('.nav_list')
-        // $(document).on('click',(e)=>{
-        //     if(e.target !==nav_list){
-        //      $('.nav_list').removeClass('nav_active')
-        //     }
-        // })
-        
-    
 
-    
-    
-   
+    //點選空白地方關閉清單
+    $(document).on('mouseup',(e) => {
+        //判斷下拉選單是否有被打開
+        if ($('.nav_list').hasClass('nav_active')) {
+            // console.log('下拉選單被打開囉')
+            //判斷是否點到是否點到下拉清單、漢堡條以外的範圍
+            if (!$(e.target).closest(".nav_active,.burger").length) {
+                // console.log('點到欄位以外的範圍囉')
+                $('.nav_list').toggleClass('nav_active')
+            }
+        }
+    })
+
     //nav 縮效果
     let nav = document.querySelector('#nav .menu')
-    
-    $(window).scroll(()=>{
-        if($(this).scrollTop() > 10){
+    $(window).scroll(() => {
+        if ($(this).scrollTop() > 10) {
             nav.classList.add('move')
-        }else{
+        } else {
             nav.classList.remove('move')
         }
     })
 
     //選單隱藏
-    $('.nav_list').on('click','li:not(.nav_list_first)',(e)=>{
+    $('.nav_list').on('click', 'li:not(.nav_list_first)', (e) => {
         $('.burger').click();
     })
 
     //totop
-    $('#gototop').on('click',()=>{
-        $('html,body').animate({scrollTop:0},300);
+    $('#gototop').on('click', () => {
+        $('html,body').animate({ scrollTop: 0 }, 300);
     })
 
     //totop隱藏效果
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 400){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
             $('#gototop').fadeIn(200);
-        }else{
+        } else {
             $('#gototop').stop().fadeOut(200)
         }
-
         console.log($(this).scrollTop())
     })
 })();

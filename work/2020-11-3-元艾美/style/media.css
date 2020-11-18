@@ -138,8 +138,9 @@
   main#main_home .items .items_content .items_article .btn1 {
     display: none;
   }
-  main#main_home .project .tooth {
+  main#main_home .items .tooth {
     width: 400px;
+    bottom: -150px;
   }
   main#main_home .project .line a:nth-child(1) > .btn {
     left: 22%;
@@ -167,8 +168,8 @@
     margin: 5px 0;
   }
   main#main_home .doctor .doctor_content .doctor_content_bot .doctor_content_bot_r img {
-    top: 5%;
-    left: 95%;
+    top: 19%;
+    left: 74%;
   }
   main#main_home .project .line a:nth-child(1) > .btn {
     left: 15%;
@@ -184,6 +185,9 @@
   }
   main#main_home .items .items_title {
     padding: 40px 0 40px 0;
+  }
+  main#main_home .items .tooth {
+    display: none;
   }
   main#main_home .bot_banner .bot_banner_R {
     display: none;
@@ -236,15 +240,6 @@
     top: -6px;
     left: -10px;
     position: none;
-  }
-  main#main_home .project .tooth {
-    width: 70%;
-    -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    top: -200px;
-    right: 50%;
-    display: none;
   }
   main#main_home .project .line {
     margin: 150px 0;

@@ -30,6 +30,19 @@ var swiper = new Swiper('.swiper-container', {
 
     })
 
+     //點選空白地方關閉清單
+     $(document).on('mouseup',(e) => {
+        //判斷下拉選單是否有被打開
+        if ($('.nav_list').hasClass('nav_active')) {
+            // console.log('下拉選單被打開囉')
+            //判斷是否點到是否點到下拉清單、漢堡條以外的範圍
+            if (!$(e.target).closest(".nav_active,.burger").length) {
+                // console.log('點到欄位以外的範圍囉')
+                $('.nav_list').toggleClass('nav_active')
+            }
+        }
+    })
+
 
     //nav 縮效果
     let nav = document.querySelector('#nav .menu')
