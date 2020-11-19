@@ -452,7 +452,7 @@ main#main_home .correct .items_leaf_L {
   position: absolute;
   width: 15vw;
   left: 0%;
-  bottom: -45%;
+  bottom: -50%;
   -webkit-animation: fadeInDown  3s ease-in-out;
           animation: fadeInDown  3s ease-in-out;
   z-index: -1;
