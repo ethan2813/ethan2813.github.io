@@ -30,9 +30,9 @@
             placeholder="你的訊息(Your Message)" required></textarea>
 
         你如何知道本公司：<br>
-        <input type="checkbox" name="src" value="magazine">雜誌<br>
-        <input type="checkbox" name="src" value="paper">報紙廣告<br>
-        <input type="checkbox" name="src" value="radio">收音機
+        <input id='whyText' type="checkbox" name="src" value="magazine">雜誌<br>
+        <input id='whyText' type="checkbox" name="src" value="paper">報紙廣告<br>
+        <input id='whyText' type="checkbox" name="src" value="radio">收音機
 
 
         <!-- 傳送按鈕 -->
@@ -54,11 +54,16 @@
             var email = emailText.value;
             var tel = telText.value;
             var subject = subText.value;
+
+
             //把user填的資料都塞到 mail body 中
             var body = "" + bodyText.value + '%0A%0A%0A';//%0A是換行 換了三行
             body += "From：" + nameText.value + '%0A';
             body += "Email：" + emailText.value + '%0A';
-            body += "Tel：" + telText.value;
+            body += "Tel：" + telText.value + '%0A'; 
+            body += 'why:' + whyText.value ;
+
+
             //傳送的主要程式碼
             mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
             mailTo.click();
