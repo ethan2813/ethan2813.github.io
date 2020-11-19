@@ -29,6 +29,12 @@
         <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false"
             placeholder="你的訊息(Your Message)" required></textarea>
 
+        你如何知道本公司：<br>
+        <input type="checkbox" name="src" value="magazine">雜誌<br>
+        <input type="checkbox" name="src" value="paper">報紙廣告<br>
+        <input type="checkbox" name="src" value="radio">收音機
+
+
         <!-- 傳送按鈕 -->
         <div>
             <input type="button" value="送出訊息" onclick="submitHandler();">
@@ -36,7 +42,7 @@
         </div>
     </form>
 
-    
+
     <script>
         //宣告預設表單內容為空 （你想要的話也可以加東西）
         var initSubject = '', initBody = '';
