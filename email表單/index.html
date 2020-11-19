@@ -15,8 +15,8 @@
         <!-- required 必填欄位 ，placeholder 預設內容-->
 
         <!-- 寄件者email -->
-        <input id="emailText" type="checkbox" name="Email" value="我不知道" placeholder="Email">不用打字喔
-        <input id="emailText2" type="checkbox" name="Email" value="我不知道" placeholder="Email2">不用打字喔2222
+        <input id="emailText" type="checkbox" name="Email" value="我不知道 " placeholder="Email">不用打字喔
+        <input id="emailText2" type="checkbox" name="Email" value="我不知道22 " placeholder="Email2">不用打字喔2222
 
 
         <!-- 寄件者電話 -->
@@ -57,6 +57,8 @@
             var tel = telText.value;
             var why = whyText.value;
             var subject = subText.value;
+
+            console.log(email)
 
 
             //把user填的資料都塞到 mail body 中
