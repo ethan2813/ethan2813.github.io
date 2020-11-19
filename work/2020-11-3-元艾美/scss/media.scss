@@ -69,6 +69,19 @@
             top: -65px;
         }
     }
+    main#main_home{
+        .items{
+            .items_content{
+                .items_article{
+                    .btn1{
+                        top: 10px;
+                    }
+                }
+            }
+            }
+    }
+
+
 }
 
 @media(max-width:992px){
@@ -451,10 +464,10 @@
                     // 各項目
                     .items_item{
                         padding: 0;
-                        margin-bottom:0;
+                        margin-bottom:40PX;
                         h2{
                             padding-left: 28px;
-                            font-size: 18px;
+                            font-size: 20px;
                         }
                         .number{
                             top: -6px;
@@ -467,6 +480,20 @@
 
             }
             
+        }
+        .correct{
+            .correct_bot{
+                .correct_L{
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+                .correct_R{
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+            }
         }
         //下方按鈕
         .project{
@@ -499,12 +526,12 @@
                 }
                 //左邊的按鈕 DSD
                 a:nth-child(1) >.btn{
-                    top: -120px;
+                    top: -119px;
                     left: 5%;
                 }
                 //右邊的按鈕 全瓷美學
                 a:nth-child(2) >.btn{
-                    top: -120px;
+                    top: -119px;
                     right: 5%;
                 }
             }
@@ -626,6 +653,33 @@
                         p{
                             font-size: 15px;
                         }
+                    }
+                }
+            }
+        }
+        .correct{
+            .correct_top{
+                .correct_article{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .correct_bot{
+            .correct_L{
+                .correct_L_article{
+                    p{
+                        font-size: 15px;
+
+                    }
+                }
+            }
+            .correct_R{
+                .correct_R_article{
+                    p{
+                        font-size: 15px;
+
                     }
                 }
             }
