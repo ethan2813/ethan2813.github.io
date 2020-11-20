@@ -126,10 +126,12 @@
 
             //把user填的資料都塞到 mail body 中
             var body = "" + bodyText.value + '%0A%0A%0A';//%0A是換行 換了三行
-            body += "From：" + nameText.value + '%0A';
+            body += "姓名：" + nameText.value + '%0A';
             body += "Email：" + emailText.value + '%0A';
-            body += "Tel：" + telText.value + '%0A';
-            body += '預約項目：' + itemText_1.value + '%0A' + itemText_2.value + '%0A' + itemText_3.value + '%0A'+ itemText_4.value + '%0A'+ itemText_5.value + '%0A';
+            body += "電話：" + telText.value + '%0A';
+            body += '預約項目：' + items_checkedValue + '%0A';
+            body += '約診時段：' + time_checkedValue + '%0A' ;
+
 
 
             //傳送的主要程式碼
