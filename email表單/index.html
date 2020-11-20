@@ -74,11 +74,11 @@
                                         <div class="col-12">
                                             <div class="from_time">
                                                 <span>約診時段</span>
-                                                <input id='timeText_1' class='timeText' type="radio" name='itmes'
+                                                <input id='timeText_1' class='timeText' type="radio" name='time'
                                                     value='早診'>早診
-                                                <input id='timeText_2' class='timeText' type="radio" name='itmes'
+                                                <input id='timeText_2' class='timeText' type="radio" name='time'
                                                     value='午診'>午診
-                                                <input id='timeText_3' class='timeText' type="radio" name='itmes'
+                                                <input id='timeText_3' class='timeText' type="radio" name='time'
                                                     value='晚診'>晚診
                                             </div>
                                         </div>
@@ -128,14 +128,17 @@
             var tel = telText.value;
             var email = emailText.value;
             // var items_checkedValue = document.querySelector('.itemText:checked').value;  
-            var time_checkedValue = document.querySelector('[name=itmes]:checked').value;
+            
             var message = bodyText.value;
             // var subject = subText.value;
 
-
             
-            // 預約項目
-            if ($('.itemText').prop('checked')) {
+            
+            //如果預約項目的checked數量等於0
+            if ($('input[name="item"]:checked').length == 0) {
+                alert('請勾選預約項目')
+                return
+            } else {
                 //預設預約項目為空字串
                 var items_checkedValue = [];
 
@@ -143,11 +146,16 @@
                 $('input[name="item"]:checked').each(function () {
                     items_checkedValue.push(this.value);
                 });
-            } else {
-                alert('請勾選診療項目')
-                return
+
+                console.log(items_checkedValue)
             }
 
+            if($('input[name="time"]:checked').length == 0){
+                alert('請勾選約診時段')
+                return
+            }else{
+                var time_checkedValue = document.querySelector('[name="time"]:checked').value;
+            }
 
 
 
