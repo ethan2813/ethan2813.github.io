@@ -116,7 +116,9 @@
         var initBody = '';
         // var initSubject = '', initBody = '';
 
-
+        // document.querySelectorAll('.itemText[type=checkbox]').forEach(function(e){
+        //         console.log(e)
+        //     })
 
         //按下傳送按鈕後執行
         function submitHandler() {
@@ -131,13 +133,26 @@
             // var subject = subText.value;
 
 
-            var items_checkedValue = [];
-            $('input[name="item"]:checked').each(function () {
-                console.log('found a female');
-                items_checkedValue.push(this.value);
-            });
+            
+            // 預約項目
+            if ($('.itemText').prop('checked')) {
+                //預設預約項目為空字串
+                var items_checkedValue = [];
 
-            console.log(items_checkedValue)
+                //預約項目如果有被勾選，將傳送自空自鑽
+                $('input[name="item"]:checked').each(function () {
+                    items_checkedValue.push(this.value);
+                });
+            } else {
+                alert('請勾選診療項目')
+                return
+            }
+
+
+
+
+
+            // console.log(items_checkedValue)
             // console.log(email)
 
 
