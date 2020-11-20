@@ -6,67 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
+    <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        
+
+
+    </style>
 </head>
 
 <body onload="init()">
-    <form enctype="text/plain" accept-charset="utf-8">
-        <!-- 寄件者姓名    -->
-        <input id="nameText" type="text" name="Name" value size="60" placeholder="姓名(name)" required>
-        <!-- required 必填欄位 ，placeholder 預設內容-->
 
-        <!-- 寄件者email -->
-        <input id="emailText" type="checkbox" name="Email" value="我不知道 " placeholder="Email">不用打字喔
-        <input id="emailText2" type="checkbox" name="Email" value="我不知道22 " placeholder="Email2">不用打字喔2222222
+    <!-- 聯絡我們 -->
+    <div class="contact_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <!-- 表單內容 -->
+                    <div class="contact_us_from">
+                        <form class='email_box' enctype="text/plain" accept-charset="utf-8">
 
+                            <!--寄件者姓名-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <input id="nameText" type="text" name="Name" placeholder="姓名(name)" required>
+                                <!-- required 必填欄位 ，placeholder 預設內容-->
+                    
+                            <!-- 寄件者電話 -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <input id="telText" type="tel" name="Phone" aria-invalid="false" placeholder="電話(phone)"
+                                    required>
+                                </div>
+                            </div>
+                            
+                            <!-- 寄件者email -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <input id="emailText" type="email" name="Email" value size="60" placeholder="Email"
+                                    required>
+                                </div>
+                            </div>
 
-        <!-- 寄件者電話 -->
-        <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話(phone)"
-            required>
+                            <!-- 預約項目 -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="from_items">
+                                    <span>預約項目</span>
+                                    <input id='itemText_1' class='itemText' type="checkbox" name='itmes' value='人工植牙'>人工植牙
+                                    <input id='itemText_2' class='itemText' type="checkbox" name='itmes' value='假牙贋復'>假牙贋復
+                                    <input id='itemText_3' class='itemText' type="checkbox" name='itmes' value='牙周治療'>牙周治療
+                                    <input id='itemText_4' class='itemText' type="checkbox" name='itmes' value='全口重建'>全口重建
+                                    <input id='itemText_5' class='itemText' type="checkbox" name='itmes' value='其他'>其他
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- 郵件主旨 -->
-        <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨(subject)"
-            required>
+                            <!-- 約診時段 -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="from_time">
+                                        <span>約診時段</span>
+                                        <input id='timeText_1' class='timeText' type="radio" name='itmes' value='早診'>早診
+                                        <input id='timeText_2' class='timeText' type="radio" name='itmes' value='午診'>午診
+                                        <input id='timeText_3' class='timeText' type="radio" name='itmes' value='晚診'>晚診
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- 郵件內容 -->
-        <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false"
-            placeholder="你的訊息(Your Message)" required></textarea>
+                            <!-- 補充內容 -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="message">
+                                        <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true"
+                                aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
-        你如何知道本公司：<br>
-        <input id='whyText' type="checkbox" name="src" value="magazine">電視<br>
-        <input id='whyText' type="checkbox" name="src" value="paper">報紙廣告<br>
-        <input id='whyText' type="checkbox" name="src" value="radio">收音機
+                            <!-- 傳送按鈕 -->
+                            <div>
+                                <input type="button" value="送出訊息" onclick="submitHandler();">
+                                <a id="mailTo"></a>
+                            </div>
+                        </form>
 
-
-        <!-- 傳送按鈕 -->
-        <div>
-            <input type="button" value="送出訊息" onclick="submitHandler();">
-            <a id="mailTo"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
+
 
 
     <script>
         //宣告預設表單內容為空 （你想要的話也可以加東西）
-        var initSubject = '', initBody = '';
+        var  initBody = '';
+        // var initSubject = '', initBody = '';
+
+
 
         //按下傳送按鈕後執行
         function submitHandler() {
             var to = "contact@example.com";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+            var subject = "我要諮詢！";
             var name = nameText.value;//讀取ID為 nameTextuser 物件中的值
-            var email = emailText.value + emailText2.value;
             var tel = telText.value;
-            var why = whyText.value;
-            var subject = subText.value;
-
+            var email = emailText.value;
+            var items = itemText_1.value + itemText_5.value + itemText_3.value + itemText_4.value + itemText_5.value;   
+            
+            var message = bodyText.value;
+            // var subject = subText.value;
+            console.log(items)
             console.log(email)
 
 
             //把user填的資料都塞到 mail body 中
             var body = "" + bodyText.value + '%0A%0A%0A';//%0A是換行 換了三行
             body += "From：" + nameText.value + '%0A';
-            body += "Email：" + emailText.value + '%0A' +  emailText2.value +  '%0A';
-            body += "Tel：" + telText.value + '%0A'; 
-            body += 'why:' + whyText.value ;
+            body += "Email：" + emailText.value + '%0A';
+            body += "Tel：" + telText.value + '%0A';
+            body += '預約項目：' + itemText_1.value + '%0A' + itemText_2.value + '%0A' + itemText_3.value + '%0A'+ itemText_4.value + '%0A'+ itemText_5.value + '%0A';
 
 
             //傳送的主要程式碼
@@ -80,6 +143,17 @@
             bodyText.value = initBody;
         }
     </script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
 </body>
 
