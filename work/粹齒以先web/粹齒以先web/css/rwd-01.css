@@ -1,0 +1,721 @@
+/*-------------------------*/
+/* $Header
+---------------------------*/
+@media(max-width:1184px){
+	.navbar{
+		margin-left:40px;
+		margin-right:40px;
+	}
+}
+@media(max-width:980px){
+	.header{
+		height:60px;
+	}
+	.menu__item:before{
+		display:none;
+	}
+	.header--scrolling .phone-block{
+		display:block;
+	}
+	.navbar__logo img{
+		width:140px;
+	}
+	.menu-toggle{
+		right:-10px;
+		top:2px;
+		height:40px;
+		padding:12px;
+	}
+	.popup-close{
+		top:6px;
+	}
+	.popup-close span{
+		width:28px;
+	}
+}
+@media(max-width:520px){
+	.header{
+		height:48px;
+		border-top:5px solid #b4222c;
+	}
+	.navbar{
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	.navbar__logo img{
+		width:120px;
+	}
+	.popup-nav .nav__menu{
+		margin-top:120px;
+	}
+	.popup-close{
+		right:20px;
+		
+	}
+}
+/*-------------------------*/
+/* $Home
+---------------------------*/
+@media(max-width:980px){
+	.banner{
+		margin-top:70px;
+	}
+	.banner img{
+		width:96%;
+	}
+}
+@media(max-width:767px){
+	.banner:after{
+		left:36px;
+	}
+}
+@media(max-width:560px){
+	.banner{
+		margin-top:50px;
+	}
+	.banner:after{
+		background-size:36vw;
+		width:36vw;
+		height:12vw;
+		bottom:-2vw;
+		left:28px
+	}
+}
+
+/*-------------------------*/
+/* $About
+---------------------------*/
+@media(max-width:1120px){
+	.about .text-inner{
+		padding-left:4vw;
+		padding-top:60px;
+	}
+}
+@media(max-width:960px){
+	.about .text-inner h3{
+		margin-left:0px;
+		line-height:46px;
+	}
+	.about .text-inner p{
+		font-size:18px;
+  		line-height:36px;
+  		letter-spacing:2px;
+	}
+	.about p:before{
+		left:-10vw;
+	}
+}
+@media(max-width:767px){
+	.about .text-inner{
+		writing-mode:inherit;
+		padding-left:0vw;
+	}
+	.about .phone-none{display:none;}
+	.about .phone-block{display:block;}
+	.about .phone-block h3{
+		letter-spacing:6px;
+		margin-bottom:0px;
+		background:linear-gradient(to bottom,#fff 66%,#c9d4d7 34%);
+	}
+	.about .text-inner p{
+		padding-top:0;
+	}
+	.about p:before{
+		left:60vw;
+		bottom:-5vw;
+	}
+}
+@media(max-width:520px){
+	.about .text-inner{
+		padding-top:40px;
+	}
+	.about .phone-block h3{
+		background:inherit;
+		line-height:35px;
+		letter-spacing:6px;
+		margin-bottom:0px;
+	}
+	.about .phone-block h3 span{
+		display:block;
+		background:linear-gradient(to bottom,#fff 66%,#c9d4d7 34%);
+	}
+	.about .text-inner p{
+	    line-height:30px;
+	  }
+	.about p:before{
+		left:70vw;
+		bottom:-15vw;
+		background-size:40px;
+		width:40px;
+		height:50px;
+	}
+}
+@media(max-width:332px){
+	.about .phone-none-sm{display:none;}
+	.about .phone-block-sm{display:block;}
+}
+/*-------------------------*/
+/* $denture 一日假牙
+---------------------------*/
+@media(max-width:1280px){
+	.denture{
+		padding-bottom:40px;
+	}
+}
+@media(max-width:780px){
+	.denture .title-img{
+		width:240px;
+	}
+	.denture h3{
+		margin-bottom:10px;
+	}
+	.denture h4{
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+@media(max-width:610px){
+	.denture .phone-none{
+		display:none;
+	}
+	.denture .phone-block{
+		display:block;
+	}
+}
+@media(max-width:420px){
+	.denture .title-img{
+		width:200px;
+	}
+	.denture .phone-none-sm{
+		display:none;
+	}
+	.denture .phone-block-sm{
+		display:block;
+	}
+}
+/*-------------------------*/
+/* $device-map 世界地圖
+---------------------------*/
+@media(max-width:1366px){
+	.lightbox{
+		width:18vw;
+	}
+	.lightbox img{
+		width:90%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	.lightbox .device-name{
+		margin-bottom:6px;
+		font-size:18px;
+	}
+	.lightbox p{
+		line-height:18px;
+		font-size:14px;
+		letter-spacing:0;
+	}
+	/*噴砂、顯微、音波*/
+	.inner-02 .lightbox-01{left:-12vw;}
+	.inner-02 .lightbox-03{right:-18.5vw;}
+	/*治療椅*/
+	.inner-03 .lightbox{right:-10vw;}
+	/*植牙機*/
+	.inner-05 .lightbox{
+		right:-2vw;
+		top:-8vw;
+	}
+	/*植體*/
+	.inner-07 .lightbox{
+		right:-12vw;
+		top:-2.2vw;
+	}
+}
+@media(max-width:1280px){
+	.device-img{
+		border:1px solid #b4222c;
+	}
+	.red-circle{
+		border:1px solid #C95854;
+	}
+	.red-circle:before,
+	.route:before{
+		height:1px;
+	}
+}
+@media(max-width:1100px){
+	.device-map .phone-none h5{
+		font-size:20px;
+		letter-spacing:6px;
+		line-height:30px;
+	}
+	.device-map .drop{
+		margin-top:20px;
+	}
+	.device-map .phone-none p{
+		margin-top:40px;
+		font-size:16px;
+	}
+	.device-map .map-deco{
+		left:-6vw;
+	}
+}
+@media(max-width:960px){
+	.device-map .phone-none{display:none;}
+	.map-title{
+		display:block;
+		margin-bottom:40px;
+	}
+	.map-title p{
+		margin-top:10px;
+	}
+	.map-title-p-smartphone-none{display: block;}
+	.map-title-p-smartphone-block{display: none;}
+	.lightbox{
+		width:20vw;
+	}
+	.lightbox img{
+		width:80%;
+	}
+	/*噴砂、顯微、音波*/
+	.inner-02 .lightbox-01{left:-14vw;}
+	.inner-02 .lightbox-03{right:-22.2vw;}
+}
+@media(max-width:860px){
+	.device-map{display:none;}
+	.device-map--phone{display:block;}
+	.map-title{
+		display:block;
+		margin-bottom:20px;
+	}
+}
+@media(max-width:416px){
+	.map-title-p-smartphone-block{display: block;}
+	.map-title-p-smartphone-none{display: none;}
+	.lightbox-phone{
+		width:200px;
+		padding:4px 12px;
+	}
+	.lightbox-phone .device-name{
+		margin-bottom:6px;
+		font-size:18px;
+	}
+	.lightbox-phone p{
+		font-size:14px;
+		letter-spacing:0px;
+	}
+
+}
+@media(max-width:357px){
+	.lightbox-phone .img-inner img{
+		width:70%;
+	}
+}
+@media(max-width:339px){
+	.lightbox-phone{
+		width:170px;
+	}
+}
+/*-------------------------*/
+/* $place 環境介紹
+---------------------------*/
+@media(max-width:1136px){
+	.place .phone-none{display:none;}
+	.place .phone-block{display:block;}
+	.place h3{
+		margin-top:0px;
+	}
+}
+@media(max-width:960px){
+	.place{
+		margin-bottom:60px;
+	}
+	.place h3{
+		padding:4px 20px;
+	}
+	.place .row-3{
+		top:0;
+		margin-top:40px;
+	}
+	.place .row-3 p{
+		margin-top:0;
+	}
+	.place .col-lg-12{
+		margin-top:40px;
+	}
+}
+@media(max-width:767px){
+	.place .col-xs-5{
+		padding-right:0;
+	}
+	.place .row-3,
+	.place .col-lg-12{
+		margin-top:0;
+	}
+	.place .row{
+		margin-bottom:30px;
+	}
+}
+@media(max-width:860px){
+	.place{
+		margin-top:-14vw;
+	}
+}
+/*-------------------------*/
+/* $contact 聯絡方式
+---------------------------*/
+@media(max-width:960px){
+	.contact{
+		padding-bottom:0px;
+	}
+	.contact .col-lg-4{display:none;}
+	.contact .col-sm-12{
+		padding:0 20px;
+	}
+	.contact .col-xs-12 .col-xs-12 p{
+		margin-bottom:0;
+	}
+	.copyright{
+		border-top:1px solid #3c2710;
+		padding-top:10px;
+	}
+	.contact .col-xs-12 .copyright{
+		font-size:12px;
+	}
+}
+@media(max-width:400px){
+	.contact .phone-block{
+		display: block;
+	}
+	.contact .phone-none{
+		display: none;
+	}
+}
+/*-------------------------*/
+/* $service 診療項目服務
+---------------------------*/
+@media(max-width:1200px){
+	.service .row-0 .phone-none{
+		padding-left:0%;
+		margin-top: 40px;
+	}
+	.service .row-3 .content,
+	.service .row-5 .content{
+		padding-left: 5%;
+	}
+	.service .phone-none-row-4 .content{
+		padding-left: 10%;
+		padding-top: 0%;
+	}
+	.service .phone-none-row-4 .img04{
+		max-width:600px;
+		height: auto;
+	}
+}
+@media(max-width:992px){	
+	.service .phone-none{display:none;}
+	.service .phone-block{display:block;}
+	.service .row{
+		margin-top: 20px;
+	}
+	.service .row p{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.service .phone-none-row-4 .content
+	{
+		padding-left: 10%;
+	}
+	.service .row-1 .img01{
+		width: 100%;
+	}
+	.service .row-1 .title-right{
+		margin-left: 30px;
+	}
+	.service .row-1 p{
+		padding-right: 10%;
+	}
+
+	.service .row-3 .phone-block p{
+		padding-right: 0%;
+	}
+	.service .phone-none-row-4 .img04{
+		margin-right: -16px;
+		max-width: 500px;
+	}
+	.service .phone-none-row-4 span{
+		font-size: 20px;
+		margin-top: -60px;
+	}
+}
+@media(max-width:767px){
+	.service .phone-none-row-4{display:none;}
+	.service .phone-block-row-4{display:block;}
+	.service .row{
+		margin-top: 100px;
+	}
+	.service .row-1 .content,
+	.service .row-3 .content,
+	.service .phone-block-row-4 .content,
+	.service .row-5 .content
+	{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	.service .row-1 p,
+	.service .row-3 .phone-block p,
+	.service .phone-block-row-4 .content p,
+	.service .row-5 .content .phone-block p{
+	padding-right: 0%;
+	}
+	.service .row-0 .phone-block p{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	font-size: 16px;
+	letter-spacing:6px;
+	}
+	.service .row-1 {
+		margin-top: 30px ;
+	}
+	.service .row-2 .img02{
+		display: none
+	}
+	.service .row-2 .content{
+		padding-right: 0;
+	}
+}
+@media(max-width:420px){
+	.service .row-0 .phone-block .img-logo{
+		padding: 0px;
+	}
+	.service .row-0 .phone-block .img-banner{
+		padding: 0px;
+	}
+	.service .row-0 .phone-block p{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 14px;
+		letter-spacing:4px;
+	}
+}
+/*---------Page3-----------*/
+/* $Dentist 醫師介紹
+---------------------------*/
+/* banner */
+@media(max-width:960px){
+	.dentist{
+		margin-left: 0px;
+		top: 70px;
+	}
+}
+@media(max-width:767px){
+  .dentist{
+		margin-left: 0px;
+	}
+}
+/* 成人部 */
+@media(max-width:1578px){
+	.adult .left{
+		padding-left: 0;
+	}
+	.adult .right{
+		padding-right: 0;
+	}
+}
+@media(max-width:1136px){
+	.adult .little-adult{
+		width: 25%;
+		margin: 80px auto ;
+	}
+	.adult .left{
+		margin: 0px;
+		margin-left: -20px;
+	}
+	.adult .right{
+		margin: 0px;
+		margin-left: 40px;
+		top: 300px;
+	}
+	.adult .phone-none .box {
+		width: 400px;
+	margin-bottom:60px;
+		
+	}
+	.adult .introduction{
+		padding-left: 80px;
+		padding-right: 70px;
+	}
+	.adult .introduction span{
+		font-size: 24px;
+	}
+	.adult .introduction p{
+		font-size: 16px;
+	}
+}
+@media(max-width:960px){
+	.adult .phone-none{display:none;}
+	.adult .phone-block{display:block;}
+	.adult .phone-block .little-adult{
+		margin: -60px auto 100px;
+	}
+	.adult .phone-block .box {
+		width: 400px;
+		/* margin-right: 0; */
+	}
+}
+@media(max-width:767px){
+	.adult .phone-block .little-adult{
+		width: 40%;
+		margin: -60px auto 80px;
+	}
+}
+@media(max-width:520px){
+	.adult .phone-block{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.adult .phone-block .box{
+		margin:30px auto;
+		width: 80vw;
+	}
+}
+@media(max-width:480px){
+	.adult .phone-block .little-adult{
+		width: 50%;
+		margin-bottom: 60px;
+	}
+	.adult .number{
+		width: 40px;
+	}
+	.adult .slash{
+		height: 30px;
+		top: -60px;
+	}
+	.adult .slash:before{
+		height: 180px;
+		left: 50px;
+		top: -10px;
+	}
+	.adult .dark-box{
+		width: 150px;
+	}
+	.adult .introduction{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.adult .introduction p{
+		font-size: 14px;
+		letter-spacing: 0px;
+	}
+}
+@media(max-width:340px){
+	.adult span{
+		top: 10px;
+	}
+	.adult .introduction{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+/* 兒童部 */
+@media(max-width:1048px){
+	.child .phone-none{display:none;}
+	.child .phone-block{display:block;}
+	.child .introduction span{
+		font-size: 24px;
+	}
+}
+@media(max-width:767px){
+	.child .slash{
+		top: -55px;
+	}
+	.child .slash:before{
+		left: -30px;
+		top: -30px;
+	}
+	.child .phone-block .img-adult{
+		display: none;
+	}
+	.child .phone-block .little-child{
+		width: 40%;
+		top: -50px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.child .phone-block .img-child{
+		display: none;
+	}
+	.child .phone-block .child-box{
+		margin-top: 0px;
+	}
+	.child .child-box-1 p,
+	.child .child-box-2 p{
+		font-size: 14px;
+	}
+	.child  .phone-block .child-box-1-bg{
+		margin: 50px auto 100px;
+		width: 360px;
+		height: 300px;
+	}
+	.child .phone-block .child-box-1{
+		width: 310px;
+		top:-25px;
+		left: 25px;
+		padding-left: 50px;
+	}
+	
+	.child  .phone-block .child-box-2-bg{
+		width: 360px;
+	}
+	.child .phone-block .child-box-2{
+		padding-left: 50px;
+		width: 280px;
+	}
+
+}
+@media(max-width:480px){
+	.child .phone-block .little-child{
+		top: -20px;
+	}
+	.child .number{
+		width: 40px;
+	}
+	.child .slash{
+		height: 30px;
+		top: -60px;
+	}
+	.child .slash:before{
+		height: 180px;
+		left: -20px;
+		top: -20px;
+	}
+	.child  .phone-block .child-box-1-bg{
+		width: 80vw;
+	}
+	.child .phone-block .child-box-1{
+		width: 70vw;
+		left: 6.25%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.child  .phone-block .child-box-2-bg{
+		width: 80vw;
+	}
+	.child .phone-block .child-box-2{
+		width: 70vw;
+		left: 6.25%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media(max-width:356px){
+	.child  .phone-block .child-box-1-bg{
+		margin-bottom: 30vh;
+	}
+	.child .introduction span{
+	letter-spacing: 8px;
+		
+	}
+}
