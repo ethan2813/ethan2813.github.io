@@ -1158,6 +1158,13 @@ body{
 	padding-bottom: 10%;
 	display: block;
 	margin: 0 auto 60px;
+	/* margin: 0 20px 60px auto; */
+}
+.adult .phone-none .box-left{
+	margin: 0 40px 60px auto;
+}
+.adult .phone-none .box-right{
+	margin: 0 auto 60px 40px;
 }
 .adult .number{
 	width: 50px;
