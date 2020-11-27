@@ -235,10 +235,8 @@ section#team{
             }
 
         }
-
+        
         .doctor_row{
-            
-            
             display: flex;
             justify-content: flex-end;
 
@@ -313,6 +311,9 @@ section#team{
                     }
                 }
             }
+        }
+        .doctor_bot{
+            justify-content: center;
         }
     }
 }
