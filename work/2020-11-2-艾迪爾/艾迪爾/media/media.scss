@@ -597,7 +597,7 @@
             }
             .content_3{
                 .opening{
-                width: 80%;
+                width: 100%;
                     
                     h2{
                         margin-top: 10px;
@@ -612,11 +612,16 @@
     
                     .table_opening{
                         // margin:0 auto;
-                        font-size: 18px;
+                        font-size: 20px;
+                        
+                        td.week_time{
+                            font-size: 15px;
+                            padding: 0;
+                        }
                     
-                    td{
-                        padding: 3px 5px;
-                    }
+                        td{
+                            padding: 3px 5px;
+                        }
                     }
                 }
             }
@@ -872,7 +877,15 @@
         section#banner{
             .content_3{
                 .opening{
-                    width: 90%;
+                    width: 100%;
+
+                    .table_opening{
+                        font-size: 18px;
+
+                        td{
+                            padding: 10px 5px;
+                        }
+                    }
                 }
             }
         }

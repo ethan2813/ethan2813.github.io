@@ -160,8 +160,18 @@ main#main{
                 font-size: 20px;
                 
                 td{
-                    padding: 5px 12px;
+                    padding: 10px 15px;
                   
+                }
+
+                td.week{
+                    padding: 5px 0;
+                    line-height: 15px;
+
+                    .week_in{
+                        font-size: 16px;
+                        
+                    }
                 }
             }
    
@@ -725,7 +735,7 @@ main#pagi_main{
             background-color: rgba(255, 255, 255, 0.9);
             text-align: center; 
             padding: 40px 30px;
-            box-shadow: rgb(46 47 47) 2px 2px 20px
+            box-shadow: black 2px 2px 20px;
             
             img{
                 width: 50px;

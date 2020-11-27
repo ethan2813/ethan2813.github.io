@@ -404,7 +404,7 @@
     text-align: unset;
   }
   main#main section#banner .content_3 .opening {
-    width: 80%;
+    width: 100%;
   }
   main#main section#banner .content_3 .opening h2 {
     margin-top: 10px;
@@ -416,7 +416,11 @@
     margin: 0;
   }
   main#main section#banner .content_3 .opening .table_opening {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  main#main section#banner .content_3 .opening .table_opening td.week_time {
+    font-size: 15px;
+    padding: 0;
   }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
@@ -575,7 +579,13 @@
 
 @media (max-width: 370px) {
   main#main section#banner .content_3 .opening {
-    width: 90%;
+    width: 100%;
+  }
+  main#main section#banner .content_3 .opening .table_opening {
+    font-size: 18px;
+  }
+  main#main section#banner .content_3 .opening .table_opening td {
+    padding: 10px 5px;
   }
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
