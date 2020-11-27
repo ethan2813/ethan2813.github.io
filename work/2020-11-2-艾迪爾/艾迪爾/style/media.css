@@ -545,6 +545,28 @@
   }
 }
 
+@media (min-width: 500px) {
+  main#pagi_main section#all-ceramic .article {
+    width: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  nav#nav .nav_countainer .logo {
+    width: 70%;
+  }
+  main#main section#banner .content_3 .opening {
+    width: 100%;
+  }
+  main#main section#banner .content_3 .opening .table_opening {
+    font-size: 16px;
+    width: 98%;
+  }
+  main#main section#banner .content_3 .opening .table_opening td {
+    padding: 8px 4px;
+  }
+}
+
 @media (max-width: 420px) {
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
@@ -555,28 +577,6 @@
   main#pagi_main section#all-ceramic .article {
     width: 95%;
     padding: 20px 15px;
-  }
-}
-
-@media (min-width: 500px) {
-  main#pagi_main section#all-ceramic .article {
-    width: 500px;
-  }
-}
-
-@media (max-width: 400px) {
-  nav#nav .nav_countainer .logo {
-    width: 70%;
-  }
-  main#main section#banner .content_3 .opening {
-    width: 100%;
-  }
-  main#main section#banner .content_3 .opening .table_opening {
-    font-size: 18px;
-    width: 98%;
-  }
-  main#main section#banner .content_3 .opening .table_opening td {
-    padding: 8px 6px;
   }
 }
 

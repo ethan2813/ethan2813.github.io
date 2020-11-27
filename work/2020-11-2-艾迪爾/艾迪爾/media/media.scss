@@ -801,6 +801,47 @@
       
     }
 }
+
+@media(min-width:500px){
+    main#pagi_main{
+        section#all-ceramic{
+            .article{
+                width: 500px;
+            }
+        }
+    }
+}
+@media(max-width:450px){
+    nav#nav{
+        .nav_countainer{
+            .logo{
+                width: 70%;
+            }
+        }
+    }
+
+    main#main{
+        section#banner{
+            .content_3{
+                .opening{
+                    width: 100%;
+
+                    .table_opening{
+                        font-size: 16px;
+                        width: 98%;
+
+                        td{
+                            padding: 8px 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    
+}
 @media(max-width:420px){
     main#main{
         section#team{
@@ -834,46 +875,6 @@
         }
     }
 
-    
-}
-@media(min-width:500px){
-    main#pagi_main{
-        section#all-ceramic{
-            .article{
-                width: 500px;
-            }
-        }
-    }
-}
-@media(max-width:400px){
-    nav#nav{
-        .nav_countainer{
-            .logo{
-                width: 70%;
-            }
-        }
-    }
-
-    main#main{
-        section#banner{
-            .content_3{
-                .opening{
-                    width: 100%;
-
-                    .table_opening{
-                        font-size: 18px;
-                        width: 98%;
-
-                        td{
-                            padding: 8px 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    
     
 }
 @media(max-width:350px){
