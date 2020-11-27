@@ -425,6 +425,9 @@
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
   }
+  main#main section#banner .content_3 .opening .text {
+    font-size: 16px;
+  }
   main#pagi_main section#pagi_banner .content .pagi_banner {
     display: none;
   }
@@ -562,8 +565,15 @@
     font-size: 16px;
     width: 98%;
   }
+  main#main section#banner .content_3 .opening .table_opening td.week_time {
+    width: 95px;
+    margin: 0;
+  }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 8px 4px;
+  }
+  main#main section#banner .content_3 .opening .table_opening td.week .week_in {
+    font-size: 15px;
   }
 }
 

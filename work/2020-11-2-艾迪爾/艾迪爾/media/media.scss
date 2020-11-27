@@ -623,6 +623,9 @@
                             padding: 3px 5px;
                         }
                     }
+                    .text{
+                        font-size: 16px;
+                    }
                 }
             }
            
@@ -829,9 +832,18 @@
                     .table_opening{
                         font-size: 16px;
                         width: 98%;
+                        td.week_time{
+                            width: 95px;
+                            margin: 0;
+                        }
 
                         td{
                             padding: 8px 4px;
+                        }
+                        td.week{
+                            .week_in{
+                                font-size: 15px;
+                            }
                         }
                     }
                 }
