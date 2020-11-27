@@ -854,6 +854,24 @@
         }
     }
 
+    main#main{
+        section#banner{
+            .content_3{
+                .opening{
+                    width: 100%;
+
+                    .table_opening{
+                        font-size: 18px;
+                        width: 98%;
+
+                        td{
+                            padding: 8px 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     
     
@@ -874,22 +892,7 @@
 }
 @media(max-width:370px){
     main#main{
-        section#banner{
-            .content_3{
-                .opening{
-                    width: 100%;
-
-                    .table_opening{
-                        font-size: 18px;
-                        width: 98%;
-
-                        td{
-                            padding: 8px 6px;
-                        }
-                    }
-                }
-            }
-        }
+        
         section#team{
             .content_{
                 .doctor_row{
