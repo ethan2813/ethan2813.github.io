@@ -615,8 +615,8 @@
                         font-size: 20px;
                         
                         td.week_time{
-                            font-size: 15px;
-                            padding: 0;
+                            font-size: 16px;
+                            padding: 0 3px;
                         }
                     
                         td{
@@ -881,9 +881,10 @@
 
                     .table_opening{
                         font-size: 18px;
+                        width: 98%;
 
                         td{
-                            padding: 10px 5px;
+                            padding: 8px 6px;
                         }
                     }
                 }

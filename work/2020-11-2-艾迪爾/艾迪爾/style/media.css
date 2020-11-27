@@ -419,8 +419,8 @@
     font-size: 20px;
   }
   main#main section#banner .content_3 .opening .table_opening td.week_time {
-    font-size: 15px;
-    padding: 0;
+    font-size: 16px;
+    padding: 0 3px;
   }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
@@ -583,9 +583,10 @@
   }
   main#main section#banner .content_3 .opening .table_opening {
     font-size: 18px;
+    width: 98%;
   }
   main#main section#banner .content_3 .opening .table_opening td {
-    padding: 10px 5px;
+    padding: 8px 6px;
   }
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
