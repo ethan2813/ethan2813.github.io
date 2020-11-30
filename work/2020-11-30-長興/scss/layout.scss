@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 微軟正黑體 ;
+    // background-color: bisque;
+}
+
+
+nav#nav{
+    position: fixed;
+    width: 100%;
+    // margin-top: 10px;
+    top: 0px;   
+
+    
+
+    .nav_content{
+        display: flex;
+        justify-content: center;
+        // margin-right: 50px;
+
+        //左邊選單
+        .nav_list_left{
+            display: flex; 
+            height: 100px;
+            align-items: center;
+            list-style-type: none;
+            margin-right: 260px;
+            li{
+                margin: 0 15px;
+                position: relative;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 150%;
+                    left: -15px;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    border-left:2px #b9b9b9  dashed;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: #55463e;
+                }
+            }
+        }
+
+        //又邊選單
+        .nav_list_right{
+            display: flex; 
+            height: 100px;
+            align-items: center;
+            list-style-type: none;
+
+            li{
+                margin: 0 15px;
+                position: relative;
+                //忽略最右邊的
+                &:not(:last-child):before{
+                    content: '';
+                    position: absolute;
+                    height: 150%;
+                    right: -15px;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    border-left:2px #b9b9b9  dashed;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: #55463e;
+
+                }
+            }
+            
+        }
+        //中間logo
+        .logo{
+            img{
+                width: 250px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,0);
+                
+               
+            }
+            
+        }
+        
+    }
+    
+}
