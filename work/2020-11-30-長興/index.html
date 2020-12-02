@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,8 @@
     <link rel="stylesheet" href="./style/media.css">
 
     <!-- bootstrapcdn -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
 </head>
@@ -27,20 +28,173 @@
             </div>
             <!-- 中間logo -->
             <div class="logo">
-                <img src="./img/資產 1.svg" alt="LOGO">
+                <img src="./img/logo.svg" alt="LOGO">
             </div>
             <!-- 右邊選單 -->
             <div class="nav_list_right">
                 <li><a href="#">醫師介紹</a></li>
                 <li><a href="#">線上預約</a></li>
                 <li><a href="#">聯絡我們</a></li>
-                <li><a href="#">&emsp;&emsp;&emsp;&emsp;  </a></li>
-            </div>  
-        </div>  
+                <li>&emsp;&emsp;&emsp;&emsp;</li>
+            </div>
+        </div>
     </nav>
 
     <main id='main'>
+        <!-- 最上面那條 -->
         <div class="top_line"></div>
+        <!-- BANNER -->
+        <div class="banner">
+            <!-- 左邊的雲 -->
+            <img class='banner_left' src="./img/left.png" alt="left雲">
+            <!-- 右邊的雲 -->
+            <img class='banner_right' src="./img/right.png" alt="right雲">
+            <div class="text">
+                <p>我們像大樹一般，</p>
+                <p>在蘆竹區發榮滋長。</p>
+                <p>全心全意的，</p>
+                <p>照拂攸關您牙齒的一切。</p>
+            </div>
+
+        </div>
+
+        <!-- 醫生 -->
+        <div class="doctor">
+            <div class="hourse">
+                <img src="./img/hourse_pc.svg" alt="hourse_pc">
+            </div>
+            <div class="countainer">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="doctor_1">
+                            <div class="doctor_1_content">
+                                <h2>洪振隆 醫師</h2>
+                                <p>高雄醫學大學牙醫學系畢業</p>
+                                <p>高雄醫學大學牙研所(在職進修班)牙周補綴組進修</p>
+                                <p>高棉實作植牙班十二期結業</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="countainer">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="photo_L">
+                            <img src="./img/photo_L.jpg" alt="photo_L">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="photo_M">
+                            <img src="./img/photo_M_1.jpg" alt="photo_M_1">
+                            <img src="./img/photo_M_2.jpg" alt="photo_M_2">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="photo_R">
+                            <img src="./img/photo_R.jpg" alt="photo_R">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="container">
+                <h2>最新消息</h2>
+                <h2>Latest news</h2>
+                <div class="row">
+                    <div class="col-12" style='z-index:3'>
+                        <a class='time_btn' href="#">
+                            <p>2020年12月門診時間</p>
+                        </a>
+                    </div>
+                    <div class="col-12" style='z-index:3'>
+                        <a class='time_btn' href="#">
+                            <p>2020年11月門診時間</p>
+                        </a>
+                    </div>
+                    <div class="col-12" style='z-index:3'>
+                        <a class='time_btn' href="#">
+                            <p>2020年10月門診時間</p>
+                        </a>
+                    </div>
+                    <div class="col-12" style='z-index:3'>
+                        <a class='time_btn' href="#">
+                            <p>2020年09月門診時間</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <img src="./img/news_back.svg" alt="news_back"> -->
+
+
+        </div>
+        <div class="items">
+            <div class="container">
+                <div class="items_title">
+                    <h2>診療項目</h2>
+                    <p>Treatment items</p>
+                </div>
+            </div>
+            <!-- 人工植牙 -->
+            <div class="item_1">
+                <div class="container">
+                    <!-- 標題 -->
+                    <div class="item_1_title">
+                        <h2>人工植牙</h2>
+                        <p>Artificial dental implant</p>
+                    </div>
+
+                    <!-- 內容 -->
+                    <div class="content">
+                        <p>牙齒缺損想要恢復昔日的美觀及功能，人工植牙是您明智的選擇！</p>
+                        <p>透過在缺牙處植入生物相容性良好植體，取代失去的牙根，植體與骨頭緊密結合後，於其上方置上假牙牙冠，便具有牙齒牙根之功能，得以承受一般咬合的力量取代原喪失的牙齒，恢復美觀及正常咀嚼功能，讓您的牙齒得以恢復往日風采！
+                        </p>
+                        <br>
+                        <p>透過專業醫師進行療程評估後，將與您討論最佳的植牙治療方案，解決您的疑難雜症，讓您不再恐懼植牙，搭配完善的醫療設備及醫師的專業技術進行療程，讓您的笑容和往常一樣燦爛耀眼！
+                        </p>
+                    </div>
+
+
+                    <div class="btn_1">
+                        <a class='btn_title' data-toggle='collapse' href='#menu_1'>
+                            <p>以下關於人工植牙的問答，幫助您判斷自己到底是不適合人工植牙：</p>
+                            <div class="icons"><span></span><span></span></div>
+                        </a>
+                        <div class="collapse_content collapse" id='menu_1'>
+                            <div class="card">
+                                <h3>gfdhgjhdfkjghkdghjdfhgdhglhdghdflghjkdghjkldhgjdhjghdfjghuilgfjdghergnfdjhgjghfgkjghreihrjghlh
+                                </h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div style='height: 200vh;'></div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
     </main>
 
 
@@ -57,10 +211,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    
 
     <!-- js掛載 -->
     <script src="./js/index.js"></script>
@@ -71,4 +225,5 @@
         new WOW().init();
     </script>
 </body>
+
 </html>

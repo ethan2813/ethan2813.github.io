@@ -11,12 +11,26 @@ body{
     // background-color: bisque;
 }
 
+@font-face{
+    font-family:myweb; src: url(../font/NotoSerifCJKtc-SemiBold.otf);
+}
+
+//有包含col的全部class
+div[class*="col"]{
+    padding: 0;
+}
+
+.row{
+    margin: 0!important;
+}
+
 
 nav#nav{
     position: fixed;
     width: 100%;
     // margin-top: 10px;
     top: 0px;   
+    z-index: 2;
 
     
 

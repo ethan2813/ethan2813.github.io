@@ -12,10 +12,24 @@ body {
   font-family: 微軟正黑體;
 }
 
+@font-face {
+  font-family: myweb;
+  src: url(../font/NotoSerifCJKtc-SemiBold.otf);
+}
+
+div[class*="col"] {
+  padding: 0;
+}
+
+.row {
+  margin: 0 !important;
+}
+
 nav#nav {
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 2;
 }
 
 nav#nav .nav_content {
