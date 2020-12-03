@@ -117,3 +117,25 @@ nav#nav{
     }
     
 }
+
+footer#footer{
+    .block_{
+        >div{
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: 18px;
+                color: black;
+            }
+            a{
+                color: #808080;
+                text-decoration: none;
+                // list-style: none;
+            }
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

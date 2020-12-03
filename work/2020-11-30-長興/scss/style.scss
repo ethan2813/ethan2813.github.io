@@ -152,16 +152,16 @@ main#main{
             text-decoration: none;
             margin-bottom: 20px;
             z-index: 3;
-            
+            color: #808080;
 
-            p{
-                margin: 0;
-                font-size: 18px;
+
+            &:visited{
                 color: #a7c464;
                 
                 
             }
             
+
             
 
 
@@ -364,8 +364,11 @@ main#main{
         background-image: url(../img/map.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
+        background-size: contain;
         padding-bottom: 10vw;
         box-shadow: grey 0px -10px 20px -15px;
+        position: relative;
+
         .contact_us_from{
             padding: 10%;          
             position: relative;
@@ -385,7 +388,7 @@ main#main{
                     border-bottom-style:dashed;
                     border-width:2px;
                     width: 100%;
-                    padding: 12px 20px;
+                    padding: 25px 20px 5px 20px;
                     // margin: 8px 0;
                     outline: none;
                     transition: 1s;
@@ -395,8 +398,7 @@ main#main{
                 // 預約項目
                 .from_items{
                     width: 100%;
-                    padding: 12px 20px;
-                    // margin: 8px 0;
+                    padding: 25px 20px 5px 20px;
                     border-style: none;
                     border-bottom-style:dashed;
                     border-color: #cecece;
@@ -414,8 +416,7 @@ main#main{
                 .from_time{
                   
                     width: 100%;
-                    padding: 12px 20px;
-                    // margin: 8px 0;
+                    padding: 25px 20px 5px 20px;
                     border-style: none;
                     border-bottom-style:dashed;
                     border-color: #cecece;
@@ -442,6 +443,7 @@ main#main{
                     color: white;
                     font-size: 26px;
                     cursor: pointer;
+                    z-index: 3;
                 }
     
                 #bodyText{
@@ -453,6 +455,25 @@ main#main{
                 }
             }
         }
+
+        .back_img{
+            width: 100%;
+                position: absolute;
+                right: 0;
+                top: 20%;
+                z-index: -1;
+            
+        }
+        
+        
+    }
+
+    .bot_color{
+        // position: absolute;
+        bottom: -10vh;
+        height: 10vh;
+        width: 100%;
+        background-color: #f2eee4;
     }
 
 

@@ -151,11 +151,10 @@ main#main .news a.time_btn {
   text-decoration: none;
   margin-bottom: 20px;
   z-index: 3;
+  color: #808080;
 }
 
-main#main .news a.time_btn p {
-  margin: 0;
-  font-size: 18px;
+main#main .news a.time_btn:visited {
   color: #a7c464;
 }
 
@@ -369,9 +368,11 @@ main#main .label_ {
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
   padding-bottom: 10vw;
   -webkit-box-shadow: grey 0px -10px 20px -15px;
           box-shadow: grey 0px -10px 20px -15px;
+  position: relative;
 }
 
 main#main .label_ .contact_us_from {
@@ -391,7 +392,7 @@ main#main .label_ .contact_us_from .email_box #nameText, main#main .label_ .cont
   border-bottom-style: dashed;
   border-width: 2px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 25px 20px 5px 20px;
   outline: none;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -401,7 +402,7 @@ main#main .label_ .contact_us_from .email_box #nameText, main#main .label_ .cont
 
 main#main .label_ .contact_us_from .email_box .from_items {
   width: 100%;
-  padding: 12px 20px;
+  padding: 25px 20px 5px 20px;
   border-style: none;
   border-bottom-style: dashed;
   border-color: #cecece;
@@ -415,7 +416,7 @@ main#main .label_ .contact_us_from .email_box .from_items > input {
 
 main#main .label_ .contact_us_from .email_box .from_time {
   width: 100%;
-  padding: 12px 20px;
+  padding: 25px 20px 5px 20px;
   border-style: none;
   border-bottom-style: dashed;
   border-color: #cecece;
@@ -445,6 +446,7 @@ main#main .label_ .contact_us_from .email_box input.submit {
   color: white;
   font-size: 26px;
   cursor: pointer;
+  z-index: 3;
 }
 
 main#main .label_ .contact_us_from .email_box #bodyText {
@@ -452,4 +454,19 @@ main#main .label_ .contact_us_from .email_box #bodyText {
   margin: 8px 0;
   border-color: #cecece;
   outline: none;
+}
+
+main#main .label_ .back_img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: -1;
+}
+
+main#main .bot_color {
+  bottom: -10vh;
+  height: 10vh;
+  width: 100%;
+  background-color: #f2eee4;
 }

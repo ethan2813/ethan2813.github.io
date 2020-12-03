@@ -130,3 +130,30 @@ nav#nav .nav_content .logo img {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
+
+footer#footer .block_ > div {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer#footer .block_ > div h3 {
+  font-size: 18px;
+  color: black;
+}
+
+footer#footer .block_ > div a {
+  color: #808080;
+  text-decoration: none;
+}
+
+footer#footer .block_ > div img {
+  width: 100px;
+}
