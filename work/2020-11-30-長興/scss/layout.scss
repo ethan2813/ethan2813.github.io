@@ -10,6 +10,9 @@ body{
     font-family: 微軟正黑體 ;
     // background-color: bisque;
 }
+p{
+    color: #808080;
+}
 
 @font-face{
     font-family:myweb; src: url(../font/NotoSerifCJKtc-SemiBold.otf);
@@ -30,7 +33,7 @@ nav#nav{
     width: 100%;
     // margin-top: 10px;
     top: 0px;   
-    z-index: 2;
+    z-index: 99;
 
     
 

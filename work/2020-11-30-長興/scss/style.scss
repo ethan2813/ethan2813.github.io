@@ -173,6 +173,9 @@ main#main{
     //診療項目
     .items{
         
+        &:last-of-type{
+            margin-bottom: 80px;
+        }
         .items_title{
 
             padding: 100px 0 80px 0;
@@ -187,146 +190,270 @@ main#main{
             }
         }
         //人工植牙
-        >.item_1{
+        >.item_{
             box-shadow: grey 0px -10px 20px -15px;
 
-            
-            .item_1_title{
-                padding: 50px 0 20px 0;
-                position: relative;
-
-                &:before{
-                    content: '';
-                    top: -5px;
-                    position: absolute;
-                    width: 135px;
-                    height: 10px;
-                    background-color: #a7c464;
-                }
-                h2{
-                    font-size: 32px; 
-                }
-                >p{
-                    font-size: 26px;
-                    font-weight: 300;
-                    margin-bottom: 0;
-                }
+            &:last-of-type{
+                margin-bottom: 80px;
             }
-            //內容
-            .content{
-                padding: 20px 0;
-                position: relative;
-                max-width: 920px;
-                
-
-
-                &:before,&:after{
-                    content: '';
-                    position: absolute;
-                    border-top-style: dashed;
-                    width: 100%;
-                    border-width:2px;
-                    border-color:rgb(206, 206, 206);
-                }
-                &:before{
-                    top: 0;
-                }
-                &:after{
-                    bottom: 0;
-                }
-
-
-
-                >p{
-                    font-size: 18px;
-                    color: #808080;
-                    margin: 0;
-                    letter-spacing: 1px;
-                    max-width: 735px;
-
-                    
-                }
-
-            }
-                       //手風琴2
-            .btn_1{
-                max-width: 815px;
-                .btn_title{
-                    position: relative;
-                    width: 100%;
-                    border-radius: 50px;
-                    background-color: #a7c464;
-                    outline: none;
-                    border: none;
-                    height: 65px;
-                    display: flex;
+            .dis_flex{
+                display: flex;
+                flex-direction: column;
+                //如果有+這class，會置中
+                &.align_center{
                     align-items: center;
-                    z-index: 3;
-                    justify-content: space-around;
-
-                    
-                    
-                    p{
-                        color: white;
-                        font-size: 23px;
-                        margin: 0;
-                    }
-                    .icons{
-                        // position: absolute;
-                        // right: 12px;
-                        span{
-                            display: block;
-                            width: 20px;
-                            height: 2px;
-                            background-color: white;
-                            transition: transform .2s ease;
-
-                            &:last-of-type{
-                            transform: rotate(90deg) translateX(-2px);
-                            }
-                        }
-                    }
-                    &.active .icons{
-                        span{
-                            &:first-of-type{
-                                transform: rotate(180deg);
-                            }
-                            &:last-of-type{
-                                transform: rotate(0) translateY(-2px);
-                            }
-                        }
-                    }
-                    
                 }
-                
-                .collapse{
-                    .card{
-                        border: 2px #a7c464 solid;
-                        border-radius: 20px;
-                        // top: -50px;
-                        outline: none;
-                        z-index: -1;
+                .content{
+                    display: inline-block;
+                    //標題
+                    .item_title{
+                        padding: 50px 0 20px 0;
+                        position: relative;
+        
+                        &:before{
+                            content: '';
+                            top: -5px;
+                            position: absolute;
+                            width: 135px;
+                            height: 10px;
+                            background-color: #a7c464;
+                        }
+                        h2{
+                            font-size: 32px; 
+                        }
+                        >p{
+                            font-size: 26px;
+                            font-weight: 300;
+                            margin-bottom: 0;
+                        }
+                    }
+                    //內容
+                    .content{
+                        padding: 20px 0;
+                        position: relative;
+                        max-width: 920px;
                         
-                        h3{
-                            margin-top: 50px;
+        
+        
+                        &:before,&:after{
+                            content: '';
+                            position: absolute;
+                            border-top-style: dashed;
+                            width: 100%;
+                            border-width:2px;
+                            border-color:rgb(206, 206, 206);
                         }
-
+                        &:before{
+                            top: 0;
+                        }
+                        &:after{
+                            bottom: 0;
+                        }
+        
+        
+        
+                        >p{
+                            font-size: 18px;
+                            color: #808080;
+                            margin: 0;
+                            letter-spacing: 1px;
+                            max-width: 735px;
+        
+                            
+                        }
+        
                     }
+                    //手風琴
+                    .collapse_{
+                        margin: 60px 0  100px 0 ;
+                        // position: relative;
+                        z-index: 2;
+                        //標題
+                        .title-box{
+                            // border: 1px solid #CCC;
+                            background-color: #a7c464;
+                            color: white;
+                            padding: 12px;
+                            position: relative;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            cursor: pointer;
+                            border-radius: 30px;
+                            max-width: 810px;
+                            .title{
+                                pointer-events: none;
+                                font-size: 23px;
+                            }
+                           
+                           
+                            .icons{
+                                pointer-events: none;
+                                position: absolute;
+                                right: 12px;
+                                span{
+                                    display: block;
+                                    width: 20px;
+                                    height: 2px;
+                                    background-color: white;
+                                    transition: transform .2s ease;
+        
+                                    &:last-of-type{
+                                    transform: rotate(90deg) translateX(-2px);
+                                    }
+                                }
+                            }
+                            &.active .icons{
+                                span{
+                                    &:first-of-type{
+                                        transform: rotate(180deg);
+                                    }
+                                    &:last-of-type{
+                                        transform: rotate(0) translateY(-2px);
+          
+                                    }
+                                }
+                            }
+        
+                        }
+                        //內容
+                        .contents-box{
+                            // position: absolute;
+                            // z-index: -1;
+                            // top: 50%;
+                            max-width: 810px;
+                            overflow: hidden;
+                            border-top: none;
+                            border-bottom: none;
+                            transition: height .3s ease;
+                            .contents{
+                                padding: 12px;
+                                border: 2px solid #a7c464;
+                                border-radius: 10px;
+                                h3{
+                                    font-size: 18px;
+                                    color: #a7c464;
+                                    margin-top: 55px;
+                                }
+                                p{
+                                    font-size: 18px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 18px;
+                                        color: #808080;
+                                         margin: 10px 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
                 }
-                .collapsing{
-                    border: 2px #a7c464 solid;
-                    border-radius: 20px;
-                    // top: -50px;
-                    z-index: -1;
-                    outline: none;
 
-                    padding-top: 50px;
-                } 
             }
+            
 
-
+            
+            
         }
     }
 
-   
+    //聯絡我們
+    .label_{
+        background-image: url(../img/map.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 10vw;
+        box-shadow: grey 0px -10px 20px -15px;
+        .contact_us_from{
+            padding: 10%;          
+            position: relative;
+            background-color: white;
+            height: 100%;
+            .title{
+                h2{
+                    color: #a7c464;
+                    font-size: 32px;
+                }
+            }
+            .email_box{
+
+                // 寄件者姓名、電話、email
+                #nameText,#telText,#emailText{
+                    border-style: none;
+                    border-bottom-style:dashed;
+                    border-width:2px;
+                    width: 100%;
+                    padding: 12px 20px;
+                    // margin: 8px 0;
+                    outline: none;
+                    transition: 1s;
+                    border-color: #cecece;
+                    
+                }
+                // 預約項目
+                .from_items{
+                    width: 100%;
+                    padding: 12px 20px;
+                    // margin: 8px 0;
+                    border-style: none;
+                    border-bottom-style:dashed;
+                    border-color: #cecece;
+                    border-width:2px;
+                    color: #7a7a7a;
+    
+                    >input{
+                        margin: 0 2px 0 10px;
+                        // background-color: #a8a8a8;
+                        
+                        
+                    }
+                }
+                // 約診時段
+                .from_time{
+                  
+                    width: 100%;
+                    padding: 12px 20px;
+                    // margin: 8px 0;
+                    border-style: none;
+                    border-bottom-style:dashed;
+                    border-color: #cecece;
+                    border-width:2px;
+                    color: #7a7a7a;
+                    >input{
+                        margin: 0 2px 0 10px;
+                    }
+                }
+
+                //傳送按鈕
+                input.submit{
+                    position: absolute;
+                    transform: translate(-50%, 50%);
+                    left: 50%;
+                    bottom: 0;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    outline: none;
+                    border: none;
+                    background-color: #a7c464;
+                    box-shadow: 2px 2px 10px gray;
+                    color: white;
+                    font-size: 26px;
+                    cursor: pointer;
+                }
+    
+                #bodyText{
+                    width: 100%;
+                    margin: 8px 0;
+                    border-color: #cecece;
+                    outline: none;
+
+                }
+            }
+        }
+    }
+
+
 }
