@@ -100,3 +100,73 @@
         }
     }
 }
+
+@media(max-width:768px){
+    
+    footer#footer{
+        padding-top: 10px;
+
+        .footer_top{
+            display: flex;
+            flex-direction: column;
+
+            .block_{
+                >div{
+                    h3{
+                        margin: 20px 0 10px 0;
+                    }
+                    hr{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    main#main{
+        .doctor{
+            .doctor_1{
+                margin-bottom: 50px;
+                padding: 0 15px;
+                .doctor_1_content{
+                    
+                    p{
+                        font-size: 18px;
+                        line-height: 20px;
+
+                        br.br_{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .news{
+            p{
+                font-size: 18px;
+            }
+        }
+        .items{
+            .items_title{
+                >p{
+                    font-size: 18px;
+                }
+            }
+            .item_{
+                .dis_flex{
+                    .content_{
+                        .content{}
+                        
+                        .item_title{
+                            >p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -54,6 +54,10 @@ main#main .doctor {
   margin-top: 5%;
 }
 
+main#main .doctor .hourse {
+  position: relative;
+}
+
 main#main .doctor .hourse img.hourse_pc {
   width: 100%;
   display: block;
@@ -61,6 +65,16 @@ main#main .doctor .hourse img.hourse_pc {
 
 main#main .doctor .hourse img.hourse_mobile {
   display: none;
+}
+
+main#main .doctor .hourse .leaf {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  max-width: 15%;
 }
 
 main#main .doctor .doctor_1 {
@@ -89,6 +103,10 @@ main#main .doctor .doctor_1 .doctor_1_content h2 {
 main#main .doctor .doctor_1 .doctor_1_content p {
   font-size: 22px;
   line-height: 15px;
+}
+
+main#main .doctor .doctor_1 .doctor_1_content p br.br_ {
+  display: none;
 }
 
 main#main .photo .photo_L img {
@@ -134,11 +152,11 @@ main#main .news h2:nth-child(1) {
   z-index: 3;
 }
 
-main#main .news h2:nth-child(2) {
-  margin-bottom: 25px;
+main#main .news p {
   font-size: 26px;
   font-weight: 300;
   z-index: 3;
+  margin-bottom: 25px;
 }
 
 main#main .news > img {
@@ -358,7 +376,7 @@ main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents h3 {
   font-size: 18px;
   color: #a7c464;
-  margin-top: 20px;
+  margin-top: 30px;
   letter-spacing: 1px;
 }
 
