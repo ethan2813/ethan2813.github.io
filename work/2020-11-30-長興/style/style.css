@@ -11,7 +11,7 @@ main#main .banner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 70px auto 0 auto;
+  margin: 60px auto 0 auto;
   position: relative;
 }
 
@@ -35,17 +35,18 @@ main#main .banner .text {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  top: 40%;
+  top: 60%;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
+  height: 100%;
 }
 
 main#main .banner .text p {
   font-family: myweb;
   font-size: 28px;
   line-height: 15px;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   color: #55463e;
 }
 
@@ -53,8 +54,13 @@ main#main .doctor {
   margin-top: 5%;
 }
 
-main#main .doctor .hourse img {
+main#main .doctor .hourse img.hourse_pc {
   width: 100%;
+  display: block;
+}
+
+main#main .doctor .hourse img.hourse_mobile {
+  display: none;
 }
 
 main#main .doctor .doctor_1 {
@@ -272,7 +278,7 @@ main#main .items > .item_ .dis_flex .content .collapse_ {
 main#main .items > .item_ .dis_flex .content .collapse_ .title-box {
   background-color: #a7c464;
   color: white;
-  padding: 12px;
+  padding: 12px 60px 12px 25px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -299,7 +305,7 @@ main#main .items > .item_ .dis_flex .content .collapse_ .title-box .title {
 main#main .items > .item_ .dis_flex .content .collapse_ .title-box .icons {
   pointer-events: none;
   position: absolute;
-  right: 12px;
+  right: 25px;
 }
 
 main#main .items > .item_ .dis_flex .content .collapse_ .title-box .icons span {
@@ -333,6 +339,7 @@ main#main .items > .item_ .dis_flex .content .collapse_ .title-box.active .icons
 }
 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box {
+  margin-top: 15px;
   max-width: 810px;
   overflow: hidden;
   border-top: none;
@@ -343,7 +350,7 @@ main#main .items > .item_ .dis_flex .content .collapse_ .contents-box {
 }
 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents {
-  padding: 12px;
+  padding: 0 25px;
   border: 2px solid #a7c464;
   border-radius: 10px;
 }
@@ -351,17 +358,20 @@ main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents h3 {
   font-size: 18px;
   color: #a7c464;
-  margin-top: 55px;
+  margin-top: 20px;
+  letter-spacing: 1px;
 }
 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents p {
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
 main#main .items > .item_ .dis_flex .content .collapse_ .contents-box .contents ul li {
   font-size: 18px;
   color: #808080;
-  margin: 10px 0;
+  margin: 5px 0;
+  letter-spacing: 1px;
 }
 
 main#main .label_ {

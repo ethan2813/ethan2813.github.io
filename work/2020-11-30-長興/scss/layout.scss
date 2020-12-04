@@ -34,6 +34,15 @@ nav#nav{
     // margin-top: 10px;
     top: 0px;   
     z-index: 99;
+    transition:  0.5s ease-in-out;
+
+
+    &.move{
+        background-color: white;
+        // box-shadow: 2px 2px 5px  black;
+        box-shadow: grey 10px 10px 20px -15px;
+
+    }
 
     
 
@@ -45,7 +54,8 @@ nav#nav{
         //左邊選單
         .nav_list_left{
             display: flex; 
-            height: 100px;
+            // height: 100px;
+            height: 85px;
             align-items: center;
             list-style-type: none;
             margin-right: 260px;
@@ -67,6 +77,25 @@ nav#nav{
                     font-size: 16px;
                     font-weight: 900;
                     color: #55463e;
+                    position: relative;
+
+                    &:after{
+                        transition: 1s ease-in-out;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        width: 0;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0px;
+                        background-color: #4d4d4d;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    
+                   
+                    }
+                    
                 }
             }
         }
@@ -74,7 +103,9 @@ nav#nav{
         //又邊選單
         .nav_list_right{
             display: flex; 
-            height: 100px;
+            // height: 100px;
+            height: 85px;
+
             align-items: center;
             list-style-type: none;
 
@@ -97,21 +128,50 @@ nav#nav{
                     font-weight: 900;
                     color: #55463e;
 
+                    &:after{
+                        transition: 1s ease-in-out;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        width: 0;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0px;
+                        background-color: #4d4d4d;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    
+                   
+                    }
+
                 }
             }
             
         }
         //中間logo
         .logo{
-            img{
+            img.logo{
                 width: 250px;
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%,0);
+            }
+            img.mobile_logo{
                 
-               
+                display: none;
+                
             }
             
+        }
+
+        //漢堡條
+        .burger{
+            display: none;
+        }
+        //手機板清單
+        .mobile_nav_list{
+            display: none;
         }
         
     }

@@ -15,7 +15,7 @@ main#main{
         // background-position: 50% 0%;
         background-position: center;
         background-repeat: no-repeat;
-        margin: 70px auto 0 auto;
+        margin: 60px auto 0 auto;
         position: relative;
          
 
@@ -38,15 +38,17 @@ main#main{
             position: absolute;
             transform: translate(-50%,-50%);
             left: 50%;
-            top: 40%;
+            top: 60%;
             writing-mode: vertical-lr;
+            height: 100%;
 
             p{
                 font-family: myweb;
                 font-size: 28px;
                 line-height: 15px;
-                letter-spacing: 7px;
+                letter-spacing: 5px;
                 color: #55463e;
+                
             }
         }
     }
@@ -56,8 +58,12 @@ main#main{
         
         margin-top: 5%;
         .hourse{
-            img{
+            img.hourse_pc{
                 width: 100%;
+                display: block;
+            }
+            img.hourse_mobile{
+                display: none;
             }
         }
         .doctor_1{
@@ -157,8 +163,6 @@ main#main{
 
             &:visited{
                 color: #a7c464;
-                
-                
             }
             
 
@@ -273,7 +277,7 @@ main#main{
                             // border: 1px solid #CCC;
                             background-color: #a7c464;
                             color: white;
-                            padding: 12px;
+                            padding: 12px 60px 12px 25px;
                             position: relative;
                             display: flex;
                             justify-content: space-between;
@@ -290,7 +294,7 @@ main#main{
                             .icons{
                                 pointer-events: none;
                                 position: absolute;
-                                right: 12px;
+                                right: 25px;
                                 span{
                                     display: block;
                                     width: 20px;
@@ -321,28 +325,33 @@ main#main{
                             // position: absolute;
                             // z-index: -1;
                             // top: 50%;
+                            margin-top: 15px;
                             max-width: 810px;
                             overflow: hidden;
                             border-top: none;
                             border-bottom: none;
                             transition: height .3s ease;
                             .contents{
-                                padding: 12px;
+                                padding:  0 25px;
                                 border: 2px solid #a7c464;
                                 border-radius: 10px;
                                 h3{
                                     font-size: 18px;
                                     color: #a7c464;
-                                    margin-top: 55px;
+                                    margin-top: 20px;
+                                    letter-spacing: 1px;
                                 }
                                 p{
                                     font-size: 18px;
+                                    letter-spacing: 1px;
+
                                 }
                                 ul{
                                     li{
                                         font-size: 18px;
                                         color: #808080;
-                                         margin: 10px 0;
+                                         margin: 5px 0;
+                                         letter-spacing: 1px;
                                     }
                                 }
                             }

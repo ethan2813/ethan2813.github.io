@@ -1,5 +1,6 @@
-window.addEventListener('DOMContentLoaded', () => {
 
+//手風琴效果
+window.addEventListener('DOMContentLoaded', () => {
     // 寫入各 .content-box 的高，然後高度設成 0
     const contents = document.querySelectorAll('.collapse_ .contents-box');
     Array.prototype.forEach.call(contents, c => {
@@ -39,7 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //宣告預設表單內容為空 （你想要的話也可以加東西）
 var initBody = '';
-
 //按下傳送按鈕後執行
 function submitHandler() {
 
@@ -84,7 +84,7 @@ function submitHandler() {
     // console.log(items_checkedValue)
     // console.log(email)
 
-    
+
     //把user填的資料都塞到 mail body 中
     // var body = "" + bodyText.value + '%0A%0A%0A';//%0A是換行 換了三行
     var body = '%0A%0A%0A';//%0A是換行 換了三行
@@ -94,7 +94,7 @@ function submitHandler() {
     body += '預約項目：' + items_checkedValue + '%0A';
     body += '約診時段：' + time_checkedValue + '%0A';
 
-    
+
 
 
     //傳送的主要程式碼
@@ -107,3 +107,25 @@ function init() {
     toText.value = initTo;
     bodyText.value = initBody;
 }
+
+
+//nav 縮效果
+let lastCcrllTop = 0;
+let nav = document.querySelector('#nav')
+
+$(window).scroll(() => {
+    if ($(this).scrollTop() > 10) {
+        console.log('123')
+        nav.classList.add('move')
+    } else {
+        nav.classList.remove('move')
+    }
+})
+
+//漢堡條效果
+$('.burger').on('click',(e)=>{
+    // console.log(e.currentTarget)
+    $(e.currentTarget).toggleClass('burger_active')
+    $('.mobile_nav_list').toggleClass('nav_active')
+
+})
