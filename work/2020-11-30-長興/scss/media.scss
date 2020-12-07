@@ -102,7 +102,20 @@
 }
 
 @media(max-width:768px){
-    
+    main#main{
+        .items{
+            .item_{
+                .dis_flex{
+                    .content_{
+                        .collapse_{
+                            margin: 30px 0 50px 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
     footer#footer{
         padding-top: 10px;
 
@@ -168,13 +181,16 @@
                             }
                         }
                         .collapse_ {
+                            margin: 20px 0 20px 0;
                             .title-box{
+                                
                                .title{
                                     font-size: 16px;
                                }
                             }
                             .contents-box {
                                 .contents{
+                                    padding: 0 15px;
                                     h3{
                                         font-size: 16px;
                                     }
@@ -190,6 +206,29 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        .label_{
+            background-image: none;
+            padding-bottom: unset;
+            .contact_us_from{
+                padding: 10% 15px 25% 15px;
+                
+
+                .email_box{
+                    // 寄件者姓名、電話、email
+                    #nameText,#telText,#emailText{
+                        padding: 25px 0px 5px 0px;
+                    }
+                    // 預約項目
+                    .from_items{
+                        padding: 25px 0px 5px 0px;
+                    }
+                    // 約診時段
+                    .from_time{
+                        padding: 25px 0px 5px 0px;
                     }
                 }
             }
