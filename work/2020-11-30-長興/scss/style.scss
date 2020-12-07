@@ -68,10 +68,11 @@ main#main{
             }
             .leaf{
                 position: absolute;
-                top: 0;
+                top: -50%;
                 left: 1%;
-                transform: translate(0%,-50%);
+                // transform: translate(0%,-50%);
                 max-width: 15%;
+                // animation: fadeInDown  3s ease-in-out;
             }
         }
         .doctor_1{
@@ -121,6 +122,9 @@ main#main{
         .photo_R{
             img{
                 width: 100%;
+            }
+            >img:nth-child(2){
+                display: none;
             }
         }
     }
@@ -392,6 +396,11 @@ main#main{
         padding-bottom: 10vw;
         box-shadow: grey 0px -10px 20px -15px;
         position: relative;
+
+        
+        .photo_mobile{
+            display: none;
+        }
 
         .contact_us_from{
             padding: 10%;          

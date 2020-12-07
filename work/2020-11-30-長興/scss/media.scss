@@ -100,6 +100,18 @@
         }
     }
 }
+@media(max-width:992px){
+    main#main {
+        .label_{
+            .photo_mobile{
+                display: block;
+            }
+            .photo_pc{
+                display: none;
+            }
+        }
+    }
+}
 
 @media(max-width:768px){
     main#main{
@@ -235,3 +247,18 @@
         }
     }
 }
+
+@media(max-width:576px){
+    main#main{
+        .photo{
+            .photo_R{
+                img:nth-child(1){
+                    display: none;
+                }
+                img:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+    }
+    }

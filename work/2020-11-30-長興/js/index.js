@@ -102,11 +102,11 @@ function submitHandler() {
     mailTo.click();
 }
 //在body onload
-function init() {
-    subText.value = initSubject;
-    toText.value = initTo;
-    bodyText.value = initBody;
-}
+// function init() {
+//     subText.value = initSubject;
+//     toText.value = initTo;
+//     bodyText.value = initBody;
+// }
 
 
 //nav 縮效果

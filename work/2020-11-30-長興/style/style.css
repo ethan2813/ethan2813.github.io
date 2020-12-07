@@ -69,11 +69,8 @@ main#main .doctor .hourse img.hourse_mobile {
 
 main#main .doctor .hourse .leaf {
   position: absolute;
-  top: 0;
+  top: -50%;
   left: 1%;
-  -webkit-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
   max-width: 15%;
 }
 
@@ -131,6 +128,10 @@ main#main .photo .photo_M img {
 
 main#main .photo .photo_R img {
   width: 100%;
+}
+
+main#main .photo .photo_R > img:nth-child(2) {
+  display: none;
 }
 
 main#main .news {
@@ -401,6 +402,10 @@ main#main .label_ {
   -webkit-box-shadow: grey 0px -10px 20px -15px;
           box-shadow: grey 0px -10px 20px -15px;
   position: relative;
+}
+
+main#main .label_ .photo_mobile {
+  display: none;
 }
 
 main#main .label_ .contact_us_from {
