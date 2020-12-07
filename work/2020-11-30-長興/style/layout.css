@@ -195,6 +195,17 @@ footer#footer {
   padding-top: 50px;
 }
 
+footer#footer #gototop img {
+  position: fixed;
+  right: 5px;
+  bottom: 90px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 footer#footer .footer_top .block_ > div {
   display: -webkit-box;
   display: -webkit-flex;
