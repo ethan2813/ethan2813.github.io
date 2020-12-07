@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  height: 200vh;
 }
 
 * {
@@ -341,6 +342,6 @@ footer#footer .copyright p {
   color: white;
 }
 
-footer#footer .copyright p p:nth-child(1) {
+footer#footer .copyright p:nth-child(1) {
   margin-bottom: 3px;
 }

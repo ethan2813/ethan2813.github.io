@@ -51,9 +51,8 @@ function submitHandler() {
     // var items_checkedValue = document.querySelector('.itemText:checked').value;  
 
     // var message = bodyText.value;
-    // var subject = subText;
+    // var subject = subText.value;
 
-    console.log(subject)
 
 
     //如果預約項目的checked數量等於0
@@ -102,13 +101,12 @@ function submitHandler() {
     mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
     mailTo.click();
 }
-// console.log(subText.Value)
 //在body onload
-// function init() {
-//     subText.value = initSubject;
-//     toText.value = initTo;
-//     bodyText.value = initBody;
-// }
+function init() {
+    subText.value = initSubject;
+    toText.value = initTo;
+    bodyText.value = initBody;
+}
 
 
 //nav 縮效果
@@ -130,19 +128,4 @@ $('.burger').on('click',(e)=>{
     $(e.currentTarget).toggleClass('burger_active')
     $('.mobile_nav_list').toggleClass('nav_active')
 
-})
-
-//totop
-$('#gototop').on('click', () => {
-    $('html,body').animate({ scrollTop: 0 }, 300);
-})
-
-//totop隱藏效果
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 400) {
-        $('#gototop').fadeIn(200);
-    } else {
-        $('#gototop').stop().fadeOut(200)
-    }
-    // console.log($(this).scrollTop())
 })

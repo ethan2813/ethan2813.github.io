@@ -182,18 +182,6 @@ footer#footer{
     box-shadow: grey 2px 2px 15px -2px inset;
     padding-top: 50px;
 
-    #gototop{
-        img{
-            position: fixed;
-            right: 5px;
-            bottom: 90px;
-            z-index: 5;
-            width: 60px;
-            height: auto;
-            opacity: 0.9;
-            cursor: pointer;
-        }
-    }
     .footer_top{
         .block_{
             >div{

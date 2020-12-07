@@ -72,7 +72,7 @@ var swiper = new Swiper('.swiper-container', {
         } else {
             $('#gototop').stop().fadeOut(200)
         }
-        // console.log($(this).scrollTop())
+        console.log($(this).scrollTop())
     })
 })();
 
