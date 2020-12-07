@@ -157,11 +157,37 @@
             .item_{
                 .dis_flex{
                     .content_{
-                        .content{}
-                        
                         .item_title{
                             >p{
                                 font-size: 18px;
+                            }
+                        }
+                        .content{
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                        .collapse_ {
+                            .title-box{
+                               .title{
+                                    font-size: 16px;
+                               }
+                            }
+                            .contents-box {
+                                .contents{
+                                    h3{
+                                        font-size: 16px;
+                                    }
+                                    p{
+                                        font-size: 16px;
+                                    }
+                                    ul{
+                                        padding-left: 20px;
+                                        li{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

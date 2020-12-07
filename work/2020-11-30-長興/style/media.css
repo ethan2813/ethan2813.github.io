@@ -147,4 +147,22 @@
   main#main .items .item_ .dis_flex .content_ .item_title > p {
     font-size: 18px;
   }
+  main#main .items .item_ .dis_flex .content_ .content p {
+    font-size: 16px;
+  }
+  main#main .items .item_ .dis_flex .content_ .collapse_ .title-box .title {
+    font-size: 16px;
+  }
+  main#main .items .item_ .dis_flex .content_ .collapse_ .contents-box .contents h3 {
+    font-size: 16px;
+  }
+  main#main .items .item_ .dis_flex .content_ .collapse_ .contents-box .contents p {
+    font-size: 16px;
+  }
+  main#main .items .item_ .dis_flex .content_ .collapse_ .contents-box .contents ul {
+    padding-left: 20px;
+  }
+  main#main .items .item_ .dis_flex .content_ .collapse_ .contents-box .contents ul li {
+    font-size: 16px;
+  }
 }

@@ -209,7 +209,7 @@ main#main{
             }
         }
         //人工植牙
-        >.item_{
+        .item_{
             box-shadow: grey 0px -10px 20px -15px;
 
             &:last-of-type{
@@ -222,7 +222,7 @@ main#main{
                 &.align_center{
                     align-items: center;
                 }
-                .content{
+                .content_{
                     display: inline-block;
                     //標題
                     .item_title{
