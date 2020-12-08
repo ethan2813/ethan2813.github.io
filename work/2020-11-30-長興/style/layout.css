@@ -198,7 +198,7 @@ footer#footer {
 footer#footer #totop img {
   position: fixed;
   right: 5px;
-  bottom: 90px;
+  bottom: 155px;
   z-index: 5;
   width: 60px;
   height: auto;
@@ -247,7 +247,7 @@ footer#footer .footer_top .block_ > div img {
 footer#footer .phone_right {
   position: fixed;
   right: 5px;
-  bottom: 24px;
+  bottom: 90px;
   z-index: 5;
   width: 60px;
   height: auto;
