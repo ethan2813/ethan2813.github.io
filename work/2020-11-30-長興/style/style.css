@@ -179,10 +179,6 @@ main#main .news a.time_btn {
   color: #808080;
 }
 
-main#main .news a.time_btn:visited {
-  color: #a7c464;
-}
-
 main#main .items:last-of-type {
   margin-bottom: 80px;
 }
