@@ -143,6 +143,10 @@
 }
 
 @media (max-width: 600px) {
+  main#main .banner {
+    background-image: url(../img/mobile-banner.png);
+    height: 56vh;
+  }
   main#main .doctor .doctor_1 {
     margin-bottom: 50px;
     padding: 0 15px;
