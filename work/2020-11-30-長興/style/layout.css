@@ -231,15 +231,28 @@ footer#footer .footer_top .block_ > div hr {
 
 footer#footer .footer_top .block_ > div p {
   margin: 3px 0;
+  font-size: 15px;
 }
 
 footer#footer .footer_top .block_ > div a {
   color: #808080;
   text-decoration: none;
+  cursor: pointer;
 }
 
 footer#footer .footer_top .block_ > div img {
   width: 100px;
+}
+
+footer#footer .phone_right {
+  position: fixed;
+  right: 5px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 footer#footer .footer_bot {

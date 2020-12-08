@@ -200,6 +200,8 @@ footer#footer{
                 // max-width: 250px;
                 display: flex;
                 flex-direction: column;
+
+                
                 h3{
                     font-size: 18px;
                     color: black;
@@ -212,17 +214,31 @@ footer#footer{
                 }
                 p{
                     margin: 3px 0;
+                    font-size: 15px;
+
                 }
                 a{
                     color: #808080;
                     text-decoration: none;
-                    // list-style: none;
+                    cursor: pointer;
                 }
                 img{
                     width: 100px;
                 }
             }
         }
+    }
+    .phone_right{
+        position: fixed;
+        right: 5px;
+        // bottom: 155px;
+        bottom: 24px;
+        z-index: 5;
+        width: 60px;
+        height: auto;
+        opacity: 0.85;
+        cursor: pointer;
+
     }
     .footer_bot{
         width: 100%;
