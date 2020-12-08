@@ -36,9 +36,9 @@ main#main .banner .text {
           transform: translate(-50%, -50%);
   left: 50%;
   top: 60%;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   height: 100%;
 }
 
@@ -177,6 +177,7 @@ main#main .news a.time_btn {
   margin-bottom: 20px;
   z-index: 3;
   color: #808080;
+  font-size: 18px;
 }
 
 main#main .news a:hover {
