@@ -146,3 +146,8 @@ $(window).scroll(function () {
     console.log($(this).scrollTop())
 })
 
+
+//點mobile_nav_list會隱藏list
+$('.mobile_nav_list').on('click','a',()=>{
+    $('.burger').click();
+})
