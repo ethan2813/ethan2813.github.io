@@ -129,3 +129,20 @@ $('.burger').on('click',(e)=>{
     $('.mobile_nav_list').toggleClass('nav_active')
 
 })
+
+//totop
+$('#totop').on('click', () => {
+    $('html,body').animate({ scrollTop: 0 }, 300);
+})
+
+
+//totop隱藏效果
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+        $('#totop').fadeIn(200);
+    } else {
+        $('#totop').stop().fadeOut(200)
+    }
+    console.log($(this).scrollTop())
+})
+
