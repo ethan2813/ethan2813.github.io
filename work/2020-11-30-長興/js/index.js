@@ -115,7 +115,7 @@ let nav = document.querySelector('#nav')
 
 $(window).scroll(() => {
     if ($(this).scrollTop() > 10) {
-        console.log('123')
+        // console.log('123')
         nav.classList.add('move')
     } else {
         nav.classList.remove('move')
@@ -143,11 +143,22 @@ $(window).scroll(function () {
     } else {
         $('#totop').stop().fadeOut(200)
     }
-    console.log($(this).scrollTop())
+    // console.log($(this).scrollTop())
 })
 
 
 //點mobile_nav_list會隱藏list
 $('.mobile_nav_list').on('click','a',()=>{
     $('.burger').click();
+})
+
+//點選空白地方關閉清單
+$(document).on('mouseup',(e)=>{
+    if($('.mobile_nav_list').hasClass('nav_active')){
+        if(!$(e.target).closest('.nav_active,.burger').length){
+            console.log('123')
+            $('.mobile_nav_list').toggleClass('nav_active');
+            $('.burger').toggleClass('burger_active');
+        }
+    }
 })
