@@ -263,3 +263,8 @@ footer#footer .footer_bot p {
   text-align: center;
   font-size: 10px;
 }
+
+.fb_dialog_content > iframe {
+  opacity: 0.85;
+  right: -7px !important;
+}

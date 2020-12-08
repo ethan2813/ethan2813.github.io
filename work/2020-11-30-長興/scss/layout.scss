@@ -251,3 +251,10 @@ footer#footer{
     }
     
 }
+
+.fb_dialog_content{
+    >iframe{
+        opacity: 0.85;
+        right: -7px!important;
+    }
+}
