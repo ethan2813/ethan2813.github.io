@@ -190,8 +190,6 @@ nav#nav .nav_content .mobile_nav_list {
 }
 
 footer#footer {
-  -webkit-box-shadow: grey 2px 2px 15px -2px inset;
-          box-shadow: grey 2px 2px 15px -2px inset;
   padding-top: 50px;
 }
 
