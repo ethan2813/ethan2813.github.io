@@ -103,6 +103,8 @@
 @media(max-width:992px){
     main#main {
         .label_{
+            background-image: none;
+            padding-bottom: unset;  
             .photo_mobile{
                 display: block;
             }
@@ -223,8 +225,7 @@
             }
         }
         .label_{
-            background-image: none;
-            padding-bottom: unset;
+            
             .contact_us_from{
                 padding: 10% 15px 25% 15px;
                 

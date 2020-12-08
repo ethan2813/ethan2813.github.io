@@ -104,6 +104,10 @@
 }
 
 @media (max-width: 992px) {
+  main#main .label_ {
+    background-image: none;
+    padding-bottom: unset;
+  }
   main#main .label_ .photo_mobile {
     display: block;
   }
@@ -182,10 +186,6 @@
   }
   main#main .items .item_ .dis_flex .content_ .collapse_ .contents-box .contents ul li {
     font-size: 16px;
-  }
-  main#main .label_ {
-    background-image: none;
-    padding-bottom: unset;
   }
   main#main .label_ .contact_us_from {
     padding: 10% 15px 25% 15px;
