@@ -204,6 +204,28 @@ footer#footer #totop img {
   cursor: pointer;
 }
 
+footer#footer .phone_right {
+  position: fixed;
+  right: 5px;
+  bottom: 90px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .line {
+  position: fixed;
+  right: 5px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .footer_top .block_ > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -242,15 +264,13 @@ footer#footer .footer_top .block_ > div img {
   width: 100px;
 }
 
-footer#footer .phone_right {
-  position: fixed;
-  right: 5px;
-  bottom: 90px;
-  z-index: 5;
-  width: 60px;
-  height: auto;
-  opacity: 0.85;
-  cursor: pointer;
+footer#footer .footer_top .phone .row_ {
+  margin-bottom: 10px;
+}
+
+footer#footer .footer_top .phone .row_ img {
+  height: 20px;
+  width: 20px;
 }
 
 footer#footer .footer_bot {

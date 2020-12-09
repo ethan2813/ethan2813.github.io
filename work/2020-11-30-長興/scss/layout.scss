@@ -197,6 +197,30 @@ footer#footer{
             cursor: pointer;
         }
     }
+    .phone_right{
+        position: fixed;
+        right: 5px;
+        // bottom: 155px;
+        bottom: 90px;
+        // bottom: 24px;
+
+        z-index: 5;
+        width: 60px;
+        height: auto;
+        opacity: 0.85;
+        cursor: pointer;
+
+    }
+    .line{
+        position: fixed;
+        right: 5px;
+        bottom: 24px;
+        z-index: 5;
+        width: 60px;
+        height: auto;
+        opacity: 0.85;
+        cursor: pointer;
+    }
     .footer_top{
         .block_{
             >div{
@@ -230,21 +254,18 @@ footer#footer{
                 }
             }
         }
+        .phone{
+            .row_{
+                margin-bottom: 10px;
+                img{
+                    height: 20px;
+                    width: 20px;
+                    
+                }
+            }
+        }
     }
-    .phone_right{
-        position: fixed;
-        right: 5px;
-        // bottom: 155px;
-        bottom: 90px;
-        // bottom: 24px;
-
-        z-index: 5;
-        width: 60px;
-        height: auto;
-        opacity: 0.85;
-        cursor: pointer;
-
-    }
+    
     .footer_bot{
         width: 100%;
         p{
