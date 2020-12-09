@@ -151,12 +151,15 @@ nav#nav{
         }
         //中間logo
         .logo{
+            // position: relative;
             img.logo{
                 width: 250px;
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%,0);
             }
+            
+            
             img.mobile_logo{
                 
                 display: none;
