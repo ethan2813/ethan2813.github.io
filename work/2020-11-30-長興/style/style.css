@@ -87,14 +87,36 @@ main#main .doctor .doctor_1 {
   margin-top: 80px;
 }
 
-main#main .doctor .doctor_1 .doctor_1_content {
-  display: inline-block;
+main#main .doctor .doctor_1 .doctor_1_content .h2_ {
+  position: relative;
 }
 
-main#main .doctor .doctor_1 .doctor_1_content h2 {
+main#main .doctor .doctor_1 .doctor_1_content .h2_ h2 {
   font-size: 32px;
   margin-bottom: 75px;
   color: #a7c464;
+}
+
+main#main .doctor .doctor_1 .doctor_1_content .article {
+  position: relative;
+  text-align: center;
+  max-width: 300px;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  left: 34%;
+  top: -9%;
+  color: #808080;
+}
+
+main#main .doctor .doctor_1 .doctor_1_content .article img {
+  position: absolute;
+  width: 118%;
+  top: 61%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 main#main .doctor .doctor_1 .doctor_1_content p {

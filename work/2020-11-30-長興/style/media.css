@@ -147,6 +147,9 @@
     margin-bottom: 50px;
     padding: 0 15px;
   }
+  main#main .doctor .doctor_1 .doctor_1_content .article {
+    display: none;
+  }
   main#main .doctor .doctor_1 .doctor_1_content p {
     font-size: 18px;
     line-height: 20px;
