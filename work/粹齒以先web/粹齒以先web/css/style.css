@@ -783,8 +783,8 @@ body{
 
 .touch-01_2 .lightbox-phone{
 	position:absolute;
-	top: 40vw;
-    left: 29vw;
+	top: 24vw;
+    left: -12vw;
 }
 /*噴砂、顯微、音波*/
 .touch-02 .lightbox-phone,
@@ -1255,7 +1255,7 @@ body{
 	height: 8px;
 }
 .adult .introduction{
-	padding-left: 100px;
+	padding-left: 70px;
 }
 .adult .introduction span{
 	font-size: 28px;
