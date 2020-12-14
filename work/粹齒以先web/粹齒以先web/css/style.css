@@ -502,7 +502,21 @@ body{
 .inner-01{
 	position:absolute;
 	top:12vw;
-	left:18vw;
+	left:15vw;
+}
+.inner-01:before{
+	content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 2px;
+    background-color: #C95854;
+    z-index: 50;
+}
+.inner-01 .device-img-01{
+	margin-right: 5px;
 }
 .inner-01 .red-circle{
 	position:absolute;
@@ -514,10 +528,18 @@ body{
 	left:-2.6vw;
 	transform:rotate(-60deg);
 }
-.inner-01 .lightbox{
+.inner-01 .lightbox_1{
 	top:0vw;
 	right:0;
 }
+.inner-01 .lightbox_2{
+	top:6vw;
+	right:-14.5vw;
+}
+.inner-01 .lightbox_2 span{
+	letter-spacing: -1px;
+}
+
 .inner-01:hover .lightbox{
 	opacity:1;
 	visibility:visible;
@@ -547,20 +569,25 @@ body{
 	width:90%;
 	height:2px;
 	background-color:#C95854;
+	z-index: 50;
 }
 .inner-02 .device-img{
 	margin-left:0.5vw;
 }
 .inner-02 .lightbox-01{
-	left:-8vw;
+	left:-10vw;
 	z-index:101;
 }
 .inner-02 .lightbox-02{
-	left:6.5vw;
+	left:4.5vw;
 	top:10vw;
 }
 .inner-02 .lightbox-03{
-	right:-10.5vw;
+	right:-0.3vw;
+}
+.inner-02 .lightbox-04{
+	right: -14.8vw;
+    top: 20vh;
 }
 .inner-02:hover .lightbox{
 	opacity:1;
@@ -569,17 +596,18 @@ body{
 /*治療椅*/
 .inner-03{
 	position:absolute;
-	top:6.4vw;
+	top:3.4vw;
 	right:32.5vw;
 }
 .inner-03 .red-circle{
 	position:absolute;
-	top:2.8vw;
+	top:5.8vw;
 	left:-4vw;
 }
 .inner-03 .red-circle:before{
-	top:50%;
-	left:1.6vw;
+	top: -43%;
+    left: 1.35vw;
+    transform: rotate(-30deg);
 }
 .inner-03 .lightbox{
 	right:-6vw;
@@ -587,6 +615,7 @@ body{
 .inner-03:hover .lightbox{
 	opacity:1;
 	visibility:visible;
+
 }
 /*消毒鍋*/
 .inner-04{
@@ -736,18 +765,32 @@ body{
 /*隱適美*/
 .touch-01{
 	/*border:1px solid red;*/
-	top:34vw;
-	left:14vw;
+	top: 40vw;
+    left: 6vw;
 }
+.touch-01_2{
+	/*border:1px solid red;*/
+	top: 40vw;
+    left: 30vw;
+}
+
+
 .touch-01 .lightbox-phone{
 	position:absolute;
 	top:24vw;
-	left:-10vw;
+	left: 0vw;
+}
+
+.touch-01_2 .lightbox-phone{
+	position:absolute;
+	top: 40vw;
+    left: 29vw;
 }
 /*噴砂、顯微、音波*/
 .touch-02 .lightbox-phone,
 .touch-03 .lightbox-phone,
 .touch-04 .lightbox-phone,
+.touch-04_2 .lightbox-phone,
 .touch-06 .lightbox-phone{
 	position:absolute;
 	top:22vw;
@@ -757,22 +800,29 @@ body{
 .touch-02{
 	/*border:1px solid red;*/
 	width:20vw;
-	top:36vw;
-	left:55vw;
+	top: 40vw;
+    left: 56vw;
 }
 /*顯微*/
 .touch-03{
 	/*border:1px solid red;*/
 	width:20vw;
-	top:36vw;
-	left:76vw;
+	top: 40vw;
+    left: 77vw;
 }
 /*音波*/
 .touch-04{
 	/*border:1px solid red;*/
 	width:20vw;
-	top:36vw;
-	left:97vw;
+	top: 40vw;
+    left: 96vw;
+}
+/* 陶瓷雕刻機 */
+.touch-04_2{
+	/*border:1px solid red;*/
+	width:20vw;
+	top: 41vw;
+    left: 116vw;
 }
 /*治療椅*/
 .touch-05{
@@ -780,8 +830,8 @@ body{
 	width:24vw;
 	height:20vw;
 	position:absolute;
-	top:30vw;
-	left:118vw;
+	top: 19vw;
+    left: 124vw;
 }
 .touch-05 .lightbox-phone{
 	position:absolute;
@@ -924,6 +974,7 @@ body{
 .service .img-right{
 	margin-left: 16px;
 	/* padding: 0px; */
+	margin-bottom: 50px;
 }
 .service .number{
 	width: 50px;
@@ -1076,6 +1127,16 @@ body{
 	float: right;
 	width: auto;
 	padding-left: 100px;
+}
+.service .phone-none-row-4 .img06-box{
+	padding-right: 0;
+}
+.service .phone-none-row-4 .img06{
+	float: right;
+	width: auto;
+	/* padding-left: 100px; */
+	width: 100%;
+	
 }
 /* 05 兒童牙醫 */
 .service .row-5 .content{

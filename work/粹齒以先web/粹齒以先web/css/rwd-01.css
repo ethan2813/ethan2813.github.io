@@ -217,9 +217,15 @@
 		font-size:14px;
 		letter-spacing:0;
 	}
+	.inner-01 .lightbox_2{
+		right: -18.5vw;
+	}
 	/*噴砂、顯微、音波*/
-	.inner-02 .lightbox-01{left:-12vw;}
-	.inner-02 .lightbox-03{right:-18.5vw;}
+	.inner-02 .lightbox-01{left:-18vw;}
+	.inner-02 .lightbox-02{left:0.5vw;}
+	.inner-02 .lightbox-03{right:-4vw;}
+	.inner-02 .lightbox-04{right:-22.5vw;}
+
 	/*治療椅*/
 	.inner-03 .lightbox{right:-10vw;}
 	/*植牙機*/
@@ -280,8 +286,11 @@
 		width:80%;
 	}
 	/*噴砂、顯微、音波*/
-	.inner-02 .lightbox-01{left:-14vw;}
-	.inner-02 .lightbox-03{right:-22.2vw;}
+	.inner-02 .lightbox-01{left:-17vw;}
+	.inner-02 .lightbox-02{left: 4vw;}
+
+	.inner-02 .lightbox-03{right:-12.2vw;}
+	.inner-02 .lightbox-04{right: -12.2vw;top: 25vh;}
 }
 @media(max-width:860px){
 	.device-map{display:none;}
@@ -413,6 +422,10 @@
 		max-width:600px;
 		height: auto;
 	}
+	.service .phone-none-row-4 .img06{
+		max-width:600px;
+		height: auto;
+	}
 }
 @media(max-width:992px){	
 	.service .phone-none{display:none;}
@@ -442,6 +455,10 @@
 		padding-right: 0%;
 	}
 	.service .phone-none-row-4 .img04{
+		margin-right: -16px;
+		max-width: 500px;
+	}
+	.service .phone-none-row-4 .img06{
 		margin-right: -16px;
 		max-width: 500px;
 	}
