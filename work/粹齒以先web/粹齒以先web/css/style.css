@@ -502,8 +502,8 @@ body{
 /*隱適美*/
 .inner-01{
 	position:absolute;
-	top:12vw;
-	left:15vw;
+	top: 15vw;
+    left: 12vw;
 }
 .inner-01:before{
 	content: "";
@@ -693,18 +693,18 @@ body{
 /*植體*/
 .inner-07{
 	position:absolute;
-	top:-5vw;
-	right:33vw;
+	top: 4.5vw;
+    right: 48vw;
 }
 .inner-07 .red-circle{
 	position:absolute;
-	top:7.6vw;
-	left:-1vw;
+	top: 4.5vw;
+    left: 9vw;
 }
 .inner-07 .red-circle:before{
-	top:-1.5vw;
-	right:-3vw;
-	transform:rotate(-54deg);
+	top: 0.5vw;
+    right: 1.5vw;
+    transform: rotate(-172deg);
 }
 .inner-07 .lightbox{
 	right:-7vw;
@@ -767,13 +767,13 @@ body{
 /*隱適美*/
 .touch-01{
 	/*border:1px solid red;*/
-	top: 40vw;
-    left: 6vw;
+	top: 49vw;
+    left: 2vw;
 }
 .touch-01_2{
 	/*border:1px solid red;*/
-	top: 40vw;
-    left: 30vw;
+	top: 49vw;
+    left: 27vw;
 }
 
 
@@ -786,7 +786,7 @@ body{
 .touch-01_2 .lightbox-phone{
 	position:absolute;
 	top: 24vw;
-    left: -12vw;
+    left: 0vw;
 }
 /*噴砂、顯微、音波*/
 .touch-02 .lightbox-phone,
@@ -883,8 +883,8 @@ body{
 	width:24vw;
 	height:20vw;
 	position:absolute;
-	top:3vw;
-	left:120vw;
+	top: 21vw;
+    left: 76vw;
 }
 .touch-09 .lightbox-phone{
 	position:absolute;
