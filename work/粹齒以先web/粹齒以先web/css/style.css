@@ -127,6 +127,7 @@ body{
 }
 .nav__menu li{
 	float: left;
+	cursor: pointer;
 }
 .menu__item{
 	display:block;
@@ -529,12 +530,13 @@ body{
 	transform:rotate(-60deg);
 }
 .inner-01 .lightbox_1{
-	top:0vw;
-	right:0;
+	top:10vw;
+	left: 0;
+	
 }
 .inner-01 .lightbox_2{
-	top:6vw;
-	right:-14.5vw;
+	top:10vw;
+	left:14.5vw;
 }
 .inner-01 .lightbox_2 span{
 	letter-spacing: -1px;
