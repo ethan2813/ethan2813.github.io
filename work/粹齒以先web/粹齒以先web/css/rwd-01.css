@@ -146,11 +146,11 @@
 	    line-height:30px;
 	  }
 	.about p:before{
-		left:70vw;
-		bottom:-15vw;
-		background-size:40px;
-		width:40px;
-		height:50px;
+		left: 70vw;
+		bottom: -17vw;
+		background-size: 40px;
+		width: 40px;
+		height: 50px;
 	}
 }
 @media(max-width:332px){
@@ -160,6 +160,8 @@
 /*-------------------------*/
 /* $denture 一日假牙
 ---------------------------*/
+
+
 @media(max-width:1280px){
 	.denture{
 		padding-bottom:40px;
@@ -176,6 +178,11 @@
 		margin-top:0;
 		margin-bottom:0;
 	}
+}
+@media(max-width:767px){
+	/* #denture .u-text-center{
+		text-align: left;
+	} */
 }
 @media(max-width:610px){
 	.denture .phone-none{
@@ -299,6 +306,11 @@
 		display:block;
 		margin-bottom:20px;
 	}
+}
+@media(max-width:767px){
+	/* .u-text-center{
+		text-align: left;
+	}  */
 }
 @media(max-width:416px){
 	.map-title-p-smartphone-block{display: block;}
@@ -597,7 +609,8 @@
 	}
 	.adult .phone-block .box{
 		margin:30px auto;
-		width: 80vw;
+		/* width: 80vw; */
+		width: 100%;
 	}
 }
 @media(max-width:480px){
