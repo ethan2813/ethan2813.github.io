@@ -22,11 +22,19 @@ $(document).on('mouseup',(e)=>{
 
 //nav 縮放
 let nav = document.querySelector('#nav')
+let logo_photo = document.querySelector('.logo_photo')
 $(window).scroll(() => {
     if($(this).scrollTop() > 10){
-        nav.classList.add('move')
+        $('#nav').addClass('move')
+        $('.logo_photo').addClass('logo_photo_active')
+        $('.nav_list_left li').addClass('nav_list_left_active')
+        $('.nav_list_right li').addClass('nav_list_right_active')
     }else{
-        nav.classList.remove('move')
+        $('#nav').removeClass('move')
+        $('.logo_photo').removeClass('logo_photo_active')
+        $('.nav_list_left li').removeClass('nav_list_left_active')
+        $('.nav_list_right li').removeClass('nav_list_right_active')
+
     }
 })
 

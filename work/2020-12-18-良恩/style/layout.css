@@ -59,6 +59,13 @@ nav#nav .nav_list_left li {
   margin: 0 30px;
   margin-top: 50px;
   list-style-type: none;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+nav#nav .nav_list_left li.nav_list_left_active {
+  margin-top: 0;
 }
 
 nav#nav .nav_list_left li a {
@@ -111,6 +118,13 @@ nav#nav .logo {
 nav#nav .logo .logo_photo {
   width: 50px;
   margin: 10px 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+nav#nav .logo .logo_photo.logo_photo_active {
+  width: 0px;
 }
 
 nav#nav .logo .logo_text {
@@ -133,6 +147,13 @@ nav#nav .nav_list_right li {
   margin: 0 30px;
   margin-top: 50px;
   list-style-type: none;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+nav#nav .nav_list_right li.nav_list_right_active {
+  margin-top: 0;
 }
 
 nav#nav .nav_list_right li a {
