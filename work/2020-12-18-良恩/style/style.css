@@ -91,6 +91,10 @@ main#main #doctor .article p:nth-of-type(2) {
   line-height: 28px;
 }
 
+main#main #banner_1 {
+  height: auto;
+}
+
 main#main #banner_1 img {
   width: 20%;
 }
