@@ -91,10 +91,12 @@ main#main{
 
     #banner_1{
         height: auto;
-        img{
-            width: 20%;
-            
+        .banner_1_content{
+            img{
+                width: 20%;
+            }
         }
+        
         
     }
 }
