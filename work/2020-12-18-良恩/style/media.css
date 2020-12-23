@@ -37,7 +37,7 @@
     padding: 10px;
     position: absolute;
     list-style-type: none;
-    background-color: white;
+    background-color: #d6e5e5;
     text-align: center;
     right: -100%;
     top: 80px;
@@ -93,6 +93,7 @@
   }
   main#main #about_us .content .article p {
     font-size: 16px;
+    letter-spacing: 2px;
   }
   main#main #about_us .content .article .br {
     display: block;
@@ -121,10 +122,6 @@
   }
   main#main #about_us .content .article h2 {
     display: none;
-  }
-  main#main #about_us .content .article p {
-    font-size: 15px;
-    letter-spacing: 2px;
   }
   main#main #about_us .content .about_us_right {
     text-align: right;
@@ -183,8 +180,6 @@
     margin-top: 30px;
   }
   main#main #doctor .article p:nth-of-type(2) {
-    font-size: 15px;
-    line-height: unset;
     letter-spacing: 1px;
   }
   main#main #banner_1 .banner_1_content {
@@ -193,5 +188,15 @@
   main#main #banner_1 .banner_1_content:nth-of-type(3) {
     display: block;
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  main#main #about_us .content .article p {
+    font-size: 15px;
+  }
+  main#main #doctor .article p:nth-of-type(2) {
+    font-size: 15px;
+    letter-spacing: 0;
   }
 }

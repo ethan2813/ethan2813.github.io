@@ -39,7 +39,7 @@ nav#nav {
 }
 
 nav#nav.move {
-  background-color: white;
+  background-color: #d6e5e5;
   -webkit-box-shadow: grey 10px 10px 20px -15px;
           box-shadow: grey 10px 10px 20px -15px;
 }
