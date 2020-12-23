@@ -1,0 +1,92 @@
+main#main{
+    //關於我們
+    #about_us{
+        background-image: url(../img/about_us_back.svg);
+        width: 100%;
+        // height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .content{
+            padding-top: 235px;
+            padding-bottom: 190px;
+
+            .article{
+                padding-bottom: 100px;
+
+                .br{
+                    display: none;
+                }
+
+                h2{
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: #1e3356;
+                }
+    
+                p:nth-of-type(1){
+                    margin: 30px 0;
+                }
+                
+            }
+            .about_us_right{
+                // text-align: center;
+                position: relative;
+                .left{
+                    display: none;
+                }
+                .right{
+                    width: 90%;
+                }
+                .bot{
+                    position: absolute;
+                    transform: translate(-50%,50%);
+                    left: 0;
+                    bottom: 0;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    //醫生
+    #doctor{
+        margin-top: 150px;
+        padding-bottom: 150px;
+        .photo{
+            .doctor{
+                width: 100%;
+                border: 15px #f8f6f4 solid;
+            }
+        }
+        .article{
+            
+
+            h2{
+                font-size: 36px;
+                font-weight: bold;
+                color: #d8af4b;
+                margin-bottom: 60px;
+            }
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+            p:nth-of-type(1){
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p:nth-of-type(2){
+                line-height: 28px;
+            }
+        }
+    }
+
+    #banner_1{
+
+        img{
+            width: 20%;
+        }
+        
+    }
+}
