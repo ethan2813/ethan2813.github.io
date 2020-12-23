@@ -90,10 +90,11 @@ main#main{
     }
 
     #banner_1{
-        height: auto;
+        display: flex;
         .banner_1_content{
+            width: 20%;
             img{
-                width: 20%;
+                width: 100%;
             }
         }
         

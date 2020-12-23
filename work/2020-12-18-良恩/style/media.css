@@ -60,15 +60,6 @@
 }
 
 @media (max-width: 992px) {
-  main#main #banner_1 img:first-of-type {
-    display: none;
-  }
-  main#main #banner_1 img:last-of-type {
-    display: none;
-  }
-  main#main #banner_1 img {
-    width: 33.33%;
-  }
   main#main #about_us .content .article h2 {
     font-size: 40px;
     margin-bottom: 30px;
@@ -81,6 +72,15 @@
   }
   main#main #doctor {
     margin-top: 0;
+  }
+  main#main #banner_1 .banner_1_content {
+    width: 33.33%;
+  }
+  main#main #banner_1 .banner_1_content:first-of-type {
+    display: none;
+  }
+  main#main #banner_1 .banner_1_content:last-of-type {
+    display: none;
   }
 }
 
@@ -186,5 +186,12 @@
     font-size: 15px;
     line-height: unset;
     letter-spacing: 1px;
+  }
+  main#main #banner_1 .banner_1_content {
+    display: none;
+  }
+  main#main #banner_1 .banner_1_content:nth-of-type(3) {
+    display: block;
+    width: 100%;
   }
 }
