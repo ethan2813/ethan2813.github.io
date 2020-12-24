@@ -34,6 +34,7 @@ nav#nav{
     justify-content: center;
     position: fixed;
     transition: 0.5s ease-in-out;
+    padding: 10px 0;
 
     &.move{
         background-color: #d6e5e5;
@@ -86,18 +87,21 @@ nav#nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        // margin: 20px 0;
         .logo_photo{
             width: 50px;
-            margin: 10px 0;
+            margin:  5px 0;
             transition: 0.5s ease-in-out;
 
             &.logo_photo_active{
-                width:0px
+                width:0px;
+            margin:  0;
+
             }
 
         }
         .logo_text{
-            margin: 10px 0;
+            margin:  10px 0;
             width: 250px;
         }
     }
@@ -168,4 +172,75 @@ nav#nav{
         display: none;
     }
 }
+footer#footer{
+    // 上排
+    .footer_top{
+        margin-bottom: 75px;
+        .footer_title{
+            font-size: 48px;
+            font-weight: bold;
+            color: #d8af4b;
+            margin: 60px 0;
+        }
+        .table_opening{
+            color: #1e3356;
+            
+            
+            tr{
+                border-bottom: solid #1e3356 1px;
+                
+                
+    
+                td:nth-of-type(1){
+                    padding-left: 0;
+                }
+                
+                td{
+                    padding: 6px 15px;
+                    // margin: 3px 3px;
+                    text-align: left;
+                }
+            }
+        }
 
+        .btn_title{
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .footer_btn{
+            a{
+                color: #1e3356;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                img{
+                    width: 30px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            &.place{
+                a{
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    //下排
+    .footer_bot{
+        height: 90px;
+        background-color: #1e3356;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 10px;
+            color: white;
+            margin: 0;
+        }
+    }
+    
+}

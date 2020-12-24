@@ -1,9 +1,10 @@
 @media (max-width: 1200px) {
   nav#nav {
-    height: 80px;
+    height: 70px;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    padding: 0;
   }
   nav#nav .nav_list_left {
     display: none;
@@ -82,6 +83,9 @@
   main#main #banner_1 .banner_1_content:last-of-type {
     display: none;
   }
+  footer#footer .footer_top .table_opening tr td {
+    padding: 6px 9px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -111,6 +115,12 @@
     font-size: 16px;
     letter-spacing: 0;
   }
+  footer#footer .footer_top .footer_title {
+    font-size: 40px;
+  }
+  footer#footer .footer_top .btn_title {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -118,7 +128,7 @@
     padding-top: 100px;
   }
   main#main #about_us .content .article {
-    margin-top: 30px;
+    margin-top: 65px;
   }
   main#main #about_us .content .article h2 {
     display: none;
@@ -143,6 +153,7 @@
     position: absolute;
     font-size: 36px;
     color: #1e3356;
+    top: 10%;
     font-weight: bold;
     text-align: justify;
     height: 50%;
@@ -151,6 +162,7 @@
     margin: 0;
     letter-spacing: 5px;
     z-index: 2;
+    line-height: 40px;
   }
   main#main #about_us .content .about_us_right .left {
     position: absolute;
@@ -168,9 +180,9 @@
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    width: 70%;
-    bottom: 0%;
-    left: 35%;
+    width: 76%;
+    bottom: -14%;
+    left: 37%;
   }
   main#main #doctor {
     margin-top: -100px;
@@ -189,6 +201,16 @@
     display: block;
     width: 100%;
   }
+  footer#footer .footer_top .table_opening {
+    width: 100%;
+  }
+  footer#footer .footer_top .table_opening tr td:nth-of-type(1) {
+    text-align: left;
+  }
+  footer#footer .footer_top .table_opening tr td {
+    padding: 6px 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 320px) {
@@ -198,5 +220,8 @@
   main#main #doctor .article p:nth-of-type(2) {
     font-size: 15px;
     letter-spacing: 0;
+  }
+  footer#footer .footer_top .footer_title {
+    font-size: 36px;
   }
 }

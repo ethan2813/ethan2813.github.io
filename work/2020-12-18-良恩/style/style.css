@@ -42,6 +42,10 @@ main#main #about_us .content .about_us_right .article_ {
   display: none;
 }
 
+main#main #about_us .content .about_us_right .article_ p {
+  color: #1e3356;
+}
+
 main#main #about_us .content .about_us_right .left {
   display: none;
 }
@@ -104,4 +108,40 @@ main#main #banner_1 .banner_1_content {
 
 main#main #banner_1 .banner_1_content img {
   width: 100%;
+}
+
+main#main #device {
+  background-image: url(../img/device_back.svg);
+  height: 200vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main#main #device .title {
+  text-align: center;
+}
+
+main#main #device .title h2 {
+  font-size: 28px;
+  color: #1e3356;
+  margin-bottom: 55px;
+  padding-top: 140px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+main#main #device .title p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+main#main #device .back_content {
+  margin-left: auto;
+  margin-top: 150px;
+}
+
+main#main #device .back_content img {
+  width: 120px;
 }

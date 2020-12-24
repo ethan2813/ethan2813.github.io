@@ -38,6 +38,9 @@ main#main{
                 position: relative;
                 .article_{
                     display: none;
+                    p{
+                        color: #1e3356;
+                    }
                 }
                 .left{
                     display: none;
@@ -97,7 +100,40 @@ main#main{
                 width: 100%;
             }
         }
-        
-        
+    }
+
+    #device{
+        background-image: url(../img/device_back.svg);
+        height: 200vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .title{
+            text-align: center;
+            h2{
+                font-size: 28px;
+                color: #1e3356;
+                margin-bottom: 55px;
+                padding-top: 140px;
+                letter-spacing: 1px;
+                font-weight: bold;
+
+            }
+
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .back_content{
+            margin-left: auto;
+            margin-top: 150px;
+
+            img{
+                width: 120px;
+            }
+        }
     }
 }
