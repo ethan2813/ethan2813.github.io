@@ -9,8 +9,17 @@
     $(window).scroll(e => {
         let top = $(this).scrollTop() / 3.5
         // console.log($(this).scrollTop())
-        logo_float.style.transform = `translate(-50%,-${top}px)`
+        // logo_float.style.transform = `translate(-50%,-${top}px)`
+
+        $('.logo_float').css({
+            '-webkit-transform' : `translate(-50%,-${top}px)`,
+            '-moz-transform'    : `translate(-50%,-${top}px)`,
+            '-ms-transform'     : `translate(-50%,-${top}px)`,
+            '-o-transform'      : `translate(-50%,-${top}px)`,
+            'transform'         : `translate(-50%,-${top}px)`
+          });
     })
+
 
 
     //nav 縮效果

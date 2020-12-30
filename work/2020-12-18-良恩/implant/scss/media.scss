@@ -1,0 +1,265 @@
+@media(max-width:1200px){
+    nav#nav{
+        height: 70px;
+        justify-content: space-around;
+        padding: 0;
+        
+        .nav_list_left{
+            display: none;
+        }
+        .nav_list_right{
+            display: none;
+        }
+        .logo{
+            height: 100%;
+            flex-direction: row;
+
+            .logo_photo{
+                width: 40px;
+            }
+            .logo_text{
+                width:180px;
+            }
+            
+        }
+        .burger{
+            display: block;
+        }
+        ul.mobile_nav_list{
+            display: block;
+
+            transition: 0.5s ease-in-out;
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            list-style-type: none;
+            // background-color: #d6e5e5;
+            background-color: #f4f0ed;
+            text-align: center;
+            right: -100%;
+            top: 70px;
+            box-shadow: 10px 10px 20px -15px gray;
+            li{
+                margin: 30px 0;
+                a{
+                    text-decoration: none;
+                        color: #4d4d4d;
+                }
+            }
+            &.nav_active{
+                right: 0;
+            }
+        }
+    }
+}
+
+
+@media(max-width:992px){
+    main#main {
+        #why {
+            background-image: url(../img/why_back_mobile.svg);
+            
+            .photo{
+                padding-top: 60px;
+            }
+            .article {
+                padding-top: 100px;
+                h2{
+                    margin-top: 0%;
+                    font-size: 30px;
+                }
+                p:nth-of-type(1){
+                    font-size: 28px;
+
+                }
+            }
+            .bot_{
+                padding-top: 60px;
+                padding-bottom: 60px;
+                br.br{
+                    display: none;
+                }
+            }
+        }
+
+        #dental_implant {
+            .text_box {
+                .box {
+                    width: 130px;
+                    height: 130px;
+                    p {
+                        letter-spacing: 1px;
+
+
+                    }
+                }
+            }
+
+            .how{
+                background-image: url(../img/how_background_mobile.jpg);
+                background-size: contain;
+                background-position: top;
+
+                .how_1{
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    .how_1_L{
+                        margin-top: 60%;
+                        
+                         .title{
+                            left: 0;
+                            top: 85%;
+                            background-color: unset;
+                            display: none;
+                         }
+                         .abc{
+                            //  padding-top: 80%;
+                            img:nth-last-of-type(2){
+                                position: unset;
+                                width: 70%;
+                                
+                            }
+                            img:nth-last-of-type(1){
+                                display: none;
+                            }
+                            
+                        }
+                        p.title_mobile{
+                            margin: 30px 0;
+                            font-size: 28px;
+                            color: #1e3356;
+                            display: block;
+                        }
+                    }
+                    .how_1_R{
+                        padding: 20px;
+                        margin-top: 10px;
+                    }
+                    
+                }
+            }
+        }
+
+        
+    }
+
+}
+@media(max-width:768px){
+    main#main {
+        #dental_implant {
+            .title_photo {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+
+        #dental_implant {
+            .title_article{
+                
+                margin: 0 10%;
+            }
+            .text_box {
+                flex-direction: column;
+                align-items: center;
+                .box{
+                    margin-bottom: 10px;
+                    width: 90%;
+                    height: 80px;
+                    p{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .how {
+                .how_1{
+                    .how_1_R{
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        } 
+        
+        
+    } 
+    
+    footer#footer {
+        .footer_top {
+            .footer_title{
+                font-size: 40px;
+            }
+            .btn_title{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    main#main {
+        #why {
+            .bot_ {
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        #dental_implant {
+            .title_article {
+                margin: 0 5%;
+                p{
+                    font-size: 16px;
+                }
+            }
+            .text_box {    
+                .box {
+                    width: 95%;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .how {
+                .how_1{
+                    .how_1_R{
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer#footer {
+        .footer_top {
+            .table_opening{
+                width: 100%;
+                tr{
+                    td:nth-of-type(1){
+                        text-align: left;
+                    }
+                    td{
+                        padding: 6px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:320px){ 
+    footer#footer {
+        .footer_top {
+            .footer_title{
+                font-size: 36px;
+            } 
+        }
+    }
+}

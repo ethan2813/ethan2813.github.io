@@ -1,0 +1,171 @@
+main#main{
+
+
+    #why{
+        background-image: url(../img/why_back.svg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+
+        .photo{
+            padding-top: 170px;
+            
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .article{
+            padding-top: 170px;
+            
+            padding-left: 20px;
+            h2{
+                margin-top: 300px;
+                font-size: 48px;
+                font-weight: bold;
+                color:#1e3356;
+            }
+            p:nth-of-type(1){
+                font-size: 28px;
+                color:#1e3356;
+                // font-weight: bold;
+                letter-spacing: 1px;
+            }
+            p:nth-of-type(2){
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+        .bot_{
+            padding-top: 170px;
+            
+            text-align: center;
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 33px;
+            }
+        }
+    }
+
+    #banner_1{
+        margin-top: 180px;
+        .photo{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    //人工植牙
+    #dental_implant{
+        background-image: url(../img/dental_implant_back.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // 標題圖片
+        .title_photo{
+            text-align: center;
+            width: 100%;
+            padding-top: 150px;
+            padding-bottom: 100px;
+
+            img{
+                width: 400px;
+            }
+        }
+
+        //標題文字
+        .title_article{
+            padding-bottom: 110px;
+            text-align: center;
+            p{
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+           
+        }
+
+        //文字方塊
+        .text_box{
+            padding-bottom: 150px;
+            display: flex;
+            justify-content: space-around;
+            .box{
+                width: 175px;
+                height: 175px;
+                border:#1e3356 solid 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    margin: 0;
+                    br{
+                        display: black;
+                    }
+
+                    
+                }
+            }
+        }
+
+        //怎樣的情況需要植牙？
+        .how{
+             
+             background-image: url(../img/how_background.png);
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+
+             .how_1{
+                 padding-top: 210px;
+                 padding-bottom: 210px;
+                .how_1_L{
+                    .title{
+                        background-color: white;
+                        width: 100%;
+                        position: absolute;
+                        left: 90%;
+                        top: 10%;
+                        z-index: 2;
+                        h3{
+                            font-size: 28px; 
+                            padding: 30px;
+                                                   
+                        }
+                    }
+                    .abc{
+                        width: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+    
+                        img:nth-last-of-type(2){
+                            position: absolute;
+                            left: 5%;
+                            bottom: 5%;
+                        }
+                    }
+                    p.title_mobile{
+                        display: none;
+                    }
+                }
+                .how_1_R{
+                    background-color: white;
+                    margin-top: 200px;
+                    padding: 60px;
+                    p{
+                        font-size: 18px; 
+                        letter-spacing: 2px;
+                    }
+                   
+                }
+             } 
+        }
+    }
+}

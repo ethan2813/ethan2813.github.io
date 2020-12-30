@@ -38,15 +38,15 @@
     padding: 10px;
     position: absolute;
     list-style-type: none;
-    background-color: #d6e5e5;
+    background-color: #f4f0ed;
     text-align: center;
     right: -100%;
-    top: 80px;
+    top: 70px;
     -webkit-box-shadow: 10px 10px 20px -15px gray;
             box-shadow: 10px 10px 20px -15px gray;
   }
   nav#nav ul.mobile_nav_list li {
-    margin: 10px 0;
+    margin: 30px 0;
   }
   nav#nav ul.mobile_nav_list li a {
     text-decoration: none;
@@ -83,7 +83,38 @@
   main#main #banner_1 .banner_1_content:last-of-type {
     display: none;
   }
-  footer#footer .footer_top .table_opening tr td {
+  main#main #device .back_content {
+    display: none;
+  }
+  main#main #device .device_1 .device_1_L .title {
+    position: unset;
+    margin-bottom: 10px;
+  }
+  main#main #device .device_1 .device_1_L .abc img:nth-last-of-type(2) {
+    position: unset;
+  }
+  main#main #device .device_1 .device_1_L .abc img:nth-last-of-type(1) {
+    display: none;
+  }
+  main#main #device .device_1 .device_1_R {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  main#main #device .device_2 .device_2_R .title {
+    position: unset;
+    margin-bottom: 10px;
+  }
+  main#main #device .device_2 .device_2_R .abc img:nth-last-of-type(2) {
+    position: unset;
+  }
+  main#main #device .device_2 .device_2_R .abc img:nth-last-of-type(1) {
+    display: none;
+  }
+  main#main #device .device_2 .device_2_L {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  main#main footer#footer .footer_top .table_opening tr td {
     padding: 6px 9px;
   }
 }
@@ -114,6 +145,34 @@
   main#main #doctor .article p {
     font-size: 16px;
     letter-spacing: 0;
+  }
+  main#main #device .title h2 {
+    font-size: 26px;
+  }
+  main#main #device .title p {
+    font-size: 16px;
+    text-align: left;
+  }
+  main#main #device .title p br.br {
+    display: block;
+  }
+  main#main #device .device_1 .device_1_L .title h3 {
+    font-size: 25px;
+  }
+  main#main #device .device_1 .device_1_R p {
+    font-size: 15px;
+  }
+  main#main #device .device_1 .device_1_R ul li {
+    font-size: 15px;
+  }
+  main#main #device .device_2 .device_2_R .title h3 {
+    font-size: 25px;
+  }
+  main#main #device .device_2 .device_2_L p {
+    font-size: 15px;
+  }
+  main#main #device .device_2 .device_2_L ul li {
+    font-size: 15px;
   }
   footer#footer .footer_top .footer_title {
     font-size: 40px;

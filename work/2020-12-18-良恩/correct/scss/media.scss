@@ -1,0 +1,102 @@
+@media(max-width:1200px){
+    nav#nav{
+        height: 70px;
+        justify-content: space-around;
+        padding: 0;
+        
+        .nav_list_left{
+            display: none;
+        }
+        .nav_list_right{
+            display: none;
+        }
+        .logo{
+            height: 100%;
+            flex-direction: row;
+
+            .logo_photo{
+                width: 40px;
+            }
+            .logo_text{
+                width:180px;
+            }
+            
+        }
+        .burger{
+            display: block;
+        }
+        ul.mobile_nav_list{
+            display: block;
+
+            transition: 0.5s ease-in-out;
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            list-style-type: none;
+            // background-color: #d6e5e5;
+            background-color: #f4f0ed;
+            text-align: center;
+            right: -100%;
+            top: 70px;
+            box-shadow: 10px 10px 20px -15px gray;
+            li{
+                margin: 30px 0;
+                a{
+                    text-decoration: none;
+                        color: #4d4d4d;
+                }
+            }
+            &.nav_active{
+                right: 0;
+            }
+        }
+    }
+}
+
+
+@media(max-width:992px){
+
+
+}
+@media(max-width:768px){
+       footer#footer {
+        .footer_top {
+            .footer_title{
+                font-size: 40px;
+            }
+            .btn_title{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+  
+    footer#footer {
+        .footer_top {
+            .table_opening{
+                width: 100%;
+                tr{
+                    td:nth-of-type(1){
+                        text-align: left;
+                    }
+                    td{
+                        padding: 6px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:320px){ 
+    footer#footer {
+        .footer_top {
+            .footer_title{
+                font-size: 36px;
+            } 
+        }
+    }
+}

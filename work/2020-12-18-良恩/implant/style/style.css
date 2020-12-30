@@ -1,0 +1,181 @@
+main#main #why {
+  background-image: url(../img/why_back.svg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main#main #why .photo {
+  padding-top: 170px;
+  width: 100%;
+}
+
+main#main #why .photo img {
+  width: 100%;
+}
+
+main#main #why .article {
+  padding-top: 170px;
+  padding-left: 20px;
+}
+
+main#main #why .article h2 {
+  margin-top: 300px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e3356;
+}
+
+main#main #why .article p:nth-of-type(1) {
+  font-size: 28px;
+  color: #1e3356;
+  letter-spacing: 1px;
+}
+
+main#main #why .article p:nth-of-type(2) {
+  font-size: 16px;
+  text-align: justify;
+}
+
+main#main #why .bot_ {
+  padding-top: 170px;
+  text-align: center;
+}
+
+main#main #why .bot_ p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 33px;
+}
+
+main#main #banner_1 {
+  margin-top: 180px;
+}
+
+main#main #banner_1 .photo img {
+  width: 100%;
+}
+
+main#main #dental_implant {
+  background-image: url(../img/dental_implant_back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main#main #dental_implant .title_photo {
+  text-align: center;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+main#main #dental_implant .title_photo img {
+  width: 400px;
+}
+
+main#main #dental_implant .title_article {
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+main#main #dental_implant .title_article p {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+main#main #dental_implant .text_box {
+  padding-bottom: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+main#main #dental_implant .text_box .box {
+  width: 175px;
+  height: 175px;
+  border: #1e3356 solid 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main#main #dental_implant .text_box .box p {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+}
+
+main#main #dental_implant .text_box .box p br {
+  display: black;
+}
+
+main#main #dental_implant .how {
+  background-image: url(../img/how_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main#main #dental_implant .how .how_1 {
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L .title {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  z-index: 2;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L .title h3 {
+  font-size: 28px;
+  padding: 30px;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L .abc {
+  width: 100%;
+  position: relative;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L .abc img {
+  width: 100%;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L .abc img:nth-last-of-type(2) {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+main#main #dental_implant .how .how_1 .how_1_L p.title_mobile {
+  display: none;
+}
+
+main#main #dental_implant .how .how_1 .how_1_R {
+  background-color: white;
+  margin-top: 200px;
+  padding: 60px;
+}
+
+main#main #dental_implant .how .how_1 .how_1_R p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}

@@ -33,13 +33,14 @@
             padding: 10px;
             position: absolute;
             list-style-type: none;
-            background-color: #d6e5e5;
+            // background-color: #d6e5e5;
+            background-color: #f4f0ed;
             text-align: center;
             right: -100%;
-            top: 80px;
+            top: 70px;
             box-shadow: 10px 10px 20px -15px gray;
             li{
-                margin: 10px 0;
+                margin: 30px 0;
                 a{
                     text-decoration: none;
                         color: #4d4d4d;
@@ -61,8 +62,9 @@
 
 
 @media(max-width:992px){
+  
     main#main{
-        
+
         #about_us {
             .content {
                 .article {
@@ -94,13 +96,63 @@
             }
             .banner_1_content:last-of-type{
                 display: none
-               
             }
-
-            
-            
         }
-    }
+        
+        #device{
+            .back_content{
+                display: none;
+            }
+            .device_1 {
+                .device_1_L{
+                    //P5超音波 治療機
+                    .title{
+                        position: unset;
+                        margin-bottom: 10px;
+                    }
+                    //圖
+                    .abc{
+                        img:nth-last-of-type(2){
+                            position: unset;
+                        }
+                        img:nth-last-of-type(1){
+                            display: none;
+                        }
+                    }
+                }
+                //文
+                .device_1_R {
+                    padding: 20px;
+                    margin-top: 10px;
+                }
+            }
+            
+            .device_2 {
+                .device_2_R {
+                    //P5超音波 治療機
+                    .title{
+                        position: unset;
+                        margin-bottom: 10px;
+                    }
+                    //圖
+                    .abc {
+                        img:nth-last-of-type(2){
+                            position: unset;
+                        }
+                        img:nth-last-of-type(1){
+                            display: none;
+                        }
+                    }
+                }
+                //文
+                .device_2_L {
+                    padding: 20px;
+                    margin-top: 10px;
+                 }
+            }
+    
+        }
+
     footer#footer{
         .footer_top {
             .table_opening {
@@ -113,6 +165,9 @@
             
         }
     }
+}
+
+
 }
 
 @media(max-width:768px){
@@ -154,6 +209,61 @@
                     letter-spacing: 0;
                 }
             }
+        }
+
+        #device{
+            .title{
+                h2{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: left;
+
+                    br.br{
+                        display: block;
+                    }
+                }
+            }
+            .device_1{
+                .device_1_L{
+                    .title{
+                        h3{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .device_1_R{
+                    p{
+                        font-size: 15px;
+                    }
+                    ul{
+                        li{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .device_2{
+                .device_2_R{
+                    .title{
+                        h3{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .device_2_L{
+                    p{
+                        font-size: 15px;
+                    }
+                    ul{
+                        li{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
         }
     }
     footer#footer {
@@ -290,7 +400,6 @@
                 }
             }
         }
-
     }
 
   
@@ -298,8 +407,7 @@
         .footer_top {
             .footer_title{
                 font-size: 36px;
-            }
-            
-       }
+            } 
+        }
     }
 }
