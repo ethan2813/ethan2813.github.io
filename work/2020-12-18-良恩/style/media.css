@@ -100,6 +100,9 @@
     padding: 20px;
     margin-top: 10px;
   }
+  main#main #device .device_2 .f3Shape_back {
+    display: none;
+  }
   main#main #device .device_2 .device_2_R .title {
     position: unset;
     margin-bottom: 10px;

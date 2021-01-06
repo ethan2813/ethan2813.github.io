@@ -226,6 +226,10 @@ main#main #device .device_2 {
   margin-top: 70px;
 }
 
+main#main #device .device_2 .f3Shape_back {
+  width: 500px;
+}
+
 main#main #device .device_2 .device_2_R .title {
   background-color: white;
   width: 100%;

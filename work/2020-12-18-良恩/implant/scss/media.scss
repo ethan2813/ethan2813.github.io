@@ -51,6 +51,15 @@
             }
         }
     }
+    main#main {
+        #dentium {
+            .dentium_1 {
+                img.dentium_back{
+                    width: 500px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -134,9 +143,100 @@
                     .how_1_R{
                         padding: 20px;
                         margin-top: 10px;
+                        margin-bottom: -85px;
                     }
                     
                 }
+            }
+            .process{
+                background-image: url(../img/process_background_mobile.jpg);
+                background-size: contain;
+                background-position: top;
+
+                .process_1{
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    .process_1_R{
+                        margin-top: 60%;
+                        
+                         .title{
+                            left: 0;
+                            top: 85%;
+                            background-color: unset;
+                            display: none;
+                         }
+                         .abc{
+                             text-align: right;
+                            //  padding-top: 80%;
+                            img:nth-last-of-type(2){
+                                position: unset;
+                                width: 70%;
+                                
+                            }
+                            img:nth-last-of-type(1){
+                                display: none;
+                            }
+                            
+                        }
+                        p.title_mobile{
+                            text-align: right;
+                            margin: 30px 0;
+                            font-size: 28px;
+                            color: #1e3356;
+                            display: block;
+                        }
+                    }
+                    .process_1_L{
+                        padding: 20px;
+                        margin-top: 10px;
+                    }
+                    
+                }
+            }
+        }
+
+        #dentium{
+            .dentium_1{
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+                img.dentium_back{
+                    display: none;
+                }
+                .dentium_1_L{
+                    // margin-top: 60%;
+                    
+                     .title{
+                        left: 0;
+                        top: 85%;
+                        background-color: unset;
+                        display: none;
+                     }
+                     .abc{
+                        //  padding-top: 80%;
+                        img:nth-last-of-type(2){
+                            position: unset;
+                            width: 70%;
+                            
+                        }
+                        img:nth-last-of-type(1){
+                            display: none;
+                        }
+                        
+                    }
+                    p.title_mobile{
+                        margin: 30px 0;
+                        font-size: 28px;
+                        color: #1e3356;
+                        display: block;
+                    }
+                }
+                .dentium_1_R{
+                    padding: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 85px;
+                }
+                
             }
         }
 
@@ -144,17 +244,26 @@
     }
 
 }
+
+@media(max-width:850px){
+    main#main{
+        #note{
+            .content{
+                margin: 0 30px;
+            }
+        }
+    }
+}
 @media(max-width:768px){
     main#main {
+        
+
         #dental_implant {
             .title_photo {
                 img {
                     width: 60%;
                 }
             }
-        }
-
-        #dental_implant {
             .title_article{
                 
                 margin: 0 10%;
@@ -176,14 +285,55 @@
 
             .how {
                 .how_1{
+                    .how_1_L{
+                        margin-top: 90%;
+                    }
                     .how_1_R{
                         p{
-                            font-size: 15px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .process {
+                .process_1{
+                    .process_1_R{
+                        margin-top: 90%;
+                    }
+                    .process_1_L{
+                        ul{
+                            li{
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
             }
         } 
+        #note{
+            background-color: #f4f0ed;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .content{
+                p{
+                    font-size: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        #dentium {
+            .dentium_1{
+                // .dentium_1_L{
+                //     margin-top: 90%;   
+                // }
+                .dentium_1_R{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
         
         
     } 
@@ -226,10 +376,50 @@
             }
             .how {
                 .how_1{
-                    .how_1_R{
-                        p{
-                            font-size: 16px;
+                    .how_1_L{
+                        margin-top: 55%;
+
+                        p.title_mobile{
+                            font-size: 26px;
                         }
+                    }
+                    .how_1_R{
+                        margin-bottom: -85px; 
+
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .process {
+                .process_1{
+                    .process_1_R{
+                        margin-top: 55%;
+                        p.title_mobile{
+                            font-size: 26px;
+                        }
+                    }
+                    .process_1_L{
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #dentium {
+            .dentium_1{
+                .dentium_1_L{
+                    p.title_mobile{
+                        font-size: 26px;
+                    }
+                }
+                .dentium_1_R{
+                    p{
+                        font-size: 15px;
                     }
                 }
             }

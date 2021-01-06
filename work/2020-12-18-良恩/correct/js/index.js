@@ -42,16 +42,16 @@ $(window).scroll(() => {
 
 
 $(window).scroll(e => {
-    let top = $(this).scrollTop() / 20
+    let top = $(this).scrollTop() / 10
     // console.log($(this).scrollTop())
     // logo_float.style.transform = `translate(-50%,-${top}px)`
 
-    $('#about_us').css({
-        '-webkit-background-position' : `right 50% top -${top}px`,
-        '-moz-background-position'    : `right 50% top -${top}px`,
-        '-ms-background-position'     : `right 50% top -${top}px`,
-        '-o-background-position'      : `right 50% top -${top}px`,
-        'background-position'         : `right 50% top -${top}px`
+    $('#orth').css({
+        '-webkit-background-position' : `right 50% top -${200 - top}px`,
+        '-moz-background-position'    : `right 50% top -${200 - top}px`,
+        '-ms-background-position'     : `right 50% top -${200 - top}px`,
+        '-o-background-position'      : `right 50% top -${200 - top}px`,
+        'background-position'         : `right 50% top -${200 - top}px`
       });
     // $('.about_us_right')
 })
