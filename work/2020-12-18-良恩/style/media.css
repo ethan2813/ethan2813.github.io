@@ -187,7 +187,7 @@
   main#main #device .title_mobile p {
     font-size: 16px;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
   main#main #device .title_mobile p br.br {
     display: block;
