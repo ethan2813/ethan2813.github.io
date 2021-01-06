@@ -149,6 +149,8 @@ main#main #dental_implant .how .how_1 .how_1_L .title {
 main#main #dental_implant .how .how_1 .how_1_L .title h3 {
   font-size: 28px;
   padding: 30px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #dental_implant .how .how_1 .how_1_L .abc {
@@ -233,6 +235,8 @@ main#main #dental_implant .process .process_1 .process_1_R .title {
 main#main #dental_implant .process .process_1 .process_1_R .title h3 {
   font-size: 28px;
   padding: 30px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #dental_implant .process .process_1 .process_1_R .abc {
@@ -275,6 +279,8 @@ main#main #note .content h3 {
   margin-bottom: 50px;
   font-size: 28px;
   letter-spacing: 2px;
+  font-weight: bold;
+  color: #1e3356;
 }
 
 main#main #note .content p {
@@ -323,6 +329,8 @@ main#main #dentium .dentium_1 .dentium_1_L .title {
 main#main #dentium .dentium_1 .dentium_1_L .title h3 {
   font-size: 28px;
   padding: 30px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #dentium .dentium_1 .dentium_1_L .abc {

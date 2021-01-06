@@ -79,6 +79,8 @@ main#main #box_1 .box_1_L .article {
 
 main#main #box_1 .box_1_L .article h3 {
   font-size: 28px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #box_1 .box_1_L .article p {
@@ -402,6 +404,7 @@ main#main #box_2 .box_2_3 .box_2_3_top:before {
   position: absolute;
   left: -50px;
   top: 0;
+  opacity: 0.5;
 }
 
 main#main #box_2 .box_2_4 {
@@ -451,4 +454,5 @@ main#main #box_2 .box_2_4 .box_2_4_bot:before {
   position: absolute;
   right: -50px;
   top: 0;
+  opacity: 0.5;
 }

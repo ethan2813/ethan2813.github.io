@@ -121,6 +121,7 @@
     font-size: 28px;
     color: #1e3356;
     display: block;
+    font-weight: bold;
   }
   main#main #dental_implant .how .how_1 .how_1_R {
     padding: 20px;
@@ -161,6 +162,7 @@
     font-size: 28px;
     color: #1e3356;
     display: block;
+    font-weight: bold;
   }
   main#main #dental_implant .process .process_1 .process_1_L {
     padding: 20px;
@@ -191,6 +193,10 @@
     font-size: 28px;
     color: #1e3356;
     display: block;
+    font-weight: bold;
+  }
+  main#main #dentium .dentium_1 .dentium_1_L p.title_mobile br.br {
+    display: none;
   }
   main#main #dentium .dentium_1 .dentium_1_R {
     padding: 20px;
@@ -211,8 +217,10 @@
   }
   main#main #dental_implant .title_article {
     margin: 0 10%;
+    padding-bottom: 50px;
   }
   main#main #dental_implant .text_box {
+    padding-bottom: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -283,7 +291,8 @@
     margin-top: 55%;
   }
   main#main #dental_implant .how .how_1 .how_1_L p.title_mobile {
-    font-size: 26px;
+    font-size: 25px;
+    font-weight: bold;
   }
   main#main #dental_implant .how .how_1 .how_1_R {
     margin-bottom: -85px;
@@ -295,16 +304,26 @@
     margin-top: 55%;
   }
   main#main #dental_implant .process .process_1 .process_1_R p.title_mobile {
-    font-size: 26px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  main#main #dental_implant .process .process_1 .process_1_L ul {
+    padding-left: 15px;
   }
   main#main #dental_implant .process .process_1 .process_1_L ul li {
     font-size: 15px;
   }
+  main#main #dental_implant .process .process_1 .process_1_L ul li .number {
+    left: -30px;
+  }
   main#main #dentium .dentium_1 .dentium_1_L p.title_mobile {
-    font-size: 26px;
+    font-size: 25px;
   }
   main#main #dentium .dentium_1 .dentium_1_R p {
     font-size: 15px;
+  }
+  main#main #note .content h3 {
+    font-size: 26px;
   }
   footer#footer .footer_top .table_opening {
     width: 100%;

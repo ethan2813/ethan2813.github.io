@@ -251,6 +251,7 @@
                         margin: 30px 0;
                         font-size: 28px;
                         color: #1e3356;
+                        font-weight: bold;
                     }
                 }
                 .box_2_1_R{
@@ -288,6 +289,7 @@
                         margin: 30px 0;
                         font-size: 28px;
                         color: #1e3356;
+                        font-weight: bold;
                     }
                 }
                 
@@ -308,8 +310,22 @@
                     h3{
                         padding-top: 30px;
                         padding-bottom: 30px;
+                        position: relative;
+                        margin: 0;
                         br{
                             display: none;
+                        }
+
+                        &:before{
+                            content: '';
+                            display: block;
+                            width: 2px;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            right: 10px;
+                            background-color: #606060;
+                            opacity: 0.5;
                         }
                     }
                     p{
@@ -328,8 +344,21 @@
                     h3{
                         padding-top: 30px;
                         padding-bottom: 30px;
+                        position: relative;
+                        margin-bottom: 0;
                         br{
                             display: none;
+                        }
+                        &:before{
+                            content: '';
+                            display: block;
+                            width: 2px;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 10px;
+                            background-color: #606060;
+                            opacity: 0.5;
                         }
                     }
 
@@ -434,6 +463,11 @@
             padding-top: 150px;
            
             .box_2_1{
+                .box_2_1_L {
+                    p.title_mobile{
+                        font-size: 25px;
+                    }
+                }
                 
                 .box_2_1_R{
                     p{
@@ -467,9 +501,18 @@
                         }
                     }
                 }
+                .box_2_2_R{
+                    p.title_mobile{
+                        font-size: 25px;
+                    }
+                    
+                }
             }
             .box_2_3{
                 .box_2_3_top{
+                    h3{
+                        font-size: 25px;
+                    }
                     p{
                         font-size: 15px;
                         padding: 20px;
@@ -478,6 +521,9 @@
             }
             .box_2_4{
                 .box_2_4_bot{
+                    h3{
+                        font-size: 25px;
+                    }
                     p{
                         font-size: 15px;
                         padding: 20px;
