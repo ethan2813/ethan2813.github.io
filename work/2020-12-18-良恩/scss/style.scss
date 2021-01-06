@@ -165,14 +165,19 @@ main#main{
             margin-top: 70px;
             .device_1_L{
                 .title{
+                    padding: 30px;
+                    
+                    text-align: left;
                     background-color: white;
                     width: 100%;
                     position: absolute;
                     left: 90%;
-                    top: 10%;
+                    top: 3%;
                     z-index: 2;
                     h3{
-                        font-size: 28px;                        
+                        font-size: 28px;  
+                        color: #1e3356;
+                        font-weight: bold;                      
                     }
                 }
                 
@@ -195,6 +200,7 @@ main#main{
                 background-color: white;
                 margin-top: 200px;
                 padding: 60px;
+
                 p{
                     font-size: 18px;
 
@@ -233,14 +239,18 @@ main#main{
             
             .device_2_R{
                 .title{
+                    padding: 30px;
+                    text-align: right;
                     background-color: white;
                     width: 100%;
                     position: absolute;
                     left: -90%;
-                    top: 9%;
+                    top: 3%;
                     z-index: 2;
                     h3{
-                        font-size: 28px;                        
+                        font-size: 28px; 
+                        color: #1e3356;
+                        font-weight: bold;                       
                     }
                 }
                 .abc{

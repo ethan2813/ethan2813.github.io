@@ -166,16 +166,21 @@ main#main #device .device_1 {
 }
 
 main#main #device .device_1 .device_1_L .title {
+  padding: 30px;
+  margin: 0;
+  text-align: left;
   background-color: white;
   width: 100%;
   position: absolute;
   left: 90%;
-  top: 10%;
+  top: 3%;
   z-index: 2;
 }
 
 main#main #device .device_1 .device_1_L .title h3 {
   font-size: 28px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #device .device_1 .device_1_L .abc {
@@ -231,16 +236,20 @@ main#main #device .device_2 .f3Shape_back {
 }
 
 main#main #device .device_2 .device_2_R .title {
+  padding: 30px;
+  text-align: right;
   background-color: white;
   width: 100%;
   position: absolute;
   left: -90%;
-  top: 9%;
+  top: 3%;
   z-index: 2;
 }
 
 main#main #device .device_2 .device_2_R .title h3 {
   font-size: 28px;
+  color: #1e3356;
+  font-weight: bold;
 }
 
 main#main #device .device_2 .device_2_R .abc {

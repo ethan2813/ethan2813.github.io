@@ -289,9 +289,11 @@ footer#footer .footer_bot {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 10px;
 }
 
 footer#footer .footer_bot p {
+  text-align: justify;
   font-size: 10px;
   color: white;
   margin: 0;
