@@ -167,15 +167,29 @@
     font-size: 16px;
     letter-spacing: 0;
   }
-  main#main #device .title h2 {
-    font-size: 26px;
-    padding-top: 55px;
+  main#main #device > .title {
+    display: none;
   }
-  main#main #device .title p {
+  main#main #device .title_mobile {
+    display: block;
+    text-align: justify;
+    padding: 0 15px;
+  }
+  main#main #device .title_mobile h2 {
+    color: #1e3356;
+    font-size: 25px;
+    padding-top: 55px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  main#main #device .title_mobile p {
     font-size: 16px;
     text-align: left;
+    letter-spacing: 1px;
   }
-  main#main #device .title p br.br {
+  main#main #device .title_mobile p br.br {
     display: block;
   }
   main#main #device .device_1 {
@@ -296,6 +310,9 @@
   main#main #banner_1 .banner_1_content:nth-of-type(3) {
     display: block;
     width: 100%;
+  }
+  main#main #device .title_mobile p {
+    font-size: 15px;
   }
   footer#footer .footer_top .table_opening {
     width: 100%;

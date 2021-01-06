@@ -152,6 +152,10 @@ main#main #device .title p ul li {
   font-size: 18px;
 }
 
+main#main #device .title_mobile {
+  display: none;
+}
+
 main#main #device .back_content {
   margin-left: auto;
   margin-top: 150px;
