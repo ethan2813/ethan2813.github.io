@@ -243,6 +243,9 @@
   main#main #about_us .content .article h2 {
     display: none;
   }
+  main#main #about_us .content .article p {
+    font-size: 15px;
+  }
   main#main #about_us .content .about_us_right {
     text-align: right;
   }
@@ -303,6 +306,9 @@
   }
   main#main #doctor .article p:nth-of-type(2) {
     letter-spacing: 1px;
+  }
+  main#main #doctor .article p {
+    font-size: 15px;
   }
   main#main #banner_1 .banner_1_content {
     display: none;

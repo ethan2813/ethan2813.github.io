@@ -273,19 +273,19 @@
 
 @media (max-width: 576px) {
   main#main #why .bot_ p {
-    font-size: 16px;
+    font-size: 15px;
   }
   main#main #dental_implant .title_article {
     margin: 0 5%;
   }
   main#main #dental_implant .title_article p {
-    font-size: 16px;
+    font-size: 15px;
   }
   main#main #dental_implant .text_box .box {
     width: 95%;
   }
   main#main #dental_implant .text_box .box p {
-    font-size: 16px;
+    font-size: 15px;
   }
   main#main #dental_implant .how .how_1 .how_1_L {
     margin-top: 55%;
