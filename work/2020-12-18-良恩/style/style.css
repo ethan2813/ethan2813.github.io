@@ -90,6 +90,7 @@ main#main #doctor .article h2 {
 main#main #doctor .article p {
   font-size: 18px;
   letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
 main#main #doctor .article p:nth-of-type(1) {
