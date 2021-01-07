@@ -14,6 +14,54 @@ body {
   font-family: 微軟正黑體;
 }
 
+@-webkit-keyframes fadeInLR {
+  0% {
+    left: 0;
+    bottom: 0%;
+  }
+  100% {
+    left: 5%;
+    bottom: 5%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLR {
+  0% {
+    left: 0;
+    bottom: 0%;
+  }
+  100% {
+    left: 5%;
+    bottom: 5%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInRL {
+  0% {
+    right: 0;
+    bottom: 0%;
+  }
+  100% {
+    right: 5%;
+    bottom: 5%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRL {
+  0% {
+    right: 0;
+    bottom: 0%;
+  }
+  100% {
+    right: 5%;
+    bottom: 5%;
+    opacity: 1;
+  }
+}
+
 p {
   color: #4d4d4d;
 }

@@ -98,6 +98,8 @@ main#main{
             p:nth-of-type(1){
                 font-weight: bold;
                 margin-bottom: 20px;
+                letter-spacing: 2px;
+                
             }
             p:nth-of-type(2){
                 line-height: 28px;
@@ -191,13 +193,17 @@ main#main{
                         width: 100%;
                     }
 
-                    img:nth-last-of-type(2){
-                        position: absolute;
-                        left: 5%;
-                        bottom: 5%;
+                    img:nth-of-type(1){
+                        position: absolute;                       
+                        // left: 5%;
+                        // bottom: 5%;
+                        animation: fadeInLR ;
+                        animation-fill-mode:forwards;
+                        opacity: 0;
                     }
+
+                    
                 }
-                
             }
             .device_1_R{
                 background-color: white;
@@ -264,10 +270,13 @@ main#main{
                         width: 100%;
                     }
 
-                    img:nth-last-of-type(2){
+                    img:nth-of-type(1){
                         position: absolute;
-                        right: 5%;
-                        bottom: 5%;
+                        // right: 5%;
+                        // bottom: 5%;
+                        animation: fadeInRL ;
+                        animation-fill-mode:forwards;
+                        opacity: 0;
                     }
                 }
                 

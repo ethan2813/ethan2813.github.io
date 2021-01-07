@@ -80,6 +80,7 @@
   main#main #why .bot_ {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: left;
   }
   main#main #why .bot_ br.br {
     display: none;
@@ -216,6 +217,7 @@
     width: 60%;
   }
   main#main #dental_implant .title_article {
+    text-align: left;
     margin: 0 10%;
     padding-bottom: 50px;
   }
@@ -273,19 +275,19 @@
 
 @media (max-width: 576px) {
   main#main #why .bot_ p {
-    font-size: 15px;
+    font-size: 16px;
   }
   main#main #dental_implant .title_article {
     margin: 0 5%;
   }
   main#main #dental_implant .title_article p {
-    font-size: 15px;
+    font-size: 16px;
   }
   main#main #dental_implant .text_box .box {
     width: 95%;
   }
   main#main #dental_implant .text_box .box p {
-    font-size: 15px;
+    font-size: 16px;
   }
   main#main #dental_implant .how .how_1 .how_1_L {
     margin-top: 55%;

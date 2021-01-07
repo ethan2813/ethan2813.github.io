@@ -85,6 +85,7 @@
             .bot_{
                 padding-top: 60px;
                 padding-bottom: 60px;
+                text-align: left;
                 br.br{
                     display: none;
                 }
@@ -266,14 +267,14 @@
     main#main {
         
 
-        #dental_implant {
+        #dental_implant {   
             .title_photo {
                 img {
                     width: 60%;
                 }
             }
             .title_article{
-                
+                text-align: left;
                 margin: 0 10%;
                 padding-bottom: 50px;
             }
@@ -365,7 +366,7 @@
         #why {
             .bot_ {
                 p{
-                    font-size: 15px;
+                    font-size: 16px;
                 }
             }
         }
@@ -373,14 +374,14 @@
             .title_article {
                 margin: 0 5%;
                 p{
-                    font-size: 15px;
+                    font-size: 16px;
                 }
             }
             .text_box {    
                 .box {
                     width: 95%;
                     p {
-                        font-size: 15px;
+                        font-size: 16px;
                     }
                 }
             }

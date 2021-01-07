@@ -54,8 +54,13 @@ main#main #why .bot_ p {
   line-height: 33px;
 }
 
+main#main #banner_1 .photo {
+  height: 100%;
+}
+
 main#main #banner_1 .photo img {
   width: 100%;
+  height: 100%;
 }
 
 main#main #dental_implant {
@@ -162,10 +167,13 @@ main#main #dental_implant .how .how_1 .how_1_L .abc img {
   width: 100%;
 }
 
-main#main #dental_implant .how .how_1 .how_1_L .abc img:nth-last-of-type(2) {
+main#main #dental_implant .how .how_1 .how_1_L .abc img:nth-of-type(1) {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
+  -webkit-animation: fadeInLR;
+          animation: fadeInLR;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 main#main #dental_implant .how .how_1 .how_1_L p.title_mobile {
@@ -248,10 +256,13 @@ main#main #dental_implant .process .process_1 .process_1_R .abc img {
   width: 100%;
 }
 
-main#main #dental_implant .process .process_1 .process_1_R .abc img:nth-last-of-type(2) {
+main#main #dental_implant .process .process_1 .process_1_R .abc img:nth-of-type(1) {
   position: absolute;
-  right: 5%;
-  bottom: 5%;
+  -webkit-animation: fadeInRL;
+          animation: fadeInRL;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 main#main #dental_implant .process .process_1 .process_1_R p.title_mobile {
@@ -342,10 +353,13 @@ main#main #dentium .dentium_1 .dentium_1_L .abc img {
   width: 100%;
 }
 
-main#main #dentium .dentium_1 .dentium_1_L .abc img:nth-last-of-type(2) {
+main#main #dentium .dentium_1 .dentium_1_L .abc img:nth-of-type(1) {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
+  -webkit-animation: fadeInLR;
+          animation: fadeInLR;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 main#main #dentium .dentium_1 .dentium_1_L p.title_mobile {

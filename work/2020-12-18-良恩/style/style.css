@@ -95,6 +95,7 @@ main#main #doctor .article p {
 main#main #doctor .article p:nth-of-type(1) {
   font-weight: bold;
   margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 main#main #doctor .article p:nth-of-type(2) {
@@ -195,10 +196,13 @@ main#main #device .device_1 .device_1_L .abc img {
   width: 100%;
 }
 
-main#main #device .device_1 .device_1_L .abc img:nth-last-of-type(2) {
+main#main #device .device_1 .device_1_L .abc img:nth-of-type(1) {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
+  -webkit-animation: fadeInLR;
+          animation: fadeInLR;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 main#main #device .device_1 .device_1_R {
@@ -265,10 +269,13 @@ main#main #device .device_2 .device_2_R .abc img {
   width: 100%;
 }
 
-main#main #device .device_2 .device_2_R .abc img:nth-last-of-type(2) {
+main#main #device .device_2 .device_2_R .abc img:nth-of-type(1) {
   position: absolute;
-  right: 5%;
-  bottom: 5%;
+  -webkit-animation: fadeInRL;
+          animation: fadeInRL;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 main#main #device .device_2 .device_2_L {
