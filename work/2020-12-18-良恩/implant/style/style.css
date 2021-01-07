@@ -54,6 +54,10 @@ main#main #why .bot_ p {
   line-height: 33px;
 }
 
+main#main #banner_1 {
+  background-color: #f8f6f4;
+}
+
 main#main #banner_1 .photo {
   height: 100%;
 }

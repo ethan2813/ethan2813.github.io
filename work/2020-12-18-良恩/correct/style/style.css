@@ -212,6 +212,10 @@ main#main #box_1 .box_1_bot {
   background-position: center;
 }
 
+main#main #banner_2 {
+  background-color: #f8f6f4;
+}
+
 main#main #banner_2 img {
   width: 100%;
   height: 100%;
