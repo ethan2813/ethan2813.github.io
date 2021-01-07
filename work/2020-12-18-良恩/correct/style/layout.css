@@ -274,6 +274,28 @@ nav#nav .mobile_nav_list {
   display: none;
 }
 
+footer#footer #totop img {
+  position: fixed;
+  right: 5px;
+  bottom: 90px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .phone_right {
+  position: fixed;
+  right: 5px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .footer_top {
   margin-bottom: 75px;
 }
