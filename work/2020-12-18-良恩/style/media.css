@@ -109,6 +109,9 @@
     margin-top: 10px;
     margin-left: 0px;
   }
+  main#main #device .device_1 .device_1_R p br.br {
+    display: none;
+  }
   main#main #device .device_2 .f3Shape_back {
     display: none;
   }
@@ -131,6 +134,9 @@
     padding: 20px;
     margin-top: 10px;
     margin-right: 0px;
+  }
+  main#main #device .device_2 .device_2_L p br.br {
+    display: none;
   }
   main#main footer#footer .footer_top .table_opening tr td {
     padding: 6px 9px;
