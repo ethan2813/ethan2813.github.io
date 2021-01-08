@@ -72,4 +72,8 @@ $(window).scroll(e => {
     // $('.about_us_right')
 })
 
+$('.line a').click(()=>{
+    alert('敬請期待囉')
+})
+
 
