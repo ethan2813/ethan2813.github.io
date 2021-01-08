@@ -49,10 +49,11 @@
 @media (max-width: 1200px) {
   nav#nav {
     height: 70px;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 3%;
   }
   nav#nav .nav_list_left {
     display: none;
