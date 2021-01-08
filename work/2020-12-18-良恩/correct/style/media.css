@@ -4,7 +4,7 @@
   }
   main#main #box_1 .box_1_bot .box_1_bot_R .img_1 .article {
     width: 90%;
-    top: 60%;
+    top: 64%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R .img_1 .article p {
     font-size: 16px;
@@ -14,7 +14,7 @@
   }
   main#main #box_1 .box_1_bot .box_1_bot_L2 .img_2 .article {
     width: 90%;
-    top: 60%;
+    top: 64%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_L2 .img_2 .article p {
     font-size: 16px;
@@ -24,7 +24,7 @@
   }
   main#main #box_1 .box_1_bot .box_1_bot_R2 .img_3 .article {
     width: 90%;
-    top: 60%;
+    top: 62%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R2 .img_3 .article p {
     font-size: 16px;
@@ -107,7 +107,7 @@
     width: 200px;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R .img_1 .article {
-    top: 60%;
+    top: 65%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R .img_1 .article h3 {
     font-size: 22px;
@@ -120,7 +120,7 @@
     width: 200px;
   }
   main#main #box_1 .box_1_bot .box_1_bot_L2 .img_2 .article {
-    top: 60%;
+    top: 65%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_L2 .img_2 .article h3 {
     font-size: 22px;
@@ -133,7 +133,7 @@
     width: 200px;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R2 .img_3 .article {
-    top: 60%;
+    top: 62%;
   }
   main#main #box_1 .box_1_bot .box_1_bot_R2 .img_3 .article h3 {
     font-size: 22px;
@@ -363,6 +363,9 @@
   main#main #box_2 .box_2_4 .box_2_4_bot p {
     font-size: 16px;
     padding: 20px;
+  }
+  main#main #dental_implant .text_box .box span {
+    font-weight: bold;
   }
 }
 

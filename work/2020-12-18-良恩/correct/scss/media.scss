@@ -10,7 +10,7 @@
                         width: 300px; 
                         .article{
                             width: 90%;
-                            top: 60%;
+                            top: 64%;
                             p{
                                 font-size: 16px;
                             }
@@ -23,7 +23,7 @@
                         width: 300px;
                         .article{
                             width: 90%;
-                            top: 60%;
+                            top: 64%;
                             p{
                                 font-size: 16px;
                             }
@@ -36,7 +36,7 @@
                         width: 300px;
                         .article{
                             width: 90%;
-                            top: 60%;
+                            top: 62%;
                             p{
                                 font-size: 16px;
                             }
@@ -142,7 +142,7 @@
                     .img_1 {
                         width: 200px; 
                         .article{
-                            top: 60%;
+                            top: 65%;
                             h3{
                                 font-size: 22px;
                                 margin-bottom: 0;
@@ -158,7 +158,7 @@
                     .img_2 {
                         width: 200px;
                         .article{
-                            top: 60%;
+                            top: 65%;
                             h3{
                                 font-size: 22px;
                                 margin-bottom: 0;
@@ -174,7 +174,7 @@
                     .img_3 {
                         width: 200px;
                         .article{
-                            top: 60%;
+                            top: 62%;
                             h3{
                                 font-size: 22px;
                                 margin-bottom: 0;
@@ -484,7 +484,15 @@
                 }
             }
         }
-        
+        #dental_implant{
+            .text_box{
+                .box{
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
 }
 
