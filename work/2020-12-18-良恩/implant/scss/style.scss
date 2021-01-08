@@ -173,6 +173,7 @@ main#main{
                     p{
                         font-size: 18px; 
                         letter-spacing: 2px;
+                        line-height: 30px;
                     }
                    
                 }
@@ -198,7 +199,10 @@ main#main{
                             margin-bottom: 10px;
                             position: relative;
                             font-size: 18px; 
-                        letter-spacing: 2px;
+                            letter-spacing: 2px;
+                            span{
+                                font-weight: bold;
+                            }
 
                             .number{
                                 position: absolute;

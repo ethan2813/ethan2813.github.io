@@ -193,6 +193,7 @@ main#main #dental_implant .how .how_1 .how_1_R {
 main#main #dental_implant .how .how_1 .how_1_R p {
   font-size: 18px;
   letter-spacing: 2px;
+  line-height: 30px;
 }
 
 main#main #dental_implant .process {
@@ -222,6 +223,10 @@ main#main #dental_implant .process .process_1 .process_1_L ul li {
   position: relative;
   font-size: 18px;
   letter-spacing: 2px;
+}
+
+main#main #dental_implant .process .process_1 .process_1_L ul li span {
+  font-weight: bold;
 }
 
 main#main #dental_implant .process .process_1 .process_1_L ul li .number {

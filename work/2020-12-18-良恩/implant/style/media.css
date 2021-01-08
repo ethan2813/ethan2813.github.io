@@ -221,6 +221,9 @@
     margin: 0 10%;
     padding-bottom: 50px;
   }
+  main#main #dental_implant .title_article br.br {
+    display: none;
+  }
   main#main #dental_implant .text_box {
     padding-bottom: 50px;
     -webkit-box-orient: vertical;
@@ -246,6 +249,7 @@
   }
   main#main #dental_implant .how .how_1 .how_1_R p {
     font-size: 16px;
+    line-height: 25px;
   }
   main#main #dental_implant .process .process_1 .process_1_R {
     margin-top: 90%;

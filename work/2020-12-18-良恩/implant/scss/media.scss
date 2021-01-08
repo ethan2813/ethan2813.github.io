@@ -277,6 +277,9 @@
                 text-align: left;
                 margin: 0 10%;
                 padding-bottom: 50px;
+                br.br{
+                    display: none;
+                }
             }
             .text_box {
                 padding-bottom: 50px;
@@ -302,6 +305,7 @@
                     .how_1_R{
                         p{
                             font-size: 16px;
+                            line-height: 25px;
                         }
                     }
                 }

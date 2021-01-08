@@ -215,6 +215,8 @@ main#main #device .device_1 .device_1_R {
 
 main#main #device .device_1 .device_1_R p {
   font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 main#main #device .device_1 .device_1_R ul {
@@ -289,6 +291,8 @@ main#main #device .device_2 .device_2_L {
 
 main#main #device .device_2 .device_2_L p {
   font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 main#main #device .device_2 .device_2_L ul {

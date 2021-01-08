@@ -3,21 +3,48 @@
 @media(max-width:1600px){
     main#main{
         #box_1 {
-            .box_1_R {
-                .img_1 {
-                    width: 300px;
-                }
-                .img_2 {
-                    width: 300px;
-                    bottom: -774px;
-                }
-                .img_3 {
-                    width: 300px;
-                    bottom: -1089px;
-                }
-            }
+            
             .box_1_bot{
-                height: 155vh;
+                .box_1_bot_R{
+                    .img_1 {
+                        width: 300px; 
+                        .article{
+                            width: 90%;
+                            top: 60%;
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    
+                }
+                .box_1_bot_L2{
+                    .img_2 {
+                        width: 300px;
+                        .article{
+                            width: 90%;
+                            top: 60%;
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                        
+                    }
+                }
+                .box_1_bot_R2{
+                    .img_3 {
+                        width: 300px;
+                        .article{
+                            width: 90%;
+                            top: 60%;
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                        
+                    }
+                }
+                
             }
         }
     }
@@ -26,31 +53,25 @@
 @media(max-width:1400px){
     main#main{
         #box_1 {
-            .box_1_R {
-                .img_1 {
-                    width: 250px;
+            
+            .box_1_bot{
+                .box_1_bot_R{
+                    .img_1 {
+                        width: 250px; 
+                    }
                     
                 }
-                .img_2 {
-                    width: 250px;
-                    bottom: -688px;
-                }
-                .img_3 {
-                    width: 250px;
-                    bottom: -946px;
-                }
-                .img_{
-                    .article{
-                        width: 90%;
-                        top: 60%;
-                        p{
-                            font-size: 16px;
-                        }
+                .box_1_bot_L2{
+                    .img_2 {
+                        width: 250px;                        
                     }
                 }
-            }
-            .box_1_bot{
-                height: 135vh;
+                .box_1_bot_R2{
+                    .img_3 {
+                        width: 250px;                        
+                    }
+                }
+                
             }
         }
         #box_2 {
@@ -116,35 +137,58 @@
     }
     main#main{
         #box_1 {
-            .box_1_R {
-                .img_1 {
-                    width: 200px;
-                    
-                }
-                .img_2 {
-                    width: 200px;
-                    bottom: -600px;
-                }
-                .img_3 {
-                    width: 200px;
-                    bottom: -810px;
-                }
-                .img_{
-                    .article{
-                        top: 60%;
-                        h3{
-                            font-size: 22px;
-                            margin-bottom: 0;
-                        }
-                        p{
-                            font-size: 12px;
+            .box_1_bot{
+                .box_1_bot_R{
+                    .img_1 {
+                        width: 200px; 
+                        .article{
+                            top: 60%;
+                            h3{
+                                font-size: 22px;
+                                margin-bottom: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
                         }
                     }
+                    
                 }
+                .box_1_bot_L2{
+                    .img_2 {
+                        width: 200px;
+                        .article{
+                            top: 60%;
+                            h3{
+                                font-size: 22px;
+                                margin-bottom: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                        
+                    }
+                }
+                .box_1_bot_R2{
+                    .img_3 {
+                        width: 200px;
+                        .article{
+                            top: 60%;
+                            h3{
+                                font-size: 22px;
+                                margin-bottom: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                        
+                    }
+                }
+                
             }
-            .box_1_bot{
-                height: 105vh;
-            }
+            
         }
         #box_2 {
             .box_2_3{
@@ -190,6 +234,7 @@
                 width: 100%;
                 background-repeat: no-repeat;
                 background-size: cover;
+                    margin-bottom: 0;
                 .article{
                     h3{
                         margin: 30px 0;
@@ -207,6 +252,7 @@
                     }
                 }
                 .img_L{
+                    display: block;
                     
                 
                     background-image: url(../img/box_1_L_photo.jpg);
@@ -228,19 +274,9 @@
                     }
                 }
             }
-            .box_1_R {
-                .img_1{
-                    display: none;
-                }
-                .img_2{
-                    display: none;
-                }
-                .img_3{
-                    display: none;
-                }
-            }
+           
             .box_1_bot{
-                height: unset;
+                display: none;
             }
         }
         
