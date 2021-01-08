@@ -497,6 +497,11 @@
 }
 
 @media(max-width:576px){
+    footer#footer{
+        .phone_right{
+            display: block;
+        }
+    }
     main#main{
         #orth{
             .bot_ {

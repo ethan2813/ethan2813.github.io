@@ -241,6 +241,9 @@
 }
 
 @media (max-width: 576px) {
+  footer#footer .phone_right {
+    display: block;
+  }
   main#main #about_us .content {
     padding-top: 100px;
   }
