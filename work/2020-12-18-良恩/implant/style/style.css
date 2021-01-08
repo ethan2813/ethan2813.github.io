@@ -134,6 +134,10 @@ main#main #dental_implant .text_box .box p br {
   display: black;
 }
 
+main#main #dental_implant .text_box .box p span {
+  display: none;
+}
+
 main#main #dental_implant .how {
   background-image: url(../img/how_background.png);
   background-size: cover;
