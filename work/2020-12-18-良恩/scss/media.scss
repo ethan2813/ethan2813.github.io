@@ -339,6 +339,14 @@
 
 @media(max-width:576px){
     footer#footer{
+        #totop{
+            img{
+                bottom: 155px;
+            }
+        }
+        .line_right{
+            bottom: 90px;
+        }
         .phone_right{
             display: block;
         }

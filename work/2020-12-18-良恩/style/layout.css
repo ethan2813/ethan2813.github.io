@@ -297,6 +297,17 @@ footer#footer .phone_right {
   cursor: pointer;
 }
 
+footer#footer .line_right {
+  position: fixed;
+  right: 5px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .footer_top {
   margin-bottom: 75px;
 }
