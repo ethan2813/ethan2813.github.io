@@ -2,14 +2,13 @@ body {
   height: 300vh;
 }
 
+.parallax-window {
+  background: transparent;
+}
+
 .banner {
-  background-attachment: fixed;
-  background-image: url(../img/77745503_l.jpg);
   height: 60vh;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .banner .content {
