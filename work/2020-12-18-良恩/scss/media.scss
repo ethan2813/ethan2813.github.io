@@ -374,9 +374,13 @@
         .line_right{
             // bottom: 90px;
             bottom:24px;
-            transition: 0.2s;
+            transition: 0.5s;
             opacity: 0;
+            transform: rotate(360deg);
             &.active{
+            transform: rotate(0deg);
+
+                width: 60px;
                 right: 10px;
                 bottom: 155px;
                 opacity: 0.85;
@@ -388,9 +392,10 @@
             // bottom: 155px;
             bottom:24px;
             opacity: 0;
-            transition: 0.2s;
-
+            transition: 0.5s;
+            transform: rotate(360deg);
             &.active{
+                transform: rotate(0deg);
                 right: 10px;
                 bottom: 90px;
                 opacity: 0.85;
@@ -400,9 +405,11 @@
         }
         .fb_right{
             bottom:24px;
-            transition: 0.2s;
+            transition: 0.5s;
             opacity: 0;
+            transform: rotate(360deg);
             &.active{
+                transform: rotate(0deg);
                 right: 10px;
                 bottom: 24px;
                 opacity: 0.85;
