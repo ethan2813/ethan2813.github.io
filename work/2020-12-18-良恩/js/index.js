@@ -15,7 +15,7 @@ $(document).on('mouseup',(e)=>{
     if($('.mobile_nav_list').hasClass('nav_active')){
         if(!$(e.target).closest('.nav_active,.burger').length){
             $('.mobile_nav_list').toggleClass('nav_active');
-            $('.burger').toggeClass('burger_active')
+            $('.burger').toggleClass('burger_active')
         }
     }
 })
