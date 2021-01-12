@@ -262,7 +262,7 @@
     cursor: pointer;
   }
   footer#footer .all_right.active {
-    opacity: 0;
+    display: none;
   }
   footer#footer .line_right {
     bottom: 24px;
@@ -303,6 +303,7 @@
     opacity: 0.85;
   }
   footer#footer .fb_right {
+    display: block;
     bottom: 24px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;

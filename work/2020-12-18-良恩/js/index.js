@@ -24,15 +24,15 @@ $(document).on('mouseup',(e)=>{
 $('.all_right').on('click',(e)=>{
     $('.line_right').toggleClass('active');
     $('.fb_right').toggleClass('active');
-    $('.phone_right').toggleClass('active')
-    $('.all_right').toggleClass('active')
+    $('.phone_right').toggleClass('active');
+    $('.all_right').toggleClass('active');
     $('#totop').toggleClass('active')
 })
 
-//手機板右邊漢堡條點選空白地方收起來
+// 手機板右邊漢堡條點選空白地方收起來
 $(document).on('mouseup',(e)=>{
     if($('.all_right').hasClass('active')){
-        if(!$(e.target).closest('#totop,.fb_right,.line_right,.phone_right').length){
+        if(!$(e.target).closest('#totop,.line_right,.phone_right,.fb_right').length){
              $('.all_right').toggleClass('active')
              $('.fb_right').toggleClass('active')
              $('.line_right').toggleClass('active')
@@ -40,6 +40,7 @@ $(document).on('mouseup',(e)=>{
              $('#totop').toggleClass('active')
         }
     };
+
 })
 
 //nav 縮放

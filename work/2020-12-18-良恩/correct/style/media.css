@@ -372,13 +372,84 @@
 
 @media (max-width: 576px) {
   footer#footer #totop img {
-    bottom: 155px;
+    bottom: 90px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer#footer #totop.active img {
+    bottom: 220px;
+  }
+  footer#footer .all_right {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 24px;
+    z-index: 5;
+    width: 60px;
+    height: auto;
+    opacity: 0.85;
+    cursor: pointer;
+  }
+  footer#footer .all_right.active {
+    display: none;
   }
   footer#footer .line_right {
-    bottom: 90px;
+    bottom: 24px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  footer#footer .line_right.active {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 60px;
+    right: 10px;
+    bottom: 155px;
+    opacity: 0.85;
   }
   footer#footer .phone_right {
     display: block;
+    bottom: 24px;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  footer#footer .phone_right.active {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 10px;
+    bottom: 90px;
+    opacity: 0.85;
+  }
+  footer#footer .fb_right {
+    display: block;
+    bottom: 24px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  footer#footer .fb_right.active {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 10px;
+    bottom: 24px;
+    opacity: 0.85;
   }
   main#main #orth .bot_ {
     margin: 0 5%;

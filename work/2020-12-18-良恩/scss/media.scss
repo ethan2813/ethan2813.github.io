@@ -353,7 +353,6 @@
                 }
             }
         }
-
         .all_right{
             display: block;
             position: fixed;
@@ -367,7 +366,7 @@
             opacity: 0.85;
             cursor: pointer;
             &.active{
-                opacity: 0;
+                display: none;
             }
 
         }
@@ -404,6 +403,7 @@
 
         }
         .fb_right{
+            display: block;
             bottom:24px;
             transition: 0.5s;
             opacity: 0;

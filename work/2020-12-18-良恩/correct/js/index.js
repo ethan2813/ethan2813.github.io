@@ -20,6 +20,29 @@ $(document).on('mouseup',(e)=>{
     }
 })
 
+// 手機板點選漢堡條跳出又邊選單
+$('.all_right').on('click',(e)=>{
+    $('.line_right').toggleClass('active');
+    $('.fb_right').toggleClass('active');
+    $('.phone_right').toggleClass('active');
+    $('.all_right').toggleClass('active');
+    $('#totop').toggleClass('active')
+})
+
+// 手機板右邊漢堡條點選空白地方收起來
+$(document).on('mouseup',(e)=>{
+    if($('.all_right').hasClass('active')){
+        if(!$(e.target).closest('#totop,.line_right,.phone_right,.fb_right').length){
+             $('.all_right').toggleClass('active')
+             $('.fb_right').toggleClass('active')
+             $('.line_right').toggleClass('active')
+             $('.phone_right').toggleClass('active')
+             $('#totop').toggleClass('active')
+        }
+    };
+
+})
+
 //nav 縮放
 let nav = document.querySelector('#nav')
 let logo_photo = document.querySelector('.logo_photo')

@@ -293,19 +293,12 @@ footer#footer #totop img {
   cursor: pointer;
 }
 
-footer#footer .phone_right {
+footer#footer .all_right {
   display: none;
-  position: fixed;
-  right: 10px;
-  bottom: 24px;
-  z-index: 5;
-  width: 60px;
-  height: auto;
-  opacity: 0.85;
-  cursor: pointer;
 }
 
-footer#footer .line_right {
+footer#footer .phone_right {
+  display: none;
   position: fixed;
   right: 10px;
   bottom: 90px;
@@ -320,6 +313,17 @@ footer#footer .fb_right {
   position: fixed;
   right: 10px;
   bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .line_right {
+  position: fixed;
+  right: 10px;
+  bottom: 90px;
   z-index: 5;
   width: 60px;
   height: auto;
