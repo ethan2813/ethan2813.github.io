@@ -31,32 +31,15 @@ $('.all_right').on('click',(e)=>{
 
 //手機板右邊漢堡條點選空白地方收起來
 $(document).on('mouseup',(e)=>{
-    if($('.line_right').hasClass('active')){
-        if(!$(e.target).closest('.all_right').length){
-             $('.line_right').toggleClass('active')
-        }
-    };
-    if($('.fb_right').hasClass('active')){
-        if(!$(e.target).closest('.all_right').length){
-             $('.fb_right').toggleClass('active')
-        }
-    };
-    if($('.phone_right').hasClass('active')){
-        if(!$(e.target).closest('.all_right').length){
-             $('.phone_right').toggleClass('active')
-        }
-    };
     if($('.all_right').hasClass('active')){
-        if(!$(e.target).closest('.all_right').length){
+        if(!$(e.target).closest('#totop,.fb_right,.line_right,.phone_right').length){
              $('.all_right').toggleClass('active')
-        }
-    };
-    if($('#totop').hasClass('active')){
-        if(!$(e.target).closest('.all_right').length){
+             $('.fb_right').toggleClass('active')
+             $('.line_right').toggleClass('active')
+             $('.phone_right').toggleClass('active')
              $('#totop').toggleClass('active')
         }
     };
-    
 })
 
 //nav 縮放
