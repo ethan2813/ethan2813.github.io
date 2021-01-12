@@ -76,4 +76,8 @@ $('.line a , .line_right a').click(()=>{
     alert('敬請期待囉')
 })
 
+// $('.parallax-window').parallax({
+//     imageSrc:'../img/77745503_l.jpg'
+// })
+
 

@@ -197,8 +197,8 @@ footer#footer{
         img{
             position: fixed;
             right: 10px;
-            // bottom: 155px;
-            bottom: 90px;
+            bottom: 155px;
+            // bottom: 90px;
 
             z-index: 5;
             width: 60px;
@@ -212,7 +212,17 @@ footer#footer{
         position: fixed;
         right: 10px;
         // bottom: 155px;
-        // bottom: 90px;
+        bottom: 90px;
+        // bottom: 24px;
+        z-index: 5;
+        width: 60px;
+        height: auto;
+        opacity: 0.85;
+        cursor: pointer;
+    }
+    .fb_right{
+        position: fixed;
+        right: 10px;
         bottom: 24px;
         z-index: 5;
         width: 60px;
@@ -223,7 +233,7 @@ footer#footer{
     .line_right{
         position: fixed;
         right: 10px;
-        bottom: 24px;
+        bottom: 90px;
         z-index: 5;
         width: 60px;
         height: auto;

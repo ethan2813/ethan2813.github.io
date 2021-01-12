@@ -242,13 +242,14 @@
 
 @media (max-width: 576px) {
   footer#footer #totop img {
-    bottom: 155px;
+    bottom: 220px;
   }
   footer#footer .line_right {
     bottom: 90px;
   }
   footer#footer .phone_right {
     display: block;
+    bottom: 155px;
   }
   main#main #about_us .content {
     padding-top: 100px;
