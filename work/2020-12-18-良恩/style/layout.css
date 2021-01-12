@@ -293,6 +293,10 @@ footer#footer #totop img {
   cursor: pointer;
 }
 
+footer#footer .all_right {
+  display: none;
+}
+
 footer#footer .phone_right {
   display: none;
   position: fixed;

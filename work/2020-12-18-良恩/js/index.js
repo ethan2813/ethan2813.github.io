@@ -20,6 +20,33 @@ $(document).on('mouseup',(e)=>{
     }
 })
 
+// 手機板點選漢堡條跳出又邊選單
+$('.all_right').on('click',(e)=>{
+    $('.line_right').toggleClass('active');
+    $('.fb_right').toggleClass('active');
+    $('.phone_right').toggleClass('active')
+})
+
+//手機板右邊漢堡條點選空白地方收起來
+$(document).on('mouseup',(e)=>{
+    if($('.line_right').hasClass('active')){
+        if(!$(e.target).closest('.all_right').length){
+             $('.line_right').toggleClass('active')
+        }
+    };
+    if($('.fb_right').hasClass('active')){
+        if(!$(e.target).closest('.all_right').length){
+             $('.fb_right').toggleClass('active')
+        }
+    };
+    if($('.phone_right').hasClass('active')){
+        if(!$(e.target).closest('.all_right').length){
+             $('.phone_right').toggleClass('active')
+        }
+    };
+    
+})
+
 //nav 縮放
 let nav = document.querySelector('#nav')
 let logo_photo = document.querySelector('.logo_photo')
@@ -75,5 +102,7 @@ $(window).scroll(e => {
 $('.line a , .line_right a').click(()=>{
     alert('敬請期待囉')
 })
+
+
 
 

@@ -242,14 +242,55 @@
 
 @media (max-width: 576px) {
   footer#footer #totop img {
-    bottom: 220px;
+    bottom: 90px;
+  }
+  footer#footer .all_right {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 24px;
+    z-index: 5;
+    width: 60px;
+    height: auto;
+    opacity: 0.85;
+    cursor: pointer;
   }
   footer#footer .line_right {
-    bottom: 90px;
+    bottom: 24px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  footer#footer .line_right.active {
+    right: 80px;
+    bottom: 155px;
+    opacity: 0.85;
   }
   footer#footer .phone_right {
     display: block;
-    bottom: 155px;
+    bottom: 24px;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer#footer .phone_right.active {
+    right: 80px;
+    bottom: 90px;
+    opacity: 0.85;
+  }
+  footer#footer .fb_right {
+    bottom: 24px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  footer#footer .fb_right.active {
+    right: 80px;
+    bottom: 24px;
+    opacity: 0.85;
   }
   main#main #about_us .content {
     padding-top: 100px;
