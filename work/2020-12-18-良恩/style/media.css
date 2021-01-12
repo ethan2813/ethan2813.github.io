@@ -243,6 +243,12 @@
 @media (max-width: 576px) {
   footer#footer #totop img {
     bottom: 90px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer#footer #totop.active img {
+    bottom: 220px;
   }
   footer#footer .all_right {
     display: block;
@@ -255,6 +261,9 @@
     opacity: 0.85;
     cursor: pointer;
   }
+  footer#footer .all_right.active {
+    opacity: 0;
+  }
   footer#footer .line_right {
     bottom: 24px;
     -webkit-transition: 0.2s;
@@ -263,7 +272,7 @@
     opacity: 0;
   }
   footer#footer .line_right.active {
-    right: 80px;
+    right: 10px;
     bottom: 155px;
     opacity: 0.85;
   }
@@ -276,7 +285,7 @@
     transition: 0.2s;
   }
   footer#footer .phone_right.active {
-    right: 80px;
+    right: 10px;
     bottom: 90px;
     opacity: 0.85;
   }
@@ -288,7 +297,7 @@
     opacity: 0;
   }
   footer#footer .fb_right.active {
-    right: 80px;
+    right: 10px;
     bottom: 24px;
     opacity: 0.85;
   }

@@ -25,6 +25,8 @@ $('.all_right').on('click',(e)=>{
     $('.line_right').toggleClass('active');
     $('.fb_right').toggleClass('active');
     $('.phone_right').toggleClass('active')
+    $('.all_right').toggleClass('active')
+    $('#totop').toggleClass('active')
 })
 
 //手機板右邊漢堡條點選空白地方收起來
@@ -42,6 +44,16 @@ $(document).on('mouseup',(e)=>{
     if($('.phone_right').hasClass('active')){
         if(!$(e.target).closest('.all_right').length){
              $('.phone_right').toggleClass('active')
+        }
+    };
+    if($('.all_right').hasClass('active')){
+        if(!$(e.target).closest('.all_right').length){
+             $('.all_right').toggleClass('active')
+        }
+    };
+    if($('#totop').hasClass('active')){
+        if(!$(e.target).closest('.all_right').length){
+             $('#totop').toggleClass('active')
         }
     };
     

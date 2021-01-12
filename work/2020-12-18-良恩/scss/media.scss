@@ -342,8 +342,15 @@
         #totop{
             img{
                 // bottom: 220px;
-            bottom: 90px;
+                bottom: 90px;
+                transition: 0.2s;
 
+                
+            }
+            &.active{
+                img{
+                    bottom: 220px;
+                }
             }
         }
 
@@ -359,6 +366,10 @@
             height: auto;
             opacity: 0.85;
             cursor: pointer;
+            &.active{
+                opacity: 0;
+            }
+
         }
         .line_right{
             // bottom: 90px;
@@ -366,7 +377,7 @@
             transition: 0.2s;
             opacity: 0;
             &.active{
-                right: 80px;
+                right: 10px;
                 bottom: 155px;
                 opacity: 0.85;
             }
@@ -380,7 +391,7 @@
             transition: 0.2s;
 
             &.active{
-                right: 80px;
+                right: 10px;
                 bottom: 90px;
                 opacity: 0.85;
 
@@ -392,7 +403,7 @@
             transition: 0.2s;
             opacity: 0;
             &.active{
-                right: 80px;
+                right: 10px;
                 bottom: 24px;
                 opacity: 0.85;
             }
