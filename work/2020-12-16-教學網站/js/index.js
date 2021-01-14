@@ -22,14 +22,13 @@ $('.close_btn').on('click', (e) => {
 $('.item img').hover((e) => {
     // 選到哪一個區塊
     let index = $('.item img').index(e.currentTarget)
-
     //banner圖的陣列
     let photo = ['../img/1.jpg', '../img/2.jpg', '../img/3.jpg']
     let h2_ = ['我是標題1', '我是標題2', '我是標題3']
     let h3_ = ['我是副標題1', '我是副標題2', '我是副標題3']
     let p_ = ['我是內容1', '我是內容2', '我是內容3']
     //banner圖案依據滑鼠移到哪個區塊就更變該圖案
-    $('.banner').css('background-image', `url(${photo[index]})`)
+    // $('.banner').css('background-image', `url(${photo[index]})`)
     $('.h2_').html(`${h2_[index]}`)
     $('.h3_').html(`${h3_[index]}`)
     $('.p_').html(`${p_[index]}`)
@@ -38,21 +37,27 @@ $('.item img').hover((e) => {
 
 
 // 寫入各 .content-box 的高，然後高度設成 0
+// js寫法
 // const contents = document.querySelectorAll('.contents-box');
 // console.log(contents)
 // Array.prototype.forEach.call(contents, c => {
 //     c.dataset.height = c.offsetHeight;
 //     c.setAttribute('style', 'height: 0');
 // });
-$(document).ready(function(){
-    $('.contents-box').data('height',$('.contents-box').height());
-    console.log($('.contents-box').data('height'));
-    $('.contents-box').css('height','0')
+
+
+// jquery 寫法
+$(document).ready(function () {
+    $('.contents-box').each(function () {
+        $(this).data('height', $(this).height())
+        console.log($(this).data('height'))
+    })
+    $('.contents-box').css('height', '0')
 })
 
 
 
-$('.item').click(function(){
+$('.item').click(function () {
     let index = $('.item').index(this) + 1
     // $('.contents-box').removeClass('height_0');
 
@@ -63,21 +68,28 @@ $('.item').click(function(){
     $('.contents-box:nth-of-type(' + index + ')').addClass('active')
 
     //算出.contents-box該index的高度
-    //let height_ =  $('.contents-box:nth-of-type(' + index + ')').attr('data-height');     
-//    
-    $('.contents-box').css('height','0')
-   let height_ =  $('.contents-box:nth-of-type(' + index + ')').data('height');
-   console.log(height_)
 
+    // js寫法
+    // let height_ =  $('.contents-box:nth-of-type(' + index + ')').attr('data-height');
 
-//    如果該.contents-box 有active 就增加高度，沒有高度就為0
-    if($('.contents-box:nth-of-type(' + index + '):contains("active")')){
+    // jquery 寫法
+    $('.contents-box').css('height', '0')
+    let height_ = $('.contents-box:nth-of-type(' + index + ')').data('height');
+
+    console.log(height_)
+
+    //如果該.contents-box 有active 就增加高度，沒有高度就為0
+    if ($('.contents-box:nth-of-type(' + index + '):contains("active")')) {
         // 先把所有的.contents-box 高度都設為0
-        $('.contents-box').css('height','0')
+        $('.contents-box').css('height', '0')
         //點選哪一個.contents-box 設為預設高度
-        $('.contents-box:nth-of-type(' + index + ')').css('height',height_)
-    }else{
-        
+        $('.contents-box:nth-of-type(' + index + ')').css('height', height_)
+    } else {
+
     }
+})
+
+$('.close_btn').click((e) => {
+    $('.contents-box').css('height', 0)
 })
 
