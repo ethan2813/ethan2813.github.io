@@ -11,3 +11,7 @@ body {
           box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+
+P {
+  color: #4F4F4F;
+}
