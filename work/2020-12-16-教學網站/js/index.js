@@ -47,49 +47,70 @@ $('.item img').hover((e) => {
 
 
 // jquery 寫法
-$(document).ready(function () {
-    $('.contents-box').each(function () {
-        $(this).data('height', $(this).height())
-        console.log($(this).data('height'))
-    })
-    $('.contents-box').css('height', '0')
+// $(document).ready(function () {
+//     $('.contents-box').each(function () {
+//         $(this).data('height', $(this).height())
+            
+//     })
+//     $('.contents-box').css('height', '0')
+// })
+
+
+
+// $('.item').click(function () {
+//     let index = $('.item').index(this) + 1
+//     // $('.contents-box').removeClass('height_0');
+
+//     // 所有.contents-box 移除 active 這個class
+//     $('.contents-box').removeClass('active')
+
+//     //點選到哪一個index 就移除.contents-box的該index
+//     $('.contents-box:nth-of-type(' + index + ')').addClass('active')
+
+//     //算出.contents-box該index的高度
+
+//     // js寫法
+//     // let height_ =  $('.contents-box:nth-of-type(' + index + ')').attr('data-height');
+
+//     // jquery 寫法
+//     $('.contents-box').css('height', '0')
+//     let height_ = $('.contents-box:nth-of-type(' + index + ')').data('height');
+
+//     console.log(height_)
+
+//     //如果該.contents-box 有active 就增加高度，沒有高度就為0
+//     if ($('.contents-box:nth-of-type(' + index + '):contains("active")')) {
+//         // 先把所有的.contents-box 高度都設為0
+//         $('.contents-box').css('height', '0')
+//         //點選哪一個.contents-box 設為預設高度
+//         $('.contents-box:nth-of-type(' + index + ')').css('height', height_)
+//     } else {
+
+//     }
+// })
+
+
+
+$('.item').on('click',(e)=>{
+    let index = $('.item').index(e.currentTarget) + 1
+    
+    $('.contents-box').removeClass('display_block');
+    $('.contents-box:nth-of-type(' + index + ')').addClass('display_block')
 })
 
-
-
-$('.item').click(function () {
-    let index = $('.item').index(this) + 1
-    // $('.contents-box').removeClass('height_0');
-
-    // 所有.contents-box 移除 active 這個class
-    $('.contents-box').removeClass('active')
-
-    //點選到哪一個index 就移除.contents-box的該index
-    $('.contents-box:nth-of-type(' + index + ')').addClass('active')
-
-    //算出.contents-box該index的高度
-
-    // js寫法
-    // let height_ =  $('.contents-box:nth-of-type(' + index + ')').attr('data-height');
-
-    // jquery 寫法
-    $('.contents-box').css('height', '0')
-    let height_ = $('.contents-box:nth-of-type(' + index + ')').data('height');
-
-    console.log(height_)
-
-    //如果該.contents-box 有active 就增加高度，沒有高度就為0
-    if ($('.contents-box:nth-of-type(' + index + '):contains("active")')) {
-        // 先把所有的.contents-box 高度都設為0
-        $('.contents-box').css('height', '0')
-        //點選哪一個.contents-box 設為預設高度
-        $('.contents-box:nth-of-type(' + index + ')').css('height', height_)
-    } else {
-
-    }
-})
-
+// 點選x 關閉視窗
 $('.close_btn').click((e) => {
-    $('.contents-box').css('height', 0)
+    // $('.contents-box').css('height', 0)
+    $('.contents-box').removeClass('display_block');
 })
+
+$('.contents_btn').on('click',(e)=>{
+    let index = $('.contents_btn').index(e.target) + 1
+    
+    $('.title_').removeClass('display_block')
+    $('.title_:nth-of-type(' + index + ')').addClass('display_block');
+ 
+})
+
+
 
