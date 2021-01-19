@@ -1,0 +1,127 @@
+main#main{
+    padding-right: 130px;
+    padding-top: 90px;
+
+    // banner
+    .banner{
+        padding-left: 130px;
+        position: relative;
+        .banner_1{
+            width: 100%;
+        }
+        .banner_1_icon{
+            width: 260px;
+            position: absolute;
+            bottom: -100px;
+            right: -30px;
+        }
+    }
+
+    // 直式清單
+    .banner_list{
+        writing-mode: vertical-lr;
+        margin-left: 20%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        p{
+            font-size: 24px;
+            letter-spacing: 6px;
+            padding: 15px 15px;
+            margin: 0;
+
+            &:nth-of-type(1){
+                border-bottom: #8EAB5D solid 10px;
+            }
+        }           
+    }
+
+    // 關於本院
+    .about{
+        .title_{
+            p{
+                margin-left: 15%;
+                font-size: 36px;
+                position: relative;
+                letter-spacing: 10px;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    background-color: black;
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    width: 500px;
+                    height: 1px;
+                    transform: translate(-100%,-50%);
+                }
+
+
+                
+                span{
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+            }
+            
+        }
+        .content_{
+            background-image: url(../img/about_back.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            .article{
+                padding-top: 50px;
+                padding-bottom: 80px;
+                max-width: 700px;
+                h3{
+                    font-size: 23px;
+                    color: #8EAB5D;
+                    margin-bottom: 50px;
+                    letter-spacing: 5px;
+
+                }
+                p{
+                    font-size: 18px;
+                    font-family: 微軟正黑體;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+
+    //診療項目
+    .items{
+        .title_{
+            p{
+                margin-left: 15%;
+                font-size: 36px;
+                position: relative;
+                letter-spacing: 10px;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    background-color: black;
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    width: 500px;
+                    height: 1px;
+                    transform: translate(-100%,-50%);
+                }
+
+
+                
+                span{
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+            }
+            
+        }
+    }
+
+
+
+}

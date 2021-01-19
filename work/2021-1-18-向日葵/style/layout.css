@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -11,11 +12,98 @@ body {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 微軟正黑體;
+  font-family: 'Noto Serif TC', serif;
 }
 
 nav#nav {
-  width: 130px;
+  width: 100%;
   position: fixed;
-  background-color: beige;
+  z-index: 99;
+}
+
+nav#nav .menu {
+  width: 130px;
+  height: 90px;
+  background-color: #8EAB5D;
+  margin-left: auto;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+nav#nav .menu .burger .line_ {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  margin: 12px 0;
+}
+
+nav#nav .menu .burger .line2 {
+  width: 35px;
+}
+
+nav#nav .menu .burger .line3 {
+  margin-bottom: 5px;
+}
+
+nav#nav .menu .burger P {
+  color: white;
+}
+
+footer#footer {
+  background-color: #8EAB5D;
+}
+
+footer#footer .footer_top {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+footer#footer .footer_top .footer_title {
+  color: white;
+}
+
+footer#footer .footer_top .footer_title h3 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+
+footer#footer .footer_top .footer_title p {
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+footer#footer .footer_top .footer_time {
+  color: white;
+}
+
+footer#footer .footer_top .footer_time h3 {
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+footer#footer .footer_top .footer_time .table_opening {
+  font-family: 微軟正黑體;
+}
+
+footer#footer .footer_top .footer_time .table_opening tr {
+  border-bottom: solid white 1px;
+}
+
+footer#footer .footer_top .footer_time .table_opening tr td:nth-of-type(1) {
+  padding-left: 0;
+}
+
+footer#footer .footer_top .footer_time .table_opening tr td {
+  padding: 6px 8px;
+  text-align: left;
+}
+
+footer#footer .footer_top .contact_us a img {
+  width: 50px;
+  margin-right: 5px;
 }

@@ -1,1 +1,5 @@
-/* No CSS */
+@media (max-width: 1600px) {
+  main#main .about .content_ .article {
+    max-width: 50%;
+  }
+}

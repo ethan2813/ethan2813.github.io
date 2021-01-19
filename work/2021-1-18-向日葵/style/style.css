@@ -1,1 +1,119 @@
-/* No CSS */
+@charset "UTF-8";
+main#main {
+  padding-right: 130px;
+  padding-top: 90px;
+}
+
+main#main .banner {
+  padding-left: 130px;
+  position: relative;
+}
+
+main#main .banner .banner_1 {
+  width: 100%;
+}
+
+main#main .banner .banner_1_icon {
+  width: 260px;
+  position: absolute;
+  bottom: -100px;
+  right: -30px;
+}
+
+main#main .banner_list {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-left: 20%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+main#main .banner_list p {
+  font-size: 24px;
+  letter-spacing: 6px;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+main#main .banner_list p:nth-of-type(1) {
+  border-bottom: #8EAB5D solid 10px;
+}
+
+main#main .about .title_ p {
+  margin-left: 15%;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 10px;
+}
+
+main#main .about .title_ p::after {
+  content: '';
+  display: block;
+  background-color: black;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 500px;
+  height: 1px;
+  -webkit-transform: translate(-100%, -50%);
+      -ms-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+main#main .about .title_ p span {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+main#main .about .content_ {
+  background-image: url(../img/about_back.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main#main .about .content_ .article {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  max-width: 700px;
+}
+
+main#main .about .content_ .article h3 {
+  font-size: 23px;
+  color: #8EAB5D;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+main#main .about .content_ .article p {
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  letter-spacing: 4px;
+}
+
+main#main .items .title_ p {
+  margin-left: 15%;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 10px;
+}
+
+main#main .items .title_ p::after {
+  content: '';
+  display: block;
+  background-color: black;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 500px;
+  height: 1px;
+  -webkit-transform: translate(-100%, -50%);
+      -ms-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+main#main .items .title_ p span {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
