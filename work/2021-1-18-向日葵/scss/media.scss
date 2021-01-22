@@ -10,3 +10,51 @@
         }
     }
 }
+
+@media(max-width:768px){
+    main#main{
+        padding-top: 0px;
+        // banner
+        .banner{
+            padding-right: 0px;
+            padding-left: 0px;
+            .banner_1{
+                display: none;
+            }
+            .banner_1_mobile{
+                display: block;
+            }
+            .banner_1_icon{
+                display: none;
+            }
+        }
+
+        // 直式清單
+        .banner_list{
+            display: none;
+        }
+
+        // 關於本院
+        .about{
+            padding-right: 0px;
+            .content_{
+                background-image: none;
+
+                .article{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        // 診療項目
+        .items{
+            .content_{
+                .content_box{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

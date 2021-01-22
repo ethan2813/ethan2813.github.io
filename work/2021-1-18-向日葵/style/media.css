@@ -3,3 +3,37 @@
     max-width: 50%;
   }
 }
+
+@media (max-width: 768px) {
+  main#main {
+    padding-top: 0px;
+  }
+  main#main .banner {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  main#main .banner .banner_1 {
+    display: none;
+  }
+  main#main .banner .banner_1_mobile {
+    display: block;
+  }
+  main#main .banner .banner_1_icon {
+    display: none;
+  }
+  main#main .banner_list {
+    display: none;
+  }
+  main#main .about {
+    padding-right: 0px;
+  }
+  main#main .about .content_ {
+    background-image: none;
+  }
+  main#main .about .content_ .article {
+    max-width: 100%;
+  }
+  main#main .items .content_ .content_box p {
+    font-size: 18px;
+  }
+}
