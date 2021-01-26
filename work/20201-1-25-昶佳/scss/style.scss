@@ -1,0 +1,171 @@
+main#main{
+    .banner{
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 100px;
+        .text{
+            padding-top: 100px;
+            z-index: 3;
+            position: relative;
+            p:nth-of-type(1){
+                font-family: Marck Script;
+                font-size: 45px;
+                line-height: 56px;
+                letter-spacing: 0.05em;
+                color: #EFB79B;
+            }
+            p:nth-of-type(2){
+                line-height: 50px;
+                margin-bottom: 0;
+                position: relative;
+                margin-left: 20px;
+                font-size: 20px;
+                color: white;
+                span{
+                    color: #EFB79B;
+                    margin: 0 10px 10px 10px;
+                    
+                }
+                span:nth-of-type(1){
+                    position: absolute;
+                    top: -10px;
+                    left: -43px;
+                    font-size: 28px;
+                    font-weight: 100;
+                }
+                span:nth-of-type(2){
+                    position: absolute;
+                    bottom: -17px;
+                    font-size: 28px;
+                    font-weight: 100;
+
+                }
+                
+            }
+            .line{
+                background-color: #DCAC91;
+                width: 25px;
+                height: 1px;
+                margin-top: 68px;
+            }
+            
+            .text_bot_L{
+                p{
+                    margin-top: 68px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+            .text_bot_R{
+                margin-top: -50px;
+            }
+           
+
+            
+        }
+        .img{
+            
+            .right{
+                position: absolute;
+                z-index: -1;
+                right: 0;
+                top: 0;
+            }
+            .glass{
+                position: absolute;
+                z-index: -2;
+                
+                top: 69px;
+                left: 0;
+                right: 0;   
+                backdrop-filter: blur(5px);
+            }
+       
+            .line{
+                position: absolute;
+                left: -650px;
+                top: -50px;
+                z-index: -3;
+                z-index: -3;
+
+            }
+        }
+        
+    }
+
+    // 醫生
+    .doctor{
+        .doctor_L{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+
+            .doctor_L_border{
+                padding: 50px;
+                background-color: #585E4F;
+                position: relative;
+
+                .logo_column{
+                    position: absolute;
+                    top: -20px;
+                    left: -60px;
+                }
+                span{
+                    padding: 20px 45px;
+                    background-color: #EFB79B;
+                    font-size: 22px;
+                    color: white;
+                    // position: absolute; 
+                }
+                p{
+                    background-color: #EFB79B;
+                    padding: 20px 45px;
+                    display: inline-block;
+                    font-size: 22px;
+                    color: white;
+                    position: absolute; 
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%, 80%);
+
+
+
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 50px;
+                    height: 1px;
+                    top: 60px;
+                    left: 0px;
+                    transform: translate(-50% , -50%);
+                    background-color: #EFB79B;
+                }
+            }
+        }
+        .doctor_R{
+            .article{
+                h3{
+                    // color: #585E4F;
+                    font-family: Marck Script;
+                    font-size: 45px;
+                }
+
+                .line{
+                    width: 200px;
+                    height: 1px;
+                    background-color: #EFB79B;
+                }
+                
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

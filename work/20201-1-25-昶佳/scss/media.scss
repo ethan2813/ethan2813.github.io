@@ -1,0 +1,30 @@
+@media(max-width:768px){
+    nav#nav{
+        .logo{
+            margin-left: 20px;
+        }
+        .burger{
+            margin-right: 20px;
+        }
+    }
+    main#main{
+        .banner{
+            .text{
+                .text_bot_R{
+                    margin-top: 70px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .img{
+                .right{
+                    right: -579px;
+                    top: 68px;
+                    
+                }
+            }
+        }
+    }
+}
