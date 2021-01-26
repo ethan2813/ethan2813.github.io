@@ -2,7 +2,7 @@ main#main{
     .banner{
         position: relative;
         overflow: hidden;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
         .text{
             padding-top: 100px;
             z-index: 3;
@@ -102,12 +102,29 @@ main#main{
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 100px;
+            box-shadow:rgba(0px 15px 50px rgba(0, 0, 0, 0.15));
+            z-index: 3;
+            
+            // padding: 10%;
 
             .doctor_L_border{
                 padding: 50px;
+                margin: 100px 0;
                 background-color: #585E4F;
                 position: relative;
+                filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15)); 
+            }
+
+
+                img:nth-of-type(1){
+                    display: block;
+                    width: 100%;
+                }
+                img:nth-of-type(2){
+                    
+                    display: none;
+
+                }
 
                 .logo_column{
                     position: absolute;
@@ -123,7 +140,7 @@ main#main{
                 }
                 p{
                     background-color: #EFB79B;
-                    padding: 20px 45px;
+                    padding: 20px 35px;
                     display: inline-block;
                     font-size: 22px;
                     color: white;
@@ -131,6 +148,7 @@ main#main{
                     left: 50%;
                     bottom: 0;
                     transform: translate(-50%, 80%);
+                    white-space: nowrap;
 
 
 
@@ -146,25 +164,63 @@ main#main{
                     transform: translate(-50% , -50%);
                     background-color: #EFB79B;
                 }
-            }
+            
         }
         .doctor_R{
+            z-index: -1;
+            padding-top: 16%;
+            position: relative;
+            .angle{
+                position: absolute;
+                right: 0;
+                top: 6%;
+                width: 40%;
+            }
             .article{
+                background-image: url(../img/resume_black.jpg);
+                // background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding-top: 15%;
+                padding-left: 20%;
+                padding-bottom: 15%;
+
                 h3{
                     // color: #585E4F;
                     font-family: Marck Script;
                     font-size: 45px;
+                    margin-bottom: 30px;
                 }
 
-                .line{
+                .line_1{
                     width: 200px;
                     height: 1px;
                     background-color: #EFB79B;
+                    margin-bottom: 40px;
                 }
                 
                 p{
+                    
+                    margin-bottom: 100px;
                     font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;
+                    color: #878787;
                 }
+                .line_2{
+                    width: 350px;
+                    height: 1px;
+                    background-color: #EFB79B;
+                }
+            }
+        }
+    }
+
+    .box_1{
+        .box_1_L{
+            width: 100%;
+            img{
+                width: 70%;
             }
         }
     }
