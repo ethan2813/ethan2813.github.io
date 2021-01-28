@@ -1,3 +1,51 @@
+@media(max-width:1450px){
+    main#main{
+        .box_3{
+            .box_3_bot {
+                .article_1{
+                    max-width: 580px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1400px){
+    main#main{
+        .box_2{
+            margin-bottom: 200px;
+            .box_2_bot{
+                .article_box{
+                    top:57%;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1200px){
+    main#main{
+        .box_3{
+            .box_3_bot {
+                .article_1{
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    main#main{
+        .box_3{
+            .box_3_bot {
+                .article_1{
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:768px){
     nav#nav{
         .logo{
@@ -127,6 +175,7 @@
         .box_2{
             .title{
                 margin: 80px 0;
+                position: unset;
             }
             .box_2_bot{
                 .box_2_img1{
@@ -155,6 +204,64 @@
                     width: 90%;
                     margin: 5%;
                 }
+            }
+        }
+
+        .box_3{
+            .box_3_bot{
+                .article_1{
+                    max-width:unset;
+                }
+                .box_3_img{
+                    position: unset;
+                    width: 100%;
+                }
+                .article_2{
+                    padding: 80px 15px;
+                }
+            }
+        }
+
+        .box_4{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            .title{
+                position: unset;
+            }
+            
+            .content{
+                position: relative;
+                .box_4_img2_mobile{
+                    display: block;
+                    width: 40%;
+                    position: absolute;
+                    right: 0;
+                    top: -50px;
+                }
+                .article{
+                    margin-top: 50px;   
+                    position: unset;
+                    margin: 40px 10px;
+                    padding: 30px 10px;
+
+                    .box_4_img2{
+                        display: none;
+                    }
+                }
+                .article_bot{
+                    display: none;
+                }
+                .box_4_img{
+                    width: 80%;
+                }
+            }
+        }
+
+        .box_5{
+            .content{
+                
+                padding: 80px 15px;
+
             }
         }
     }
