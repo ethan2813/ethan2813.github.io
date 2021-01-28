@@ -58,4 +58,51 @@
   main#main .doctor .doctor_R .article .line_2 {
     width: 80%;
   }
+  main#main .box_1 .box_1_L .box_back {
+    width: 30%;
+    height: 140px;
+    top: 100px;
+  }
+  main#main .box_1 .box_1_L img {
+    padding-left: 30px;
+  }
+  main#main .box_1 .box_1_R p:nth-of-type(1) {
+    padding-left: 0;
+  }
+  main#main .box_1 .box_1_R p:nth-of-type(2) {
+    padding-left: 0;
+  }
+  main#main .box_1 .text p {
+    font-size: 36px;
+    text-align: unset;
+  }
+  main#main .box_1 .title p {
+    text-align: center;
+    font-size: 25px;
+  }
+  main#main .box_2 .title {
+    margin: 80px 0;
+  }
+  main#main .box_2 .box_2_bot .box_2_img1 {
+    display: none;
+  }
+  main#main .box_2 .box_2_bot .box_2_img1_mobile {
+    width: 100%;
+    display: block;
+  }
+  main#main .box_2 .box_2_bot .article_box {
+    position: unset;
+    width: 100%;
+  }
+  main#main .box_2 .box_2_bot .box_2_img2_:before {
+    display: none;
+  }
+  main#main .box_2 .box_2_bot .box_2_img2_ .box_2_img2 {
+    display: none;
+  }
+  main#main .box_2 .box_2_bot .box_2_img2_mobile {
+    display: block;
+    width: 90%;
+    margin: 5%;
+  }
 }
