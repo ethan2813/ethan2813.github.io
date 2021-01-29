@@ -2,6 +2,14 @@
   main#main .box_3 .box_3_bot .article_1 {
     max-width: 580px;
   }
+  main#main .box_6 .article img.box_6_img {
+    max-width: 600px;
+  }
+  main#main .box_6 img.box_6_img2 {
+    top: calc(25% + 200px);
+    left: 32%;
+    max-width: 470px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -17,6 +25,14 @@
 @media (max-width: 1200px) {
   main#main .box_3 .box_3_bot .article_1 {
     max-width: 500px;
+  }
+  main#main .box_6 img.box_6_img2 {
+    top: calc(86% + 200px);
+    left: 50%;
+    max-width: 470px;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
   }
 }
 
@@ -167,7 +183,7 @@
     margin: 40px 10px;
     padding: 30px 10px;
   }
-  main#main .box_4 .content .article .box_4_img2 {
+  main#main .box_4 .content img.box_4_img2 {
     display: none;
   }
   main#main .box_4 .content .article_bot {
@@ -176,7 +192,65 @@
   main#main .box_4 .content .box_4_img {
     width: 80%;
   }
+  main#main .box_5 {
+    margin-top: 100px;
+  }
+  main#main .box_5 .color_box {
+    display: none;
+  }
+  main#main .box_5 img.box_5_img {
+    position: unset;
+    width: 100%;
+    max-width: unset;
+    display: none;
+  }
+  main#main .box_5 .title {
+    margin-bottom: 100px;
+  }
+  main#main .box_5 img.box_5_img_mobile {
+    width: 100%;
+    display: block;
+  }
   main#main .box_5 .content {
     padding: 80px 15px;
+  }
+  main#main .box_5 .content img.box_5_img2_mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31%;
+    -webkit-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+            transform: translate(-10%, -50%);
+  }
+  main#main .box_5 img.box_5_img2 {
+    display: none;
+  }
+  main#main .box_6 {
+    display: none;
+  }
+  main#main .box_6_mobile {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  main#main .box_6_mobile .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main#main .box_6_mobile .title img {
+    margin-right: 10px;
+  }
+  main#main .box_6_mobile .title span {
+    color: #EFB79B;
+    font-family: Marck Script;
+    font-size: 45px;
   }
 }
