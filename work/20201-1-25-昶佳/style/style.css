@@ -930,6 +930,10 @@ main#main .box_7_mobile {
   display: none;
 }
 
+main#main .box_8 {
+  display: block;
+}
+
 main#main .box_8 .title {
   margin-bottom: 50px;
   margin-top: 230px;
@@ -1000,11 +1004,46 @@ main#main .box_8 .back_img {
 main#main .box_8 .back_img img.box_8_img {
   max-width: 750px;
   width: 100%;
+  z-index: -1;
 }
 
 main#main .box_8 .back_img img.box_8_img2 {
   position: absolute;
   max-width: 300px;
+  width: calc(12% + 120px);
   bottom: 0;
-  right: 10%;
+  right: calc( 15% - 200px);
+  z-index: 0;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+main#main .box_8 .back_img .color_back {
+  max-width: 420px;
+  width: 420px;
+  height: 300px;
+  background-color: #EFB79B;
+  position: absolute;
+  left: 15%;
+  bottom: -50px;
+  z-index: -2;
+}
+
+main#main .box_8 .bot_article {
+  margin-left: auto;
+  width: 782px;
+  background-color: white;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+main#main .box_8 .bot_article p {
+  font-size: 16px;
+  color: #878787;
+  letter-spacing: 0.05em;
+}
+
+main#main .box_8_mobile {
+  display: none;
 }

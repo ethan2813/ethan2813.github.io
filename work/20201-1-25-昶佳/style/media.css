@@ -391,4 +391,31 @@
     letter-spacing: 0.05em;
     color: #878787;
   }
+  main#main .box_8 {
+    display: none;
+  }
+  main#main .box_8_mobile {
+    display: block;
+  }
+  main#main .box_8_mobile .title {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 80px;
+  }
+  main#main .box_8_mobile .title img {
+    margin-right: 10px;
+    width: 50px;
+  }
+  main#main .box_8_mobile .title span {
+    color: #EFB79B;
+    font-family: Marck Script;
+    font-size: 30px;
+  }
 }

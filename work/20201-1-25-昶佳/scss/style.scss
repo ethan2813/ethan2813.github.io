@@ -883,6 +883,7 @@ main#main{
         display: none;
     }
     .box_8{
+        display: block;
         .title{
             margin-bottom: 50px;
             margin-top: 230px;
@@ -943,15 +944,46 @@ main#main{
             img.box_8_img{
                 max-width: 750px;
                 width: 100%;
+                z-index: -1;
             }
 
             img.box_8_img2{
                 position: absolute;
                 max-width: 300px;
+                width: calc(12% + 120px);
                 bottom: 0;
-                right: 10%;
+                right: calc( 15% - 200px );
+                z-index: 0;
+                transform: translate(-50% , 0%);
+            }
+            .color_back{
+                max-width: 420px;
+                width: 420px;
+                height: 300px;
+                background-color: #EFB79B;
+                position: absolute;
+                left: 15%;
+                bottom: -50px;
+                z-index: -2;
+            }
+            
+        }
+        .bot_article{
+            margin-left: auto;
+            width: 782px;
+            background-color: white;
+            margin-top: 50px;
+            padding: 50px;
+
+            p{
+                font-size: 16px;
+                color: #878787;
+                letter-spacing: 0.05em;
             }
         }
+    }
+    .box_8_mobile{
+        display: none;
     }
     
 }

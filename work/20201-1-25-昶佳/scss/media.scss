@@ -479,6 +479,28 @@
                 }
             }
         }
+        .box_8{
+            display: none;
+        }
+        .box_8_mobile{
+            display: block;
+            .title{
+                margin-top: 100px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 80px;
+                img{
+                    margin-right: 10px;
+                    width: 50px;
+                }
+                span{
+                    color: #EFB79B;
+                    font-family:Marck Script ;
+                    font-size: 30px;
+                }
+            }
+
+        }
        
     }
 }
