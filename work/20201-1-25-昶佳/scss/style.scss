@@ -7,14 +7,23 @@ main#main{
             padding-top: 100px;
             z-index: 3;
             position: relative;
-            p:nth-of-type(1){
+            p.pc{
                 font-family: Marck Script;
                 font-size: 45px;
                 line-height: 56px;
                 letter-spacing: 0.05em;
                 color: #EFB79B;
+                display: block;
             }
-            p:nth-of-type(2){
+            p.mobile{
+                font-family: Marck Script;
+                font-size: 45px;
+                line-height: 56px;
+                letter-spacing: 0.05em;
+                color: #EFB79B;
+                display: none;
+            }
+            p:nth-of-type(3){
                 line-height: 50px;
                 margin-bottom: 0;
                 position: relative;
@@ -89,6 +98,7 @@ main#main{
                 top: -50px;
                 z-index: -3;
                 z-index: -3;
+                opacity: 0.3;
 
             }
         }
@@ -298,15 +308,15 @@ main#main{
         .box_1_bot{
         position: relative;
 
-        .back_box_{
-            background-color: #4E5445;
-            position: absolute;
-            width: 70%;
-            top: -100px;
-            right: 0;
-            bottom: -100px;
-            z-index: -1;
-        }
+            .back_box_{
+                background-color: #4E5445;
+                position: absolute;
+                width: 70%;
+                top: calc(-100px);
+                right: 0;
+                bottom: -100px;
+                z-index: -1;
+            }
 
             // 下方文字
             .text{
@@ -316,7 +326,7 @@ main#main{
                     font-family: Marck Script;
                     font-size: 45px;
                     color: #EFB79B;
-                    text-align: justify;
+                    // text-align: justify;
                     margin-bottom: 0;
 
                 }
@@ -561,7 +571,8 @@ main#main{
             align-items: center;
             margin-bottom: 80px;
             position: absolute;
-            right: 35%;
+            // right: 35%;
+            right: calc( 20% + 280px);
             z-index: 2;
             top: 5%;
 
@@ -778,7 +789,7 @@ main#main{
     }
     .box_7{
         display: block;
-        margin-bottom: 430px;
+        margin-bottom: 200px;
         position: relative;
         .box_7_L_article{
             position: absolute;
@@ -886,12 +897,13 @@ main#main{
         display: block;
         .title{
             margin-bottom: 50px;
-            margin-top: 230px;
+            margin-top: 200px;
             display: flex;
             align-items: center;
             // margin-bottom: 180px;
             img{
                 margin-right: 30px;
+                width: 75px;
             }
             span{
                 color: #EFB79B;
@@ -928,8 +940,6 @@ main#main{
                 font-size: 16px;
                 letter-spacing: 0.05em;
                 margin-top: 15px;
-
-
             }
             
             
@@ -984,6 +994,54 @@ main#main{
     }
     .box_8_mobile{
         display: none;
+    }
+    .box_9{
+        display: block;
+        .title{
+            margin-bottom: 50px;
+            margin-top: 230px;
+            display: flex;
+            align-items: center;
+            // margin-bottom: 180px;
+            img{
+                margin-right: 30px;
+                width: 75px;
+            }
+            span{
+                color: #EFB79B;
+                font-family:Marck Script ;
+                font-size: 45px;
+            }
+        }
+
+        .content{
+            background-color: white;
+            color: #878787;
+            padding: 80px 55px;
+            h3{
+                
+                font-size: 20px;
+                letter-spacing: 0.05em;
+                font-weight: bold;
+                
+                
+                &:after{
+                    display: block;
+                    content: '';
+                    margin-top: 30px;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #EFB79B;
+                    margin-top: 15px;
+                }
+            }
+            p{
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                margin-top: 15px;
+            }
+        }
+
     }
     
 }

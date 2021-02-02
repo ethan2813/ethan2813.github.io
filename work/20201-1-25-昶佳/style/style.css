@@ -11,15 +11,25 @@ main#main .banner .text {
   position: relative;
 }
 
-main#main .banner .text p:nth-of-type(1) {
+main#main .banner .text p.pc {
   font-family: Marck Script;
   font-size: 45px;
   line-height: 56px;
   letter-spacing: 0.05em;
   color: #EFB79B;
+  display: block;
 }
 
-main#main .banner .text p:nth-of-type(2) {
+main#main .banner .text p.mobile {
+  font-family: Marck Script;
+  font-size: 45px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: #EFB79B;
+  display: none;
+}
+
+main#main .banner .text p:nth-of-type(3) {
   line-height: 50px;
   margin-bottom: 0;
   position: relative;
@@ -28,12 +38,12 @@ main#main .banner .text p:nth-of-type(2) {
   color: white;
 }
 
-main#main .banner .text p:nth-of-type(2) span {
+main#main .banner .text p:nth-of-type(3) span {
   color: #EFB79B;
   margin: 0 10px 10px 10px;
 }
 
-main#main .banner .text p:nth-of-type(2) span:nth-of-type(1) {
+main#main .banner .text p:nth-of-type(3) span:nth-of-type(1) {
   position: absolute;
   top: -10px;
   left: -43px;
@@ -41,7 +51,7 @@ main#main .banner .text p:nth-of-type(2) span:nth-of-type(1) {
   font-weight: 100;
 }
 
-main#main .banner .text p:nth-of-type(2) span:nth-of-type(2) {
+main#main .banner .text p:nth-of-type(3) span:nth-of-type(2) {
   position: absolute;
   bottom: -17px;
   font-size: 28px;
@@ -90,6 +100,7 @@ main#main .banner .img .line {
   top: -50px;
   z-index: -3;
   z-index: -3;
+  opacity: 0.3;
 }
 
 main#main .doctor .doctor_L {
@@ -317,7 +328,7 @@ main#main .box_1 .box_1_bot .back_box_ {
   background-color: #4E5445;
   position: absolute;
   width: 70%;
-  top: -100px;
+  top: calc(-100px);
   right: 0;
   bottom: -100px;
   z-index: -1;
@@ -331,7 +342,6 @@ main#main .box_1 .box_1_bot .text p {
   font-family: Marck Script;
   font-size: 45px;
   color: #EFB79B;
-  text-align: justify;
   margin-bottom: 0;
 }
 
@@ -560,7 +570,7 @@ main#main .box_4 .title {
           align-items: center;
   margin-bottom: 80px;
   position: absolute;
-  right: 35%;
+  right: calc( 20% + 280px);
   z-index: 2;
   top: 5%;
 }
@@ -798,7 +808,7 @@ main#main .box_6_mobile {
 
 main#main .box_7 {
   display: block;
-  margin-bottom: 430px;
+  margin-bottom: 200px;
   position: relative;
 }
 
@@ -936,7 +946,7 @@ main#main .box_8 {
 
 main#main .box_8 .title {
   margin-bottom: 50px;
-  margin-top: 230px;
+  margin-top: 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -949,6 +959,7 @@ main#main .box_8 .title {
 
 main#main .box_8 .title img {
   margin-right: 30px;
+  width: 75px;
 }
 
 main#main .box_8 .title span {
@@ -1046,4 +1057,60 @@ main#main .box_8 .bot_article p {
 
 main#main .box_8_mobile {
   display: none;
+}
+
+main#main .box_9 {
+  display: block;
+}
+
+main#main .box_9 .title {
+  margin-bottom: 50px;
+  margin-top: 230px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#main .box_9 .title img {
+  margin-right: 30px;
+  width: 75px;
+}
+
+main#main .box_9 .title span {
+  color: #EFB79B;
+  font-family: Marck Script;
+  font-size: 45px;
+}
+
+main#main .box_9 .content {
+  background-color: white;
+  color: #878787;
+  padding: 80px 55px;
+}
+
+main#main .box_9 .content h3 {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+main#main .box_9 .content h3:after {
+  display: block;
+  content: '';
+  margin-top: 30px;
+  width: 30px;
+  height: 1px;
+  background-color: #EFB79B;
+  margin-top: 15px;
+}
+
+main#main .box_9 .content p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  margin-top: 15px;
 }

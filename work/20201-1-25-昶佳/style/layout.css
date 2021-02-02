@@ -47,8 +47,12 @@ nav#nav:before {
 }
 
 nav#nav .logo {
-  width: 150px;
+  width: 300px;
   margin-left: 200px;
+}
+
+nav#nav .logo img {
+  width: 100%;
 }
 
 nav#nav .burger {
@@ -83,12 +87,12 @@ nav#nav .burger.burger_active .line3 {
 }
 
 footer#footer {
-  margin-top: 50px;
+  margin-top: 300px;
   color: #EFB79B;
 }
 
 footer#footer .footer_top {
-  margin-bottom: 230px;
+  margin-bottom: 200px;
 }
 
 footer#footer .footer_top .footer_item h3 {

@@ -38,8 +38,11 @@ nav#nav{
     }
 
     .logo{
-        width: 150px;
+        width: 300px;
         margin-left: 200px;
+        img{
+            width: 100%;
+        }
     }
 
     .burger{
@@ -68,10 +71,10 @@ nav#nav{
 }
 
 footer#footer{
-    margin-top: 50px;
+    margin-top: 300px;
     color: #EFB79B;
     .footer_top{
-        margin-bottom: 230px;
+        margin-bottom: 200px;
         .footer_item{
             h3{
                 font-family: Marck Script;
