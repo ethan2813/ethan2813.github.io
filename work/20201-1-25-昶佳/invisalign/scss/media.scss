@@ -1,0 +1,191 @@
+@media(max-width:1600px){
+    main#main{
+        .box_1{
+            .article{
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media(max-width:1450px){
+    
+}
+
+@media(max-width:1400px){
+    
+}
+@media(max-width:1300px){
+    
+}
+@media(max-width:1200px){
+    nav#nav{
+        .logo{
+            margin-left: 150px;
+        }
+        .burger{
+            margin-right: 150px;
+        }
+    }
+    main#main{
+        .box_1{
+            .article{
+                margin-top: 50px;
+                padding: 60px 12%;
+                padding-left: 20px;
+                .content{
+                    h3{
+                        &:after{
+                            margin: 25px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media(max-width:992px){
+    main#main{
+        .box_1{
+            .article{
+                padding: 30px 11%;
+            }
+            .photo{
+                .color_box{
+                    bottom: -40%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    nav#nav{
+        .logo{
+            margin-left: 20px;
+            width: 70%;
+        }
+        .burger{
+            margin-right: 20px;
+        }
+        .mobile_nav_list{
+            .content{
+                li{
+                    text-align: center;
+
+                    a{
+                        font-size: 18px;
+                        span.tit{
+                            font-size: 36px;
+                        }
+                        span.two{
+                            display: none;
+                        }
+                        br.br{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main#main{
+        .box_1{
+            display: none;
+        }
+        .box_1_mobile{
+            display: block;
+            .article{
+                background-color: white;
+                padding: 65px 15px;
+                .content{
+                    color: #878787;
+                    h6{
+                        font-size: 20px;
+                        letter-spacing: 0.12em;
+                        font-weight: bold;
+                    }
+                    h3{
+                        font-size: 26px;
+                        letter-spacing: 0.12em;
+                        color: #585E4F;
+                        font-weight: bold;
+
+                        &:after{
+                            margin: 30px 0;
+                            content: '';
+                            display: block;
+                            width: 50px;
+                            height: 1px;
+                            top: 60px;
+                            left: 0px;
+                            transform: translate(0% , -50%);
+                            background-color: #EFB79B;
+                        }
+                    }
+
+                    p{
+                        font-size: 15px;
+                        letter-spacing: 0.12em;
+                        
+                    }
+                }
+            }
+            .photo{
+                width: 100%;
+                img.box_1_img_mobile{
+                    width: 100%;
+                }
+            }
+        }
+        .box_2{
+            display: none;
+        }
+        .box_2_mobile{
+            display: block;
+            .box_2_item{
+                margin-top: 50px;
+                text-align: center;
+                img{
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 22px;
+                    letter-spacing: 0.12em;
+                    color: #EFB79B;
+                }
+            }
+        }
+    }
+    
+    footer#footer{
+        margin-top: 55px;
+
+        .footer_top{
+            margin-bottom: 55px;
+            .footer_item{
+                h3{
+                    font-size: 30px;
+
+                    &::after{
+                        margin-top: 10px;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                }
+        }
+            }
+    }
+}
+
+@media(max-width:500px){
+    
+}
+
+@media(max-width:363px){
+   
+}
