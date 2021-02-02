@@ -34,6 +34,13 @@ nav#nav {
           justify-content: space-between;
   position: fixed;
   z-index: 99;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav#nav.move {
+  background-color: #585E4F;
 }
 
 nav#nav:before {
@@ -71,9 +78,9 @@ nav#nav .burger > div {
 }
 
 nav#nav .burger.burger_active .line1 {
-  -webkit-transform: rotate(45deg) translate(13px, 6px);
-      -ms-transform: rotate(45deg) translate(13px, 6px);
-          transform: rotate(45deg) translate(13px, 6px);
+  -webkit-transform: rotate(45deg) translate(11px, 5px);
+      -ms-transform: rotate(45deg) translate(11px, 5px);
+          transform: rotate(45deg) translate(11px, 5px);
 }
 
 nav#nav .burger.burger_active .line2 {
@@ -81,9 +88,58 @@ nav#nav .burger.burger_active .line2 {
 }
 
 nav#nav .burger.burger_active .line3 {
-  -webkit-transform: rotate(-45deg) translate(13px, -6px);
-      -ms-transform: rotate(-45deg) translate(13px, -6px);
-          transform: rotate(-45deg) translate(13px, -6px);
+  -webkit-transform: rotate(-45deg) translate(12px, -6px);
+      -ms-transform: rotate(-45deg) translate(12px, -6px);
+          transform: rotate(-45deg) translate(12px, -6px);
+}
+
+nav#nav .mobile_nav_list {
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  list-style-type: none;
+  background-color: #585E4F;
+  text-align: center;
+  right: -100%;
+  top: 69px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  opacity: 0.9;
+  padding: 50px 0;
+}
+
+nav#nav .mobile_nav_list.nav_active {
+  right: 0;
+}
+
+nav#nav .mobile_nav_list .content {
+  text-align: left;
+  display: inline-block;
+}
+
+nav#nav .mobile_nav_list .content li {
+  margin: 30px 0;
+}
+
+nav#nav .mobile_nav_list .content li a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+nav#nav .mobile_nav_list .content li a br.br {
+  display: none;
+}
+
+nav#nav .mobile_nav_list .content li a span.tit {
+  font-family: Marck Script;
+  font-size: 45px;
+  color: #EFB79B;
+  margin-right: 20px;
 }
 
 footer#footer {
@@ -113,6 +169,11 @@ footer#footer .footer_top .footer_item h3:after {
 footer#footer .footer_top .footer_item p {
   margin-top: 20px;
   font-size: 16px;
+}
+
+footer#footer .footer_top .footer_item p a {
+  text-decoration: none;
+  color: #EFB79B;
 }
 
 footer#footer .footer_bot {

@@ -80,6 +80,21 @@
   nav#nav .burger {
     margin-right: 20px;
   }
+  nav#nav .mobile_nav_list .content li {
+    text-align: center;
+  }
+  nav#nav .mobile_nav_list .content li a {
+    font-size: 18px;
+  }
+  nav#nav .mobile_nav_list .content li a span.tit {
+    font-size: 36px;
+  }
+  nav#nav .mobile_nav_list .content li a span.two {
+    display: none;
+  }
+  nav#nav .mobile_nav_list .content li a br.br {
+    display: block;
+  }
   main#main .banner {
     padding-bottom: 220px;
   }
@@ -208,7 +223,21 @@
   main#main .box_2 .box_2_bot .box_2_img2_ .box_2_img2 {
     display: none;
   }
-  main#main .box_2 .box_2_bot .box_2_img2_mobile {
+  main#main .box_2 .box_2_bot .box_2_img2_mobile_box {
+    position: relative;
+  }
+  main#main .box_2 .box_2_bot .box_2_img2_mobile_box:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 200px;
+    bottom: -50px;
+    right: 0px;
+    background-color: #EFB79B;
+    z-index: -1;
+  }
+  main#main .box_2 .box_2_bot .box_2_img2_mobile_box .box_2_img2_mobile {
     display: block;
     width: 90%;
     margin: 5%;
@@ -280,7 +309,7 @@
     display: none;
   }
   main#main .box_5 .title {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   main#main .box_5 .title img {
     width: 50px;
@@ -325,7 +354,7 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   main#main .box_6_mobile .title img {
     margin-right: 10px;

@@ -120,6 +120,26 @@
         .burger{
             margin-right: 20px;
         }
+        .mobile_nav_list{
+            .content{
+                li{
+                    text-align: center;
+
+                    a{
+                        font-size: 18px;
+                        span.tit{
+                            font-size: 36px;
+                        }
+                        span.two{
+                            display: none;
+                        }
+                        br.br{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
     main#main{
         .banner{
@@ -295,12 +315,26 @@
                         
                     }
                 }
-                
-                .box_2_img2_mobile{
-                    display: block;
-                    width: 90%;
-                    margin: 5%;
+                .box_2_img2_mobile_box{
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 100px;
+                        height: 200px;
+                        bottom: -50px;
+                        right: 0px;
+                        background-color: #EFB79B;
+                        z-index: -1;
+                    }
+                    .box_2_img2_mobile{
+                        display: block;
+                        width: 90%;
+                        margin: 5%;
+                    }
                 }
+                
             }
         }
 
@@ -380,7 +414,7 @@
             }
 
             .title{
-                margin-bottom: 100px;
+                margin-bottom: 80px;
                 img{
                     width: 50px;
                 }
@@ -421,7 +455,7 @@
             .title{
                 display: flex;
                 align-items: center;
-                margin-bottom: 100px;
+                margin-bottom: 80px;
                 img{
                     margin-right: 10px;
                     width: 50px;

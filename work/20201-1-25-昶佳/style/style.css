@@ -715,7 +715,7 @@ main#main .box_5 img.box_5_img2 {
   position: absolute;
   top: -27%;
   z-index: -2;
-  left: 35%;
+  left: calc( 56% - 350px);
   display: block;
 }
 
