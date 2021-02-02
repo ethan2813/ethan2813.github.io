@@ -129,6 +129,51 @@ nav#nav{
 footer#footer{
     margin-top: 300px;
     color: #EFB79B;
+
+    .icon{
+        #totop{
+            img{
+                position: fixed;
+                right: 10px;
+                bottom: 155px;
+                // bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #line{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #phone{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                // bottom: 90px;
+                bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+    }
     .footer_top{
         margin-bottom: 200px;
         .footer_item{

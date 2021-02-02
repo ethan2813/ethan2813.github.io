@@ -147,6 +147,39 @@ footer#footer {
   color: #EFB79B;
 }
 
+footer#footer .icon #totop img {
+  position: fixed;
+  right: 10px;
+  bottom: 155px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .icon #line img {
+  position: fixed;
+  right: 10px;
+  bottom: 90px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .icon #phone img {
+  position: fixed;
+  right: 10px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .footer_top {
   margin-bottom: 200px;
 }

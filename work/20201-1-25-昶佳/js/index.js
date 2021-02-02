@@ -19,6 +19,23 @@ $(document).on('mouseup',(e)=>{
     }
 })
 
+
+//totop
+$('#totop').on('click', () => {
+    $('html,body').animate({ scrollTop: 0 }, 300);
+})
+
+
+//totop隱藏效果
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+        $('#totop').fadeIn(200);
+    } else {
+        $('#totop').stop().fadeOut(200)
+    }
+    // console.log($(this).scrollTop())
+})
+
 //nav 縮放
 let nav = document.querySelector('#nav')
 let logo_photo = document.querySelector('.logo_photo')
