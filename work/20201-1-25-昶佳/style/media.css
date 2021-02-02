@@ -568,12 +568,12 @@
 
 @media (max-width: 500px) {
   main#main .box_1 .box_1_bot .back_box_ {
-    top: calc( -7% + 600px);
+    top: calc( -19% + 600px);
   }
 }
 
-@media (max-width: 347px) {
+@media (max-width: 363px) {
   main#main .box_1 .box_1_bot .back_box_ {
-    top: calc( -2% + 600px);
+    top: calc( -13% + 600px);
   }
 }
