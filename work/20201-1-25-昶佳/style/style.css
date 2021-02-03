@@ -168,20 +168,6 @@ main#main .doctor .doctor_L p {
   white-space: nowrap;
 }
 
-main#main .doctor .doctor_L:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 1px;
-  top: 60px;
-  left: 0px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #EFB79B;
-}
-
 main#main .doctor .doctor_R {
   z-index: -1;
   padding-top: 16%;

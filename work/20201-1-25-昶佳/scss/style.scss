@@ -163,17 +163,17 @@ main#main{
 
 
                 }
-                &:after{
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 50px;
-                    height: 1px;
-                    top: 60px;
-                    left: 0px;
-                    transform: translate(-50% , -50%);
-                    background-color: #EFB79B;
-                }
+                // &:after{
+                //     content: '';
+                //     display: block;
+                //     position: absolute;
+                //     width: 50px;
+                //     height: 1px;
+                //     top: 60px;
+                //     left: 0px;
+                //     transform: translate(-50% , -50%);
+                //     background-color: #EFB79B;
+                // }
             
         }
         .doctor_R{

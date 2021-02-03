@@ -12,7 +12,7 @@ $('.mobile_nav_list').on('click','a',()=>{
 //點空白地方關閉清單
 $(document).on('mouseup',(e)=>{
     if($('.mobile_nav_list').hasClass('nav_active')){
-        if(!$(e.target).closest('.nav_active,.burger').length){
+        if(!$(e.target).closest('.mobile_nav_list li a,.burger').length){
             $('.mobile_nav_list').toggleClass('nav_active');
             $('.burger').toggleClass('burger_active')
         }

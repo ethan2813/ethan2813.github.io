@@ -1,18 +1,18 @@
 //漢堡條效果
-$('.burger').on('click',(e)=>{
+$('.burger').on('click', (e) => {
     $(e.currentTarget).toggleClass('burger_active')
     $('.mobile_nav_list').toggleClass('nav_active')
 })
 
 //點mobile_nav_list會隱藏list
-$('.mobile_nav_list').on('click','a',()=>{
+$('.mobile_nav_list').on('click', 'a', () => {
     $('.burger').click();
 })
 
 //點空白地方關閉清單
 $(document).on('mouseup',(e)=>{
     if($('.mobile_nav_list').hasClass('nav_active')){
-        if(!$(e.target).closest('.nav_active,.burger').length){
+        if(!$(e.target).closest('.mobile_nav_list li a,.burger').length){
             $('.mobile_nav_list').toggleClass('nav_active');
             $('.burger').toggleClass('burger_active')
         }
@@ -40,20 +40,87 @@ $(window).scroll(function () {
 let nav = document.querySelector('#nav')
 let logo_photo = document.querySelector('.logo_photo')
 $(window).scroll(() => {
-    if($(this).scrollTop() > 10){
+    if ($(this).scrollTop() > 10) {
         $('#nav').addClass('move')
-    }else{
+    } else {
         $('#nav').removeClass('move')
     }
 })
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper1', {
+    observer: true,
+    observeParents: true,
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
     speed: 2000,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+       
+    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
+    //RWD(以上)
+    // breakpoints:{
+    //     800:{
+    //         slidesPerView: 3,
+    //     },
+    //     450:{
+    //         slidesPerView: 2,
+    //     }
+    // }
+});
+
+var swiper2 = new Swiper('.swiper2', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+       
+    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
+    // RWD(以上)
+    breakpoints:{
+        1600:{
+            slidesPerView: 4,
+        },
+        800:{
+            slidesPerView: 3,
+        },
+        450:{
+            slidesPerView: 2,
+        }
+    }
+});
+
+var swiper3 = new Swiper('.swiper3', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+       
     },
     // pagination: {
     //     el: '.swiper-pagination',
