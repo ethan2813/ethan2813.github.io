@@ -606,7 +606,7 @@ main#main #box_4 .title {
           align-items: center;
   margin-bottom: 80px;
   position: absolute;
-  right: calc( 20% + 280px);
+  right: calc( 46% - 280px);
   z-index: 2;
   top: 5%;
 }
