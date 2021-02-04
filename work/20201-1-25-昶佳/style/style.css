@@ -524,6 +524,7 @@ main#main #box_3 .box_3_bot .article_1 h3 {
   font-size: 20px;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 main#main #box_3 .box_3_bot .article_1 p {
@@ -672,7 +673,8 @@ main#main #box_4 .content .article_bot {
 }
 
 main#main #box_5 {
-  margin-top: 560px;
+  padding-top: 100px;
+  margin-top: 410px;
   position: relative;
 }
 
@@ -681,7 +683,7 @@ main#main #box_5 .color_box {
   width: 480px;
   position: absolute;
   left: 0;
-  top: 22%;
+  top: 30%;
   background-color: #EFB79B;
   z-index: -2;
 }
@@ -750,13 +752,13 @@ main#main #box_5 img.box_5_img {
   max-width: 570px;
   position: absolute;
   z-index: -1;
-  top: -14%;
+  top: 0%;
   right: 12%;
 }
 
 main#main #box_5 img.box_5_img2 {
   position: absolute;
-  top: -27%;
+  top: -13%;
   z-index: -2;
   left: calc( 56% - 350px);
   display: block;

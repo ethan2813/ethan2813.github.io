@@ -83,6 +83,7 @@ main#main .box_1_mobile {
 }
 
 main#main .box_2 {
+  padding-top: 40px;
   display: block;
   background-image: url(../img/box_2_back.png);
   background-position: center;
@@ -110,6 +111,7 @@ main#main .box_2 .content img.box_2_logo {
 
 main#main .box_2 .content img.box_2_img {
   max-width: 420px;
+  width: 100%;
 }
 
 main#main .box_2_mobile {

@@ -68,7 +68,7 @@ main#main{
         display: none;
     }
     .box_2{
-        
+        padding-top: 40px;
         display: block;
         background-image: url(../img/box_2_back.png);
         background-position: center;
@@ -84,6 +84,7 @@ main#main{
             }
             img.box_2_img{
                 max-width: 420px;
+                width: 100%;
             }
         }
     }
@@ -223,6 +224,7 @@ main#main{
     }
 
     .box_5{
+        
         display: block;
         margin-top: 250px;
         margin-bottom: -50px;
