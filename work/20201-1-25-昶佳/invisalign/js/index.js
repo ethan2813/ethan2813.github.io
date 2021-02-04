@@ -83,9 +83,9 @@ var swiper2 = new Swiper('.swiper2', {
     spaceBetween: 30,
     loop: true,
     speed: 2000,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 10000,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
        
@@ -96,7 +96,7 @@ var swiper2 = new Swiper('.swiper2', {
     // },
     // RWD(以上)
     breakpoints:{
-        1600:{
+        1400:{
             slidesPerView: 4,
         },
         800:{

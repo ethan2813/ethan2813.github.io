@@ -515,6 +515,7 @@ main#main{
     }
 
     #box_3{
+        padding-top: 100px;
         .title{
             display: flex;
             align-items: center;
@@ -606,10 +607,11 @@ main#main{
     }
 
     #box_4{
-        margin-top: 250px;
+        padding-top: 250px;
         position: relative;
         
         .title{
+            margin-top: 220px;
             display: flex;
             align-items: center;
             margin-bottom: 80px;

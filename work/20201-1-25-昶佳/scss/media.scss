@@ -39,7 +39,7 @@
 @media(max-width:1400px){
     main#main{
         #box_2{
-            margin-bottom: 200px;
+            margin-bottom: 100px;
             .box_2_bot{
                 .article_box{
                     top:57%;
@@ -396,9 +396,10 @@
         }
 
         #box_4{
-            margin-top: 100px;
-            margin-bottom: 100px;
+            padding-top: 100px;
+            // margin-bottom: 100px;
             .title{
+                margin-top: 0;
                 position: unset;
                 img{
                     width: 50px;
@@ -436,7 +437,8 @@
         }
 
         #box_5{
-            margin-top: 100px;
+            margin-top: 0px;
+            padding-top: 100px;
             .color_box{
                 display: none;
             }
@@ -483,8 +485,7 @@
         }
         #box_6_mobile{
             display: block;
-            margin-top: 100px;
-            margin-bottom: 100px;
+            padding-top: 100px;
 
             .title{
                 display: flex;
@@ -545,6 +546,7 @@
         }
         #box_7_mobile{
             display: block;
+            padding-top: 100px;
             .title{
                 display: flex;
                 align-items: center;
@@ -612,8 +614,9 @@
         }
         #box_8_mobile{
             display: block;
+            padding-top: 100px;
             .title{
-                margin-top: 100px;
+                
                 display: flex;
                 align-items: center;
                 margin-bottom: 80px;
@@ -679,8 +682,9 @@
         }
 
         #box_9{
+            padding-top: 100px;
             .title{
-                margin-top: 100px;
+                margin-top: 0;
                 margin-bottom: 80px;
                 img{
                     width: 50px;

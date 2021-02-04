@@ -483,6 +483,10 @@ main#main #box_2 .box_2_bot .box_2_img2_mobile {
   display: none;
 }
 
+main#main #box_3 {
+  padding-top: 100px;
+}
+
 main#main #box_3 .title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -585,11 +589,12 @@ main#main #box_3 .box_3_bot .article_2 p:after {
 }
 
 main#main #box_4 {
-  margin-top: 250px;
+  padding-top: 250px;
   position: relative;
 }
 
 main#main #box_4 .title {
+  margin-top: 220px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

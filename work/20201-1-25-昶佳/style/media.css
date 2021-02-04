@@ -20,7 +20,7 @@
 
 @media (max-width: 1400px) {
   main#main #box_2 {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   main#main #box_2 .box_2_bot .article_box {
     top: 57%;
@@ -273,10 +273,10 @@
     padding: 80px 15px;
   }
   main#main #box_4 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
   }
   main#main #box_4 .title {
+    margin-top: 0;
     position: unset;
   }
   main#main #box_4 .title img {
@@ -311,7 +311,8 @@
     width: 80%;
   }
   main#main #box_5 {
-    margin-top: 100px;
+    margin-top: 0px;
+    padding-top: 100px;
   }
   main#main #box_5 .color_box {
     display: none;
@@ -356,8 +357,7 @@
   }
   main#main #box_6_mobile {
     display: block;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
   }
   main#main #box_6_mobile .title {
     display: -webkit-box;
@@ -416,6 +416,7 @@
   }
   main#main #box_7_mobile {
     display: block;
+    padding-top: 100px;
   }
   main#main #box_7_mobile .title {
     display: -webkit-box;
@@ -484,9 +485,9 @@
   }
   main#main #box_8_mobile {
     display: block;
+    padding-top: 100px;
   }
   main#main #box_8_mobile .title {
-    margin-top: 100px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -548,8 +549,11 @@
     font-size: 15px;
     letter-spacing: 0.05em;
   }
+  main#main #box_9 {
+    padding-top: 100px;
+  }
   main#main #box_9 .title {
-    margin-top: 100px;
+    margin-top: 0;
     margin-bottom: 80px;
   }
   main#main #box_9 .title img {
