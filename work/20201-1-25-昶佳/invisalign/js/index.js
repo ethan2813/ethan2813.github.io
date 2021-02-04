@@ -80,12 +80,12 @@ var swiper2 = new Swiper('.swiper2', {
     observer: true,
     observeParents: true,
     slidesPerView: 2,
-    spaceBetween: 0,
+    spaceBetween: 30,
     loop: true,
     speed: 2000,
-    autoplay: {
-        delay: 3000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     navigation: {
         nextEl: '.swiper-button-next',
        

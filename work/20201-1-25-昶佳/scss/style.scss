@@ -1,10 +1,10 @@
 main#main{
-    .banner{
+    #banner{
         position: relative;
         overflow: hidden;
         padding-bottom: 70px;
         .text{
-            padding-top: 100px;
+            padding-top: 170px;
             z-index: 3;
             position: relative;
             p.pc{
@@ -69,6 +69,7 @@ main#main{
             }
             .text_bot_R{
                 margin-top: -50px;
+                text-align: center;
             }
            
 
@@ -106,7 +107,7 @@ main#main{
     }
 
     // 醫生
-    .doctor{
+    #doctor{
         .doctor_L{
             background-color: white;
             display: flex;
@@ -226,9 +227,9 @@ main#main{
         }
     }
 
-    .box_1{
+    #box_1{
         margin-top: 190px;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
         .box_1_L{
             width: 100%;
             display: flex;
@@ -257,6 +258,7 @@ main#main{
             margin-top: 80px;
             position: relative;
             padding: 100px 20px;
+            display: inline-block;
 
             
 
@@ -344,15 +346,43 @@ main#main{
             .icons{
                 img{
                     width: 100%;
+                    
                 }
+                .item{
+                    position: relative;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        position: absolute;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        letter-spacing: 0.05em;
+                        transform: translate(-50% , 50%);
+                        bottom: 10%;
+                        left: 50%;
+                        white-space:nowrap;
+                        text-align: center;
+
+                    }
+                }
+
+                
+            }
+            .icon_pc{
+                display: block;
+            }
+            .icons_mobile{
+                display: none;
             }
         }
         
     }
 
-    .box_2{
+    #box_2{
         margin-bottom: 120px;
         position: relative;
+        padding-top: 100px;
         
         .title{
             display: flex;
@@ -402,7 +432,7 @@ main#main{
                 // height: 450px;
                 background-color: white;
                 top: 50%;
-                left: 10%;
+                left: calc( 12% + 50px);
                 padding: 4% 2%;
                 z-index: 2;
                 h3{
@@ -484,7 +514,7 @@ main#main{
         
     }
 
-    .box_3{
+    #box_3{
         .title{
             display: flex;
             align-items: center;
@@ -527,16 +557,29 @@ main#main{
                 padding: 80px 55px;
                 color: #878787;
                 width: 100%;
+                position: relative;
+
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 360px;
+                    height: 66px;
+                    background-color: #EFB79B;
+                    position: absolute;
+                    top: -13%;
+                    left: 0%;
+                    z-index: -1;
+                }
                 h3{
                     font-size: 20px;
                     letter-spacing: 0.05em;
                     font-weight: 700;
-                    margin-bottom: 40px;
+                    // margin-bottom: 40px;
 
                     &:after{
                         content: '';
                         display: block;
-                        margin-top: 30px;
+                        margin: 20px 0;
                         width: 30px;
                         height: 1px;
                         background-color: #EFB79B;
@@ -562,7 +605,7 @@ main#main{
         }
     }
 
-    .box_4{
+    #box_4{
         margin-top: 250px;
         position: relative;
         
@@ -636,7 +679,7 @@ main#main{
         }
     }
 
-    .box_5{
+    #box_5{
         margin-top: 560px;
         position: relative;
 
@@ -677,7 +720,16 @@ main#main{
                 letter-spacing: 0.05em;
                 color: #878787;
                 font-weight: bold;
-                margin-bottom: 45px;
+                // margin-bottom: 45px;
+
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #EFB79B;
+                    margin: 20px 0;
+                }
             }
             p{
                 font-size: 16px;
@@ -709,7 +761,7 @@ main#main{
         
     }
 
-    .box_6{
+    #box_6{
         padding-bottom: 500px;
         overflow: hidden;
         .title{
@@ -741,6 +793,7 @@ main#main{
                 font-weight: bold;
                 margin-bottom: 15px;
                 position: relative;
+                text-align: justify;
 
                 &:after{
                     display: block;
@@ -756,6 +809,7 @@ main#main{
             p{
                 font-size: 16px;
                 letter-spacing: 0.05em;
+                text-align: justify;
             }
             img.box_6_img{
                 position: absolute;
@@ -774,7 +828,7 @@ main#main{
         img.box_6_img2{
             position: absolute;
             top: calc(30% + 200px);
-            left: 40%;
+            left: calc( 55% - 308px);
             transform: translate(-80%, 0px);
             z-index: -3;
             max-width: 580px;
@@ -784,10 +838,10 @@ main#main{
       
         
     }
-    .box_6_mobile{
+    #box_6_mobile{
         display: none;
     }
-    .box_7{
+    #box_7{
         display: block;
         margin-bottom: 200px;
         position: relative;
@@ -890,10 +944,10 @@ main#main{
             }
         } 
     }
-    .box_7_mobile{
+    #box_7_mobile{
         display: none;
     }
-    .box_8{
+    #box_8{
         display: block;
         .title{
             margin-bottom: 50px;
@@ -992,10 +1046,10 @@ main#main{
             }
         }
     }
-    .box_8_mobile{
+    #box_8_mobile{
         display: none;
     }
-    .box_9{
+    #box_9{
         display: block;
         .title{
             margin-bottom: 50px;
@@ -1032,7 +1086,7 @@ main#main{
                     width: 30px;
                     height: 1px;
                     background-color: #EFB79B;
-                    margin-top: 15px;
+                    margin: 20px 0;
                 }
             }
             p{

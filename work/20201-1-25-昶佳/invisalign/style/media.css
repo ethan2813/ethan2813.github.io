@@ -138,7 +138,7 @@
   }
   main#main .box_3_mobile .title img {
     max-width: 250px;
-    width: 100%;
+    width: 80%;
   }
   main#main .box_3_mobile .content {
     margin-top: 20px;
@@ -394,16 +394,17 @@
     margin-top: 200px;
   }
   main#main .box_6_mobile .top {
-    padding-bottom: 320px;
+    margin-bottom: 0px;
     background-color: #4E5445;
   }
   main#main .box_6_mobile .top img.box_6_img1_mobile {
     width: 100%;
     margin-top: -138px;
+    margin-bottom: -40px;
   }
   main#main .box_6_mobile .content {
     text-align: center;
-    margin-top: -230px;
+    margin-top: 150px;
   }
   main#main .box_6_mobile .content .item {
     margin-bottom: 50px;
@@ -429,8 +430,8 @@
     letter-spacing: 0.05em;
     color: #EFB79B;
     text-align: center;
-    font-weight: bold;
     margin-bottom: 35px;
+    line-height: 35px;
   }
   main#main .box_7_mobile .item img {
     width: 100%;

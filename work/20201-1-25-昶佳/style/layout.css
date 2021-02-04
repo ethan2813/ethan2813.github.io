@@ -16,6 +16,10 @@ body {
   font-family: 微軟正黑體;
 }
 
+span.bold_ {
+  font-weight: bold;
+}
+
 nav#nav {
   height: 69px;
   width: 100%;

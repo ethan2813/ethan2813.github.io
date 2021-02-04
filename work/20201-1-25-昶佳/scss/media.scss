@@ -1,6 +1,10 @@
+@media(max-width:1700px){
+
+}
+
 @media(max-width:1600px){
     main#main{
-        .box_4{
+        #box_4{
             .title{
                 right: calc( 10% + 280px);
             }
@@ -10,23 +14,23 @@
 
 @media(max-width:1450px){
     main#main{
-        .box_3{
+        #box_3{
             .box_3_bot {
                 .article_1{
                     max-width: 580px;
                 }
             }
         }
-        .box_6{
+        #box_6{
             .article{
                 img.box_6_img{
                     max-width: 600px;
                 }
             }
             img.box_6_img2{
-                top: calc(25% + 200px);
-                left: 32%;
-                max-width: 470px;
+                top: calc(36% + 200px);
+                left: calc(35% - 100px);
+                max-width: 400px;
             }
         }
     }
@@ -34,7 +38,7 @@
 
 @media(max-width:1400px){
     main#main{
-        .box_2{
+        #box_2{
             margin-bottom: 200px;
             .box_2_bot{
                 .article_box{
@@ -47,7 +51,7 @@
 }
 @media(max-width:1300px){
     main#main{
-        .box_4{
+        #box_4{
             .title{
                 right: calc( 5% );
             }
@@ -64,21 +68,32 @@
         }
     }
     main#main{
-        .banner {
+        #banner {
             .img {
                 .line{
                     left: -690px;
                 }
             }
         }
-        .box_3{
+        #box_1{
+            .box_1_bot{
+                .icons{
+                    .item{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        #box_3{
             .box_3_bot {
                 .article_1{
                     max-width: 500px;
                 }
             }
         }
-        .box_5{
+        #box_5{
             .title{
                 margin-bottom: 250px;
             }
@@ -89,7 +104,7 @@
                 display: none;
             }
         }
-        .box_6{
+        #box_6{
             img.box_6_img2{
                 top: calc(86% + 200px);
                 left: 50%;
@@ -101,7 +116,18 @@
 }
 @media(max-width:992px){
     main#main{
-        .box_3{
+        #box_1{
+            .box_1_bot{
+                .icons{
+                    .item{
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        #box_3{
             .box_3_bot {
                 .article_1{
                     max-width: 350px;
@@ -142,7 +168,7 @@
         }
     }
     main#main{
-        .banner{
+        #banner{
             padding-bottom: 220px;
             .text{
                 padding-top: 150px;
@@ -178,7 +204,7 @@
                 }
             }
         }
-        .doctor{
+        #doctor{
             .doctor_L {
                 
 
@@ -230,7 +256,7 @@
 
             }
         }
-        .box_1{
+        #box_1{
             margin-top: 0px; 
 
             
@@ -248,6 +274,7 @@
             .box_1_R{
                 p:nth-of-type(1){
                     padding-left: 0;
+                    font-size: 17px;
                 }
                 p:nth-of-type(2){
                     padding-left: 0;
@@ -278,13 +305,19 @@
                         
                     }
                 }
+                .icons_pc{
+                    display: none;
+                }
+                .icons_mobile{
+                    display: block;
+                }
                 
             }
             
         }
 
         // 隱形牙套矯正
-        .box_2{
+        #box_2{
             .title{
                 margin: 80px 0;
                 position: unset;
@@ -339,7 +372,7 @@
             }
         }
 
-        .box_3{
+        #box_3{
             .title{
                 img{
                     width: 50px;
@@ -362,7 +395,7 @@
             }
         }
 
-        .box_4{
+        #box_4{
             margin-top: 100px;
             margin-bottom: 100px;
             .title{
@@ -402,7 +435,7 @@
             }
         }
 
-        .box_5{
+        #box_5{
             margin-top: 100px;
             .color_box{
                 display: none;
@@ -445,10 +478,10 @@
             }
         }
 
-        .box_6{
+        #box_6{
             display: none;
         }
-        .box_6_mobile{
+        #box_6_mobile{
             display: block;
             margin-top: 100px;
             margin-bottom: 100px;
@@ -507,10 +540,10 @@
             }
         }
 
-        .box_7{
+        #box_7{
             display: none;
         }
-        .box_7_mobile{
+        #box_7_mobile{
             display: block;
             .title{
                 display: flex;
@@ -574,10 +607,10 @@
                 }
             }
         }
-        .box_8{
+        #box_8{
             display: none;
         }
-        .box_8_mobile{
+        #box_8_mobile{
             display: block;
             .title{
                 margin-top: 100px;
@@ -645,7 +678,7 @@
 
         }
 
-        .box_9{
+        #box_9{
             .title{
                 margin-top: 100px;
                 margin-bottom: 80px;
@@ -687,7 +720,7 @@
 
 @media(max-width:500px){
     main#main{
-        .box_1{
+        #box_1{
             .box_1_bot{
                 .back_box_{
                     top: calc( -19% + 600px);
@@ -699,7 +732,7 @@
 
 @media(max-width:363px){
     main#main{
-        .box_1{
+        #box_1{
             .box_1_bot{
                 .back_box_{
                     top: calc( -13% + 600px);

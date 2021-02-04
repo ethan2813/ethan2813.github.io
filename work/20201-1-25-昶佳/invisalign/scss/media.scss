@@ -186,7 +186,7 @@
             .title{
                 img{
                     max-width: 250px;
-                    width: 100%;
+                    width: 80%;
                 }
             }
             .content{
@@ -481,16 +481,17 @@
             margin-top: 200px;
             
             .top{
-                padding-bottom: 320px;
+                margin-bottom: 0px;
                 background-color: #4E5445;
                 img.box_6_img1_mobile{
                     width: 100%;
                     margin-top: -138px;
+                    margin-bottom: -40px;
                 }
             }
             .content{
                 text-align: center;
-                margin-top: -230px;
+                margin-top: 150px;
 
                 .item{
                     margin-bottom: 50px;
@@ -521,8 +522,9 @@
                     letter-spacing: 0.05em;
                     color: #EFB79B;
                     text-align: center;
-                    font-weight: bold;
+                    // font-weight: bold;
                     margin-bottom: 35px;
+                    line-height: 35px;
                 }
                 img{
                     width: 100%;
