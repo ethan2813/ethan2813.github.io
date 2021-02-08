@@ -829,7 +829,7 @@ main#main #box_6 .article p {
 main#main #box_6 .article img.box_6_img {
   position: absolute;
   top: calc(7% + 200px);
-  left: 35%;
+  left: 30%;
   z-index: -1;
   -webkit-transform: translate(-80%, 0px);
       -ms-transform: translate(-80%, 0px);
