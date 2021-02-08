@@ -534,7 +534,7 @@ main#main #box_3 .box_3_bot .article_1 p {
 
 main#main #box_3 .box_3_bot .box_3_img {
   position: absolute;
-  top: 0%;
+  top: -9.5%;
   right: 10%;
   z-index: -1;
 }
