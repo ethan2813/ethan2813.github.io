@@ -132,29 +132,52 @@ main#main #doctor .doctor_L .doctor_L_border {
           filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15));
 }
 
-main#main #doctor .doctor_L img:nth-of-type(1) {
+main#main #doctor .doctor_L .doctor_L_border:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+main#main #doctor .doctor_L .doctor_L_border:hover .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main#main #doctor .doctor_L .doctor_L_border .mask {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+main#main #doctor .doctor_L .doctor_L_border img:nth-of-type(1) {
   display: block;
   width: 100%;
 }
 
-main#main #doctor .doctor_L img:nth-of-type(2) {
+main#main #doctor .doctor_L .doctor_L_border img:nth-of-type(2) {
   display: none;
 }
 
-main#main #doctor .doctor_L .logo_column {
+main#main #doctor .doctor_L .doctor_L_border .logo_column {
   position: absolute;
   top: -20px;
   left: -60px;
 }
 
-main#main #doctor .doctor_L span {
+main#main #doctor .doctor_L .doctor_L_border span {
   padding: 20px 45px;
   background-color: #EFB79B;
   font-size: 22px;
   color: white;
 }
 
-main#main #doctor .doctor_L p {
+main#main #doctor .doctor_L .doctor_L_border > p:nth-of-type(1) {
   background-color: #EFB79B;
   padding: 20px 35px;
   display: inline-block;
@@ -167,6 +190,7 @@ main#main #doctor .doctor_L p {
       -ms-transform: translate(-50%, 80%);
           transform: translate(-50%, 80%);
   white-space: nowrap;
+  z-index: 2;
 }
 
 main#main #doctor .doctor_R {
