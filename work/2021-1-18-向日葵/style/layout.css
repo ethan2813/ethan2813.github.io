@@ -104,7 +104,50 @@ footer#footer .footer_top .footer_time .table_opening tr td {
   text-align: left;
 }
 
+footer#footer .footer_top .contact_us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer#footer .footer_top .contact_us a img {
   width: 50px;
   margin-right: 5px;
+}
+
+footer#footer .footer_bot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer#footer .footer_bot:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+footer#footer .footer_bot p {
+  margin: 0;
+  font-size: 12px;
+  color: white;
+  padding: 20px 0;
+  font-family: 微軟正黑體;
 }

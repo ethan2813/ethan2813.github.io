@@ -1,3 +1,18 @@
+@media(max-width:1700px){
+    main#main{
+        .about{
+            .content_{
+                background-image: url(../img/about_back_2.jpg);
+                .article{
+                    .content{
+                        max-width: 650px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:1600px){
     main#main{
         .about{
@@ -10,6 +25,46 @@
         }
     }
 }
+
+@media(max-width:1500px){
+    main#main{
+        .about{
+            .content_{
+                background-image: url(../img/about_back_2.jpg);
+                .article{
+                    max-width: 45%;
+                }
+                img.flower{
+                    width: 60px;
+                    left: calc( 38% - 470px);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1300px){
+    main#main{
+        .about{
+            .content_{
+                background-size: cover;
+                background-position: center;
+                .article{
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+                img.flower{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 
 @media(max-width:768px){
     main#main{
@@ -37,6 +92,17 @@
         // 關於本院
         .about{
             padding-right: 0px;
+            .title_{
+                p{
+                    font-size: 22px;
+                    margin-left: 0%;
+                    text-align: center;
+
+                    span{
+                        display: none;
+                    }
+                }
+            }
             .content_{
                 background-image: none;
 
@@ -54,6 +120,21 @@
                         font-size: 18px;
                     }
                 }
+            }
+        }
+    }
+
+    footer#footer{
+        .footer_top{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .footer_time{
+                margin-top: 40px;
+            }
+            .contact_us{
+                justify-content: start;
+                margin-top: 40px;
+
             }
         }
     }

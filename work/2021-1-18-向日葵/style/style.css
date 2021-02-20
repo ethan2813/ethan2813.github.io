@@ -86,25 +86,44 @@ main#main .about .content_ {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
 }
 
 main#main .about .content_ .article {
   padding-top: 50px;
   padding-bottom: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main#main .about .content_ .article .content {
   max-width: 700px;
 }
 
-main#main .about .content_ .article h3 {
+main#main .about .content_ .article .content h3 {
   font-size: 23px;
   color: #8EAB5D;
   margin-bottom: 50px;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
 }
 
-main#main .about .content_ .article p {
+main#main .about .content_ .article .content p {
   font-size: 18px;
   font-family: 微軟正黑體;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
+}
+
+main#main .about .content_ img.flower {
+  position: absolute;
+  top: 50px;
+  left: calc( 38% - 520px);
+  width: 120px;
 }
 
 main#main .items {
@@ -202,6 +221,7 @@ main#main .device .title_ p {
   font-size: 36px;
   overflow: hidden;
   color: #5C4D50;
+  letter-spacing: 10px;
 }
 
 main#main .device .title_::after {
@@ -209,7 +229,7 @@ main#main .device .title_::after {
   display: block;
   background-color: black;
   position: absolute;
-  left: 160px;
+  left: 190px;
   top: 50%;
   width: 100%;
   height: 1px;
@@ -220,19 +240,19 @@ main#main .device .title_::after {
 
 main#main .device .content_ p:nth-of-type(1) {
   font-size: 23px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 main#main .device .content_ p:nth-of-type(2) {
   font-size: 23px;
   color: #8EAB5D;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
 }
 
 main#main .device .content_ p:nth-of-type(3) {
   font-size: 18px;
   font-family: 微軟正黑體;
-  letter-spacing: 3px;
+  letter-spacing: 8px;
   max-width: 600px;
 }
