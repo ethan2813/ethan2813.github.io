@@ -93,10 +93,13 @@
         .about{
             padding-right: 0px;
             .title_{
+                text-align: center;
+
+
                 p{
                     font-size: 22px;
                     margin-left: 0%;
-                    text-align: center;
+                    display: inline-block;
 
                     span{
                         display: none;
@@ -108,6 +111,18 @@
 
                 .article{
                     max-width: 100%;
+
+                    .content{
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            font-size: 16px;
+                            letter-spacing: 6px;
+                            text-align: justify;
+                        }
+
+                    }
                 }
             }
         }

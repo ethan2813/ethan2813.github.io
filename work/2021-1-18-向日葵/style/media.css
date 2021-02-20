@@ -62,10 +62,13 @@
   main#main .about {
     padding-right: 0px;
   }
+  main#main .about .title_ {
+    text-align: center;
+  }
   main#main .about .title_ p {
     font-size: 22px;
     margin-left: 0%;
-    text-align: center;
+    display: inline-block;
   }
   main#main .about .title_ p span {
     display: none;
@@ -75,6 +78,14 @@
   }
   main#main .about .content_ .article {
     max-width: 100%;
+  }
+  main#main .about .content_ .article .content h3 {
+    display: none;
+  }
+  main#main .about .content_ .article .content p {
+    font-size: 16px;
+    letter-spacing: 6px;
+    text-align: justify;
   }
   main#main .items .content_ .content_box p {
     font-size: 18px;
