@@ -80,4 +80,10 @@
   main#main .banner_bot .banner_bot_R img.photo_mobile {
     display: block;
   }
+  main#main .banner_bot .banner_bot_R img.flower {
+    display: none;
+  }
+  main#main .banner_bot img.banner_box {
+    width: 30px;
+  }
 }
