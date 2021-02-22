@@ -11,6 +11,12 @@ main#main .banner {
 
 main#main .banner .banner_1 {
   width: 100%;
+  display: block;
+}
+
+main#main .banner .banner_1_mobile {
+  width: 100%;
+  display: none;
 }
 
 main#main .banner_list {

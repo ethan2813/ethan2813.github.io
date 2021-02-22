@@ -22,11 +22,24 @@ nav#nav{
     position: fixed;
     // background-color: beige;
     z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    .phone_number{
+        margin-right: 50px;
+        font-size: 20px;
+        margin-left: auto;
+        font-family: 微軟正黑體;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
     .menu{
         width: 130px;
         height: 90px;
         background-color: #8EAB5D;
-        margin-left: auto;
         padding: 10px 25px;
         cursor: pointer;
         .burger{
@@ -46,6 +59,60 @@ nav#nav{
             P{
                 color: white;
                 margin-top: 0;
+            }
+        }
+    }
+
+    .nav_list{
+        
+        background-color: #8EAB5D;
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -100%;
+        transition: 0.3s ease-in-out;
+
+
+        &.active{
+            right: 0;
+        }
+        .close{
+            top: 20px;
+            right: 20px;
+            position: absolute;
+            >div{
+                width: 50px;
+                height: 2px;
+                background-color:white;
+                margin: 10px;
+                transition: ease-in 0.3s;
+            }
+            .line1{
+                transform: rotate(45deg) translate(11px, 5px);
+                margin-bottom: 10px;
+            }
+            .line2{
+                transform: rotate(-45deg) translate(12px, -6px);
+                margin-top: 22px;
+            }
+        }
+        .content{
+            // margin-top: 50px;
+
+            li{
+                text-align: center;
+                list-style-type: none;
+                padding: 10px;
+                a{
+                    color: white;
+                    font-size: 24px;
+                    letter-spacing: 6px;
+                    
+                }
             }
         }
     }

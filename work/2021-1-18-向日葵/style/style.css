@@ -225,7 +225,7 @@ main#main .device .title_ p::after {
   position: absolute;
   left: 190px;
   top: 50%;
-  width: 500px;
+  width: 1000px;
   height: 1px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);

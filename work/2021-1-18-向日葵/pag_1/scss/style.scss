@@ -6,6 +6,11 @@ main#main{
         position: relative;
         .banner_1{
             width: 100%;
+            display: block;
+        }
+        .banner_1_mobile{
+            width: 100%;
+            display: none;
         }
     }
 

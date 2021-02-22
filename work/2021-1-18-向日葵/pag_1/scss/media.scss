@@ -1,0 +1,31 @@
+// layout
+@media(max-width:768px){
+    nav#nav{
+        .phone_number{
+            display: none!important;
+        }
+        .menu{
+            width: 90px;
+            padding: 10px 15px;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    main#main{
+        padding-top: 0px;
+
+        .banner{
+            padding-right: 0px;
+            padding-left: 0px;
+            .banner_1{
+                display: none;
+            }
+            .banner_1_mobile{
+                display: block;
+            }
+           
+        }
+    }
+}
