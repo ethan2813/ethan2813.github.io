@@ -50,8 +50,8 @@ main#main .about {
 }
 
 main#main .about .title_ {
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 
 main#main .about .title_ p {
@@ -90,8 +90,6 @@ main#main .about .content_ {
 }
 
 main#main .about .content_ .article {
-  padding-top: 50px;
-  padding-bottom: 80px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,8 +129,8 @@ main#main .items {
 }
 
 main#main .items .title_ {
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 
 main#main .items .title_ p {
@@ -213,25 +211,21 @@ main#main .device .device_L .device_L_bot img {
   width: 100%;
 }
 
-main#main .device .title_ {
+main#main .device .title_ p {
+  font-size: 36px;
+  color: #5C4D50;
+  letter-spacing: 10px;
   position: relative;
 }
 
-main#main .device .title_ p {
-  font-size: 36px;
-  overflow: hidden;
-  color: #5C4D50;
-  letter-spacing: 10px;
-}
-
-main#main .device .title_::after {
+main#main .device .title_ p::after {
   content: '';
   display: block;
   background-color: black;
   position: absolute;
   left: 190px;
   top: 50%;
-  width: 100%;
+  width: 500px;
   height: 1px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);

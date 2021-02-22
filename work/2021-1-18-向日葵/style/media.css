@@ -40,6 +40,10 @@
 }
 
 @media (max-width: 768px) {
+  nav#nav .menu {
+    width: 90px;
+    padding: 10px 15px;
+  }
   main#main {
     padding-top: 0px;
   }
@@ -64,6 +68,8 @@
   }
   main#main .about .title_ {
     text-align: center;
+    padding-top: 130px;
+    padding-bottom: 40px;
   }
   main#main .about .title_ p {
     font-size: 22px;
@@ -87,8 +93,58 @@
     letter-spacing: 6px;
     text-align: justify;
   }
+  main#main .items {
+    margin-bottom: 0px;
+  }
+  main#main .items .title_ {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 40px;
+  }
+  main#main .items .title_ p {
+    font-size: 22px;
+    margin-left: 0%;
+    display: inline-block;
+  }
+  main#main .items .title_ p span {
+    display: none;
+  }
   main#main .items .content_ .content_box p {
     font-size: 18px;
+    letter-spacing: 5px;
+  }
+  main#main .device {
+    margin-bottom: 0;
+  }
+  main#main .device .title_ {
+    padding-top: 130px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  main#main .device .title_ p {
+    font-size: 22px;
+    margin-left: 0%;
+    display: inline-block;
+  }
+  main#main .device .title_ p::after {
+    left: 130px;
+  }
+  main#main .device .title_ p span {
+    display: none;
+  }
+  main#main .device .content_ {
+    margin: 0 15px;
+  }
+  main#main .device .content_ p:nth-of-type(1) {
+    display: none;
+  }
+  main#main .device .content_ p:nth-of-type(2) {
+    letter-spacing: 3px;
+  }
+  main#main .device .content_ p:nth-of-type(3) {
+    font-size: 16px;
+    letter-spacing: 6px;
+    text-align: justify;
   }
   footer#footer .footer_top {
     padding-top: 40px;
