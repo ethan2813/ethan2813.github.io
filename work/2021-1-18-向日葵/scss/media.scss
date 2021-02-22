@@ -9,11 +9,26 @@
             padding: 10px 15px;
         }
     }
+
+    footer#footer{
+        .footer_top{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .footer_time{
+                margin-top: 40px;
+            }
+            .contact_us{
+                justify-content: start;
+                margin-top: 40px;
+
+            }
+        }
+    }
 }
 
 
 
-    
+
 @media(max-width:1700px){
     main#main{
         .about{
@@ -207,18 +222,5 @@
         }
     }
 
-    footer#footer{
-        .footer_top{
-            padding-top: 40px;
-            padding-bottom: 40px;
-            .footer_time{
-                margin-top: 40px;
-            }
-            .contact_us{
-                justify-content: start;
-                margin-top: 40px;
-
-            }
-        }
-    }
+   
 }

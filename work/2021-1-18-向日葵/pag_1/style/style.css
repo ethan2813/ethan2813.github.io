@@ -75,8 +75,8 @@ main#main .experience {
 }
 
 main#main .experience .title_ {
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 
 main#main .experience .title_ p {
@@ -153,19 +153,32 @@ main#main .banner_bot {
   position: relative;
 }
 
-main#main .banner_bot .banner_bot_L img {
+main#main .banner_bot .banner_bot_L img.photo_pc {
   width: 100%;
+  display: block;
+}
+
+main#main .banner_bot .banner_bot_L img.photo_mobile {
+  width: 100%;
+  display: none;
 }
 
 main#main .banner_bot .banner_bot_R {
   position: relative;
+  overflow: hidden;
 }
 
-main#main .banner_bot .banner_bot_R img:nth-of-type(1) {
+main#main .banner_bot .banner_bot_R img.photo_pc {
   width: 100%;
+  display: block;
 }
 
-main#main .banner_bot .banner_bot_R img:nth-of-type(2) {
+main#main .banner_bot .banner_bot_R img.photo_mobile {
+  width: 100%;
+  display: none;
+}
+
+main#main .banner_bot .banner_bot_R img.flower {
   width: 30%;
   position: absolute;
   bottom: 0;
