@@ -1,0 +1,198 @@
+main#main{
+    padding-top: 90px;
+    .banner{
+        padding-right: 130px;
+        padding-left: 130px;
+        position: relative;
+        .banner_1{
+            width: 100%;
+            display: block;
+        }
+        .banner_1_mobile{
+            width: 100%;
+            display: none;
+        }
+    }
+
+    // 直式清單
+    .banner_list{
+        
+        writing-mode: vertical-lr;
+        margin-left: 20%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+        p{
+            font-size: 24px;
+            letter-spacing: 6px;
+            padding: 15px 15px;
+            margin: 0;
+
+            &:nth-of-type(2){
+                border-bottom: #8EAB5D solid 10px;
+            }
+        }           
+    }
+
+    .box_1{
+        padding-top: 150px;
+        padding-bottom: 250px;
+        p{
+            font-size: 18px;
+            letter-spacing: 6px;
+        }
+    }
+
+    .box_2{
+        display: block;
+        .left{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .color_box{
+                width: 64px;
+                height: 64px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(0% , -50%);
+                background-color: #8eab5d;
+            }
+            p{
+                position: absolute;
+                writing-mode: vertical-lr;
+                right: 3%;
+                top: 50%; 
+                transform: translate(-50% , -50%);
+                white-space: nowrap;
+                color: white;
+                font-size: 30px;
+                letter-spacing: 6px;
+                margin: 0;
+
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .box_2_mobile{
+        display: none;
+    }
+
+    .box_3{
+        .title_{
+            padding-top: 160px;
+            padding-bottom: 80px;
+            p{
+                margin-left: 25%;
+                font-size: 36px;
+                position: relative;
+                letter-spacing: 10px;
+                color: #5C4D50;
+
+
+                &::after{
+                    content: '';
+                    display: block;
+                    background-color: black;
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    width: 500px;
+                    height: 1px;
+                    transform: translate(-100%,-50%);
+                }
+
+
+                
+                span{
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+            }
+            
+        }
+        .content_{
+            .item{
+                margin-bottom: 200px;
+
+                .item_photo{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .item_article{
+                    .content{
+                        h3{
+                            font-size: 36px;
+                            letter-spacing: 10px;
+                            color: #5c4d50;
+                            margin-bottom: 25px;
+                        }
+                        p{
+                            font-size: 23px;
+                            color: #8EAB5D;
+                            letter-spacing: 8px;
+                            margin-bottom: 45px;
+                        }
+                        ul{
+                            padding-left: 20px;
+                            li{
+                                list-style:none;
+                                position: relative;
+                                font-size: 18px;
+                                letter-spacing: 2px;
+                                line-height: 30px;
+                                
+                                &:before{
+                                    content: '·';
+                                    font-size: 18px;
+                                    display: block;
+                                    width: 20px;
+                                    position: absolute;
+                                    left: -20px;
+                                    top: 0;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .box_4{
+        display: block;
+        .left{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            p{
+                position: absolute;
+                writing-mode: vertical-lr;
+                right: 3%;
+                top: 50%; 
+                transform: translate(-50% , -50%);
+                white-space: nowrap;
+                color: black;
+                font-size: 30px;
+                letter-spacing: 6px;
+                margin: 0;
+
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+
+}
