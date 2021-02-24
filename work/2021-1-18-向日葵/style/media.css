@@ -110,7 +110,7 @@
   }
   main#main .about .content_ .article .content p {
     font-size: 16px;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     text-align: justify;
   }
   main#main .items {
@@ -154,16 +154,18 @@
   }
   main#main .device .content_ {
     margin: 0 15px;
+    margin-bottom: 130px;
   }
   main#main .device .content_ p:nth-of-type(1) {
     display: none;
   }
   main#main .device .content_ p:nth-of-type(2) {
     letter-spacing: 3px;
+    font-size: 20px;
   }
   main#main .device .content_ p:nth-of-type(3) {
     font-size: 16px;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     text-align: justify;
   }
 }
