@@ -337,15 +337,21 @@ main#main .box_5 .content_3 .content_3_box p:nth-of-type(1) {
 }
 
 main#main .box_5 .content_3 .content_3_box ul {
-  list-style-type: decimal;
-  text-indent: -12px;
+  list-style-type: none;
   padding-left: 38px;
+  line-height: 30px;
 }
 
 main#main .box_5 .content_3 .content_3_box ul li {
   font-size: 18px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
+  position: relative;
+}
+
+main#main .box_5 .content_3 .content_3_box ul li span {
+  position: absolute;
+  left: -28px;
 }
 
 main#main .box_5 .content_3 .content_3_box.top {
