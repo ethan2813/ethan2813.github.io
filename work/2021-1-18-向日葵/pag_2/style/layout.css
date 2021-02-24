@@ -15,10 +15,6 @@ body {
   font-family: 'Noto Serif TC', serif;
 }
 
-p {
-  color: #5c4d50;
-}
-
 nav#nav {
   width: 100%;
   position: fixed;
