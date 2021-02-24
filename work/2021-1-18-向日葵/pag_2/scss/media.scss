@@ -94,6 +94,8 @@
                 text-align: center;
                 padding-top: 130px;
                 padding-bottom: 40px;
+
+                
                 p{
                     font-size: 22px;
                     margin-left: 0%;
@@ -104,6 +106,7 @@
                     }
                 }
             }
+
             .content_{
                 .item{
                     margin-bottom: 130px;
@@ -125,12 +128,85 @@
                             }
                         }
                     }
+                    .item_photo{
+                        padding: 0;
+                    }
+                }
+                .item4{
+                    margin-bottom: 0;
                 }
             }
         }
 
         .box_4{
             display: none;
+        }
+        .box_5{
+            .title_{
+                padding: 0 15px;
+                // display: none;
+                // text-align: center;
+                padding-top: 130px;
+                padding-bottom: 40px;
+                p{
+                    
+                    font-size: 22px;
+                    margin-left: 0%;
+                    display: inline-block;
+                    letter-spacing: 3px; 
+                }
+                p:nth-of-type(1){
+                    &::after{
+                        content: '';
+                        display: none;
+                    }
+                }
+            }
+
+            .content_1{
+                margin-bottom: 70px ;
+                P{
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+            }
+            .content_2{
+                margin-bottom: 0;
+                .content_2_box{
+                    h3{
+                        font-size: 20px;
+                        letter-spacing: 3px;
+                    }
+                    p{
+                        margin-bottom: 90px;
+                        font-size: 16px;
+                    letter-spacing: 4px;
+                    }
+                }
+                .content_2_box.top{
+                    margin-top:unset;
+                }
+            }
+            .content_3{
+                .content_3_box{
+                    h3{
+                        font-size: 20px;
+                        letter-spacing: 3px;
+                    }
+                    p{
+                        font-size: 16px;
+                        letter-spacing: 4px;
+                    }
+                    ul{
+                        text-indent: unset;
+                        line-height: 30px;
+                        li{
+                            font-size: 16px;
+                        letter-spacing: 4px;
+                        }
+                    }
+                }
+            }
         }
        
         

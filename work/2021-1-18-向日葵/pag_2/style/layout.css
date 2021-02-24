@@ -15,6 +15,10 @@ body {
   font-family: 'Noto Serif TC', serif;
 }
 
+p {
+  color: #5c4d50;
+}
+
 nav#nav {
   width: 100%;
   position: fixed;
@@ -168,6 +172,7 @@ footer#footer .footer_top .footer_title p {
   font-family: 微軟正黑體;
   letter-spacing: 3px;
   margin: 0;
+  color: white;
 }
 
 footer#footer .footer_top .footer_time {

@@ -13,7 +13,11 @@ body{
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
-}   
+}  
+
+p{
+    color: #5c4d50;
+}
 
 
 
@@ -137,6 +141,7 @@ footer#footer{
                 font-family: 微軟正黑體;
                 letter-spacing: 3px;
                 margin: 0;
+                color: white;
 
             }
         }

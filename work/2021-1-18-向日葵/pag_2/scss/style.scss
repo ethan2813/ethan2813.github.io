@@ -40,6 +40,7 @@ main#main{
         p{
             font-size: 18px;
             letter-spacing: 6px;
+            font-family: 微軟正黑體;
         }
     }
 
@@ -121,6 +122,7 @@ main#main{
                 margin-bottom: 200px;
 
                 .item_photo{
+                    padding: 0 20px;
                     img{
                         width: 100%;
                     }
@@ -142,11 +144,16 @@ main#main{
                         ul{
                             padding-left: 20px;
                             li{
+
+                                
                                 list-style:none;
                                 position: relative;
                                 font-size: 18px;
                                 letter-spacing: 2px;
                                 line-height: 30px;
+                                font-family: 微軟正黑體;
+                                color: #5c4d50;
+                                
                                 
                                 &:before{
                                     content: '·';
@@ -156,6 +163,7 @@ main#main{
                                     position: absolute;
                                     left: -20px;
                                     top: 0;
+                                    text-align: center;
                                 }
                                 
                             }
@@ -190,6 +198,171 @@ main#main{
         .right{
             img{
                 width: 100%;
+            }
+        }
+    }
+    .box_5{
+        .title_{
+            padding-top: 160px;
+            padding-bottom: 140px;
+            p{
+                margin-left: 25%;
+                font-size: 36px;
+                position: relative;
+                letter-spacing: 10px;
+                color: #5C4D50;
+                
+            }
+
+            p:nth-of-type(1){
+                &::after{
+                    content: '';
+                    display: block;
+                    background-color: black;
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    width: 500px;
+                    height: 1px;
+                    transform: translate(-100%,-50%);
+                }
+            }
+            
+        }
+        .content_1{
+            margin-bottom: 200px;
+
+            p{
+                font-size: 18px;
+                font-family: 微軟正黑體;
+                letter-spacing: 6px;
+                margin: 0 15px;
+                text-align: justify;
+                line-height: 30px;
+            }
+        }
+        .content_2{
+            margin-bottom: 200px;
+            .content_2_box{
+                margin: 0 15px;
+                position: relative;
+                h3{
+                    font-size: 23px;
+                    color: #8EAB5D;
+                    padding-top: 40px;
+                    margin-bottom: 40px;
+                    letter-spacing: 8px;
+                }
+                p{
+                    font-size: 18px;
+                    letter-spacing: 8px;
+                    font-family: 微軟正黑體;
+                    color: #5C4D50;
+                    margin-bottom: 10px;
+                    text-align: justify;
+                    line-height: 30px;
+                }
+
+                &.top{
+                    margin-top: 125px;
+                }
+    
+                
+    
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 130px;
+                    height: 3px;
+                    background-color: #8EAB5D;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    
+    
+                }
+    
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #77855E;
+                    position: absolute;
+                    top: 1px;
+                    left: 0;
+                    opacity: 0.8;
+                    
+                }
+            }
+        }
+        .content_3{
+            margin-bottom: 200px;
+            .content_3_box{
+                margin: 0 15px;
+                position: relative;
+                h3{
+                    font-size: 23px;
+                    color: #8EAB5D;
+                    padding-top: 40px;
+                    margin-bottom: 40px;
+                    letter-spacing: 8px;
+                }
+                p{
+                    font-size: 18px;
+                    letter-spacing: 6px;
+                    font-family: 微軟正黑體;
+                    color: #5C4D50;
+                    margin-bottom: 10px;
+                    text-align: justify;
+                }
+                p:nth-of-type(1){
+                    margin-bottom: 50px;
+                }
+                
+                ul{
+                    list-style-type: decimal;
+                    text-indent: -12px;
+                    padding-left: 38px;
+                    li{
+                        font-size: 18px;
+                        letter-spacing: 6px;
+                        font-family: 微軟正黑體;
+                        color: #5C4D50;
+                    }
+                }
+
+                &.top{
+                    margin-top: 125px;
+                }
+    
+                
+    
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 130px;
+                    height: 3px;
+                    background-color: #8EAB5D;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    
+    
+                }
+    
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #77855E;
+                    position: absolute;
+                    top: 1px;
+                    left: 0;
+                    opacity: 0.8;
+                    
+                }
             }
         }
     }
