@@ -28,6 +28,29 @@
 
 
 
+
+
+@media(max-width:1200px){
+    main#main{
+        .banner{
+            p{
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+@media(max-width:996px){
+    main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
 @media(max-width:768px){
     main#main{
         padding-top: 0px;
@@ -41,6 +64,11 @@
             .banner_1_mobile{
                 display: block;
             }
+            P{
+                left: 80%;
+                top: 60%;
+                letter-spacing: 4px;
+            }
            
         }
 
@@ -50,7 +78,7 @@
         
         .box_1{
             padding-top: 90px;
-            padding-bottom: 90px;
+            // padding-bottom: 90px;
 
             p{
                 font-size: 16px;
@@ -60,10 +88,11 @@
 
         .box_2{
             .title_{
-                display: none;
+                // display: none;
                 text-align: center;
-                padding-top: 130px;
-                padding-bottom: 40px;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                margin-bottom: 0;
 
                 
                 p{
@@ -75,11 +104,54 @@
                         display: none;
                     }
                 }
+                .side , .box{
+                    display: none;
+
+                }
+            }
+            .content_{
+                .item{
+                     padding-top: 0;
+                    margin-bottom: 0;
+                    .item_article{
+                        margin-bottom: 80px;
+                        .content{
+                            h3{
+                                font-size: 30px;
+                                letter-spacing: 5px;
+                                padding-top: 90px;
+                            }
+                            p:nth-of-type(1){
+                                font-size: 20px;
+                                letter-spacing: 3px;
+                            }
+                            p:nth-of-type(2){
+                                font-size: 16px;
+                                    letter-spacing: 3px;
+                            }
+                            
+                        }
+                    }
+                    .item_photo{
+                        padding: 0;
+                        img:nth-of-type(2){
+                            width: 30%;
+                            // left: 0 ;
+                        }
+                    }
+                }
+
+                .item2{
+                    .item_article{
+                        .content{
+                            h3{
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }
-}
-
-@media(max-width:1200px){
-    
 }
