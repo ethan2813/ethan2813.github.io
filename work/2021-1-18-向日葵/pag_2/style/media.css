@@ -22,6 +22,26 @@
   }
 }
 
+@media (max-width: 1200px) {
+  main#main .banner p {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  main#main .box_2 .left p {
+    font-size: 20px;
+  }
+  main#main .box_4 .left p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 996px) {
+  main#main .banner p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
 @media (max-width: 768px) {
   main#main {
     padding-top: 0px;
@@ -35,6 +55,11 @@
   }
   main#main .banner .banner_1_mobile {
     display: block;
+  }
+  main#main .banner P {
+    left: 84%;
+    top: 45%;
+    letter-spacing: 4px;
   }
   main#main .banner_list {
     display: none;
@@ -179,14 +204,5 @@
   }
   main#main .box_5 .content_3 .content_3_box ul li span {
     left: -23px;
-  }
-}
-
-@media (max-width: 1200px) {
-  main#main .box_2 .left p {
-    font-size: 20px;
-  }
-  main#main .box_4 .left p {
-    font-size: 20px;
   }
 }

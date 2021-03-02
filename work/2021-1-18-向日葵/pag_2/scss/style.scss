@@ -12,6 +12,19 @@ main#main{
             width: 100%;
             display: none;
         }
+        p{
+            writing-mode: vertical-lr;
+            white-space: nowrap;
+            // font-family: 微軟正黑體;
+            font-size: 30px;
+            letter-spacing: 10px;
+            color: white;
+            position: absolute;
+            left: 49%;
+            top: 30%;
+            transform: translate(-50% , -50%);
+
+        }
     }
 
     // 直式清單

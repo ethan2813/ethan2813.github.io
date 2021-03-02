@@ -19,6 +19,22 @@ main#main .banner .banner_1_mobile {
   display: none;
 }
 
+main#main .banner p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  white-space: nowrap;
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: white;
+  position: absolute;
+  left: 49%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 main#main .banner_list {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;

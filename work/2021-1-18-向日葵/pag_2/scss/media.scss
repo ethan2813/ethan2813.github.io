@@ -28,6 +28,42 @@
 
 
 
+
+
+@media(max-width:1200px){
+    main#main{
+        .banner{
+            p{
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+        }
+        .box_2{
+            .left{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .box_4{
+            .left{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:996px){
+    main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
 @media(max-width:768px){
     main#main{
         padding-top: 0px;
@@ -40,6 +76,11 @@
             }
             .banner_1_mobile{
                 display: block;
+            }
+            P{
+                left: 84%;
+                top: 45%;
+                letter-spacing: 4px;
             }
            
         }
@@ -216,24 +257,5 @@
         }
        
         
-    }
-}
-
-@media(max-width:1200px){
-    main#main{
-        .box_2{
-            .left{
-                p{
-                    font-size: 20px;
-                }
-            }
-        }
-        .box_4{
-            .left{
-                p{
-                    font-size: 20px;
-                }
-            }
-        }
     }
 }

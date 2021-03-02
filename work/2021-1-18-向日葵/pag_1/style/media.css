@@ -22,6 +22,20 @@
   }
 }
 
+@media (max-width: 1200px) {
+  main#main .banner p {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 996px) {
+  main#main .banner p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
 @media (max-width: 768px) {
   main#main {
     padding-top: 0px;
@@ -35,6 +49,11 @@
   }
   main#main .banner .banner_1_mobile {
     display: block;
+  }
+  main#main .banner P {
+    left: 80%;
+    top: 60%;
+    letter-spacing: 4px;
   }
   main#main .banner_list {
     display: none;
