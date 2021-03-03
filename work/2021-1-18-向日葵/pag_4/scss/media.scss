@@ -1,0 +1,188 @@
+// layout
+@media(max-width:768px){
+    nav#nav{
+        .phone_number{
+            display: none!important;
+        }
+        .menu{
+            width: 90px;
+            padding: 10px 15px;
+        }
+    }
+
+    footer#footer{
+        .footer_top{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .footer_time{
+                margin-top: 40px;
+            }
+            .contact_us{
+                justify-content: start;
+                margin-top: 40px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:1200px){
+    main#main{
+        .banner{
+            p{
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+        }
+        .box_4{
+            .pc{
+                p{
+                    font-size: 22px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:996px){
+    main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    main#main{
+        padding-top: 0px;
+
+        .banner{
+            padding-right: 0px;
+            padding-left: 0px;
+            .banner_1{
+                display: none;
+            }
+            .banner_1_mobile{
+                display: block;
+            }
+            P{
+                left: 80%;
+                top: 60%;
+                letter-spacing: 4px;
+            }
+           
+        }
+
+        .banner_list{
+            display: none;
+        }
+        
+        .box_1{
+            padding-top: 90px;
+            padding-bottom: 80px;
+
+            p{
+                font-size: 16px;
+                letter-spacing: 4px;
+            }
+            .color_box{
+                display: none;
+            }
+        }
+
+        .box_2{
+            margin-top: 0;
+            padding-bottom: 80px;
+            .title_{
+                img.flower_mini{
+                    display: none;
+                }
+                .title_box{
+                    p:nth-of-type(1){
+                        font-size: 22px;
+                        &::after{
+                            // right: 190px;
+                            left: -20px;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
+
+                    p:nth-of-type(2){
+                        display: none;
+                    }
+
+                }
+            }
+        }
+        .box_3{
+            margin-bottom: 0;
+            .title_{
+                p{
+                    font-size: 30px;
+                    letter-spacing: 3px;
+                }
+            }
+            .content_2_box{
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                }
+                p{
+                    margin-bottom: 90px;
+                    font-size: 16px;
+                letter-spacing: 4px;
+                }
+            }
+            .content_2_box.top{
+                margin-top:unset;
+            }
+        }
+        .box_4{
+            .pc{
+                img{
+                    width: 100%;
+                    display: none;
+                    }
+            }
+            
+        }
+        .box_5{
+            padding-top: 0;
+            .item{
+                padding-top: 0;
+               margin-bottom: 0;
+               .item_article{
+                   margin-bottom: 80px;
+                   .content{
+                       h3{
+                           font-size: 30px;
+                           letter-spacing: 5px;
+                           padding-top: 90px;
+                       }
+                       p:nth-of-type(1){
+                           font-size: 20px;
+                           letter-spacing: 3px;
+                       }
+                       p:nth-of-type(2){
+                           font-size: 16px;
+                            letter-spacing: 3px;
+                       }
+                       ul{
+                           li{
+                            font-size: 16px;
+                            letter-spacing: 3px;
+                           }
+                       }
+                       
+                   }
+               }
+               .item_photo{
+                   padding: 0;
+               }
+           }
+        }
+    }
+}

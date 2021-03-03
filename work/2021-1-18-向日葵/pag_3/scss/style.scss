@@ -1,62 +1,61 @@
 main#main{
     padding-top: 90px;
-    .banner{
-        padding-right: 130px;
-        padding-left: 130px;
-        position: relative;
-        .banner_1{
-            width: 100%;
-            display: block;
-        }
-        .banner_1_mobile{
-            width: 100%;
-            display: none;
-        }
-        p{
-            writing-mode: vertical-lr;
-            white-space: nowrap;
-            // font-family: 微軟正黑體;
-            font-size: 30px;
-            letter-spacing: 10px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50% , -50%);
-
-        }
-    }
-
-    // 直式清單
-    .banner_list{
-        
-        writing-mode: vertical-lr;
-        margin-left: 20%;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        
-        p{
-            font-size: 24px;
-            letter-spacing: 6px;
-            padding: 15px 15px;
-            margin: 0;
-
-            &:nth-of-type(4){
-                border-bottom: #8EAB5D solid 10px;
+        .banner{
+            padding-right: 130px;
+            padding-left: 130px;
+            position: relative;
+            .banner_1{
+                width: 100%;
+                display: block;
             }
-        }           
-    }
-
-    .box_1{
-        padding-top: 150px;
-        // padding-bottom: 250px;
-        p{
-            font-size: 18px;
-            letter-spacing: 6px;
-            font-family: 微軟正黑體;
-            text-align: justify;
+            .banner_1_mobile{
+                width: 100%;
+                display: none;
+            }
+            p{
+                writing-mode: vertical-lr;
+                white-space: nowrap;
+                // font-family: 微軟正黑體;
+                font-size: 30px;
+                letter-spacing: 10px;
+                color: white;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50% , -50%);
+            }
         }
-    }
+
+        // 直式清單
+        .banner_list{
+            
+            writing-mode: vertical-lr;
+            margin-left: 20%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            
+            p{
+                font-size: 24px;
+                letter-spacing: 6px;
+                padding: 15px 15px;
+                margin: 0;
+
+                &:nth-of-type(4){
+                    border-bottom: #8EAB5D solid 10px;
+                }
+            }           
+        }
+
+        .box_1{
+            padding-top: 150px;
+            // padding-bottom: 250px;
+            p{
+                font-size: 18px;
+                letter-spacing: 6px;
+                font-family: 微軟正黑體;
+                text-align: justify;
+            }
+        }
 
     .box_2{
         .title_{
