@@ -1,0 +1,141 @@
+// layout
+@media(max-width:768px){
+    nav#nav{
+        .phone_number{
+            display: none!important;
+        }
+        .menu{
+            width: 90px;
+            padding: 10px 15px;
+        }
+    }
+
+    footer#footer{
+        .footer_top{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .footer_time{
+                margin-top: 40px;
+            }
+            .contact_us{
+                justify-content: start;
+                margin-top: 40px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:1200px){
+    main#main{
+        .banner{
+            p{
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+@media(max-width:996px){
+    main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    main#main{
+        padding-top: 0px;
+
+        .banner{
+            padding-right: 0px;
+            padding-left: 0px;
+            .banner_1{
+                display: none;
+            }
+            .banner_1_mobile{
+                display: block;
+            }
+            P{
+                left: 80%;
+                top: 60%;
+                letter-spacing: 4px;
+            }
+           
+        }
+        .banner_list{
+            display: none;
+        }
+        .box_1{
+            .title_{
+                // display: none;
+                text-align: center;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                margin-bottom: 0;
+
+                
+                p{
+                    font-size: 22px;
+                    margin-left: 0%;
+                    display: inline-block;
+
+                    span{
+                        display: none;
+                    }
+                }
+                .side , .box{
+                    display: none;
+
+                }
+            }
+            .content_{
+                p{
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+        .box_2{
+            margin-top: 80px;
+            padding-bottom: 80px;
+            .title_{
+                img.side{
+                    display: none;
+                }
+                .title_box{
+                    margin-left: 0px;
+                    p:nth-of-type(1){
+                        font-size: 22px;
+                        &::after{
+                            // right: 190px;
+                            left: -20px;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
+
+                    p:nth-of-type(2){
+                        display: none;
+                    }
+
+                }
+            }
+            .content_{
+                margin-top: 80px;
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                    line-height: 35px;
+                }
+                p{
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+}

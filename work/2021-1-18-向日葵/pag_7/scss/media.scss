@@ -1,0 +1,74 @@
+// layout
+@media(max-width:768px){
+    nav#nav{
+        .phone_number{
+            display: none!important;
+        }
+        .menu{
+            width: 90px;
+            padding: 10px 15px;
+        }
+    }
+
+    footer#footer{
+        .footer_top{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .footer_time{
+                margin-top: 40px;
+            }
+            .contact_us{
+                justify-content: start;
+                margin-top: 40px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:1200px){
+    main#main{
+        .banner{
+            p{
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+@media(max-width:996px){
+    main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    main#main{
+        padding-top: 0px;
+
+        .banner{
+            padding-right: 0px;
+            padding-left: 0px;
+            .banner_1{
+                display: none;
+            }
+            .banner_1_mobile{
+                display: block;
+            }
+            P{
+                left: 80%;
+                top: 60%;
+                letter-spacing: 4px;
+            }
+           
+        }
+        .banner_list{
+            display: none;
+        }
+    }
+}
