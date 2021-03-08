@@ -1,0 +1,564 @@
+/*-------------------------*/
+/* $Project-header
+---------------------------*/
+@media(max-width:959px){
+	.project-home .banner{
+		margin-top:60px;
+	}
+}
+@media(max-width:1040px){
+	.nav-contact,
+	.project-home .banner-pinsen:after,
+	.project-home .banner:after{display:none;}
+}
+@media(max-width:960px){
+	.project-header .menu-toggle span{
+		background-color:#222;
+	} 
+}
+@media(max-width:959px){
+	.project-header .navbar__logo img,
+	.header--scrolling .navbar__logo img{
+		padding-top:12px;
+		width:160px;
+	}
+}
+@media(max-width:520px){
+	.goodday-home .banner-text{
+		width:34%;
+		top:30%;
+	}
+	.project-home .banner-03,
+	.project-home .banner-04{
+		margin-bottom:20px;
+	}
+}
+/*-------------------------*/
+/* $Project-品森
+---------------------------*/
+@media(max-width:959px){
+	.project-home .banner-pinsen,
+	.project-home .banner{
+		margin-top:60px;
+	}
+}
+@media(max-width:620px){
+	.banner-pinsen .phone-none{display:none;}
+	.banner-pinsen .phone-block{display:block;}
+}
+/*莊培新*/
+@media(max-width:1024px){
+	.project-home .banner-01{
+		 height:30vh;
+	}
+}
+@media(max-width:620px){
+	.project-home .banner-01,
+	.project-home .banner-02{
+		height:60vh;
+		background-position:center;
+		background-position-x:-100px;
+	}
+}
+@media(max-width:620px){
+	.project-home .banner-03,
+	.project-home .banner-04{
+		height:60vh;
+		background-position:center;
+		background-position-x:-200px;
+	}
+}
+/*-------------------------*/
+/* $Project-quote
+---------------------------*/
+@media(max-width:768px){
+	.project-quote .color-square{
+		margin-bottom:40px;
+		float:none;
+		margin-right:0;
+	}
+}
+@media(max-width:656px){
+	.goodday-quote .phone-none{display:none;}
+	.goodday-quote .phone-block{
+		display:block;
+		text-align:left;
+		text-align: justify;
+  		text-justify:inter-ideograph;
+	}
+}
+@media(max-width:623px){
+	.project-quote .col-lg-5{
+		margin-left:0;
+	}
+}
+@media(max-width:520px){
+	.project-quote{
+		padding-top:30px;
+		padding-bottom:60px;
+	}
+	.project-quote .color-square{
+		padding:10px 16px;
+		margin-bottom:0px;
+	}
+	.project-quote .img-inner{
+		width:120px;
+	}
+}
+/*品森*/
+@media(max-width:520px){
+	.project-quote .img-inner,.project-quote .img-inner{
+		margin-top:10px;
+		width:80px;
+	}
+}
+@media(max-width:501px){
+	.pinsen-quote .phone-none{
+		display:none;
+	}
+	.pinsen-quote .phone-block{
+		display:block;
+	}
+}
+/*莊培新*/
+@media(max-width:715px){
+	.chuang-quote .phone-none{display:none;}
+	.chuang-quote .phone-block{display:block;}
+}
+/*好日*/
+@media(max-width:1400px){
+	.goodday-info .project-text-inner .img-inner{
+		width:80%;
+	}
+}
+/*誠一*/
+@media(max-width:641px){
+	.sincerity-quote .phone-none{display:none;}
+	.sincerity-quote .phone-block{
+		display:block;
+		text-align:left;
+		text-align: justify;
+  		text-justify:inter-ideograph;
+	}
+}
+/*-------------------------*/
+/* $Project-info
+---------------------------*/
+@media(max-width:1600px){
+	.img-sky{
+		margin-top:-100px;
+	}
+}
+@media(max-width:1307px){
+	.color-square{
+		font-size:22px;
+		text-align: justify;
+  		text-justify:inter-ideograph;
+	}
+}
+@media(max-width:1280px){
+	.project-text-inner{
+		margin-top:80px;
+	}
+	.project-text-inner .img-inner{
+		margin-top:40px;
+		width:70%;
+	}
+}
+@media(max-width:1199px){
+	.project-text-inner .img-inner{
+		margin-top:60px;
+		width:90%;
+	}
+}
+@media(max-width:1024px){
+	.project-text-inner .img-inner{
+		margin-top:40px;
+	}
+	.img-sky{
+		margin-top:-100px;
+		width:120%;
+	}
+}
+@media(max-width:780px){
+	.project-info{
+		margin-bottom:100px;
+	}
+	.project-info .project-text-inner{
+		padding:0 20px;
+	}
+	.img-sky{
+		margin-top:-100px;
+		width:140%;
+	}
+}
+@media(max-width:767px){
+	.row-merch h4{
+		float:left;
+		margin-right:0;
+	}
+}
+@media(max-width:620px){
+	.img-sky{
+		margin-top:-80px;
+		width:160%;
+	}
+}
+@media(max-width:540px){
+	.project-info .project-text-inner{
+		padding:0 20px;
+	}
+	.project-info .row-02{
+		padding:0 10px;
+	}
+	.color-square{
+		padding:10px 16px;
+	}
+}
+/*品森*/
+@media(max-width:1340px){
+	.row-merch .stucker-img{
+		margin-top:20px;
+	}
+	.sticker{
+		right:-20px;
+	}
+	.sticker img{
+		width:120px;
+	}
+}
+@media(max-width:1199px){
+	.row-sky{
+		top:-40px;
+	}
+	.wall .img-inner{
+		margin-top:-140px;
+		width:70%;
+		margin-bottom:70px;
+	}
+	.wall:after{
+		top:54%;
+		right:0%;
+		z-index:20;
+	}
+}
+@media(max-width:991px){
+	.wall .img-inner{
+		margin-top:-140px;
+		width:86%;
+		margin-bottom:70px;
+	}
+}
+@media(max-width:882px){
+	.wall:after{
+		top:54%;
+		right:0%;
+		background-size:180px;
+		width:180px;
+		height:320px;
+	}
+}
+@media(max-width:827px){
+	.row-sky .color-square{
+		right:0;
+		margin-right:0;
+	}
+}
+@media(max-width:540px){
+	.project-text-inner{
+		margin-top:60px;
+	}
+	.pinsen-info .phone-none{display:none;}
+	.pinsen-info .phone-block{display:block;}
+	.pinsen-info .phone-none-sm{display:none;}
+	.pinsen-info .phone-block-sm{display:block;}
+	.row-sky .color-square{float:left;}
+	.pinsen-info .sky-02{
+		margin-top:100px;
+	}
+	.wall .img-inner{
+		margin-top:-70px;
+		width:70%;
+	}
+	.wall:after{
+		top:30%;
+		right:-4%;
+		background-size:140px;
+		width:140px;
+		height:260px;
+	}
+	.sticker{
+		right:-20px;
+	}
+	.sticker img{
+		width:80px;
+		margin-bottom:10px;
+	}
+}
+@media(max-width:520px){
+	.row-merch .phone-none{display:none;}
+	.row-merch .phone-block{display:block;}
+}
+/*莊培欣*/
+@media(max-width:1500px){
+	.store-sky .col-lg-3{
+		margin-top:140px;
+	}
+}
+@media(max-width:1280px){
+	.project-info-01 .project-banner-top{
+		height:380px;
+	}	
+	.row-photo .photo-top .img-inner{
+		margin-left:0px;
+	}
+	.row-photo .photo-bottom .img-inner{
+		margin-left:0px;
+	}
+}
+@media(max-width:960px){
+	.store-sky .col-lg-3{
+		margin-top:100px;
+	}
+	.project-info-01 .sky-02{
+		margin-top:140px;
+	}
+}
+@media(max-width:810px){
+	.project-info-01 .project-banner-top{
+		height:280px;
+	}	
+	.store-sky{
+		margin-top:-100px;
+	}
+	.store-sky .col-lg-3{
+		margin-top:60px;
+	}
+	.row-photo .photo-bottom:after{
+		height:160px;
+	}
+	.square-inner{
+		display:inline-block;
+		padding-left:20px;
+	}
+
+	.row-photo .color-square-top-1{
+		text-align:left;
+		width:100%;
+	}
+	.row-photo .color-square{
+		float:left;
+		margin-right:0;
+	}
+}
+@media(max-width:671px){
+	.project-info-01 .phone-none{display:none;}
+	.project-info-01 .phone-block{display:block;}
+	.row-photo .photo-top .img-inner{
+		margin-bottom:10px;
+	}
+	.square-inner{
+		margin-bottom:40px;
+	}
+	.project-info-01 .sky-1 .img-02{
+		width:50%;
+		margin-top:24px;
+	}
+	.project-info-01 .sky-02{
+		margin-top:40px;
+	}
+}
+
+@media(max-width:478px){
+	.project-info-01 .project-banner-top{
+		height:260px;
+	}
+	.store-sky{
+		margin-top:-60px;
+	}
+	.store-sky .col-lg-3{
+		margin-top:30px;
+	}
+}
+@media(max-width:440px){
+	.project-info-01 .sky-1,
+	.project-info-01 .sky-02{
+		padding:0;
+	}
+	.row-photo .img-width .img-inner{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+}
+/*昕宇*/
+@media(max-width:960px){
+	.room-sticker .img-inner{
+		margin-top:220px;
+	}
+	.room-sticker .img-inner img{
+		width:180px;
+		right:30px;
+	}
+}
+@media(max-width:800px){
+	.be-af img{
+		width:100%;
+	}
+	.newworld-bottom{
+		margin-top:60px;
+	}
+	.newworld-bottom .color-square{
+		float:none;
+		right:0;
+	}
+	.newworld .green-bg{
+		margin-bottom:40px;
+		border:1px solid red;
+	}
+}
+
+@media(max-width:653px){
+	.room-sticker .img-inner{
+		margin-top:100px;
+		float:right;
+		display:inline-block;
+	}
+	.room-sticker .img-inner img{
+		width:50%;
+		right:0;
+	}
+}
+@media(max-width:560px){
+	.newworld .img-01,
+	.newworld .img-02{
+		margin-top:20px;
+	}
+}
+@media(max-width:476px){
+	.newword-info .phone-none{display:none;}
+	.newword-info .phone-block{display:block;}
+	.room-sticker .img-inner{
+		margin-top:80px;
+	}
+}
+/*好日*/
+@media(max-width:898px){
+	.goodday .col-lg-6 .img-inner{
+		width:98%;
+		top:-100px;
+	}
+	.bottom-logo .img-inner{
+		margin-top:140px;
+	}
+}
+@media(max-width:613px){
+	.goodday .col-lg-6 .img-inner{
+		top:-80px;
+	}
+	.bottom-logo .img-inner{
+		margin-top:100px;
+	}
+	.goodday-bottom .newworld-bottom{
+		margin-top:0;
+		margin-bottom:-20px;
+	}
+	.goodday-bottom p{
+		margin-bottom:0px;
+	}
+	.computer-inner{
+		margin-bottom:40px;
+	}
+}
+@media(max-width:440px){
+	.goodday .col-lg-6 .img-inner{
+		top:-60px;
+		width:100%;
+	}
+	.goodday-bottom .phone-none{display:none;}
+	.goodday-bottom .phone-block{
+		display:block;
+		margin-top:0;
+		margin-bottom:40px;
+	}
+	.goodday-bottom .col-lg-12 .col-lg-4{
+		padding:0;
+	}
+	.bottom-logo .img-inner{
+		margin-top:60px;
+		padding:0 6px;
+	}
+}
+@media(max-width:360px){
+	.bottom-logo .img-inner{
+		margin-top:40px;
+	}
+}
+/*誠一*/
+@media(max-width:1199px){
+	.sincerity .col-02 .col-lg-4 .img-inner{
+		right:20px;
+	}
+}
+@media(max-width:1075px){
+	.pink-bg .container-fluid-c:before{
+		right:-20%;
+		width:400px;
+		height:400px;
+	}
+}
+@media(max-width:1041px){
+	.sincerity .col-02 .col-lg-8 .img-inner:after{
+		bottom:-20%;
+		right:-30%;
+		background-size:200px;
+		width:200px;
+		height:200px;
+	}
+	.pink-bg .container-fluid-c .img-right{
+		margin-right:-100px;
+		margin-top:-14%;
+	}
+}
+@media(max-width:663px){
+	.sincerity .col-02 .col-lg-8 .img-inner:after{
+		bottom:-24%;
+		right:-20%;
+		background-size:120px;
+		width:120px;
+		height:120px;
+	}
+	.pink-bg .container-fluid-c{
+		margin-top:200px;
+		margin-bottom:40px;
+	}
+	.sincerity .col-lg-12 .img-01{
+		margin-bottom:40px;
+	}
+}
+@media(max-width:580px){
+	.pink-bg .container-fluid-c:before{
+		right:-20%;
+		width:260px;
+		height:260px;
+	}
+	.pink-bg .container-fluid-c .img-left{
+		margin-left:0;
+	}
+	.pink-bg .container-fluid-c .img-right{
+		margin-right:-100px;
+		margin-top:-14%;
+	}
+}
+@media(max-width:420px){
+	.pink-bg .container-fluid-c{
+		margin-top:120px;
+		margin-bottom:40px;
+	}
+	.sincerity .col-02 .col-lg-8 .img-inner:after{
+		bottom:-24%;
+		right:-20%;
+		background-size:80px;
+		width:80px;
+		height:80px;
+	}
+}

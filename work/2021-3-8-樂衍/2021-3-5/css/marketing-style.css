@@ -1,0 +1,510 @@
+.img-inner{
+  /*left:50%;
+  transform:translateX(-50%);*/
+}
+.img-inner img{
+  width:100%;
+  height:auto;
+}
+@media (max-width:1167px){
+	.popup-nav{
+		background-color:#d5e3e3;
+		border-left:4px solid #fff;
+		border-bottom:4px solid #d5e3e3;
+	}
+	.popup-nav .menu__item,
+	.header--scrolling .popup-nav .menu__item{
+		color:#222;
+	}
+	.popup-close span{
+		background-color: #222;
+	}
+}
+/*-------------------------*/
+/* $Project-header
+---------------------------*/
+.project-header{
+	background-color:#fff;
+	z-index:1000;
+}
+.project-header .menu__item{
+	color: #45433d;
+	padding:20px 24px;
+}
+.project-header .navbar__logo img{
+	padding-top:18px;
+}
+@media(max-width:1402px){
+	.project-header .menu__item{
+		padding:20px 18px;
+	}
+}
+@media(max-width:1022px){
+	.project-header .menu__item,
+	.header--scrolling .menu__item{
+		padding:20px 16px;
+	}
+}
+/*-------------------------*/
+/* $Project-品森
+---------------------------*/
+.project-home .banner-pinsen,.project-home .banner-team{
+	margin-top:80px;
+}
+.project-home .banner{
+	margin-top:80px;
+	background-size: cover;
+	background-repeat:no-repeat;
+    padding:0;
+    height:90vh;
+}
+.project-home .banner-01{
+	background-image:url('../images/marketing/莊培欣-02.png');
+	background-position:left;
+}
+.project-home .banner-02{
+	background-image:url('../images/marketing/昕宇-02.png');
+}
+.project-home .banner-03{
+	background-image:url('../images/marketing/好日-16.png');
+	height:80vh;
+	margin-bottom:80px;
+}
+.project-home .banner-04{
+	background-image:url('../images/marketing/誠一-02.png');
+	height:80vh;
+	margin-bottom:80px;
+}
+
+.banner-text{
+	width:274px;
+	height:auto;
+	position:absolute;
+	top:39%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.goodday-home .banner-text{
+	width:274px;
+	height:auto;
+	position:absolute;
+	top:39%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.project-home .banner:after,
+.project-home .banner-pinsen:after{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:50px;
+	height:90vh;
+	background-color:#fff;
+	opacity:0.7;
+}
+/*.banner-bottom{
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+    padding:0;
+    width:100%;
+    height:200px;
+    bottom:190px;
+    background-image:url('../images/marketing/品森-17.png');
+    z-index:80;
+}*/
+.nav-contact{
+	padding:0 10px;
+	font-size:20px;
+	top:40%;
+}
+
+.nav-contact:before{
+	display:none;
+}
+
+/*-------------------------*/
+/* $Project-quote
+---------------------------*/
+.project-quote{
+	margin-top:-4px;
+	padding-bottom:100px;
+}
+.project-quote h4{
+	margin-bottom:80px;
+	float:right;
+	margin-right:60px;
+}
+.project-quote .col-lg-5{
+	margin-left:60px;
+}
+.project-quote .img-inner{
+	margin-top:60px;
+	width:140px;
+	left:50%;
+	transform:translateX(-50%);
+}
+/*-------------------------*/
+/* $Project-info
+---------------------------*/
+/*品森*/
+.project-info{
+	margin-bottom:200px;
+}
+.project-info .col-lg-12{
+	padding:0;
+}
+.project-banner-top{
+	background-size: cover;
+	background-position:center;
+	width:100%;
+	height:auto;
+	background-repeat:no-repeat;
+	background-image:url('../images/marketing/品森-04.png');
+}
+.project-text-inner{
+	z-index:70;
+	margin-top:120px;
+}
+.project-text-inner .img-inner{
+	margin-top:60px;
+	width:70%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.img-sky{
+	margin-top:-160px;
+}
+.row-sky{
+	top:-100px;
+}
+.row-sky h4{
+	float:right;
+	right:-60px;
+	margin-right:60px;
+}
+.wall .img-inner{
+	margin-top:-160px;
+	width:60%;
+	left:50%;
+	transform:translateX(-50%);
+	/*border:1px solid red;*/
+}
+.wall:after{
+	content:"";
+	position:absolute;
+	top:24%;
+	right:8%;
+	background-image:url('../images/marketing/品森-13.png');
+	background-repeat:no-repeat;
+	background-size:200px;
+	width:210px;
+	height:380px;
+	/*border:1px solid red;*/
+}
+.row-merch h4{
+	float:right;
+	margin-right:98px;
+}
+.row-merch p{
+	margin-top:60px;
+	margin-bottom:60px;
+}
+.sticker{
+	position:absolute;
+	top:-20px;
+	right:-80px;
+}
+.sticker img{
+	margin-bottom:20px;
+	width:160px;
+	display:block;
+}
+/*莊培欣*/
+.project-info-01 .project-banner-top{
+	height:450px;
+}
+.store-sky{
+	display:inline-block;
+	margin-top:-200px;
+	margin-bottom:200px;
+}
+.store-sky .col-lg-3{
+	margin-top:200px;
+	padding:0;
+}
+.store-sky .col-lg-6{
+	padding:0;
+}
+.project-info-01 .container{
+	margin-top:-140px;
+}
+.project-info-01 .color-square{
+	margin-bottom:-40px;
+}
+.project-info-01 .sky-1 .img-02{
+	width:20%;
+	margin-top:180px;
+}
+.project-info-01 .sky-02{
+	margin-top:200px;
+}
+.row-photo .color-square-top{
+	margin-right:80px;
+}
+.row-photo .color-square{
+	float:right;
+}
+.row-photo .color-square-top-1{
+	text-align:right;
+}
+.photo-inner{
+	display:inline-block;
+	margin-top:100px;
+	padding:0 20px;
+}
+.row-photo .photo-top .img-inner{
+	margin-bottom:40px;
+	margin-left:20px;
+}
+.row-photo .photo-bottom .img-inner{
+	margin-left:20px;
+}
+.row-photo .photo-bottom:after{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:-20px;
+	width:1px;
+	height:300px;
+	background-color:#0d3160;
+	transform:rotate(45deg);
+}
+.row-photo .col-lg-5 .color-square-top{
+	margin-right:0;
+}
+.row-photo .color-square{
+	margin-bottom:10px;
+	float:right;
+	margin-right:120px;
+}
+.row-photo .blue-bg:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:1920px;
+	height:104%;
+	background-color:#0b386c;
+}
+.row-photo .img-width .img-inner{
+	margin-top:60px;
+	margin-bottom:60px;
+}
+/*昕宇*/
+.newworld-top .color-square-top{
+	padding-right:60px;
+}
+.newworld-bottom .color-square{
+	float:right;
+	right:100px;
+}
+.be-af img{
+	width:80%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.after{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.newworld .col-lg-6{
+	padding:0;
+}
+.newworld .img-01,
+.newworld .img-02{
+	margin-top:30px;
+}
+.room{
+	width:300px;
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.room-sticker .img-inner{
+	margin-top:280px;
+}
+.room-sticker .img-inner img{
+	width:300px;
+	float:right;
+}
+.newworld .green-bg{
+	margin-bottom:100px;
+}
+.newworld .gray-bg:before{
+	content:"";
+	position:absolute;
+	top:-14%;
+	left:50%;
+	transform:translateX(-50%);
+	width:1920px;
+	height:118%;
+	background-color:#dedfe1;
+}
+.newworld .green-bg:before{
+	content:"";
+	position:absolute;
+	top:-14%;
+	left:50%;
+	transform:translateX(-50%);
+	width:120%;
+	height:120%;
+	background-color:#7db0ac;
+}
+/*好日*/
+.goodday-info .project-banner-top{
+	background-size: cover;
+	background-position:center;
+	width:100%;
+	height:auto;
+	background-repeat:no-repeat;
+	background-image:url('../images/marketing/好日-05.png');
+}
+.goodday-info .project-text-inner .img-inner{
+	width:60%;
+}
+.goodday .col-lg-6 .img-inner{
+	width:88%;
+	top:-160px;
+	left:50%;
+	transform:translateX(-40%);
+}
+.goodday .yellow-bg{display:inline-block;}
+.goodday .yellow-bg:before{
+	content:"";
+	position:absolute;
+	bottom:-1%;
+	left:50%;
+	transform:translateX(-50%);
+	width:2200px;
+	height:60%;
+	background-color:#f9f9ed;
+}
+.goodday-bottom p{
+	margin-bottom:80px;
+}
+.computer-inner{
+	margin-bottom:100px;
+}
+.computer-inner:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	width:2200px;
+	height:100%;
+	background-color:#fafafa;
+}
+.bottom-logo .img-inner{
+	margin-top:200px;
+	left:50%;
+	transform:translateX(-50%);
+}
+/*誠一*/
+.sincerity-info .project-banner-top{
+	background-size: cover;
+	background-position:center;
+	width:100%;
+	height:auto;
+	background-repeat:no-repeat;
+	background-image:url('../images/marketing/誠一-04.png');
+}
+.sincerity .col-lg-12 .img-01{
+	margin-bottom:80px;
+}
+.sincerity .col-02{
+	margin-top:100px;
+}
+.sincerity .col-02 .col-lg-8{
+	padding:0;
+}
+.sincerity .col-02 .col-lg-8 .img-inner:before{
+	content:"";
+	position:absolute;
+	bottom:-10%;
+	left:50%;
+	transform:translateX(-50%);
+	width:120%;
+	height:70%;
+	background-color:#e3c0ba;
+}
+.sincerity .col-02 .col-lg-8 .img-inner:after{
+	content:"";
+	position:absolute;
+	bottom:-30%;
+	right:-34%;
+	background-image:url('../images/marketing/誠一-18.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:260px;
+	width:260px;
+	height:270px;
+}
+.sincerity .col-02 .col-lg-4{
+	padding:0;
+}
+.sincerity .col-02 .col-lg-4 .img-inner{
+	width:16%;
+	float:right;
+}
+/*pink-bg .container-fluid-c*/
+.pink-bg .container-fluid-c{
+	margin-top:260px;
+	margin-bottom:100px;
+}
+.pink-bg .container-fluid-c:before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:-36%;
+	background-color:#102d31;
+	width:600px;
+	height:600px;
+	border-radius:50%;
+}
+.pink-bg .container-fluid-c .img-left{
+	margin-left:-80px;
+}
+.pink-bg .container-fluid-c .img-right{
+	margin-right:-100px;
+	margin-top:-30%;
+}
+/*sincerity-bottom*/
+.sincerity .sincerity-bottom{
+	margin-top:30px;
+}
+.pink-bg:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:20%;
+	background-color:#fadacd;
+}
+/*.sincerity .sincerity-bottom .img-03:after{
+	content:"";
+	position:absolute;
+	top:-20px;
+	right:-20px;
+	background-image:url('../images/marketing/誠一-12.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:150px;
+	width:150px;
+	height:200px;
+}*/

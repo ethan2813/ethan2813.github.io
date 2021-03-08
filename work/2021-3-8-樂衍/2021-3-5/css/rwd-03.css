@@ -1,0 +1,701 @@
+/*-------------------------*/
+/* $Electricity-goble
+---------------------------*/
+@media(max-width:990px){
+	h1{
+		font-size:50px;
+	}
+	h2{
+		font-size:36px;
+	}
+}
+@media(max-width:827px){
+	h1{
+		font-size:46px;
+	}
+}
+@media(max-width:520px){
+	h1{
+		font-size:36px;
+	}
+}
+@media(max-width:380px){
+	h1{
+		letter-spacing:0;
+		font-size:32px;
+	}
+}
+@media(max-width:400px){
+	h2{
+		font-size:30px;
+	}
+	h3{
+		font-size:24px;
+	}
+}
+/*-------------------------*/
+/* $Electricity-banner
+---------------------------*/
+@media(max-width:1580px){
+	.electricity-banner .circle-deco-left{
+		width:600px;
+		height:600px;
+	}
+	.electricity-banner .circle-deco-left:after{
+		width:200px;
+		height:200px;
+	}
+}
+@media(max-width:1398px){
+	.nav-contact{
+		top:5%;
+	}
+	.electricity-banner .circle-deco-left{
+		width:400px;
+		height:400px;
+		top:-20%;
+		left:-8%;
+	}
+	.electricity-banner .circle-deco-left:after{
+		width:80px;
+		height:80px;
+		bottom:-10%;
+		left:12%;
+		border:14px solid #f7e5dd;
+	}
+}
+@media(max-width:1366px){
+	.nav-contact{
+		top:6%;
+		padding:0;
+	}
+	.arrow{
+		width:26px;
+		top:-20%;
+		left:3px;
+	}
+}
+@media(max-width:1137px){
+	.arrow{
+		left:0px;
+	}
+	.deco-02-right{
+		bottom:-28%;
+		right:0;
+		width:180px;
+	}
+}
+@media(max-width:1052px){
+	.electricity-banner{
+		padding-bottom:80px;
+	}
+	.nav-contact{display:none;}
+	.electricity-banner .row{
+		margin-top:160px;
+	}
+	.electricity-banner .circle-deco-left{
+		top:-36%;
+		left:-16%;
+	}
+	.electricity-banner .circle-deco-left:after{
+		bottom:-6%;
+		left:26%;
+		width:60px;
+		height:60px;
+	}
+	.deco-02-left{
+		width:100px;
+		bottom:14%;
+		left:60%;
+		opacity:0.6;
+	}
+	.electricity-banner .col-lg-4{
+		margin-right:10px;
+	}
+	.electricity-banner .banner-text-top{
+		float:left;
+	}
+	.electricity-banner .banner-text-bottom h4{
+		float:left;
+		margin-left:60px;
+		padding-top:4px;
+	}
+	.electricity-banner .banner-text-bottom h4:after{
+		left:-50px;
+		background-size:40px;
+		width:40px;
+		height:40px;
+	}
+}
+@media(max-width:991px){
+	.deco-01-right{
+		top:6%;
+		width:100px;
+	}
+	.electricity-banner .banner-sub:before{
+		width:480px;
+	}
+	.electricity-banner .col-lg-4{
+		margin-right:0;
+		margin-top:0;
+	}
+	.electricity-banner p:before{
+		width:140px;
+		height:140px;
+	}
+}
+@media(max-width:908px){
+	.electricity-banner .col-lg-4{
+		margin-right:4px;
+	}
+	.electricity-banner p:before{
+		width:120px;
+		height:120px;
+	}
+}
+@media(max-width:770px){
+	.electricity-banner .circle-deco-left:after,
+	.electricity-banner .circle-deco-left{
+		display:none;
+	}
+	.electricity-banner .row{
+		margin-top:120px;
+	}
+	.electricity-banner .col-lg-5{
+		margin-top:60px;
+	}
+	.deco-02-right{
+		bottom:-20%;
+		right:0;
+		width:120px;
+	}
+	.deco-02-left{
+		display:none;
+	}
+	.electricity-banner .col-lg-4{
+		margin-right:10px;
+	}
+	.electricity-banner .banner-text-top{
+		margin-top:40px;
+		margin-left:-10px;
+	}
+	.electricity-banner .banner-text-bottom h4{
+		margin-left:30px;
+		padding-top:0px;
+	}
+	.electricity-banner .banner-text-bottom h4:after{
+		left:-38px;
+		background-size:34px;
+		width:34px;
+		height:34px;
+	}
+}
+@media(max-width:767px){
+	.electricity-banner{
+		margin-bottom:100px;
+	}
+	.worker{
+		width:30%;
+		display:inline-block;
+		position:absolute;
+		top:-52px;
+		right:40px;
+	}
+}
+@media(max-width:520px){
+	.electricity-banner{
+		margin-bottom:160px;
+	}
+	.worker{
+		width:50%;
+		display:inline-block;
+		position:absolute;
+		top:-20px;
+		right:20px;
+	}
+	.banner-sub{
+		font-size:24px;
+	}
+	.electricity-banner .banner-sub:before{
+		width:90%;
+	}
+	.electricity-banner .col-xs-3{
+		padding:0;
+	}
+	.electricity-banner .col-xs-3 p{
+		font-size:16px;
+	}
+	.electricity-banner p:before{
+		width:100px;
+		height:100px;
+	}
+}
+@media(max-width:420px){
+	.electricity-banner .banner-sub:before{
+		width:100%;
+		height:3px;
+	}
+	.electricity-banner .col-lg-4{
+		margin-top:18px;
+	}
+}
+@media(max-width:379px){
+	.electricity-banner{
+		padding-bottom:0;
+	}
+	.banner-text-bottom h4{
+		width:100%;
+	}
+}
+@media(max-width:350px){
+	.electricity-banner .row{
+		margin-top:100px;
+	}
+	.electricity-banner h1{
+		font-size:28px;
+		margin-top:6px;
+	}
+	.electricity-banner .banner-sub{
+		padding-bottom:2px;
+		font-size:22px;
+		margin-bottom:0;
+	}
+	.electricity-banner p{
+		line-height:20px;
+	}
+	.electricity-banner p:before{
+		width:80px;
+		height:80px;
+	}
+	.electricity-banner .banner-text-bottom h4{
+		font-size:18px;
+		padding-top:6px;
+		line-height:20px;
+		margin-left:20px;
+	}
+	.electricity-banner .banner-text-bottom h4:after{
+		background-size:30px;
+		width:30px;
+		height:30px;
+		left:-28px;
+	}
+}
+/*-------------------------*/
+/* $Electricity-quote
+---------------------------*/
+@media(max-width:1150px){
+	.electricity-quote .circle-deco-right{
+		display:none;
+	}
+}
+@media(max-width:1137px){
+	.electricity-quote .deco-02-right{
+		width:50px;
+		bottom:0;
+		right:10%;
+	}
+}
+@media(max-width:770px){
+	.electricity-quote .deco-01-left,
+	.electricity-quote .circle-deco02-right,
+	.electricity-quote .deco-02-right{
+		display:none;
+	}
+}
+@media(max-width:520px){
+	.ct{width:80%;}
+}
+@media(max-width:430px){
+	.electricity-quote .phone-none{display:none;}
+	.electricity-quote .phone-block{display:block;}
+}
+@media(max-width:400px){
+	.ct{
+		width:100%;
+		margin-top:20px;
+	}
+}
+/*-------------------------*/
+/* $Electricity-device
+---------------------------*/
+@media(max-width:1050px){
+	.electric-device{
+		padding-bottom:70px;
+	}
+	.electric-device .col-lg-3{
+		margin-bottom:0;
+	}
+	.electric-device .num{
+		font-size:34px;
+	}
+}
+@media(max-width:991px){
+	.electric-device .col-lg-3{
+		height:700px;
+	}
+}
+@media(max-width:947px){
+	.electric-device .col-lg-3{
+		height:680px;
+	}
+}
+@media(max-width:844px){
+	.electric-device .col-lg-3{
+		height:600px;
+	}
+}
+@media(max-width:660px){
+	.electric-device .col-lg-3{
+		height:500px;
+	}
+}
+@media(max-width:540px){
+	.electric-device .area{
+		font-size:22px;
+		padding-left:0;
+		letter-spacing:1;
+	}
+	.electric-device .num{
+		font-size:22px;
+	}
+	.electric-device .height-sm{
+		height:400px;
+	}
+}
+@media(max-width:430px){
+	.electric-device{
+		padding-bottom:0;
+	}
+	.electric-device .col-lg-3{
+		height:430px;
+		margin-bottom:20px;
+	}
+	.electric-device .height-sm{
+		height:340px;
+	}
+	.electric-device .area{
+		font-size:20px;
+		letter-spacing:0;
+	}
+	.electric-device .num{
+		font-size:20px;
+	}
+}
+@media(max-width:378px){
+	.electric-device .col-xs-6{
+		padding:3px;
+	}
+	.electric-device .img-inner{
+		width:96%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+}
+@media(max-width:360px){
+	.electric-device{
+		padding-bottom:20px;
+	}
+	.electric-device .col-lg-3{
+		height:auto;
+		width:100%;
+		margin-bottom:0px;
+	}
+	.electric-device .col-xs-6{
+		padding:10px;
+	}
+}
+/*-------------------------*/
+/* $Electricity-device-step
+---------------------------*/
+@media(max-width:991px){
+	.device-step .col-lg-3{
+		padding:0 20px;
+	}
+	.device-step .step-inner{
+		margin-bottom:60px;
+		padding:0px 14px;
+		padding-top:20px;
+		height:240px;
+	}
+	.step-num{
+		padding:10px;
+	}
+	.push-right{
+		display:block;
+		margin-top:0px;
+	}
+	.push-right .col-lg-3{
+		margin-left:0;
+	}
+}
+@media(max-width:800px){
+	.contact-form{
+		margin-top:-40px;
+	}
+}
+@media(max-width:688px){
+	.device-step .h3-1:before{
+		display:none;
+	}
+}
+@media(max-width:600px){
+	.device-step .col-lg-3{
+		padding:0 14px;
+	}
+	.step-row{
+		padding:0 10px;
+	}
+	.device-step .step-inner{
+		height:220px;
+	}
+}
+@media(max-width:430px){
+	.device-step h2:before{
+		top:60%;
+		width:240px;
+	}
+	.device-step h3{
+		margin-bottom:10px;
+	}
+	.device-step h2{
+		margin-bottom:20px;
+		margin-top:0;
+	}
+	.contact-form{
+		margin-top:-50px;
+		margin-right:40px;
+		font-size:20px;
+	}
+	.contact-form:before{
+		right:-50px;
+		background-size:40px;
+		width:40px;
+		height:18px;
+		margin-top:5px;
+	}
+}
+@media(max-width:375px){
+	.device-step .col-lg-3{
+		padding:0 10px;
+	}
+	.device-step .step-inner{
+		height:240px;
+		padding:0px 10px;
+		padding-top:20px;
+	}
+}
+/*-------------------------*/
+/* $Electricity-standard
+---------------------------*/
+@media(max-width:1366px){
+	/*cloud-02*/
+	.cloud-02 .cloud-img{
+		top:-100px;
+		left:-40px;
+	}
+}
+@media(max-width:1232px){
+	/*cloud-01*/
+	.cloud-01 .cloud-img{
+		left:-20px;
+	}
+	.cloud-01 .col-lg-3 .img-inner{
+		left:36px;
+	}
+	.cloud-01 .col-lg-8{
+		margin-left:10px;
+	}
+	/*cloud-02*/
+	.cloud-02 .cloud-img{
+		top:-70px;
+		left:-10px;
+	}
+	/*cloud-03*/
+	.cloud-03 .inner{
+		margin-top:80px;
+	}
+}
+@media(max-width:1024px){
+	.cloud{
+		margin-top:20px;
+	}
+	.electric-standard:before{
+		bottom:-176px;
+		height:180px;	
+	}
+	/*cloud-01*/
+	.cloud-01 .cloud-img{
+		top:-70px;
+	}
+	/*cloud-02*/
+	.cloud-02 .cloud-img{
+		top:-60px;
+		left:-10px;
+	}
+}
+@media(max-width:991px){
+	/*cloud-01*/
+	.cloud-01 .col-lg-3 .img-inner{
+		margin-top:50px;
+	}
+	.cloud-01 .col-lg-8{
+		margin-top:50px;
+	}
+	/*cloud-02*/
+	.cloud-02{
+		float:right;
+	}
+	/*cloud-03*/
+	.cloud-03 .cloud-img{
+		width:94%;
+		top:-40px;
+		left:30px;
+	}
+}
+@media(max-width:879px){
+	/*cloud-03*/
+	.cloud-03 .inner{
+		margin-top:50px;
+	}
+}
+@media(max-width:777px){
+	/*cloud-01*/
+	.cloud-01 .col-lg-3 .img-inner{
+		margin-top:0px;
+	}
+	.cloud-01 .col-lg-8{
+		margin-top:0px;
+	}
+}
+@media(max-width:767px){
+	.electric-standard:after{
+		top:-134px;
+		height:140px;
+	}
+	.electric-standard:before{
+		bottom:-166px;
+		left:0;
+	}
+	.cloud-img{
+		display:none;
+	}
+	.electric-standard .row{
+		padding:0 60px;
+	}
+	.cloud{
+		background-color:#fff;
+		padding:40px 20px;
+		border-radius:50px;
+	}
+	/*cloud-01*/
+	.cloud-01{
+		padding-bottom:0;
+	}
+	.cloud-01 .col-lg-3 .img-inner{
+		margin-top:0;
+		left:0;
+	}
+	.cloud-01 .col-lg-8{
+		margin-left:0;
+	}
+	/*cloud-02*/
+	.cloud-02 .col-lg-5 .img-inner{
+		left:0;
+	}
+	/*cloud-03*/
+	.cloud-03 .inner{
+		margin-top:0;
+		margin-left:0;
+	}
+}
+@media(max-width:642px){
+	.electric-standard .row{
+		padding:0 20px;
+	}
+}
+@media(max-width:440px){
+	.electric-standard-title h2{
+		padding:6px 60px;
+		border-radius:30px;
+	}
+	.electric-standard .col-xs-3 .img-inner img{
+		width:80%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	.electric-standard .col-xs-5 .img-inner img{
+		width:80%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	.cloud{
+		padding:20px 0px;
+		border-radius:40px;
+	}
+	.cloud-01{
+		padding-bottom:0;
+	}
+	/*cloud-01*/
+	.cloud-01 .col-xs-3,
+	.cloud-01 .col-xs-8,
+	.cloud-02 .col-xs-5,
+	.cloud-02 .col-xs-7,
+	.cloud-03 .col-xs-5,
+	.cloud-03 .col-xs-7{
+		width:100%;
+	}
+	.cloud-01 .col-xs-3 .img-inner{
+		width:50%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	.cloud-01 .col-lg-12 .img-inner{
+		width:70%;
+		right:0;
+	}
+	/*cloud-02*/
+	.cloud-02 .col-xs-5 .img-inner,
+	.cloud-03 .col-xs-5 .img-inner{
+		width:80%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+}
+/*-------------------------*/
+/* $Floor
+---------------------------*/
+@media(max-width:1024px){
+	.electric-standard{
+		margin-bottom:100px;
+	}
+}
+@media(max-width:991px){
+	.floor h2{
+		margin-bottom:60px;
+	}
+	.floor .img-inner{
+		margin-bottom:60px;
+	}
+	.floor .col-lg-5 .img-inner{
+		margin-left:0;
+		width:80%;
+		left:50%;
+		transform:translateX(-50%);
+	}
+}
+@media(max-width:430px){
+	.floor .col-lg-5 .img-inner{
+		width:100%;
+	}
+}
+@media(max-width:400px){
+	.floor h2{
+		margin-bottom:40px;
+	}
+	.floor h2:before{
+		width:300px;
+		height:18px;
+		background-color:#ffc02a;
+		opacity:0.6;
+	}
+}

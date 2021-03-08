@@ -1,0 +1,444 @@
+/*-------------------------*/
+/* $Training-header
+---------------------------*/
+.training-header .menu__item{
+	color:#222;
+}
+.dropdown-item:hover{
+	background-color:#222;
+}
+.menu-toggle span{
+	background-color:#222;
+}
+.header--scrolling .menu-toggle span{
+	background-color:#222;
+}
+@media (max-width:1167px){
+	.popup-nav{
+		background-color:#f5f0ec;
+		border-left:4px solid #fff;
+		border-bottom:4px solid #f5f0ec;
+	}
+	.popup-nav .menu__item,
+	.header--scrolling .popup-nav .menu__item{
+		color:#222;
+	}
+	.popup-close span{
+		background-color: #222;
+	}
+}
+/*-------------------------*/
+/* $Training
+---------------------------*/
+.training-banner{
+	padding-top:280px;
+	padding-bottom:0;
+}
+.training-banner-btbg{
+	position:absolute;
+	bottom:54%;
+	opacity:0.6;
+}
+.training-banner h1{
+	margin-bottom:0;
+}
+.training-banner h1:before{
+	content:"";
+	position:absolute;
+	top:40%;
+	left:10%;
+	background-image:url('../images/training/deco-02.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:66px;
+	width:66px;
+	height:86px;
+}
+.training-banner h1:after{
+	content:"";
+	position:absolute;
+	top:40%;
+	right:10%;
+	background-image:url('../images/training/deco-03.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:66px;
+	width:66px;
+	height:86px;
+}
+.training-banner .row-1 .sub-title{
+	font-size:46px;
+	font-weight:600;
+	letter-spacing:2px;
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:60px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.training-banner .sun{
+	position:absolute;
+	width:13%;
+	right:20%;
+	top:-40%;
+}
+.whiteboard-block{display:none;}
+.whiteboard{
+	width:66%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.whiteboard-inner{
+	width:40%;
+	top:36%;
+	left:50%;
+	transform:translateX(-72%);
+	position:absolute;
+}
+.whiteboard-inner h3{
+	margin-bottom:0;
+}
+.whiteboard-inner h4{
+	margin-top:10px;
+}
+.training-banner-quote{
+	margin-top:100px;
+}
+.training-banner-quote h3:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	background-image:url('../images/training/教育訓練-06.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:180px;
+	width:180px;
+	height:220px;
+}
+.training-banner-quote h3:after{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background-image:url('../images/training/教育訓練-07.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:160px;
+	width:144px;
+	height:200px;
+}
+.training-banner-girl .img-inner{
+	margin-top:20px;
+	width:40%;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+/*training-banner row-2*/
+.training-banner .row-2{
+	margin-top:120px;
+}
+.white-inner h4{margin-top:0;}
+.white-inner{
+	display:inline-block;
+	margin-top:60px;
+	background-color:#fff;
+	padding:40px 60px;
+	margin-left:40px;
+	margin-right:40px;
+	border:1px solid #ed8a70;
+	border-radius:20px;
+}
+.white-inner:after{
+	content:"";
+	position:absolute;
+	top:16%;
+	left:-59px;
+	background-image:url('../images/training/三角形-05.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:60px;
+	width:60px;
+	height:44px;
+}
+/*training-banner row-3*/
+.training-banner .row-3{
+	margin-top:120px;
+}
+.training-banner .row-3 .col-lg-2,
+.training-banner .row-3 .col-lg-8,
+.training-banner .row-3 .col-lg-9{
+	/*border:1px solid red;*/
+	/*padding:0;*/
+}
+.training-banner .row-3 .img-01{
+	margin-top:60px;
+}
+.training-banner .row-3 .img-02{
+	width:50%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.training-banner .row-3 .img-03{
+	width:26%;
+	position:absolute;
+	right:-4%;
+	bottom:-40%;
+}
+/*training-banner row-4*/
+.training-banner .row-4{
+	margin-top:120px;
+}
+.training-banner .row-4 h3{
+	margin-top:60px;
+	line-height:60px;
+}
+.training-banner .row-4 h3 span{
+	background-color:#fff;
+	padding:4px 8px;
+	border-radius:10px;
+	border:1px solid #ed8a70;
+}
+/*training-banner row-5*/
+.training-banner .row-5{
+	margin-top:120px;
+}
+.training-banner .row-5 .img-inner{
+	margin-top:60px;
+	width:70%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.training-banner .row-5 .img-inner:before{
+	content:"";
+	position:absolute;
+	bottom:-20px;
+	left:50%;
+	transform:translateX(-50%);
+	width:100%;
+	height:2px; 
+	background-color:#91654a;
+}
+/*training-bottom*/
+.training-bottom{
+	margin-top:140px;
+}
+.training-bottom .col-lg-5,
+.training-bottom .col-lg-7{
+	/*border:1px solid red;*/
+}
+.training-bottom .row-1:before{
+	content:"";
+	background-color:#fff;
+	position:absolute;
+	top:8%;
+	right:0;
+	width:80%;
+	height:700px;
+	transform:rotate(-190deg);
+}
+.training-banner .row-1 h2{
+	font-size:50px;
+}
+.item-inner{
+	padding:0 120px;
+	z-index:30;
+}
+/*training-bottom*/
+.training-bottom h2:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:20%;
+	background-image:url('../images/training/教育訓練-08-07.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:80px;
+	width:80px;
+	height:80px;
+}
+.training-bottom h2:after{
+	content:"";
+	position:absolute;
+	bottom:10%;
+	right:20%;
+	background-image:url('../images/training/教育訓練-08-08.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:80px;
+	width:80px;
+	height:80px;
+}
+.training-bottom .row-1 h4{
+	color:#e29888;
+	margin-top:0;
+	margin-bottom:16px;
+	padding-bottom:16px;
+	border-bottom:2px dashed #222;
+}
+.training-bottom .row-1 h4 span{
+	border-radius:50%;
+	padding:4px;
+}
+.training-bottom .row-1 .img-01{
+	width:50%;
+	left:20%;
+}
+.training-bottom .row-1 .img-02{
+	width:76%;
+	margin-top:-280px;
+	float:right;
+	right:-20px;
+}
+/*schedule*/
+.schedule{
+	padding-bottom:70px;
+}
+.schedule:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:#f9f4f4;
+	width:100%;
+	height:72%;
+}
+.pink-bg{
+	position:absolute;
+	top:-300px;
+}
+.subtitle-bottom h2{
+	display:inline-block;
+	line-height:40px;
+	/*margin-top:20px;*/
+	margin-top:0;
+}
+.subtitle-bottom h2 span{
+	border: dashed 2px #277eb0;
+	padding:6px;
+	border-right:none;
+	display:inline-block;
+	letter-spacing:4px;
+}
+.border-img{
+	top:-20px;
+}
+.border-img img{
+	width:26%;
+}
+.schedule .img-01{
+	width:70%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.schedule .img-01:after{
+	content:"";
+	position:absolute;
+	bottom:-50px;
+	right:-20px;
+	background-image:url('../images/training/教育訓練-19.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:400px;
+	width:400px;
+	height:366px;
+}
+/*training-step*/
+.training-step{
+	padding-top:80px;
+	padding-bottom:120px;
+}
+.training-step h1{
+	margin-bottom:80px;
+}
+.training-step h1:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:14%;
+	background-image:url('../images/training/教育訓練-08-07.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:80px;
+	width:80px;
+	height:80px;
+}
+.training-step h1:after{
+	content:"";
+	position:absolute;
+	bottom:10%;
+	right:14%;
+	background-image:url('../images/training/教育訓練-08-08.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:80px;
+	width:80px;
+	height:80px;
+}
+.training-step .col-lg-7,
+.training-step .col-lg-4{
+	/*border:1px solid red;*/
+}
+.training-step .col-lg-7 .clock{
+	width:24%;
+	left:20%;
+}
+.training-step .col-lg-7 .notebook{
+	width:60%;
+	left:50%;
+}
+.training-step .col-lg-4 span{
+	display: inline-block;
+	vertical-align:top;
+	line-height: normal;
+	writing-mode:vertical-lr;
+	font-size:30px;
+	line-height:48px;
+	letter-spacing:2px;
+}
+.training-step .col-lg-4 .text-01{
+	margin-left:30px;
+}
+.training-step .col-lg-4 .text-02,
+.training-step .col-lg-4 .text-03{
+	margin-top:50px;
+	background-color:#c5b6dd;
+	color:#fff;
+	padding:10px 0;
+	margin-left:6px;
+}
+.training-step .col-lg-4 .text-04{
+	margin-top:100px;
+	background-color:#c5b6dd;
+	color:#fff;
+	padding:10px 0;
+	margin-left:6px;
+}
+.training-step .col-lg-12 .img-inner{
+	margin-top:100px;
+}
+.contact-sub{
+	padding-top:160px;
+}
+
+/*-------------------------*/
+/* $Color 
+---------------------------*/
+/* background color */
+.bg-training--default{background-color:#f5f0ec;}
+.bg-training--primary{background-color: #8eb3c5;}
+.bg-training--secondary{background-color:#fff;}
+.bg-training--gray{background-color:#f7da96;}
+.bg-training--darkgray{background-color:#a9b3ce;}
+.bg-training--blue{background-color:#29587f;}
+.bg-training--orange{background-color:#c5b6dd;}
+.bg-training--pink{background-color:#f9f4f4;}
+/* text color */
+.color-training--default{color:#91654a;}
+.color-training--primary{color:#e29888;}
+.color-training-darkblue{color: #8eb3c5;}
+.color-training-darkbluee{color: #277eb0;}
+.color-training-blue{color: #2f5c89;}
+.color-training-white{color:#fff;}
+.color-training-orange{color:#ed8a70;}
