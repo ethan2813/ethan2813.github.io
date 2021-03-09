@@ -31,6 +31,7 @@
     display: none;
   }
   .wrapper .box_3 .title_ .right p.mobile {
+    white-space: nowrap;
     display: block;
     font-weight: bold;
     font-size: 50px;
@@ -64,7 +65,7 @@
     font-size: 16px;
   }
   .wrapper .box_4 {
-    padding-bottom: 170px;
+    padding-bottom: 70px;
   }
   .wrapper .box_4 .title_ .left img {
     margin-right: 20px;
@@ -73,6 +74,7 @@
     display: none;
   }
   .wrapper .box_4 .title_ .right p.mobile {
+    white-space: nowrap;
     display: block;
     font-weight: bold;
     font-size: 50px;
@@ -117,6 +119,7 @@
   }
   .wrapper .box_4 .content_ .right_group {
     display: block;
+    padding-top: 100px;
   }
   .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 {
     left: -235%;
@@ -177,15 +180,15 @@
 
 @media (max-width: 768px) {
   .wrapper .box_2 .title_ .right p {
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: 0.08em;
   }
   .wrapper .box_3 .title_ .right p.mobile {
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: 0.08em;
   }
   .wrapper .box_4 .title_ .right p.mobile {
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: 0.08em;
   }
 }
@@ -218,7 +221,7 @@
     top: -40px;
   }
   .wrapper .box_2 .article .article_2 {
-    margin-top: 60px;
+    margin-top: 80px;
   }
   .wrapper .box_2 .article .article_2 p {
     margin-left: 0;
@@ -235,6 +238,9 @@
   }
   .wrapper .box_2 .right_group .group_box .dialog_box_2 img.angle {
     width: 284px;
+  }
+  .wrapper .box_3 .title_ {
+    margin-bottom: 50px;
   }
   .wrapper .box_3 .title_ .left img {
     width: 50px;
@@ -261,10 +267,10 @@
   }
   .wrapper .box_3 .article .article_1 h3:before {
     left: 0;
-    top: -40px;
+    top: -20px;
   }
   .wrapper .box_3 .article .article_2 {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 0;
   }
   .wrapper .box_3 .article .article_2 h3 {
@@ -272,7 +278,10 @@
   }
   .wrapper .box_3 .article .article_2 h3:before {
     left: 0;
-    top: -40px;
+    top: -20px;
+  }
+  .wrapper .box_4 .title_ {
+    margin-bottom: 50px;
   }
   .wrapper .box_4 .title_ .left img {
     width: 50px;
@@ -299,10 +308,10 @@
   }
   .wrapper .box_4 .content_ .article .article_1 h3:before {
     left: 0;
-    top: -40px;
+    top: -20px;
   }
   .wrapper .box_4 .content_ .article .article_2 {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 0;
   }
   .wrapper .box_4 .content_ .article .article_2 h3 {
@@ -310,7 +319,7 @@
   }
   .wrapper .box_4 .content_ .article .article_2 h3:before {
     left: 0;
-    top: -40px;
+    top: -20px;
   }
   .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 {
     left: -190%;
@@ -320,5 +329,28 @@
   }
   .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 img.angle {
     width: 284px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper .box_2 .right_group .group_box .dialog_box_2 {
+    left: -140%;
+  }
+  .wrapper .box_2 .right_group .group_box .dialog_box_2 > span {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .wrapper .box_2 .right_group .group_box .dialog_box_2 img.angle {
+    width: 260px;
+  }
+  .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 {
+    left: -140%;
+  }
+  .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 > span {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .wrapper .box_4 .content_ .right_group .group_box .dialog_box_3 img.angle {
+    width: 240px;
   }
 }

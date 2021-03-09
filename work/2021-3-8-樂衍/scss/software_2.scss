@@ -30,15 +30,6 @@
     margin-bottom: 0;
 }
 
-.wrapper{
-    .box_1{
-        margin-top: 140px;
-        .banner{
-            img{
-                width: 100%;
-            }
-        }
-    }
 .contact-sub{
     padding-top: 100px;
 }
@@ -62,8 +53,20 @@
     }
     
 }
-
 //////////////////////////////////////////////////////
+
+
+.wrapper{
+    .box_1{
+        margin-top: 140px;
+        .banner{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
     .box_2{
         padding-top: 130px;
         background-image: url(../images/software_2/banner-bgc.svg);
@@ -82,7 +85,7 @@
                 
                 p{
                     transform: rotate(-2deg);
-
+                    white-space:nowrap;
                     font-weight: bold;
                     font-size: 50px;
                     line-height: 40px;
@@ -268,6 +271,7 @@
                     position: relative;
                     z-index: 2;
                     display: inline-block;
+                    white-space:nowrap;
 
                     
 
@@ -285,6 +289,7 @@
                 }
                 p.mobile{
                     display: none;
+                    
                 }
             }
         }
