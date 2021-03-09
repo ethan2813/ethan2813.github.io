@@ -133,6 +133,12 @@
   }
 }
 
+@media (max-width: 1167px) {
+  .wrapper .box_1 {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 996px) {
   .wrapper .box_2 .article {
     padding-left: 50px;
