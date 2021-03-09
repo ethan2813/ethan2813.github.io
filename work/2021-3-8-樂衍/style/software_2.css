@@ -215,7 +215,7 @@
 .wrapper .box_2 .right_group .group_box {
   position: relative;
   display: inline-block;
-  margin-top: 400px;
+  margin-top: 470px;
 }
 
 .wrapper .box_2 .right_group .group_box img.group {
@@ -307,7 +307,7 @@
 }
 
 .wrapper .box_3 .article {
-  padding-left: 50px;
+  padding-left: 90px;
 }
 
 .wrapper .box_3 .article .article_1 {
@@ -389,6 +389,7 @@
 
 .wrapper .box_4 {
   padding-top: 50px;
+  padding-bottom: 40px;
   margin-bottom: 100px;
   background-image: url(../images/software_2/box_4_bg.svg);
   background-position: bottom;
