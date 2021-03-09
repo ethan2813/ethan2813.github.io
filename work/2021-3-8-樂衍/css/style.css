@@ -219,24 +219,25 @@ body{
 	margin: 0;
 }
 
-.menu li{
-	/* position: relative; */
+.menu li {
+	text-align: center;
 }
 .menu li ul {
-	/* position: absolute; */
-	display: none;
-	
-	
-	/* background-color: white; */
-	padding: 10px;
-	white-space:nowrap;
-	/* box-shadow: 2px 1px 10px rgb(0 0 0 / 20%); */
+	display: none;	
+	white-space:nowrap;	
 }
+
+
+/* .menu li ul{
+	position: absolute;
+	top: -100px;
+} */
 .menu li ul li{
-	padding: 10px 0;
+	padding: 6px 0;
 	font-size: 16px;
 	font-weight: 500;
 	transition: all 0.4s;
+	
 	
 }
 .menu li ul li a{
@@ -251,9 +252,11 @@ body{
 
 .menu li:hover ul{
 	display: block;
+	transition: 0.5s;
 }
 
-.menu__item:hover ul{
+.menu__item:hover ul,
+.menu__item:active ul{
 	
 	display: block;
 }
@@ -299,6 +302,10 @@ body{
 	padding:20px 24px;
 	color:#222;
 }
+.header--scrolling .nav_bot .menu__item_2{
+	color:#222;
+}
+
 .header--scrolling .navbar__logo img{
 	padding-top:18px;
 }

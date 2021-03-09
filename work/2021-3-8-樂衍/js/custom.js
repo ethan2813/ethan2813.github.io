@@ -5,6 +5,7 @@ $(document).ready(function() {
 		var $header = $(".js-header");
 		if(scrollDistance > 80){
 			$header.addClass("header--scrolling");
+			
 		}
 		else{
 			$header.removeClass("header--scrolling");
