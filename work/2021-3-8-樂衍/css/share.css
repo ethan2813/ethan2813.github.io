@@ -1,6 +1,9 @@
 .share-header .menu__item{
 	color:#222;
 }
+.share-header .nav_bot .menu__item_2{
+	color:#222;
+}
 .dropdown-item:hover{
 	background-color:#525457;
 }

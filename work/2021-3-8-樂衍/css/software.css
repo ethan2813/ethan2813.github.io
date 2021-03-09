@@ -1,6 +1,9 @@
 .software-header .menu__item{
 	color:#222;
 }
+.software-header .nav_bot .menu__item_2{
+	color:#222;
+}
 .dropdown-item:hover{
 	background-color:#6d5c5f;
 }
