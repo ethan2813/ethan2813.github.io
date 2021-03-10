@@ -259,6 +259,8 @@ main#main .box_4 .content_ .content_box .item p {
   font-family: 微軟正黑體;
   letter-spacing: 3px;
   text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 main#main .box_5 {
@@ -390,4 +392,5 @@ main#main .box_7 .item p {
   color: #5c4d50;
   max-width: 300px;
   letter-spacing: 2px;
+  font-family: 微軟正黑體;
 }
