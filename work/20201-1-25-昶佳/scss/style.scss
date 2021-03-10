@@ -261,6 +261,13 @@ main#main{
                     background-color: #EFB79B;
                 }
             }
+            img.doctor_R_photo{
+                position:absolute;
+                // max-width: 290px;
+                bottom: 13%;
+                right: calc( 4% - 10px);
+                width: calc(17vw + 20px);
+            }
         }
     }
 

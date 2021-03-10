@@ -27,6 +27,14 @@
     font-size: 22px;
     letter-spacing: 3px;
   }
+  main#main .box_3 .pc p {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  main#main .box_6 .pc p {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (max-width: 996px) {
@@ -112,5 +120,129 @@
   main#main .box_2 .content_ p {
     font-size: 16px;
     letter-spacing: 4px;
+  }
+  main#main .box_3 .pc {
+    display: none;
+  }
+  main#main .box_3 .mobile {
+    display: block;
+    position: relative;
+  }
+  main#main .box_3 .mobile img {
+    width: 100%;
+  }
+  main#main .box_3 .mobile p {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 80%;
+    top: 50%;
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: white;
+    white-space: nowrap;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+  }
+  main#main .box_4 {
+    background-image: unset;
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+  main#main .box_4 .title_ h3 {
+    font-size: 30px;
+  }
+  main#main .box_4 .title_ h4 {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  main#main .box_4 .title_ p {
+    font-size: 16px;
+  }
+  main#main .box_4 .content_ {
+    padding: 0;
+  }
+  main#main .box_4 .content_ .content_box .item h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 65px;
+  }
+  main#main .box_4 .content_ .content_box .item p {
+    font-size: 16px;
+    padding-bottom: 50px;
+  }
+  main#main .box_4 .content_ .content_box .item p.pb_0 {
+    padding-bottom: 0;
+  }
+  main#main .box_5 {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  main#main .box_5 .title_ .title_box {
+    margin-left: 0px;
+  }
+  main#main .box_5 .title_ .title_box p:nth-of-type(1) {
+    font-size: 22px;
+  }
+  main#main .box_5 .title_ .title_box p:nth-of-type(1)::after {
+    left: -20px;
+    -webkit-transform: translate(-100%, -50%);
+        -ms-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+  }
+  main#main .box_5 .title_ .title_box p:nth-of-type(2) {
+    display: none;
+  }
+  main#main .box_5 .content_ {
+    margin-top: 80px;
+    text-align: justify;
+  }
+  main#main .box_5 .content_ p {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  main#main .box_6 .pc {
+    display: none;
+  }
+  main#main .box_6 .mobile {
+    display: block;
+    position: relative;
+  }
+  main#main .box_6 .mobile img {
+    width: 100%;
+  }
+  main#main .box_6 .mobile p {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 80%;
+    top: 50%;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: white;
+    white-space: nowrap;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+  }
+  main#main .box_7 {
+    padding-top: 100px;
+    padding-bottom: 135px;
+  }
+  main#main .box_7 .item h3 {
+    font-size: 20px;
+  }
+  main#main .box_7 .item img {
+    width: 100%;
+  }
+  main#main .box_7 .item p {
+    font-size: 16px;
+    max-width: 175px;
+  }
+  main#main .box_7 .item.mt_90 {
+    margin-top: 90px;
   }
 }

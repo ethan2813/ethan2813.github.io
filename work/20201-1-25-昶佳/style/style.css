@@ -242,6 +242,13 @@ main#main #doctor .doctor_R .article .line_2 {
   background-color: #EFB79B;
 }
 
+main#main #doctor .doctor_R img.doctor_R_photo {
+  position: absolute;
+  bottom: 13%;
+  right: calc( 4% - 10px);
+  width: calc(17vw + 20px);
+}
+
 main#main #box_1 {
   margin-top: 190px;
 }

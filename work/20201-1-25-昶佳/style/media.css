@@ -190,6 +190,9 @@
   main#main #doctor .doctor_R .article .line_2 {
     width: 80%;
   }
+  main#main #doctor .doctor_R img.doctor_R_photo {
+    display: none;
+  }
   main#main #box_1 {
     margin-top: 0px;
   }

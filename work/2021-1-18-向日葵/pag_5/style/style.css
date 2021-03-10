@@ -166,3 +166,228 @@ main#main .box_2 .content_ p {
   font-family: 微軟正黑體;
   letter-spacing: 6px;
 }
+
+main#main .box_3 .pc {
+  position: relative;
+  display: block;
+}
+
+main#main .box_3 .pc img {
+  width: 100%;
+}
+
+main#main .box_3 .pc p {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 42%;
+  top: 50%;
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: white;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+main#main .box_3 .mobile {
+  display: none;
+}
+
+main#main .box_4 {
+  background-image: url(../img/box_4_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+main#main .box_4 .title_ {
+  padding-bottom: 85px;
+}
+
+main#main .box_4 .title_ h3 {
+  font-size: 36px;
+  color: #8eab5d;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
+}
+
+main#main .box_4 .title_ h4 {
+  font-size: 23px;
+  color: #8eab5d;
+  letter-spacing: 8px;
+  margin-bottom: 35px;
+}
+
+main#main .box_4 .title_ p {
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  letter-spacing: 3px;
+}
+
+main#main .box_4 .content_ {
+  background-color: white;
+  padding: 100px 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main#main .box_4 .content_ .content_box {
+  width: 100%;
+}
+
+main#main .box_4 .content_ .content_box .item img {
+  width: 100%;
+}
+
+main#main .box_4 .content_ .content_box .item h3 {
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 75px;
+  margin-top: 15px;
+  color: #8eab5d;
+}
+
+main#main .box_4 .content_ .content_box .item p {
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+
+main#main .box_5 {
+  margin-top: 200px;
+  padding-bottom: 240px;
+  position: relative;
+}
+
+main#main .box_5 .title_ {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main#main .box_5 .title_ .title_box {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+main#main .box_5 .title_ .title_box p:nth-of-type(1) {
+  font-size: 36px;
+  color: #5C4D50;
+  letter-spacing: 10px;
+  position: relative;
+}
+
+main#main .box_5 .title_ .title_box p:nth-of-type(1)::after {
+  content: '';
+  display: block;
+  background-color: black;
+  position: absolute;
+  left: 400px;
+  top: 50%;
+  width: 1000px;
+  height: 1px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+main#main .box_5 .title_ .title_box p:nth-of-type(2) {
+  font-size: 23px;
+  color: #5C4D50;
+  letter-spacing: 3px;
+}
+
+main#main .box_5 .content_ {
+  margin-top: 155px;
+  text-align: center;
+}
+
+main#main .box_5 .content_ p {
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  letter-spacing: 6px;
+}
+
+main#main .box_6 .pc {
+  position: relative;
+  display: block;
+}
+
+main#main .box_6 .pc img {
+  width: 100%;
+}
+
+main#main .box_6 .pc p {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 53%;
+  top: 50%;
+  font-size: 30px;
+  letter-spacing: 8px;
+  color: white;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+main#main .box_6 .mobile {
+  display: none;
+}
+
+main#main .box_7 {
+  padding-top: 150px;
+  padding-bottom: 400px;
+}
+
+main#main .box_7 .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#main .box_7 .item h3 {
+  font-size: 23px;
+  color: #8eab5d;
+  margin-bottom: 40px;
+}
+
+main#main .box_7 .item img {
+  max-width: 166px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+main#main .box_7 .item p {
+  text-align: justify;
+  font-size: 18px;
+  color: #5c4d50;
+  max-width: 300px;
+  letter-spacing: 2px;
+}
