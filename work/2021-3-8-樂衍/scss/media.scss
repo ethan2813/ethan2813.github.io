@@ -213,7 +213,7 @@
             .right_group{
                 justify-content: flex-end;
                 .group_box{
-                    margin-top: -100px;
+                    margin-top: -50px;
                     max-width: 80px;
                 }
             }
@@ -267,6 +267,21 @@
                         letter-spacing: 0.08em;
                     }
                 }
+            }
+            .article{
+                padding-left:0;
+                // .article_1{
+                //     p{
+                //         text-align: center;
+                        
+                //     }
+                // }
+                // .article_2{
+                //     p{
+                //         text-align: center;
+                        
+                //     }
+                // }
             }
         }
         .box_3{
@@ -323,11 +338,14 @@
                     margin-top: 60px;
                     p{
                         margin-left:0;
+                        // text-align: center;
+
                         
 
                         &:before{
-                            left: 0;
+                            left: 0%;
                             top: -40px;
+                            // transform: translate(-50% , 0%);
                         }
                     }
                 }
@@ -335,11 +353,14 @@
                     margin-top: 80px;
                     p{
                         margin-left:0;
+                        // text-align: center;
                         
 
                         &:before{
-                            left: 0;
+                            left: 0%;
                             top: -40px;
+                            // transform: translate(-50% , 0%);
+
                         }
                     }
                 }
@@ -387,10 +408,16 @@
                     margin-left:0;
                     h3{
                         font-size: 20px;
+                        // text-align: center;
+
                         &:before{
-                            left: 0;
+                            left: 0%;
+                            // transform: translate(-50% , -50%);
                             top: -20px;
                         }
+                    }
+                    p{
+                        // text-align: center;
                     }
                     
                     
@@ -401,9 +428,11 @@
                     margin-left:0;
                     h3{
                         font-size: 20px;
+                        // text-align: center;
 
                         &:before{
-                            left: 0;
+                            left: 0%;
+                            // transform: translate(-50% , -50%);
                             top: -20px;
                         }
                     }
