@@ -232,6 +232,16 @@ main#main{
                 padding-top: 15%;
                 padding-left: 20%;
                 padding-bottom: 15%;
+                position: relative;
+
+                img.doctor_R_photo{
+                    position:absolute;
+                    // max-width: 290px;
+                    bottom: 13%;
+                    right: calc( 4% - 10px);
+                    width: calc(17vw + 20px);
+                }
+
 
                 h3{
                     // color: #585E4F;
@@ -261,13 +271,7 @@ main#main{
                     background-color: #EFB79B;
                 }
             }
-            img.doctor_R_photo{
-                position:absolute;
-                // max-width: 290px;
-                bottom: 13%;
-                right: calc( 4% - 10px);
-                width: calc(17vw + 20px);
-            }
+            
         }
     }
 
@@ -604,6 +608,7 @@ main#main{
                 color: #878787;
                 width: 100%;
                 position: relative;
+                overflow: hidden;
 
                 &:before{
                     content: '';

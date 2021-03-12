@@ -213,6 +213,14 @@ main#main #doctor .doctor_R .article {
   padding-top: 15%;
   padding-left: 20%;
   padding-bottom: 15%;
+  position: relative;
+}
+
+main#main #doctor .doctor_R .article img.doctor_R_photo {
+  position: absolute;
+  bottom: 13%;
+  right: calc( 4% - 10px);
+  width: calc(17vw + 20px);
 }
 
 main#main #doctor .doctor_R .article h3 {
@@ -240,13 +248,6 @@ main#main #doctor .doctor_R .article .line_2 {
   width: 350px;
   height: 1px;
   background-color: #EFB79B;
-}
-
-main#main #doctor .doctor_R img.doctor_R_photo {
-  position: absolute;
-  bottom: 13%;
-  right: calc( 4% - 10px);
-  width: calc(17vw + 20px);
 }
 
 main#main #box_1 {
@@ -576,6 +577,7 @@ main#main #box_3 .box_3_bot .article_2 {
   color: #878787;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 main#main #box_3 .box_3_bot .article_2:before {

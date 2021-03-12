@@ -276,16 +276,20 @@
                     display: none;
                 }
                 .article{
+                    z-index: 0;
                     padding-left: 15px;
 
                     .line_2{
                         width: 80%;
                     }
+                    img.doctor_R_photo{
+                        width: calc(32vw + 20px);
+                        z-index: -1;
+    
+                    }
                 }
 
-                img.doctor_R_photo{
-                    display: none;
-                }
+                
 
             }
         }
