@@ -359,6 +359,10 @@ footer#footer .footer_top .table_opening tr td {
   text-align: left;
 }
 
+footer#footer .footer_top p.table_text {
+  letter-spacing: 3px;
+}
+
 footer#footer .footer_top .btn_title {
   font-size: 16px;
   letter-spacing: 2px;
