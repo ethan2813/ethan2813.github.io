@@ -76,7 +76,7 @@
 
 @media (max-width: 996px) {
   main#main .banner p {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 2px;
   }
 }
@@ -194,9 +194,16 @@
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 400px) {
   main#main .banner p {
-    letter-spacing: 1px;
+    letter-spacing: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 365px) {
+  main#main .banner p {
+    letter-spacing: 3px;
     font-size: 15px;
   }
 }
