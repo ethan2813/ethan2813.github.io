@@ -64,7 +64,8 @@
   main#main .banner P {
     left: 80%;
     top: 60%;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
+    color: white;
   }
   main#main .banner_list {
     display: none;

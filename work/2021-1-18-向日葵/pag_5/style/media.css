@@ -63,8 +63,8 @@
   }
   main#main .banner P {
     left: 80%;
-    top: 60%;
-    letter-spacing: 4px;
+    top: 55%;
+    letter-spacing: 15px;
   }
   main#main .banner_list {
     display: none;
