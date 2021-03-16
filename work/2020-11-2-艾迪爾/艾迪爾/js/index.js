@@ -9,17 +9,8 @@
     $(window).scroll(e => {
         let top = $(this).scrollTop() / 3.5
         // console.log($(this).scrollTop())
-        // logo_float.style.transform = `translate(-50%,-${top}px)`
-
-        $('.logo_float').css({
-            '-webkit-transform' : `translate(-50%,-${top}px)`,
-            '-moz-transform'    : `translate(-50%,-${top}px)`,
-            '-ms-transform'     : `translate(-50%,-${top}px)`,
-            '-o-transform'      : `translate(-50%,-${top}px)`,
-            'transform'         : `translate(-50%,-${top}px)`
-          });
+        logo_float.style.transform = `translate(-50%,-${top}px)`
     })
-
 
 
     //nav 縮效果
@@ -41,7 +32,6 @@
         // console.log(e.currentTarget)
         $(e.currentTarget).toggleClass('burger_active')
         $('.nav_links').toggleClass('nav_active')
-
     })
 
 
@@ -57,6 +47,8 @@
         $('html,body').animate({scrollTop:0},300);
     })
 
+   
+
     //totop隱藏效果
     $(window).scroll(function(){
         if($(this).scrollTop() > 400){
@@ -67,6 +59,9 @@
 
         console.log($(this).scrollTop())
     })
+
+
+
 })()
 
     

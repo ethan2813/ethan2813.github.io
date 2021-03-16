@@ -50,12 +50,57 @@
   main#main .banner .banner_1_mobile {
     display: block;
   }
+  main#main .banner .banner_png {
+    display: none;
+  }
   main#main .banner P {
     left: 80%;
     top: 60%;
-    letter-spacing: 4px;
+    letter-spacing: 15px;
   }
   main#main .banner_list {
+    display: none;
+  }
+  main#main .box_1 {
+    padding: 60px 0;
+  }
+  main#main .box_1 .article_box {
+    padding: 55px 15px;
+  }
+  main#main .box_1 .article_box .article h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  main#main .box_1 .article_box .article p {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  main#main .box_1 .article_box .article > p:last-of-type {
+    margin-top: 20px;
+  }
+  main#main .box_1 .article_box .article .btn {
+    margin-top: 0px;
+  }
+  main#main .box_1 .article_box .article .btn p:nth-of-type(1) {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  main#main .box_1 .article_box .article .btn p:nth-of-type(2) {
+    font-size: 8px;
+  }
+  main#main .box_2 .title_ img.flower_mini {
+    display: none;
+  }
+  main#main .box_2 .title_ .title_box p:nth-of-type(1) {
+    font-size: 22px;
+  }
+  main#main .box_2 .title_ .title_box p:nth-of-type(1)::after {
+    left: -20px;
+    -webkit-transform: translate(-100%, -50%);
+        -ms-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+  }
+  main#main .box_2 .title_ .title_box p:nth-of-type(2) {
     display: none;
   }
 }

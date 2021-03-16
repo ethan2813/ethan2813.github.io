@@ -116,10 +116,11 @@
                 width: 100%;
                 position: absolute;
                 flex-direction: column;
-                top: 70px;
+                top: 80px;
                 right: -100%;
-                box-shadow: 2px 5px 6px -3px black;
-                background-color: white;
+                background-color: rgba(255, 255, 255, 0.95);
+                border-radius: 10px;
+                box-shadow: 2px 2px 2px #ddd;
                 transition: 0.5s ease-in-out;
                 li{
                     padding: 20px 0;
@@ -129,8 +130,8 @@
                 }
 
                 &.nav_active{
-                    top: 70px;
-                    right: 0;
+                    top: 80px;
+                    right: 5px;
                 }
             }
             .burger{
@@ -310,10 +311,6 @@
         section#team{
             .team_title{
                 margin: 75px 0 70px 0;
-
-                &:before{
-                    height: 20px;
-                }
             }
             .content_{
                
@@ -378,15 +375,6 @@
     
     
     
-                    }
-                }
-            }
-        }
-        section#setting{
-            .setting_article{
-                .setting_title{
-                    &:before{
-                        height: 20px;
                     }
                 }
             }
@@ -488,8 +476,6 @@
                 }
             }
         }
-       
-        
 
        
 
@@ -530,10 +516,10 @@
                     
                 }
                 .setting_title{
-                    font-size: 28px;
+                    font-size: 30px;
                 }
                 .text{
-                    padding: 0px;
+                    padding: 0 20px;
     
                     p{
                         letter-spacing: 0px;
@@ -597,11 +583,11 @@
             }
             .content_3{
                 .opening{
-                width: 100%;
+                width: 80%;
                     
                     h2{
                         margin-top: 10px;
-                        font-size: 26px;
+                        font-size: 18px;
                         font-weight: 0;
                     } 
                     .bl{
@@ -612,19 +598,11 @@
     
                     .table_opening{
                         // margin:0 auto;
-                        font-size: 20px;
-                        
-                        td.week_time{
-                            font-size: 16px;
-                            padding: 0 3px;
-                        }
-                    
-                        td{
-                            padding: 3px 5px;
-                        }
-                    }
-                    .text{
                         font-size: 18px;
+                    
+                    td{
+                        padding: 3px 5px;
+                    }
                     }
                 }
             }
@@ -804,57 +782,6 @@
       
     }
 }
-
-@media(min-width:500px){
-    main#pagi_main{
-        section#all-ceramic{
-            .article{
-                width: 500px;
-            }
-        }
-    }
-}
-@media(max-width:450px){
-    nav#nav{
-        .nav_countainer{
-            .logo{
-                width: 70%;
-            }
-        }
-    }
-
-    main#main{
-        section#banner{
-            .content_3{
-                .opening{
-                    width: 100%;
-
-                    .table_opening{
-                        font-size: 16px;
-                        width: 98%;
-                        td.week_time{
-                            // width: 95px;
-                            
-                            margin: 0;
-                        }
-
-                        td{
-                            padding: 8px 4px;
-                        }
-                        td.week{
-                            .week_in{
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    
-    
-}
 @media(max-width:420px){
     main#main{
         section#team{
@@ -890,23 +817,37 @@
 
     
 }
-@media(max-width:350px){
-    main#main{
-        section#setting{
-            .setting_article{
-                .text{
-                    p{
-                        font-size: 15;
-                        letter-spacing: -1px;
-                    }
-                }
-                }
+@media(min-width:500px){
+    main#pagi_main{
+        section#all-ceramic{
+            .article{
+                width: 500px;
             }
+        }
     }
+}
+@media(max-width:400px){
+    nav#nav{
+        .nav_countainer{
+            .logo{
+                width: 70%;
+            }
+        }
+    }
+
+
+    
+    
 }
 @media(max-width:370px){
     main#main{
-        
+        section#banner{
+            .content_3{
+                .opening{
+                    width: 90%;
+                }
+            }
+        }
         section#team{
             .content_{
                 .doctor_row{
@@ -944,44 +885,14 @@
     
 }
 
-@media(max-width:330px){
+@media(max-width:320px){
     main#main{
         section#setting{
             .setting_article{
                 .text{
                     p{
-                        letter-spacing: 0px;
-                        font-size: 16px;
-                    }
-                }
-
-            }
-        }
-    }
-}
-@media(max-width:313px){
-    main#main{
-        section#setting{
-            .setting_article{
-                .text{
-                    p{
-                        letter-spacing: 0px;
-                        font-size: 15px;
-                    }
-                }
-
-            }
-        }
-    }
-}
-@media(max-width:300px){
-    main#main{
-        section#setting{
-            .setting_article{
-                .text{
-                    p{
-                        letter-spacing: 0px;
-                        font-size: 14px;
+                        letter-spacing: -2px;
+                        font-size: 18px;
                     }
                 }
 
