@@ -104,10 +104,135 @@
         }
         .box_2{
             .title_{
+                padding-top: 120px;
+                padding-bottom: 340px;
                 img.flower_mini{
                     display: none;
                 }
                 .title_box{
+                    margin-left: 0%;
+                    p:nth-of-type(1){
+                        font-size: 22px;
+                        &::after{
+                            // right: 190px;
+                            left: -20px;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
+
+                    p:nth-of-type(2){
+                        display: none;
+                    }
+
+                }
+            }
+            .content_{
+                .content_top{
+                    margin-top: -260px;
+                    margin-bottom: 80px;
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                .content_bot{
+                    .item{
+                        >img{
+                            max-width: 120px;
+                            margin-bottom: 30px;
+                            margin-top: 30px;
+                        }
+                        p{
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            margin: 5px;
+                            &:not(p:last-of-type){
+                                &:after{
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                    .item.margin_top{
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+        .box_3{
+            .title_{
+                padding-top: 120px;
+                padding-bottom: 340px;
+                img.flower_mini{
+                    display: none;
+                }
+                .title_box{
+                    margin-right: 0%;
+                    p:nth-of-type(1){
+                        font-size: 22px;
+                        &::after{
+                            // right: 190px;
+                            left: -20px;
+                            transform: translate(-100%, -50%);
+                        }
+                    }
+
+                    p:nth-of-type(2){
+                        display: none;
+                    }
+
+                }
+                >img{
+                    display: none;
+                }
+            } 
+            .content_{
+                .content_top{
+                    margin-top: -260px;
+                    margin-bottom: 0px;
+                    h3{
+                        font-size: 20px;
+                        line-height: 50px;
+                        text-align: left;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                .content_bot{
+                    .item{
+                        margin-top: 100px;
+                        >img{
+                            max-width: 120px;
+                            margin-bottom: 30px;
+                            margin-top: 30px;
+                        }
+                        p{
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            margin: 5px;
+                            &:not(p:last-of-type){
+                                &:after{
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                    .item.margin_top{
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+
+        .box_4{
+            .title_{
+                padding-top: 120px;
+                padding-bottom: 100px;
+                img.flower_mini{
+                    display: none;
+                }
+                .title_box{
+                    margin-left: 0%;
                     p:nth-of-type(1){
                         font-size: 22px;
                         &::after{

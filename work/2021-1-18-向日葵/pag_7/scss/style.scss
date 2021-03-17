@@ -105,7 +105,7 @@ main#main{
     }
 
     .box_2{
-        padding-bottom: 120px;
+        // padding-bottom: 120px;
         
         .title_{
             padding-top: 480px;
@@ -119,6 +119,7 @@ main#main{
             background-size: cover;
             .title_box{
                 display: inline-block;
+                margin-left: 15%;
                 p:nth-of-type(1){
                     font-size: 36px;
                     // overflow: hidden;
@@ -160,6 +161,7 @@ main#main{
                     font-family: 微軟正黑體;
                     letter-spacing: 5px;
                     line-height: 30px;
+                    text-align: center;
 
                 }
             }
@@ -188,6 +190,7 @@ main#main{
                         letter-spacing: 2px;
                         
                         
+                        
                         text-align: center;
                         &:not(p:last-of-type){
                             // border-bottom: 1px solid #8eab5d;
@@ -208,6 +211,147 @@ main#main{
             
                 }
             }
+        }
+    }
+
+    .box_3{
+        .title_{
+            padding-top: 130px;
+            padding-bottom: 160px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .title_box{
+                margin-right: 15%;
+                display: flex;
+                align-items: flex-end;
+                p:nth-of-type(1){
+                    font-size: 36px;
+                    // overflow: hidden;
+                    color: #5C4D50;
+                    letter-spacing: 10px;
+                    position: relative;
+                    margin-right: 20px;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        background-color: black;
+                        position: absolute;
+                        right: 210px;
+                        top: 50%;
+                        width: 1000px;
+                        height: 1px;
+                        transform: translate(0,-50%);
+                    }
+                }
+                p:nth-of-type(2){
+                    font-size: 23px;
+                    color: #5C4D50;
+                    letter-spacing: 10px;
+                }
+            }
+            >img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+            }
+            
+        }
+        .content_{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content_top{
+                max-width: 1140px;
+                margin-bottom: 178px;
+                h3{
+                    font-size: 23px;
+                    color: #8eab5d;
+                    letter-spacing: 8px;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 18px;
+                    font-family: 微軟正黑體;
+                    letter-spacing: 5px;
+                    line-height: 30px;
+                    text-align: center;
+
+                }
+            }
+            .content_bot{
+                max-width: 1140px;
+                width: 100%;
+                .item{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h3{
+                        font-size: 23px;
+                        color: #8eab5d;
+                        letter-spacing: 5px;
+                    }
+                    >img{
+                        width: 100%;
+                        max-width: 160px;
+                        margin-bottom: 50px;
+                        margin-top: 40px;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-family: 微軟正黑體;
+                        letter-spacing: 4px;
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .box_4{
+        .title_{
+            padding-top: 350px;
+            padding-bottom: 180px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            .title_box{
+                display: inline-block;
+                margin-left: 15%;
+                p:nth-of-type(1){
+                    font-size: 36px;
+                    // overflow: hidden;
+                    color: #5C4D50;
+                    letter-spacing: 10px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        background-color: black;
+                        position: absolute;
+                        left: 190px;
+                        top: 50%;
+                        width: 1000px;
+                        height: 1px;
+                        transform: translate(0,-50%);
+                    }
+                }
+                p:nth-of-type(2){
+                    font-size: 23px;
+                    color: #5C4D50;
+                    letter-spacing: 10px;
+                }
+            }
+            
         }
     }
 }
