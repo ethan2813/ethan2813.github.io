@@ -405,7 +405,6 @@ main#main{
                     line-height: 30px;
                     text-align: center;
                     margin-bottom: 0;
-
                 }
             }
             .content_bot{
@@ -433,7 +432,6 @@ main#main{
                         font-size: 18px;
                         letter-spacing: 5px;
                         font-family: 微軟正黑體;
-                        // color: #5C4D50;
                         margin-bottom: 10px;
                         text-align: justify;
                         line-height: 30px;
@@ -444,8 +442,6 @@ main#main{
                         margin-top: 125px;
                     }
         
-                    
-        
                     &:before{
                         content: '';
                         display: block;
@@ -455,8 +451,6 @@ main#main{
                         position: absolute;
                         top: 0;
                         left: 0;
-                        
-        
                     }
         
                     &:after{
@@ -469,7 +463,6 @@ main#main{
                         top: 1px;
                         left: 0;
                         opacity: 0.8;
-                        
                     }
                 }
             }
