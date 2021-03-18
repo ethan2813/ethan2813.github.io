@@ -27,6 +27,10 @@
     font-size: 22px;
     letter-spacing: 3px;
   }
+  main#main .box_5 .pc p {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (max-width: 996px) {
@@ -210,5 +214,65 @@
   }
   main#main .box_4 .title_ .title_box p:nth-of-type(2) {
     display: none;
+  }
+  main#main .box_5 .pc {
+    display: none;
+  }
+  main#main .box_5 .mobile {
+    display: block;
+  }
+  main#main .box_5 .mobile img {
+    width: 100%;
+  }
+  main#main .box_5 .mobile p {
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 80%;
+    top: 50%;
+    color: black;
+    white-space: nowrap;
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+  main#main .box_6 {
+    padding-top: 120px;
+  }
+  main#main .box_6 .content_ .content_top {
+    margin-bottom: 140px;
+  }
+  main#main .box_6 .content_ .content_top h3 {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: left;
+    letter-spacing: 5px;
+  }
+  main#main .box_6 .content_ .content_top p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  main#main .box_6 .content_ .content_bot {
+    margin-bottom: 0;
+  }
+  main#main .box_6 .content_ .content_bot .title_ p {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  main#main .box_6 .content_ .content_bot .content_2_box h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  main#main .box_6 .content_ .content_bot .content_2_box p {
+    margin-bottom: 90px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding-right: 0;
+  }
+  main#main .box_6 .content_ .content_bot .content_2_box.top {
+    margin-top: unset;
   }
 }

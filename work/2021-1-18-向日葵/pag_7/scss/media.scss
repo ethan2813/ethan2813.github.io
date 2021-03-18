@@ -34,6 +34,15 @@
                 letter-spacing: 3px;
             }
         }
+        .box_5{
+            .pc{
+                p{
+                    font-size: 22px;
+                    letter-spacing: 3px; 
+                }
+            }
+        }
+
     }
 }
 @media(max-width:996px){
@@ -241,11 +250,74 @@
                             transform: translate(-100%, -50%);
                         }
                     }
-
                     p:nth-of-type(2){
                         display: none;
                     }
 
+                }
+            }
+        }
+        .box_5{
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: block;
+                img{
+                    width: 100%;
+                }
+                p{
+                    writing-mode: vertical-lr;
+                    position: absolute;
+                    transform: translate(-50% , -50%);
+                    left: 80%;
+                    top: 50%;
+                    color: black;
+                    white-space: nowrap;
+                    font-size: 22px;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+        .box_6{
+            padding-top: 120px;
+            .content_{
+                .content_top{
+                    margin-bottom: 140px;
+                    h3{
+                        font-size: 20px;
+                        line-height: 50px;
+                        text-align: left;
+                        letter-spacing: 5px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+                .content_bot{
+                    margin-bottom: 0;
+                    .title_{
+                        p{
+                            font-size: 30px;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    .content_2_box{
+                        h3{
+                            font-size: 20px;
+                            letter-spacing: 3px;
+                        }
+                        p{
+                            margin-bottom: 90px;
+                            font-size: 16px;
+                            letter-spacing: 4px;
+                            padding-right: 0;
+                        }
+                    }
+                    .content_2_box.top{
+                        margin-top:unset;
+                    }
                 }
             }
         }
