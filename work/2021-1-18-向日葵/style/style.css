@@ -69,7 +69,6 @@ main#main .about .title_ {
   position: relative;
   padding-top: 160px;
   padding-bottom: 80px;
-  opacity: 0.1;
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
           transform: translate(0%, 0px);
@@ -126,13 +125,6 @@ main#main .about .content_ .article {
 
 main#main .about .content_ .article .content {
   max-width: 700px;
-  opacity: 0.1;
-  -webkit-transform: translate(0%, 0px);
-      -ms-transform: translate(0%, 0px);
-          transform: translate(0%, 0px);
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
 }
 
 main#main .about .content_ .article .content h3 {
@@ -140,12 +132,24 @@ main#main .about .content_ .article .content h3 {
   color: #8EAB5D;
   margin-bottom: 50px;
   letter-spacing: 8px;
+  -webkit-transform: translate(0%, 0px);
+      -ms-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
+  -webkit-transition: 1.2s;
+  -o-transition: 1.2s;
+  transition: 1.2s;
 }
 
 main#main .about .content_ .article .content p {
   font-size: 18px;
   font-family: 微軟正黑體;
   letter-spacing: 10px;
+  -webkit-transform: translate(0%, 0px);
+      -ms-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
 }
 
 main#main .about .content_ img.flower {

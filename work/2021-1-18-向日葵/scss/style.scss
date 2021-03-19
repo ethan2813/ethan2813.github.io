@@ -67,7 +67,7 @@ main#main{
             padding-bottom: 80px;
 
             // scroll 效果
-            opacity: 0.1; 
+            // opacity: 0.1; 
             transform: translate(0% , 0px);
             transition: 1s;
 
@@ -118,10 +118,7 @@ main#main{
                 .content{
                 max-width: 700px;
 
-                // scroll 效果
-                    opacity: 0.1; 
-                    transform: translate(0% , 0px);
-                    transition: 1.5s;
+                    
                 
 
                     h3{
@@ -129,12 +126,22 @@ main#main{
                         color: #8EAB5D;
                         margin-bottom: 50px;
                         letter-spacing: 8px;
+
+                        // scroll 效果
+                        // opacity: 0.1; 
+                        transform: translate(0% , 0px);
+                        transition: 1.2s;
     
                     }
                     p{
                         font-size: 18px;
                         font-family: 微軟正黑體;
                         letter-spacing: 10px;
+
+                        // scroll 效果
+                        // opacity: 0.1; 
+                        transform: translate(0% , 0px);
+                        transition: 1.5s;
                     }
                 }
                 
