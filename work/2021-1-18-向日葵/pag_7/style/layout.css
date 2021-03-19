@@ -15,14 +15,6 @@ body {
   font-family: 'Noto Serif TC', serif;
 }
 
-p {
-  color: #5c4d50;
-}
-
-h3 {
-  color: #5c4d50;
-}
-
 nav#nav {
   width: 100%;
   position: fixed;
@@ -155,6 +147,39 @@ footer#footer {
   background-color: #8EAB5D;
 }
 
+footer#footer .icon #totop img {
+  position: fixed;
+  right: 10px;
+  bottom: 155px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .icon #line img {
+  position: fixed;
+  right: 10px;
+  bottom: 90px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+footer#footer .icon #phone img {
+  position: fixed;
+  right: 10px;
+  bottom: 24px;
+  z-index: 5;
+  width: 60px;
+  height: auto;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 footer#footer .footer_top {
   padding-top: 85px;
   padding-bottom: 85px;
@@ -176,7 +201,6 @@ footer#footer .footer_top .footer_title p {
   font-family: 微軟正黑體;
   letter-spacing: 3px;
   margin: 0;
-  color: white;
 }
 
 footer#footer .footer_top .footer_time {

@@ -13,11 +13,7 @@ body{
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
-}  
-
-// p{
-//     color: #5c4d50;
-// }
+}   
 
 
 
@@ -124,7 +120,50 @@ nav#nav{
 footer#footer{
     background-color: #8EAB5D;
     
-
+    .icon{
+        #totop{
+            img{
+                position: fixed;
+                right: 10px;
+                bottom: 155px;
+                // bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #line{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #phone{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                // bottom: 90px;
+                bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+    }
     .footer_top{
         padding-top: 85px;
         padding-bottom: 85px;
@@ -141,7 +180,6 @@ footer#footer{
                 font-family: 微軟正黑體;
                 letter-spacing: 3px;
                 margin: 0;
-                color: white;
 
             }
         }
