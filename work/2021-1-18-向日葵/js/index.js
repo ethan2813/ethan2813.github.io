@@ -46,12 +46,12 @@ $(document).ready(function(){
     
     window.addEventListener('scroll',function(){
         let this_scroll = this.scrollY; //下移量
-        var topHeight = $(window).height() *0.75; //畫面總高度(特效拉到畫面75%才發動)
+        var topHeight = $(window).height() *0.5 ; //畫面總高度(特效拉到畫面75%才發動)
         let top_1 = $(this).scrollTop() /20; //位移倍率
         let top_2 = $(this).scrollTop() /25; //位移倍率
         let top_3 = $(this).scrollTop() /30; //位移倍率
         
-        console.log(this_scroll)
+    
         
 
         //關於本院標題
@@ -70,7 +70,7 @@ $(document).ready(function(){
         let about_content_p_scroll = about_content_p.offset().top - topHeight;
 
         
-        
+        console.log(this_scroll , topHeight , about_title_scroll)
         // 關於本院 標題
         if(this_scroll > about_title_scroll){
             about_title.css('transform',`translate(0% , -${top_1}px)`)
