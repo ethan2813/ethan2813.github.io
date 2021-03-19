@@ -66,8 +66,16 @@ main#main .about {
 }
 
 main#main .about .title_ {
+  position: relative;
   padding-top: 160px;
   padding-bottom: 80px;
+  opacity: 0.1;
+  -webkit-transform: translate(0%, 0px);
+      -ms-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 main#main .about .title_ p {
@@ -118,6 +126,13 @@ main#main .about .content_ .article {
 
 main#main .about .content_ .article .content {
   max-width: 700px;
+  opacity: 0.1;
+  -webkit-transform: translate(0%, 0px);
+      -ms-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
 }
 
 main#main .about .content_ .article .content h3 {

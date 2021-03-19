@@ -62,8 +62,15 @@ main#main{
         
         padding-right: 130px;
         .title_{
+            position: relative;
             padding-top: 160px;
             padding-bottom: 80px;
+
+            // scroll 效果
+            opacity: 0.1; 
+            transform: translate(0% , 0px);
+            transition: 1s;
+
             p{
                 margin-left: 15%;
                 font-size: 36px;
@@ -110,6 +117,11 @@ main#main{
 
                 .content{
                 max-width: 700px;
+
+                // scroll 效果
+                    opacity: 0.1; 
+                    transform: translate(0% , 0px);
+                    transition: 1.5s;
                 
 
                     h3{
