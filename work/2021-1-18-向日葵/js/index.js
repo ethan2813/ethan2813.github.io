@@ -32,7 +32,7 @@ $('#totop').on('click',()=>{
 //totop隱藏效果
 $(window).scroll(function(){
     if($(this).scrollTop() > 400){
-        console.log($(this).scrollTop())
+        // console.log($(this).scrollTop())
         $('#totop').fadeIn(200);
     }else{
         $('#totop').stop().fadeOut(200)
@@ -46,8 +46,13 @@ $(document).ready(function(){
     
     window.addEventListener('scroll',function(){
         let this_scroll = this.scrollY; //下移量
-        var topHeight = $(window).height(); //畫面總高度
-        let top = $(this).scrollTop() / 15; //位移倍率
+        var topHeight = $(window).height() *0.75; //畫面總高度(特效拉到畫面75%才發動)
+        let top_1 = $(this).scrollTop() /20; //位移倍率
+        let top_2 = $(this).scrollTop() /25; //位移倍率
+        let top_3 = $(this).scrollTop() /30; //位移倍率
+        
+        console.log(this_scroll)
+        
 
         //關於本院標題
         let about_title = $('.about .title_')
@@ -62,26 +67,26 @@ $(document).ready(function(){
         //關於本院內文內文
         let about_content_p = $('main#main .about .content_ .article .content p')
         //關於本院內文內文下移量
-        let about_content_p_scroll = about_content_h3.offset().top - topHeight;
+        let about_content_p_scroll = about_content_p.offset().top - topHeight;
 
         
         
         // 關於本院 標題
         if(this_scroll > about_title_scroll){
-            about_title.css('transform',`translate(0% , -${top}px)`)
-            about_title.css('opacity','1')
+            about_title.css('transform',`translate(0% , -${top_1}px)`)
+            // about_title.css('opacity','1')
         }
 
         // 關於本院 文字標題
         if(this_scroll > about_content_h3_scroll){
-            about_content_h3.css('transform',`translate(0% , -${top}px)`)
-            about_content_h3.css('opacity','1')
+            about_content_h3.css('transform',`translate(0% , -${top_2}px)`)
+            // about_content_h3.css('opacity','1')
         }
 
         // 關於本院 文字內文
         if(this_scroll > about_content_p_scroll){
-            about_content_p.css('transform',`translate(0% , -${top}px)`)
-            about_content_p_scroll.css('opacity','1')
+            about_content_p.css('transform',`translate(0% , -${top_3}px)`)
+            // about_content_p_scroll.css('opacity','1')
         }
     })
 })
