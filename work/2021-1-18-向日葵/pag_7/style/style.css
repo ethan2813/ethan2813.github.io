@@ -68,10 +68,6 @@ main#main .banner_list p:nth-of-type(8) {
 }
 
 main#main .box_1 {
-  background-image: url(../img/box_1_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 150px 0;
 }
 
@@ -113,6 +109,10 @@ main#main .box_1 .article_box .article .btn p:nth-of-type(1) {
 main#main .box_1 .article_box .article .btn p:nth-of-type(2) {
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+main#main .box_1 .article_box .article .btn:active p, main#main .box_1 .article_box .article .btn:hover p {
+  color: #8EAB5D;
 }
 
 main#main .box_2 .title_ {

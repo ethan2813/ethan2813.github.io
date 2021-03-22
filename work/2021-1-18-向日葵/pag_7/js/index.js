@@ -38,3 +38,8 @@ $(window).scroll(function(){
     }
 }).scroll();
 
+
+
+// parallax
+$('.parallax-window').parallax({imageSrc: '../img/box_1_bg.jpg'});
+

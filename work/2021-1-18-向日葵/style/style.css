@@ -72,9 +72,6 @@ main#main .about .title_ {
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
           transform: translate(0%, 0px);
-  -webkit-transition: 0.8s ease-in-out;
-  -o-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
 }
 
 main#main .about .title_ p {
@@ -135,9 +132,6 @@ main#main .about .content_ .article .content h3 {
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
           transform: translate(0%, 0px);
-  -webkit-transition: 0.8s ease-in-out;
-  -o-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
 }
 
 main#main .about .content_ .article .content p {
@@ -147,9 +141,6 @@ main#main .about .content_ .article .content p {
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
           transform: translate(0%, 0px);
-  -webkit-transition: 0.8s ease-in-out;
-  -o-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
 }
 
 main#main .about .content_ img.flower {

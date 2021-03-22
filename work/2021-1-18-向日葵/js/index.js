@@ -41,7 +41,9 @@ $(window).scroll(function(){
 }).scroll();
 
 
+
 // scroll 效果
+(function(){
 $(document).ready(function(){
     
     window.addEventListener('scroll',function(){
@@ -90,4 +92,6 @@ $(document).ready(function(){
         }
     })
 })
+})
+
 

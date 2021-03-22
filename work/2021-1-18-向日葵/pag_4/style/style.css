@@ -71,6 +71,7 @@ main#main .box_1 p {
   font-family: 微軟正黑體;
   text-align: justify;
   z-index: 2;
+  line-height: 32px;
 }
 
 main#main .box_1 .color_box {

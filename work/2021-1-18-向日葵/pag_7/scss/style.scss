@@ -58,10 +58,10 @@ main#main{
     }
 
     .box_1{
-        background-image: url(../img/box_1_bg.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        // background-image: url(../img/box_1_bg.jpg);
+        // background-position: 50%  -50%;
+        // background-size: cover;
+        // background-repeat: no-repeat;
         padding: 150px 0;
 
 
@@ -98,6 +98,11 @@ main#main{
                     p:nth-of-type(2){
                         font-size: 18px;
                         letter-spacing: 1px;
+                    }
+                    &:active,&:hover{
+                        p{
+                            color:#8EAB5D;
+                        }
                     }
                 }
             }

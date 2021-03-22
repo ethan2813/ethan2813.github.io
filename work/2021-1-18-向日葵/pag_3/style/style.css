@@ -64,6 +64,7 @@ main#main .box_1 p {
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   text-align: justify;
+  line-height: 30px;
 }
 
 main#main .box_2 .title_ {
