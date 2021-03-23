@@ -41,6 +41,14 @@ $(window).scroll(function(){
 }).scroll();
 
 
+document.addEventListener('DOMContentLoaded',()=>{
+    window.addEventListener('resize',function(){
+        if(window.innerWidth < 768){
+            console.log('333 ')
+        }
+    })
+})
+
 
 // scroll 效果
 (function(){
