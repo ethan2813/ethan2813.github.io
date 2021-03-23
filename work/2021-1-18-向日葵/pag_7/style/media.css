@@ -172,6 +172,9 @@
   main#main .box_2 .content_ .content_bot .item p:not(p:last-of-type):after {
     margin-top: 5px;
   }
+  main#main .box_2 .content_ .content_bot .item p.p_ {
+    letter-spacing: 0;
+  }
   main#main .box_2 .content_ .content_bot .item.margin_top {
     margin-top: 100px;
   }
