@@ -232,6 +232,13 @@
                         font-size: 20px;
                         line-height: 50px;
                         text-align: left;
+                        letter-spacing: 5px;
+                        br.br{
+                            display: block;
+                        }
+                        .emsp{
+                            display: inline-block;
+                        }
                     }
                     p{
                         font-size: 16px;

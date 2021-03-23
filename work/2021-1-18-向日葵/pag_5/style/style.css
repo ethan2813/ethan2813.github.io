@@ -89,6 +89,11 @@ main#main .box_1 > .title_ p::after {
           transform: translate(-100%, -50%);
 }
 
+main#main .box_1 > .title_ p span {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
 main#main .box_1 .content_ p {
   font-size: 18px;
   letter-spacing: 6px;

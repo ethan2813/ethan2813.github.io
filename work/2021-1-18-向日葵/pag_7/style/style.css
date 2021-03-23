@@ -345,8 +345,16 @@ main#main .box_3 .content_ .content_top h3 {
   color: #8eab5d;
   letter-spacing: 8px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-weight: bold;
+}
+
+main#main .box_3 .content_ .content_top h3 br.br {
+  display: none;
+}
+
+main#main .box_3 .content_ .content_top h3 .emsp {
+  display: none;
 }
 
 main#main .box_3 .content_ .content_top p {
@@ -503,7 +511,7 @@ main#main .box_6 .content_ .content_top h3 {
   color: #8eab5d;
   letter-spacing: 6px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-weight: bold;
 }
 

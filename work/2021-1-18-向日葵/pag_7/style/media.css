@@ -194,6 +194,13 @@
     font-size: 20px;
     line-height: 50px;
     text-align: left;
+    letter-spacing: 5px;
+  }
+  main#main .box_3 .content_ .content_top h3 br.br {
+    display: block;
+  }
+  main#main .box_3 .content_ .content_top h3 .emsp {
+    display: inline-block;
   }
   main#main .box_3 .content_ .content_top p {
     font-size: 16px;
