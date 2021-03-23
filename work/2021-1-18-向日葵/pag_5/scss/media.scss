@@ -25,6 +25,17 @@
         }
     }
 }
+@media(max-width:390px){
+    footer#footer{
+        .footer_top{
+            .footer_title{
+                h3{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
 
 @media(max-width:1200px){
     main#main{
@@ -99,7 +110,7 @@
             display: none;
         }
         .box_1{
-            .title_{
+            >.title_{
                 // display: none;
                 text-align: center;
                 padding-top: 80px;
@@ -294,6 +305,7 @@
             .item{
                 h3{
                     font-size: 20px;
+                    letter-spacing: 2px;
                 }
                 img{
                     width: 100%;

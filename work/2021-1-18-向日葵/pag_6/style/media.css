@@ -22,6 +22,12 @@
   }
 }
 
+@media (max-width: 390px) {
+  footer#footer .footer_top .footer_title h3 {
+    letter-spacing: 2px;
+  }
+}
+
 @media (max-width: 1200px) {
   main#main .banner p {
     font-size: 22px;

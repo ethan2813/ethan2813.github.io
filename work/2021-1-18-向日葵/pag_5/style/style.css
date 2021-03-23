@@ -51,18 +51,23 @@ main#main .banner_list p {
   margin: 0;
 }
 
+main#main .banner_list p a {
+  color: black;
+  text-decoration: none;
+}
+
 main#main .banner_list p:nth-of-type(6) {
   border-bottom: #8EAB5D solid 10px;
 }
 
-main#main .box_1 .title_ {
+main#main .box_1 > .title_ {
   padding-top: 160px;
   padding-bottom: 80px;
   margin-bottom: 100px;
   position: relative;
 }
 
-main#main .box_1 .title_ p {
+main#main .box_1 > .title_ p {
   margin-left: 25%;
   font-size: 36px;
   position: relative;
@@ -70,7 +75,7 @@ main#main .box_1 .title_ p {
   color: #5C4D50;
 }
 
-main#main .box_1 .title_ p::after {
+main#main .box_1 > .title_ p::after {
   content: '';
   display: block;
   background-color: black;
@@ -379,6 +384,7 @@ main#main .box_7 .item h3 {
   font-size: 23px;
   color: #8eab5d;
   margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
 main#main .box_7 .item img {

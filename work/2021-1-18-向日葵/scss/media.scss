@@ -16,11 +16,24 @@
             padding-bottom: 40px;
             .footer_time{
                 margin-top: 40px;
+                
             }
             .contact_us{
                 justify-content: start;
                 margin-top: 40px;
 
+            }
+        }
+    }
+}
+
+@media(max-width:390px){
+    footer#footer{
+        .footer_top{
+            .footer_title{
+                h3{
+                    letter-spacing: 2px;
+                }
             }
         }
     }
@@ -36,7 +49,7 @@
                 background-image: url(../img/about_back_2.jpg);
                 .article{
                     .content{
-                        max-width: 650px;
+                        max-width: 800px;
                     }
                 }
             }
@@ -50,7 +63,7 @@
             .content_{
                 
                 .article{
-                    max-width: 50%;
+                    max-width: 70%;
                 }
             }
         }
@@ -69,7 +82,7 @@
             .content_{
                 background-image: url(../img/about_back_2.jpg);
                 .article{
-                    max-width: 45%;
+                    max-width: 60%;
                 }
                 img.flower{
                     width: 60px;
@@ -89,6 +102,10 @@
                 .article{
                     p{
                         margin-bottom: 0;
+                        .content{
+                            max-width: 500px;
+                        }
+                        
                     }
                 }
                 img.flower{
@@ -104,6 +121,13 @@
             p{
                 font-size: 20px;
                 letter-spacing: 2px;
+            }
+        }
+        .about{
+            .content_{
+                .article{
+                    max-width: 47%;
+                }
             }
         }
     }

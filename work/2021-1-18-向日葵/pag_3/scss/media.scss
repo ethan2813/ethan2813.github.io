@@ -25,6 +25,17 @@
         }
     }
 }
+@media(max-width:390px){
+    footer#footer{
+        .footer_top{
+            .footer_title{
+                h3{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -36,6 +47,9 @@
             p{
                 font-size: 22px;
                 letter-spacing: 3px;
+                span{
+                    font-size: 20px;
+                }
             }
         }
     }

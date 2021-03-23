@@ -22,6 +22,12 @@
   }
 }
 
+@media (max-width: 390px) {
+  footer#footer .footer_top .footer_title h3 {
+    letter-spacing: 2px;
+  }
+}
+
 @media (max-width: 1200px) {
   main#main .banner p {
     font-size: 22px;
@@ -69,21 +75,21 @@
   main#main .banner_list {
     display: none;
   }
-  main#main .box_1 .title_ {
+  main#main .box_1 > .title_ {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 0;
   }
-  main#main .box_1 .title_ p {
+  main#main .box_1 > .title_ p {
     font-size: 22px;
     margin-left: 0%;
     display: inline-block;
   }
-  main#main .box_1 .title_ p span {
+  main#main .box_1 > .title_ p span {
     display: none;
   }
-  main#main .box_1 .title_ .side, main#main .box_1 .title_ .box {
+  main#main .box_1 > .title_ .side, main#main .box_1 > .title_ .box {
     display: none;
   }
   main#main .box_1 .content_ p {
@@ -238,6 +244,7 @@
   }
   main#main .box_7 .item h3 {
     font-size: 20px;
+    letter-spacing: 2px;
   }
   main#main .box_7 .item img {
     width: 100%;

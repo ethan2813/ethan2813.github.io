@@ -25,6 +25,17 @@
         }
     }
 }
+@media(max-width:390px){
+    footer#footer{
+        .footer_top{
+            .footer_title{
+                h3{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
 
 @media(max-width:1200px){
     main#main{
@@ -32,6 +43,10 @@
             p{
                 font-size: 22px;
                 letter-spacing: 3px;
+
+                span{
+                    font-size: 18px;
+                }
             }
         }
         .box_5{
@@ -51,6 +66,10 @@
             p{
                 font-size: 20px;
                 letter-spacing: 2px;
+
+                span{
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -73,9 +92,20 @@
                 display: none;
             }
             P{
+                writing-mode: vertical-rl;
                 left: 80%;
                 top: 60%;
-                letter-spacing: 15px;
+                letter-spacing: 2px;
+                span{
+                    font-size: 20px; 
+                    &.emsp{
+                        display: none;
+                    } 
+                }
+                .br{
+                    display: none;
+                }
+                
             }
            
         }

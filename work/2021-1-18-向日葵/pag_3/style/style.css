@@ -35,6 +35,10 @@ main#main .banner p {
           transform: translate(-50%, -50%);
 }
 
+main#main .banner p span {
+  font-size: 26px;
+}
+
 main#main .banner_list {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -49,6 +53,11 @@ main#main .banner_list p {
   letter-spacing: 6px;
   padding: 15px 15px;
   margin: 0;
+}
+
+main#main .banner_list p a {
+  color: black;
+  text-decoration: none;
 }
 
 main#main .banner_list p:nth-of-type(4) {
