@@ -101,6 +101,7 @@ main#main .box_1 .article_box .article > p {
   font-size: 18px;
   letter-spacing: 3px;
   font-family: 微軟正黑體;
+  color: #5c4d50;
 }
 
 main#main .box_1 .article_box .article > p:last-of-type {
@@ -119,11 +120,19 @@ main#main .box_1 .article_box .article .btn {
 main#main .box_1 .article_box .article .btn p:nth-of-type(1) {
   font-size: 23px;
   letter-spacing: 3px;
+  color: #5c4d50;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main#main .box_1 .article_box .article .btn p:nth-of-type(2) {
   font-size: 18px;
   letter-spacing: 1px;
+  color: #5c4d50;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main#main .box_1 .article_box .article .btn:active p, main#main .box_1 .article_box .article .btn:hover p {
