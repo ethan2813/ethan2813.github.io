@@ -110,9 +110,7 @@ main#main .box_1 .article_box .article > p:last-of-type {
 
 main#main .box_1 .article_box .article .btn {
   width: 100%;
-  text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
+  text-align: center;
   margin-top: 30px;
   text-decoration: none;
 }
