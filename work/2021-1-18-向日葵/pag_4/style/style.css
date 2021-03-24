@@ -263,6 +263,7 @@ main#main .box_5 .item .item_article .content p:nth-of-type(2) {
   line-height: 30px;
   font-family: 微軟正黑體;
   color: #5c4d50;
+  text-align: justify;
 }
 
 main#main .box_5 .item .item_article .content ul {

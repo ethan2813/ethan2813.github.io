@@ -92,7 +92,8 @@ main#main{
                 font-size: 18px;
                 letter-spacing: 6px;
                 font-family: 微軟正黑體;
-                text-align: center;
+                text-align: justify;
+                text-align-last: center;
                 z-index: 2;
             }
         }
@@ -164,6 +165,8 @@ main#main{
                 font-size: 18px;
                 font-family: 微軟正黑體;
                 letter-spacing: 6px;
+                text-align: justify;
+                text-align-last: center;
             }
         }
 
@@ -218,6 +221,7 @@ main#main{
                 font-size: 18px;
                 font-family: 微軟正黑體;
                 letter-spacing: 3px;
+                color: #5C4D50;
                 
             }
         }
@@ -247,7 +251,9 @@ main#main{
                         letter-spacing: 3px;
                         text-align: justify;
                         padding-left: 15px;
-                    padding-right: 15px;
+                        padding-right: 15px;
+                        color: #5C4D50;
+
                     }
                 }
             }
@@ -309,6 +315,10 @@ main#main{
                 font-size: 18px;
                 font-family: 微軟正黑體;
                 letter-spacing: 6px;
+                color: #5C4D50;
+                text-align: justify;
+                text-align-last: center;
+
             }
         }
 
@@ -338,7 +348,7 @@ main#main{
     }
     .box_7{
         padding-top: 150px;
-        padding-bottom: 400px;
+        padding-bottom: 360px;
         .item{
             display: flex;
             flex-direction: column;
