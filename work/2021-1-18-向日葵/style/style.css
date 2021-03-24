@@ -135,6 +135,7 @@ main#main .about .content_ .article .content h3 {
   color: #8EAB5D;
   margin-bottom: 50px;
   letter-spacing: 8px;
+  padding-top: 20px;
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
           transform: translate(0%, 0px);

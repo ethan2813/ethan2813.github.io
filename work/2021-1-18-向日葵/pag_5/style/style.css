@@ -103,6 +103,7 @@ main#main .box_1 .content_ p {
   -moz-text-align-last: center;
        text-align-last: center;
   z-index: 2;
+  color: #5C4D50;
 }
 
 main#main .box_2 {
@@ -181,6 +182,7 @@ main#main .box_2 .content_ p {
   text-align: justify;
   -moz-text-align-last: center;
        text-align-last: center;
+  color: #5C4D50;
 }
 
 main#main .box_3 .pc {

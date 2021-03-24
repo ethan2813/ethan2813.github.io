@@ -70,6 +70,7 @@ main#main .box_1 p {
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   text-align: center;
+  color: #5C4D50;
 }
 
 main#main .box_2 .pc {
@@ -176,6 +177,7 @@ main#main .box_3 .content_ .content_title p {
   letter-spacing: 6px;
   padding-bottom: 0;
   text-align: center;
+  color: #5C4D50;
 }
 
 main#main .box_3 .content_ .content_content .top {
@@ -234,6 +236,7 @@ main#main .box_3 .content_ .content_content .bot .bot_L h3 {
   font-size: 36px;
   margin-bottom: 20px;
   letter-spacing: 10px;
+  color: #5C4D50;
 }
 
 main#main .box_3 .content_ .content_content .bot .bot_L p {
@@ -244,6 +247,7 @@ main#main .box_3 .content_ .content_content .bot .bot_L p {
   position: relative;
   padding-left: 15px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
 }
 
 main#main .box_3 .content_ .content_content .bot .bot_L p:before {
