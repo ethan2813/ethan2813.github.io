@@ -60,6 +60,7 @@ main#main{
             letter-spacing: 6px;
             font-family: 微軟正黑體;
             line-height: 32px;
+            color: #5C4D50;
         }
     }
 
@@ -132,6 +133,7 @@ main#main{
                 span{
                     font-size: 24px;
                     letter-spacing: 2px;
+                    font-weight: normal;
                 }
             }
             
@@ -171,7 +173,7 @@ main#main{
                                 letter-spacing: 2px;
                                 line-height: 30px;
                                 font-family: 微軟正黑體;
-                                // color: #5c4d50;
+                                color: #5c4d50;
                                 
                                 
                                 &:before{
@@ -207,7 +209,7 @@ main#main{
                 top: 50%; 
                 transform: translate(-50% , -50%);
                 white-space: nowrap;
-                color: black;
+                color: #5c4d50;
                 font-size: 30px;
                 letter-spacing: 6px;
                 margin: 0;
@@ -258,6 +260,8 @@ main#main{
                 margin: 0 15px;
                 text-align: justify;
                 line-height: 30px;
+                color: #5C4D50;
+
             }
         }
         .content_2{
@@ -276,7 +280,7 @@ main#main{
                     font-size: 18px;
                     letter-spacing: 8px;
                     font-family: 微軟正黑體;
-                    // color: #5C4D50;
+                    color: #5C4D50;
                     margin-bottom: 10px;
                     text-align: justify;
                     line-height: 30px;
@@ -331,7 +335,7 @@ main#main{
                     font-size: 18px;
                     letter-spacing: 6px;
                     font-family: 微軟正黑體;
-                    // color: #5C4D50;
+                    color: #5C4D50;
                     margin-bottom: 10px;
                     text-align: justify;
                 }
@@ -350,7 +354,7 @@ main#main{
                         letter-spacing: 6px;
                         font-family: 微軟正黑體;
                         position: relative;
-                        // color: #5C4D50;
+                        color: #5C4D50;
 
                         span{
                             position: absolute;

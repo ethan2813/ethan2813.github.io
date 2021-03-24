@@ -76,7 +76,8 @@ main#main{
 
         .article_box{
             background-color: white;
-            text-align: center;
+            text-align:justify;
+            text-align-last:center;
             max-width: 920px;
             padding: 80px 128px;
             border-radius: 30px;
@@ -87,9 +88,10 @@ main#main{
                     color: #5c4d50;
                     letter-spacing: 5px;
                 }
-                p{
+                >p{
                     font-size: 18px;
                     letter-spacing: 3px;
+                    font-family: 微軟正黑體;
                 }
                 >p:last-of-type{
                     margin-top: 40px;
@@ -98,11 +100,15 @@ main#main{
                 }
                 .btn{
                     width: 100%;
-                    text-align: center;
+                    text-align: justify;
+                    text-align-last: center;
                     margin-top: 30px;
                     text-decoration: none;
                     p:nth-of-type(1){
                         font-size: 23px;
+                        letter-spacing: 3px;
+
+                        
                     }
                     p:nth-of-type(2){
                         font-size: 18px;
@@ -175,7 +181,9 @@ main#main{
                     font-family: 微軟正黑體;
                     letter-spacing: 5px;
                     line-height: 30px;
-                    text-align: center;
+                    text-align:justify;
+                    text-align-last:center;
+                    color: #5c4d50;
 
                 }
             }
@@ -202,14 +210,18 @@ main#main{
                         font-size: 20px;
                         font-family: 微軟正黑體;
                         letter-spacing: 2px;
+                        color: #5c4d50;
+                        margin-bottom: 8px;
+
                         
                         
                         
-                        text-align: center;
+                        text-align:justify;
+                        text-align-last:center;
                         &:not(p:last-of-type){
                             // border-bottom: 1px solid #8eab5d;
                             &:after{
-                                margin-top: 20px;
+                                margin-top: 8px;
                                 margin-left: auto;
                                 margin-right: auto;
                                 display: block;
@@ -285,7 +297,8 @@ main#main{
                     font-size: 23px;
                     color: #8eab5d;
                     letter-spacing: 8px;
-                    text-align: center;
+                    text-align:justify;
+                    text-align-last:center;
                     margin-bottom: 100px;
                     font-weight: bold;
 
@@ -302,7 +315,8 @@ main#main{
                     font-family: 微軟正黑體;
                     letter-spacing: 5px;
                     line-height: 30px;
-                    text-align: center;
+                    text-align:justify;
+                    text-align-last:center;
 
                 }
             }
@@ -329,7 +343,8 @@ main#main{
                         font-size: 18px;
                         font-family: 微軟正黑體;
                         letter-spacing: 4px;
-                        text-align: center;
+                        text-align:justify;
+                        text-align-last:center;
                         
                     }
                 }
@@ -414,9 +429,13 @@ main#main{
                     font-size: 23px;
                     color: #8eab5d;
                     letter-spacing: 6px;
-                    text-align: center;
+                    text-align:justify;
+                    text-align-last:center;
                     margin-bottom: 100px;
                     font-weight: bold;
+                    br.br{
+                        display: none;
+                    }
                 }
 
                 p{
@@ -424,7 +443,8 @@ main#main{
                     font-family: 微軟正黑體;
                     letter-spacing: 5px;
                     line-height: 30px;
-                    text-align: center;
+                    text-align:justify;
+                    text-align-last:center;
                     margin-bottom: 0;
                 }
             }

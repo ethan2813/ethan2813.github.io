@@ -125,6 +125,7 @@ main#main .experience .title_ p::after {
 main#main .experience .title_ p span {
   font-size: 24px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 main#main .experience .experience_box {

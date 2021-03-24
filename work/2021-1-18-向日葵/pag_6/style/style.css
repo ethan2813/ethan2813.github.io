@@ -26,7 +26,7 @@ main#main .banner p {
   white-space: nowrap;
   font-size: 30px;
   letter-spacing: 10px;
-  color: black;
+  color: #5C4D50;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -93,7 +93,7 @@ main#main .box_2 .pc p {
   top: 50%;
   font-size: 30px;
   letter-spacing: 7px;
-  color: black;
+  color: #5c4d50;
   white-space: nowrap;
 }
 
@@ -142,6 +142,7 @@ main#main .box_3 .title_ p::after {
 main#main .box_3 .title_ p span {
   font-size: 24px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 main#main .box_3 .title_ .box {
@@ -193,6 +194,7 @@ main#main .box_3 .content_ .content_content .top .top_R h3 {
   font-size: 36px;
   margin-bottom: 20px;
   letter-spacing: 10px;
+  color: #5C4D50;
 }
 
 main#main .box_3 .content_ .content_content .top .top_R h2 {
@@ -210,6 +212,7 @@ main#main .box_3 .content_ .content_content .top .top_R p {
   position: relative;
   padding-left: 15px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
 }
 
 main#main .box_3 .content_ .content_content .top .top_R p:before {
@@ -297,7 +300,7 @@ main#main .box_5 {
   position: relative;
 }
 
-main#main .box_5 .title_ {
+main#main .box_5 > .title_ {
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -309,25 +312,25 @@ main#main .box_5 .title_ {
           justify-content: center;
 }
 
-main#main .box_5 .title_ img.side {
+main#main .box_5 > .title_ img.side {
   position: absolute;
   left: 0;
   top: 55px;
 }
 
-main#main .box_5 .title_ .title_box {
+main#main .box_5 > .title_ .title_box {
   display: inline-block;
   margin-left: 50px;
 }
 
-main#main .box_5 .title_ .title_box p:nth-of-type(1) {
+main#main .box_5 > .title_ .title_box p:nth-of-type(1) {
   font-size: 36px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
 }
 
-main#main .box_5 .title_ .title_box p:nth-of-type(1)::after {
+main#main .box_5 > .title_ .title_box p:nth-of-type(1)::after {
   content: '';
   display: block;
   background-color: black;
@@ -341,7 +344,7 @@ main#main .box_5 .title_ .title_box p:nth-of-type(1)::after {
           transform: translate(0, -50%);
 }
 
-main#main .box_5 .title_ .title_box p:nth-of-type(2) {
+main#main .box_5 > .title_ .title_box p:nth-of-type(2) {
   font-size: 23px;
   color: #5C4D50;
   letter-spacing: 3px;
@@ -364,6 +367,7 @@ main#main .box_5 .content_ p {
   font-size: 18px;
   font-family: 微軟正黑體;
   letter-spacing: 6px;
+  color: #5C4D50;
 }
 
 main#main .box_5 .top {
@@ -382,6 +386,7 @@ main#main .box_5 .top .top_R h3 {
   font-size: 36px;
   margin-bottom: 20px;
   letter-spacing: 10px;
+  color: #5C4D50;
 }
 
 main#main .box_5 .top .top_R h2 {
@@ -399,6 +404,7 @@ main#main .box_5 .top .top_R p {
   position: relative;
   padding-left: 15px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
 }
 
 main#main .box_5 .top .top_R p:before {
@@ -445,6 +451,7 @@ main#main .box_6 .title_ p::after {
 main#main .box_6 .title_ p span {
   font-size: 24px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 main#main .box_6 .title_ .box {
@@ -478,6 +485,7 @@ main#main .box_6 .content_ .content_title p {
   letter-spacing: 7px;
   padding-bottom: 0;
   text-align: center;
+  color: #5C4D50;
 }
 
 main#main .box_6 .content_ .content_content .bot .bot_L {
@@ -488,6 +496,7 @@ main#main .box_6 .content_ .content_content .bot .bot_L h3 {
   font-size: 36px;
   margin-bottom: 20px;
   letter-spacing: 10px;
+  color: #5C4D50;
 }
 
 main#main .box_6 .content_ .content_content .bot .bot_L p {
@@ -498,6 +507,7 @@ main#main .box_6 .content_ .content_content .bot .bot_L p {
   position: relative;
   padding-left: 15px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
 }
 
 main#main .box_6 .content_ .content_content .bot .bot_L p:before {
@@ -592,6 +602,7 @@ main#main .box_7 .content_ p {
   font-size: 18px;
   font-family: 微軟正黑體;
   letter-spacing: 6px;
+  color: #5C4D50;
 }
 
 main#main .box_7 .top {
@@ -610,6 +621,7 @@ main#main .box_7 .top .top_R h3 {
   font-size: 36px;
   margin-bottom: 20px;
   letter-spacing: 10px;
+  color: #5C4D50;
 }
 
 main#main .box_7 .top .top_R h2 {
@@ -627,6 +639,7 @@ main#main .box_7 .top .top_R p {
   position: relative;
   padding-left: 15px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
 }
 
 main#main .box_7 .top .top_R p:before {

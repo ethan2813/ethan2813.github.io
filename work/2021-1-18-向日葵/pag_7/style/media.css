@@ -158,6 +158,7 @@
   }
   main#main .box_2 .content_ .content_top p {
     font-size: 16px;
+    letter-spacing: 3px;
   }
   main#main .box_2 .content_ .content_bot .item > img {
     max-width: 120px;
@@ -212,6 +213,8 @@
     line-height: 50px;
     text-align: left;
     letter-spacing: 5px;
+    -moz-text-align-last: unset;
+         text-align-last: unset;
   }
   main#main .box_3 .content_ .content_top h3 br.br {
     display: block;
@@ -221,6 +224,7 @@
   }
   main#main .box_3 .content_ .content_top p {
     font-size: 16px;
+    letter-spacing: 3px;
   }
   main#main .box_3 .content_ .content_bot .item {
     margin-top: 100px;
@@ -232,7 +236,7 @@
   }
   main#main .box_3 .content_ .content_bot .item p {
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin: 5px;
   }
   main#main .box_3 .content_ .content_bot .item p:not(p:last-of-type):after {
@@ -295,13 +299,19 @@
   }
   main#main .box_6 .content_ .content_top h3 {
     font-size: 20px;
-    line-height: 50px;
+    line-height: 30px;
     text-align: left;
+    -moz-text-align-last: unset;
+         text-align-last: unset;
     letter-spacing: 5px;
+  }
+  main#main .box_6 .content_ .content_top h3 br.br {
+    display: block;
   }
   main#main .box_6 .content_ .content_top p {
     font-size: 16px;
     margin-bottom: 0;
+    letter-spacing: 3px;
   }
   main#main .box_6 .content_ .content_bot {
     margin-bottom: 0;
@@ -317,7 +327,7 @@
   main#main .box_6 .content_ .content_bot .content_2_box p {
     margin-bottom: 90px;
     font-size: 16px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     padding-right: 0;
   }
   main#main .box_6 .content_ .content_bot .content_2_box.top {

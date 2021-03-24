@@ -108,6 +108,7 @@ main#main .box_2 .title_ p::after {
 main#main .box_2 .title_ p span {
   font-size: 24px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 main#main .box_2 .title_ .side {

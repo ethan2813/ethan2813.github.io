@@ -70,6 +70,7 @@ main#main .box_1 p {
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   line-height: 32px;
+  color: #5C4D50;
 }
 
 main#main .box_2 {
@@ -151,6 +152,7 @@ main#main .box_3 .title_ p::after {
 main#main .box_3 .title_ p span {
   font-size: 24px;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 main#main .box_3 .content_ .item {
@@ -190,6 +192,7 @@ main#main .box_3 .content_ .item .item_article .content ul li {
   letter-spacing: 2px;
   line-height: 30px;
   font-family: 微軟正黑體;
+  color: #5c4d50;
 }
 
 main#main .box_3 .content_ .item .item_article .content ul li:before {
@@ -226,7 +229,7 @@ main#main .box_4 .left p {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   white-space: nowrap;
-  color: black;
+  color: #5c4d50;
   font-size: 30px;
   letter-spacing: 6px;
   margin: 0;
@@ -274,6 +277,7 @@ main#main .box_5 .content_1 p {
   margin: 0 15px;
   text-align: justify;
   line-height: 30px;
+  color: #5C4D50;
 }
 
 main#main .box_5 .content_2 {
@@ -297,6 +301,7 @@ main#main .box_5 .content_2 .content_2_box p {
   font-size: 18px;
   letter-spacing: 8px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
   margin-bottom: 10px;
   text-align: justify;
   line-height: 30px;
@@ -350,6 +355,7 @@ main#main .box_5 .content_3 .content_3_box p {
   font-size: 18px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
+  color: #5C4D50;
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -369,6 +375,7 @@ main#main .box_5 .content_3 .content_3_box ul li {
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   position: relative;
+  color: #5C4D50;
 }
 
 main#main .box_5 .content_3 .content_3_box ul li span {

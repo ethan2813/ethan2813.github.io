@@ -1,5 +1,5 @@
 // 點漢堡跑出清單
-$('.burger').on('click',(e)=>{
+$('.menu').on('click',(e)=>{
     $('.nav_list').addClass('active')
 })
 $('.nav_list .close').on('click',(e)=>{

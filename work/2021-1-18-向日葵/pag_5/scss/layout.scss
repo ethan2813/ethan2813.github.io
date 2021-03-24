@@ -15,6 +15,10 @@ body{
     font-family: 'Noto Serif TC', serif;
 }   
 
+.bold{
+    font-weight: bold;
+}
+
 
 
 nav#nav{
@@ -172,7 +176,7 @@ footer#footer{
             h3{
                 font-size: 30px;
                 font-weight: bold;
-                letter-spacing: 8px;
+                letter-spacing: 3px;
                 margin-bottom: 30px;
             }
             p{
