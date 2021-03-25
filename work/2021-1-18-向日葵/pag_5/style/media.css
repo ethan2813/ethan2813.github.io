@@ -164,8 +164,8 @@
             transform: translate(-50%, -50%);
     left: 80%;
     top: 50%;
-    font-size: 22px;
-    letter-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: 6px;
     color: white;
     white-space: nowrap;
     -webkit-writing-mode: vertical-lr;
@@ -248,8 +248,8 @@
             transform: translate(-50%, -50%);
     left: 80%;
     top: 50%;
-    font-size: 22px;
-    letter-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 6px;
     color: white;
     white-space: nowrap;
     -webkit-writing-mode: vertical-lr;

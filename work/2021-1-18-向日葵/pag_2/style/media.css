@@ -118,8 +118,8 @@
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     white-space: nowrap;
-    font-size: 22px;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 6px;
     color: white;
     margin: 0;
   }
@@ -145,7 +145,7 @@
     margin-bottom: 130px;
   }
   main#main .box_3 .content_ .item .item_article .content h3 {
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 5px;
   }
   main#main .box_3 .content_ .item .item_article .content p {
@@ -175,6 +175,9 @@
     margin-left: 0%;
     display: inline-block;
     letter-spacing: 3px;
+  }
+  main#main .box_5 .title_ p:nth-of-type(1) {
+    font-size: 30px;
   }
   main#main .box_5 .title_ p:nth-of-type(1)::after {
     content: '';

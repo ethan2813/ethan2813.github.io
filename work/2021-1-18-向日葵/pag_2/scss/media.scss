@@ -144,8 +144,8 @@
                     top: 50%; 
                     transform: translate(-50% , -50%);
                     white-space: nowrap;
-                    font-size: 22px;
-                    letter-spacing: 3px;
+                    font-size: 20px;
+                    letter-spacing: 6px;
                     color: white;
                     margin: 0;
                 }
@@ -180,7 +180,7 @@
                         margin-bottom: 130px;
                         .content{
                             h3{
-                                font-size: 30px;
+                                font-size: 27px;
                                 letter-spacing: 5px;
                             }
                             p{
@@ -223,6 +223,7 @@
                     letter-spacing: 3px; 
                 }
                 p:nth-of-type(1){
+                    font-size: 30px;
                     &::after{
                         content: '';
                         display: none;
