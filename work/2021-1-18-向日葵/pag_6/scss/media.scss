@@ -171,7 +171,8 @@
 
                 
                 p{
-                    font-size: 22px;
+                    font-size: 30px;
+                    letter-spacing: 4px;
                     margin-left: 0%;
                     display: inline-block;
 
@@ -189,8 +190,12 @@
                     padding-bottom: 90px;
                     h3{
                         font-size: 20px;
-                        line-height: 50px;
-                        text-align: left;
+                        letter-spacing: 4px;
+                        line-height: 40px;
+                        text-align: left;   
+                        br.br{
+                            display: block;
+                        }
                     }
                     p{
                         font-size: 16px;
@@ -205,7 +210,7 @@
                         .top_R{
                             margin-bottom: 0px;
                             h3{
-                                font-size: 30px;
+                                font-size: 27px;
                             }
                             h2{
                                 font-size: 20px;
@@ -220,7 +225,7 @@
                             margin-bottom: 0px;
 
                             h3{
-                                font-size: 30px;
+                                font-size: 27px;
                             }
                             p{
                                 font-size: 16px;
@@ -271,7 +276,7 @@
                 .title_box{
                     margin-left: 0px;
                     p:nth-of-type(1){
-                        font-size: 22px;
+                        font-size: 30px;
                         &::after{
                             // right: 190px;
                             left: -20px;
@@ -289,7 +294,7 @@
                 margin-top: 80px;
                 h3{
                     font-size: 20px;
-                    letter-spacing: 5px;
+                    letter-spacing: 3px;
                     line-height: 35px;
                 }
                 p{
@@ -305,7 +310,7 @@
                 .top_R{
                     margin-bottom: 0px;
                     h3{
-                        font-size: 30px;
+                        font-size: 27px;
                     }
                     h2{
                         font-size: 20px;
@@ -326,7 +331,7 @@
 
                 
                 p{
-                    font-size: 22px;
+                    font-size: 30px;
                     margin-left: 0%;
                     display: inline-block;
 
@@ -358,7 +363,7 @@
                             margin-bottom: 0px;
 
                             h3{
-                                font-size: 30px;
+                                font-size: 27px;
                             }
                             p{
                                 font-size: 16px;
@@ -384,7 +389,7 @@
                 .title_box{
                     margin-left: 0px;
                     p:nth-of-type(1){
-                        font-size: 22px;
+                        font-size: 30px;
                         &::after{
                             // right: 190px;
                             left: -20px;
@@ -418,7 +423,7 @@
                 .top_R{
                     margin-bottom: 0px;
                     h3{
-                        font-size: 30px;
+                        font-size: 27px;
                     }
                     h2{
                         font-size: 20px;

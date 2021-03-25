@@ -175,6 +175,10 @@ main#main .box_2 .content_ h3 {
   margin-bottom: 75px;
 }
 
+main#main .box_2 .content_ h3 br.br {
+  display: none;
+}
+
 main#main .box_2 .content_ p {
   font-size: 18px;
   font-family: 微軟正黑體;

@@ -171,6 +171,10 @@ main#main .box_3 .content_ .content_title h3 {
   font-weight: bold;
 }
 
+main#main .box_3 .content_ .content_title h3 br.br {
+  display: none;
+}
+
 main#main .box_3 .content_ .content_title p {
   font-size: 18px;
   font-family: 微軟正黑體;
@@ -372,6 +376,9 @@ main#main .box_5 .content_ p {
   font-family: 微軟正黑體;
   letter-spacing: 6px;
   color: #5C4D50;
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
 main#main .box_5 .top {
