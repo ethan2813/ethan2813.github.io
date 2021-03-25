@@ -47,6 +47,7 @@ nav#nav .phone_number {
 nav#nav .phone_number a {
   color: black;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav#nav .menu {
