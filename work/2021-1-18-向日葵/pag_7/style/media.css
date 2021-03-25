@@ -110,7 +110,7 @@
     padding: 55px 15px;
   }
   main#main .box_1 .article_box .article h3 {
-    font-size: 20px;
+    font-size: 27px;
     letter-spacing: 3px;
   }
   main#main .box_1 .article_box .article p {
@@ -141,7 +141,7 @@
     margin-left: 0%;
   }
   main#main .box_2 .title_ .title_box p:nth-of-type(1) {
-    font-size: 22px;
+    font-size: 30px;
   }
   main#main .box_2 .title_ .title_box p:nth-of-type(1)::after {
     left: -20px;
@@ -190,7 +190,7 @@
     margin-right: 0%;
   }
   main#main .box_3 .title_ .title_box p:nth-of-type(1) {
-    font-size: 22px;
+    font-size: 30px;
   }
   main#main .box_3 .title_ .title_box p:nth-of-type(1)::after {
     left: -20px;
@@ -256,7 +256,7 @@
     margin-left: 0%;
   }
   main#main .box_4 .title_ .title_box p:nth-of-type(1) {
-    font-size: 22px;
+    font-size: 30px;
   }
   main#main .box_4 .title_ .title_box p:nth-of-type(1)::after {
     left: -20px;
@@ -317,7 +317,7 @@
     margin-bottom: 0;
   }
   main#main .box_6 .content_ .content_bot .title_ p {
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 3px;
   }
   main#main .box_6 .content_ .content_bot .content_2_box h3 {

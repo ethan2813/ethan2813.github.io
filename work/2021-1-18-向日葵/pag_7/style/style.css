@@ -82,12 +82,10 @@ main#main .box_1 {
 
 main#main .box_1 .article_box {
   background-color: white;
-  text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
   max-width: 920px;
   padding: 80px 128px;
   border-radius: 30px;
+  text-align: center;
 }
 
 main#main .box_1 .article_box .article h3 {
@@ -102,6 +100,9 @@ main#main .box_1 .article_box .article > p {
   letter-spacing: 3px;
   font-family: 微軟正黑體;
   color: #5c4d50;
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
 main#main .box_1 .article_box .article > p:last-of-type {

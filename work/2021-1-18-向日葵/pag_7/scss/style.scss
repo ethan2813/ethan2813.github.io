@@ -76,11 +76,11 @@ main#main{
 
         .article_box{
             background-color: white;
-            text-align:justify;
-            text-align-last:center;
+            
             max-width: 920px;
             padding: 80px 128px;
             border-radius: 30px;
+            text-align: center;
             .article{
                 h3{
                     font-size: 23px;
@@ -93,6 +93,8 @@ main#main{
                     letter-spacing: 3px;
                     font-family: 微軟正黑體;
                     color: #5c4d50;
+                    text-align:justify;
+                    text-align-last:center;
 
                 }
                 >p:last-of-type{
