@@ -183,6 +183,9 @@
     content: '';
     display: none;
   }
+  main#main .box_5 .title_ p:nth-of-type(2) {
+    font-size: 19px;
+  }
   main#main .box_5 .content_1 {
     margin-bottom: 70px;
   }

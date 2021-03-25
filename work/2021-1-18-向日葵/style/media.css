@@ -197,7 +197,7 @@
     display: inline-block;
   }
   main#main .device .title_ p::after {
-    left: 130px;
+    left: 150px;
   }
   main#main .device .title_ p span {
     display: none;
