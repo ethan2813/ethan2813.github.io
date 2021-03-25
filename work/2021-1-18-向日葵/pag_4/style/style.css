@@ -40,7 +40,7 @@ main#main .banner_list {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin-left: 20%;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
@@ -61,7 +61,7 @@ main#main .banner_list p:nth-of-type(5) {
 }
 
 main#main .box_1 {
-  padding-top: 150px;
+  padding-top: 60px;
   padding-bottom: 480px;
   position: relative;
   background-image: url(../img/round.png);

@@ -47,7 +47,7 @@ main#main .banner_list {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin-left: 20%;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 main#main .banner_list p {
@@ -72,7 +72,7 @@ main#main .about {
 
 main#main .about .title_ {
   position: relative;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 80px;
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
