@@ -111,11 +111,18 @@
 
 @media(max-width:1300px){
     main#main{
+        .banner{
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
         .about{
             .content_{
                 background-size: cover;
                 background-position: center;
                 .article{
+                    max-width: 47%;
                     p{
                         margin-bottom: 0;
                         .content{
@@ -131,23 +138,7 @@
         }
     }
 }
-@media(max-width:1200px){
-    main#main{
-        .banner{
-            p{
-                font-size: 20px;
-                letter-spacing: 2px;
-            }
-        }
-        .about{
-            .content_{
-                .article{
-                    max-width: 47%;
-                }
-            }
-        }
-    }
-}
+
 
 @media(max-width:996px){
     main#main{

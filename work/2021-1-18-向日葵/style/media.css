@@ -75,9 +75,16 @@
 }
 
 @media (max-width: 1300px) {
+  main#main .banner p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
   main#main .about .content_ {
     background-size: cover;
     background-position: center;
+  }
+  main#main .about .content_ .article {
+    max-width: 47%;
   }
   main#main .about .content_ .article p {
     margin-bottom: 0;
@@ -87,16 +94,6 @@
   }
   main#main .about .content_ img.flower {
     display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  main#main .banner p {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-  main#main .about .content_ .article {
-    max-width: 47%;
   }
 }
 
