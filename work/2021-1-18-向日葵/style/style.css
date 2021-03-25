@@ -83,7 +83,7 @@ main#main .about .title_ p {
   margin-left: 15%;
   font-size: 36px;
   position: relative;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   color: #5C4D50;
 }
 
@@ -144,7 +144,7 @@ main#main .about .content_ .article .content h3 {
 main#main .about .content_ .article .content p {
   font-size: 18px;
   font-family: 微軟正黑體;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   color: #5C4D50;
   -webkit-transform: translate(0%, 0px);
       -ms-transform: translate(0%, 0px);
@@ -238,12 +238,14 @@ main#main .device {
   margin-bottom: 210px;
 }
 
-main#main .device .device_L .device_L_top img {
+main#main .device .device_L .device_L_all img {
   width: 100%;
+  display: block;
 }
 
 main#main .device .device_L .device_L_bot img {
   width: 100%;
+  display: none;
 }
 
 main#main .device .title_ p {

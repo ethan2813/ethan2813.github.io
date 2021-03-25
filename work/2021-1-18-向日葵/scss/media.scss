@@ -70,6 +70,20 @@
                 }
             }
         }
+        .device{
+            .device_L{
+                .device_L_all{
+                    img{
+                        // display: none;
+                    }
+                }
+                .device_L_bot{
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 

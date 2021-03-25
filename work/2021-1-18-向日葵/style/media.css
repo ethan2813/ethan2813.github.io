@@ -49,6 +49,9 @@
   main#main .about .content_ .article .content {
     max-width: 800px;
   }
+  main#main .device .device_L .device_L_bot img {
+    display: block;
+  }
 }
 
 @media (max-width: 1600px) {
