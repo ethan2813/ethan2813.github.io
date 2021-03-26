@@ -85,6 +85,11 @@
     font-size: 20px;
     letter-spacing: 2px;
   }
+  main#main .banner .banner_1_icon {
+    width: 15vw;
+    bottom: -20px;
+    right: 80px;
+  }
   main#main .about .content_ {
     background-size: cover;
     background-position: center;
