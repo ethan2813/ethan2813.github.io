@@ -62,7 +62,7 @@ main#main .banner_list p:nth-of-type(5) {
 
 main#main .box_1 {
   padding-top: 60px;
-  padding-bottom: 480px;
+  padding-bottom: 300px;
   position: relative;
   background-image: url(../img/round.png);
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ main#main .box_1 .color_box {
 
 main#main .box_2 {
   margin-top: -200px;
-  padding-bottom: 250px;
+  padding-bottom: 180px;
 }
 
 main#main .box_2 .title_ {
