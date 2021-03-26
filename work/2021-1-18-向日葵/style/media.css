@@ -97,6 +97,7 @@
   main#main .about .content_ .article {
     max-width: 47%;
     padding-left: 10px;
+    padding-bottom: 15px;
   }
   main#main .about .content_ .article p {
     margin-bottom: 0;
