@@ -148,6 +148,10 @@ main#main .experience .experience_box p {
   margin-bottom: 10px;
 }
 
+main#main .experience .experience_box p.norap {
+  white-space: nowrap;
+}
+
 main#main .experience .experience_box:before {
   content: '';
   display: block;
