@@ -45,7 +45,7 @@ main#main .banner_list {
 }
 
 main#main .banner_list p {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 6px;
   padding: 15px 15px;
   margin: 0;
@@ -66,7 +66,7 @@ main#main .box_1 {
 }
 
 main#main .box_1 p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   line-height: 32px;
@@ -129,7 +129,7 @@ main#main .box_3 .title_ {
 
 main#main .box_3 .title_ p {
   margin-left: 25%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 10px;
   color: #5C4D50;
@@ -168,7 +168,7 @@ main#main .box_3 .content_ .item .item_photo img {
 }
 
 main#main .box_3 .content_ .item .item_article .content h3 {
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 10px;
   color: #5c4d50;
   margin-bottom: 25px;
@@ -188,7 +188,7 @@ main#main .box_3 .content_ .item .item_article .content ul {
 main#main .box_3 .content_ .item .item_article .content ul li {
   list-style: none;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   line-height: 30px;
   font-family: 微軟正黑體;
@@ -197,7 +197,7 @@ main#main .box_3 .content_ .item .item_article .content ul li {
 
 main#main .box_3 .content_ .item .item_article .content ul li:before {
   content: '·';
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   width: 20px;
   position: absolute;
@@ -246,7 +246,7 @@ main#main .box_5 .title_ {
 
 main#main .box_5 .title_ p {
   margin-left: 25%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 10px;
   color: #5C4D50;
@@ -275,7 +275,7 @@ main#main .box_5 .content_1 {
 }
 
 main#main .box_5 .content_1 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 6px;
   margin: 0 15px;
@@ -302,7 +302,7 @@ main#main .box_5 .content_2 .content_2_box h3 {
 }
 
 main#main .box_5 .content_2 .content_2_box p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 8px;
   font-family: 微軟正黑體;
   color: #5C4D50;
@@ -356,7 +356,7 @@ main#main .box_5 .content_3 .content_3_box h3 {
 }
 
 main#main .box_5 .content_3 .content_3_box p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   color: #5C4D50;
@@ -375,7 +375,7 @@ main#main .box_5 .content_3 .content_3_box ul {
 }
 
 main#main .box_5 .content_3 .content_3_box ul li {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   position: relative;

@@ -69,7 +69,7 @@ main#main .box_1 > .title_ {
 
 main#main .box_1 > .title_ p {
   margin-left: 25%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 10px;
   color: #5C4D50;
@@ -96,7 +96,7 @@ main#main .box_1 > .title_ p span {
 }
 
 main#main .box_1 .content_ p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   text-align: justify;
@@ -136,7 +136,7 @@ main#main .box_2 .title_ .title_box {
 }
 
 main#main .box_2 .title_ .title_box p:nth-of-type(1) {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -180,7 +180,7 @@ main#main .box_2 .content_ h3 br.br {
 }
 
 main#main .box_2 .content_ p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 6px;
   text-align: justify;
@@ -233,7 +233,7 @@ main#main .box_4 .title_ {
 }
 
 main#main .box_4 .title_ h3 {
-  font-size: 36px;
+  font-size: 30px;
   color: #8eab5d;
   letter-spacing: 10px;
   margin-bottom: 25px;
@@ -247,7 +247,7 @@ main#main .box_4 .title_ h4 {
 }
 
 main#main .box_4 .title_ p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 3px;
   color: #5C4D50;
@@ -279,7 +279,7 @@ main#main .box_4 .content_ .content_box .item h3 {
 }
 
 main#main .box_4 .content_ .content_box .item p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 3px;
   text-align: justify;
@@ -312,7 +312,7 @@ main#main .box_5 .title_ .title_box {
 }
 
 main#main .box_5 .title_ .title_box p:nth-of-type(1) {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -344,7 +344,7 @@ main#main .box_5 .content_ {
 }
 
 main#main .box_5 .content_ p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 6px;
   color: #5C4D50;
@@ -418,7 +418,7 @@ main#main .box_7 .item img {
 
 main#main .box_7 .item p {
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
   color: #5c4d50;
   max-width: 300px;
   letter-spacing: 2px;

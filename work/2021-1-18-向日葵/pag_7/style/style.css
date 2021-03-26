@@ -97,7 +97,7 @@ main#main .box_1 .article_box .article h3 {
 }
 
 main#main .box_1 .article_box .article > p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 3px;
   font-family: 微軟正黑體;
   color: #5c4d50;
@@ -127,7 +127,7 @@ main#main .box_1 .article_box .article .btn p:nth-of-type(1) {
 }
 
 main#main .box_1 .article_box .article .btn p:nth-of-type(2) {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #5c4d50;
   -webkit-transition: 0.5s;
@@ -163,7 +163,7 @@ main#main .box_2 .title_ .title_box {
 }
 
 main#main .box_2 .title_ .title_box p:nth-of-type(1) {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -212,7 +212,7 @@ main#main .box_2 .content_ .content_top {
 }
 
 main#main .box_2 .content_ .content_top p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 5px;
   line-height: 30px;
@@ -257,7 +257,7 @@ main#main .box_2 .content_ .content_bot .item > img {
 }
 
 main#main .box_2 .content_ .content_bot .item p {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 2px;
   color: #5c4d50;
@@ -307,7 +307,7 @@ main#main .box_3 .title_ .title_box {
 }
 
 main#main .box_3 .title_ .title_box p:nth-of-type(1) {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -382,7 +382,7 @@ main#main .box_3 .content_ .content_top h3 .emsp {
 }
 
 main#main .box_3 .content_ .content_top p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 5px;
   line-height: 30px;
@@ -426,7 +426,7 @@ main#main .box_3 .content_ .content_bot .item > img {
 }
 
 main#main .box_3 .content_ .content_bot .item p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 4px;
   text-align: justify;
@@ -454,7 +454,7 @@ main#main .box_4 .title_ .title_box {
 }
 
 main#main .box_4 .title_ .title_box p:nth-of-type(1) {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -550,7 +550,7 @@ main#main .box_6 .content_ .content_top h3 br.br {
 }
 
 main#main .box_6 .content_ .content_top p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 5px;
   line-height: 30px;
@@ -569,7 +569,7 @@ main#main .box_6 .content_ .content_bot .title_ {
 }
 
 main#main .box_6 .content_ .content_bot .title_ p {
-  font-size: 36px;
+  font-size: 30px;
   color: #8eab5d;
   letter-spacing: 12px;
 }
@@ -588,7 +588,7 @@ main#main .box_6 .content_ .content_bot .content_2_box h3 {
 }
 
 main#main .box_6 .content_ .content_bot .content_2_box p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 5px;
   font-family: 微軟正黑體;
   margin-bottom: 10px;

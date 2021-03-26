@@ -81,7 +81,7 @@ main#main .about .title_ {
 
 main#main .about .title_ p {
   margin-left: 15%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 8px;
   color: #5C4D50;
@@ -142,7 +142,7 @@ main#main .about .content_ .article .content h3 {
 }
 
 main#main .about .content_ .article .content p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 5px;
   color: #5C4D50;
@@ -169,7 +169,7 @@ main#main .items .title_ {
 
 main#main .items .title_ p {
   margin-left: 25%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 10px;
   color: #5C4D50;
@@ -225,7 +225,7 @@ main#main .items .content_ .content_box p {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bolder;
   letter-spacing: 15px;
   width: 100%;
@@ -249,7 +249,7 @@ main#main .device .device_L .device_L_bot img {
 }
 
 main#main .device .title_ p {
-  font-size: 36px;
+  font-size: 30px;
   color: #5C4D50;
   letter-spacing: 10px;
   position: relative;
@@ -285,7 +285,7 @@ main#main .device .content_ p:nth-of-type(2) {
 
 main#main .device .content_ p:nth-of-type(3) {
   color: #5C4D50;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 微軟正黑體;
   letter-spacing: 4px;
   line-height: 32px;

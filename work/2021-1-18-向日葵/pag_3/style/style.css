@@ -69,7 +69,7 @@ main#main .box_1 {
 }
 
 main#main .box_1 p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 6px;
   font-family: 微軟正黑體;
   text-align: justify;
@@ -86,7 +86,7 @@ main#main .box_2 .title_ {
 
 main#main .box_2 .title_ p {
   margin-left: 25%;
-  font-size: 36px;
+  font-size: 30px;
   position: relative;
   letter-spacing: 10px;
   color: #5C4D50;
@@ -149,7 +149,7 @@ main#main .box_2 .content_ .item .item_photo img:nth-of-type(2) {
 }
 
 main#main .box_2 .content_ .item .item_article .content h3 {
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 10px;
   color: #5c4d50;
   margin-bottom: 25px;
@@ -163,7 +163,7 @@ main#main .box_2 .content_ .item .item_article .content p:nth-of-type(1) {
 }
 
 main#main .box_2 .content_ .item .item_article .content p:nth-of-type(2) {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   line-height: 30px;
   font-family: 微軟正黑體;

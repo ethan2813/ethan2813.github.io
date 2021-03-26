@@ -47,6 +47,9 @@
     font-size: 22px;
     letter-spacing: 3px;
   }
+  main#main .box_1 .color_box {
+    display: none;
+  }
   main#main .box_4 .pc p {
     font-size: 22px;
     letter-spacing: 3px;
