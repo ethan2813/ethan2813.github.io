@@ -31,7 +31,7 @@ main#main .banner p {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   white-space: nowrap;
-  font-size: 26px;
+  font-size: 22px;
   letter-spacing: 6px;
   color: #5C4D50;
   position: absolute;
@@ -51,7 +51,7 @@ main#main .banner_list {
 }
 
 main#main .banner_list p {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 6px;
   padding: 15px 15px;
   margin: 0;
