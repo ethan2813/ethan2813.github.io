@@ -86,7 +86,7 @@
     letter-spacing: 2px;
   }
   main#main .banner .banner_1_icon {
-    width: 15vw;
+    width: 13vw;
     bottom: -20px;
     right: 80px;
   }
@@ -96,6 +96,7 @@
   }
   main#main .about .content_ .article {
     max-width: 47%;
+    padding-left: 10px;
   }
   main#main .about .content_ .article p {
     margin-bottom: 0;
