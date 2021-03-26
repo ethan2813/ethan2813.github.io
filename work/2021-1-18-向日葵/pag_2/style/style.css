@@ -277,7 +277,7 @@ main#main .box_5 .content_1 {
 main#main .box_5 .content_1 p {
   font-size: 16px;
   font-family: 微軟正黑體;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   margin: 0 15px;
   text-align: justify;
   line-height: 30px;
@@ -303,7 +303,7 @@ main#main .box_5 .content_2 .content_2_box h3 {
 
 main#main .box_5 .content_2 .content_2_box p {
   font-size: 16px;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   font-family: 微軟正黑體;
   color: #5C4D50;
   margin-bottom: 10px;
@@ -376,7 +376,7 @@ main#main .box_5 .content_3 .content_3_box ul {
 
 main#main .box_5 .content_3 .content_3_box ul li {
   font-size: 16px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   font-family: 微軟正黑體;
   position: relative;
   color: #5C4D50;
