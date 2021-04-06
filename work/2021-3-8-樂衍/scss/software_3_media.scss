@@ -557,6 +557,9 @@
     .wrapper{
        
         .box_1{
+            padding-top: 50px;
+            background-size: cover;
+    background-position: center;
             .title_{
                 .right{
                     p{
@@ -587,6 +590,9 @@
             }
         }
         .box_2{
+            img.circle{
+                display: none;
+            }
             .title_{
                 .right{
                     p.mobile{
@@ -963,6 +969,18 @@
         .box_6{
             .bot{
                 padding-top: 200px;
+                background-size: 150%;
+                background-position: top 0px left 0px;
+            }
+        }
+        .box_7{
+            .bot{
+                img.pc{
+                    display: none;
+                }
+                img.mobile{
+                    display: block;
+                }
             }
         }
         .box_8{

@@ -63,7 +63,7 @@
 
 .wrapper .box_1 {
   margin-bottom: -30px;
-  padding-top: 170px;
+  padding-top: 270px;
   background-image: url(../images/software_2/banner-bgc.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -158,6 +158,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.wrapper .box_2 img.circle {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 20%;
 }
 
 .wrapper .box_2 .title_ {
@@ -844,6 +852,14 @@
 
 .wrapper .box_7 .bot img {
   width: 100%;
+}
+
+.wrapper .box_7 .bot img.pc {
+  display: block;
+}
+
+.wrapper .box_7 .bot img.mobile {
+  display: none;
 }
 
 .wrapper .box_8 {

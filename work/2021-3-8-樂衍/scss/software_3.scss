@@ -71,7 +71,7 @@
 
     .box_1{
         margin-bottom: -30px;
-        padding-top: 170px;
+        padding-top: 270px;
         background-image: url(../images/software_2/banner-bgc.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -168,6 +168,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
+        position: relative;
+        img.circle{
+            display: block;
+            position: absolute;
+            top: 35px;
+            right: 20%;
+        }
 
         .title_{
             
@@ -394,6 +401,7 @@
     }
     .box_3{
         padding-top: 150px;
+        
         .title_{
             
             display: flex;
@@ -857,6 +865,12 @@
             margin-top: 50px;
             img{
                 width: 100%;
+            }
+            img.pc{
+                display: block;
+            }
+            img.mobile{
+                display: none;
             }
         }
         
