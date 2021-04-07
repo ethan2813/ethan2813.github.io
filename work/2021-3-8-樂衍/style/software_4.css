@@ -459,16 +459,22 @@
           align-items: flex-start;
 }
 
-.wrapper .box_4_ .item > img {
+.wrapper .box_4_ .item img.pc_number {
   width: 30px;
+  display: block;
 }
 
 .wrapper .box_4_ .item .article {
   margin-left: 20px;
 }
 
-.wrapper .box_4_ .item .article > h3.subtitle__ {
+.wrapper .box_4_ .item .article .subtitle__ {
   color: #80654A;
+}
+
+.wrapper .box_4_ .item .article .subtitle__ img.mobile_number {
+  width: 30px;
+  display: none;
 }
 
 .wrapper .box_4_ .bot {

@@ -300,12 +300,20 @@
 
         }
         .box_4_{
-            .title_{
-                .left{
-                    img.left_img{
-                        display: none;
+            .item{
+                // 電腦版的AB
+                img.pc_number{
+                    display: none;
+                }
+                .article{
+                    margin-left: 0;
+                    .subtitle__{
+                        img.mobile_number{
+                            display: block;
+                        }
                     }
                 }
+
             }
         }
     }

@@ -479,13 +479,18 @@
             margin-top: 60px;
             display: flex;
             align-items: flex-start;
-            >img{
+            img.pc_number{
                 width: 30px;
+                display: block;
             }
             .article{
                 margin-left: 20px;
-                >h3.subtitle__{
+                .subtitle__{
                     color: #80654A;
+                    img.mobile_number{
+                        width: 30px;
+                        display: none;
+                    }
                 }
             }
         }

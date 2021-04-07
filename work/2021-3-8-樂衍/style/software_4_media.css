@@ -245,8 +245,14 @@
   .wrapper .box_3_ .box_3_photo img.mobile {
     display: block;
   }
-  .wrapper .box_4_ .title_ .left img.left_img {
+  .wrapper .box_4_ .item img.pc_number {
     display: none;
+  }
+  .wrapper .box_4_ .item .article {
+    margin-left: 0;
+  }
+  .wrapper .box_4_ .item .article .subtitle__ img.mobile_number {
+    display: block;
   }
 }
 
