@@ -81,9 +81,6 @@
 }
 
 .wrapper .box_1 .title_ .right p {
-  -webkit-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
-          transform: rotate(-2deg);
   white-space: nowrap;
   font-weight: bold;
   line-height: 40px;
