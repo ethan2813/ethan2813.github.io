@@ -499,12 +499,14 @@
         }
         .bot{
             margin-top: 65px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
             .photo{
-                display: flex;
-                justify-content: center;
-                img{
-                    width: 100%;
-                }
+                
+                
             }
             
         }

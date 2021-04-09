@@ -493,9 +493,6 @@
 
 .wrapper .box_4_ .bot {
   margin-top: 65px;
-}
-
-.wrapper .box_4_ .bot .photo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -506,7 +503,7 @@
           justify-content: center;
 }
 
-.wrapper .box_4_ .bot .photo img {
+.wrapper .box_4_ .bot img {
   width: 100%;
 }
 
