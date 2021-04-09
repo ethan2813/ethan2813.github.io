@@ -492,6 +492,7 @@
 }
 
 .wrapper .box_4_ .bot {
+  width: 100%;
   margin-top: 65px;
   display: -webkit-box;
   display: -webkit-flex;
