@@ -931,17 +931,6 @@
   }
 }
 
-.wrapper .box_9_ .content_2 .text .box_9_img_mobile_box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .wrapper .box_9_ .content_2 .text .box_9_img_mobile_box .bot_9_img_mobile {
   display: none;
 }
