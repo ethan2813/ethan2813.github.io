@@ -950,6 +950,7 @@
   .wrapper .box_9_ .content_2 .text .box_9_img_mobile_box .bot_9_img_mobile {
     display: block;
     width: 60%;
+    height: auto;
     margin-bottom: 50px;
   }
 }
