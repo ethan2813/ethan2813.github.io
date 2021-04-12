@@ -79,11 +79,12 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 70px;
+    top: 80px;
     right: -100%;
-    -webkit-box-shadow: 2px 5px 6px -3px black;
-            box-shadow: 2px 5px 6px -3px black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 2px #ddd;
+            box-shadow: 2px 2px 2px #ddd;
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -95,8 +96,8 @@
     display: none;
   }
   nav#nav .nav_countainer .nav_links.nav_active {
-    top: 70px;
-    right: 0;
+    top: 80px;
+    right: 5px;
   }
   nav#nav .nav_countainer .burger {
     display: block;
@@ -226,9 +227,6 @@
   main#main section#team .team_title {
     margin: 75px 0 70px 0;
   }
-  main#main section#team .team_title:before {
-    height: 20px;
-  }
   main#main section#team .content_ .doctor_row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -278,9 +276,6 @@
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  main#main section#setting .setting_article .setting_title:before {
-    height: 20px;
   }
   main#pagi_main section#artificial-dental .content_ .doctor_row {
     display: -webkit-box;
@@ -361,10 +356,10 @@
     margin: 30px 0 30px 0;
   }
   main#main section#setting .setting_article .setting_title {
-    font-size: 28px;
+    font-size: 30px;
   }
   main#main section#setting .setting_article .text {
-    padding: 0px;
+    padding: 0 20px;
   }
   main#main section#setting .setting_article .text p {
     letter-spacing: 0px;
@@ -404,11 +399,11 @@
     text-align: unset;
   }
   main#main section#banner .content_3 .opening {
-    width: 100%;
+    width: 80%;
   }
   main#main section#banner .content_3 .opening h2 {
     margin-top: 10px;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 0;
   }
   main#main section#banner .content_3 .opening .bl {
@@ -416,17 +411,10 @@
     margin: 0;
   }
   main#main section#banner .content_3 .opening .table_opening {
-    font-size: 20px;
-  }
-  main#main section#banner .content_3 .opening .table_opening td.week_time {
-    font-size: 16px;
-    padding: 0 3px;
+    font-size: 18px;
   }
   main#main section#banner .content_3 .opening .table_opening td {
     padding: 3px 5px;
-  }
-  main#main section#banner .content_3 .opening .text {
-    font-size: 18px;
   }
   main#pagi_main section#pagi_banner .content .pagi_banner {
     display: none;
@@ -548,34 +536,6 @@
   }
 }
 
-@media (min-width: 500px) {
-  main#pagi_main section#all-ceramic .article {
-    width: 500px;
-  }
-}
-
-@media (max-width: 450px) {
-  nav#nav .nav_countainer .logo {
-    width: 70%;
-  }
-  main#main section#banner .content_3 .opening {
-    width: 100%;
-  }
-  main#main section#banner .content_3 .opening .table_opening {
-    font-size: 16px;
-    width: 98%;
-  }
-  main#main section#banner .content_3 .opening .table_opening td.week_time {
-    margin: 0;
-  }
-  main#main section#banner .content_3 .opening .table_opening td {
-    padding: 8px 4px;
-  }
-  main#main section#banner .content_3 .opening .table_opening td.week .week_in {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 420px) {
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
@@ -589,14 +549,22 @@
   }
 }
 
-@media (max-width: 350px) {
-  main#main section#setting .setting_article .text p {
-    font-size: 15;
-    letter-spacing: -1px;
+@media (min-width: 500px) {
+  main#pagi_main section#all-ceramic .article {
+    width: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  nav#nav .nav_countainer .logo {
+    width: 70%;
   }
 }
 
 @media (max-width: 370px) {
+  main#main section#banner .content_3 .opening {
+    width: 90%;
+  }
   main#main section#team .content_ .doctor_row .doctor {
     width: 95%;
   }
@@ -609,23 +577,9 @@
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 320px) {
   main#main section#setting .setting_article .text p {
-    letter-spacing: 0px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 313px) {
-  main#main section#setting .setting_article .text p {
-    letter-spacing: 0px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 300px) {
-  main#main section#setting .setting_article .text p {
-    letter-spacing: 0px;
-    font-size: 14px;
+    letter-spacing: -2px;
+    font-size: 18px;
   }
 }

@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
             // .title-box 同一層的 .contents-box
             const content = e.target.parentNode.querySelector('.contents-box');
-            console.log(content)
             const height = content.dataset.height; // 從 dat-height 抓原本高度
 
             // 判斷 .title-box 有沒有 .active
