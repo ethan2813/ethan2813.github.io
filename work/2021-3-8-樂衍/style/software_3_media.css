@@ -1,17 +1,17 @@
 .p__ {
-  font-size: 17px;
+  font-size: 18px;
   letter-spacing: 0.05em;
 }
 
 @media (max-width: 1200px) {
   .p__ {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 768px) {
   .p__ {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -246,6 +246,9 @@
   .wrapper .box_5 .content {
     padding-left: 100px;
     margin-top: 50px;
+  }
+  .wrapper .box_5 .bot {
+    padding-top: 400px;
   }
   .wrapper .box_6 .title_ .right p.pc {
     display: none;
@@ -580,7 +583,7 @@
     padding-left: 0px;
   }
   .wrapper .box_5 .bot {
-    padding-top: 230px;
+    padding-top: 300px;
   }
   .wrapper .box_5 .bot .bot_dialog:before {
     background-size: 40px;
@@ -594,7 +597,7 @@
     padding-left: 0px;
   }
   .wrapper .box_6 .bot {
-    padding-top: 230px;
+    padding-top: 380px;
   }
   .wrapper .box_6 .bot .bot_dialog:before {
     background-size: 40px;
@@ -744,7 +747,7 @@
     margin-top: 10px;
   }
   .wrapper .box_5 .bot {
-    padding-top: 200px;
+    padding-top: 220px;
   }
   .wrapper .box_6 .bot {
     padding-top: 200px;
@@ -809,7 +812,7 @@
     max-width: 140px;
   }
   .wrapper .box_5 .bot {
-    padding-top: 180px;
+    padding-top: 200px;
   }
   .wrapper .box_6 .bot {
     padding-top: 180px;

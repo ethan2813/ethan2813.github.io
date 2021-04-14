@@ -1,18 +1,18 @@
 .p__ {
   color: #484746;
-  font-size: 17px;
-  letter-spacing: 0.05em;
+  font-size: 18px;
+  letter-spacing: 0.06em;
 }
 
 @media (max-width: 1200px) {
   .p__ {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 768px) {
   .p__ {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 

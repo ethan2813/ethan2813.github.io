@@ -242,7 +242,6 @@
 
 .wrapper .box_2 .article .article_1 p {
   line-height: 26px;
-  letter-spacing: 0.05em;
   color: #484746;
   position: relative;
 }
@@ -276,7 +275,6 @@
 
 .wrapper .box_2 .article .article_2 p {
   line-height: 26px;
-  letter-spacing: 0.05em;
   color: #484746;
   position: relative;
 }
@@ -361,7 +359,6 @@
 
 .wrapper .box_3_ .article .article_1 p {
   line-height: 26px;
-  letter-spacing: 0.05em;
   color: #484746;
   z-index: 1;
 }
@@ -402,7 +399,6 @@
 
 .wrapper .box_3_ .article .article_2 p {
   line-height: 26px;
-  letter-spacing: 0.05em;
   color: #484746;
   position: relative;
 }
@@ -664,7 +660,6 @@
 .wrapper .box_6_ .content_2 .dialog_2 p {
   margin-top: 0;
   text-align: justify;
-  letter-spacing: 0.03em;
   color: #80654A;
   margin-bottom: 0;
 }
@@ -922,7 +917,7 @@
 }
 
 .wrapper .box_9_ .content_2 .text {
-  margin-top: 400px;
+  margin-top: 250px;
 }
 
 @media (max-width: 768px) {
