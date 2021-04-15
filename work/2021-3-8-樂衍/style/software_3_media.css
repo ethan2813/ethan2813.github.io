@@ -1,6 +1,7 @@
 .p__ {
+  color: #484746;
   font-size: 18px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 @media (max-width: 1200px) {
@@ -11,7 +12,7 @@
 
 @media (max-width: 768px) {
   .p__ {
-    font-size: 16px !important;
+    font-size: 16px;
   }
 }
 
