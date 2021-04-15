@@ -554,17 +554,16 @@
                         display: none;
                     }
                 }
+                >img{
+
+                    width: 100%;
+                }
             }
             &.top{
                 margin-top: 60px;
             }
         }
-        // 下圖
-        .bot{
-            img{
-                width: 100%;
-            }
-        }
+        
     }
     .box_6_{
         padding-top: 150px;

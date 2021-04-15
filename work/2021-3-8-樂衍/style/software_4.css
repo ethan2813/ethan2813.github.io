@@ -567,12 +567,12 @@
   display: none;
 }
 
-.wrapper .box_5_ .item.top {
-  margin-top: 60px;
+.wrapper .box_5_ .item .article > img {
+  width: 100%;
 }
 
-.wrapper .box_5_ .bot img {
-  width: 100%;
+.wrapper .box_5_ .item.top {
+  margin-top: 60px;
 }
 
 .wrapper .box_6_ {
