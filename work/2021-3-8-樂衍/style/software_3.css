@@ -370,6 +370,7 @@
 
 .wrapper .box_3 {
   padding-top: 150px;
+  background-color: #efd9cd;
 }
 
 .wrapper .box_3 .title_ {
@@ -409,7 +410,7 @@
   left: 0;
   width: 100%;
   height: 30px;
-  background: #E4CFC4;
+  background: white;
 }
 
 .wrapper .box_3 .title_ .right p.mobile {
@@ -425,7 +426,7 @@
 }
 
 .wrapper .box_3 .bot {
-  margin-top: 230px;
+  margin-top: 100px;
   display: block;
 }
 
@@ -572,6 +573,95 @@
 .wrapper .box_4 .box_4_R .article_2 p {
   line-height: 26px;
   color: #484746;
+}
+
+.wrapper .box_4 .bot {
+  margin-top: 100px;
+  display: block;
+}
+
+.wrapper .box_4 .bot .bot_L_img img {
+  max-width: 305px;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_L_dialog {
+  display: inline-block;
+  z-index: 3;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #bb8080;
+  padding: 15px 10px;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_L_dialog:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -45px;
+  background-image: url(../images/software_3/software-29-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_L_dialog p {
+  margin-top: 0;
+  text-align: justify;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #80654A;
+  margin-bottom: 0;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_R_dialog {
+  margin-top: 100px;
+  float: right;
+  display: inline-block;
+  z-index: 3;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #bb8080;
+  padding: 15px 10px;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_R_dialog:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -45px;
+  background-image: url(../images/software_3/software-29.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.wrapper .box_4 .bot .bot_dialog .bot_R_dialog p {
+  margin-top: 0;
+  text-align: justify;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #80654A;
+  margin-bottom: 0;
+}
+
+.wrapper .box_4 .bot .bot_R_img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 150px;
+}
+
+.wrapper .box_4 .bot_mobile {
+  display: none;
 }
 
 .wrapper .box_5 {

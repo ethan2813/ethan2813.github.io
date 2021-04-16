@@ -202,7 +202,7 @@
     bottom: -10px;
     width: 100%;
     height: 30px;
-    background: #E4CFC4;
+    background: white;
   }
   .wrapper .box_3 .article {
     margin-top: 50px;
@@ -221,6 +221,15 @@
   }
   .wrapper .box_4 .box_4_L img.top, .wrapper .box_4 .box_4_L img.bot {
     display: block;
+  }
+  .wrapper .box_4 .bot .bot_L_img img {
+    max-width: 200px;
+  }
+  .wrapper .box_4 .bot .bot_R_img img {
+    max-width: 120px;
+  }
+  .wrapper .box_4 .bot .bot_dialog .bot_R_dialog {
+    margin-top: 50px;
   }
   .wrapper .box_5 .title_ .right p.pc {
     display: none;
@@ -580,6 +589,76 @@
   .wrapper .box_3 .bot_mobile .bot_bot_R_img img {
     width: 100%;
   }
+  .wrapper .box_4 .bot {
+    display: none;
+  }
+  .wrapper .box_4 .bot_mobile {
+    display: block;
+    margin-top: 50px;
+  }
+  .wrapper .box_4 .bot_mobile .bot_top_L_img img {
+    width: 100%;
+  }
+  .wrapper .box_4 .bot_mobile .bot_top_R_dialog {
+    display: inline-block;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #bb8080;
+    padding: 15px 5px;
+  }
+  .wrapper .box_4 .bot_mobile .bot_top_R_dialog:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -38px;
+    background-image: url(../images/software_3/software-29-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .wrapper .box_4 .bot_mobile .bot_top_R_dialog p {
+    margin-top: 0;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #80654A;
+    margin-bottom: 0;
+  }
+  .wrapper .box_4 .bot_mobile .bot_bot_L_dialog {
+    margin-top: 50px;
+    display: inline-block;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #bb8080;
+    padding: 15px 5px;
+  }
+  .wrapper .box_4 .bot_mobile .bot_bot_L_dialog:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -38px;
+    background-image: url(../images/software_3/software-29-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .wrapper .box_4 .bot_mobile .bot_bot_L_dialog p {
+    margin-top: 0;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #80654A;
+    margin-bottom: 0;
+  }
+  .wrapper .box_4 .bot_mobile .bot_bot_R_img img {
+    width: 100%;
+  }
   .wrapper .box_5 .content {
     padding-left: 0px;
   }
@@ -810,6 +889,9 @@
     line-height: 23px;
   }
   .wrapper .box_3 .bot .bot_L_img img {
+    max-width: 140px;
+  }
+  .wrapper .box_4 .bot .bot_L_img img {
     max-width: 140px;
   }
   .wrapper .box_5 .bot {
