@@ -544,18 +544,7 @@
         background-size: cover;
         margin-bottom: -10px;
         z-index: 2;
-        .box_4_L{
-            img{
-                width: 100%;
-            }
-            img.all{
-                display: block;
-            }
-            img.top,img.bot{
-                display: none;
-            }
-        }
-        .box_4_R{
+        .box_4_top{
             h3{
                
                 color: #B65613;
@@ -582,6 +571,21 @@
                 line-height: 26px;
                 letter-spacing: 0.05em;
             }
+        }
+        .box_4_L{
+            img{
+                width: 100%;
+            }
+            img.all{
+                display: block;
+            }
+            img.top,img.bot{
+                display: none;
+            }
+        }
+        .box_4_R{
+            
+            
             .article_2{
                 h4{
                    
@@ -599,7 +603,7 @@
             }
         }
         .bot{
-            margin-top: 100px;
+            margin-top: 0px;
             display: block;
             .bot_L_img{
                 img{
