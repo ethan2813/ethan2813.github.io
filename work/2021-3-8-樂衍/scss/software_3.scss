@@ -582,6 +582,11 @@
                 color: #484746;
                 line-height: 26px;
                 letter-spacing: 0.05em;
+
+                .top_mobile{
+                    display: none;
+                    width: 100%;
+                }
             }
         }
         .box_4_L{
@@ -1055,6 +1060,7 @@
                     img{
                         max-width: 300px;
                         margin-left: 30px;
+                        box-shadow: 5px 5px 15px #d1cdc9;
                     }
                 }
                 

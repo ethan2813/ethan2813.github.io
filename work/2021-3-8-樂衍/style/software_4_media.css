@@ -178,6 +178,9 @@
   .wrapper .box_2 .title_ .right .mobile {
     display: inline;
   }
+  .wrapper .box_2 img.circle {
+    display: none;
+  }
   .wrapper .box_3_ .title_ .left img {
     margin-right: 5px;
   }

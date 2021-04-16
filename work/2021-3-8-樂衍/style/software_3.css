@@ -545,6 +545,11 @@
   letter-spacing: 0.05em;
 }
 
+.wrapper .box_4 .box_4_top .article_1 .top_mobile {
+  display: none;
+  width: 100%;
+}
+
 .wrapper .box_4 .box_4_L img {
   width: 100%;
 }
@@ -1017,6 +1022,8 @@
 .wrapper .box_8 .article .article_1 .right img {
   max-width: 300px;
   margin-left: 30px;
+  -webkit-box-shadow: 5px 5px 15px #d1cdc9;
+          box-shadow: 5px 5px 15px #d1cdc9;
 }
 
 .wrapper .box_8 .article .article_2 {
