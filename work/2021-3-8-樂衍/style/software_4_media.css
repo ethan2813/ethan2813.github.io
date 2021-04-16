@@ -327,6 +327,9 @@
   .wrapper .box_6_ {
     padding-top: 50px;
   }
+  .wrapper .box_6_ .content_2 {
+    margin-top: 50px;
+  }
   .wrapper .box_6_ .content_2 .dialog_2 {
     padding: 15px 20px;
   }
