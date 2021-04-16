@@ -79,6 +79,7 @@
 .title__ {
   font-size: 38px;
   letter-spacing: 0.15em;
+  line-height: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -901,6 +902,6 @@
     padding-top: 200px;
   }
   .wrapper .box_6 .bot {
-    padding-top: 360px;
+    padding-top: 400px;
   }
 }
