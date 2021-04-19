@@ -844,8 +844,7 @@
     padding-top: 220px;
   }
   .wrapper .box_6 .bot {
-    padding-top: 420px;
-    background-size: 150%;
+    padding-top: 320px;
     background-position: top 0px left 0px;
   }
   .wrapper .box_7 .bot img.pc {
@@ -912,6 +911,6 @@
     padding-top: 200px;
   }
   .wrapper .box_6 .bot {
-    padding-top: 400px;
+    padding-top: 250px;
   }
 }
