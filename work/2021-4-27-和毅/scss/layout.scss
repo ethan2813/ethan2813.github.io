@@ -1,0 +1,62 @@
+.container{
+    @media (min-width:1440px){
+        max-width: 1440px!important;
+    }
+}
+
+.p{}
+
+
+
+#nav{
+    .content_{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // LOGO
+        .log{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            
+            .photo{
+                margin-right: 10px;
+            }
+        }
+
+        // NAV 右邊的部分
+        .right{
+            display: flex;
+            align-items: center;
+            
+            // nav 選單列
+            .items{
+                max-width: 450px;
+                width: 100%;
+                margin-right: 120px;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    list-style-type: none;
+                    padding: 0 20px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            .phone{
+                display: flex;
+                flex-direction: column;
+                p{
+                    white-space:nowrap;
+                    margin-bottom: 0;
+                }
+            }
+
+
+            
+        }
+    }
+}
