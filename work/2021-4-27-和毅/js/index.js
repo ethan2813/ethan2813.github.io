@@ -7,6 +7,9 @@
 //     $('.nav_list').removeClass('active')
 // })
 
+$('.items_active').on('click',(e)=>{
+    $('.items_2_box').toggleClass('active')
+})
 
 //點空白地方關閉清單
 

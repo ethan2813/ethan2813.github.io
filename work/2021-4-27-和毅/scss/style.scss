@@ -1,0 +1,108 @@
+.box_1{
+    background-image: url(../img/index/box_1_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 120px;
+    position: relative;
+    &:after{
+        content: '和 毅';
+        writing-mode: vertical-lr;
+        display: block;
+        color: white;
+        font-size: 250px;
+        position: absolute;
+        top: 0;
+        left: -5%;
+        opacity: 0.2;
+        font-weight: bold;
+    }
+    .article_{
+        max-width: 550px;
+        .sub_title_{
+            color:white;
+        }
+        .p_16{
+            color: white;
+            line-height: 30px;
+        }
+    }
+    .photo_{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.box_2{
+    .box_2_title{
+        img{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .title_{
+            writing-mode: vertical-lr;
+            margin-left: 0;
+        }
+
+    }
+
+    .box_2_content{
+        margin-bottom: 180px;
+        .item{
+            margin-top: 100px;
+            padding: 0 20px;
+            .number{
+                text-align: right;
+                font-size: 60px;
+                color: rgba(94, 84, 84, 0.2);
+                letter-spacing: 0.145em;
+                line-height: 50px;
+            }
+        }
+
+        
+    }
+    .box_2_bot{
+        .photo{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .article{
+            display: flex;
+            height: 100%;
+            
+
+            .box_2_bot_title{
+                
+                display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                img{
+                    width: 100%;
+                    margin-bottom: 50px;
+                    
+                }
+                .title_{
+                    
+                    writing-mode: vertical-lr;
+                    margin: 0;
+
+                }
+            }
+            .box_2_bot_content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .p_16{
+                    color: #777777;
+                    max-width: 580PX;
+                }
+            }
+        }
+    }
+    
+}
