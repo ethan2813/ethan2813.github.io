@@ -22,6 +22,12 @@
   font-weight: bold;
 }
 
+.title_ {
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
 .logo_text {
   font-size: 26px;
   color: black;
@@ -42,6 +48,7 @@
 }
 
 #nav .content_ {
+  max-width: 1440px;
   background-color: white;
   height: 100px;
   padding: 0 50px;
@@ -79,6 +86,12 @@
   margin-right: 10px;
 }
 
+@media (max-width: 1200px) {
+  #nav .content_ .log .logo_text {
+    display: none;
+  }
+}
+
 #nav .content_ .right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -113,6 +126,11 @@
 #nav .content_ .right .items > li a {
   text-decoration: none;
   white-space: nowrap;
+}
+
+#nav .content_ .right .items > li p {
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 #nav .content_ .right .items > li .items_2_box {
@@ -181,4 +199,10 @@
 #nav .content_ .right .phone p:nth-of-type(2) {
   color: #58A500;
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  #nav .content_ .right .phone {
+    display: none;
+  }
 }

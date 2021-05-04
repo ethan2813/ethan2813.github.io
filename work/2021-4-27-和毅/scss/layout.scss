@@ -24,6 +24,14 @@
     font-weight: bold;
 }
 
+.title_{
+    font-size:32px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+
 .logo_text{
     font-size: 26px;
     color: black;
@@ -36,8 +44,13 @@
     position: fixed;
     display: flex;
     justify-content: center;
+    
     z-index: 99;
+    // @media(max-width:768px){
+    //     display: none;
+    // }
     .content_{
+        max-width: 1440px;
         background-color: white;
         height: 100px;
         padding: 0 50px;
@@ -56,6 +69,13 @@
             
             .photo{
                 margin-right: 10px;
+               
+            }
+            // logo 文字
+            .logo_text{
+                @media(max-width:1200px){
+                    display: none;
+                }
             }
         }
 
@@ -80,7 +100,10 @@
                     a{
                         text-decoration: none;
                         white-space: nowrap;
-                        
+                    }
+                    p{
+                        white-space: nowrap;
+                        cursor: pointer;
                     }
                     
                     // 服務項目下拉選單
@@ -136,6 +159,10 @@
                     font-weight: bold;
 
                 }
+
+                @media(max-width:1200px){
+                    display: none;
+                }
             }
 
 
@@ -143,4 +170,6 @@
         }
     }
 }
+
+
 

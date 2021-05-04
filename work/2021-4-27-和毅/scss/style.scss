@@ -5,15 +5,17 @@
     padding-top: 260px;
     padding-bottom: 120px;
     position: relative;
+    overflow: hidden;
+
     &:after{
         content: '和 毅';
         writing-mode: vertical-lr;
         display: block;
         color: white;
-        font-size: 250px;
+        font-size: 350px;
         position: absolute;
         top: 0;
-        left: -5%;
+        left: -8%;
         opacity: 0.2;
         font-weight: bold;
     }
@@ -35,6 +37,20 @@
 }
 
 .box_2{
+    position: relative;
+    overflow: hidden;
+    &:after{
+        content: '牙 醫';
+        writing-mode: vertical-lr;
+        display: block;
+        color: #CBCBCB;
+        font-size: 350px;
+        position: absolute;
+        top: 0;
+        right: -8%;
+        opacity: 0.2;
+        font-weight: bold;
+    }
     .box_2_title{
         img{
             width: 100%;
@@ -105,4 +121,130 @@
         }
     }
     
+}
+
+.box_3{
+    padding-top: 120px;
+    .doctor_{
+
+        &.doctor_woman{
+            margin-top: 200px;
+        }
+
+
+       // 左邊文字
+    .doctor_L{
+        display: flex;
+        max-width: 100%;
+
+        @media(max-width:768px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        // 左邊的標題
+        .doctor_L_1{
+            
+            img{
+                // width: 100%;
+                margin-bottom: 50px;
+            }
+           .text{
+               display: flex;
+
+               .text_in{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    
+               }
+               .p_18{
+                   font-weight: bold;
+               }
+               
+           }
+        }
+
+        .doctor_L_2{
+            margin-left: 75px;
+            margin-top: 100px;
+            @media(max-width:768px){
+                margin-left: 0;
+            }
+            .title_{
+                font-weight: normal;
+                position: relative;
+                padding-left: 20px;
+                &::before{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #39A7E2;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(0% , -50%);
+                }
+            }
+            table{
+                max-width: 355px;
+                width: 100%;
+                tr{
+                    td{
+                        
+                        padding: 6px 10px;
+                        text-align: center;
+
+                        @media(max-width:996px){
+                        padding: 6px 6px;
+
+                        }
+                        span{
+                            writing-mode: vertical-lr;
+                        }
+                        .circle{
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background-color: #39A7E2;
+                            display: block;
+                        }
+                    }
+                    td:nth-of-type(1){
+                        text-align: left;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    // 右邊圖
+    .doctor_R{
+        margin-top: 220px; 
+        text-align: center;
+
+        @media(max-width:768px){
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+        }
+        img{
+            max-width: 284px;
+            
+            width: 100%;
+        }
+        img.doctor_boy{
+           
+            @media(max-width:768px){
+                margin-left: 0;
+            }
+        }
+        
+      
+    } 
+    }
+    
+
 }
