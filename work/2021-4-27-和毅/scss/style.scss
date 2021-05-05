@@ -7,6 +7,10 @@
     position: relative;
     overflow: hidden;
 
+    @media(max-width:768px){
+        padding-top: 200px;
+    }
+
     &:after{
         content: '和 毅';
         writing-mode: vertical-lr;
@@ -18,6 +22,10 @@
         left: -8%;
         opacity: 0.2;
         font-weight: bold;
+
+        @media (max-width:768px){
+            display: none;
+        }
     }
     .article_{
         max-width: 550px;
@@ -50,6 +58,10 @@
         right: -8%;
         opacity: 0.2;
         font-weight: bold;
+
+        @media (max-width:768px){
+            display: none;
+        }
     }
     .box_2_title{
         img{
@@ -65,17 +77,27 @@
 
     .box_2_content{
         margin-bottom: 180px;
-        .item{
+        @media(max-width:768px){
+            margin-bottom: 100px;
+        }
+        .items{
+            @media(max-width:576px){
+                display: flex;
+            }
+           .item{
             margin-top: 100px;
             padding: 0 20px;
-            .number{
-                text-align: right;
-                font-size: 60px;
-                color: rgba(94, 84, 84, 0.2);
-                letter-spacing: 0.145em;
-                line-height: 50px;
-            }
+            width: 100%;
+                .number{
+                    text-align: right;
+                    font-size: 60px;
+                    color: rgba(94, 84, 84, 0.2);
+                    letter-spacing: 0.145em;
+                    line-height: 50px;
+                }
+            } 
         }
+        
 
         
     }
@@ -89,7 +111,9 @@
         .article{
             display: flex;
             height: 100%;
-            
+            @media (max-width:768px){
+                display: block;
+            }
 
             .box_2_bot_title{
                 
@@ -98,7 +122,7 @@
                     align-items: center;
                     
                 img{
-                    width: 100%;
+                    // width: 100%;
                     margin-bottom: 50px;
                     
                 }
@@ -113,6 +137,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media(max-width:768px){
+                    margin-top: 50px;
+                }
                 .p_16{
                     color: #777777;
                     max-width: 580PX;
@@ -125,6 +153,41 @@
 
 .box_3{
     padding-top: 120px;
+    background-image: url(../img/index/box_3_bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    &:after{
+        content: '醫 師';
+        writing-mode: vertical-lr;
+        display: block;
+        color: #CBCBCB;
+        font-size: 350px;
+        position: absolute;
+        top: 10%;
+        left: -8%;
+        opacity: 0.2;
+        font-weight: bold;
+
+        @media (max-width:768px){
+            display: none;
+        }
+    }
+
+    @media(max-width:1500px){
+        background-size: 120%;
+    }
+    @media(max-width:1200px){
+        background-size: 150%;
+    }
+    @media(max-width:996px){
+        background-size: 180%;
+    }
+    @media(max-width:768px){
+        background-size: cover;
+    }
     .doctor_{
 
         &.doctor_woman{

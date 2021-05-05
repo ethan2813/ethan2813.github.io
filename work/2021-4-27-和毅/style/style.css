@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .box_1 {
+    padding-top: 200px;
+  }
+}
+
 .box_1:after {
   content: '和 毅';
   -webkit-writing-mode: vertical-lr;
@@ -22,6 +28,12 @@
   left: -8%;
   opacity: 0.2;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .box_1:after {
+    display: none;
+  }
 }
 
 .box_1 .article_ {
@@ -61,6 +73,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .box_2:after {
+    display: none;
+  }
+}
+
 .box_2 .box_2_title img {
   width: 100%;
   margin-bottom: 50px;
@@ -77,12 +95,28 @@
   margin-bottom: 180px;
 }
 
-.box_2 .box_2_content .item {
-  margin-top: 100px;
-  padding: 0 20px;
+@media (max-width: 768px) {
+  .box_2 .box_2_content {
+    margin-bottom: 100px;
+  }
 }
 
-.box_2 .box_2_content .item .number {
+@media (max-width: 576px) {
+  .box_2 .box_2_content .items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.box_2 .box_2_content .items .item {
+  margin-top: 100px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.box_2 .box_2_content .items .item .number {
   text-align: right;
   font-size: 60px;
   color: rgba(94, 84, 84, 0.2);
@@ -106,6 +140,12 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .box_2 .box_2_bot .article {
+    display: block;
+  }
+}
+
 .box_2 .box_2_bot .article .box_2_bot_title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,7 +163,6 @@
 }
 
 .box_2 .box_2_bot .article .box_2_bot_title img {
-  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -149,6 +188,12 @@
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .box_2 .box_2_bot .article .box_2_bot_content {
+    margin-top: 50px;
+  }
+}
+
 .box_2 .box_2_bot .article .box_2_bot_content .p_16 {
   color: #777777;
   max-width: 580PX;
@@ -156,6 +201,56 @@
 
 .box_3 {
   padding-top: 120px;
+  background-image: url(../img/index/box_3_bg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.box_3:after {
+  content: '醫 師';
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: block;
+  color: #CBCBCB;
+  font-size: 350px;
+  position: absolute;
+  top: 10%;
+  left: -8%;
+  opacity: 0.2;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .box_3:after {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .box_3 {
+    background-size: 120%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box_3 {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 996px) {
+  .box_3 {
+    background-size: 180%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_3 {
+    background-size: cover;
+  }
 }
 
 .box_3 .doctor_.doctor_woman {

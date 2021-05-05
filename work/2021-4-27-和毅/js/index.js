@@ -1,18 +1,20 @@
-// 點漢堡跑出清單
-
-// $('.menu').on('click',(e)=>{
-//     $('.nav_list').addClass('active')
-// })
-// $('.nav_list .close').on('click',(e)=>{
-//     $('.nav_list').removeClass('active')
-// })
-
+// 電腦版選單
 $('.items_active').on('click',(e)=>{
     $('.items_2_box').toggleClass('active')
 })
 
-//點空白地方關閉清單
+// 點擊漢堡條 跳出選單
+$('.burger').on('click',()=>{
+    $('.mobile_nav_list').toggleClass('active')
+})
 
+// 漢堡條效果
+$('.burger').on('click', (e) => {
+    $(e.currentTarget).toggleClass('burger_active')
+    $('.mobile_nav_list').toggleClass('nav_active')
+})
+
+//點空白地方關閉清單
 // $(document).on('mouseup',(e)=>{
 //     if($('.nav_list').hasClass('active')){
 //         if(!$(e.target).closest('.nav_list li a,.close').length){
@@ -22,7 +24,6 @@ $('.items_active').on('click',(e)=>{
 // })
 
 //totop
-
 // $('#totop').on('click',()=>{
 //     $('html,body').animate({scrollTop:0},300);
 // })

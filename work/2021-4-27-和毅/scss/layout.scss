@@ -4,6 +4,8 @@
     }
 
 
+
+
 }.p_16{
     color: #5E5454;
     font-size: 16px;
@@ -14,6 +16,12 @@
 .p_18{
     color: #5E5454;
     font-size: 18px;
+    letter-spacing: 0.1em;
+
+}
+.p_20{
+    color: #5E5454;
+    font-size: 20px;
     letter-spacing: 0.1em;
 
 }
@@ -44,12 +52,18 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    
     z-index: 99;
-    // @media(max-width:768px){
-    //     display: none;
-    // }
+
+    @media (max-width:768px){
+        display: none;
+    }
+
+   
+  
     .content_{
+        
+        
+        
         max-width: 1440px;
         background-color: white;
         height: 100px;
@@ -169,6 +183,116 @@
             
         }
     }
+}
+
+#nav_mobile{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    border-radius: 0% 0% 50px 50px;
+
+    @media (min-width:768px){
+        display: none;
+    }
+
+    .content_{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        position: relative;
+        // logo
+        .log{
+            display: flex;
+        align-items: center;
+
+            img{
+                width: 100px;
+            }
+
+            p{
+                margin-bottom: 0;
+            }
+            
+        }
+
+        .burger{
+            // display: none;
+            
+            cursor: pointer;
+            // margin: auto 0 ;
+            >div{
+                width: 40px;
+                height: 2px;
+                background-color:#EFB79B;
+                margin: 10px;
+                transition: ease-in 0.3s;
+            }
+    
+            &.burger_active .line1{
+                transform: rotate(45deg) translate(11px, 5px);
+            }
+            &.burger_active .line2{
+                opacity: 0;
+            }
+            &.burger_active .line3{
+                transform: rotate(-45deg) translate(12px, -6px);
+            }
+        }
+
+        // 手機板選單
+        .mobile_nav_list{
+            
+            position: absolute;
+            right: -215px;
+            top: 100px;
+            transition: 0.2s ease-in-out;
+            &.active{
+                right: -15px;
+            }
+
+            .content_{
+                border-radius:20px;
+                display: flex;
+                flex-direction: column;
+                background-color: #8BBF50;
+                padding: 20px 30px;
+                
+
+                li{
+                    line-height: 30px;
+                    text-align: center;
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                // 服務項目
+                .items_active{
+                    span{
+                        color: white;
+                    }
+
+                        // 下拉選單
+                        .items_2_box{
+                            padding-left: 0;
+                            display: none;
+
+                            &.active{
+                                display: block;
+                            }
+                        }
+                    
+                }
+            }
+        }
+    }
+    
+    
 }
 
 

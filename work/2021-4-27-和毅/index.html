@@ -40,7 +40,8 @@
                             <!-- 選單 -->
                             <div class="items">
                                 <li><a class='p_18' href="">醫療項目</a></li>
-                                <li class='items_active'><p class='p_18'>服務項目</p>
+                                <li class='items_active'>
+                                    <p class='p_18'>服務項目</p>
                                     <div class="items_2_box">
                                         <p class='p_18'>服務項目</p>
                                         <hr>
@@ -89,16 +90,53 @@
         </div>
     </nav>
     <nav id='nav_mobile'>
-        
+        <div class="container-fluid h-100">
+            <div class="content_">
+                <!-- LOGO -->
+                <div class="log">
+                    <img class='photo' src="./img/layout/logo.png" alt="logo">
+                    <p class='logo_text'>和毅牙醫診所</p>
+                </div>
+
+                <!-- 漢堡條 -->
+                <div class="burger">
+                    <div class="line1 line_"></div>
+                    <div class="line2 line_"></div>
+                    <div class="line3 line_"></div>
+                </div>
+
+                <div class="mobile_nav_list">
+                    <ul class="content_">
+                        <li><a class='p_20' href="">醫療項目</a></li>
+                        <li class='items_active'>
+                            <span class='p_20'>服務項目</span>
+                            <ul class='items_2_box'>
+                                <li><a class='p_18' href="">智齒拔除</a></li>
+                                <li><a href="">病變診斷</a></li>
+                                <li><a href="">多牙生</a></li>
+                                <li><a href="">矯正相關手術</a></li>
+                                <li><a href="">良性腫瘤</a></li>
+                                <li><a href="">顎骨齒槽重建</a></li>
+                            </ul>
+                        </li>
+                        <li><a class='p_20' href="">診所服務</a></li>
+                        <li><a class='p_20' href="">診所資訊</a></li>
+
+
+
+                        </>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- banner -->
     <div class="box_1">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 d-flex justify-content-end align-items-center">
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
                     <div class="article_">
-                        <h3 class='sub_title_'>扎根於竹苗地區  為竹苗在地人提供專業而舒適的治療</h3>
+                        <h3 class='sub_title_'>扎根於竹苗地區 為竹苗在地人提供專業而舒適的治療</h3>
                         <br>
                         <p class='p_16'>
                             在地的新竹子弟於高雄醫學院接受啟蒙牙科教育後，於陽明大學及台北榮民總醫院口腔顎面外科接受完整扎實的口腔顎面外科專科訓練，取得署定口腔顎面外科專科醫師資格及部定講師資格。
@@ -109,7 +147,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6 pr-0">
+                <div class="col-md-6 pr-md-0 ">
                     <div class="photo_">
                         <img src="./img/index/box_1_photo.jpg" alt="photo">
                     </div>
@@ -122,19 +160,19 @@
     <div class="box_2">
         <div class="container">
             <div class="row">
-                <div class="col d-flex justify-content-end">
-                        <div class="box_2_title">
-                            <img src="./img/index/slash.svg" alt="slash">
-                            <h3 class='title_'>服務項目</h3>
-                        </div>
-                        
+                <div class="col d-flex justify-content-md-end justify-content-center">
+                    <div class="box_2_title">
+                        <img src="./img/index/slash.svg" alt="slash">
+                        <h3 class='title_'>服務項目</h3>
+                    </div>
+
                 </div>
             </div>
             <div class="box_2_content">
-                <div class="row">   
-                    <div class="col-md-4 offset-md-0 col-lg-3 offset-lg-1">
-                        <div class="item">
-                            
+                <div class="row">
+                    <div class="col-sm-4 col offset-sm-0 col-lg-3 offset-lg-1 ">
+                        <div class="items">
+                            <div class="item">
                             <p class='number'>01</p>
                             <hr>
                             <p class='p_18'>
@@ -142,17 +180,20 @@
                             </p>
                         </div>
                         <div class="item">
-                            
+
                             <p class='number'>02</p>
                             <hr>
                             <p class='p_18'>
                                 多生牙
                             </p>
                         </div>
+                        </div>
+                        
                     </div>
-                    <div class="col-md-4 col-lg-3">
-                        <div class="item">
-                            
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="items">
+                            <div class="item">
+
                             <p class='number'>03</p>
                             <hr>
                             <p class='p_18'>
@@ -160,17 +201,20 @@
                             </p>
                         </div>
                         <div class="item">
-                            
+
                             <p class='number'>04</p>
                             <hr>
                             <p class='p_18'>
                                 病變診斷
                             </p>
                         </div>
+                        </div>
+                        
                     </div>
-                    <div class="col-md-4 col-lg-3">
-                        <div class="item">
-                            
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="items">
+                            <div class="item">
+
                             <p class='number'>05</p>
                             <hr>
                             <p class='p_18'>
@@ -178,13 +222,15 @@
                             </p>
                         </div>
                         <div class="item">
-                            
+
                             <p class='number'>06</p>
                             <hr>
                             <p class='p_18'>
                                 顎骨齒槽重建
                             </p>
+                        </div> 
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -192,12 +238,12 @@
         <div class="box_2_bot">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 p-md-0">
+                    <div class="col-md-6 p-0">
                         <div class="photo">
                             <img src="./img/index/box_2_photo.jpg" alt="photo">
                         </div>
                     </div>
-                    <div class="col-md-5 pl-5">
+                    <div class="col-md-5 pl-md-5 pt-md-0 pt-5">
                         <div class="article">
                             <div class="box_2_bot_title">
                                 <img src="./img/index/slash.svg" alt="slash">
@@ -214,7 +260,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
     <!-- 醫師 -->
@@ -223,158 +269,180 @@
             <!-- 男醫師 -->
             <div class="doctor_ doctor_man">
                 <div class="row">
-                <!-- 左邊文字 -->
-                <div class="col-md-7 col-lg-6 d-flex justify-content-md-end justify-content-center">
-                    <div class="doctor_L">
-                        <!-- 左邊的標題 -->
-                        <div class="doctor_L_1">
-                            <img src="./img/index/slash.svg" alt="slash">
-                            <div class="text">
-                                <h3 class='text_in p_18'>醫師</h3>
-                                <h3 class='text_in title_'>吳和泰</h3>
+                    <!-- 左邊文字 -->
+                    <div class="col-md-7 col-lg-6 d-flex justify-content-md-end justify-content-center">
+                        <div class="doctor_L">
+                            <!-- 左邊的標題 -->
+                            <div class="doctor_L_1">
+                                <img src="./img/index/slash.svg" alt="slash">
+                                <div class="text">
+                                    <h3 class='text_in p_18'>醫師</h3>
+                                    <h3 class='text_in title_'>吳和泰</h3>
+                                </div>
+                            </div>
+                            <div class="doctor_L_2">
+                                <p class='title_'>門診時刻表</p>
+                                <table class='p_16'>
+                                    <tr>
+                                        <td>診療時間</td>
+                                        <td>一</td>
+                                        <td>二</td>
+                                        <td>三</td>
+                                        <td>四</td>
+                                        <td>五</td>
+                                        <td>六</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00<br>12:00</td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td><span>仁慈</span></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td><span>隔周</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:00<br>17:00</td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18:00<br>21:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <p class='p_16'>
+                                    中華民國口腔顎面外科專科醫師<br>
+                                    台灣植牙醫學會專科醫師<br>
+                                    前新竹國泰綜合醫院牙科主任<br>
+                                    前台北榮民總醫院口腔醫學部專任主治醫師<br>
+                                    國立陽明大學牙醫學院兼任醫師<br>
+                                    中華民國教育部部定講師<br>
+                                </p>
                             </div>
                         </div>
-                        <div class="doctor_L_2">
-                            <p class='title_'>門診時刻表</p>
-                            <table class='p_16'>
-                                <tr>
-                                    <td>診療時間</td>
-                                    <td>一</td>
-                                    <td>二</td>
-                                    <td>三</td>
-                                    <td>四</td>
-                                    <td>五</td>
-                                    <td>六</td>
-                                </tr>
-                                <tr >
-                                    <td>09:00<br>12:00</td>
-                                    <td><div class="circle"></div></td>
-                                    <td><div class="circle"></div></td>
-                                    <td><div class="circle"></div></td>
-                                    <td><span>仁慈</span></td>
-                                    <td><div class="circle"></div></td>
-                                    <td><span>隔周</span></td>
-                                </tr>
-                                <tr>
-                                    <td>14:00<br>17:00</td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>18:00<br>21:00</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <hr>
-                            <p class='p_16'>
-                                中華民國口腔顎面外科專科醫師<br>
-                                台灣植牙醫學會專科醫師<br>
-                                前新竹國泰綜合醫院牙科主任<br>
-                                前台北榮民總醫院口腔醫學部專任主治醫師<br>
-                                國立陽明大學牙醫學院兼任醫師<br>
-                                中華民國教育部部定講師<br>
-                            </p>
+
+
+                    </div>
+                    <!-- 右邊圖片 -->
+                    <div class="col-md-3  offset-2 offset-md-1 w-100 ">
+                        <div class="doctor_R">
+                            <img class='doctor_boy' src="./img/index/doctor_1.png" alt="photo">
                         </div>
                     </div>
-
-
-                </div>
-                <!-- 右邊圖片 -->
-                <div class="col-md-3  offset-2 offset-md-1 w-100 ">
-                    <div class="doctor_R">
-                        <img class='doctor_boy' src="./img/index/doctor_1.png" alt="photo">
-                    </div>
                 </div>
             </div>
-            </div>
-            
-
             <!-- 女醫師 -->
             <div class="doctor_ doctor_woman">
                 <div class="row">
-                <!-- 左邊圖片 -->
-                <div class="col-md-3  offset-md-2 col-12  w-100 order-1 order-md-0">
-                    <div class="doctor_R doctor_R_girl">
-                        <img class='doctor_girl' src="./img/index/doctor_2.png" alt="photo">
+                    <!-- 左邊圖片 -->
+                    <div class="col-md-3  offset-md-2 col-12  w-100 order-1 order-md-0">
+                        <div class="doctor_R doctor_R_girl">
+                            <img class='doctor_girl' src="./img/index/doctor_2.png" alt="photo">
+                        </div>
                     </div>
-                </div>
 
-                <!-- 右邊文字 -->
-                <div class="col-md-7  col-lg-6   col-12 order-0 order-md-1">
-                    <div class="doctor_L">
-                        <!-- 左邊的標題 -->
-                        <div class="doctor_L_1">
-                            <img src="./img/index/slash.svg" alt="slash">
-                            <div class="text">
-                                <h3 class='text_in p_18'>醫師</h3>
-                                <h3 class='text_in title_'>賴億珊</h3>
+                    <!-- 右邊文字 -->
+                    <div class="col-md-7  col-lg-6   col-12 order-0 order-md-1">
+                        <div class="doctor_L">
+                            <!-- 左邊的標題 -->
+                            <div class="doctor_L_1">
+                                <img src="./img/index/slash.svg" alt="slash">
+                                <div class="text">
+                                    <h3 class='text_in p_18'>醫師</h3>
+                                    <h3 class='text_in title_'>賴億珊</h3>
+                                </div>
+                            </div>
+                            <div class="doctor_L_2">
+                                <p class='title_'>門診時刻表</p>
+                                <table class='p_16'>
+                                    <tr>
+                                        <td>診療時間</td>
+                                        <td>一</td>
+                                        <td>二</td>
+                                        <td>三</td>
+                                        <td>四</td>
+                                        <td>五</td>
+                                        <td>六</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00<br>12:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:00<br>17:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="circle"></div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18:00<br>21:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <p class='p_16'>
+                                    中華民國口腔顎面外科專科醫師<br>
+                                    台北馬偕口腔顎面外科兼任主治醫師<br>
+                                    馬偕紀念醫院口腔顎面外科專科訓練<br>
+                                    台北醫學大學牙醫系畢業
+                                </p>
                             </div>
                         </div>
-                        <div class="doctor_L_2">
-                            <p class='title_'>門診時刻表</p>
-                            <table class='p_16'>
-                                <tr>
-                                    <td>診療時間</td>
-                                    <td>一</td>
-                                    <td>二</td>
-                                    <td>三</td>
-                                    <td>四</td>
-                                    <td>五</td>
-                                    <td>六</td>
-                                </tr>
-                                <tr >
-                                    <td>09:00<br>12:00</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>14:00<br>17:00</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                    <td><div class="circle"></div></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>18:00<br>21:00</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <hr>
-                            <p class='p_16'>
-                                中華民國口腔顎面外科專科醫師<br>
-                                台北馬偕口腔顎面外科兼任主治醫師<br>
-                                馬偕紀念醫院口腔顎面外科專科訓練<br>
-                                台北醫學大學牙醫系畢業
-                            </p>
-                        </div>
+
+
                     </div>
 
-
                 </div>
-                
             </div>
-            </div>
-            
+
         </div>
     </div>
 
