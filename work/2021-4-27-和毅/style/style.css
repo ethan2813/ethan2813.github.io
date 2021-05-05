@@ -389,6 +389,8 @@
 
 .box_3 .doctor_ .doctor_R img {
   max-width: 284px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   width: 100%;
 }
 
