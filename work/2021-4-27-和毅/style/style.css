@@ -390,3 +390,28 @@
     margin-left: 0;
   }
 }
+
+.box_4 .box_4_L .box_4_L_title img {
+  margin-bottom: 50px;
+}
+
+.box_4 .box_4_L .box_4_L_title .title_ {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-left: 0;
+}
+
+.box_4 .box_4_L .map {
+  max-width: 700px;
+}
+
+.box_4 .box_4_R .items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}

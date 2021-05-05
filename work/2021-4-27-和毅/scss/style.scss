@@ -310,3 +310,29 @@
     
 
 }
+
+.box_4{
+    .box_4_L{
+        .box_4_L_title{
+            img{
+                margin-bottom: 50px;
+            }
+            .title_{
+                writing-mode: vertical-lr;
+               margin-left: 0;
+            }
+        }
+        .map{
+            max-width: 700px;   
+        }
+    }
+
+    .box_4_R{
+        .items{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    
+}
