@@ -289,13 +289,12 @@
         text-align: center;
 
         @media(max-width:768px){
-            display: flex;
-            justify-content: center;
+            display: block;
             margin-top: 0;
         }
         img{
             max-width: 284px;
-            object-fit: scale-down;
+            // object-fit: scale-down;
             width: 100%;
         }
         img.doctor_boy{

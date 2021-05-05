@@ -1,3 +1,10 @@
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 微軟正黑體 ; 
+}
+
 .container{
     @media (min-width:1440px){
         max-width: 1440px!important;
