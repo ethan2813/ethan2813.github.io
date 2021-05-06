@@ -14,6 +14,28 @@ $('.burger').on('click', (e) => {
     $('.mobile_nav_list').toggleClass('nav_active')
 })
 
+// $('.item_2').on('click',(e)=>{
+//     let index = $('.item_2').index(this) + 1 
+//     console.log(index)
+// })
+
+
+
+$('.item_2').mouseover(function(e){
+    let index_content = $('.item_2').index(this) + 1
+    console.log(index)
+})
+
+
+// console.log($('.item_2'))
+$('.item_map').mouseover((e)=>{
+    let index = $('.item_map').index(e.currentTarget) + 1
+    console.log(index)
+    // console.log( $('.item_2:nth-of-type(' + index + ')'))
+    // $('.item_2:nth-of-type(' + index + ')').css('opacity','1')
+    
+})
+
 //點空白地方關閉清單
 // $(document).on('mouseup',(e)=>{
 //     if($('.nav_list').hasClass('active')){

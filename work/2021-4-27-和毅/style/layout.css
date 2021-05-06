@@ -12,6 +12,12 @@
   }
 }
 
+.p_12 {
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
 .p_16 {
   color: #5E5454;
   font-size: 16px;
@@ -360,4 +366,8 @@
 
 #nav_mobile .content_ .mobile_nav_list .content_ .items_active .items_2_box.active {
   display: block;
+}
+
+#bottom p {
+  text-align: center;
 }

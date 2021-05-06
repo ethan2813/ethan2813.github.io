@@ -9,11 +9,15 @@
     @media (min-width:1440px){
         max-width: 1440px!important;
     }
+}
 
+.p_12{
+    color: black;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+}
 
-
-
-}.p_16{
+.p_16{
     color: #5E5454;
     font-size: 16px;
     letter-spacing: 0.15em;
@@ -53,7 +57,7 @@
 }
 
 
-
+// 電腦版nav
 #nav{
     width: 100%;
     position: fixed;
@@ -192,6 +196,7 @@
     }
 }
 
+// 手機板nav
 #nav_mobile{
     position: fixed;
     width: 100%;
@@ -300,6 +305,13 @@
     }
     
     
+}
+
+#bottom{
+    
+    p{
+        text-align: center;
+    }
 }
 
 

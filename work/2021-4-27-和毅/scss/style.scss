@@ -322,10 +322,102 @@
                margin-left: 0;
             }
         }
-        .map{
-            max-width: 700px;   
-            width: 100%;
+        .map_content{
+            position: relative;
+            .map{
+                max-width: 700px;   
+                width: 100%;
+            }
+
+
+            .item_map{
+                // border: 1px solid black;
+                display: block;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                transform: translate(-50% , -50%);
+
+                // point 動畫
+                &:hover:after{
+                    animation: top 0.5s infinite;
+                    @keyframes top {
+                        0%{
+                            top: 0%;
+                        }
+                        50%{
+                            top:15%;
+                        }
+                        100%{
+                            top: 0%;
+                        }
+                    }
+                }
+
+                &:after{
+                    content: url(../img/index/map_point.svg);
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    transform: translate(-50% , -50%);
+                    top: 0%;
+                    left: 50%;
+
+
+                   
+                    
+
+                }
+            }
+
+            // 和毅
+            .item_map:nth-of-type(1){
+                top: 47%;
+                left: 9.5%;
+            }
+
+            // 品御
+            .item_map:nth-of-type(2){
+                top: 44%;
+                left: 41.2%;
+            }
+
+            // 宏揚
+            .item_map:nth-of-type(3){
+                top: 49%;
+                left: 52.5%;
+            }
+
+            // 王存禎
+            .item_map:nth-of-type(4){
+                top: 63%;
+                left: 26.3%;
+            }
+
+            // 品悅
+            .item_map:nth-of-type(5){         
+                top: 32%;
+                left: 87.5%;
+            
+            }
+
+            // 馬偕
+            .item_map:nth-of-type(6){
+                top: 53%;
+                left: 47.5%;
+            }
+            // 簡牙醫
+            .item_map:nth-of-type(7){
+                top: 27%;
+                left: 24.5%;
+            }
+            // 台大
+            .item_map:nth-of-type(8){
+                top: 11%;
+                left: 29.5%;
+            }
         }
+        
     }
 
     .box_4_R{
@@ -377,4 +469,61 @@
     }
 
     
+}
+
+// 停車資訊
+.box_5{
+    background-image: url(../img/index/box_5_bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+    margin-bottom: -50px;
+    .box_5_L{
+        display: flex;
+        .box_5_L_title{
+            img{
+                margin-bottom: 50px;
+            }
+            .title_{
+                writing-mode: vertical-lr;
+               margin-left: 0;
+            }
+        }
+
+        .box_5_L_content{
+            padding-top: 120px;
+            padding-left: 40px;
+            .item{
+                margin-bottom: 30px;
+                h3{
+                    padding-left: 20px;
+                    position: relative;
+                    color:#74B52A; 
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #74B52A;
+                        transform: translate(-50% -50%);
+                        top: 50%;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    // 右半部
+    .box_5_R{
+        margin-top: 270px;
+        img{
+            max-width: 720px;
+            width: 100%;
+        }
+    }
 }
