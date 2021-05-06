@@ -324,13 +324,55 @@
         }
         .map{
             max-width: 700px;   
+            width: 100%;
         }
     }
 
     .box_4_R{
+        margin-top: 250px;
         .items{
             display: flex;
             justify-content: space-around;
+
+            .item{
+                max-width: 280px;
+                width: 100%;
+                position: relative;
+                
+               
+                .item_1{
+                    opacity: 1;
+                    transition: 0.2s ease-in-out;
+
+                    
+                
+                }
+                .item_2{
+                    // display: none;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.2s ease-in-out;
+                    h3{
+                        color: #74B52A;
+                    }
+                    P{
+                        span{
+                            color: #39A7E2;
+                        }
+                    }
+
+                }
+
+                &:hover{
+                    .item_1{
+                        opacity: 0;
+                    }
+                    .item_2{
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 
