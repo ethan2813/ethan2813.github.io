@@ -257,6 +257,12 @@
   margin-top: 200px;
 }
 
+@media (max-width: 768px) {
+  .box_3 .doctor_.doctor_woman {
+    margin-top: 100px;
+  }
+}
+
 .box_3 .doctor_ .doctor_L {
   display: -webkit-box;
   display: -webkit-flex;
