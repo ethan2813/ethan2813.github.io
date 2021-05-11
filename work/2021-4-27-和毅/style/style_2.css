@@ -31,3 +31,7 @@
 .box_1 .box_1_right {
   padding-top: 200px;
 }
+
+.box_1 .box_1_right .box_1_right_bot {
+  padding-top: 120px;
+}
