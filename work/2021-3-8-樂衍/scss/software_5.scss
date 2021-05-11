@@ -1,0 +1,319 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+} 
+
+
+
+.bold_{
+    font-weight: bold;
+}
+
+// 置中
+.d-flex-j-center{
+    display: flex;
+    justify-content: center;
+}
+
+// 寬度最大920px
+.max_920{
+    max-width: 920px;
+}
+
+.transition{
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+// 文字
+.p__{
+    color: #484746;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    @media(max-width:1200px){
+        font-size: 17px;
+    }
+    @media(max-width:768px){
+        font-size: 16px;
+    }
+}
+.span__{
+    white-space:nowrap;
+    margin: 0 3px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #484746;
+    line-height: 60px;
+    font-weight: bold;
+    @media(max-width:1200px){
+        font-size: 16px;
+    }
+    @media(max-width:768px){
+        font-size: 15px!important;
+    }
+}
+
+.dialog__{
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    @media(max-width:1200px){
+        font-size: 20px;
+        
+    }
+    @media(max-width:768px){
+        font-size: 16px!important;
+        line-height: 25px;
+        
+
+    }
+}
+.big_title__{
+    font-size: 50px;
+    @media(max-width:768px){
+        font-size: 40px;
+    }
+    @media(max-width:576px){
+        font-size: 26px;
+    }
+}
+.title__{
+    font-size: 38px;
+    letter-spacing: 0.15em;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    
+    @media(max-width:1200px){
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media(max-width:576px){
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        padding-left: 5px;
+        padding-right: 5px;
+        span.ensp{
+            display: none;
+        }
+
+    }
+
+}
+.subtitle__{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    @media(max-width:1200px){
+        font-size: 18px;
+    }
+    @media(max-width:576px){
+        font-size: 16px;
+    }
+}
+// 標題旁的數字圖
+.left_img{
+    max-width: 100px;
+    margin-right: 20px;
+
+    @media(max-width:1200px){
+        margin-right: 20px;
+        max-width: 80px;
+    }
+    @media(max-width:576px){
+        max-width: 55px;
+        margin-right: 10px;
+
+    }
+}
+
+.padding_L{
+    padding-left: 7rem;
+    @media(max-width:768px){
+        padding-left: 0;
+    }
+}
+//////////////////
+
+
+
+
+.navber{
+    align-items: unset!important;
+}
+.navbar{
+    display: block!important;
+    padding: 0!important;
+}
+.phone-icon{
+    margin-top: 8px;
+    
+}
+
+.menu-toggle{
+    span{
+        background-color: #6d5c5f;
+    }
+}
+.software-header {
+    .menu__item{
+        line-height: 1.15;
+    }
+}
+.nav__menu{
+    margin-bottom: 0;
+}
+
+.contact-sub{
+    padding-top: 100px;
+}
+
+.contact-inner{
+    h3.color--red{
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 2px;
+        margin-top: 0;
+    }
+    h5.h5{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    
+}
+//////////////////////////////////////////////////////
+
+
+.wrapper{
+    .box_1{
+        position: relative;
+        background-color: #F8F3F5;
+        padding-bottom: 50px;
+        .box_1_content{
+            background-image: url(../images/software_5/box_1_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 87% 90%;
+            // background-color: #F8F3F5;
+            
+    
+    
+            @media(max-width:576px){
+                background-image: url(../images/software_5/box_1_bg_mobile.png);
+                background-size: contain;
+    
+            }
+    
+            // 文字
+            .article{
+                // position: absolute;
+                // top: 30%;
+                // left: 10%;
+                padding-top: 20vh;
+                padding-bottom: 50vh;
+                // padding-left: 15%;
+    
+                @media(max-width:1576px){
+                    padding-top: 15vh;
+                    padding-bottom: 35vh;
+                }
+                @media(max-width:576px){
+                    padding-left: 0%;
+                    padding-bottom: 45vh;
+                }
+    
+                .big_title__{
+                    color: #B37676;
+                    font-weight: bold;
+                    line-height: 72px;
+                    letter-spacing: 0.22em;
+    
+                    @media(max-width:576px){
+                        text-align: center;
+                    }
+                    
+                }
+    
+                .subtitle__{
+                    color: #80654A;
+                    letter-spacing: 0.05em;
+                    @media(max-width:576px){
+                        text-align: center;
+                    }
+                }
+            }
+            
+            
+    
+        }
+        .left_flower{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;   
+            max-width: 40%; 
+            @media (max-width:992px) {
+                display: none;
+            }
+        }
+        .right_flower{
+            position: absolute;
+            right: 0%;
+            top: 10%;
+            max-width: 30%; 
+            @media (max-width:992px) {
+                display: none;
+            }
+        }
+    }
+    
+    .box_2{
+        background-color: #F8F3F5;
+        .article{
+            .title__{
+                display: inline;
+                color: #CD8C97;
+                background: linear-gradient(to top, white 50%, transparent 0%);
+                padding-bottom: 5px;
+                
+            }
+            .subtitle__{
+                color: #80654A;
+                max-width: 570px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .p__{
+                color: #484746;
+                line-height: 32px;
+            }
+            
+            .hr_{
+                width: 200px;
+                margin: 30px 0;
+            }
+        }
+    }
+
+
+    .contact-sub{
+        padding-top: 200px;
+    }
+}
