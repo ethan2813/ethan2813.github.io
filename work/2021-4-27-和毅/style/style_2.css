@@ -1,0 +1,33 @@
+.box_1 {
+  padding-top: 160px;
+}
+
+.box_1 .box_1_title img {
+  margin-bottom: 50px;
+}
+
+.box_1 .box_1_title .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box_1 .box_1_title .text .title_ {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.box_1 .box_1_title .text .p_20 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+}
+
+.box_1 .box_1_right {
+  padding-top: 200px;
+}

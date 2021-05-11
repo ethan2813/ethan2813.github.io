@@ -1,0 +1,33 @@
+.box_1{
+    padding-top: 160px;
+
+    .box_1_title{
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+        }
+        .text{
+            display: flex;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 20px;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+
+            }
+        }   
+        
+    }
+
+    .box_1_right{
+        padding-top: 200px;
+
+        .box_1_right_
+    }  
+}
