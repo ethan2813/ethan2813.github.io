@@ -314,7 +314,7 @@
 
             @media (max-width:1200px){
                 margin-top: 100px;
-                margin-bottom: 80px;
+                // margin-bottom: 80px;
             }
             .title__{
                 display: inline;
@@ -358,7 +358,7 @@
                 background-position: 0;
                 padding-top: 20px;
                 padding-bottom: 0;
-
+                background-image: unset;
             }
             .photo_img{
                 box-shadow: 48px 45px 69px -27px rgba(98, 64, 65, 0.25);
@@ -416,7 +416,7 @@
 
             @media (max-width:1200px){
                 margin-top: 100px;
-                margin-bottom: 80px;
+                // margin-bottom: 80px;
             }
             .title__{
                 display: inline;
@@ -457,7 +457,7 @@
             @media (max-width:768px){
                 padding-bottom: 50px;
                 background-position: 0;
-                padding-top: 20px;
+                padding-top: 0px;
                 padding-bottom: 0;
 
             }
@@ -486,7 +486,7 @@
 
             @media (max-width:1200px){
                 margin-top: 100px;
-                margin-bottom: 80px;
+                // margin-bottom: 80px;
             }
             .title__{
                 display: inline;
@@ -529,7 +529,7 @@
             @media (max-width:768px){
                 padding-bottom: 50px;
                 background-position: 0;
-                padding-top: 20px;
+                padding-top: 0px;
                 padding-bottom: 0;
 
             }
@@ -559,7 +559,7 @@
 
             @media (max-width:1200px){
                 margin-top: 100px;
-                margin-bottom: 80px;
+                // margin-bottom: 80px;
                 padding-bottom: 0px;
 
             }
@@ -598,16 +598,20 @@
             height: 100%;
             padding-top: 50px;
             // padding-bottom: 150px;
-            padding-right: 60px;
+            padding-right: 60px;    
             
 
             @media (max-width:1200px){
                 padding-right: 0;
             }
+            @media (max-width:1120px){
+            background-position: -150px 0%;
+                
+            }
             @media (max-width:768px){
                 padding-bottom: 50px;
                 background-position: 0;
-                padding-top: 20px;
+                padding-top: 0px;
                 padding-bottom: 0;
 
             }
@@ -667,7 +671,7 @@
 
             @media (max-width:1200px){
                 margin-top: 100px;
-                margin-bottom: 80px;
+                // margin-bottom: 80px;
             }
             .title__{
                 display: inline;
@@ -710,7 +714,7 @@
             @media (max-width:768px){
                 padding-bottom: 50px;
                 background-position: 0;
-                padding-top: 20px;
+                padding-top: 0px;
                 padding-bottom: 0;
 
             }

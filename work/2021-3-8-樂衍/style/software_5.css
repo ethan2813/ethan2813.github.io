@@ -352,7 +352,6 @@
 @media (max-width: 1200px) {
   .wrapper .box_2 .article {
     margin-top: 100px;
-    margin-bottom: 80px;
   }
 }
 
@@ -407,6 +406,7 @@
     background-position: 0;
     padding-top: 20px;
     padding-bottom: 0;
+    background-image: unset;
   }
 }
 
@@ -479,7 +479,6 @@
 @media (max-width: 1200px) {
   .wrapper .box_3 .article {
     margin-top: 100px;
-    margin-bottom: 80px;
   }
 }
 
@@ -531,7 +530,7 @@
   .wrapper .box_3 .photo {
     padding-bottom: 50px;
     background-position: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0;
   }
 }
@@ -570,7 +569,6 @@
 @media (max-width: 1200px) {
   .wrapper .box_4 .article {
     margin-top: 100px;
-    margin-bottom: 80px;
   }
 }
 
@@ -623,7 +621,7 @@
   .wrapper .box_4 .photo {
     padding-bottom: 50px;
     background-position: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0;
   }
 }
@@ -663,7 +661,6 @@
 @media (max-width: 1200px) {
   .wrapper .box_5 .article {
     margin-top: 100px;
-    margin-bottom: 80px;
     padding-bottom: 0px;
   }
 }
@@ -712,11 +709,17 @@
   }
 }
 
+@media (max-width: 1120px) {
+  .wrapper .box_5 .photo {
+    background-position: -150px 0%;
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper .box_5 .photo {
     padding-bottom: 50px;
     background-position: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0;
   }
 }
@@ -790,7 +793,6 @@
 @media (max-width: 1200px) {
   .wrapper .box_6 .article {
     margin-top: 100px;
-    margin-bottom: 80px;
   }
 }
 
@@ -843,7 +845,7 @@
   .wrapper .box_6 .photo {
     padding-bottom: 50px;
     background-position: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0;
   }
 }
