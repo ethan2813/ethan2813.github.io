@@ -38,10 +38,14 @@
         }
 
         .box_1_right_bot{
+            padding-right: 60px;
+            // max-width: 550px;
             padding-top: 120px;
-
+            overflow: hidden;
+            
             .p_16{
                 position: relative;
+                display: inline-block;
                 &:after{
                     position: absolute;
                     content: '';
@@ -49,6 +53,8 @@
                     width: 100%;
                     height: 1px;
                     background-color: #BFBFBF;
+                    left: 105%;
+                    top: 50%;
                 }
             }
         }
