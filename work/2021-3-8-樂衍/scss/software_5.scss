@@ -619,12 +619,15 @@
                 box-shadow: 48px 45px 69px -27px rgba(98, 64, 65, 0.25);
                 padding: 36px;
                 background-color: white;
+                padding-bottom: 120px;
 
                 @media (max-width:1200px){
                     padding: 15px;
+                    padding-bottom: 100px;
                 }
                 @media (max-width:768px) {
                     padding: 0;
+                    // padding-bottom: 80px;
                 }
                 img{
                     width: 100%;
