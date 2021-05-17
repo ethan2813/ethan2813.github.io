@@ -1,9 +1,21 @@
 .box_1 {
   padding-top: 160px;
+  background-image: url(/paga_2/img/paga_2/box_1_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+
+.box_1 .box_1_photo {
+  position: absolute;
+  width: 35%;
+  top: 50%;
 }
 
 .box_1 .box_1_title img {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .box_1 .box_1_title .text {
@@ -11,6 +23,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box_1 .box_1_title .text .title_ {
