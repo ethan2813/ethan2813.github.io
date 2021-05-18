@@ -180,17 +180,54 @@
         
     }
     .box_2_content{
+        @media (max-width:768px) {
+            margin-top: 60px;
+        }
+
+
         .p_20{
             color: #74B52A;
 
-            &:nth-of-type(2){
+            &.content_1{
+                margin-left: 60px;
+                @media (max-width:1200px) {
+                    margin-left: 0;
+                    text-align: center;
+                    
+                }
+            }
+
+            &.content_2{
                 text-align: center;
             }
         }
         
         .p_16{
-            text-align: right;
             color: #E5801A;
+
+            &.content_3{
+                margin-right: 60px;
+                text-align: right;
+                @media (max-width:1200px) {
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+
+            &.content_4{
+                
+                
+                letter-spacing: 0.135em;
+                color: #5E5454;
+            }
+
+            
+        }
+        .line_{
+            background-color: #BFBFBF;
+            width: 100%;
+            height: 1px;
+            margin: 60px 0;
         }
     }
 }
