@@ -23,7 +23,9 @@
         img{
             // width: 100%;
             margin-bottom: 50px;
-            
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
         }
         .text{
             display: flex;
@@ -153,12 +155,19 @@
 }
 
 .box_2{
+    margin-bottom: 150px;
+
+    @media (max-width:768px){
+        margin-bottom: 50px;
+    }
     .box_2_title{
         text-align: center;
         img{
             // width: 100%;
             margin-bottom: 50px;
-            
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
         }
         .text{
             display: flex;
@@ -230,4 +239,118 @@
             margin: 60px 0;
         }
     }
+}
+
+.box_3{
+    .box_3_item{
+
+        &.left{
+            @media (max-width:768px){
+                display: none;
+            } 
+        }
+
+        &.right{
+            @media (max-width:768px){
+                display: none;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.box_4{
+    margin-top: 90px;
+    .box_4_title{
+        text-align: center;
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 20px;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+
+            }
+        }   
+        
+    }
+
+    .box_4_top{
+        position: relative;
+        text-align: center;
+
+        @media (max-width:768px) {
+            margin-top: 60px;
+        }
+
+        >img{
+            position: absolute;
+            max-width: 250px;
+            right: 0;
+            top: -250px;
+
+            @media (max-width:1200px){
+                top: -270px;
+                max-width: 200px;
+            }
+            @media (max-width:768px){
+                position: unset;
+                max-width: 120px;
+
+            }
+        }
+
+        .box_4_top_left{
+            overflow: hidden;
+            max-width: 450px;
+            margin-bottom: 150px;
+            position: relative;
+            text-align: left;
+
+            @media (max-width:768px){
+                display: inline-block;
+                margin-top: 60px;
+            }
+            .p_16{
+                position: relative;
+                display: inline-block;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 200%;
+                    height: 1px;
+                    background-color: #BFBFBF;
+                    left: 105%;
+                    top: 50%;
+    
+                    @media (max-width:768px){
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+    
+    
 }
