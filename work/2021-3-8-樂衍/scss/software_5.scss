@@ -126,6 +126,18 @@
         font-size: 16px;
     }
 }
+
+.subtitle__2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    @media(max-width:1200px){
+        font-size: 22px;
+    }
+    @media(max-width:576px){
+        font-size: 20px;
+    }
+}
 // 標題旁的數字圖
 .left_img{
     max-width: 100px;
@@ -248,7 +260,7 @@
                     color: #B37676;
                     font-weight: bold;
                     line-height: 72px;
-                    letter-spacing: 0.22em;
+                    letter-spacing: 0.08em;
     
                     @media(max-width:576px){
                         text-align: center;
@@ -256,7 +268,7 @@
                     
                 }
     
-                .subtitle__{
+                .subtitle__2{
                     color: #80654A;
                     letter-spacing: 0.05em;
                     @media(max-width:576px){
@@ -454,6 +466,9 @@
             padding-top: 50px;
             padding-bottom: 120px;
             padding-right: 60px;
+            padding-bottom: 250px;
+            position: relative;
+
 
             @media (max-width:1200px){
                 padding-right: 0;
@@ -465,11 +480,26 @@
                 padding-bottom: 0;
 
             }
+            >img{
+                position: absolute;
+                width: 50%;
+                right: 10%;
+                bottom: 0;
+
+                @media (max-width:1000px) {
+                    width: 60%;
+                }
+                @media (max-width:768px) {
+                    position:unset;
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
             .photo_img{
                 box-shadow: 48px 45px 69px -27px rgba(98, 64, 65, 0.25);
                 padding: 36px;
                 background-color: white;
-
+                
                 @media (max-width:1200px){
                     padding: 15px;
                 }
@@ -479,6 +509,7 @@
                 img{
                     width: 100%;
                 }
+                
             }
         }
     }

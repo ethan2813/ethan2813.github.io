@@ -37,6 +37,15 @@
 
 }
 
+.p_28{
+    color: #5E5454;
+    font-size: 28px;
+    letter-spacing: 0.145em;
+    @media (max-width:768px) {
+        font-size: 24px;
+    }
+}
+
 .sub_title_{
     font-size:20px;
     letter-spacing: 0.1em;
@@ -48,6 +57,8 @@
     letter-spacing: 0.1em;
     font-weight: bold;
 }
+
+
 
 
 
