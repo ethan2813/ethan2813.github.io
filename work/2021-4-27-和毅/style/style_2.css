@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .box_1 {
   padding-top: 160px;
   background-image: url(/paga_2/img/paga_2/box_1_bg.svg);
@@ -6,6 +7,7 @@
   background-position: left bottom;
   position: relative;
   padding-bottom: 80px;
+  margin-bottom: -60px;
 }
 
 .box_1 .box_1_photo {
@@ -51,6 +53,7 @@
           writing-mode: vertical-lr;
   margin: 0;
   margin-top: 20px;
+  color: #5E5454;
 }
 
 .box_1 .box_1_title .text .p_20 {
@@ -58,6 +61,7 @@
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin: 0;
+  color: #5E5454;
 }
 
 .box_1 .box_1_right {
@@ -170,6 +174,7 @@
 
 .box_2 {
   margin-bottom: 150px;
+  padding-top: 60px;
 }
 
 @media (max-width: 768px) {
@@ -209,6 +214,7 @@
           writing-mode: vertical-lr;
   margin: 0;
   margin-top: 20px;
+  color: #5E5454;
 }
 
 .box_2 .box_2_title .text .p_20 {
@@ -216,6 +222,7 @@
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin: 0;
+  color: #5E5454;
 }
 
 @media (max-width: 768px) {
@@ -288,7 +295,29 @@
 }
 
 .box_4 {
-  margin-top: 90px;
+  padding-top: 90px;
+  position: relative;
+}
+
+.box_4:after {
+  content: '和 毅';
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: block;
+  color: #c9c2c29c;
+  font-size: 350px;
+  position: absolute;
+  top: 0;
+  left: -8%;
+  opacity: 0.2;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .box_4:after {
+    display: none;
+  }
 }
 
 .box_4 .box_4_title {
@@ -322,6 +351,7 @@
           writing-mode: vertical-lr;
   margin: 0;
   margin-top: 20px;
+  color: #5E5454;
 }
 
 .box_4 .box_4_title .text .p_20 {
@@ -329,6 +359,7 @@
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin: 0;
+  color: #5E5454;
 }
 
 .box_4 .box_4_top {
@@ -375,6 +406,7 @@
   .box_4 .box_4_top .box_4_top_left {
     display: inline-block;
     margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -398,4 +430,222 @@
   .box_4 .box_4_top .box_4_top_left .p_16:after {
     display: none;
   }
+}
+
+.box_4 .box_4_content .item {
+  padding: 40px;
+  padding-left: 60px;
+  -webkit-box-shadow: 0px 4px 24px rgba(202, 202, 202, 0.25);
+          box-shadow: 0px 4px 24px rgba(202, 202, 202, 0.25);
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .box_4 .box_4_content .item {
+    padding: 20px;
+    padding-left: 20px;
+  }
+}
+
+.box_4 .box_4_content .item .p_28 {
+  position: relative;
+  color: #74B52A;
+}
+
+@media (max-width: 768px) {
+  .box_4 .box_4_content .item .p_28 {
+    padding-left: 20px;
+  }
+}
+
+.box_4 .box_4_content .item .p_28:after {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  background-color: #39A7E2;
+}
+
+@media (max-width: 768px) {
+  .box_4 .box_4_content .item .p_28:after {
+    left: 0;
+  }
+}
+
+.box_5 {
+  margin-top: -140px;
+  z-index: -1;
+  padding-top: 320px;
+  padding-bottom: 320px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/paga_2/img/paga_2/box_5_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 996px) {
+  .box_5 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_5 .box_5_left {
+    text-align: center;
+  }
+  .box_5 .box_5_left br {
+    display: none;
+  }
+}
+
+.box_5 .box_5_left img {
+  max-width: 250px;
+  margin-top: 85px;
+}
+
+@media (max-width: 1200px) {
+  .box_5 .box_5_left img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_5 .box_5_left img {
+    max-width: 120px;
+  }
+}
+
+.box_5 .box_5_left .content_1 {
+  color: #5E5454;
+  margin-top: 60px;
+  letter-spacing: 0.145em;
+  text-align: left;
+}
+
+.box_5 .box_5_left .content_2 {
+  margin-top: 40px;
+  color: #E5801A;
+}
+
+.box_5 .box_5_title {
+  text-align: center;
+}
+
+.box_5 .box_5_title img {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .box_5 .box_5_title img {
+    margin-bottom: 10px;
+  }
+}
+
+.box_5 .box_5_title .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box_5 .box_5_title .text .title_ {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+  margin-top: -100px;
+  color: #5E5454;
+}
+
+.box_5 .box_5_title .text .p_20 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+  color: #5E5454;
+}
+
+.box_6 {
+  padding-top: 65px;
+  margin-bottom: 225px;
+}
+
+@media (max-width: 996px) {
+  .box_6 {
+    padding-top: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+.box_6 .box_6_title {
+  text-align: center;
+}
+
+.box_6 .box_6_title img {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .box_6 .box_6_title img {
+    margin-bottom: 10px;
+  }
+}
+
+.box_6 .box_6_title .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box_6 .box_6_title .text .title_ {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+  margin-top: -100px;
+  color: #5E5454;
+}
+
+.box_6 .box_6_title .text .p_20 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+  color: #5E5454;
+}
+
+.box_6 .box_6_article {
+  margin-top: 200px;
+  max-width: 700px;
+}
+
+@media (max-width: 996px) {
+  .box_6 .box_6_article {
+    margin-top: 60px;
+  }
+}
+
+.box_6 .box_6_article .p_16 span {
+  color: #E5801A;
 }

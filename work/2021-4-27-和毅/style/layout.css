@@ -24,6 +24,12 @@
   letter-spacing: 0.15em;
 }
 
+@media (max-width: 500px) {
+  .p_16 {
+    font-size: 15px;
+  }
+}
+
 .p_18 {
   color: #5E5454;
   font-size: 18px;
@@ -180,7 +186,6 @@
 
 #nav .content_ .right .items > li p {
   white-space: nowrap;
-  cursor: pointer;
 }
 
 #nav .content_ .right .items > li .items_2_box {
@@ -193,10 +198,12 @@
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  left: 110px;
 }
 
 #nav .content_ .right .items > li .items_2_box.active {
   top: 62px;
+  left: 110px;
 }
 
 #nav .content_ .right .items > li .items_2_box > p {

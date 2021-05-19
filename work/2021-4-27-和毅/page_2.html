@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>和毅牙醫診所</title>
 
-    <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/style_2.css">
+    <link rel="stylesheet" href="./style/layout.css">
+
 
 
     <!-- bootstrapcdn -->
@@ -39,7 +40,7 @@
 
                             <!-- 選單 -->
                             <div class="items">
-                                <li><a class='p_18' href="">醫療項目</a></li>
+                                <li><a class='p_18' href="./index.html">醫療項目</a></li>
                                 <li class='items_active'>
                                     <p class='p_18'>服務項目</p>
                                     <div class="items_2_box">
@@ -50,20 +51,20 @@
 
                                             <!-- 左 -->
                                             <div class="items_2_L item_2_">
-                                                <li><a href="">智齒拔除</a></li>
+                                                <li><a href="#box_1">智齒拔除</a></li>
                                                 <li><a href="">病變診斷</a></li>
                                             </div>
 
                                             <!-- 中 -->
                                             <div class="items_2_M item_2_">
-                                                <li><a href="">多牙生</a></li>
-                                                <li><a href="">矯正相關手術</a></li>
+                                                <li><a href="#box_2">多牙生</a></li>
+                                                <li><a href="#box_5">矯正相關手術</a></li>
                                             </div>
 
                                             <!-- 右 -->
                                             <div class="items_2_M item_2_">
-                                                <li><a href="">良性腫瘤</a></li>
-                                                <li><a href="">顎骨齒槽重建</a></li>
+                                                <li><a href="#box_4">良性腫瘤</a></li>
+                                                <li><a href="#box_6">顎骨齒槽重建</a></li>
                                             </div>
 
                                         </ul>
@@ -111,12 +112,12 @@
                         <li class='items_active'>
                             <span class='p_20'>服務項目</span>
                             <ul class='items_2_box'>
-                                <li><a class='p_18' href="">智齒拔除</a></li>
-                                <li><a href="">病變診斷</a></li>
-                                <li><a href="">多牙生</a></li>
-                                <li><a href="">矯正相關手術</a></li>
-                                <li><a href="">良性腫瘤</a></li>
-                                <li><a href="">顎骨齒槽重建</a></li>
+                                <li><a class='p_18' href="#box_1">智齒拔除</a></li>
+                                <li><a class='p_18' href="">病變診斷</a></li>
+                                <li><a class='p_18' href="#box_2">多牙生</a></li>
+                                <li><a class='p_18' href="#box_5">矯正相關手術</a></li>
+                                <li><a class='p_18' href="#box_4">良性腫瘤</a></li>
+                                <li><a class='p_18' href="#box_6">顎骨齒槽重建</a></li>
                             </ul>
                         </li>
                         <li><a class='p_20' href="">診所服務</a></li>
@@ -131,7 +132,7 @@
     </nav>
 
     <!-- 智齒拔除 -->
-    <div class="box_1">
+    <div id='box_1' class="box_1">
         <!-- 圖 -->
         <img class='box_1_photo' src="./paga_2/img/paga_2/box_1_photo.jpg" alt="photo">
         <div class="container">
@@ -165,6 +166,7 @@
 
             <div class="row">
                 <div class="col-md-10 offset-md-1">
+                
                     <div class="box_1_bot">
                         <img class='box_1_bot_photo' src="./paga_2/img/paga_2/box_1_bot_photo.png" alt="photo">
                         <div class="item">
@@ -180,6 +182,7 @@
                             <p class="p_28">
                                 智齒小叮嚀
                             </p>
+                            
                             <p class="p_16">
                                 病患若有以下病史，如：藥物過敏、長期服用骨質疏鬆症藥物、高血壓、糖尿病、洗腎、中風、心臟手術、放射性治療、化學治療等醫療病史，需提前告知醫師，再予以評估是否適合進行手術。
                             </p>
@@ -193,7 +196,7 @@
     </div>
     
     <!-- 多生牙 -->
-    <div class="box_2">
+    <div id='box_2' class="box_2">
         <div class="container">
             <!-- 標題 -->
             <div class="row">
@@ -225,7 +228,7 @@
     </div>
 
     <!-- banner -->
-    <div class="box_3">
+    <div id='box_3' class="box_3">
         <div class="container-fluid">
             <div class="row">
                 <div class="p-0 col-md-4 ">
@@ -250,7 +253,8 @@
         </div>
     </div>
 
-    <div class="box_4">
+    <!-- 良性腫瘤 -->
+    <div id='box_4' class="box_4">
         <div class="container">
             <!-- 標題 -->
             <div class="row">
@@ -268,21 +272,107 @@
             <!-- 副標 -->
             <div class="row">
                 <div class="col offset-md-4">
+                    <!-- 上半部 -->
                     <div class="box_4_top">
                         <img src="./paga_2/img/paga_2/box_4_img.png" alt=""><br>
                         <div class="box_4_top_left">
                             <p class="p_16">口腔及顏顎面的良性腫瘤不一定會造成疼痛</p><br>
                             <p class="p_16">許多腫瘤外觀形成腫塊狀</p><br>
                             <p class="p_16">須作病理組織切片等檢查才能確切診斷</p>
-                            
                         </div>
-                        
                     </div>
+
+
                     
                 </div>
                
 
 
+            </div>
+
+            <!-- 下半部 -->
+            <div class="row">
+                <div class="col offset-lg-3">
+                    <div class="box_4_content">
+                        <div class="item">
+                            <h3 class='p_28'>牙瘤</h3>
+                            <p class='p_16'>牙瘤是在顎骨內發育牙齒的上皮發生變異，長出一團包含很多顆迷你小牙齒或者是類似牙齒構造的良性腫瘤。</p>
+                        </div>
+                        <div class="item">
+                            <h3 class='p_28'>黏液囊腫</h3>
+                            <p class='p_16'>黏液囊腫是軟組織的囊腫，發生的原因是因為口腔內的小唾液腺導管阻塞或破損。黏液囊腫因為不會自己消失，又會慢慢長大，所以需要用手術切除。</p>
+                        </div>
+                        <div class="item">
+                            <h3 class='p_28'>化膿性肉芽腫</h3>
+                            <p class='p_16'>化膿性肉芽腫是一種後天性、良性結節狀增生，多在皮膚穿通性外傷後引起，常發生於唇、牙齦、舌、頰及口角處，可迅速增大，容易破潰出血和潰爛。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 矯正相關手術 -->
+    <div id='box_5' class="box_5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-2 order-1 order-lg-0">
+                    <div class="box_5_left">
+                        <img src="./paga_2/img/paga_2/box_5_img.png" alt="img"><br>
+                        <div class="article">
+                            <p class="p_16 content_1">
+                                矯正骨板（Bone Plate）及骨釘是經常運用在縮短牙齒矯正時間的技術之一，<br>
+                                其用來提供骨內錨定，穩定性佳，對骨質較疏鬆的病人而言是比較好的選擇。<br>
+                                手術在門診即可進行，會先在患者的上/下顎骨中最適合的位置予局部麻醉後，<br>
+                                將鈦合金骨板或骨釘放置於適當的位置後鎖入，留一邊骨板露出，<br>
+                                以便後續接合矯正器使用，待矯正療程結束後再移除骨板。
+                            </p>
+                            <p class='p_16 content_2'>
+                                其優良的穩定性，且對牙齒移動的方向有更好的控制性，<br>
+                                對嚴重咬合不正、複雜齒列不整的患者有更好的治療效果。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 標題 -->
+                <div class="col order-0 order-lg-1">
+                    <div class="box_5_title">
+                        <img src="./paga_2/img/paga_2/slash.svg" alt="slash">
+                        <div class="text">
+                            <h3 class='title_'>矯正相關手術</h3>
+                            <p class='p_20'>複雜齒列不整的患者有更好的治療效果。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 顎骨齒槽重建 -->
+    <div id='box_6' class="box_6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box_6_title">
+                        <img src="./paga_2/img/paga_2/slash.svg" alt="slash">
+                        <div class="text">
+                            <h3 class='title_'>顎骨齒槽重建</h3>
+                            <p class='p_20'>以利後續假牙補綴製作或人工牙根植入。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box_6_article">
+                        <p class='p_16'>
+                            口腔中支持牙齒的骨頭稱之為齒槽骨，常常因許多因素，<br>
+                            如：<span>老化萎縮，牙周疾病、外來創傷或是先天的骨顎裂缺損，<br>
+                                而導致齒槽骨於高度及寬度上大量的流失。</span>
+                        </p>
+                        <p class="p_16">
+                            除了利用具有誘導骨再生能力的骨重建材料(骨粉、骨塊)施以「齒槽骨增高手術」外，或是施以側窗上顎竇提升骨引導再生手術，更能藉由口腔顎面外科的手術予以更大範圍的自體骨塊移植獲得更寬廣的齒槽骨狀態。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
