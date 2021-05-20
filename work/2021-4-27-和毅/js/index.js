@@ -1,10 +1,10 @@
 // 電腦版選單
-$('.items_active').on('click',(e)=>{
+$('.items_active').on('click', (e) => {
     $('.items_2_box').toggleClass('active')
 })
 
 // 點擊漢堡條 跳出選單
-$('.burger').on('click',()=>{
+$('.burger').on('click', () => {
     $('.mobile_nav_list').toggleClass('active')
 })
 
@@ -14,6 +14,20 @@ $('.burger').on('click', (e) => {
     $('.mobile_nav_list').toggleClass('nav_active')
 })
 
+// 點擊預約 跳出選單
+$('.online_btn').on('click', () => {
+    $('.online_btn').toggleClass('active')
+    console.log('132')
+    //點空白地方關閉清單
+    $(document).on('mouseup',(e)=>{
+        if($('.online_btn').hasClass('active')){
+            if(!$(e.target).closest('.p_20').length){
+                $('.online_btn').toggleClass('active');
+            }
+        }
+    })
+})
+
 // $('.item_2').on('click',(e)=>{
 //     let index = $('.item_2').index(this) + 1 
 //     console.log(index)
@@ -21,19 +35,19 @@ $('.burger').on('click', (e) => {
 
 
 
-$('.item_2').mouseover(function(e){
+$('.item_2').mouseover(function (e) {
     let index_content = $('.item_2').index(this) + 1
     console.log(index)
 })
 
 
 // console.log($('.item_2'))
-$('.item_map').mouseover((e)=>{
+$('.item_map').mouseover((e) => {
     let index = $('.item_map').index(e.currentTarget) + 1
     console.log(index)
     // console.log( $('.item_2:nth-of-type(' + index + ')'))
     // $('.item_2:nth-of-type(' + index + ')').css('opacity','1')
-    
+
 })
 
 //點空白地方關閉清單
@@ -74,16 +88,16 @@ $('.item_map').mouseover((e)=>{
 // scroll 效果
 // (function(){
 // $(document).ready(function(){
-    
+
 //     window.addEventListener('scroll',function(){
 //         let this_scroll = this.scrollY; //下移量
 //         var topHeight = $(window).height() *0.5 ; //畫面總高度(特效拉到畫面75%才發動)
 //         let top_1 = $(this).scrollTop() /20; //位移倍率
 //         let top_2 = $(this).scrollTop() /25; //位移倍率
 //         let top_3 = $(this).scrollTop() /30; //位移倍率
-        
-    
-        
+
+
+
 
 //         //關於本院標題
 //         let about_title = $('.about .title_')
@@ -100,7 +114,7 @@ $('.item_map').mouseover((e)=>{
 //         //關於本院內文內文下移量
 //         let about_content_p_scroll = about_content_p.offset().top - topHeight;
 
-        
+
 //         console.log(this_scroll , topHeight , about_title_scroll)
 //         // 關於本院 標題
 //         if(this_scroll > about_title_scroll){

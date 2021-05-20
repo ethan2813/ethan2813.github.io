@@ -14,6 +14,12 @@ $('.burger').on('click', (e) => {
     $('.mobile_nav_list').toggleClass('nav_active')
 })
 
+// 點擊預約 跳出選單
+$('.online_btn').on('click',()=>{
+    $('.online_btn').toggleClass('active')
+    console.log('132')
+})
+
 // $('.item_2').on('click',(e)=>{
 //     let index = $('.item_2').index(this) + 1 
 //     console.log(index)
