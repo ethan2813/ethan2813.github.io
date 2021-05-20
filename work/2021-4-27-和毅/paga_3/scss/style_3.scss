@@ -1,49 +1,423 @@
-.box_1{
-    position: relative;
-
-    .text_box{
-        text-align: center;
-        position: absolute;
-        transform: translate(-50% , -50%);
-        left: 50%;
-        top: 50%;
-        background-color: white;
-        z-index: 2;
-        padding: 110px 80px;
-
-        @media (max-width:1200px){
-            padding: 80px 60px;
-        }
-        @media (max-width:996px){
-            padding: 60px 45px;
-        }
-        @media (max-width:768px){
-            padding: 50px 30px;
-        }
-        @media (max-width:500px){
-            padding: 20px 15px;
-            top: 60%;
-        }
-        span{
-            // font-weight: bold;
-            color: #5E5454;
-            letter-spacing: 0.145em;
-            white-space:nowrap; 
-
-        }
+body{
+    background-image: url(/paga_3/img/paga_3/bgc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 200px;
+    @media (max-width:1200px) {
+        background-size: 200%;
     }
 
-    .box_1_L{
-        img{
-            width: 100%;
+    @media (max-width:768px) {
+        background-image: unset;
+    }
+    .box_1{
+        position: relative;
+    
+        .text_box{
+            text-align: center;
+            position: absolute;
+            transform: translate(-50% , -50%);
+            left: 50%;
+            top: 50%;
+            background-color: white;
+            z-index: 2;
+            padding: 110px 80px;
+    
+            @media (max-width:1200px){
+                padding: 80px 60px;
+            }
+            @media (max-width:996px){
+                padding: 60px 45px;
+            }
+            @media (max-width:768px){
+                padding: 50px 30px;
+            }
+            @media (max-width:500px){
+                padding: 20px 15px;
+                top: 60%;
+            }
+            span{
+                // font-weight: bold;
+                color: #5E5454;
+                letter-spacing: 0.145em;
+                white-space:nowrap; 
+    
+            }
+        }
+    
+        .box_1_L{
+            img{
+                width: 100%;
+            }
+        }
+        .box_1_R{
+            img{
+                width: 100%;
+            }
+            @media (max-width:768px){
+                display: none;
+            }
         }
     }
-    .box_1_R{
-        img{
-            width: 100%;
+    
+    .box_2{
+        padding-top: 225px;
+
+        @media(max-width:1000px){
+            padding-top: 100px;
         }
-        @media (max-width:768px){
-            display: none;
+        .box_2_title{
+            // margin-left: 100px;
+            text-align: center;
+            img{
+                // width: 100%;
+                margin-bottom: 50px;
+                @media (max-width:768px) {
+                    margin-bottom: 10px;
+                }
+            }
+            .text{
+                display: flex;
+                justify-content: center;
+                // 主標題
+                .title_{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    margin-top: -200px;
+                    color: #5E5454;
+        
+                }
+                // 副標題
+                .p_20{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    color: #5E5454;
+    
+                }
+            }   
+            
+        }
+    
+        // 右邊
+        .box_2_R{
+    
+            // 左邊的字
+            .box_2_R_L{
+                padding-top: 120px;
+    
+                @media (max-width:1600px){
+                    padding-top: 80px;
+                }
+    
+                @media (max-width:768px){
+                    padding-top: 100px;
+                }
+                .item{
+                    .p_28{
+                        color: #74B52A;
+                        position: relative;
+    
+                        @media (max-width:768px) {
+                            padding-left: 20px;
+                        }
+    
+                        &:after{
+                            position: absolute;
+                            background-color: #39A7E2;
+                            width: 5px;
+                            height: 5px;
+                            left: -25px;
+                            top: 50%;
+                            content: '';
+                            @media (max-width:768px){
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            // 右邊的圖
+            .box_2_R_R{
+                @media (max-width:768px){
+                    padding-top: 50px;
+                }
+    
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .box_3{
+        padding-top: 160px;
+        padding-bottom: 100px;
+
+        @media (max-width:996px) {
+            padding-bottom: 200px;
+
+        }
+        @media (max-width:768px) {
+            padding-bottom: 0px;
+
+        }
+
+
+        // 按鈕
+        .box_3_title_group{
+            padding-top: 160px;
+    
+            @media (max-width:996px) {
+                display: flex;
+                justify-content:space-between;
+                // align-items: center;
+            }
+            @media (max-width:500px) {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 100px;
+
+               
+            }
+            .tab_btn{
+                @media (max-width:500px) {
+                    padding: 10px 0 ;
+                }
+                &.display_block{
+                    .p_20{
+                        color: #74B52A;
+                        font-weight: bold;
+                    }
+                }
+    
+                .p_20{
+                    color: #5E5454;
+                    cursor: pointer;
+
+                    @media (max-width:500px){
+                        font-size: 22px;
+                    }
+                }
+                &:nth-of-type(2){
+                    margin-top: 100px;
+                    @media (max-width:996px){
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    
+        // 顯示的內容
+        .box_3_content_group{
+            padding-top: 160px;
+            padding-left:  15px;
+            padding-right:  15px;
+
+            @media (max-width:500px) {
+                padding-top: 60px;
+            }
+            .tab_content{
+                position: absolute;
+                max-width: 520px;
+                display: none;
+                @media (max-width:768px) {
+                    position: unset;
+        
+                }
+                
+    
+                .content_1{
+                    .p_16{
+                        color: #E5801A;
+                        margin-bottom: 0;
+                        padding-left: 15px;
+                        position: relative;
+    
+                        &:after{
+                            position: absolute;
+                            background-color: #E5801A;
+                            width: 5px;
+                            height: 5px;
+                            left: 0;
+                            top: 50%;
+                            content: '';
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .content_2{
+                    counter-reset:num;
+                    >.p_16{
+                        // color: #E5801A;
+                        margin-bottom: 5px;
+                        padding-left: 30px;
+                        position: relative;
+                        display:block;
+                        &::after{
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            left: 0;
+                            top: 0%;
+                            counter-increment:num; 
+                            content:'('counter(num) ')';
+                        }
+                        
+                    }
+                }
+                .content_3{
+                    padding-left: 30px;
+                    .p_16{
+                        color: #E5801A;
+                        margin-bottom: 5px;
+                        position: relative;
+                        padding-left: 15px;
+    
+    
+                        &:after{
+                            position: absolute;
+                            background-color: #E5801A;
+                            width: 5px;
+                            height: 5px;
+                            left: 0;
+                            top: 50%;
+                            content: '';
+                            border-radius: 50%;
+                        }
+    
+                    }
+                }
+                &.display_block{
+                    display: block;
+                }
+               
+            }
+        }
+    
+        .box_3_title{
+            // margin-left: 100px;
+            text-align: center;
+            img{
+                // width: 100%;
+                margin-bottom: 50px;
+                @media (max-width:768px) {
+                    margin-bottom: 10px;
+                }
+            }
+            .text{
+                display: flex;
+                justify-content: center;
+                // 主標題
+                .title_{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    margin-top: -50px;
+                    color: #5E5454;
+        
+                }
+                // 副標題
+                .p_20{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    color: #5E5454;
+    
+                }
+            }   
+            
+        }
+    
+    }
+    
+    .box_4{
+        margin-bottom: 130px;
+        padding-top: 225px;
+
+        @media (max-width:768px) {
+            padding-top: 150px;
+        }
+        .box_2_title{
+            // margin-left: 100px;
+            text-align: center;
+            img{
+                // width: 100%;
+                margin-bottom: 50px;
+                @media (max-width:768px) {
+                    margin-bottom: 10px;
+                }
+            }
+            .text{
+                display: flex;
+                justify-content: center;
+                // 主標題
+                .title_{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    margin-top: -50px;
+                    color: #5E5454;
+        
+                }
+                // 副標題
+                .p_20{
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                    color: #5E5454;
+    
+                }
+            }   
+            
+        }
+    
+        // 右邊
+        .box_2_R{
+    
+            // 左邊的字
+            .box_2_R_L{
+                padding-top: 120px;
+    
+                @media (max-width:1600px){
+                    padding-top: 80px;
+                }
+    
+                @media (max-width:768px){
+                    padding-top: 50px;
+                }
+                .item{
+                    .p_28{
+                        color: #74B52A;
+                        position: relative;
+    
+                        @media (max-width:768px) {
+                            padding-left: 20px;
+                        }
+    
+                        &:after{
+                            position: absolute;
+                            background-color: #39A7E2;
+                            width: 5px;
+                            height: 5px;
+                            left: -25px;
+                            top: 50%;
+                            content: '';
+                            @media (max-width:768px){
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            // 右邊的圖
+            .box_2_R_R{
+                @media (max-width:768px){
+                    padding-top: 100px;
+                }
+    
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
+
