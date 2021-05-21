@@ -436,6 +436,13 @@
   transition: 0.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .online_btn {
+    display: none;
+    top: 60%;
+  }
+}
+
 .online_btn.active {
   right: 0;
 }
