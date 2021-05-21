@@ -2,7 +2,6 @@
 .box_1 {
   padding-top: 160px;
   background-image: url(../paga_2/img/paga_2/box_1_bg.svg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -488,7 +487,7 @@
   padding-bottom: 320px;
   position: relative;
   overflow: hidden;
-  background-image: url(/paga_2/img/paga_2/box_5_bg.svg);
+  background-image: url(../paga_2/img/paga_2/box_5_bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
