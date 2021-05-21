@@ -64,8 +64,11 @@
         }
     }
     .box_2_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         img{
-            width: 100%;
+            // width: 100%;
             margin-bottom: 50px;
         }
         .title_{
