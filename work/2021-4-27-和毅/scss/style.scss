@@ -336,6 +336,9 @@
 }
 
 .box_4{
+    @media (max-width:768px) {
+        margin-top: 60px;
+    }
     .box_4_L{
         .box_4_L_title{
             img{
@@ -446,6 +449,9 @@
 
     .box_4_R{
         margin-top: 250px;
+        @media (max-width:768px) {
+            margin-top: 60px;
+        }
         .items{
             display: flex;
             justify-content: space-around;
@@ -503,6 +509,9 @@
     background-size: cover;
     padding-bottom: 150px;
     margin-bottom: -50px;
+    @media (max-width:768px) {
+        margin-top: 60px;
+    }
     .box_5_L{
         display: flex;
         .box_5_L_title{
@@ -545,6 +554,9 @@
     // 右半部
     .box_5_R{
         margin-top: 270px;
+        @media (max-width:768px) {
+            margin-top: 60px;
+        }
         img{
             max-width: 720px;
             width: 100%;
