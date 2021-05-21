@@ -1,533 +1,345 @@
 .box_1{
-    background-image: url(../img/index/box_1_bg.svg);
+    padding-top: 180px;
+    background-image: url(/paga_4/img/paga_4/bgc-01.svg);
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 260px;
-    padding-bottom: 120px;
-    position: relative;
-    overflow: hidden;
+    background-size: contain;
 
-    @media(max-width:768px){
-        padding-top: 200px;
+    @media(max-width:1200px){
+        background-size: 200%;
+    }
+    @media(max-width:500px){
+        background-size: 500%;
     }
 
-    &:after{
-        content: '和 毅';
-        writing-mode: vertical-lr;
-        display: block;
-        color: white;
-        font-size: 350px;
-        position: absolute;
-        top: 0;
-        left: -8%;
-        opacity: 0.2;
-        font-weight: bold;
+    // 標題ㄑ
+    .box_1_title{
+        // margin-left: 100px;
+        text-align: center;
 
-        @media (max-width:768px){
-            display: none;
+        @media (max-width:768px) {
+            margin-bottom: 60px;
         }
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: -200px;
+                color: #5E5454;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
+            }
+        }   
     }
-    .article_{
-        max-width: 550px;
-        .sub_title_{
-            color:white;
+
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
-        .p_16{
-            color: white;
-            line-height: 30px;
-        }
+
     }
-    .photo_{
+
+    .box_1_bot{
         img{
             width: 100%;
         }
+        .box_1_bot_L{
+            .flex_{
+                display: flex;
+            }
+        }
+        .boxin_{
+            position: relative;
+            
+            // 圖
+            img{
+                transition: 0.5s;
+            }
+
+            // 文_1
+            .img_1_text{
+                position: absolute;
+                white-space: nowrap;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                color: #E5801A;
+                opacity: 0;
+                letter-spacing: 0.02em;
+                transition: 0.5s ease-in-out;
+            }
+
+            // 文_2
+            .img_2_text{
+                position: absolute;
+                white-space: nowrap;
+                transition: 0.5s ease-in-out;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                text-align: center;
+                opacity: 0;
+                .p_28{
+                    color: #E5801A;
+                    font-weight: bold;
+                }
+                .p_16{
+                    color: #5E5454;
+                }
+            }
+
+            // 文3
+            .img_3_text{
+                position: absolute;
+                white-space: nowrap;
+                transition: 0.5s ease-in-out;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                text-align: center;
+                opacity: 0;
+                .p_28{
+                    color: #E5801A;
+                    font-weight: bold;
+                    letter-spacing: 0.05em;
+                }
+                .p_16{
+                    color: #E5801A;
+                    margin-left: 75%;
+                }
+            }
+
+            // hover 效果
+            &:hover{
+               
+                img{
+                    opacity: 0.2;
+                }
+                p,span{
+                    opacity: 1;
+                }
+            }
+        }
+       
+
     }
+    
+   
 }
 
 .box_2{
-    position: relative;
-    overflow: hidden;
-    &:after{
-        content: '牙 醫';
-        writing-mode: vertical-lr;
-        display: block;
-        color: #CBCBCB;
-        font-size: 350px;
-        position: absolute;
-        top: 0;
-        right: -8%;
-        opacity: 0.2;
-        font-weight: bold;
+    padding-top: 90px;
+    background-image: url(/paga_4/img/paga_4/bgc-02.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-        @media (max-width:768px){
-            display: none;
-        }
+    @media(max-width:1200px){
+        background-size: 200%;
     }
-    .box_2_title{
+    @media(max-width:500px){
+        background-size: 500%;
+    }
+     // 標題ㄑ
+     .box_1_title{
+        // margin-left: 100px;
+        text-align: center;
+
+        @media (max-width:768px) {
+            margin-bottom: 60px;
+        }
         img{
-            width: 100%;
+            // width: 100%;
             margin-bottom: 50px;
-        }
-        .title_{
-            writing-mode: vertical-lr;
-            margin-left: 0;
-        }
-
-    }
-
-    .box_2_content{
-        margin-bottom: 180px;
-        @media(max-width:768px){
-            margin-bottom: 100px;
-        }
-        .items{
-            @media(max-width:576px){
-                display: flex;
-            }
-           .item{
-            margin-top: 100px;
-            padding: 0 20px;
-            width: 100%;
-                .number{
-                    text-align: right;
-                    font-size: 60px;
-                    color: rgba(94, 84, 84, 0.2);
-                    letter-spacing: 0.145em;
-                    line-height: 50px;
-                }
-            } 
-        }
-        
-
-        
-    }
-    .box_2_bot{
-        .photo{
-            width: 100%;
-            img{
-                width: 100%;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
             }
         }
-        .article{
+        .text{
             display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 0px;
+                color: #5E5454;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
+            }
+        }   
+    }
+
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
-            @media (max-width:768px){
-                display: block;
+        }
+
+        @media (max-width:768px) {
+            margin-top: 0;
+        }
+
+    }
+
+
+    // 下半部
+    .box_2_bot{
+        margin-top: 80px;
+
+        @media (max-width:768px) {
+            margin-top: 0;
+        }
+        .item{
+            margin-top: 30px;
+            padding: 35px 60px;
+            background-color: white;
+            // max-width: 440px;
+            width: 100%;
+            box-shadow: 0px 4px 24px rgba(202, 202, 202, 0.25);
+            
+            
+            p{
+                margin-bottom: 0;
             }
-
-            .box_2_bot_title{
-                
-                display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    
-                img{
-                    // width: 100%;
-                    margin-bottom: 50px;
-                    
-                }
-                .title_{
-                    
-                    writing-mode: vertical-lr;
-                    margin: 0;
-
-                }
+            .p_28{
+                color: #74B52A;
             }
-            .box_2_bot_content{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @media(max-width:768px){
-                    margin-top: 50px;
-                }
-                .p_16{
-                    color: #777777;
-                    max-width: 580PX;
+            .p_16{
+                span{
+                    color: #74B52A;
                 }
             }
         }
     }
-    
 }
 
 .box_3{
-    padding-top: 120px;
-    background-image: url(../img/index/box_3_bg.svg);
+    padding-top: 180px;
+    padding-bottom: 150px;
+    background-image: url(/paga_4/img/paga_4/bgc-03.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
 
-    &:after{
-        content: '醫 師';
-        writing-mode: vertical-lr;
-        display: block;
-        color: #CBCBCB;
-        font-size: 350px;
-        position: absolute;
-        top: 10%;
-        left: -8%;
-        opacity: 0.2;
-        font-weight: bold;
-
-        @media (max-width:768px){
-            display: none;
-        }
-    }
-
-    @media(max-width:1500px){
-        background-size: 120%;
-    }
     @media(max-width:1200px){
-        background-size: 150%;
+        background-size: 200%;
     }
-    @media(max-width:996px){
-        background-size: 180%;
+    @media(max-width:500px){
+        background-size: 500%;
     }
-    @media(max-width:768px){
-        background-size: cover;
-    }
-    .doctor_{
 
-        &.doctor_woman{
-            margin-top: 200px;
-
-            @media (max-width:768px){
-                margin-top: 100px;
-            }
-        }
-
-
-       // 左邊文字
-    .doctor_L{
-        display: flex;
-        max-width: 100%;
-
-        @media(max-width:768px){
-            flex-direction: column;
-            align-items: center;
-        }
-
-        
-        // 左邊的標題
-        .doctor_L_1{
-            
-            img{
-                // width: 100%;
-                margin-bottom: 50px;
-            }
-           .text{
-               display: flex;
-
-               .text_in{
-                    writing-mode: vertical-lr;
-                    margin: 0;
-                    
-               }
-               .p_18{
-                   font-weight: bold;
-               }
-               
-           }
-        }
-
-        .doctor_L_2{
-            margin-left: 75px;
-            margin-top: 100px;
-            @media(max-width:768px){
-                margin-left: 0;
-            }
-            .title_{
-                font-weight: normal;
-                position: relative;
-                padding-left: 20px;
-                &::before{
-                    content: '';
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background-color: #39A7E2;
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translate(0% , -50%);
-                }
-            }
-            table{
-                max-width: 355px;
-                width: 100%;
-                tr{
-                    td{
-                        
-                        padding: 6px 10px;
-                        text-align: center;
-
-                        @media(max-width:996px){
-                        padding: 6px 6px;
-
-                        }
-                        span{
-                            writing-mode: vertical-lr;
-                        }
-                        .circle{
-                            width: 16px;
-                            height: 16px;
-                            border-radius: 50%;
-                            background-color: #39A7E2;
-                            display: block;
-                        }
-                    }
-                    td:nth-of-type(1){
-                        text-align: left;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-    }
-    // 右邊圖
-    .doctor_R{
-        margin-top: 220px; 
+    // 標題ㄑ
+    .box_1_title{
+        // margin-left: 100px;
         text-align: center;
 
-        @media(max-width:768px){
-            display: block;
-            margin-top: 0;
+        @media (max-width:768px) {
+            margin-bottom: 60px;
         }
         img{
-            max-width: 284px;
-            // object-fit: scale-down;
-            width: 100%;
-        }
-        img.doctor_boy{
-           
-            @media(max-width:768px){
-                margin-left: 0;
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
             }
         }
-        
-      
-    } 
-    }
-    
-
-}
-
-.box_4{
-    .box_4_L{
-        .box_4_L_title{
-            img{
-                margin-bottom: 50px;
-            }
-            .title_{
-                writing-mode: vertical-lr;
-               margin-left: 0;
-            }
-        }
-        .map_content{
-            position: relative;
-            .map{
-                max-width: 700px;   
-                width: 100%;
-            }
-
-
-            .item_map{
-                // border: 1px solid black;
-                display: block;
-                position: absolute;
-                width: 40px;
-                height: 40px;
-                transform: translate(-50% , -50%);
-
-                // point 動畫
-                &:hover:after{
-                    animation: top 0.5s infinite;
-                    @keyframes top {
-                        0%{
-                            top: 0%;
-                        }
-                        50%{
-                            top:15%;
-                        }
-                        100%{
-                            top: 0%;
-                        }
-                    }
-                }
-
-                &:after{
-                    content: url(../img/index/map_point.svg);
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    transform: translate(-50% , -50%);
-                    top: 0%;
-                    left: 50%;
-
-
-                   
-                    
-
-                }
-            }
-
-            // 和毅
-            .item_map:nth-of-type(1){
-                top: 47%;
-                left: 9.5%;
-            }
-
-            // 品御
-            .item_map:nth-of-type(2){
-                top: 44%;
-                left: 41.2%;
-            }
-
-            // 宏揚
-            .item_map:nth-of-type(3){
-                top: 49%;
-                left: 52.5%;
-            }
-
-            // 王存禎
-            .item_map:nth-of-type(4){
-                top: 63%;
-                left: 26.3%;
-            }
-
-            // 品悅
-            .item_map:nth-of-type(5){         
-                top: 32%;
-                left: 87.5%;
-            
-            }
-
-            // 馬偕
-            .item_map:nth-of-type(6){
-                top: 53%;
-                left: 47.5%;
-            }
-            // 簡牙醫
-            .item_map:nth-of-type(7){
-                top: 27%;
-                left: 24.5%;
-            }
-            // 台大
-            .item_map:nth-of-type(8){
-                top: 11%;
-                left: 29.5%;
-            }
-        }
-        
-    }
-
-    .box_4_R{
-        margin-top: 250px;
-        .items{
+        .text{
             display: flex;
-            justify-content: space-around;
-
-            .item{
-                max-width: 280px;
-                width: 100%;
-                position: relative;
-                
-               
-                .item_1{
-                    opacity: 1;
-                    transition: 0.2s ease-in-out;
-
-                    
-                
-                }
-                .item_2{
-                    // display: none;
-                    opacity: 0;
-                    position: absolute;
-                    top: 0;
-                    transition: 0.2s ease-in-out;
-                    h3{
-                        color: #74B52A;
-                    }
-                    P{
-                        span{
-                            color: #39A7E2;
-                        }
-                    }
-
-                }
-
-                &:hover{
-                    .item_1{
-                        opacity: 0;
-                    }
-                    .item_2{
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-    }
-
-    
-}
-
-// 停車資訊
-.box_5{
-    background-image: url(../img/index/box_5_bg.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 150px;
-    margin-bottom: -50px;
-    .box_5_L{
-        display: flex;
-        .box_5_L_title{
-            img{
-                margin-bottom: 50px;
-            }
+            justify-content: center;
+            // 主標題
             .title_{
                 writing-mode: vertical-lr;
-               margin-left: 0;
+                margin: 0;
+                margin-top: 0px;
+                color: #5E5454;
+    
             }
-        }
-
-        .box_5_L_content{
-            padding-top: 120px;
-            padding-left: 40px;
-            .item{
-                margin-bottom: 30px;
-                h3{
-                    padding-left: 20px;
-                    position: relative;
-                    color:#74B52A; 
-                    &:before{
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        width: 5px;
-                        height: 5px;
-                        border-radius: 50%;
-                        background-color: #74B52A;
-                        transform: translate(-50% -50%);
-                        top: 50%;
-                        left: 0px;
-                    }
-                }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
             }
-        }
-        
+        }   
     }
 
-    // 右半部
-    .box_5_R{
-        margin-top: 270px;
-        img{
-            max-width: 720px;
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .box_3_bot{
+        margin-top: 50px;
+        img{
+            width: 100%;
+
+            @media(max-width:768px){
+                margin-top: 10px;
+            }
+        }
+        .box_3_bot_bot{
+            margin-top: 50px;
+
+            @media(max-width:768px){
+                margin-top: 0;
+            }
         }
     }
+    
+   
 }

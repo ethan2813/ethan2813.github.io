@@ -65,12 +65,66 @@ body .box_1 .text_box span {
   white-space: nowrap;
 }
 
+body .box_1 .box_1_L {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 50vw;
+}
+
+@media (max-width: 768px) {
+  body .box_1 .box_1_L {
+    height: 120vw;
+  }
+}
+
 body .box_1 .box_1_L img {
   width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  -webkit-animation: oxx 10s ease-in-out forwards;
+          animation: oxx 10s ease-in-out forwards;
+}
+
+body .box_1 .box_1_R {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 50vw;
 }
 
 body .box_1 .box_1_R img {
   width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  -webkit-animation: oxx 10s ease-in-out forwards;
+          animation: oxx 10s ease-in-out forwards;
+}
+
+@-webkit-keyframes oxx {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 120%;
+  }
+}
+
+@keyframes oxx {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 120%;
+  }
 }
 
 @media (max-width: 768px) {

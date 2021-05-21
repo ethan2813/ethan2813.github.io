@@ -88,12 +88,29 @@
             margin-top: 100px;
             padding: 0 20px;
             width: 100%;
+            text-decoration: none;
                 .number{
                     text-align: right;
                     font-size: 60px;
                     color: rgba(94, 84, 84, 0.2);
                     letter-spacing: 0.145em;
                     line-height: 50px;
+                }
+                .p_18{
+                    margin-bottom: 50px;
+                    
+                }
+                &:hover{
+                    .p_18{
+                        color: #74B52A;
+                    }
+                    
+                }
+                &:active{
+                    .p_18{
+                        color: #E5801A;
+                    }
+                    
                 }
             } 
         }

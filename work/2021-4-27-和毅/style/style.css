@@ -114,6 +114,7 @@
   margin-top: 100px;
   padding: 0 20px;
   width: 100%;
+  text-decoration: none;
 }
 
 .box_2 .box_2_content .items .item .number {
@@ -122,6 +123,18 @@
   color: rgba(94, 84, 84, 0.2);
   letter-spacing: 0.145em;
   line-height: 50px;
+}
+
+.box_2 .box_2_content .items .item .p_18 {
+  margin-bottom: 50px;
+}
+
+.box_2 .box_2_content .items .item:hover .p_18 {
+  color: #74B52A;
+}
+
+.box_2 .box_2_content .items .item:active .p_18 {
+  color: #E5801A;
 }
 
 .box_2 .box_2_bot .photo {

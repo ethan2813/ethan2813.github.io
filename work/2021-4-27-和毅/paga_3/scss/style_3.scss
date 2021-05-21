@@ -46,13 +46,49 @@ body{
         }
     
         .box_1_L{
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            height: 50vw;
+
+            @media (max-width:768px) {
+                height: 120vw;
+            }
+            
             img{
                 width: 100%;
+                position: absolute;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                animation: oxx 10s ease-in-out forwards;
+
+             
+                
             }
         }
         .box_1_R{
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            height: 50vw;
             img{
                 width: 100%;
+                position: absolute;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                animation: oxx 10s ease-in-out forwards;
+
+            }
+
+            @keyframes oxx {
+                from{
+                    width: 100%;
+                }
+                to{
+                    width: 120%;
+                }
             }
             @media (max-width:768px){
                 display: none;
