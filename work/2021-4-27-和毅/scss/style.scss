@@ -101,6 +101,11 @@
                 }
                 .p_18{
                     margin-bottom: 50px;
+                    white-space:nowrap;
+
+                    @media (max-width:500px) {
+                        text-align: center;
+                    }
                     
                 }
                 &:hover{
@@ -465,6 +470,7 @@
                 .item_1{
                     opacity: 1;
                     transition: 0.2s ease-in-out;
+                    padding: 0 10px;
 
                     
                 
@@ -475,6 +481,7 @@
                     position: absolute;
                     top: 0;
                     transition: 0.2s ease-in-out;
+                    padding: 0 10px;
                     h3{
                         color: #74B52A;
                     }

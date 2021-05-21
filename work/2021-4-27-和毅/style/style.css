@@ -142,6 +142,13 @@
 
 .box_2 .box_2_content .items .item .p_18 {
   margin-bottom: 50px;
+  white-space: nowrap;
+}
+
+@media (max-width: 500px) {
+  .box_2 .box_2_content .items .item .p_18 {
+    text-align: center;
+  }
 }
 
 .box_2 .box_2_content .items .item:hover .p_18 {
@@ -573,6 +580,7 @@
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  padding: 0 10px;
 }
 
 .box_4 .box_4_R .items .item .item_2 {
@@ -582,6 +590,7 @@
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  padding: 0 10px;
 }
 
 .box_4 .box_4_R .items .item .item_2 h3 {
