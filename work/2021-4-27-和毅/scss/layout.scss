@@ -16,7 +16,15 @@
     font-size: 12px;
     letter-spacing: 0.15em;
 }
+.p_14{
+    color: #5E5454;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    @media (max-width:500px) {
+        font-size: 12px;
+    }
 
+}
 .p_16{
     color: #5E5454;
     font-size: 16px;
@@ -262,11 +270,13 @@
         align-items: center;
 
             img{
-                width: 100px;
+                width: 50px;
             }
 
             p{
                 margin-bottom: 0;
+                font-size: 22px;
+                margin-left: 5px;
             }
             
         }
@@ -355,19 +365,27 @@
     align-items: center;
     background-color: #74B52A;
     position: fixed;
-    right: -335px;
+    right: -300px;
     top: 30%;
     z-index: 100;
-    width: 400px;
+    width: 360px;
     height: 150px;
     transition: 0.5s ease-in-out;
 
     @media (max-width:768px){
-        display: none;
-        top: 60%;
+        // display: none;
+        top: 45%;
+        right: -406px;
+        height: 150px;
+        width: 320px;
+
+
     }
     &.active{
-        right: 0;
+        right: 0px;
+        // @media (max-width:768px){
+        //     right: -100px;
+        // }
     }
     .p_20{
         cursor: pointer;
@@ -375,20 +393,26 @@
         color: white;
         padding: 20px;
         margin: 0;
+        @media (max-width:768px){
+            padding: 10px;
+            
+        }
     }
     // 和毅口腔外科
     .content_{
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
+        text-decoration: none;
+        text-align: center;
         img{
             width: 100%;
             height: 100%;
             max-width: 100px;
-            margin-left: 10px;
+            // margin-left: 10px;
         }
-        .p_16{
-            writing-mode: vertical-lr;
-            margin: 10px;
+        .p_14{
+            // writing-mode: vertical-lr;
+            margin: 0 ;
             color: white;
         }
     }
@@ -398,12 +422,68 @@
         background-color: #BFBFBF;
         height: 80%;
         width: 1px;
-        margin: 0 10px;
+        margin: 0 20px 0 10px;
     }
 }
 
 #bottom{
-    
+    .icon{
+        #totop{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                // bottom: 90px;
+                bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+                @media (max-width:768px){
+                    bottom: 155px;
+                }
+            }
+        }
+
+        #line{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+                display: none;
+                @media (max-width:768px){
+                    display: block;
+                }
+
+            }
+        }
+        #phone{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                // bottom: 90px;
+                bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+                display: none;
+                @media (max-width:768px){
+                    display: block;
+                }
+            }
+        }
+    }
     p{
         text-align: center;
     }

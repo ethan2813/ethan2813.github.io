@@ -11,11 +11,38 @@ $('.burger').on('click', () => {
 // 漢堡條效果
 $('.burger').on('click', (e) => {
     $(e.currentTarget).toggleClass('burger_active')
-    $('.mobile_nav_list').toggleClass('nav_active')
+})
+//totop
+$('#totop').on('click', () => {
+    $('html,body').animate({ scrollTop: 0 }, 300);
+})
+
+// 點空白地方關閉選單
+$(document).on('mouseup',(e)=>{
+       if($('.mobile_nav_list').hasClass('active')){
+            if (!$(e.target).closest('.content_').length) {
+                // $('.mobile_nav_list').toggleClass('nav_active');
+                $('.mobile_nav_list').removeClass('active')
+                $('.burger').removeClass('burger_active')
+
+            }
+       }
 })
 
 // 點擊預約 跳出選單
 $('.online_btn').on('click', () => {
+    $('.online_btn').toggleClass('active')
+    console.log('132')
+    //點空白地方關閉清單
+    $(document).on('mouseup', (e) => {
+        if ($('.online_btn').hasClass('active')) {
+            if (!$(e.target).closest('.p_20').length) {
+                $('.online_btn').toggleClass('active');
+            }
+        }
+    })
+})
+$('#line').on('click', () => {
     $('.online_btn').toggleClass('active')
     console.log('132')
     //點空白地方關閉清單
