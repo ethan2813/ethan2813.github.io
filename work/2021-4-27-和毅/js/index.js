@@ -37,7 +37,7 @@ $('.online_btn').on('click', () => {
     $(document).on('mouseup', (e) => {
         if ($('.online_btn').hasClass('active')) {
             if (!$(e.target).closest('.p_20').length) {
-                $('.online_btn').toggleClass('active');
+                $('.online_btn').removeClass('active');
             }
         }
     })
@@ -48,8 +48,10 @@ $('#line').on('click', () => {
     //點空白地方關閉清單
     $(document).on('mouseup', (e) => {
         if ($('.online_btn').hasClass('active')) {
-            if (!$(e.target).closest('.p_20').length) {
-                $('.online_btn').toggleClass('active');
+            // 點#line依然可以收回
+            if (!$(e.target).closest('#line').length) {
+                $('.online_btn').removeClass('active');
+                
             }
         }
     })
