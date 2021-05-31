@@ -211,8 +211,10 @@ body{
             }
             @media (max-width:500px) {
                 flex-direction: column;
-                align-items: center;
+                align-items:flex-start;
                 padding-top: 100px;
+                padding-left: 15px;
+                padding-right: 15px;
 
                
             }
@@ -230,6 +232,11 @@ body{
                 .p_20{
                     color: #5E5454;
                     cursor: pointer;
+
+                    span{
+                    font-size: 13px;
+
+                    }
 
                     @media (max-width:500px){
                         font-size: 22px;

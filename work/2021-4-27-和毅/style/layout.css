@@ -424,12 +424,18 @@
   display: none;
 }
 
+#nav_mobile .content_ .mobile_nav_list .content_ .items_active .items_2_box .p_18 {
+  color: #6a856e;
+  font-weight: bold;
+}
+
 #nav_mobile .content_ .mobile_nav_list .content_ .items_active .items_2_box.active {
   display: block;
 }
 
 .online_btn {
   border-radius: 30px 0 0 0;
+  padding-right: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -440,10 +446,9 @@
           align-items: center;
   background-color: #74B52A;
   position: fixed;
-  right: -300px;
+  right: -160px;
   top: 30%;
   z-index: 100;
-  width: 360px;
   height: 150px;
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -455,7 +460,6 @@
     top: 45%;
     right: -406px;
     height: 150px;
-    width: 320px;
   }
 }
 

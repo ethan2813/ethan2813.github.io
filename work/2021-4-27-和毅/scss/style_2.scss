@@ -214,11 +214,19 @@
 
             &.content_2{
                 text-align: center;
+                
             }
         }
         
         .p_16{
             color: #E5801A;
+            text-align: justify;
+
+            @media (max-width:768px){
+                br.br{
+                    display:none;
+                }
+            }
 
             &.content_3{
                 margin-right: 60px;
@@ -457,7 +465,7 @@
     .box_5_left{
 
         @media (max-width:768px){
-            text-align: center;
+            
             br{
                 display: none;
             }
@@ -477,7 +485,7 @@
             color: #5E5454;
             margin-top: 60px;
             letter-spacing: 0.145em;
-            text-align: left;
+            text-align: justify;
         }
         .content_2{
             margin-top: 40px;
@@ -571,6 +579,12 @@
             margin-top: 60px;
         }
         .p_16{
+            text-align: justify;
+            @media(max-width:768px){
+                br.br{
+                    display: none;
+                }
+            }
             
             span{
                 color: #E5801A;
