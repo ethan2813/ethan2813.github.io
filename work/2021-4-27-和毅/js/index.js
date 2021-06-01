@@ -75,9 +75,8 @@ $('#line').on('click', () => {
         })
     }
 
-
-    function btn_(){
-        
+    // 首頁的js
+    function btn_(){ 
         $('.box_4_R .items .item').on('click',(e)=>{
             let this_ = e.currentTarget;
             let index = $('.box_4_R .items .item').index(this_) + 1
