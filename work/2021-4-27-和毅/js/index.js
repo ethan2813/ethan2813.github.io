@@ -29,6 +29,8 @@ $(document).on('mouseup',(e)=>{
        }
 })
 
+
+
 // 點擊預約 跳出選單
 $('.online_btn').on('click', () => {
     $('.online_btn').toggleClass('active')
@@ -70,6 +72,18 @@ $('#line').on('click', () => {
             $(this_).addClass('display_block')
             $(`.tab_content:nth-child(${index})`).addClass('display_block')
             
+        })
+    }
+
+
+    function btn_(){
+        
+        $('.box_4_R .items .item').on('click',(e)=>{
+            let this_ = e.currentTarget;
+            let index = $('.box_4_R .items .item').index(this_) + 1
+            console.log(index)
+            $('.box_4_R .items .item').removeClass('hover')
+            $(`.box_4_R .items .item:nth-of-type(${index})`).addClass('hover')
         })
     }
 
