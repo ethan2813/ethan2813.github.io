@@ -469,6 +469,7 @@
                
                 .item_1{
                     opacity: 1;
+                    // display: block;
                     transition: 0.2s ease-in-out;
                     padding: 0 10px;
 
@@ -482,6 +483,7 @@
                     top: 0;
                     transition: 0.2s ease-in-out;
                     padding: 0 10px;
+                    
                     h3{
                         color: #74B52A;
                     }
@@ -490,15 +492,24 @@
                             color: #39A7E2;
                         }
                     }
+                    // a{
+                    //     display: none;
+                    // }
 
                 }
 
                 &:hover{
                     .item_1{
                         opacity: 0;
+                    // display: none;
+
                     }
                     .item_2{
                         opacity: 1;
+                    // display: block;
+                    
+                    
+
                     }
                 }
             }
