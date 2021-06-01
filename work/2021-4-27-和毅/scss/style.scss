@@ -468,8 +468,8 @@
                 
                
                 .item_1{
-                    opacity: 1;
-                    // display: block;
+                    // opacity: 1;
+                    display: block;
                     transition: 0.2s ease-in-out;
                     padding: 0 10px;
 
@@ -477,8 +477,8 @@
                 
                 }
                 .item_2{
-                    // display: none;
-                    opacity: 0;
+                    display: none;
+                    // opacity: 0;
                     position: absolute;
                     top: 0;
                     transition: 0.2s ease-in-out;
@@ -500,13 +500,13 @@
 
                 &:hover{
                     .item_1{
-                        opacity: 0;
-                    // display: none;
+                        // opacity: 0;
+                    display: none;
 
                     }
                     .item_2{
-                        opacity: 1;
-                    // display: block;
+                        // opacity: 1;
+                    display: block;
                     
                     
 

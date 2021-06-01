@@ -576,7 +576,7 @@
 }
 
 .box_4 .box_4_R .items .item .item_1 {
-  opacity: 1;
+  display: block;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -584,7 +584,7 @@
 }
 
 .box_4 .box_4_R .items .item .item_2 {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0;
   -webkit-transition: 0.2s ease-in-out;
@@ -602,11 +602,11 @@
 }
 
 .box_4 .box_4_R .items .item:hover .item_1 {
-  opacity: 0;
+  display: none;
 }
 
 .box_4 .box_4_R .items .item:hover .item_2 {
-  opacity: 1;
+  display: block;
 }
 
 .box_5 {
