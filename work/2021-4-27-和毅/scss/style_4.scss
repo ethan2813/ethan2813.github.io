@@ -1,0 +1,345 @@
+.box_1{
+    padding-top: 180px;
+    background-image: url(../paga_4/img/paga_4/bgc-01.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media(max-width:1200px){
+        background-size: 200%;
+    }
+    @media(max-width:500px){
+        background-size: 500%;
+    }
+
+    // 標題ㄑ
+    .box_1_title{
+        // margin-left: 100px;
+        text-align: center;
+
+        @media (max-width:768px) {
+            margin-bottom: 60px;
+        }
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 0px;
+                color: #5E5454;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
+            }
+        }   
+    }
+
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .box_1_bot{
+        img{
+            width: 100%;
+        }
+        .box_1_bot_L{
+            .flex_{
+                display: flex;
+            }
+        }
+        .boxin_{
+            position: relative;
+            
+            // 圖
+            img{
+                transition: 0.5s;
+            }
+
+            // 文_1
+            .img_1_text{
+                position: absolute;
+                white-space: nowrap;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                color: #E5801A;
+                opacity: 0;
+                letter-spacing: 0.02em;
+                transition: 0.5s ease-in-out;
+            }
+
+            // 文_2
+            .img_2_text{
+                position: absolute;
+                white-space: nowrap;
+                transition: 0.5s ease-in-out;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                text-align: center;
+                opacity: 0;
+                .p_28{
+                    color: #E5801A;
+                    font-weight: bold;
+                }
+                .p_16{
+                    color: #5E5454;
+                }
+            }
+
+            // 文3
+            .img_3_text{
+                position: absolute;
+                white-space: nowrap;
+                transition: 0.5s ease-in-out;
+                transform: translate(-50% , -50%);
+                left: 50%;
+                top: 50%;
+                text-align: center;
+                opacity: 0;
+                .p_28{
+                    color: #E5801A;
+                    font-weight: bold;
+                    letter-spacing: 0.05em;
+                }
+                .p_16{
+                    color: #E5801A;
+                    margin-left: 75%;
+                }
+            }
+
+            // hover 效果
+            &:hover{
+               
+                img{
+                    opacity: 0.2;
+                }
+                p,span{
+                    opacity: 1;
+                }
+            }
+        }
+       
+
+    }
+    
+   
+}
+
+.box_2{
+    padding-top: 90px;
+    background-image: url(../paga_4/img/paga_4/bgc-02.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media(max-width:1200px){
+        background-size: 200%;
+    }
+    @media(max-width:500px){
+        background-size: 500%;
+    }
+     // 標題ㄑ
+     .box_1_title{
+        // margin-left: 100px;
+        text-align: center;
+
+        @media (max-width:768px) {
+            margin-bottom: 60px;
+        }
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 0px;
+                color: #5E5454;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
+            }
+        }   
+    }
+
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width:768px) {
+            margin-top: 0;
+        }
+
+    }
+
+
+    // 下半部
+    .box_2_bot{
+        margin-top: 80px;
+
+        @media (max-width:768px) {
+            margin-top: 0;
+        }
+        .item{
+            margin-top: 30px;
+            padding: 35px 60px;
+            background-color: white;
+            // max-width: 440px;
+            width: 100%;
+            box-shadow: 0px 4px 24px rgba(202, 202, 202, 0.25);
+            
+            
+            p{
+                margin-bottom: 0;
+            }
+            .p_28{
+                color: #74B52A;
+            }
+            .p_16{
+                span{
+                    color: #74B52A;
+                }
+            }
+        }
+    }
+}
+
+.box_3{
+    padding-top: 180px;
+    padding-bottom: 150px;
+    background-image: url(../paga_4/img/paga_4/bgc-03.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media(max-width:1200px){
+        background-size: 200%;
+    }
+    @media(max-width:500px){
+        background-size: 500%;
+    }
+
+    // 標題ㄑ
+    .box_1_title{
+        // margin-left: 100px;
+        text-align: center;
+
+        @media (max-width:768px) {
+            margin-bottom: 60px;
+        }
+        img{
+            // width: 100%;
+            margin-bottom: 50px;
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            // 主標題
+            .title_{
+                writing-mode: vertical-lr;
+                margin: 0;
+                margin-top: 0px;
+                color: #5E5454;
+    
+            }
+            // 副標題
+            .p_20{
+                writing-mode: vertical-lr;
+                margin: 0;
+                color: #5E5454;
+            }
+        }   
+    }
+
+    // 影片
+    .video{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        & iframe,& object,& embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .box_3_bot{
+        margin-top: 50px;
+        img{
+            width: 100%;
+
+            @media(max-width:768px){
+                margin-top: 10px;
+            }
+        }
+        .box_3_bot_bot{
+            margin-top: 50px;
+
+            @media(max-width:768px){
+                margin-top: 0;
+            }
+        }
+    }
+    
+   
+}
