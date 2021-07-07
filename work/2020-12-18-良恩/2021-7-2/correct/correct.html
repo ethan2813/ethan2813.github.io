@@ -11,7 +11,48 @@
 
         gtag('config', 'G-RNWFX5CRSE');
     </script>
-    
+    <!-- Global site tag (gtag.js) - Google Ads: 360764465 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-360764465"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-360764465');
+    </script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function (event) {
+            document.querySelectorAll("[href*='lihi1.com']").forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    gtag('event', 'conversion', { 'send_to': 'AW-360764465/sYc3CKn-18wCELGog6wB' });
+                    gtag('event', "line_click");
+                })
+            });
+            document.querySelectorAll("[href*='facebook.com']").forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    gtag('event', 'conversion', { 'send_to': 'AW-360764465/74yxCO_qsswCELGog6wB' });
+                    gtag('event', "facebook_click");
+                })
+            });
+            document.querySelectorAll("[href*='tel:']").forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    gtag('event', 'conversion', { 'send_to': 'AW-360764465/PVi7CKan2MwCELGog6wB' });
+                    gtag('event', "phone_click");
+                })
+            });
+            var pageViews = sessionStorage.getItem("pageViews");
+            if (sessionStorage.getItem("pageViews") !== null) {
+                pageViews++;
+                sessionStorage.setItem("pageViews", pageViews)
+                if (pageViews === 3) {
+                    gtag('event', 'conversion', { 'send_to': 'AW-360764465/PWLGCIeV2MwCELGog6wB' });
+                    gtag('event', "3_page_views");
+                }
+            } else {
+                sessionStorage.setItem("pageViews", 1)
+            }
+        })
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>良恩牙醫診所-矯正大小事</title>
@@ -27,6 +68,9 @@
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
 </head>
+
+
+
 
 <body>
     <nav id="nav">
