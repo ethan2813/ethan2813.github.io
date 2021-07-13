@@ -1,0 +1,400 @@
+main#main{
+
+    // #main_top{
+    //     background-image: url(../img/about_us_back.svg);
+    //     width: 100%;
+    //     background-size: contain;
+    //     background-position: right 50% top 0px;
+    //     background-repeat: no-repeat;
+    //     transition: 1s;
+    // }
+    //關於我們
+    #about_us{
+        background-image: url(../img/about_us_back.svg);
+        // background-color: #f8f6f4;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 1s;
+        .content{
+            padding-top: 235px;
+            padding-bottom: 190px;  
+
+            .article{
+                padding-bottom: 100px;
+
+                .br{
+                    display: none;
+                }
+
+                h2{
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: #1e3356;
+                }
+                >p{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    
+                }
+    
+                p:nth-of-type(1){
+                    margin: 30px 0;
+                }
+                
+            }
+            .about_us_right{
+                // text-align: center;
+                position: relative;
+                
+                .article_{
+                    display: none;
+                    p{
+                        color: #1e3356;
+                    }
+                }
+                .left{
+                    display: none;
+                }
+                .right{
+                    width: 90%;
+                    transform: translate(0%,0%);
+                }
+                .bot{
+                    position: absolute;
+                    transform: translate(-50%,50%);
+                    left: 0;
+                    bottom: 0;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    // SuperLine®植體
+    #box_1{
+
+        @media (max-width:576px) {
+            margin-top: -150px;
+        }
+        .article{
+            a{
+                text-decoration: none;
+                h3{
+                    font-size: 28px;
+                    color: #1e3356;
+                    margin-bottom: 55px;
+                    padding-top: 140px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+    
+                    @media (max-width: 768px){
+                        font-size: 25px;
+                        padding-top: 55px;
+                        letter-spacing: 0px;
+                        font-weight: bold;
+                        margin-bottom: 55px;
+                        text-align: center;
+                    }
+                    
+                }
+            }
+            
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    text-align: left;
+                    letter-spacing: 2px;
+                }
+                @media (max-width: 576px){
+                    font-size: 15px;
+                }
+            }
+            ul{
+                li{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                        text-align: left;
+                        letter-spacing: 2px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    //醫生
+    #doctor{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        // background-color: #f8f6f4;
+        .photo{
+            .doctor{
+                width: 100%;
+                border: 15px #f8f6f4 solid;
+            }
+        }
+        .article{
+            
+
+            h2{
+                font-size: 36px;
+                font-weight: bold;
+                color: #d8af4b;
+                margin-bottom: 60px;
+            }
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-bottom: 6px;
+            }
+            p:nth-of-type(1){
+                font-weight: bold;
+                margin-bottom: 20px;
+                letter-spacing: 2px;
+                
+            }
+            p:nth-of-type(2){
+                line-height: 28px;
+            }
+        }
+    }
+
+    #banner_1{
+        display: flex;
+        .banner_1_content{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+        .banner_2_content{
+            display: none;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    //設備
+    #device{
+        background-image: url(../img/device_back.svg);
+        background-color: #f8f6f4;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .title{
+            text-align: center;
+            padding: 10px;
+            h2{
+                font-size: 28px;
+                color: #1e3356;
+                margin-bottom: 55px;
+                padding-top: 140px;
+                letter-spacing: 1px;
+                font-weight: bold;
+
+            }
+
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+
+                br.br{
+                    display: none;
+                }
+                ul{
+                    li{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .title_mobile{
+            display: none;
+        }
+
+        //五張圖
+        .back_content{
+            margin-left: auto;
+            margin-top: 150px;
+
+            img{
+                width: 120px;
+            }
+        }
+
+        .device_1{
+            margin-top: 70px;
+            .device_1_L{
+                .title{
+                    padding: 30px;
+                    
+                    text-align: left;
+                    background-color: white;
+                    width: 100%;
+                    position: absolute;
+                    left: 90%;
+                    top: 3%;
+                    z-index: 2;
+                    h3{
+                        font-size: 28px;  
+                        color: #1e3356;
+                        font-weight: bold;                      
+                    }
+                }
+                
+                .abc{
+                    width: 100%;
+                    position: relative;
+                    img{
+                        width: 100%;
+                    }
+
+                    img:nth-of-type(1){
+                        position: absolute;                       
+                        // left: 5%;
+                        // bottom: 5%;
+                        animation: fadeInLR ;
+                        animation-fill-mode:forwards;
+                        opacity: 0;
+                    }
+
+                    
+                }
+            }
+            .device_1_R{
+                background-color: white;
+                margin-top: 200px;
+                padding: 60px;
+                margin-left: 20px;
+
+                p{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+
+                    span{
+                        font-weight: bold;
+                    }
+
+                    
+                }
+                ul{
+                    list-style-type:none;   
+                    
+                    
+                    
+                    li{
+                        margin-bottom: 10px;
+                        position: relative;
+
+                        .number{
+                            position: absolute;
+                            left: -35px;
+                            top: 0;
+                            width: 20px;    
+                            text-align: center;
+                            line-height: 20px;
+                            border: 1px #1e3356 solid;
+                        }
+                    }
+                }
+            }   
+            
+        }
+
+        .device_2{
+            margin-top: 70px;
+
+            .f3Shape_back{
+                // width: 500px;
+                height: 250px;
+            }
+            
+            .device_2_R{
+                .title{
+                    padding: 30px;
+                    text-align: right;
+                    background-color: white;
+                    width: 100%;
+                    position: absolute;
+                    left: -90%;
+                    top: 3%;
+                    z-index: 2;
+                    h3{
+                        font-size: 28px; 
+                        color: #1e3356;
+                        font-weight: bold;                       
+                    }
+                }
+                .abc{
+                    width: 100%;
+                    position: relative;
+                    img{
+                        width: 100%;
+                    }
+
+                    img:nth-of-type(1){
+                        position: absolute;
+                        // right: 5%;
+                        // bottom: 5%;
+                        animation: fadeInRL ;
+                        animation-fill-mode:forwards;
+                        opacity: 0;
+                    }
+                }
+                
+            }
+            .device_2_L{
+                background-color: white;
+                margin-top: 200px;
+                padding: 60px;
+                margin-bottom: 100px;
+                margin-right: 20px;
+                p{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                    span{
+                        font-weight: bold;
+                    }
+
+                    
+                }
+                ul{
+                    list-style-type:none;   
+                    
+                    
+                    
+                    li{
+                        margin-bottom: 10px;
+                        position: relative;
+
+                        .number{
+                            position: absolute;
+                            left: -35px;
+                            top: 0;
+                            width: 20px;    
+                            text-align: center;
+                            line-height: 20px;
+                            border: 1px #1e3356 solid;
+                        }
+                    }
+                }
+            }   
+            
+        }
+    }
+}
