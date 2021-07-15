@@ -5,6 +5,8 @@ $('.burger').on('click',(e)=>{
     $('.mobile_nav_list').toggleClass('nav_active')
 })
 
+
+
 //點mobile_nav_list會隱藏list
 $('.mobile_nav_list').on('click','a',()=>{
     $('.burger').click();
