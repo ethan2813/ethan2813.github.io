@@ -64,7 +64,8 @@ main#main{
     }
     #box_change{
         width: 100%;
-        background-image: url(/correct/img/box-1_back.svg);
+        background-image: url(../correct/img/box-1_back.svg);
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -73,7 +74,7 @@ main#main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url(/correct/img/box_2_3_top_back.jpg);
+            background-image: url(../correct/img/box_2_3_top_back.jpg);
             background-position: 100% 100%;;
             background-repeat: no-repeat;
             background-size: 50%;
@@ -125,7 +126,7 @@ main#main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url(/correct/img/box_2_4_top_back.jpg);
+            background-image: url(../correct/img/box_2_4_top_back.jpg);
             background-position: 0% 55%;;
             background-repeat: no-repeat;
             background-size: 30%;
@@ -170,7 +171,7 @@ main#main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url(/correct/img/box_2_5_top_back.png);
+            background-image: url(../correct/img/box_2_5_top_back.png);
             background-position: 100% 50%;;
             background-repeat: no-repeat;
             background-size: 30%;
