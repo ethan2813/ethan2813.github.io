@@ -127,7 +127,7 @@ main#main #box_change .box_2_3 .box_2_3_top p .mobile_photo {
 }
 
 main#main #box_change .box_2_3 .box_2_3_top:before {
-  display: block;
+  display: none;
   content: '';
   height: 100%;
   width: 2px;
@@ -159,7 +159,7 @@ main#main #box_change .box_2_4 {
 }
 
 main#main #box_change .box_2_4 .box_2_4_bot {
-  padding-bottom: 180px;
+  padding-bottom: 100px;
   max-width: 650px;
   position: relative;
 }
@@ -186,7 +186,7 @@ main#main #box_change .box_2_4 .box_2_4_bot p .mobile_photo {
 }
 
 main#main #box_change .box_2_4 .box_2_4_bot:before {
-  display: block;
+  display: none;
   content: '';
   height: 120%;
   width: 2px;
@@ -224,7 +224,7 @@ main#main #box_change .box_2_5 .box_2_5_top {
 }
 
 main#main #box_change .box_2_5 .box_2_5_top h3 {
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 50px;
   font-size: 28px;
   color: #1e3356;
@@ -245,7 +245,7 @@ main#main #box_change .box_2_5 .box_2_5_top p .mobile_photo {
 }
 
 main#main #box_change .box_2_5 .box_2_5_top:before {
-  display: block;
+  display: none;
   content: '';
   height: 100%;
   width: 2px;
