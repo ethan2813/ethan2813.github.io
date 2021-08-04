@@ -1,0 +1,45 @@
+$color_1:#763D1B;
+
+
+nav#nav{
+    .content_{
+        height: 70px;
+        padding: 0 74px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+
+            // logo
+            .logo_image{
+                width:37px;
+            }
+
+            // logo旁文字
+            .logo_text{
+                width:71px;
+            }
+        }
+
+        .right{
+            .items{
+                ul{
+                    display: flex;
+                    li{
+                        list-style-type: none;
+                        
+                        a{
+                            text-decoration: none;
+                            color:$color_1;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+
+    }
+}
