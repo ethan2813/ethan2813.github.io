@@ -223,3 +223,15 @@ nav#nav .content_ .mobile_right ul li.icon_ {
 nav#nav .content_ .mobile_right ul li.icon_ a {
   margin: 0 5px;
 }
+
+footer#footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer#footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
