@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+  #main {
+    padding-top: 70px;
+  }
+}
+
 #main .slider-item-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
