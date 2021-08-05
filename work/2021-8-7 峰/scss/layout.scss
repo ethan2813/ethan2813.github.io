@@ -37,11 +37,14 @@ nav#nav{
             .logo_image{
                 width:37px;
                 margin-right: 1em;
+                object-fit: contain;
             }
 
             // logo旁文字
             .logo_text{
                 width:71px;
+                object-fit: contain;
+
             }
         }
 

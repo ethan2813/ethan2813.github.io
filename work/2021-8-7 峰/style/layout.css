@@ -47,10 +47,14 @@ nav#nav .content_ .logo {
 nav#nav .content_ .logo .logo_image {
   width: 37px;
   margin-right: 1em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 nav#nav .content_ .logo .logo_text {
   width: 71px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 nav#nav .content_ .pc_right {
