@@ -7,13 +7,16 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./style/layout.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style_1.css">
+    
 
     <!-- bootstrapcdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- fullpage -->
+    <link rel="stylesheet" href="./css/fullpage.css">
 
 </head>
 <body>
@@ -21,24 +24,120 @@
         <div class="container-fluid">
             <div class="content_">
                 <!-- LOGO -->
-                <div class="logo">
-                    <img class='logo_image' src="./img/logo.png" alt="logo">
-                    <img class='logo_text' src="./img/logo_text.png" alt="logo">
-                </div>
+                <a href="" class="logo">
+                    <img class='logo_image' src="./img/layout/logo.png" alt="logo">
+                    <img class='logo_text' src="./img/layout/logo_text.png" alt="logo">
+                </a>
+                
 
-                <div class="right">
+                <!-- PC 清單+icon -->
+                <div class="pc_right"> 
                     <!-- 選單 -->
                     <div class="items">
                         <ul>
-                            <li><a href="">Chun Design</a></li>
-                            <li><a href="">Chun Design</a></li>
+                            <li><a class='pc_item' href="">
+                                <span class='en'>Chun Design</span>
+                                <span class='tw'>&ensp;峻 設計</span>
+                            </a></li>
 
+                            <li><a class='pc_item' href="">
+                                <span class='en'>Projects</span>
+                                <span class='tw'>空間設計</span>
+                            </a></li>
+
+                            <li><a class='pc_item' href="">
+                                <span class='en'>About </span>
+                                <span class='tw'>關於我們</span>
+                            </a></li>
+
+                            <li><a class='pc_item' href="">
+                                <span class='en'>Service</span>
+                                <span class='tw'>服務流程</span>
+                            </a></li>
+
+                            <li><a class='pc_item' href="">
+                                <span class='en'>Contact</span>
+                                <span class='tw'>我要聯繫</span>
+                            </a></li>
+
+                            
+                            
                         </ul>
                     </div>
+
+                    <div class="icons">
+                        <a href="">
+                            <img src="./img/layout/fb_icon.png" alt="fb">
+                        </a>
+
+                        <a href="">
+                            <img src="./img/layout/ig_icon.png" alt="ig">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- 漢堡條 -->
+                <div class="burger">
+                    <div class="line1 line_"></div>
+                    <div class="line2 line_"></div>
+                    <div class="line3 line_"></div>
+                </div>
+
+                <!-- 手機 清單+icon -->
+                <div class="mobile_right">
+                    <ul>
+                        <li><a href="">Chun Design</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li class='icon_'>
+                            <a href="">
+                                <img src="./img/layout/fb_icon.png" alt="fb">
+                            </a>
+    
+                            <a href="">
+                                <img src="./img/layout/ig_icon.png" alt="ig">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div id="main">
+        <div id="fullpage">
+            <div class="section">
+                <div class="slider-item-wrapper">
+                    <img  src="./img/index/slider_1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="slider-item-wrapper">
+                    <div class="left">
+                        <img  src="./img/index/slider_2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <img  src="./img/index/slider_3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="slider-item-wrapper">
+                    <img  src="./img/index/slider_4.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer id="footer">
+        
+    </footer
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -50,6 +149,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+    <!-- fullpage -->
+    <script src="./js/fullpage.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
