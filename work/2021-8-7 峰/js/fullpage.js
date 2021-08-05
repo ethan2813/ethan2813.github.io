@@ -1,5 +1,5 @@
 /*!
- * fullPage 3.1.2
+ * fullPage 3.0.9
  * https://github.com/alvarotrigo/fullPage.js
  *
  * @license GPLv3 for open source use only
@@ -121,7 +121,7 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 1200,
+            scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
@@ -262,9 +262,7 @@
             'interlockedSlides',
             'scrollHorizontally',
             'resetSliders',
-            'cards',
-            'dropEffect',
-            'waterEffect'
+            'cards'
         ];
 
         displayWarnings();
@@ -538,7 +536,6 @@
             }
 
             isResizing = false;
-
             if(isFunction( options.afterResize ) && resizing){
                 options.afterResize.call(container, window.innerWidth, window.innerHeight);
             }
@@ -590,7 +587,7 @@
 
         if(container){
             //public functions
-            FP.version = '3.1.1';
+            FP.version = '3.0.8';
             FP.setAutoScrolling = setAutoScrolling;
             FP.setRecordHistory = setRecordHistory;
             FP.setScrollingSpeed = setScrollingSpeed;
@@ -856,7 +853,7 @@
             if(!options.anchors.length){
                 var anchorsAttribute = '[data-anchor]';
                 var anchors = $(options.sectionSelector.split(',').join(anchorsAttribute + ',') + anchorsAttribute, container);
-                if(anchors.length && anchors.length === $(options.sectionSelector, container).length){
+                if(anchors.length && anchors.length === $(SECTION_SEL).length){
                     g_initialAnchorsInDom = true;
                     anchors.forEach(function(item){
                         options.anchors.push(item.getAttribute('data-anchor').toString());
@@ -1902,8 +1899,6 @@
                 var scrollSettings = getScrollSettings(v.dtop);
                 FP.test.top = -v.dtop + 'px';
 
-                css($htmlBody, {'scroll-behavior': 'unset'});
-
                 scrollTo(scrollSettings.element, scrollSettings.options, options.scrollingSpeed, function(){
                     if(options.scrollBar){
 
@@ -2671,6 +2666,8 @@
         * Resize event handler.
         */        
         function resizeHandler(){
+            isResizing = true;
+ 
             clearTimeout(resizeId);
 
             //in order to call the functions only when the resize is finished
@@ -2690,7 +2687,6 @@
         * When resizing the site, we adjust the heights of the sections, slimScroll...
         */
         function resizeActions(){
-            isResizing = true;
 
             //checking if it needs to get responsive
             responsive();
@@ -2713,8 +2709,6 @@
             else{
                 adjustToNewViewport();
             }
-
-            isResizing = false;
         }
 
         /**
@@ -3459,7 +3453,7 @@
 
             if(!isOK){
                 showError('error', 'Fullpage.js version 3 has changed its license to GPLv3 and it requires a `licenseKey` option. Read about it here:');
-                showError('error', 'https://github.com/alvarotrigo/fullPage.js#options');
+                showError('error', 'https://github.com/alvarotrigo/fullPage.js#options.');
             }
             else if(l && l.length < 20){
                 console.warn('%c This website was made using fullPage.js slider. More info on the following website:', msgStyle);
