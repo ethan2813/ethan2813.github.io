@@ -1,8 +1,15 @@
+$mobile_nav_width:900px;
+
 #main{
     // padding-top: 70px;
     
     .slider-item-wrapper{
         display: flex;
+
+        @media(max-width:$mobile_nav_width){
+            display:block;
+        }
+
         img{
             object-fit: cover;
             width: 100%;
@@ -11,7 +18,25 @@
 
         .left,.right{
             width: 50%;
+            // height: 50vh;
+            img{
+                height: 100vh;
+            }
             display: inline-block;
+
+            @media(max-width:$mobile_nav_width){
+                height: 50vh;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        .left{
+            img{
+                object-position: right;
+            }
         }
     }
 }
