@@ -1,14 +1,9 @@
-@media (max-width: 900px) {
-  #main {
-    padding-top: 70px;
-  }
-}
-
 #main .slider-item-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media (max-width: 900px) {
@@ -22,6 +17,20 @@
      object-fit: cover;
   width: 100%;
   height: 100vh;
+}
+
+#main .slider-item-wrapper .footer {
+  width: 100%;
+  position: absolute;
+  padding: 10px 0 10px 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#main .slider-item-wrapper .footer p {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 0;
 }
 
 #main .slider-item-wrapper .left, #main .slider-item-wrapper .right {

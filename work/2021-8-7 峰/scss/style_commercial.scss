@@ -1,7 +1,11 @@
 $mobile_nav_width:900px;
 
 #main{
-    padding: top 70px;
+    padding-top:  170px;
+
+    @media(max-width:$mobile_nav_width){
+        padding-top:70px;
+    }
     
     .content{
         position: relative;
