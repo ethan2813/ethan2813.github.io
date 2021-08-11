@@ -1,0 +1,34 @@
+$mobile_nav_width:900px;
+
+#main{
+    padding-top:  190px;
+    
+    .article{
+        .title{
+            font-size: 29px;
+            letter-spacing: 0.105em;
+        }
+        .content{
+            font-size: 18px;
+            color:#696363;
+            letter-spacing: 0.105em;
+
+        }
+    }
+
+    
+    
+
+    
+}
+
+footer#footer{
+    position: unset;
+    background-color: white;
+    p{
+        color:#171514;
+        padding: 10px 0 10px 0;
+        
+
+    }
+}
