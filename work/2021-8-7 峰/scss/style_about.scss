@@ -16,6 +16,38 @@ $mobile_nav_width:900px;
         }
     }
 
+    .team{
+        margin-top:150px;
+        .title{
+            font-size: 29px;
+            letter-spacing: 0.105em;
+        }
+
+        .team_items{
+            .item{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 90px;
+                }
+                span{
+                    color:#696363;
+                    font-size: 18px;
+                    letter-spacing: 0.105em;
+                    margin-left: 20px;
+                }
+                .line{
+                    display: inline-block;
+                    width: 2px;
+                    height: 20px;
+                    background-color: #696363;
+                    opacity: 0.5;
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+
     
     
 
