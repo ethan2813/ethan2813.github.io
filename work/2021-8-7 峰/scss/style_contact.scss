@@ -65,7 +65,7 @@ $mobile_width:600px;
                     width: 100px;
                 }
 
-                .sex{
+                .under_line{
                     display: inline-block;
                     width: calc(100% - 120px);
                     border-bottom: 1px solid#696363;
@@ -90,7 +90,8 @@ $mobile_width:600px;
                 input[type='text']{
                     outline: none;
                     border: none;
-                    border-bottom: 1px solid#696363;
+                    // border-bottom: 1px solid#696363;
+                    border: unset;
                     width: calc(100% - 120px);
                     margin-left: 10px;
                 }
