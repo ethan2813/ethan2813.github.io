@@ -8,7 +8,9 @@ $mobile_width:600px;
 
     letter-spacing: 0.105em;
     font-size: 18px;
-    color:#696363;
+    color:#171514;
+    line-height: 200%;
+    ;
 
     @media(max-width:440px){
         font-size:16px;
@@ -31,6 +33,10 @@ $mobile_width:600px;
             font-size: 29px;
             letter-spacing: 0.105em;
             margin-bottom: 200px;
+
+            @media(max-width:$mobile_width){
+                margin-bottom: 80px;
+            }
         }
         .content{
             .item{
@@ -39,6 +45,10 @@ $mobile_width:600px;
 
                 @media(max-width:$mobile_width){
                     margin-bottom: 180px;
+                }
+
+                &:nth-last-of-type(1){
+                    margin-bottom: unset;
                 }
 
                 .img_box{
@@ -53,6 +63,8 @@ $mobile_width:600px;
                         
                     }
 
+                    
+
 
                     // 直線
                     &:after{
@@ -66,11 +78,13 @@ $mobile_width:600px;
                         top: 120%;
                         transform: translateX(-50%);
                         opacity: 0.6;
-
-                        
-
-                        
                     }
+
+                    // 最後一個內容不會有線
+                    &.no_after:after{
+                        display:none
+                    }
+
 
                     // 手機板文字
                     .mobile_text{
@@ -107,6 +121,48 @@ $mobile_width:600px;
                         text-align: left;
                         
                     }
+                }
+            }
+        }
+    }
+
+    // 收費標準
+    .chargs{
+            padding-top: 150px;
+            margin-bottom: 200px;
+
+            @media(max-width:$mobile_width){
+                padding-top: 150px;
+            }
+
+
+        .title{
+            @include mobile_center;
+            font-size: 29px;
+            letter-spacing: 0.105em;
+            margin-bottom: 120px;
+
+            @media(max-width:$mobile_width){
+                margin-bottom: 80px;
+            }
+        } 
+
+        table{
+            
+            width: 100%;
+            tr{
+                border-bottom: 1px solid;
+
+                th,td{
+                    padding: 30px 50px;
+                    @include font;
+                    vertical-align: top;
+
+                    @media(max-width:$mobile_width){
+                        padding: 20px 5px;
+                    }
+
+
                 }
             }
         }
