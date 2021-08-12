@@ -2,6 +2,10 @@
   padding-top: 190px;
 }
 
+#main .article {
+  margin-bottom: 200px;
+}
+
 #main .article .title {
   font-size: 29px;
   letter-spacing: 0.105em;
@@ -74,6 +78,12 @@
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+#main .article form .flex .time {
+  display: inline-block;
+  width: calc(100% - 120px);
+  border-bottom: 1px solid #696363;
 }
 
 #main .article form .flex input[type='text'] {

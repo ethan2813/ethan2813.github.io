@@ -28,6 +28,7 @@ $mobile_width:600px;
     padding-top:  190px;
     
     .article{
+        margin-bottom: 200px;
         .title{
             @include mobile_center;
             font-size: 29px;
@@ -57,6 +58,8 @@ $mobile_width:600px;
                 justify-content: space-between;
                 margin-bottom: 20px;
 
+                
+
                 label{
                 
                     width: 100px;
@@ -76,6 +79,13 @@ $mobile_width:600px;
                     }
         
                 }
+                .time{
+                    display: inline-block;
+                    width: calc(100% - 120px);
+                    border-bottom: 1px solid#696363;
+                }
+
+                
 
                 input[type='text']{
                     outline: none;
