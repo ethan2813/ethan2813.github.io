@@ -7,6 +7,12 @@
   letter-spacing: 0.105em;
 }
 
+@media (max-width: 440px) {
+  #main .article .title {
+    text-align: center;
+  }
+}
+
 #main .article .content .p_ {
   letter-spacing: 0.105em;
   font-size: 18px;
@@ -27,6 +33,12 @@
 #main .team .title {
   font-size: 29px;
   letter-spacing: 0.105em;
+}
+
+@media (max-width: 440px) {
+  #main .team .title {
+    text-align: center;
+  }
 }
 
 #main .team .team_items .item {

@@ -14,6 +14,12 @@ $mobile_nav_width:900px;
     
 }
 
+@mixin mobile_center{
+    @media (max-width:440px) {
+        text-align: center;
+    }
+}
+
 
 
 
@@ -22,6 +28,7 @@ $mobile_nav_width:900px;
     
     .article{
         .title{
+            @include mobile_center;
             font-size: 29px;
             letter-spacing: 0.105em;
         }
@@ -42,6 +49,7 @@ $mobile_nav_width:900px;
         .title{
             font-size: 29px;
             letter-spacing: 0.105em;
+            @include mobile_center;
         }
 
         .team_items{
