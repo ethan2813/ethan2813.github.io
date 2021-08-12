@@ -7,10 +7,16 @@
   letter-spacing: 0.105em;
 }
 
-#main .article .content {
+#main .article .content .p_ {
+  letter-spacing: 0.105em;
   font-size: 18px;
   color: #696363;
-  letter-spacing: 0.105em;
+}
+
+@media (max-width: 440px) {
+  #main .article .content .p_ {
+    font-size: 16px;
+  }
 }
 
 #main .team {
@@ -39,10 +45,16 @@
 }
 
 #main .team .team_items .item span {
-  color: #696363;
-  font-size: 18px;
   letter-spacing: 0.105em;
+  font-size: 18px;
+  color: #696363;
   margin-left: 20px;
+}
+
+@media (max-width: 440px) {
+  #main .team .team_items .item span {
+    font-size: 16px;
+  }
 }
 
 #main .team .team_items .item .line {
