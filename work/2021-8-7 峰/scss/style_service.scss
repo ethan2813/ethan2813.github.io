@@ -1,5 +1,7 @@
 $mobile_nav_width:900px;
 
+$mobile_width:600px;
+
 
 
 @mixin font {
@@ -34,15 +36,25 @@ $mobile_nav_width:900px;
             .item{
                 position: relative;
                 margin-bottom: 100px;
-                // &.right{
-                //     text-align: right;
-                // }
+
+                @media(max-width:$mobile_width){
+                    margin-bottom: 180px;
+                }
+
                 .img_box{
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%);
+                    text-align: center;
+
+                    @media(max-width:$mobile_width){
+                        position: unset;
+                        transform:unset
+                        
+                    }
 
 
+                    // 直線
                     &:after{
                         position: absolute;
                         display: block;
@@ -54,11 +66,33 @@ $mobile_nav_width:900px;
                         top: 120%;
                         transform: translateX(-50%);
                         opacity: 0.6;
+
+                        
+
+                        
+                    }
+
+                    // 手機板文字
+                    .mobile_text{
+                        display: none;
+                        margin-top: 20px;
+                        @include font;
+                        white-space:nowrap;
+
+
+
+                        @media(max-width:$mobile_width){
+                            display: block;
+                        }
                     }
                 }                
                 .text{
                     display: inline-block;
                     @include font;
+
+                    @media(max-width:$mobile_width){
+                        display: none;
+                    }
                     strong{
                         margin-bottom: 10px;
                         display: inline-block;
