@@ -1,0 +1,91 @@
+$mobile_nav_width:900px;
+
+
+
+@mixin font {
+
+    letter-spacing: 0.105em;
+    font-size: 18px;
+    color:#696363;
+
+    @media(max-width:440px){
+        font-size:16px;
+    }
+    
+}
+
+@mixin mobile_center{
+    @media (max-width:440px) {
+        text-align: center;
+    }
+}
+
+#main{
+    padding-top:  190px;
+    
+    .article{
+        .title{
+            @include mobile_center;
+            font-size: 29px;
+            letter-spacing: 0.105em;
+            margin-bottom: 200px;
+        }
+        .content{
+            .item{
+                position: relative;
+                margin-bottom: 100px;
+                // &.right{
+                //     text-align: right;
+                // }
+                .img_box{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+
+                    &:after{
+                        position: absolute;
+                        display: block;
+                        content:'';
+                        width: 1px;
+                        height: 100px;
+                        background-color: black;
+                        left: 50%;
+                        top: 120%;
+                        transform: translateX(-50%);
+                        opacity: 0.6;
+                    }
+                }                
+                .text{
+                    display: inline-block;
+                    @include font;
+                    strong{
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }                   
+                    &.left{
+                        text-align: right;
+                        margin-left: 40%;
+                        transform: translateX(-100%);
+                    }
+                    &.right{
+                        margin-left: 60%;
+                        text-align: left;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer#footer{
+    position: unset;
+    background-color: white;
+    p{
+        color:#171514;
+        padding: 10px 0 10px 0;
+        
+
+    }
+}
