@@ -1,0 +1,224 @@
+$color_1:#763D1B;
+$mobile_nav_width:900px;
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 微軟正黑體 ; 
+
+}
+
+
+nav#nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: white;
+
+    .content_{
+        
+        height: 70px;
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+
+        @media(max-width:$mobile_nav_width){
+        padding: 0 0px;
+
+        }
+        
+        // logo
+        .logo{
+            display: flex;
+
+            // logo
+            .logo_image{
+                width:37px;
+                margin-right: 1em;
+                object-fit: contain;
+            }
+
+            // logo旁文字
+            .logo_text{
+                width:71px;
+                object-fit: contain;
+
+            }
+        }
+
+        // PC 清單+icon
+        .pc_right{
+            display: flex;
+
+            @media(max-width:$mobile_nav_width){
+                display: none;
+            }
+
+            // 選單
+            .items{
+                ul{
+                    display: block;
+                    margin-bottom: 0;
+                    padding: 6px 0 0;
+                    li{
+                        display: inline-block;
+                        list-style-type: none;
+                        text-align: center;
+                        margin: 0 10px;
+
+                        &:nth-of-type(1){
+                            margin: 0 30px;
+                        }
+                        
+                        a{
+                            text-decoration: none;
+                            color:$color_1;
+                            font-size: 14px;
+                            white-space:nowrap;
+                            display: inline-block;
+                            position: relative;
+
+                            span{
+                                text-align: center;
+                                transition: 0.15s;
+                                display: block;
+
+                            }
+                            
+
+                            span.en{
+                                position: absolute;
+                                width: 100%;
+                                
+                                
+                                
+                                
+                            }
+                            span.tw{
+                                opacity: 0;
+                                font-size: 16px;
+                                letter-spacing: 0em;
+                                
+                               
+
+
+                            }
+
+
+                           &:hover{
+                                
+                            span.en{
+                                display: none;
+                            }
+                            span.tw{
+                                opacity: 1;
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+
+            // icon
+            .icons{
+                display: flex;
+                margin-left: 2em;
+                a{
+                    margin: 0 1em;
+                    text-decoration: none;
+
+                    img{
+                    height: 16px;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                    
+                    }
+                }
+            }
+        }
+
+        // 漢堡條
+        .burger{            
+            cursor: pointer;
+            display: none;
+            
+            @media(max-width:$mobile_nav_width){
+                display:block;
+            }
+            >div{
+                width: 30px;
+                height: 1px;
+                background-color:black;
+                margin: 8px;
+                transition: ease-in 0.3s;
+            }
+    
+            &.burger_active .line1{
+                transform: rotate(45deg) translate(8px, 5px);
+            }
+            &.burger_active .line2{
+                opacity: 0;
+            }
+            &.burger_active .line3{
+                transform: rotate(-45deg) translate(8px, -5px);
+            }
+        }
+
+        // 手機 清單+icon
+        .mobile_right{
+            position: absolute;
+            top: 68px;
+            right: -80%;
+            transition: 0.3s;
+            background: white;
+            padding-right:  15px;
+            width: 60vw;
+            height: 100vh;
+            
+
+            &.active{
+                right: -15px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                    margin: 2em 0;
+                    text-align: right;
+                    a{
+                        text-decoration: none;
+                        color: $color_1;
+                    }
+                }
+                li.icon_{
+                    display: flex;
+                    // justify-content: flex-end;
+                    flex-direction: column;
+                    
+                    a{
+                        margin: 10px 10px;
+                    }
+                }
+            }
+        }
+        
+
+
+    }
+}
+
+footer#footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    p{
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 5px;
+        color: white;
+    }
+}
