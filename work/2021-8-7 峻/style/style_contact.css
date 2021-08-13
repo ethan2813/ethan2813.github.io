@@ -107,6 +107,20 @@
   margin-left: 10px;
 }
 
+#main .article form input[type=submit] {
+  border: 0;
+  background-color: darkgray;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#main .article form input[type=submit]:hover {
+  color: darkgray;
+  background-color: #fff;
+  border: 2px darkgray  solid;
+}
+
 footer#footer {
   position: unset;
   background-color: white;

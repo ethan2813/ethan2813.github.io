@@ -102,6 +102,20 @@ $mobile_width:600px;
                     margin-left: 10px;
                 }
             }
+
+            input[type=submit]{
+                border:0;
+                background-color:darkgray;
+                color:#fff;
+                border-radius:10px;
+                cursor:pointer;
+
+                &:hover{
+                    color:darkgray;
+                    background-color:#fff;
+                    border:2px darkgray  solid;
+                }
+            }
         }
     }
 }
