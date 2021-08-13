@@ -13,6 +13,8 @@
 }
 
 #main .slider-item-wrapper img {
+  -o-object-position: center;
+     object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
