@@ -42,6 +42,12 @@ $mobile_width:600px;
 
         .content{
             @include font;
+
+            p{
+                a{
+                    @include font;
+                }
+            }
         }
         .line{
             width: 100%;
