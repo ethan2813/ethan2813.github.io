@@ -60,6 +60,9 @@ $mobile_nav_width:900px;
                 align-items: center;
                 img{
                     width: 90px;
+
+                    // 暫時隱藏
+                    display: none;
                 }
                 span{
                     @include font;

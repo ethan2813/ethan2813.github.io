@@ -54,6 +54,7 @@
 
 #main .team .team_items .item img {
   width: 90px;
+  display: none;
 }
 
 #main .team .team_items .item span {
