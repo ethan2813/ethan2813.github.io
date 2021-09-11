@@ -53,9 +53,16 @@
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #763D1B;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 0.11em;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  #main .content .hover .title {
+    font-size: 24px;
+  }
 }
 
 #main .content .hover .more {
