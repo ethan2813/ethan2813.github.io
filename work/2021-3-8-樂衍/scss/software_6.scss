@@ -4,6 +4,9 @@
     font-family: '微軟正黑體';
 } 
 
+$pad_width:750px;
+$mobile_width:540px;
+
 
 
 .bold_{
@@ -166,6 +169,13 @@
     background-color: #FAF8F6;
     padding-top: 165px;
     padding-bottom: 140px;
+
+    @media (max-width:$pad_width) {
+    padding-bottom: 60px;
+    padding-top: 100px;
+
+        
+    }
     .top{
         .article{
             .title__{
@@ -181,17 +191,32 @@
     }
 
     .bottom{
-        .article{
-            display: inline-block;
-            background-color: white;
-            padding: 50px 30px;
-            ul{
-                li{
-                    text-indent: -1em;
-                    padding-left: 1em;
+        // margin-bottom: 100px;
+        .box{
+           
+            height: 100%;
+            display: flex;
+            align-items: end;
+
+           
+            .article{
+                margin-bottom: 100px;
+                display: inline-block;
+                background-color: white;
+                padding: 50px 30px;
+
+                @media (max-width:$pad_width) {
+                    margin-bottom: 20px;
+                }
+                ul{
+                    li{
+                        text-indent: -1em;
+                        padding-left: 1em;
+                    }
                 }
             }
         }
+        
 
         .device{
             display: flex;
@@ -200,9 +225,36 @@
             img{
                 width: 100%;
             }
+
+            .device{
+                border: 25px solid white;
+                width: 100%;
+
+                @media(max-width:$pad_width){
+                border: 10px solid white;
+
+                }
+            }
+            .logo{
+                padding: 0 40px;
+            }
+        }
+        .left_device{
+            margin-right: -45px;
+            z-index: 2;
+
+            @media(max-width:$pad_width){
+                margin-right: auto;
+            }
         }
         .right_device{
-            margin-top: -100px;
+            margin-top: -120px;
+            margin-left: -45px;
+
+            @media(max-width:$pad_width){
+            margin-top: auto;
+            margin-left: auto;
+            }
         }
     }
     
