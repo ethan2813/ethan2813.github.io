@@ -334,6 +334,7 @@ $mobile_width:540px;
     .box{
         .items_{
             padding: 80px 60px;
+            text-align: center;
 
             @media (max-width:$pad_width) {
                 padding: 20px 0px;

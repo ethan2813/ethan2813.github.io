@@ -370,6 +370,7 @@
 
 #section_5 .box .items_ {
   padding: 80px 60px;
+  text-align: center;
 }
 
 @media (max-width: 750px) {
