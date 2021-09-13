@@ -236,28 +236,32 @@
 }
 
 #section_3 .bottom .box .article ul li {
-  text-indent: -1em;
-  padding-left: 1em;
-}
-
-#section_3 .bottom .device {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-indent: -1.35em;
+  padding-left: 1.35em;
 }
 
 #section_3 .bottom .device img {
   width: 100%;
+}
+
+#section_3 .bottom .device img.pc {
+  display: block;
+}
+
+@media (max-width: 540px) {
+  #section_3 .bottom .device img.pc {
+    display: none;
+  }
+}
+
+#section_3 .bottom .device img.mobile {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  #section_3 .bottom .device img.mobile {
+    display: block;
+  }
 }
 
 #section_3 .bottom .device .device {
@@ -296,4 +300,70 @@
     margin-top: auto;
     margin-left: auto;
   }
+}
+
+#section_4 {
+  background-color: #000;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 750px) {
+  #section_4 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+#section_4 .section_4_title {
+  padding-bottom: 180px;
+}
+
+@media (max-width: 750px) {
+  #section_4 .section_4_title {
+    padding-bottom: 50px;
+  }
+}
+
+#section_4 .section_4_title .title__ {
+  color: #A1C19B;
+}
+
+#section_4 .section_4_title .title__ span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #524B4B), color-stop(0%, transparent));
+  background: -webkit-linear-gradient(bottom, #524B4B 50%, transparent 0%);
+  background: -o-linear-gradient(bottom, #524B4B 50%, transparent 0%);
+  background: linear-gradient(to top, #524B4B 50%, transparent 0%);
+}
+
+#section_4 .article {
+  padding-right: 80px;
+}
+
+@media (max-width: 750px) {
+  #section_4 .article {
+    padding-right: 0px;
+    padding: 50px 0 20px;
+  }
+}
+
+#section_4 .article .big_p__ {
+  color: #E8B1AF;
+}
+
+#section_4 .article .p__ {
+  color: white;
+}
+
+#section_4 .article ul {
+  padding-left: 1em;
+}
+
+#section_4 .article ul li {
+  text-indent: -0.9em;
+  padding-left: 0.9em;
+}
+
+#section_4 .photo img {
+  width: 100%;
 }

@@ -210,8 +210,8 @@ $mobile_width:540px;
                 }
                 ul{
                     li{
-                        text-indent: -1em;
-                        padding-left: 1em;
+                        text-indent: -1.35em;
+                        padding-left: 1.35em;
                     }
                 }
             }
@@ -219,12 +219,28 @@ $mobile_width:540px;
         
 
         .device{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
             img{
                 width: 100%;
+                &.pc{
+                    display: block;
+
+                    @media (max-width:$mobile_width) {
+                        display: none;
+                    }
+                }
+
+                &.mobile{
+                    display: none;
+
+                    @media (max-width:$mobile_width) {
+                        display: block;
+                    }
+                }
             }
+            
 
             .device{
                 border: 25px solid white;
@@ -258,4 +274,58 @@ $mobile_width:540px;
         }
     }
     
+}
+
+#section_4{
+    background-color: #000;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+    @media (max-width:$pad_width) {
+        padding-top: 80px;
+    padding-bottom: 60px;
+    }
+    .section_4_title{
+        padding-bottom: 180px;
+
+        @media (max-width:$pad_width) {
+            padding-bottom: 50px;
+        }
+        .title__{
+            color: #A1C19B;
+            span{
+                background: linear-gradient(to top, #524B4B 50%, transparent 0%);
+            }
+        }
+    }
+    // 文字
+    .article{
+        padding-right: 80px;
+
+        @media (max-width:$pad_width) {
+            padding-right: 0px;
+            padding: 50px 0 20px;
+        }
+        .big_p__{
+            color: #E8B1AF;
+        }
+        .p__{
+            color: white;
+        }
+
+        ul{
+            padding-left: 1em;
+            li{
+                text-indent: -0.9em;
+                padding-left: 0.9em;
+            }
+        }
+    }
+
+    // 圖
+    .photo{
+        img{
+            width: 100%;
+        }
+    }
 }
