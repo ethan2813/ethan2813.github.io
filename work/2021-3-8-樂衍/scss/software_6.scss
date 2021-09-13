@@ -165,15 +165,45 @@
 #section_3{
     background-color: #FAF8F6;
     padding-top: 165px;
-    .article{
-        .title__{
-            color: #4E709D;
-            span{
-                background: linear-gradient(to top, white 50%, transparent 0%);
+    padding-bottom: 140px;
+    .top{
+        .article{
+            .title__{
+                color: #4E709D;
+                span{
+                    background: linear-gradient(to top, white 50%, transparent 0%);
+                }
+            }
+            .subtitle__{
+                color: #80654A;
             }
         }
-        .subtitle__{
-            color: #80654A;
+    }
+
+    .bottom{
+        .article{
+            display: inline-block;
+            background-color: white;
+            padding: 50px 30px;
+            ul{
+                li{
+                    text-indent: -1em;
+                    padding-left: 1em;
+                }
+            }
+        }
+
+        .device{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+        .right_device{
+            margin-top: -100px;
         }
     }
+    
 }
