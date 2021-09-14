@@ -72,7 +72,14 @@ $(document).on('click','a',function(evt){
 	}
 });
 
-
+//比較圖
 $(window).load(function() {
     $('#before_after_images').twentytwenty();
 });
+
+
+
+
+
+
+
