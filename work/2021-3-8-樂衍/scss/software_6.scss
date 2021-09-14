@@ -92,15 +92,22 @@ $mobile_width:540px;
     height: 100vh;
     background-color: #D9E0F3;
 
+
+
     @media (max-width:1200px) {
-        background-size: 50%;
+        background-size: 60%;
+        height: 80vh;
+
     }
     @media (max-width:750px) {
         background-position: bottom;
         background-size: 80%;
     }
     .article{
-    padding-top: 25vh;
+    padding-top: 35vh;
+    @media (max-width:$pad_width) {
+        padding-top: 15vh;
+    }
         .big_title__{
             color: #4E709D;
             font-weight: bold;
@@ -289,7 +296,7 @@ $mobile_width:540px;
         padding-bottom: 180px;
 
         @media (max-width:$pad_width) {
-            padding-bottom: 50px;
+            padding-bottom: 0px;
         }
         .title__{
             color: #A1C19B;
@@ -304,7 +311,7 @@ $mobile_width:540px;
 
         @media (max-width:$pad_width) {
             padding-right: 0px;
-            padding: 50px 0 20px;
+            padding: 70px 0 40px;
         }
         .big_p__{
             color: #E8B1AF;
@@ -338,7 +345,7 @@ $mobile_width:540px;
             
 
             @media (max-width:$pad_width) {
-                padding: 20px 0px;
+                padding: 70px 0px 0px;
             }
             
     

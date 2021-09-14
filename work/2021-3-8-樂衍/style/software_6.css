@@ -92,7 +92,8 @@
 
 @media (max-width: 1200px) {
   #section_1 {
-    background-size: 50%;
+    background-size: 60%;
+    height: 80vh;
   }
 }
 
@@ -104,7 +105,13 @@
 }
 
 #section_1 .article {
-  padding-top: 25vh;
+  padding-top: 35vh;
+}
+
+@media (max-width: 750px) {
+  #section_1 .article {
+    padding-top: 15vh;
+  }
 }
 
 #section_1 .article .big_title__ {
@@ -321,7 +328,7 @@
 
 @media (max-width: 750px) {
   #section_4 .section_4_title {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 }
 
@@ -343,7 +350,7 @@
 @media (max-width: 750px) {
   #section_4 .article {
     padding-right: 0px;
-    padding: 50px 0 20px;
+    padding: 70px 0 40px;
   }
 }
 
@@ -375,7 +382,7 @@
 
 @media (max-width: 750px) {
   #section_5 .box .items_ {
-    padding: 20px 0px;
+    padding: 70px 0px 0px;
   }
 }
 
