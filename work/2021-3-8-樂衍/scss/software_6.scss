@@ -404,19 +404,31 @@ $mobile_width:540px;
     background-color: #000;
     padding-top: 175px;
     padding-bottom:200px ;
+
+    @media (max-width:$pad_width) {
+        padding-top: 80px;
+        padding-bottom:60px ;
+
+    }
     .title__{
         color: #A1C19B;
         text-align: center;
+        margin-bottom: 70px;
     }
 
     .img_{
         margin-bottom: 100px;
+        .p__{
+            color: white;
+            text-align: center;
+        }
         img{
             width: 100%;
         }
     }
 
     .items{
+        text-align: center;
         .item{
             display: inline-block;
             margin: 0 10px;
@@ -432,6 +444,118 @@ $mobile_width:540px;
                 color:#80654A;
                 margin-left: 5px;
                 vertical-align: middle;
+            }
+        }
+    }
+    
+}
+
+#section_7{
+    // 總設定
+    .device{
+        .device_T{
+           padding: 150px 0px;
+           max-height: 575px;
+           height: 100%;
+
+            text-align: center;
+            @media(max-width:$pad_width){
+                padding: 80px 0px;
+
+            }
+            .article{
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        .device_P{
+            max-height: 575px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // overflow: hidden;
+            height: 100%;
+            z-index: 2;
+
+            
+            .photo{
+                // position: absolute;
+                bottom: 0;
+                text-align: center;
+                @media (max-width:$pad_width) {
+                    margin-top:-60px;
+                }
+            }
+        }
+    }
+
+    // wifi
+    .device_1{
+        .device_T{
+           
+            background-color: #BFD3F0;
+            
+            .article{
+                // 標題
+                .title__{
+                    color: #46698B;
+                    span{
+                        background: linear-gradient(to top, #98BDF3 50%, transparent 0%);
+                    }
+                }
+                // 副標題
+                .subtitle__{
+                    color: #80654A;
+                }
+                .p__{
+                    color: #484746;
+                }
+            }
+        }
+        .device_P{
+            background-color: #DAE4F3;
+            align-items: flex-end;
+
+            .photo{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    // 網路
+    .device_2{
+        .device_T{
+           
+            background-color: #EDF0EA;
+            
+            .article{
+                // 標題
+                .title__{
+                    color: #5C6039;
+                    span{
+                        background: linear-gradient(to top, white 50%, transparent 0%);
+                    }
+                }
+                // 副標題
+                .subtitle__{
+                    color: #80654A;
+                }
+                .p__{
+                    color: #484746;
+                }
+            }
+        }
+        .device_P{
+            background-color: #DAE4F3;
+            .photo{
+            
+            
+                img{
+                    width: 100%;
+                    
+                }
             }
         }
     }
