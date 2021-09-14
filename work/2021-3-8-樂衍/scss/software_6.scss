@@ -454,18 +454,25 @@ $mobile_width:540px;
     // 總設定
     .device{
         .device_T{
-           padding: 150px 0px;
+           padding: 150px 30px;
            max-height: 575px;
            height: 100%;
 
             text-align: center;
             @media(max-width:$pad_width){
-                padding: 80px 0px;
+                padding: 80px 30px;
 
             }
             .article{
                 display: inline-block;
                 text-align: left;
+                max-width: 600px;
+                ul{
+                    li{
+                        text-indent: -0.9em;
+                        padding-left: 0.9em;
+                    }
+                }
             }
         }
         .device_P{
@@ -473,9 +480,13 @@ $mobile_width:540px;
             display: flex;
             align-items: center;
             justify-content: center;
-            // overflow: hidden;
+            overflow: hidden;
             height: 100%;
             z-index: 2;
+
+            @media (max-width:$pad_width) {
+                overflow: unset;
+            }
 
             
             .photo{
@@ -483,7 +494,7 @@ $mobile_width:540px;
                 bottom: 0;
                 text-align: center;
                 @media (max-width:$pad_width) {
-                    margin-top:-60px;
+                    margin-top:-45px;
                 }
             }
         }
@@ -548,12 +559,123 @@ $mobile_width:540px;
             }
         }
         .device_P{
-            background-color: #DAE4F3;
+            background-color: #D9E8D4;
             .photo{
             
             
                 img{
                     width: 100%;
+                    
+                }
+            }
+        }
+    }
+
+    // 電話總機系統
+    .device_3{
+        .device_T{
+           
+            background-color: #FAF4DE;
+            
+            .article{
+                
+                // 標題
+                .title__{
+                    color: #88BB80;
+                    span{
+                        background: linear-gradient(to top, white 50%, transparent 0%);
+                    }
+                }
+                // 副標題
+                .subtitle__{
+                    color: #80654A;
+                }
+                .p__{
+                    color: #484746;
+                }
+            }
+        }
+        .device_P{
+            background-color: white;
+            .photo{
+            
+            
+                img{
+                    width: 75%;
+                    
+                }
+            }
+        }
+    }
+
+    // 監視器與收音設備
+    .device_4{
+        .device_T{
+           
+            background-color: #E7FFFB;
+            
+            .article{
+                
+                // 標題
+                .title__{
+                    color: #394460;
+                    span{
+                        background: linear-gradient(to top, #C5E3ED 50%, transparent 0%);
+                    }
+                }
+                // 副標題
+                .subtitle__{
+                    color: #80654A;
+                }
+                .p__{
+                    color: #484746;
+                }
+            }
+        }
+        .device_P{
+            background-color: #ECF0F1;
+            .photo{
+            
+            
+                img{
+                    width: 75%;
+                    
+                }
+            }
+        }
+    }
+
+    // 音響
+    .device_5{
+        .device_T{
+           
+            background-color: #FFF5EB;
+            
+            .article{
+                
+                // 標題
+                .title__{
+                    color: #88BB80;
+                    span{
+                        background: linear-gradient(to top, white 50%, transparent 0%);
+                    }
+                }
+                // 副標題
+                .subtitle__{
+                    color: #80654A;
+                }
+                .p__{
+                    color: #484746;
+                }
+            }
+        }
+        .device_P{
+            background-color: #FFDFD1;
+            .photo{
+            
+            
+                img{
+                    width: 75%;
                     
                 }
             }
