@@ -212,6 +212,8 @@ footer#footer .footer_top .footer_title p {
 
 footer#footer .footer_top .footer_title a {
   color: white;
+  font-family: 微軟正黑體;
+  letter-spacing: 3px;
 }
 
 footer#footer .footer_top .footer_time {
