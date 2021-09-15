@@ -38,11 +38,11 @@
   <link rel="stylesheet" href="css/software.css">
   <link rel="stylesheet" href="css/rwd-01.css">
   <link rel="stylesheet" href="css/rwd-07.css">
-  <link rel="stylesheet" href="./css/twentytwenty.css">
 
   <link rel="stylesheet" href="./style/electricity_new.css">
   <link rel="stylesheet" href="./style/electricity_new_media.css">
 
+  <link rel="stylesheet" href="./css/twentytwenty.css">
 
   <!-- bootstrapcdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -133,11 +133,12 @@
             <div class="left">
               <img src="./images/electricity_new/before_after.jpg" alt="">
             </div>
-            
-            <!-- <div id="before_after_images">
+
+            <div id="before_after_images">
               <img src="./images/electricity_new/before.jpg" alt="">
               <img src="./images/electricity_new/after.jpg" alt="">
-            </div> -->
+            </div>
+
           </div>
           <div class="order-0 order-md-1 col-12 col-md-7 col-lg-6 d-flex justify-content-center align-items-center">
             <div class="right">
@@ -772,11 +773,15 @@
   </footer>
   </div>
   <!-- js -->
+  <script>
+    $(window).load(function () {
+      $('#before_after_images').twentytwenty();
+    });
+  </script>
 
   <script src="js/jquery.fancybox.min.js"></script>
 
-
-
+  
   <!-- bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -788,9 +793,7 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
-  <!-- twentytwenty -->
-  <script src="./js/jquery.event.move.js"></script>
-  <script src="./js/jquery.twentytwenty.js"></script>
+  
 
 
   <!-- Swiper JS -->
@@ -800,8 +803,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
   <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
+  <!-- twentytwenty -->
+  <script src="./js/jquery.event.move.js"></script>
+  <script src="./js/jquery.twentytwenty.js"></script>
   <script>
 
     new WOW().init();
@@ -809,7 +818,7 @@
       loop: true
     });
 
-    
+
 
 
 
