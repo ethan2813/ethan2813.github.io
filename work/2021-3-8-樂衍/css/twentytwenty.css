@@ -122,7 +122,7 @@
 .twentytwenty-vertical .twentytwenty-after-label:before {
   bottom: 10px; }
 
-/*.twentytwenty-overlay {
+.twentytwenty-overlay {
   -webkit-transition-property: background;
   -moz-transition-property: background;
   transition-property: background;
@@ -134,7 +134,7 @@
       opacity: 1; }
     .twentytwenty-overlay:hover .twentytwenty-before-label {
       opacity: 1; }
-*/
+
 .twentytwenty-before {
   z-index: 20; }
 
