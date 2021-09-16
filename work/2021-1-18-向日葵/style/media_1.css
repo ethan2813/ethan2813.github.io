@@ -86,7 +86,7 @@
   }
   main#main .experience .title_ {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
   main#main .experience .title_ p {
@@ -98,7 +98,7 @@
     display: none;
   }
   main#main .experience .experience_box {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
   main#main .experience .experience_box h3 {
     letter-spacing: 3px;

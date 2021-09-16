@@ -148,7 +148,7 @@
   }
   main#main .about .title_ {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
   main#main .about .title_ p {
@@ -164,6 +164,7 @@
   }
   main#main .about .content_ .article {
     max-width: 100%;
+    padding-left: 0px;
   }
   main#main .about .content_ .article .content h3 {
     display: none;
@@ -178,7 +179,7 @@
   }
   main#main .items .title_ {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
   main#main .items .title_ p {
@@ -197,7 +198,7 @@
     margin-bottom: 0;
   }
   main#main .device .title_ {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
     text-align: center;
   }

@@ -126,7 +126,7 @@
   main#main .box_3 .title_ {
     display: none;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
   main#main .box_3 .title_ p {
@@ -138,7 +138,7 @@
     display: none;
   }
   main#main .box_3 .content_ .item {
-    padding-top: 130px;
+    padding-top: 100px;
     margin-bottom: 0;
   }
   main#main .box_3 .content_ .item .item_article {
@@ -167,7 +167,7 @@
   }
   main#main .box_5 .title_ {
     padding: 0 15px;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
   main#main .box_5 .title_ p {
