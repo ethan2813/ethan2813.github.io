@@ -216,9 +216,7 @@ main#main .box_2 .content_ .content_top p {
   font-family: 微軟正黑體;
   letter-spacing: 5px;
   line-height: 30px;
-  text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
+  text-align: center;
   color: #5c4d50;
 }
 
@@ -262,9 +260,7 @@ main#main .box_2 .content_ .content_bot .item p {
   letter-spacing: 2px;
   color: #5c4d50;
   margin-bottom: 8px;
-  text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
+  text-align: center;
 }
 
 main#main .box_2 .content_ .content_bot .item p:not(p:last-of-type):after {

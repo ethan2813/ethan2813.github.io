@@ -50,6 +50,14 @@
   main#main .banner p span {
     font-size: 18px;
   }
+  main#main .box_2 .title_ {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  main#main .box_4 .title_ {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   main#main .box_5 .pc p {
     font-size: 22px;
     letter-spacing: 3px;

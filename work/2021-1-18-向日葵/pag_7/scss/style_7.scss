@@ -191,8 +191,8 @@ main#main{
                     font-family: 微軟正黑體;
                     letter-spacing: 5px;
                     line-height: 30px;
-                    text-align:justify;
-                    text-align-last:center;
+                    text-align: center;
+
                     color: #5c4d50;
 
                 }
@@ -226,8 +226,7 @@ main#main{
                         
                         
                         
-                        text-align:justify;
-                        text-align-last:center;
+                        text-align: center;
                         &:not(p:last-of-type){
                             // border-bottom: 1px solid #8eab5d;
                             &:after{

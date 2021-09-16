@@ -55,6 +55,9 @@
     font-size: 22px;
     letter-spacing: 3px;
   }
+  main#main .box_7 {
+    padding-bottom: 150px;
+  }
 }
 
 @media (max-width: 996px) {
