@@ -1,0 +1,49 @@
+$mobile_nav_width:900px;
+
+@mixin p__ {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+    @media(max-width:992px){
+        font-size: 14px;
+    }
+}
+
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 微軟正黑體 ; 
+}
+
+nav#nav{
+    // nav 上方
+    .nav_top{
+        background-color: #E8EAED;
+        height: 60px;
+        line-height: 60px;
+        position: relative;
+        text-align: center;
+        // logo圖
+        img{
+            max-width: 290px;
+        }
+        // fb、line
+        .nav_top_icons{
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+        }
+    }
+
+    // nav 下方
+    .nav_bot{
+        line-height: 40px;
+        display: flex;
+        justify-content:space-between;
+        a{
+            color:#585959;
+            @include p__ ;
+        }
+    }
+}
