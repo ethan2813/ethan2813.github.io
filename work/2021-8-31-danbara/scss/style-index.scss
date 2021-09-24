@@ -1,0 +1,289 @@
+$pad_width:992px;
+$mobile_width:500px;
+
+
+@mixin p__ {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+    @media(max-width:992px){
+        font-size: 16px;
+    }
+}
+@mixin big_p__ {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+
+    @media(max-width:992px){
+        font-size: 18px;
+    }
+}
+@mixin big_title__{
+    font-size: 100px;
+    letter-spacing: 0.1em;
+    @media(max-width:992px){
+        font-size: 60px;
+    }
+}
+@mixin title__{
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+@mixin little_title__{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+
+
+#section_1{
+    padding-top: 100px;
+
+    @media (max-width:$pad_width){
+        padding-top: 60px;
+    }
+    .pc_banner{
+        display: block;
+        img{
+            width: 100%;
+        }
+
+        @media (max-width:$mobile_width){
+            display: none;
+        }
+    }
+    .mobile_banner{
+        display: none;
+        img{
+            width: 100%;
+        }
+
+        @media (max-width:$mobile_width){
+            display: block;
+        }
+    }
+}
+
+#section_2{
+    // 電腦版
+    .section_2_pc{
+        padding: 150px 0 170px 0 ;
+        background-color: #E8EAED;
+
+        @media (max-width:$mobile_width) {
+            display: none;
+        }
+        // 標題
+        .title{
+            writing-mode: vertical-lr;
+            @include big_title__;
+            line-height: 100px;
+            color:#585959;
+            margin: 0 0 0 0 ;
+            margin-left: auto;
+        }
+        // 內文
+        .article_box{
+            display: flex;
+            justify-content: space-around;
+            .article{
+                @include big_p__ ;
+                writing-mode: vertical-rl;
+                letter-spacing: 0.2em;
+                max-height: 320px;
+                text-align: justify;
+                margin: 0;
+                color: #585959;
+
+                &.bold{
+                    font-weight: bold;
+                }
+            }
+        }
+        // 門診時間
+        .time{
+            margin-top: 110px;
+            width: 100%;
+
+            table{
+                width: 80%;
+                tr{
+                    
+                    th,td{
+                        text-align: center;
+                        white-space:nowrap;
+                        @include p__;
+                        letter-spacing: 0.2em;
+                        color: #585959;
+                        padding: 10px 12px;
+
+                        &.text_left{
+                            text-align: left;
+                        }
+                        &.text_right{
+                            text-align: right;
+                        }
+
+                        @media (max-width:$pad_width) {
+                        padding: 10px 5px;
+                            
+                        }
+
+                        
+
+
+                    }
+                }
+            }
+            
+        } 
+    }
+
+    // 手機板
+    .section_2_mobile{
+        display: none;
+      
+        @media (max-width:$mobile_width) {
+            display: block;
+        }
+
+        .time{
+            padding-top: 35px;
+            padding-bottom: 35px;
+            table{
+                width: 100%;
+                margin-bottom: 15px;
+                tr{
+                    .title{
+                        @include little_title__;
+                    }
+                    td,th{
+                        text-align: center;
+                        color: #585959;
+                        line-height: 35px;
+                        margin: 5px;
+                        width: 35px;
+
+                        &.left{
+                            text-align: left;
+                        }
+    
+                        
+                        & .circle_1{
+                            width: 35px;
+                            height: 35px;
+                            background: #C4C4C4;
+                            border-radius: 50%;
+                            margin: 0;
+                            display: inline-block;
+                        }
+    
+                        & .circle_2{
+                            color: white;
+    
+                            width: 35px;
+                            height: 35px;
+                            background: #585959;
+                            border-radius: 50%;
+                            margin: 0;
+                            display: inline-block;
+                        }
+    
+                    }
+                    
+                }
+            }
+            
+            .circle_box{
+                line-height: 30px;
+                .circle{
+                    vertical-align: sub;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    &.circle_1{
+                        background: #C4C4C4;
+
+                    }
+                    &.circle_2{
+                        background: #585959;
+
+                    }
+                    
+                }
+            }
+            
+
+        }
+
+        .article_box{
+            padding: 58px 0 58px 0;
+            background: #E8EAED;
+            .title{
+                @include title__;
+                color: #585959;
+                text-align: center;
+            }
+            .article{
+                .article{
+                    @include p__;
+                    color: #585959;
+
+                    &.bold{
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+#section_3{
+    // 電腦版
+    .section_3_pc{
+        padding: 150px 0 170px 0 ;
+        background-color: white;
+
+        @media (max-width:$mobile_width) {
+            display: none;
+        }
+        // 標題
+        .doctor{
+            position: relative;
+            .title{
+                margin-left: auto;
+                writing-mode: vertical-rl;
+                @include big_title__;
+                line-height: 100px;
+                color:#585959;
+                margin: 0 0 0 auto ;
+                
+            }
+            .name{
+                position: absolute;
+                max-height: 300px;
+                left: -10%;
+                top: 10%;
+
+                @media (max-width:$pad_width) {
+                    max-height: 200px;
+                }
+            }
+        }
+
+        // 內文
+        .article_box{
+            img{
+                max-width: 230px;
+            }
+        }
+        
+       
+    }
+}
+
