@@ -14,25 +14,75 @@ $mobile_width:500px;
     font-size: 18px;
     letter-spacing: 0.1em;
 
-    @media(max-width:992px){
+    @media(max-width:$pad_width){
         font-size: 18px;
     }
 }
 @mixin big_title__{
     font-size: 100px;
     letter-spacing: 0.1em;
+    margin: 0 0 0 auto;
+    writing-mode: vertical-rl;
+    line-height: 100px;
+    color: #585959;
     @media(max-width:992px){
         font-size: 60px;
+    }
+}
+@mixin little_title__{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+@mixin little_title__2{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+@mixin little_title__3{
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    @media(max-width:$pad_width){
+        font-size: 18px;
+    }
+    @media(max-width:768px){
+        font-size: 16px;
     }
 }
 @mixin title__{
     font-size: 40px;
     letter-spacing: 0.1em;
 }
-@mixin little_title__{
-    font-size: 20px;
+@mixin title__2{
+    font-size: 60px;
     letter-spacing: 0.1em;
 }
+
+
+
+.p__{
+    @include p__ ;
+}
+.big_p__{
+    @include big_p__ ;
+}
+.big_title__{
+    @include big_title__;
+}
+.little_title__{
+    @include little_title__;
+}
+.little_title__2{
+    @include little_title__2;
+}
+.little_title__3{
+    @include little_title__3;
+}
+.title__{
+    @include title__;
+}
+.title__2{
+    @include title__2;
+}
+
 
 
 
@@ -74,9 +124,9 @@ $mobile_width:500px;
             display: none;
         }
         // 標題
-        .title{
+        .big_title__{
             writing-mode: vertical-lr;
-            @include big_title__;
+            // @include big_title__;
             line-height: 100px;
             color:#585959;
             margin: 0 0 0 0 ;
@@ -86,8 +136,8 @@ $mobile_width:500px;
         .article_box{
             display: flex;
             justify-content: space-around;
-            .article{
-                @include big_p__ ;
+            .p__{
+                // @include p__ ;
                 writing-mode: vertical-rl;
                 letter-spacing: 0.2em;
                 max-height: 320px;
@@ -154,7 +204,7 @@ $mobile_width:500px;
                 width: 100%;
                 margin-bottom: 15px;
                 tr{
-                    .title{
+                    .little_title__{
                         @include little_title__;
                     }
                     td,th{
@@ -222,17 +272,18 @@ $mobile_width:500px;
         .article_box{
             padding: 58px 0 58px 0;
             background: #E8EAED;
-            .title{
+            .title__{
                 @include title__;
                 color: #585959;
                 text-align: center;
             }
             .article{
-                .article{
-                    @include p__;
+                .p__{
+                    // @include p__;
                     color: #585959;
 
-                    &.bold{
+                    &.little_title__{
+                        // @include little_title__;
                         text-align: center;
                         font-weight: bold;
                     }
@@ -255,10 +306,10 @@ $mobile_width:500px;
         // 標題
         .doctor{
             position: relative;
-            .title{
+            .big_title__{
                 margin-left: auto;
                 writing-mode: vertical-rl;
-                @include big_title__;
+                // @include big_title__;
                 line-height: 100px;
                 color:#585959;
                 margin: 0 0 0 auto ;
@@ -278,9 +329,219 @@ $mobile_width:500px;
 
         // 內文
         .article_box{
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: flex-end;
+            margin-top:10%;
+            .p__{
+                // @include p__ ;
+                writing-mode: vertical-rl;
+                letter-spacing: 0.2em;
+                max-height: 300px;
+                text-align: justify;
+                margin: 0;
+                color: #585959;
+                display: inline-block;
+                
+                
+
+                &.bold{
+                    font-weight: bold;
+                }
+            }
             img{
                 max-width: 230px;
+                width: 100%;
+                object-fit: contain;
+
+                &.max{
+                    max-width: unset;
+                    margin-top: 60px;
+                }
             }
+        }
+
+        // 學歷
+        .exper{
+            margin-top: -50px;
+
+            @media (max-width:$pad_width) {
+                margin-top: 50px;
+            }
+            .exper_L{
+                .p__{
+                    // @include p__ ;
+                    color: #585959;
+                }
+            }
+            .exper_R{
+                @media (max-width:$pad_width) {
+                   display: none;
+                }
+                .title__2{
+                    // @include title__2;
+                    color: #585959;
+                    writing-mode: vertical-lr;
+                    margin: 0;
+                }
+            }
+        }
+        
+       
+    }
+
+    // 手機板
+    .section_3_mobile{
+        padding: 58px 0 58px 0;
+        display: none;
+      
+        @media (max-width:$mobile_width) {
+            display: block;
+        }
+        // 医師の経験
+        .doctor{
+            .title__{
+                // @include title__;
+                color: #585959;
+                text-align: center;
+            }
+            .photo{
+                text-align: center;
+                img{
+                    max-width: 230px;
+                }
+            }
+            .p__{
+                margin-top: 27px;
+                // @include p__;
+                color: #585959;
+            }
+
+            .little_title__{
+                margin-top: 27px;
+                // @include little_title__;
+                color: #585959;
+                text-align: center;
+                font-weight: bold;
+
+            }
+        }
+
+        // 中間的圖
+        .photo_2{
+            width: 100%;
+        }
+
+        // 學歷
+        .exper{ 
+            margin: 35px 0 0 0;
+            .p__{
+                 // @include p__;
+                letter-spacing: 0.2em;
+                margin-bottom: 0.5em;
+                color: #585959;
+
+                
+            }
+            ul{
+
+                list-style-type: none;
+                padding-left: 0.5em;
+                li{
+                    text-indent: -1em;
+                    padding-left: 1em;
+                    color: #585959;
+                }
+               
+            }
+        }
+    }
+}
+
+// 病院の特徴
+#section_4{
+    background: #E8EAED;
+    // 電腦版
+    .section_4_pc{
+        padding: 110px 0 220px 0;
+
+        @media (max-width:$pad_width) {
+            padding: 110px 0 110px 0;
+        }
+
+        @media (max-width:$mobile_width) {
+            display: none;
+        }
+        // 病院の特徴標題
+        .feature{
+            position: relative;
+            // 三大優點
+            .little_title__2{
+                writing-mode: vertical-rl;
+                color: #585959;
+                position: absolute;
+                top: 20%;
+                right: -90px;
+                @media (max-width:$pad_width) {
+                    right: -50px;
+                }
+                @media (max-width:768px) {
+                    right: -70px;
+                }
+            }
+        }
+        // 方塊
+        .feature_box{
+            background-color: white;
+            padding: 25px 15px 55px 15px;
+            margin-top: 50%;
+
+            @media (max-width:$pad_width) {
+                padding: 15px 10px 15px 10px;
+            }
+
+            .p_2{
+                letter-spacing: 0.2em;
+
+                @media (max-width:$pad_width) {
+                    letter-spacing: 0.1em;
+                }
+                
+            }
+        }   
+    }
+
+    // 手機板
+    .section_4_mobile{
+        display: none;
+        padding: 58px 0 58px 0;
+        @media (max-width:$mobile_width) {
+            display: block;
+        }
+        .feature{
+            // 病院の特徴
+            .title{
+                text-align: center;
+                color: #585959;
+            }
+            // 三大優點
+            .little_title{
+                text-align: center;
+                color: #585959;
+
+            }
+            .feature_box{
+                background-color: white;
+                padding: 40px 30px;
+                margin-bottom: 20px;
+                p{
+                    text-align: center;
+                    color: #585959;
+
+
+                }
+            }
+
         }
         
        
