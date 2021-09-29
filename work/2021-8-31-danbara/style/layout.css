@@ -301,6 +301,10 @@ footer#footer .contact .text {
   }
 }
 
+footer#footer .contact .text a {
+  color: #585959;
+}
+
 footer#footer .map img {
   max-width: 490px;
   width: 100%;
