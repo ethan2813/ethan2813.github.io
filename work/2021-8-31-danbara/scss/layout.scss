@@ -1,5 +1,5 @@
 $pad_width:992px;
-$mobile_width:500px;
+$mobile_width:576px;
 
 
 @mixin p__ {
@@ -7,20 +7,85 @@ $mobile_width:500px;
     letter-spacing: 0.1em;
 
     @media(max-width:992px){
-        font-size: 14px;
+        font-size: 16px;
     }
 }
-
-
-
 @mixin big_p__ {
     font-size: 18px;
     letter-spacing: 0.1em;
 
+    @media(max-width:$pad_width){
+        font-size: 18px;
+    }
+}
+@mixin big_title__{
+    font-size: 100px;
+    letter-spacing: 0.1em;
+    margin: 0 0 0 auto;
+    writing-mode: vertical-rl;
+    line-height: 100px;
+    color: #585959;
     @media(max-width:992px){
+        font-size: 60px;
+    }
+}
+@mixin little_title__{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+@mixin little_title__2{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+@mixin little_title__3{
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    @media(max-width:$pad_width){
+        font-size: 18px;
+    }
+    @media(max-width:768px){
         font-size: 16px;
     }
 }
+@mixin title__{
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+@mixin title__2{
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    @media(max-width:$pad_width){
+        font-size: 40px;
+    }
+}
+
+
+
+.p__{
+    @include p__ ;
+}
+.big_p__{
+    @include big_p__ ;
+}
+.big_title__{
+    @include big_title__;
+}
+.little_title__{
+    @include little_title__;
+}
+.little_title__2{
+    @include little_title__2;
+}
+.little_title__3{
+    @include little_title__3;
+}
+.title__{
+    @include title__;
+}
+.title__2{
+    @include title__2;
+}
+
 
 
 
@@ -174,6 +239,11 @@ nav#nav{
 
 footer#footer{
     padding-top: 162px;
+
+    @media (max-width:$mobile_width) {
+        padding-top: 38px;
+    }
+    
     // logo
     .logo_bot{
         margin-bottom: 75px;

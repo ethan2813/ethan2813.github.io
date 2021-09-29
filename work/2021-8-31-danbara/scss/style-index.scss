@@ -1,5 +1,5 @@
 $pad_width:992px;
-$mobile_width:500px;
+$mobile_width:576px;
 
 
 @mixin p__ {
@@ -54,6 +54,9 @@ $mobile_width:500px;
 @mixin title__2{
     font-size: 60px;
     letter-spacing: 0.1em;
+    @media(max-width:$pad_width){
+        font-size: 40px;
+    }
 }
 
 
@@ -114,6 +117,7 @@ $mobile_width:500px;
     }
 }
 
+// 私の物語
 #section_2{
     // 電腦版
     .section_2_pc{
@@ -165,7 +169,7 @@ $mobile_width:500px;
                         @include p__;
                         letter-spacing: 0.2em;
                         color: #585959;
-                        padding: 10px 12px;
+                        padding: 10px 10px;
 
                         &.text_left{
                             text-align: left;
@@ -294,6 +298,7 @@ $mobile_width:500px;
     }
 }
 
+// 医師の経験
 #section_3{
     // 電腦版
     .section_3_pc{
@@ -553,5 +558,131 @@ $mobile_width:500px;
     .section_5_img{
         width: 100%;
     }
+}
+
+#section_6{
+    // 電腦版
+    .section_6_pc{
+        padding-top: 170px;
+
+        @media (max-width:$mobile_width) {
+            display: none;
+        }
+        .section_6_box{
+            img{
+                width: 100%;
+            }
+            &.section_6_L{
+                margin-top: 170px;
+                .img_long{
+                    display: block;
+                    @media (max-width:$pad_width) {
+                        display: none;
+                    }
+                }
+                .img_short{
+                    display: none;
+                    @media (max-width:$pad_width) {
+                        display: block;
+                    }
+                }
+
+            }
+
+            &.section_6_M{
+                text-align: center;
+                margin-top: 170px;
+                img{
+                    width: 80%;
+                }
+            }
+            // 右邊
+            &.section_6_R{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // 文字
+                .section_6_R_text{
+                    display: flex;
+                    justify-content: center;
+                    .title{
+                        writing-mode: vertical-rl;
+                        @include title__2;
+                        color: #585959;
+                        line-height: 70px;
+                    }
+                    .little_title{
+                        margin-right: 40px;
+                        margin-top: 85px;
+                        writing-mode: vertical-rl;
+                        @include p__;
+                        letter-spacing: 0.2em;
+                        color: #585959;
+                        line-height: 35px;
+
+                        @media (max-width:$pad_width) {
+                            margin-right: 20px;
+                            margin-top: 35px;
+                        }
+                    }
+                }
+                // 圖
+                .section_6_R_img{
+                    margin-top: auto;
+                    img{
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .section_6_mobile{
+        padding: 38px 0;
+        display: none;
+
+        @media (max-width:$mobile_width) {
+            display: block;
+        }
+        .device{
+            // 標題
+            .title_text{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 38px;
+                .title{
+                    writing-mode: vertical-rl;
+                    @include title__2;
+                    color: #585959;
+                    line-height: 70px;
+                }
+                .little_title{
+                    margin-right: 40px;
+                    margin-top: 85px;
+                    writing-mode: vertical-rl;
+                    @include p__;
+                    letter-spacing: 0.2em;
+                    color: #585959;
+                    line-height: 35px;
+
+                    @media (max-width:$pad_width) {
+                        margin-right: 20px;
+                        margin-top: 35px;
+                    }
+                }
+            }
+            
+        }
+        // 圖
+        .photo{
+            img{
+                width: 100%;
+            }
+        }
+        
+        
+    }
+    
 }
 
