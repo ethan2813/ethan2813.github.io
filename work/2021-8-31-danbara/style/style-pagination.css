@@ -218,12 +218,6 @@
   }
 }
 
-#section_2 .items .item p span {
-  -webkit-writing-mode: lr;
-      -ms-writing-mode: lr;
-          writing-mode: lr;
-}
-
 #section_2 .items .item img {
   width: 35px;
   -o-object-fit: contain;
