@@ -3,6 +3,10 @@
   max-width: 500px;
 }
 
+#section_1 form {
+  padding: 10px 0 50px 0;
+}
+
 #section_1 form .title_ {
   font-size: 20px;
   letter-spacing: 0.1em;
