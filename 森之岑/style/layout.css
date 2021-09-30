@@ -158,3 +158,15 @@ nav#nav .nav_bot .pc_items li {
 nav#nav .nav_bot .pc_items li a {
   color: #585959;
 }
+
+footer#footer {
+  background-color: #E8EAED;
+  padding: 15px 0;
+}
+
+footer#footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
