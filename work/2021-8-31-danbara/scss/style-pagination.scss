@@ -145,19 +145,27 @@ $mobile_width:576px;
     }
 
     .items{
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         margin-top: 50px;
+        text-align: center;
+        transform: translateX(-15px);
         .item{
-            display: flex;
-            align-items: flex-start;
-            margin: 0 15px 0 15px;
+            // display: flex;
+            // align-items: flex-start;
+            margin: 0 25px 0 25px;
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            
             p{
                 letter-spacing: 0.2em;
                 @include big_p__;
                 writing-mode: vertical-rl;
                 color:#55595A;
                 margin: 0 15px 0 15px;
+                text-align: left;
+                
 
                 @media(max-width:$mobile_width){
                     margin: 0 5px 0 5px;
@@ -169,6 +177,9 @@ $mobile_width:576px;
             img{
                 width: 35px;
                 object-fit: contain;
+                position: absolute;
+                right: -30px;
+                top: 0;
             }
         }
     }
