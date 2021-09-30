@@ -2,6 +2,33 @@
     .img_1{
         img{
             width: 100%;
+            max-width: 500px;
+        }
+    }
+    form{
+        .title_{
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            color: #585959;
+            margin-bottom: 50px;
+            line-height: 50px;
+        }
+        textarea{
+            border-radius: 30px;
+            padding: 30px;
+            outline:none;
+            width: 100%;
+        }
+        button{
+            background-color:rgb(62, 168, 58);
+            letter-spacing: 0.1em;
+            padding: 10px 2px;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 0;
+            outline:none;
+            color: rgb(255, 255, 255);
         }
     }
 }
