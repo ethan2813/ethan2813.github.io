@@ -40,6 +40,9 @@ $mobile_width:576px;
 @mixin little_title__2{
     font-size: 30px;
     letter-spacing: 0.1em;
+    @media(max-width:$mobile_width){
+        font-size: 20px;
+    }
 }
 @mixin little_title__3{
     font-size: 25px;
@@ -176,6 +179,11 @@ $mobile_width:576px;
 // 矯正プロセス
 #section_3{
     padding: 170px 0 120px 0;
+
+    @media (max-width:$mobile_width) {
+    padding: 38px 0 38px 0;
+        
+    }
     // 左邊的標題
     .left_title{
         position: relative;
@@ -214,17 +222,36 @@ $mobile_width:576px;
     // 右邊的內容
     .right_content{
         margin-top: 150px;
+        @media (max-width:$mobile_width) {
+            margin-top: 35px;
+
+        }
         // 項目
         .item{
+            margin-bottom: 60px;
             display: flex;
+            @media (max-width:$mobile_width) {
+                flex-direction: column;
+            }
             // 左邊圖
             .left{
                 padding: 0 10%;
                 display: inline-block;
                 display: flex;
+                @media (max-width:768px) {
+                    padding: 0 20px;
+                }
+                @media (max-width:$mobile_width) {
+                    display: block;
+                    
+                    
+                }
                 img{
                     max-width: 80px;
                     object-fit: contain;
+                    @media (max-width:$mobile_width) {
+                        margin-bottom: 35px;
+                    }
                 }
             }
             // 右邊內容
