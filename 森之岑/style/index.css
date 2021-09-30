@@ -29,3 +29,10 @@
   outline: none;
   color: white;
 }
+
+#section_1 form button:active {
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
