@@ -185,7 +185,7 @@
 }
 
 #section_2 .items .item {
-  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
   position: relative;
   vertical-align: top;
   white-space: nowrap;
