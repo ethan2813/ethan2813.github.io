@@ -263,9 +263,13 @@ $mobile_width:576px;
     // 右邊的內容
     .right_content{
         margin-top: 150px;
+        
         @media (max-width:768px) {
             margin-top: 35px;
-
+            padding-left: 10px;
+        }
+        @media (max-width:$mobile_width) {
+            padding-left: 0px;
         }
         // 項目
         .item{
@@ -362,9 +366,13 @@ $mobile_width:576px;
 
     // 右邊的內容
     .right_content{
-        margin-top: 150px;
+        margin-top: 115px;
+        padding-left: 10px;
         @media (max-width:768px) {
             margin-top: 35px;
+        }
+        @media (max-width:$mobile_width) {
+            padding-left: 0px;
         }
 
         // 標題
@@ -399,6 +407,111 @@ $mobile_width:576px;
             opacity: 0.5;
             margin-bottom: 37px;
         }
+        
+    }
+}
+
+#section_5{
+    padding: 170px 0 120px 0;
+    background-color: white;
+
+    @media (max-width:$mobile_width) {
+    padding: 38px 0 38px 0;
+        
+    }
+    // 左邊的標題
+    .left_title{
+        position: relative;
+
+        // ハプニング
+        .big_title__{
+            @media (max-width:$mobile_width) {
+                writing-mode:rl;
+                text-align: center;
+            }
+        }
+
+        // 齒列不齊的幾種情況
+        .little_title__2{
+            writing-mode: vertical-rl;
+            color: #585959;
+            position: absolute;
+            top: 20%;
+            right: -90px;
+            white-space: nowrap;
+            @media (max-width:$pad_width) {
+                right: -50px;
+            }
+            @media (max-width:768px) {
+                right: -70px;
+            }
+            @media (max-width:$mobile_width) {
+                position: unset;
+                writing-mode:rl;
+                display: block;
+                text-align: center;
+
+            }
+        }
+        .name{
+            position: absolute;
+            max-height: 300px;
+            left: -10%;
+            top: 10%;
+
+            @media (max-width:$pad_width) {
+                max-height: 200px;
+            }
+        }
+    }
+
+    // 右邊的內容
+    .right_content{
+        margin-top: 115px;
+        padding-left: 10px;
+        @media (max-width:768px) {
+            margin-top: 35px;
+        }
+        @media (max-width:$mobile_width) {
+            padding-left: 0px;
+        }
+        // 項目
+        .item{
+            margin-bottom: 140px;
+            @media (max-width:768px) {
+                margin-bottom: 50px;
+            }
+            // 圖
+            .item_img{
+                img{
+                    width: 100%;
+                }
+                @media (max-width:$mobile_width) {
+                    &.none_img{
+                        display: none;
+                    }
+                }
+            }
+            // 文
+            .item_text{
+                margin-top: 50px;
+                // 標題
+                .title{
+                   @include little_title__; 
+                   color: #585959;
+                }
+                // 內容
+                .content{
+                   @include big_p__; 
+                   color: #585959;
+                }
+                ul.content_ul{
+                    padding-left: 1.5em;
+                }
+            }
+        }
+
+      
         
     }
 }
