@@ -276,7 +276,7 @@ $mobile_width:576px;
             }
             // 左邊圖
             .left{
-                padding: 0 10%;
+                padding: 0 50px;
                 margin-top: auto;
                 text-align: center;
                 // display: flex;
@@ -312,6 +312,70 @@ $mobile_width:576px;
 
             }
         }
+    }
+}
+
+// 齒列不齊的幾種情況
+#section_4{
+    padding: 170px 0 120px 0;
+    background-color: #E8EAED;
+
+    @media (max-width:$mobile_width) {
+    padding: 38px 0 38px 0;
+        
+    }
+    // 左邊的標題
+    .left_title{
+        position: relative;
+
+        // 矯正プロセス
+        .big_title__{
+            @media (max-width:$mobile_width) {
+                writing-mode:rl;
+                text-align: center;
+            }
+        }
+
+        // 矯正流程
+        .little_title__2{
+            writing-mode: vertical-rl;
+            color: #585959;
+            position: absolute;
+            top: 20%;
+            right: -90px;
+            @media (max-width:$pad_width) {
+                right: -50px;
+            }
+            @media (max-width:768px) {
+                right: -70px;
+            }
+            @media (max-width:$mobile_width) {
+                position: unset;
+                writing-mode:rl;
+                display: block;
+                text-align: center;
+
+            }
+        }
+    }
+
+    // 右邊的內容
+    .right_content{
+        margin-top: 150px;
+        @media (max-width:768px) {
+            margin-top: 35px;
+        }
+
+        // 標題
+        .title{
+            white-space: normal;
+            // 標題左邊的小圖
+            img{
+                width: 50px;
+                margin-right: 25px;
+            }
+        }
+        
     }
 }
 
