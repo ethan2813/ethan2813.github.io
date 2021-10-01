@@ -136,6 +136,9 @@ nav#nav{
             display: inline-block;
             position: absolute;
             right: 15px;
+            img{
+                width: 28px;
+            }
 
             @media (max-width:$pad_width){
                 display: none;

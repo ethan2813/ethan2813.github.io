@@ -131,6 +131,10 @@ nav#nav .nav_top .nav_top_icons {
   right: 15px;
 }
 
+nav#nav .nav_top .nav_top_icons img {
+  width: 28px;
+}
+
 @media (max-width: 992px) {
   nav#nav .nav_top .nav_top_icons {
     display: none;

@@ -277,21 +277,20 @@ $mobile_width:576px;
             // 左邊圖
             .left{
                 padding: 0 10%;
-                display: block;
                 margin-top: auto;
                 text-align: center;
                 // display: flex;
                 @media (max-width:768px) {
                     padding: 0 20px;
+                    text-align: left;
                 }
-                @media (max-width:$mobile_width) {
-                    display: block;
-                    
-                    
-                }
+                     
                 img{
                     max-width: 80px;
                     object-fit: contain;
+                    @media (max-width:768px) {
+                        margin-bottom: 15px;
+                    }
                     @media (max-width:$mobile_width) {
                         margin-bottom: 35px;
                     }
