@@ -686,6 +686,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  #section_6 .left_title {
+    margin-bottom: 50px;
+  }
+}
+
 #section_6 .right_content {
   margin-top: 115px;
   padding-left: 10px;

@@ -574,6 +574,10 @@ $mobile_width:576px;
 
             }
         }
+
+        @media (max-width:$mobile_width) {
+            margin-bottom: 50px;
+        }
     }
 
     // 右邊的內容
