@@ -200,6 +200,10 @@ nav#nav .nav_top .mobile_right.active {
   right: -0px;
 }
 
+nav#nav .nav_top .mobile_right ul {
+  padding-top: 35px;
+}
+
 nav#nav .nav_top .mobile_right ul li {
   list-style-type: none;
   margin: 0em 0;
