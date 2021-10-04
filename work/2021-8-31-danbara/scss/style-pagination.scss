@@ -24,6 +24,7 @@ $mobile_width:576px;
     margin: 0 0 0 auto;
     writing-mode: vertical-rl;
     line-height: 100px;
+    white-space: nowrap;
     color: #585959;
     @media(max-width:$pad_width){
         font-size: 60px;
@@ -57,6 +58,10 @@ $mobile_width:576px;
 @mixin title__{
     font-size: 40px;
     letter-spacing: 0.1em;
+
+    @media(max-width:1200px){
+        font-size: 30px;
+    }
 }
 @mixin title__2{
     font-size: 60px;
@@ -624,12 +629,73 @@ $mobile_width:576px;
                 }
                 
             }
-            // 線
-            .line{
-                margin-top: 0px;
-                border: 1px solid #55595A;
-                opacity: 0.5;
-                margin-bottom: 37px;
+            
+        }
+
+        // 線
+        .line{
+            margin-top: 0px;
+            border: 1px solid #55595A;
+            opacity: 0.5;
+            margin-bottom: 80px;
+            padding-left: 50px;
+
+            @media (max-width:996px){
+                padding-left: 20px;
+            }
+            @media (max-width:$pad_width){
+                padding-left: 0px;
+            }
+        }
+
+        // 下
+        .right_content_bot{
+            // 項目
+            .item{
+                margin-bottom: 85px;
+                // 左
+                .left{
+                    padding-left: 50px;
+
+                    @media (max-width:996px){
+                        padding-left: 20px;
+                        padding-bottom: 50px;
+                    }
+                    @media (max-width:$pad_width){
+                        padding-left: 0px;
+                        padding-bottom: 50px;
+                    }
+                    .title{
+                        @include title__;
+                        color: #585959;
+                       
+
+                        span{
+                            @include p__;
+                            color: #585959;
+                        }
+
+                        @media (max-width:768px){
+                            text-align: center;
+                        }
+
+                    }
+                }
+                .right{
+                    // 標題
+                    .title{
+                        @include little_title__;
+                        color: #585959;
+
+                    }
+                    // 內容
+                    .content{
+                        @include big_p__;
+                        color: #585959;
+
+                    }
+
+                }
             }
         }
         
