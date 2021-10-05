@@ -275,6 +275,20 @@ footer#footer {
   }
 }
 
+footer#footer .button .gototop {
+  position: fixed;
+  z-index: 99;
+  bottom: 10%;
+  right: 20px;
+  cursor: pointer;
+}
+
+footer#footer .button .gototop img {
+  width: 40px;
+  -webkit-filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+
 footer#footer .logo_bot {
   margin-bottom: 75px;
 }
@@ -319,7 +333,7 @@ footer#footer .map img {
 }
 
 footer#footer .statement {
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 footer#footer .statement p {

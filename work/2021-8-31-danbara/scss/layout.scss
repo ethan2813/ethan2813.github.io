@@ -248,6 +248,23 @@ footer#footer{
         padding-top: 38px;
     }
 
+    // 按鈕
+    .button{
+        // gototop
+        .gototop{
+            position: fixed;
+            z-index: 99;
+            bottom: 10%;
+            right: 20px;
+            cursor: pointer;
+            img{
+                width: 40px;
+                filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+            }
+        }
+    }
+    
+
     // logo
     .logo_bot{
         margin-bottom: 75px;
@@ -285,7 +302,7 @@ footer#footer{
 
     //聲明
     .statement{
-        padding: 40px 0;
+        padding: 40px 0 0 0;
         p{
             color: #55595A;
             font-size: 10px ;
