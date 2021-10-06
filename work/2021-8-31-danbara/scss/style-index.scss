@@ -282,7 +282,7 @@ $mobile_width:576px;
                 text-align: center;
             }
             .article{
-                .p__{
+                p{
                     // @include p__;
                     color: #585959;
 
@@ -505,8 +505,14 @@ $mobile_width:576px;
                 padding: 15px 10px 15px 10px;
             }
 
+            .p_1{
+                color: #585959;
+
+            }
             .p_2{
                 letter-spacing: 0.2em;
+                color: #585959;
+
 
                 @media (max-width:$pad_width) {
                     letter-spacing: 0.1em;
@@ -640,7 +646,7 @@ $mobile_width:576px;
     }
 
     .section_6_mobile{
-        padding: 38px 0;
+        padding: 38px 0 0 0;
         display: none;
 
         @media (max-width:$mobile_width) {
@@ -690,6 +696,7 @@ $mobile_width:576px;
 #section_6-2{
     padding-top: 100px;
     padding-bottom: 50px;
+    background: #E8EAED;
     // 上
     .section_6-2_top{
         
