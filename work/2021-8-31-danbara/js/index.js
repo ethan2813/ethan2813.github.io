@@ -9,6 +9,11 @@ $('.burger').on('click', () => {
     $('.mobile_right').toggleClass('active')
 })
 
+$('.mobile_right ul li a').on('click',()=>{
+    $('.mobile_right').removeClass('active');
+    $('.burger').removeClass('burger_active');
+})
+
 new fullpage('#fullpage', {
     sectionsColor: [],
 });
@@ -17,8 +22,8 @@ new fullpage('#fullpage', {
 $(document).on('mouseup',(e)=>{
     if($('.mobile_right').hasClass('active')){
         if(!$(e.target).closest('.mobile_right,.burger').length){
-            $('.mobile_right').removeClass('active')
-            $('.burger').removeClass('burger_active')
+            $('.mobile_right').removeClass('active');
+            $('.burger').removeClass('burger_active');
 
         }
     }
