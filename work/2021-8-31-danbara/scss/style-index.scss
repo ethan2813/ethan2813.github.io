@@ -163,6 +163,10 @@ $mobile_width:576px;
             table{
                 width: 80%;
                 tr{
+                    .fb{
+                        color: #585959;
+
+                    }
                     
                     th,td{
                         text-align: center;
@@ -629,6 +633,8 @@ $mobile_width:576px;
                         letter-spacing: 0.2em;
                         color: #585959;
                         line-height: 35px;
+
+                       
 
                         @media (max-width:$pad_width) {
                             margin-right: 20px;

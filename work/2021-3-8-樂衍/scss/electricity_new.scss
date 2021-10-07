@@ -297,6 +297,37 @@ $mobile_width:540px;
             color: #fff;
         }
     }
+
+    // slogan
+    .slogans{
+        margin-top: 50px;
+        .slogan{
+            display: inline-block;
+            color: #669396;
+            border: 1px solid white;
+            padding: 18px 15px;
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-bottom:20px;
+
+        }
+    }
+
+    // items
+    .items{
+        // item
+        .item{
+            text-align: center;
+            img{
+                width: 100%;
+
+                &.logo{
+                    max-width: 270px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 }
 
 #section_4{

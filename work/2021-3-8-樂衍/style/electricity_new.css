@@ -326,6 +326,33 @@
   color: #fff;
 }
 
+#section_3_new .slogans {
+  margin-top: 50px;
+}
+
+#section_3_new .slogans .slogan {
+  display: inline-block;
+  color: #669396;
+  border: 1px solid white;
+  padding: 18px 15px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+#section_3_new .items .item {
+  text-align: center;
+}
+
+#section_3_new .items .item img {
+  width: 100%;
+}
+
+#section_3_new .items .item img.logo {
+  max-width: 270px;
+  margin-top: 30px;
+}
+
 #section_4 {
   background-color: #000;
   padding-top: 200px;
