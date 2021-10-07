@@ -309,6 +309,23 @@
   }
 }
 
+#section_3_new {
+  background-color: #000;
+  padding-top: 165px;
+  padding-bottom: 140px;
+}
+
+@media (max-width: 750px) {
+  #section_3_new {
+    padding-bottom: 60px;
+    padding-top: 100px;
+  }
+}
+
+#section_3_new .title p {
+  color: #fff;
+}
+
 #section_4 {
   background-color: #000;
   padding-top: 200px;

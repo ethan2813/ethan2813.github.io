@@ -283,6 +283,22 @@ $mobile_width:540px;
     
 }
 
+#section_3_new{
+    background-color: #000;
+    padding-top: 165px;
+    padding-bottom: 140px;
+    @media (max-width:$pad_width) {
+    padding-bottom: 60px;
+    padding-top: 100px;
+    }
+    // 標題
+    .title{
+        p{
+            color: #fff;
+        }
+    }
+}
+
 #section_4{
     background-color: #000;
     padding-top: 200px;

@@ -358,6 +358,7 @@
   font-size: 16px;
   letter-spacing: 0.1em;
   margin-bottom: 0;
+  line-height: 1.7em;
 }
 
 @media (max-width: 992px) {
@@ -479,6 +480,7 @@
   letter-spacing: 0.1em;
   text-align: justify;
   color: #585959;
+  line-height: 1.8em;
 }
 
 @media (max-width: 992px) {
@@ -616,6 +618,7 @@
   font-size: 18px;
   letter-spacing: 0.1em;
   color: #585959;
+  line-height: 1.8em;
 }
 
 @media (max-width: 992px) {
@@ -752,6 +755,7 @@
   letter-spacing: 0.1em;
   text-align: justify;
   color: #585959;
+  line-height: 1.8em;
 }
 
 @media (max-width: 992px) {
@@ -842,6 +846,8 @@
   font-size: 18px;
   letter-spacing: 0.1em;
   color: #585959;
+  line-height: 1.8em;
+  text-align: justify;
 }
 
 @media (max-width: 992px) {

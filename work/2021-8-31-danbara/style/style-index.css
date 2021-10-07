@@ -153,7 +153,8 @@
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
+  line-height: 2.2em;
   max-height: 320px;
   text-align: justify;
   margin: 0;
@@ -353,6 +354,7 @@
   margin: 0;
   color: #585959;
   display: inline-block;
+  line-height: 1.9em;
 }
 
 #section_3 .section_3_pc .article_box .p__.bold {
@@ -383,6 +385,7 @@
 
 #section_3 .section_3_pc .exper .exper_L .p__ {
   color: #585959;
+  line-height: 2em;
 }
 
 @media (max-width: 992px) {
@@ -837,6 +840,7 @@
   text-indent: -1.5em;
   padding-left: 1.5em;
   text-align: justify;
+  line-height: 1.8em;
 }
 
 @media (max-width: 992px) {
@@ -928,6 +932,7 @@
   text-indent: -1.5em;
   padding-left: 1.5em;
   text-align: justify;
+  line-height: 1.8em;
 }
 
 @media (max-width: 992px) {

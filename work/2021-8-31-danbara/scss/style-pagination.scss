@@ -317,6 +317,7 @@ $mobile_width:576px;
                 .article{
                     @include p__;
                     margin-bottom: 0;
+                    line-height: 1.7em;
                 }
 
             }
@@ -408,8 +409,8 @@ $mobile_width:576px;
                 p{
                     @include p__;
                     text-align: justify;
-                    color: #585959
-                    ;
+                    color: #585959;
+                    line-height: 1.8em;
                 }
             }
             // 線
@@ -519,6 +520,7 @@ $mobile_width:576px;
                 .content{
                    @include big_p__; 
                    color: #585959;
+                   line-height: 1.8em;
                 }
                 ul.content_ul{
                     padding-left: 1.5em;
@@ -629,6 +631,7 @@ $mobile_width:576px;
                         @include p__;
                         text-align: justify;
                         color: #585959;
+                        line-height: 1.8em;
                     }
                 }
                 
@@ -696,6 +699,8 @@ $mobile_width:576px;
                     .content{
                         @include big_p__;
                         color: #585959;
+                        line-height: 1.8em;
+                        text-align: justify;
 
                     }
 
