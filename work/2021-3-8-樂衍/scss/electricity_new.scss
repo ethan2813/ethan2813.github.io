@@ -286,9 +286,9 @@ $mobile_width:540px;
 #section_3_new{
     background-color: #000;
     padding-top: 165px;
-    padding-bottom: 140px;
+    // padding-bottom: 140px;
     @media (max-width:$pad_width) {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     padding-top: 100px;
     }
     // 標題
@@ -315,18 +315,49 @@ $mobile_width:540px;
 
     // items
     .items{
+        margin-top: 50px;
         // item
-        .item{
-            text-align: center;
-            img{
-                width: 100%;
+        a{
+            text-decoration:none;
 
-                &.logo{
-                    max-width: 270px;
+            .item{
+                text-align: center;
+                .photo{
+                    width: 100%;
+                }
+                .logo_box{
                     margin-top: 30px;
+                    display: flex;
+                    justify-content: center;
+
+                    @media(max-width:1200px){
+                        flex-direction: column;
+                    }
+                    
+                    .logo{
+                        max-height: 60px;
+                        object-fit: contain;
+                        margin-right: 20px;
+
+                        @media(max-width:1200px){
+                            margin-right: 0px;
+                            margin-bottom: 10px;
+                         }
+                    }
+                    .logo_text{
+                        color: white;
+                        display: inline-block;
+
+                        @media(max-width:1200px){
+                            text-align: center;
+                         }
+                        
+                        
+                    }
                 }
             }
         }
+        
     }
 }
 
@@ -355,10 +386,27 @@ $mobile_width:540px;
     // 文字
     .article{
         padding-right: 80px;
+        padding-left: 80px;
 
+        position: relative;
+        @media (max-width:1000px) {
+            padding-right: 20px;
+            padding-left:20px;
+        }
         @media (max-width:$pad_width) {
             padding-right: 0px;
+            padding-left:0px;
+
             padding: 70px 0 40px;
+        }
+        .title__{
+            white-space: nowrap;
+            margin-top: -110px;
+            margin-bottom: 110px;
+            color: #A1C19B;
+            span{
+                background: linear-gradient(to top, #524B4B 50%, transparent 0%);
+            }
         }
         .big_p__{
             color: #E8B1AF;
