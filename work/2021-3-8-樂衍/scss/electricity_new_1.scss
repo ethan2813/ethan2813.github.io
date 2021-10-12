@@ -129,9 +129,22 @@ $mobile_width:540px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         img{
-            width: 80%;
+            width: 82%;
             object-fit: contain;
+        }
+    }
+
+    .text{
+        margin-top: 100%;
+        .title{
+            color: white;
+            font-size: 25px;
+        }
+        .article{
+            color: white;
+            font-size: 16px;
         }
     }
 }
