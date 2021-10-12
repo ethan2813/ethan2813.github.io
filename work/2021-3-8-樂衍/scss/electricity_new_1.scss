@@ -236,13 +236,53 @@ $mobile_width:540px;
 
 #section_4{
     background-color: #000;
+    padding: 40px 0;
     .box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:996px) {
+            flex-direction: column;            
+        }
+        
         .left{
             display: inline-block;
+            @media (max-width:996px) {
+                margin-bottom: 20px;      
+            }
+            
             span{
                 font-size: 28px;
                 color: #fff;
             }
+        }
+        .right{
+            display: inline-block;
+            a{
+                margin: 0 5px;
+                .item{
+                    display: inline-block;
+                    border: 1px solid #E1E0DD;
+                    padding: 12px 12px;
+                    border-radius: 30px;
+                    transition: 0.15s ease-in-out;
+                    margin: 5px 0;
+                    span{
+                        color: #E1E0DD;
+                        font-size: 20px;
+                        
+
+                    }
+    
+                    &:hover{
+                        background-color: #669396;
+                        border: 1px solid #000;
+
+                    }
+                }
+            }
+            
         }
     }
 }
