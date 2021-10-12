@@ -201,23 +201,23 @@
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: calc(50% - 5px);
+    max-width: 100%;
     margin-top: 10px;
   }
 }
 
-#section_2 .test .box .right img {
+#section_2 .test .box .right .right_img {
+  margin-bottom: 30px;
+}
+
+#section_2 .test .box .right .right_img img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#section_2 .test .box .right img:nth-of-type(1) {
-  margin-bottom: 30px;
-}
-
 @media (max-width: 576px) {
-  #section_2 .test .box .right img:nth-of-type(1) {
+  #section_2 .test .box .right .right_img.left_ {
     margin-bottom: unset;
     margin-right: 5px;
   }

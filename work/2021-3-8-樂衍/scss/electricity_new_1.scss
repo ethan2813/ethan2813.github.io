@@ -170,26 +170,26 @@ $mobile_width:540px;
                 max-width: 428px;
                 @media (max-width:576px) {
                     flex-direction: row;
-                    max-width: calc(50% - 5px);
+                    // max-width: calc(50% - 5px);
+                    max-width: 100%;
                     margin-top: 10px;
                 }
-                img{
-                    max-width: 100%;
-                    object-fit: contain;
-
-                   
-                    &:nth-of-type(1){
-                        margin-bottom: 30px;
+                .right_img{
+                    margin-bottom: 30px;
+                    img{
+                        max-width: 100%;
+                        object-fit: contain;
+                    }
+                    &.left_{
+                        
                         @media (max-width:576px) {
                             margin-bottom: unset;
                             margin-right: 5px;
                             
                         }
                     }
-
-                    
-                    
                 }
+                
             }
 
             
