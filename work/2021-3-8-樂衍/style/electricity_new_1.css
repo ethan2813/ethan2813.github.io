@@ -177,6 +177,8 @@
 
 #section_2 .test .box .left img {
   max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #section_2 .test .box .right {
@@ -206,6 +208,8 @@
 
 #section_2 .test .box .right img {
   max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #section_2 .test .box .right img:nth-of-type(1) {
