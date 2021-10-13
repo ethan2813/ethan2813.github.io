@@ -493,6 +493,10 @@ $mobile_width:540px;
                     li{
                         text-indent: -1em;
                         padding-left: 1em;
+
+                        &.nowrap{
+                            white-space: nowrap;
+                        }
                     }
                 }
             }

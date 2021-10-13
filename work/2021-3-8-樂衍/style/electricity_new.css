@@ -571,6 +571,10 @@
   padding-left: 1em;
 }
 
+#section_5 .box .items_ .item .item_text ul li.nowrap {
+  white-space: nowrap;
+}
+
 #section_6 {
   background-color: #000;
   padding-top: 175px;
