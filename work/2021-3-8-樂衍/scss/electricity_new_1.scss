@@ -257,6 +257,31 @@ $mobile_width:540px;
             span{
                 font-size: 28px;
                 color: #fff;
+                
+            }
+            .item{
+                display: inline-block;
+                border: 1px solid #E1E0DD;
+                padding: 12px 12px;
+                border-radius: 30px;
+                transition: 0.15s ease-in-out;
+                margin: 5px 0;  
+                @media (max-width:996px) {
+                    margin-bottom: 50px;
+                     
+                } 
+            }
+            .br{
+                display: none;
+                @media (max-width:996px) {
+                    display: block;
+                     
+                }
+
+            }
+            .more{
+                margin-left: 10px;
+                white-space: nowrap;
             }
         }
         .right{
@@ -273,9 +298,10 @@ $mobile_width:540px;
                     span{
                         color: #E1E0DD;
                         font-size: 20px;
-                        
 
+                        
                     }
+                    
     
                     &:hover{
                         background-color: #669396;
