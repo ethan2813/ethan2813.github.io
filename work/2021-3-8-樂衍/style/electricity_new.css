@@ -495,11 +495,21 @@
 #section_5 .box .items_ {
   padding: 80px 60px;
   text-align: justify;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 400px);
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  grid-gap: 50px;
 }
 
 @media (max-width: 1200px) {
   #section_5 .box .items_ {
     padding: 60px 10px;
+    -ms-grid-columns: (300px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 300px);
   }
 }
 

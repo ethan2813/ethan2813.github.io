@@ -438,9 +438,14 @@ $mobile_width:540px;
         .items_{
             padding: 80px 60px;
             text-align: justify;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px);
+            justify-content: space-around;
+            grid-gap: 50px;
 
             @media (max-width:1200px){
                 padding: 60px 10px;
+                grid-template-columns: repeat(auto-fill, 300px);
             }
 
             
