@@ -844,6 +844,7 @@ $mobile_width:576px;
         }
     }
 
+    // 下
     .section_6-2_bot{
         margin-top: 50px;
         // 左圖
@@ -889,6 +890,69 @@ $mobile_width:576px;
                 text-align: justify;
             }
             // 內容
+            ul{
+                padding-left: 0em;;
+                li{
+                    @include p__;
+                    color:#585959;
+                    list-style-type: none;
+                    text-indent: -1.5em;
+                    padding-left: 1.5em;
+                    text-align: justify;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    }
+
+    // 下2
+    .section_6-2_bot_2{
+        margin-top: 70px;
+        // 左圖
+        .photo_{
+            text-align: right;
+
+            @media (max-width:$pad_width) {
+                text-align: center;
+                margin-top: 50px;
+            }
+            img{
+                max-width: 350px;
+                width: 40%;
+            }
+        }
+
+        // 文字
+        .article_{
+            margin-top: 80px;
+            max-width: 600px;
+            @media (max-width:1200px) {
+                margin-top: 50px;
+            }
+            @media (max-width:$pad_width) {
+                margin-top: 0px;
+            }
+            @media (max-width:$mobile_width) {
+                margin-top: 50px;
+            }
+
+            // 標題
+            .title{
+                @include big_p__2;
+                color:#585959;
+
+                // @media(max-width:$mobile_width) {
+                //     text-align: center;
+                // }
+            }
+
+            // 內容
+
+            .p__{
+                @include p__;
+                color:#585959;
+                text-align: justify;
+            }
             ul{
                 padding-left: 0em;;
                 li{
