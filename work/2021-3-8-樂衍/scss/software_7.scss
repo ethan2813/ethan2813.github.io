@@ -239,6 +239,237 @@
 
     }
 
+    .section_2{
+        padding-top: 50px;
+        //  標題
+        .title_{
+            display: flex;
+                align-items: center;
+                padding: 10px 0;
+            .right{
+                .title__{
+                    white-space:nowrap;
+                    font-weight: bold;
+                    transform: rotate(
+                        -1.41deg);
+                    line-height: 60px;
+                    letter-spacing: 0.22em;
+                    color: #83C6DB;
+                    position: relative;
+                    z-index: 2;
+                    display: inline-block;
+
+                    @media(max-width:768px){
+                        letter-spacing: 0.08em;
+                    }
+                    @media(max-width:500px){
+                        line-height: 25px;
+                        
+                        letter-spacing: 0.05em;
+                        white-space:nowrap;
+                        
+                    }
+                    &:after{
+                        z-index: -1;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -10px;
+                        width: 100%;
+                        height: 30px;
+                        background: #FDE1C8;
+                        @media(max-width:500px){
+                            height: 18px;
+                            bottom: -6px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 內容
+        .content{
+            margin-top: 90px;
+            // 左邊的內容
+            .left{
+                // 上
+                .top{
+                    // 每個項目
+                    .item{
+                        margin-bottom: 5px;
+                        // 左邊
+                        .item_left{
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            background: #92A6AE;
+                            text-align: center;
+                            line-height: 30px;
+                            border-radius: 50%;
+                            color: white;
+                            font-weight: bold;
+                        }
+                        // 右邊
+                        .item_right{
+                            display: inline-block;
+                            vertical-align: sub;
+                            color: #80654A;
+                            margin-left: 5px;
+                        }
+
+                    }
+                }
+
+                // 下
+                .bot{
+                    .span_1{
+                        display: inline-block;
+                        background: #C3D4B1;
+                        color: white ;
+                        padding: 10px 15px;
+                        border-radius: 30px;
+                        font-weight: bold;
+                        // white-space: nowrap;
+                        line-height: 25px;
+                        margin: 10px 0;
+                    }
+                    .span_2{
+                        color: #484746;
+                        display: inline-block;
+                        margin: 10px 0;
+
+                    }
+                }
+            }
+
+            // 右邊的內容
+            .right{
+                position: relative;
+                padding-bottom: 100px;
+                .top{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .bot_text{
+                    text-align: center;
+                    color: #83C6DB;
+                }
+                
+                .people_1{
+                    position: absolute;
+                    right: -50px;
+                    bottom: 0;
+                    max-width: 185px;
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    .section_3{
+        padding-top: 50px;
+        background-image: url(../images/software_7/box_2_bg.svg);
+        background-size: cover;
+       //  標題
+       .title_{
+        display: flex;
+            align-items: center;
+            padding: 10px 0;
+        .right{
+            .title__{
+                white-space:nowrap;
+                font-weight: bold;
+                // transform: rotate(
+                //     -1.41deg);
+                line-height: 60px;
+                letter-spacing: 0.22em;
+                color: #8E8955;
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+
+                @media(max-width:768px){
+                    letter-spacing: 0.08em;
+                }
+                @media(max-width:500px){
+                    line-height: 25px;
+                    
+                    letter-spacing: 0.05em;
+                    white-space:nowrap;
+                    
+                }
+                &:after{
+                    z-index: -1;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                    width: 100%;
+                    height: 30px;
+                    background: #fff;
+                    @media(max-width:500px){
+                        height: 18px;
+                        bottom: -6px;
+                    }
+                }
+            }
+        }
+        } 
+
+        .content{
+            padding-top: 80px;
+            padding-bottom: 120px;
+
+            .left{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .right{
+                 // 每個項目
+                 .item{
+                    margin-bottom: 15px;
+                    display: flex;
+                    // 左邊
+                    .item_left{
+                        display: inline-block;
+                        width: 30px;
+                        min-width: 30px;
+                        height: 30px;
+                        background: #92A6AE;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 50%;
+                        color: white;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    // 右邊
+                    .item_right{
+                        max-width: 600px;
+                        display: inline-block;
+                        vertical-align: sub;
+                        color: #80654A;
+                        margin-left: 5px;
+                        p{
+                            margin-bottom: 0;
+                            text-align: justify;
+                            line-height: 30px;
+                        }
+                        .top_{
+                            font-weight: bold;
+                        }
+                        
+                    }
+
+                } 
+            }
+        }
+    }
+
+
   
 
 

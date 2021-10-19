@@ -1,5 +1,9 @@
 
-
+.container{
+    @media(min-width:1400px){
+        max-width: 1300px!important;
+    }
+}
 
 // 文字
 .p__{
@@ -13,6 +17,20 @@
         font-size: 16px;
     }
 }
+.p__2{
+    font-size: 24px;
+    // letter-spacing: 0.1em;
+}
+.p__3{
+    font-size: 19px;
+}
+.p__4{
+    font-size: 16px;
+}
+.p__5{
+    font-size: 22px;
+}
+.p__6
 .span__{
     white-space:nowrap;
     margin: 0 3px;
@@ -98,15 +116,15 @@
 // 標題旁的數字圖
 .left_img{
     max-width: 100px;
-    margin-right: 20px;
+    margin-right: 0px;
 
     @media(max-width:1200px){
-        margin-right: 20px;
+        margin-right: 0px;
         max-width: 80px;
     }
     @media(max-width:500px){
         max-width: 55px;
-        margin-right: 10px;
+        margin-right: 0px;
 
     }
 }
