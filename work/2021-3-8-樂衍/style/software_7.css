@@ -543,6 +543,218 @@
   font-weight: bold;
 }
 
+.wrapper .section_4 {
+  background-color: #F1F3FF;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.wrapper .section_4 .content {
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+.wrapper .section_4 .content .title_ {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.wrapper .section_4 .content .title_ .right .title__ {
+  white-space: nowrap;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 0.22em;
+  color: #837389;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .wrapper .section_4 .content .title_ .right .title__ {
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper .section_4 .content .title_ .right .title__ {
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+}
+
+.wrapper .section_4 .content .title_ .right .title__:after {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+}
+
+@media (max-width: 500px) {
+  .wrapper .section_4 .content .title_ .right .title__:after {
+    height: 18px;
+    bottom: -6px;
+  }
+}
+
+.wrapper .section_4 .content .title_ .right .title__.pc {
+  display: block;
+}
+
+@media (max-width: 996px) {
+  .wrapper .section_4 .content .title_ .right .title__.pc {
+    display: none;
+  }
+}
+
+.wrapper .section_4 .content .title_ .right .title__.mobile {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .wrapper .section_4 .content .title_ .right .title__.mobile {
+    display: block;
+  }
+}
+
+.wrapper .section_4 .content .content_ .photo {
+  text-align: center;
+}
+
+.wrapper .section_4 .content .content_ .photo img {
+  max-width: 950px;
+  width: 100%;
+}
+
+.wrapper .section_4 .content .content_ .items_box {
+  text-align: center;
+}
+
+.wrapper .section_4 .content .content_ .items_box .items {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .wrapper .section_4 .content .content_ .items_box .items {
+    margin-top: 50px;
+  }
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .wrapper .section_4 .content .content_ .items_box .items .item {
+    display: block;
+  }
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_left {
+  display: inline-block;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  background: #92A6AE;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .wrapper .section_4 .content .content_ .items_box .items .item .item_left {
+    margin-bottom: 10px;
+  }
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_right {
+  max-width: 700px;
+  display: inline-block;
+  vertical-align: sub;
+  color: #80654A;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_right p {
+  margin-bottom: 0;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_right .top_ {
+  font-weight: bold;
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_right ul {
+  padding-left: 1.5em;
+}
+
+.wrapper .section_4 .content .content_ .items_box .items .item .item_right ul li {
+  list-style-type: disc;
+}
+
+.wrapper .section_4 .bot_photo {
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper .section_4 .bot_photo .dentist-client_1 {
+  max-width: 570px;
+  width: 100%;
+}
+
+.wrapper .section_4 .bot_photo .dentist-client_2, .wrapper .section_4 .bot_photo .dentist-client_3 {
+  position: absolute;
+  -webkit-box-shadow: 0px 4px 35px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 35px 3px rgba(0, 0, 0, 0.25);
+  max-width: 450px;
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+
+@media (max-width: 996px) {
+  .wrapper .section_4 .bot_photo .dentist-client_2, .wrapper .section_4 .bot_photo .dentist-client_3 {
+    position: unset;
+  }
+}
+
+.wrapper .section_4 .bot_photo .dentist-client_2 {
+  left: 0;
+  bottom: 0;
+}
+
+.wrapper .section_4 .bot_photo .dentist-client_3 {
+  right: 0;
+  top: 40%;
+}
+
 .wrapper .contact-sub {
   padding-top: 200px;
 }
