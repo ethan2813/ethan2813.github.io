@@ -19,11 +19,24 @@
 @media (max-width: 768px) {
   .p__ {
     font-size: 16px;
+    letter-spacing: 0.05em;
   }
 }
 
 .p__2 {
   font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .p__2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p__2 {
+    font-size: 18px;
+  }
 }
 
 .p__3 {
@@ -165,7 +178,7 @@
 
 @media (max-width: 500px) {
   .left_img {
-    max-width: 55px;
+    max-width: 30px;
     margin-right: 0px;
   }
 }
