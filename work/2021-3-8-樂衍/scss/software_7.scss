@@ -264,7 +264,8 @@
                     }
                     @media(max-width:500px){
                         line-height: 25px;
-                        
+                        transform: rotate(
+                        0deg);
                         letter-spacing: 0.05em;
                         white-space:nowrap;
                         

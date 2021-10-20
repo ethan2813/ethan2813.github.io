@@ -298,6 +298,9 @@
 @media (max-width: 500px) {
   .wrapper .section_2 .title_ .right .title__ {
     line-height: 25px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
     letter-spacing: 0.05em;
     white-space: nowrap;
   }
