@@ -176,7 +176,7 @@
 .wrapper .section_1 .bot {
   width: 100%;
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 @media (max-width: 400px) {
