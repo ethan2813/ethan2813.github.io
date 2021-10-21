@@ -857,6 +857,7 @@
 @media (max-width: 500px) {
   .wrapper .section_5 .content .items .item .item_left {
     margin-bottom: 10px;
+    display: block;
   }
 }
 
