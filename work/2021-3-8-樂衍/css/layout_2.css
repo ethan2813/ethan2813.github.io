@@ -667,7 +667,7 @@
     margin-left: 0%;
   }
 } */
-.u-clearfix:before,
+/* .u-clearfix:before,
 .u-clearfix:after,
 .container:before,
 .container:after,
@@ -683,6 +683,6 @@
 .container-fluid:after,
 .row:after {
   clear: both;
-}
+} */
 
 
