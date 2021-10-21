@@ -357,9 +357,37 @@
                 //     padding-top: 50px;
                 // }
                 .top{
-                    img{
-                        width: 100%;
+                    a{  
+                        // 電腦
+                        &.pc_{
+                            display: block;
+                            @media (max-width:1024px){
+                                display: none;
+                            }
+                        }
+
+                        // 平板
+                        &.pad_{
+                            display: none;
+                            @media (min-width:576px) and (max-width:1024px) {
+                                display: block;
+                            }
+                        }
+
+                        // 手機
+                        &.mobile_{
+                            display: none;
+                            @media (max-width:576px){
+                                display: block;
+                            }
+                        }
+
+
+                        img{
+                            width: 100%;
+                        }
                     }
+                    
                 }
                 .bot_text{
                     text-align: center;
