@@ -71,14 +71,24 @@
     font-size: 22px;
     letter-spacing: 0.05em;
     @media(max-width:1200px){
-        font-size: 20px;
-        
+        font-size: 20px;  
     }
     @media(max-width:768px){
         font-size: 16px!important;
         line-height: 25px;
-        
+    }
+}
 
+.dialog__2{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    @media(max-width:1200px){
+        font-size: 17px;  
+    }
+    @media(max-width:768px){
+        font-size: 16px!important;
+        line-height: 25px;
     }
 }
 .big_title__{

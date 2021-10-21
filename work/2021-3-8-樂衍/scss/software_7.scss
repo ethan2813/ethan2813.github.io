@@ -284,6 +284,8 @@
                             height: 18px;
                             bottom: -6px;
                         }
+
+                        
                     }
                 }
             }
@@ -693,6 +695,195 @@
             .dentist-client_3{
                 right: 0;
                 top: 40%;
+            }
+        }
+    }
+
+    .section_5{
+        //  標題
+        .title_{
+            display: flex;
+                align-items: center;
+                // justify-content: center;
+                padding: 20px 0;
+            .right{
+                .title__{
+                    white-space:nowrap;
+                    font-weight: bold;
+                    // transform: rotate(
+                    //     -1.41deg);
+                    line-height: 60px;
+                    letter-spacing: 0.22em;
+                    color: #E9B940;
+                    position: relative;
+                    z-index: 2;
+                    display: inline-block;
+
+                    @media(max-width:768px){
+                        letter-spacing: 0.08em;
+                    }
+                    @media(max-width:500px){
+                        line-height: 25px;
+                        
+                        letter-spacing: 0.05em;
+                        white-space:nowrap;
+                        
+                    }
+                    &:after{
+                        z-index: -1;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -10px;
+                        width: 100%;
+                        height: 30px;
+                        background: #F5F5CC;
+                        @media(max-width:500px){
+                            height: 18px;
+                            bottom: -6px;
+                        }
+                    }
+
+                    // &.pc{
+                    //     display: block;
+                    //     @media (max-width:996px) {
+                    //         display: none;
+                    //     }
+                    // }
+                    // &.mobile{
+                    //     display: none;
+                    //     @media (max-width:996px) {
+                    //         display: block;
+                    //     }
+                    // }
+                }
+            }
+        }
+
+        .content{
+            margin-top: 50px;
+            // 項目
+            .items{
+                display: inline-block;
+                
+
+                @media (max-width:768px) {
+                margin-top: 50px;
+            }
+            // 每個項目
+                .item{
+                margin-bottom: 15px;
+                display: flex;
+                text-align: left;
+
+                @media (max-width:500px) {
+                    display: block;
+                }
+                // 左邊
+                .item_left{
+                    display: inline-block;
+                    width: 30px;
+                    min-width: 30px;
+                    height: 30px;
+                    background: #92A6AE;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    color: white;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    @media (max-width:500px) {
+                        margin-bottom: 10px;
+                    }
+                }
+                // 右邊
+                .item_right{
+                    max-width: 700px;
+                    display: inline-block;
+                    vertical-align: sub;
+                    color: #80654A;
+                    margin-left: 5px;
+                    text-align: left;
+                    p{
+                        margin-bottom: 0;
+                        text-align: justify;
+                        line-height: 30px;
+                    }
+                    .top_{
+                        font-weight: bold;
+                    }
+                    ul{
+                        padding-left: 1.5em;
+                        li{
+                            list-style-type: disc;
+                        }
+                    }
+                    
+                }
+
+            } 
+            }
+
+            // 右
+            .bot{
+
+                display: inline-block;
+               margin-top: 30px;
+                .bot_L{
+                    img.pc{
+                        max-width: 350px; 
+                        width: 100%;
+                        display: block;
+                        // margin-bottom: -50px;
+                        z-index: 0;
+                    }
+                    img.mobile{
+                        display: none;
+                    }
+                }
+               
+                .dialog_2{
+
+                    // display: inline-block;
+                    z-index: 3;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    border: 1px solid #bb8080;
+                    padding: 15px 20px;
+                    margin-top: 60px;
+    
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 20px;
+                        left: -58px;
+                        background-image: url(../images/software_3/software-29-2.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 60px;
+                        height: 60px;
+                        width: 60px;
+
+                        @media (max-width:1200px) {
+                            background-size: 45px;
+                            left: -51px;
+                        }
+                        @media (max-width:576px) {
+                            left: 57px;
+                            top: -51px;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    p{
+                        margin-top: 0;
+                        text-align: justify;
+                       
+                        
+                        letter-spacing: 0.05em;
+                        color: #80654A;
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
