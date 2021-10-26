@@ -604,7 +604,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 @media (max-width: 500px) {
@@ -810,7 +810,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .wrapper .section_5 .title_ .right .title__ {
