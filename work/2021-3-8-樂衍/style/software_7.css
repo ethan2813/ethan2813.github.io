@@ -424,6 +424,12 @@
   margin-bottom: 50px;
 }
 
+.wrapper .section_2 .content .right .bot_text span {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #699dad;
+}
+
 @media (max-width: 500px) {
   .wrapper .section_2 .content .right .bot_text {
     margin-bottom: 10px;

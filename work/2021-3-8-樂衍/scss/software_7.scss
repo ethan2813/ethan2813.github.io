@@ -399,6 +399,14 @@
                     color: #83C6DB;
                     margin-bottom: 50px;
 
+                    span{
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        color: #699dad;
+
+
+                    }
+
                     @media (max-width:500px) {
                         margin-bottom: 10px;
                     }
