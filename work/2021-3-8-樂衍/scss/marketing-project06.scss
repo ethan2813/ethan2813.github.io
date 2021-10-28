@@ -210,6 +210,10 @@ $mobile_w:600px;
     #section_4{
         // 左
         .section_4_L{
+
+            @media (max-width:$mobile_w) {
+                padding: 15%;
+            }
             img{
                 width: 100%;
             }
@@ -219,10 +223,86 @@ $mobile_w:600px;
             height: 100%;
             display: flex;
             padding-left: 10%;
+
+            @media (max-width:$mobile_w) {
+                padding-left:0;
+            }
             img{
                 width: 100%;
                 object-fit: contain;
             }
+        }
+    }
+
+    // 診間指標、玻璃霧貼
+    #section_5{
+        padding: 100px 0;
+        background: linear-gradient(to left, #DFC9B2
+        50%, #fff 50%);
+        // 內容
+        .content_{
+            // 上
+            .top_{
+                // 上左
+                .top_L{
+                    img{
+                        width: 100%;
+                        z-index: 3;
+                    }
+                }
+                // 上右
+                .top_R{
+                    // 標題
+                    .title_1{
+                        // font-size: 40px;
+                        color:#AF6827;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                    // 副標題
+                    .title_2{
+                        margin-top: 50px;
+                        span{
+                            color: #3D3838;
+                            background: #C59F7C;
+                            padding: 10px 20px;
+                        }
+                    }
+                    // 內容
+                    .article_{
+                        margin-top: 50px;
+                    }
+
+                }
+            }
+
+            // 下
+            .bot_{
+                // 下左
+                .bot_L{
+                    padding-right: 50px;
+                    padding-top: 50px;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                // 下右
+                .bot_R{
+                    margin-top: -50px;
+                    position: relative;
+
+                    img{
+                        z-index: 0;
+                        width: 100%;
+                        border: 2px solid white;
+                        padding: 10px;
+                    }
+                    
+                }
+            }
+            
+
         }
     }
 
