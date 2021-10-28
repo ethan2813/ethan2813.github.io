@@ -235,6 +235,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 10%;
 }
 
 .wrapper #section_4 .section_4_R img {
