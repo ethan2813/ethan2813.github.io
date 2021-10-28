@@ -151,6 +151,10 @@ $mobile_w:600px;
     #section_2{
         padding-top: 80px;
         padding-bottom: 180px;
+        @media (max-width:768px) {
+        padding-bottom: 80px;
+            
+        }
         .title_1{
             // font-size: 40px;
             color:#AF6827;
@@ -258,6 +262,9 @@ $mobile_w:600px;
                 }
                 // 上右
                 .top_R{
+                    @media (max-width:768px){
+                        margin-top: 30px;
+                    }
                     // 標題
                     .title_1{
                         // font-size: 40px;
@@ -433,6 +440,50 @@ $mobile_w:600px;
                         }
                     }
                     
+                }
+            }
+        }
+
+        // 下
+        .bot_{
+            
+            // 下左
+            .bot_L{
+                padding-top: 6%;
+
+                @media (max-width:768px) {
+                    padding-top: 0;
+                }
+                
+                img{
+                    width: 100%;
+                }
+            }
+            // 下右
+            .bot_R{
+                padding-left: 6%;
+                @media (max-width:768px) {
+                    padding-left: 0;
+                }
+                // 下右上
+                .bot_R_top{
+                    img{
+                        width: 100%;
+                    }
+                }
+                // 下右下
+                .bot_R_bot{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: calc(13vw - 120px);
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .content_{
+                        max-width: 350px;
+                        .p__{
+                            margin-top: 15px;
+                        }
+                    }
                 }
             }
         }
