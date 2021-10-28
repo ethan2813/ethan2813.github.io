@@ -182,22 +182,22 @@
   padding: 10px 20px;
 }
 
-.wrapper #section_2 .article {
+.wrapper #section_2 .article_ {
   margin-top: 120px;
 }
 
 @media (max-width: 600px) {
-  .wrapper #section_2 .article {
+  .wrapper #section_2 .article_ {
     margin-top: 60px;
   }
 }
 
-.wrapper #section_2 .article p {
+.wrapper #section_2 .article_ .p__ {
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  .wrapper #section_2 .article p .br_ {
+  .wrapper #section_2 .article_ .p__ .br_ {
     display: none;
   }
 }
@@ -372,6 +372,86 @@
   right: 0;
   bottom: 0;
   height: 30%;
+}
+
+.wrapper #section_7 {
+  padding-top: 60px;
+}
+
+.wrapper #section_7 .top_ .top_L {
+  padding-left: 6%;
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_7 .top_ .top_L {
+    padding-left: 0;
+    padding: 20% 10%;
+  }
+}
+
+.wrapper #section_7 .top_ .top_L img {
+  width: 100%;
+}
+
+.wrapper #section_7 .top_ .top_R {
+  height: 100%;
+  padding-left: 6%;
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_7 .top_ .top_R {
+    padding-left: 0;
+  }
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_top img {
+  width: 100%;
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot {
+  padding-top: calc(20vw - 200px);
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_7 .top_ .top_R .top_R_bot {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot .content_ .title_1 {
+  color: #AF6827;
+  font-weight: bold;
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot .content_ .title_2 {
+  margin-top: 50px;
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot .content_ .title_2 span {
+  background-color: #E2CDB5;
+  padding: 10px 20px;
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot .content_ .article_ {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .wrapper #section_7 .top_ .top_R .top_R_bot .content_ .article_ {
+    margin-top: 30px;
+  }
+}
+
+.wrapper #section_7 .top_ .top_R .top_R_bot .content_ .article_ p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .wrapper #section_7 .top_ .top_R .top_R_bot .content_ .article_ p .br_ {
+    display: none;
+  }
 }
 
 .wrapper .contact-sub {

@@ -164,13 +164,14 @@ $mobile_w:600px;
             }
         }
         // 文字
-        .article{
+        .article_{
             margin-top: 120px;
+            
 
             @media (max-width:$mobile_w) {
                 margin-top: 60px;
             }
-            p{
+            .p__{
                 text-align: center;
 
                 @media (max-width:$mobile_w) {
@@ -357,6 +358,84 @@ $mobile_w:600px;
             height: 30%;
         }
 
+    }
+
+    // 周邊視覺設計
+    #section_7{
+        padding-top: 60px;
+        // 上
+        .top_{
+            // 上左
+            .top_L{
+                padding-left: 6%;
+
+                @media (max-width:768px) {
+                    padding-left: 0;
+                    padding: 20% 10%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            // 上右
+            .top_R{
+                height: 100%;
+                padding-left: 6%;
+                @media (max-width:768px) {
+                    padding-left: 0;
+                }
+                // 上右上
+                .top_R_top{
+                    img{
+                        width: 100%;
+                    }
+                }
+                // 上右下
+                .top_R_bot{
+                    padding-top: calc(20vw - 200px);
+                    
+
+                    @media (max-width:768px) {
+                        padding-top: 30px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    .content_{
+                        
+                        .title_1{
+                            // font-size: 40px;
+                            color:#AF6827;
+                            font-weight: bold;
+                        }
+                        .title_2{
+                            margin-top: 50px;
+                            span{
+                                background-color: #E2CDB5;
+                                padding: 10px 20px;
+                            }
+                        }
+                        // 文字
+                        .article_{
+                            margin-top: 50px;
+                
+                            @media (max-width:$mobile_w) {
+                                margin-top: 30px;
+                            }
+                            p{
+                                text-align: center;
+                
+                                @media (max-width:$mobile_w) {
+                                    .br_{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 
     
