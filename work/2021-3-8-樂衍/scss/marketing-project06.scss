@@ -239,6 +239,11 @@ $mobile_w:600px;
         padding: 100px 0;
         background: linear-gradient(to left, #DFC9B2
         50%, #fff 50%);
+
+        @media (max-width:768px) {
+            background: linear-gradient(to left, #DFC9B2
+        50%, #DFC9B2 50%);
+        }
         // 內容
         .content_{
             // 上
@@ -271,6 +276,7 @@ $mobile_w:600px;
                     // 內容
                     .article_{
                         margin-top: 50px;
+                        white-space: nowrap;
                     }
 
                 }
@@ -282,6 +288,16 @@ $mobile_w:600px;
                 .bot_L{
                     padding-right: 50px;
                     padding-top: 50px;
+
+                    @media (max-width:996px) {
+                        padding-right: 20px;
+                        padding-top: 20px;
+                    }
+
+                    @media (max-width:768px) {
+                        padding-right: 0px;
+                        padding-top: 0px;
+                    }
                     img{
                         width: 100%;
                     }
@@ -291,6 +307,10 @@ $mobile_w:600px;
                 .bot_R{
                     margin-top: -50px;
                     position: relative;
+
+                    @media (max-width:996px) {
+                        margin-top: 0;
+                    }
 
                     img{
                         z-index: 0;
