@@ -179,6 +179,7 @@ $mobile_w:600px;
                 text-align: center;
 
                 @media (max-width:$mobile_w) {
+                    text-align: left;
                     .br_{
                         display: none;
                     }

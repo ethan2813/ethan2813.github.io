@@ -203,6 +203,9 @@
 }
 
 @media (max-width: 600px) {
+  .wrapper #section_2 .article_ .p__ {
+    text-align: left;
+  }
   .wrapper #section_2 .article_ .p__ .br_ {
     display: none;
   }

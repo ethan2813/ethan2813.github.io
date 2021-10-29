@@ -230,8 +230,15 @@ $mobile_width:540px;
    background-color: #000;
 
     .bot_imgs{
+        height: 100%;
         .bot_img{
             width: 100%;
+            height: 100%;
+            border-radius: 30px;
+
+            @media (max-width:768px) {
+                padding-bottom: 15px;
+            }
         }
 
     }
