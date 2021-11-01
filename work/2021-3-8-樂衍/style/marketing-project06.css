@@ -256,6 +256,7 @@
 @media (max-width: 600px) {
   .wrapper #section_4 .section_4_R {
     padding-left: 0;
+    display: block;
   }
 }
 

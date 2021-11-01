@@ -232,6 +232,7 @@ $mobile_w:600px;
 
             @media (max-width:$mobile_w) {
                 padding-left:0;
+                display: block;
             }
             img{
                 width: 100%;
