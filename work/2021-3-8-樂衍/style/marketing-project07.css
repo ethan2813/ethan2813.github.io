@@ -251,6 +251,7 @@
 @media (max-width: 600px) {
   .wrapper #section_4 .section_4_L {
     padding: 15%;
+    margin-top: 0px;
   }
 }
 
