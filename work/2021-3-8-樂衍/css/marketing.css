@@ -287,16 +287,22 @@
 	margin-top:60px;
 }
 .box-bottom{
-	margin-top:-50px;
+	margin-top:-100px;
 	display:inline-block;
 }
 /* .box-bottom .col-lg-4,.box-bottom .col-lg-6{
 	border:1px solid #000;
 } */
 .box-top .col-lg-4 .img-inner,
-.box-bottom .col-lg-4 .img-inner{
+.box-bottom .col-lg-4 .img-inner,
+.box-bottom_2 .col-lg-4 .img-inner{
 	width:90%;
 }
+/* 2021-11-1 新增 */
+.top_box{
+	margin-top: -70px;
+}
+
 .purple-box{
 	margin-top:100px;
 	width:30%;
