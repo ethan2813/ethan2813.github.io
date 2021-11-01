@@ -304,10 +304,10 @@
 
 @media (max-width: 768px) {
   .wrapper #section_5 {
-    background: -webkit-gradient(linear, right top, left top, color-stop(50%, #FF9F02), color-stop(50%, #FFF9F0));
-    background: -webkit-linear-gradient(right, #FF9F02 50%, #FFF9F0 50%);
-    background: -o-linear-gradient(right, #FF9F02 50%, #FFF9F0 50%);
-    background: linear-gradient(to left, #FF9F02 50%, #FFF9F0 50%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, #FFF9F0), color-stop(50%, #FFF9F0));
+    background: -webkit-linear-gradient(right, #FFF9F0 50%, #FFF9F0 50%);
+    background: -o-linear-gradient(right, #FFF9F0 50%, #FFF9F0 50%);
+    background: linear-gradient(to left, #FFF9F0 50%, #FFF9F0 50%);
   }
 }
 
