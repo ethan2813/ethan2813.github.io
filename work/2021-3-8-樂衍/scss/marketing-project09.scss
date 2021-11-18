@@ -310,7 +310,8 @@ $mobile_w:600px;
 
                 @media (max-width:768px) {
                     padding-right: 0px;
-                    padding-top: 20px;
+                    padding-top: 0px;
+                    margin-top: 0;
                 }
             }
             .content_R{
@@ -333,7 +334,7 @@ $mobile_w:600px;
     // 圖
     #section_6{
         
-        background-color: #FCEFDC;
+        background-color: #FFF0E9;
         // padding-top: 100px;
         // padding-bottom: 100px;
         position: relative;
@@ -344,7 +345,7 @@ $mobile_w:600px;
                 width: 100%;
                 margin-top: 80px;
                 // padding-right: 100px;
-                padding-right: calc(30% - 50px);
+                padding-right: calc(20% - 50px);
 
                 @media (max-width:768px) {
                     margin-top: 0;
@@ -352,7 +353,7 @@ $mobile_w:600px;
                 }
             }
             &.right{
-                padding-bottom: 100px;
+                padding-bottom: 50px;
 
                 @media (max-width:768px) {
                     padding-bottom: 0;
@@ -360,6 +361,18 @@ $mobile_w:600px;
             }
             img{
                 width: 100%;
+
+                &.top_{
+                    padding-left: 100px;
+
+                    @media (max-width:768px) {
+                        padding-left: 0px;
+                    }
+                }
+
+                &.frame_{
+                    margin-top: 50px;
+                }
             }
         }
         .group_1{
@@ -386,7 +399,7 @@ $mobile_w:600px;
 
     // 周邊視覺設計
     #section_7{
-        padding-top: 120px;
+        padding-top: 150px;
 
         @media (max-width:768px) {
             padding-top: 30px;
@@ -465,6 +478,7 @@ $mobile_w:600px;
                 
                 // 上右下
                 .top_R_bot{
+                    margin-top: 50px;
                     img{
                         width: 100%;
                     }
@@ -475,7 +489,7 @@ $mobile_w:600px;
 
         // 下
         .bot_{
-            padding-top: 6%;
+            padding-top: 10%;
             
             // 下左
             .bot_L{
@@ -531,8 +545,9 @@ $mobile_w:600px;
 
     // 圖
     #section_8{
-        padding: 50px 0;
-        .content_{
+        padding: 150px 0;
+        background: linear-gradient(to top, #FFF0E9 50%, #fff 50%);
+        .photo_{
             img{
                 width: 100%;
             }
