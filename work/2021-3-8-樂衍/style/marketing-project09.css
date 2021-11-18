@@ -599,6 +599,12 @@
   background: linear-gradient(to top, #FFF0E9 50%, #fff 50%);
 }
 
+@media (max-width: 768px) {
+  .wrapper #section_8 {
+    padding: 50px 0;
+  }
+}
+
 .wrapper #section_8 .photo_ img {
   width: 100%;
 }

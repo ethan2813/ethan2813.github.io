@@ -547,6 +547,10 @@ $mobile_w:600px;
     #section_8{
         padding: 150px 0;
         background: linear-gradient(to top, #FFF0E9 50%, #fff 50%);
+        @media (max-width:768px) {
+            padding: 50px 0;
+        }
+
         .photo_{
             img{
                 width: 100%;
