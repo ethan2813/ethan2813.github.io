@@ -344,6 +344,7 @@
 
 .wrapper #section_5 .content_ .content_L .article_ {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 996px) {
@@ -367,6 +368,12 @@
 
 .wrapper #section_5-1 .article_ {
   padding: 120px 0 120px 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_5-1 .article_ {
+    padding: 60px 0 60px 0;
+  }
 }
 
 .wrapper #section_5-1 .article_ .p__ {
@@ -597,6 +604,14 @@
 
 .wrapper #section_7 .bot_ .bot_R .bot_R_top .content_ {
   max-width: 350px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_7 .bot_ .bot_R .bot_R_top .content_ {
+    margin-left: 0;
+  }
 }
 
 .wrapper #section_7 .bot_ .bot_R .bot_R_top .content_ .p__ {

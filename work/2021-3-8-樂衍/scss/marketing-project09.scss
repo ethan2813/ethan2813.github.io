@@ -304,6 +304,7 @@ $mobile_w:600px;
                 // 內容
                 .article_{
                     margin-top: 50px;
+                    margin-bottom: 30px;
                     // white-space: nowrap;
                 }
 
@@ -329,6 +330,10 @@ $mobile_w:600px;
     #section_5-1{
         .article_{
             padding: 120px 0 120px 0;
+
+            @media (max-width:768px) {
+                padding: 60px 0 60px 0;
+            }
             .p__{
                 text-align: center;
             }
@@ -380,7 +385,6 @@ $mobile_w:600px;
                     @media (max-width:768px) {
                         margin-bottom: 30px;
                     }
-
                 }
             }
         }
@@ -532,6 +536,13 @@ $mobile_w:600px;
                     padding-right: 15px;
                     .content_{
                         max-width: 350px;
+                        margin-top: 50px;
+                        margin-left: 50px;
+
+                        @media (max-width:768px) {
+                            margin-left:0;
+                        }
+
                         .p__{
                             margin-top: 15px;
                         }
