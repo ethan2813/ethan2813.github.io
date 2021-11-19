@@ -194,7 +194,7 @@ $mobile_w:600px;
             margin-top: 50px;
             img{
                 max-width: 350px;
-                width: 100%;
+                width: 70%;
             }
         }
     }
@@ -286,6 +286,10 @@ $mobile_w:600px;
                     font-weight: bold;
                     text-align: left;
                     white-space: nowrap;
+
+                    @media(max-width:1350px){
+                        white-space:unset;
+                    }
                 }
                 // 副標題
                 .title_2{
@@ -372,6 +376,11 @@ $mobile_w:600px;
 
                 &.frame_{
                     margin-top: 50px;
+                    
+                    @media (max-width:768px) {
+                        margin-bottom: 30px;
+                    }
+
                 }
             }
         }

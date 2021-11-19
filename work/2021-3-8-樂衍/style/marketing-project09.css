@@ -218,7 +218,7 @@
 
 .wrapper #section_2 .logo img {
   max-width: 350px;
-  width: 100%;
+  width: 70%;
 }
 
 .wrapper #section_3 .content_ {
@@ -325,6 +325,12 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1350px) {
+  .wrapper #section_5 .content_ .content_L .title_1 {
+    white-space: unset;
+  }
+}
+
 .wrapper #section_5 .content_ .content_L .title_2 {
   margin-top: 50px;
 }
@@ -415,6 +421,12 @@
 
 .wrapper #section_6 .item_ img.frame_ {
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .wrapper #section_6 .item_ img.frame_ {
+    margin-bottom: 30px;
+  }
 }
 
 .wrapper #section_6 .group_1 {
