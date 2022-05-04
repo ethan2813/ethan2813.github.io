@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    font-size: 18px;
+    z-index: 0;
+    background-color: #585E4F!important;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 微軟正黑體 ; 
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+nav#nav{
+    height: 69px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    transition: 0.3s ease-in-out;
+
+
+    &.move{
+        background-color: #585E4F;
+        // box-shadow: grey 10px 10px 20px -15px;
+
+    }
+
+    &:before{
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #EFB79B;
+    }
+
+    .logo{
+        width: 300px;
+        margin-left: 200px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .burger{
+        // display: none;
+        margin-right: 200px;
+        cursor: pointer;
+        // margin: auto 0 ;
+        >div{
+            width: 40px;
+            height: 2px;
+            background-color:#EFB79B;
+            margin: 10px;
+            transition: ease-in 0.3s;
+        }
+
+        &.burger_active .line1{
+            transform: rotate(45deg) translate(11px, 5px);
+        }
+        &.burger_active .line2{
+            opacity: 0;
+        }
+        &.burger_active .line3{
+            transform: rotate(-45deg) translate(12px, -6px);
+        }
+    }
+    .mobile_nav_list{
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        height: 100vh;
+
+        padding: 10px;
+        position: absolute;
+        list-style-type: none;
+        background-color: #585E4F;
+        text-align: center;
+        right: -100%;
+        top: 69px;
+        // box-shadow: 10px 10px 20px -15px gray;
+        backdrop-filter: blur(5px);
+        opacity: 0.9;
+        padding: 29vh 0;
+
+
+
+        &.nav_active{
+            right: 0;
+        }
+        .content{
+            text-align: left;
+            display: inline-block;
+
+            li{
+                margin: 30px 0;
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    letter-spacing: 0.05em;
+                    color: white;
+
+                        br.br{
+                            display: none;
+                        }
+    
+                        span.tit{
+                            font-family: Marck Script;
+                            font-size: 45px;
+                            color: #EFB79B;
+                            margin-right: 20px;
+    
+                        }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+footer#footer{
+    margin-top: 300px;
+    color: #EFB79B;
+
+    .icon{
+        #totop{
+            img{
+                position: fixed;
+                right: 10px;
+                bottom: 155px;
+                // bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #line{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                bottom: 90px;
+                // bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+        #phone{
+            img{
+                position: fixed;
+                right: 10px;
+                // bottom: 155px;
+                // bottom: 90px;
+                bottom: 24px;
+                z-index: 5;
+                width: 60px;
+                height: auto;
+                opacity: 0.85;
+                cursor: pointer;
+            }
+        }
+    }
+    .footer_top{
+        margin-bottom: 200px;
+        .footer_item{
+            h3{
+                font-family: Marck Script;
+                font-size: 45px;
+                letter-spacing: 0.05em;
+    
+                &:after{
+                    margin-top: 20px;
+                    content: '';
+                    display: block;
+                    background-color: #EFB79B;
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+            p{
+                margin-top: 20px;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: #EFB79B;
+
+                }
+            }
+        }
+    }
+
+    .footer_bot{
+        text-align: center;
+        position: relative;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #EFB79B;
+            position: absolute;
+            top: -5px;
+
+
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    
+}
