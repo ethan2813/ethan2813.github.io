@@ -19,6 +19,7 @@
 @media (max-width: 768px) {
   .p__ {
     font-size: 16px;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -26,8 +27,26 @@
   font-size: 24px;
 }
 
+@media (max-width: 1200px) {
+  .p__2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p__2 {
+    font-size: 18px;
+  }
+}
+
 .p__3 {
   font-size: 19px;
+}
+
+@media (max-width: 500px) {
+  .p__3 {
+    font-size: 17px;
+  }
 }
 
 .p__4 {
@@ -38,7 +57,12 @@
   font-size: 22px;
 }
 
-.p__6
+@media (max-width: 500px) {
+  .p__5 {
+    font-size: 20px;
+  }
+}
+
 .span__ {
   white-space: nowrap;
   margin: 0 3px;
@@ -53,15 +77,13 @@
 }
 
 @media (max-width: 1200px) {
-  .p__6
-.span__ {
+  .span__ {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .p__6
-.span__ {
+  .span__ {
     font-size: 15px !important;
   }
 }
@@ -80,6 +102,25 @@
 
 @media (max-width: 768px) {
   .dialog__ {
+    font-size: 16px !important;
+    line-height: 25px;
+  }
+}
+
+.dialog__2 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1200px) {
+  .dialog__2 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dialog__2 {
     font-size: 16px !important;
     line-height: 25px;
   }
@@ -122,7 +163,7 @@
 
 @media (max-width: 500px) {
   .title__ {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 40px;
     letter-spacing: 0.05em;
     padding-left: 5px;
@@ -139,15 +180,9 @@
   line-height: 35px;
 }
 
-@media (max-width: 1200px) {
-  .subtitle__ {
-    font-size: 18px;
-  }
-}
-
 @media (max-width: 500px) {
   .subtitle__ {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -165,7 +200,7 @@
 
 @media (max-width: 500px) {
   .left_img {
-    max-width: 55px;
+    max-width: 30px;
     margin-right: 0px;
   }
 }

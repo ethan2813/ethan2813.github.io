@@ -271,8 +271,20 @@
   background-color: #000;
 }
 
+#section_3 .bot_imgs {
+  height: 100%;
+}
+
 #section_3 .bot_imgs .bot_img {
   width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  #section_3 .bot_imgs .bot_img {
+    padding-bottom: 15px;
+  }
 }
 
 #section_4 {
