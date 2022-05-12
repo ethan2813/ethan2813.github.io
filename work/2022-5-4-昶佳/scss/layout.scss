@@ -16,6 +16,11 @@ body{
 span.bold_{
     font-weight: bold
 }
+.container{
+    @media (min-width:1400px) {
+        max-width: 1400px!important;
+    }
+}
 
 
 

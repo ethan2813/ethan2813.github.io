@@ -20,6 +20,12 @@ span.bold_ {
   font-weight: bold;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
 nav#nav {
   height: 69px;
   width: 100%;
