@@ -1,37 +1,10 @@
 main#main{
     padding-top: 70px;
 
-    #box_new_1{
-        margin-top: 200px;
+    #box_1{
+        // margin-top: 200px;
         .left{
-            padding-right: 20%;
-            position: relative;
-
-            @media (max-width:996px) {
-                position: unset;
-                padding-right:0;
-
-            }
-            
-            .img_1{
-                width: 100%;
-            }
-            .img_2{
-                width: 60%;
-                position: absolute;
-                right: 0;
-                bottom: -100px;
-                z-index: 20;
-
-                @media (max-width:996px) {
-                    position: unset;
-                    width: 100%;
-
-                }
-            }
-        }
-
-        .right{
+            padding-top: 3vw;
             .title_{
                 font-family: Marck Script;
                 font-size: 45px;
@@ -53,7 +26,7 @@ main#main{
 
                 margin-left: 20px;
                 font-size: 20px;
-                color: #EFB79B;
+                color: #ffffff;
 
                 @media (max-width: 996px) {
                     font-size: 18px;
@@ -61,14 +34,14 @@ main#main{
                 }
                 .left_r{
                     position: absolute;
-                    top: -10px;
-                    left: -43px;
+                    top: -6px;
+                    left: -34px;
                     font-size: 28px;
                     font-weight: 100;
                 }
                 .right_r{
                     position: absolute;
-                    bottom: -17px;
+                    bottom: -12px;
                     font-size: 28px;
                     font-weight: 100;
                 }
@@ -82,6 +55,42 @@ main#main{
                 font-size: 16px;
             }
         }
+        .right{
+            // padding-left: 20%;
+            position: relative;
+            
+
+            @media (max-width:996px) {
+                position: unset;
+                padding-right:0;
+
+            }
+            
+            .img_1{
+                width: 100%;
+                padding-left: 15%;
+
+                @media (max-width:996px) {
+                    padding-left: 0%;
+    
+                }
+            }
+            .img_2{
+                width: 45%;
+                position: absolute;
+                left: 0px;
+                bottom: -60px;
+                z-index: 20;
+
+                @media (max-width:996px) {
+                    position: unset;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        
     }
 
     #box_new_2{
