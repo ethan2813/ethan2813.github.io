@@ -147,6 +147,7 @@ main#main{
 
     #box_3{
         padding-top: 150px;
+        overflow: hidden;
         .content_{
             .left_{
                 display: flex;
@@ -292,6 +293,7 @@ main#main{
 
                         @media (max-width:768px) {
                             font-size: 24px;
+                            text-align: center;
                         }
                         span{
                             font-family: 'Marck Script';
@@ -391,6 +393,86 @@ main#main{
                 }
             }
         }
+        
+       
+    }
+
+    #box_6{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        .top_{
+            .title_{
+                display: flex;
+                align-items: center;
+                @media (max-width:768px) {
+                    display: block;
+                }
+                .img_{
+                    text-align: center;
+                    margin-right: 50px;
+                    // margin-top: -100px;
+                    @media (max-width:768px) {
+                        margin-right: 0px; 
+                    }
+                }
+                .title_R{
+                    .title_R_top{
+                        font-size: 36px;
+                        line-height: 52px;
+                        letter-spacing: 0.05em;
+                        color: #EFB79B;
+
+                        @media (max-width:768px) {
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+                .article_{
+                    font-size: 16px;
+                    line-height: 21px;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                }
+            }
+            
+        }
+        .content_{
+            margin-top: 60px;
+            .item{
+                img{
+                    max-width: 800px;
+                    width: 100%;
+                }
+                .article_{
+                    background-color: white;
+                    padding: 24px 30px;
+                    min-height: 200px;
+                    @media (max-width:1250px) {
+                        min-height: 250px;
+                    }
+                    @media (max-width:768px) {
+                        min-height: 200px;
+                    }
+                  .p_1{
+                      font-weight: bold;
+                        font-size: 16px;
+                        line-height: 23px;
+                        letter-spacing: 0.05em;
+                        color: #585E4F;
+                  }  
+                  .p_2{
+                    
+                      font-size: 16px;
+                      line-height: 23px;
+                      letter-spacing: 0.05em;
+                      color: #585E4F;
+                }  
+                }
+            }
+        }
+        
         
        
     }

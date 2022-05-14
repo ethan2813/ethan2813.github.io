@@ -159,6 +159,7 @@ main#main #box_2 .line_ {
 
 main#main #box_3 {
   padding-top: 150px;
+  overflow: hidden;
 }
 
 main#main #box_3 .content_ .left_ {
@@ -335,6 +336,7 @@ main#main #box_5 .top_ .title_ .title_R .title_R_top {
 @media (max-width: 768px) {
   main#main #box_5 .top_ .title_ .title_R .title_R_top {
     font-size: 24px;
+    text-align: center;
   }
 }
 
@@ -452,4 +454,100 @@ main#main #box_5 .bot_ .right_ .item p {
   text-align: center;
   letter-spacing: 0.12em;
   color: #FFFFFF;
+}
+
+main#main #box_6 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+main#main #box_6 .top_ .title_ {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  main#main #box_6 .top_ .title_ {
+    display: block;
+  }
+}
+
+main#main #box_6 .top_ .title_ .img_ {
+  text-align: center;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  main#main #box_6 .top_ .title_ .img_ {
+    margin-right: 0px;
+  }
+}
+
+main#main #box_6 .top_ .title_ .title_R .title_R_top {
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  color: #EFB79B;
+}
+
+@media (max-width: 768px) {
+  main#main #box_6 .top_ .title_ .title_R .title_R_top {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+main#main #box_6 .top_ .title_ .article_ {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+main#main #box_6 .content_ {
+  margin-top: 60px;
+}
+
+main#main #box_6 .content_ .item img {
+  max-width: 800px;
+  width: 100%;
+}
+
+main#main #box_6 .content_ .item .article_ {
+  background-color: white;
+  padding: 24px 30px;
+  min-height: 200px;
+}
+
+@media (max-width: 1250px) {
+  main#main #box_6 .content_ .item .article_ {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  main#main #box_6 .content_ .item .article_ {
+    min-height: 200px;
+  }
+}
+
+main#main #box_6 .content_ .item .article_ .p_1 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #585E4F;
+}
+
+main#main #box_6 .content_ .item .article_ .p_2 {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #585E4F;
 }

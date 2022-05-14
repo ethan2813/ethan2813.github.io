@@ -136,3 +136,31 @@ var swiper3 = new Swiper('.swiper3', {
     //     }
     // }
 });
+
+var swiper3 = new Swiper('.swiper4', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // centeredSlides: true,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 3000,
+    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+       
+    // },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
+    // RWD(以上)
+    breakpoints:{
+        800:{
+            slidesPerView: 3,
+        },
+       
+    }
+});
