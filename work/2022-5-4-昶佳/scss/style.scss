@@ -657,9 +657,12 @@ main#main{
             // 左
             .left_{
                 margin-right: -100px;
+                position: relative;
                 @media (max-width:996px) {
                     margin-right:0;                    
                 }
+
+                
                 .p1{
                     font-size:20px;
                     font-weight:bold;
@@ -691,23 +694,28 @@ main#main{
             // 右
             .right_{
                 position: relative;
-                img{
-                    width: 100%;;
-                }
+                // z-index: 2;
+
                 &:before{
                     position: absolute;
                     content: '';
                     display: block;
                     width: 130px;
-                    height: 200px;
-                    bottom: -50px;
-                    left: 0px;
+                    height: 201px;
+                    bottom: 10px;
+                    /* right: 0px; */
                     background-color: #EFB79B;
                     z-index: -1;
+                    left: -50px;
                     @media (max-width:996px) {
                         display: none;
                     }
                 }
+
+                img{
+                    width: 100%;;
+                }
+                
             }
         }
 
@@ -758,7 +766,7 @@ main#main{
                 color: #878787;
                 width: 100%;
                 position: relative;
-                overflow: hidden;
+                // overflow: hidden;
 
                 &:before{
                     content: '';
@@ -768,7 +776,7 @@ main#main{
                     background-color: #EFB79B;
                     position: absolute;
                     top: -13%;
-                    left: 0%;
+                    left: 5%;
                     z-index: -1;
                 }
                 h3{

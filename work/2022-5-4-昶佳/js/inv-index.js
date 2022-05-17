@@ -143,7 +143,7 @@ var swiper3 = new Swiper('.swiper4', {
     slidesPerView: 1,
     spaceBetween: 30,
     // centeredSlides: true,
-    loop: true,
+    loop: false,
     speed: 2000,
     autoplay: {
         delay: 3000,
