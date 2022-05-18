@@ -137,6 +137,8 @@ main#main #box_new_2 .bot_ .p_1 {
   line-height: 29px;
   letter-spacing: 0.05em;
   color: #EFB79B;
+  min-height: 60px;
+  margin-top: 12px;
 }
 
 main#main #box_new_2 .bot_ .p_2 {
