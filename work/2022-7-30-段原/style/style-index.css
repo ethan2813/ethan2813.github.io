@@ -13,6 +13,7 @@
 .big_p__ {
   font-size: 18px;
   letter-spacing: 0.1em;
+  color: #595959;
 }
 
 @media (max-width: 992px) {
@@ -357,6 +358,123 @@ main#content #doctor .doctor_bot .doctor_bot_items .bot_item {
 
 main#content #doctor .doctor_bot .doctor_bot_items .bot_item img {
   max-height: 18vw;
+}
+
+main#content #ortho {
+  background-color: #D5D8DE;
+  padding-bottom: 100px;
+}
+
+main#content #ortho .ortho_banner {
+  background-image: url(../img/index/orthobg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 40vh;
+}
+
+main#content #ortho .ortho_banner .banner_text {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(#ffffffa4), to(#ffffff00));
+  background: -webkit-linear-gradient(left, #ffffff00, #ffffffa4, #ffffff00);
+  background: -o-linear-gradient(left, #ffffff00, #ffffffa4, #ffffff00);
+  background: linear-gradient(90deg, #ffffff00, #ffffffa4, #ffffff00);
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main#content #ortho .ortho_content .title__ {
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+main#content #ortho .container {
+  text-align: center;
+}
+
+main#content #ortho .container .ortho_items {
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  main#content #ortho .container .ortho_items {
+    text-align: center;
+  }
+}
+
+main#content #ortho .container .ortho_items .ortho_item {
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+main#content #ortho .container .ortho_items .ortho_item .item_icon img {
+  max-width: 120px;
+}
+
+main#content #ortho .container .ortho_items .ortho_item .big_p__ {
+  margin-top: 50px;
+}
+
+main#content #limit {
+  padding: 100px 0;
+}
+
+main#content #limit .limit_content .title__ {
+  text-align: center;
+}
+
+main#content #limit .limit_content .items .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  main#content #limit .limit_content .items .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000;
+  }
+}
+
+main#content #limit .limit_content .items .item .item_icon {
+  margin-right: 50px;
+}
+
+@media (max-width: 576px) {
+  main#content #limit .limit_content .items .item .item_icon {
+    margin-right: unset;
+  }
+}
+
+main#content #limit .limit_content .items .item .item_icon img {
+  max-width: 100px;
+}
+
+@media (max-width: 576px) {
+  main#content #limit .limit_content .items .item .item_icon img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
 }
 
 #section_1 {
