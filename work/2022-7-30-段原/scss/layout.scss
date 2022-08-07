@@ -89,6 +89,12 @@ $mobile_width:576px;
     @include title__2;
 }
 
+.container{
+    @media (min-width: 1500px){
+        max-width: 1440px!important;
+    }
+    
+}
 
 
 

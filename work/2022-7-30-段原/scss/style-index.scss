@@ -22,6 +22,7 @@ $mobile_width:576px;
 @mixin big_p__2 {
     font-size: 25px;
     letter-spacing: 0.1em;
+    color: #595959;
 
     @media(max-width:$pad_width){
         font-size: 22px;
@@ -40,10 +41,14 @@ $mobile_width:576px;
 }
 @mixin little_title__{
     font-size: 20px;
+    color: #595959;
+
     letter-spacing: 0.1em;
 }
 @mixin little_title__2{
     font-size: 30px;
+    color: #595959;
+
     letter-spacing: 0.1em;
 }
 @mixin little_title__3{
@@ -76,6 +81,9 @@ $mobile_width:576px;
 }
 .big_p__{
     @include big_p__ ;
+}
+.big_p__2{
+    @include big_p__2 ;
 }
 .big_title__{
     @include big_title__;
@@ -381,7 +389,7 @@ main#content{
         .container{
             text-align: center;
             .ortho_items{
-                text-align: left;
+                text-align: center; 
                 // display: flex;
                 // justify-content: space-around;
                 @media (max-width:576px) {
@@ -406,6 +414,7 @@ main#content{
         
     }
 
+    // 矯正須知
     #limit{
         padding: 100px 0;
         .limit_content{
@@ -442,6 +451,152 @@ main#content{
             }
         }
 
+    }
+
+    // 矯正分類
+    #type{
+        padding:100px 0;
+        background-color: #D5D8DE;
+        text-align: center;
+
+        .type_content{
+            >.title__{
+                text-align: center;
+            }
+            >.subtitle__{
+                padding: 10px 8px;
+                background-color: #f2f2f2;
+                
+            }
+        }
+
+        .type_top{
+            .little_title__2{
+                padding: 50px 0 20px 0;
+            }
+            .type_top_items{
+                // text-align: center;
+                .item{
+                    display: inline-block;
+                    margin: 0 20px;
+
+                    @media (max-width:768px) {
+                        display: block;
+                    }
+                    .item_content{
+
+                        display: flex;
+    
+    
+    
+                        // 圖
+                        .item_img{
+                            img{
+                                max-width:100px;
+                                margin-right: 5px;
+                            }
+                        }
+    
+                        .item_article{
+                            min-height: 35vh;
+                            padding: 15px 10px;
+                            max-width: 250px;
+                            background-color: #f2f2f2;
+                            margin-bottom: 15px;
+
+
+                            @media (max-width:768px) {
+                                max-width: unset;
+                                min-height: unset;
+
+                                width: 70%;
+
+                            }
+    
+                            .big_p__{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+
+        .type_bot{
+            .little_title__2{
+                padding: 50px 0 20px 0;
+            }
+            .type_bot_items{
+                // text-align: center;
+                .item{
+                    display: inline-block;
+                    margin: 0 30px;
+
+                    @media (max-width:768px) {
+                        display: block;
+                    }
+                    .item_content{
+
+                        display: flex;
+                        @media (max-width:768px) {
+                            display: block;
+                        }
+    
+    
+    
+                        // 圖
+                        .item_img{
+                            margin: 0 10px;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            @media (max-width:768px) {
+                                display: block;
+                                margin: 50px 0;
+                            }
+                            
+                            
+                            .item_img_{
+                                img{
+                                    max-height:100px;
+                                    
+                                }
+                            }
+                            
+                        }
+    
+                        .item_article{
+                            min-height: 35vh;
+                            padding: 15px 10px;
+                            max-width: 200px;
+                            background-color: #f2f2f2;
+                            margin-bottom: 15px;
+                            
+
+
+                            @media (max-width:768px) {
+                                max-width: unset;
+                                min-height: unset;
+                                
+
+                                width: 100%;
+
+                            }
+    
+                            .big_p__{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
     }
 }
 

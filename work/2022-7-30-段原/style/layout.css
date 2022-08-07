@@ -84,6 +84,12 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}
+
 * {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
