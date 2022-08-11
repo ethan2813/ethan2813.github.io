@@ -296,6 +296,7 @@ main#content #interior {
 
 main#content #interior .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #interior .interior_photos .interior_photo a img {
@@ -308,6 +309,7 @@ main#content #instrument {
 
 main#content #instrument .instrument_content .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #instrument .instrument_content .item {
@@ -387,6 +389,7 @@ main#content #doctor {
 
 main#content #doctor .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #doctor .subtitle__ {
@@ -539,6 +542,7 @@ main#content #limit {
 
 main#content #limit .limit_content .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #limit .limit_content .items .item {
@@ -593,6 +597,7 @@ main#content #type {
 
 main#content #type .type_content > .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #type .type_content > .subtitle__ {
@@ -729,7 +734,7 @@ main#content #normal {
 
 main#content #normal .normal_content .title__ {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 main#content #normal .normal_content .left .photo img {
@@ -783,12 +788,13 @@ main#content #timing {
 
 main#content #timing .timing_content .title__ {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #timing .timing_content > .subtitle__ {
   padding: 10px 8px;
   background-color: #D5D8DE;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 main#content #timing .timing_content .L .L_titme {
@@ -816,7 +822,7 @@ main#content #method {
 
 main#content #method .method_content .title__ {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 main#content #method .method_content .L_photo img {
@@ -895,7 +901,7 @@ main#content #appliance {
 
 main#content #appliance .appliance_content .title__ {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 main#content #appliance .appliance_content .item {
@@ -929,7 +935,7 @@ main#content #flow {
 
 main#content #flow .flow_content .title__ {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 main#content #flow .flow_content .item {
@@ -1207,6 +1213,7 @@ main#content #faq .faq_content p {
 
 main#content #faq .faq_content .title {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 main#content #faq .faq_content .subtitle {
