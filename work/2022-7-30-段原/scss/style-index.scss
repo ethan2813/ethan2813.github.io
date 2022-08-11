@@ -4,7 +4,7 @@ $mobile_width:576px;
 
 @mixin p__ {
     font-size: 16px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     color: #595959;
 
     @media(max-width:992px){
@@ -16,7 +16,7 @@ $mobile_width:576px;
     letter-spacing: 0.1em;
     color: #595959;
     @media(max-width:$pad_width){
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 @mixin big_p__2 {
@@ -44,6 +44,12 @@ $mobile_width:576px;
     color: #595959;
 
     letter-spacing: 0.1em;
+
+    @media(max-width:$mobile_width){
+        font-size: 16px;
+    }
+
+
 }
 @mixin little_title__2{
     font-size: 30px;
@@ -56,11 +62,12 @@ $mobile_width:576px;
     letter-spacing: 0.1em;
     color: #595959;
     @media(max-width:$pad_width){
-        font-size: 25px;
+        font-size: 20px;
     }
-    @media(max-width:768px){
-        font-size: 25px;
+    @media(max-width:$mobile_width){
+        font-size: 18px;
     }
+    
 }
 @mixin title__{
     font-size: 40px;
@@ -271,26 +278,60 @@ main#content{
             .title__{
                 text-align: center;
             }
-            // 圖片
-            .inst_img{
-                img{
-                    width: 100%;
+            .item{
+                margin-bottom: 50px;
+                // 圖片
+                .inst_img{
+                    text-align: center;
+                    @media (max-width:576px) {
+                        margin-bottom: 15px;
+                    }
+                    img{
+                        width: 80%;
+
+                        @media (max-width:576px) {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                // 文字
+                .inst_article{
+
+                    .inst_article_title{
+                        border-bottom: 1px solid;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .pc__{
+                            display: block;
+                            @media (max-width:576px) {
+                                display: none;
+                            }
+                        }
+
+                        .mobile__{
+                            display:none;
+                            @media (max-width:576px) {
+                                display: block;
+                            }
+                        }
+                        
+                    }
+                    .inst_article_content.padd_L{
+                        padding-left:50px;
+                    }
+
+                    .inst_article_content.padd_R{
+                        padding-right:50px;
+                    }
+
+                    @media (max-width:576px) {
+                        margin-bottom: 100px;
+                    }
                 }
             }
-
-            // 文字
-            .inst_article{
-
-                .inst_article_title{
-                    border-bottom: 1px solid;
-                    display: flex;
-                    justify-content: space-between;
-                    
-                }
-                .inst_article_content.padd{
-                    padding-left:50px;
-                }
-            }
+            
         }
     }
 
@@ -684,11 +725,12 @@ main#content{
 
     // 矯正時機
     #timing{
+        padding: 100px 0;
         .timing_content{
             .title__{
                 text-align:center;
             }
-            >.little_title__{
+            >.subtitle__{
                 padding: 10px 8px;
                 background-color: #D5D8DE;
                 margin: 50px 0;
@@ -696,7 +738,7 @@ main#content{
             }
 
             .L{
-                .little_title__2{
+                .L_titme{
                     text-align:center;
                 }
             }
@@ -722,6 +764,7 @@ main#content{
         .method_content{
             .title__{
                 text-align: center;
+                margin-bottom: 50px;
             }
             .L_photo{
                 img{
@@ -730,9 +773,18 @@ main#content{
             }
             .R_photo{
                 display: flex;
+                justify-content: space-around;
+
+                @media (max-width:996px) {
+                    margin-top: 15px;
+                }
                 .img_{
                     img{
-                        width: 400px;
+                        width: 300px;
+
+                        @media (max-width:1200px) {
+                            width: 200px;
+                        }
                     }
 
 
@@ -740,6 +792,7 @@ main#content{
                 .text_{
                     span{
                         padding: 8px;
+                        line-height: 60px;
                         b{
                             color: black;
                         }
@@ -750,7 +803,299 @@ main#content{
                     .text_2{
                         background-color: rgb(222, 221, 145);
                     }
+                    .text_3{
+                        background-color: rgb(138, 207, 187);
+                    }
+                    .text_4{
+                        background-color: rgb(204, 167, 205);
+                    }
                 }
+            }
+            .R_bot_text{
+                margin-top: 15px;
+                p{
+                    text-align: center;
+                    color: rgb(89, 89, 89);
+                }
+            }
+
+            .bot_article{
+                margin-top: 15px;
+                padding: 15px;
+                background-color: rgb(242, 242, 242);
+            }
+        }
+    }
+
+    // 矯正裝置
+    #appliance{
+        padding: 100px 0;
+        .appliance_content{
+            .title__{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .item{
+                margin-bottom: 20px;
+                .item_L{
+                    .img_{
+                        text-align: center;
+                        img{
+                            width: 100%;
+
+                            @media (max-width:768px) {
+                                width: 300px;
+                            }
+
+                            @media (max-width:500px) {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // 矯正流程
+    #flow{
+        padding: 100px 0;
+        background-color: #D5D8DE;
+        .flow_content{
+            .title__{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .item{
+                margin-bottom: 30px;
+                .item_L{
+                    .img_{
+                        text-align: center;
+
+                        @media (max-width:768px) {
+                            text-align: left;
+                        }
+                        img{
+                            width: 60%;
+
+                            @media (max-width:768px) {
+                                width: 150px;
+                            }
+
+                            @media (max-width:500px) {
+                                width: 30%;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // 牙齒美白
+    #whitening{
+        padding-bottom: 100px;
+        .whitening_banner{
+            background-image: url(../img/index/whiteningbg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 40vh;
+           .banner_text{
+            background: linear-gradient(90deg, #ffffff00
+            , #ffffffa4,#ffffff00);
+            display: inline-block;
+            width: 80%;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+               
+           }
+        }
+
+        .whitening_content{
+            .item{
+                margin-bottom: 50px;
+                // 圖片
+                .inst_img{
+                    text-align: center;
+                    @media (max-width:576px) {
+                        margin-bottom: 15px;
+                    }
+                    img{
+                        width: 80%;
+
+                        @media (max-width:576px) {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                // 文字
+                .inst_article{
+
+                    .inst_article_title{
+                        border-bottom: 1px solid;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .pc__{
+                            display: block;
+                            @media (max-width:576px) {
+                                display: none;
+                            }
+                        }
+
+                        .mobile__{
+                            display:none;
+                            @media (max-width:576px) {
+                                display: block;
+                            }
+                        }
+                        
+                    }
+                    .inst_article_content.padd_L{
+                        padding-left:50px;
+                    }
+
+                    .inst_article_content.padd_R{
+                        padding-right:50px;
+                    }
+
+                    @media (max-width:576px) {
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+        
+       
+        
+    }
+
+    // 牙齦美容
+    #gingiva{
+        padding-bottom: 100px;
+        .gingiva_banner{
+            background-image: url(../img/index/gingivabg.jpg );
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 40vh;
+           .banner_text{
+            background: linear-gradient(90deg, #ffffff00
+            , #ffffffa4,#ffffff00);
+            display: inline-block;
+            width: 80%;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+               
+           }
+        }
+
+        .gingiva_content{
+            margin-top: 50px;
+            .item{
+                margin-bottom: 50px;
+                // 圖片
+                .inst_img{
+                    text-align: center;
+                    @media (max-width:576px) {
+                        margin-bottom: 15px;
+                    }
+                    img{
+                        width: 60%;
+
+                        @media (max-width:576px) {
+                            width: 50%;
+                        }
+                    }
+                }
+
+                // 文字
+                .inst_article{
+
+                    .inst_article_title{
+                        border-bottom: 1px solid;
+                        display: flex;
+                        justify-content:left;
+
+                        &.just_R{
+                            justify-content: end;
+
+                            @media (max-width:567px) {
+                                justify-content:left;
+                            }
+                        }
+
+                        .pc__{
+                            display: block;
+                            @media (max-width:576px) {
+                                display: none;
+                            }
+                        }
+
+                        .mobile__{
+                            display:none;
+                            @media (max-width:576px) {
+                                display: block;
+                            }
+                        }
+                        
+                    }
+                    .inst_article_content.padd_L{
+                        padding-left:50px;
+                        @media (max-width:567px) {
+                            padding-left:0px;
+                        }
+                    }
+
+                    .inst_article_content.padd_R{
+                        padding-right:50px;
+                        @media (max-width:567px) {
+                            padding-right:0px;
+                        }
+                    }
+
+                    @media (max-width:576px) {
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+        
+       
+        
+    }
+
+    #faq{
+        padding: 100px 0;
+        background-color: #D5D8DE;
+        .faq_content{
+            p{
+                text-indent: -2.5em;
+                padding-left: 2.5em;
+            }
+            .title{
+                text-align: center;
+            }
+
+            .subtitle{
+                text-align: center;
             }
         }
     }

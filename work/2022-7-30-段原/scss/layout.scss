@@ -195,15 +195,40 @@ nav#nav{
             background-color: #E8EAED;
             padding-right:  15px;
             // width: 60vw;
-            height: 100vh;
+            // height: 100vh;
+            display: flex;
             
 
             &.active{
                 right: -0px;
             }
-            ul{
+            >ul{
                 padding-top: 35px;
-                li{
+                .ortho_btn{
+                    color: #585959;
+                    letter-spacing: 0.2em;
+                
+                    span.btn_1{
+                        display: inline-block;
+                        &.active{
+                            display: none;
+                        }
+                    }
+
+                    span.btn_2{
+                        display: none;
+                        &.active{
+                            display: inline-block;
+                        }
+                    }
+                    
+
+                    .mob_items.active{
+                        display: block;
+                    }
+                }
+                
+                >li{
                     list-style-type: none;
                     margin: 0em 0;
                     text-align: right;
@@ -211,6 +236,19 @@ nav#nav{
                     a{
                         text-decoration: none;
                         color: #585959;
+                    }
+                    
+                    
+                    
+                    .mob_items{
+                        padding-left: 0;
+                        display: none;
+                        li{
+                            list-style-type: none;
+                            line-height: 45px;
+
+
+                        }
                     }
                 }
                 li.icon_{
@@ -235,6 +273,30 @@ nav#nav{
             line-height: 40px;
             display: flex;
             justify-content:space-between;
+            z-index: 5;
+
+            .dis_in_bl{
+                display: inline-block;
+                position: relative;
+
+                &:hover .items_btn{
+                    top:30px;
+                    
+                }
+                .items_btn{
+                    z-index: -1;
+                    transition: 0.1s ease-in-out;
+                    position: absolute;
+                    top: -500px;
+                    background-color: white;
+                    padding: 10px;
+                    transform: translate(-10px, 0px);
+                    a{
+                        white-space:nowrap;
+                    }
+                    
+                }
+            }
 
             @media (max-width:$pad_width){
                 display: none;

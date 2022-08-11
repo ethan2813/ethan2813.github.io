@@ -39,6 +39,14 @@ $('.mobile_right ul li a').on('click',()=>{
     $('.burger').removeClass('burger_active');
 })
 
+// 點擊齒顎矯正
+$('.ortho_btn').on('click',()=>{
+    console.log(123)
+    $('.mob_items').toggleClass('active');
+    $('.btn_1').toggleClass('active');
+    $('.btn_2').toggleClass('active');
+})
+
 new fullpage('#fullpage', {
     sectionsColor: [],
 });
