@@ -234,10 +234,11 @@ main#content #advantage {
 
 main#content #advantage .photo {
   position: relative;
+  text-align: center;
 }
 
 main#content #advantage .photo img {
-  width: 100%;
+  width: 90%;
 }
 
 main#content #advantage .photo .title__ {
@@ -290,7 +291,7 @@ main#content #advantage .advantage_content ul {
 }
 
 main#content #interior {
-  padding: 100px 0 200px;
+  padding: 100px 0 30px;
   background-color: #D5D8DE;
 }
 
@@ -314,6 +315,12 @@ main#content #instrument .instrument_content .title__ {
 
 main#content #instrument .instrument_content .item {
   margin-bottom: 50px;
+}
+
+@media (min-width: 576px) {
+  main#content #instrument .instrument_content .item {
+    height: calc(33vh - 100px);
+  }
 }
 
 main#content #instrument .instrument_content .item .inst_img {
@@ -399,10 +406,11 @@ main#content #doctor .subtitle__ {
 
 main#content #doctor .doctor_photo {
   position: relative;
+  text-align: center;
 }
 
 main#content #doctor .doctor_photo img {
-  width: 100%;
+  width: 80%;
 }
 
 main#content #doctor .doctor_article {
@@ -765,12 +773,12 @@ main#content #normal .normal_content .right .item {
 }
 
 main#content #normal .normal_content .right .item .icon img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 @media (max-width: 1200px) {
   main#content #normal .normal_content .right .item .icon img {
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 
@@ -806,12 +814,12 @@ main#content #timing .timing_content .R .item {
 }
 
 main#content #timing .timing_content .R .item img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 @media (max-width: 1200px) {
   main#content #timing .timing_content .R .item img {
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 
@@ -1003,6 +1011,12 @@ main#content #whitening .whitening_content .item {
   margin-bottom: 50px;
 }
 
+@media (min-width: 576px) {
+  main#content #whitening .whitening_content .item {
+    height: calc(33vh - 100px);
+  }
+}
+
 main#content #whitening .whitening_content .item .inst_img {
   text-align: center;
 }
@@ -1118,12 +1132,12 @@ main#content #gingiva .gingiva_content .item .inst_img {
 }
 
 main#content #gingiva .gingiva_content .item .inst_img img {
-  width: 60%;
+  width: 180px;
 }
 
 @media (max-width: 576px) {
   main#content #gingiva .gingiva_content .item .inst_img img {
-    width: 50%;
+    width: 30%;
   }
 }
 

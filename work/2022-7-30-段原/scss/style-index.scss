@@ -211,8 +211,9 @@ main#content{
         padding: 100px 0;
         .photo{
             position: relative;
+            text-align: center;
             img{
-                width: 100%;
+                width: 90%;
             }
             // padding: 400px 0 250px;
             // position: relative;
@@ -252,7 +253,7 @@ main#content{
 
     // 空間環境
     #interior{
-        padding: 100px 0 200px;
+        padding: 100px 0 30px;
         background-color: #D5D8DE;
 
         .title__{
@@ -282,6 +283,11 @@ main#content{
             }
             .item{
                 margin-bottom: 50px;
+
+                @media (min-width:576px) {
+                    height: calc(33vh - 100px);
+                    
+                }
                 // 圖片
                 .inst_img{
                     text-align: center;
@@ -353,8 +359,9 @@ main#content{
         }
         .doctor_photo{
             position: relative;
+            text-align: center;
             img{
-                width:100%;
+                width:80%;
             }
         }
 
@@ -704,10 +711,10 @@ main#content{
                     align-items: center;
                     .icon{
                         img{
-                            max-width: 200px;
+                            max-width: 150px;
 
                             @media (max-width:1200px) {
-                                max-width: 150px;
+                                max-width: 120px;
                             }
                             
                         }
@@ -752,10 +759,10 @@ main#content{
                 .item{
                     text-align: center;
                     img{
-                        max-width:200px;
+                        max-width:150px;
 
                         @media (max-width:1200px) {
-                            max-width: 150px;   
+                            max-width: 120px;   
                         }
                     }
                 }
@@ -930,6 +937,10 @@ main#content{
         .whitening_content{
             .item{
                 margin-bottom: 50px;
+                @media (min-width:576px) {
+                    height: calc(33vh - 100px);
+                    
+                }
                 // 圖片
                 .inst_img{
                     text-align: center;
@@ -1024,10 +1035,10 @@ main#content{
                         margin-bottom: 15px;
                     }
                     img{
-                        width: 60%;
+                        width: 180px;
 
                         @media (max-width:576px) {
-                            width: 50%;
+                            width: 30%;
                         }
                     }
                 }
