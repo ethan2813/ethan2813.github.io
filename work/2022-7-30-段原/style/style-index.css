@@ -104,8 +104,10 @@
   }
 }
 
-main#content {
-  padding-top: 100px;
+@media (min-width: 996px) {
+  main#content {
+    padding-top: 100px;
+  }
 }
 
 main#content #banner .swiper-container {
@@ -641,7 +643,6 @@ main#content #type .type_top .type_top_items .item .item_content .item_img img {
 }
 
 main#content #type .type_top .type_top_items .item .item_content .item_article {
-  min-height: 35vh;
   padding: 15px 10px;
   max-width: 250px;
   background-color: #f2f2f2;
@@ -717,7 +718,6 @@ main#content #type .type_bot .type_bot_items .item .item_content .item_img .item
 }
 
 main#content #type .type_bot .type_bot_items .item .item_content .item_article {
-  min-height: 35vh;
   padding: 15px 10px;
   max-width: 200px;
   background-color: #f2f2f2;
@@ -961,7 +961,7 @@ main#content #flow .flow_content .item .item_L .img_ {
 }
 
 main#content #flow .flow_content .item .item_L .img_ img {
-  width: 60%;
+  width: 30%;
 }
 
 @media (max-width: 768px) {

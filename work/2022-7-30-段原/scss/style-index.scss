@@ -115,7 +115,11 @@ $mobile_width:576px;
 
 
 main#content{
-    padding-top: 100px;
+    
+
+    @media (min-width:996px) {
+        padding-top: 100px;
+    }
     // banner
     #banner{
         .swiper-container{
@@ -576,7 +580,7 @@ main#content{
                         }
     
                         .item_article{
-                            min-height: 35vh;
+                            // min-height: 35vh;
                             padding: 15px 10px;
                             max-width: 250px;
                             background-color: #f2f2f2;
@@ -648,7 +652,7 @@ main#content{
                         }
     
                         .item_article{
-                            min-height: 35vh;
+                            // min-height: 35vh;
                             padding: 15px 10px;
                             max-width: 200px;
                             background-color: #f2f2f2;
@@ -890,7 +894,7 @@ main#content{
                             text-align: left;
                         }
                         img{
-                            width: 60%;
+                            width: 30%;
 
                             @media (max-width:768px) {
                                 width: 150px;
