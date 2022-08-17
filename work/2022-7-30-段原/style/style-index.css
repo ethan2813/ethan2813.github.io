@@ -2,6 +2,7 @@
   font-size: 16px;
   letter-spacing: 0.2em;
   color: #595959;
+  text-align: justify;
 }
 
 @media (max-width: 992px) {
@@ -104,6 +105,10 @@
   }
 }
 
+main#content {
+  padding-top: 60px;
+}
+
 @media (min-width: 996px) {
   main#content {
     padding-top: 100px;
@@ -179,6 +184,12 @@ main#content #banner .swiper-container .swiper-wrapper .swiper-slide img.mobile_
 main#content #about {
   background-color: #D5D8DE;
   padding: 150px 0;
+}
+
+@media (min-width: 1600px) {
+  main#content #about {
+    height: 100vh;
+  }
 }
 
 main#content #about .about_in {
@@ -297,6 +308,12 @@ main#content #interior {
   background-color: #D5D8DE;
 }
 
+@media (min-width: 1600px) {
+  main#content #interior {
+    height: 100vh;
+  }
+}
+
 main#content #interior .title__ {
   text-align: center;
   margin-bottom: 70px;
@@ -321,12 +338,16 @@ main#content #instrument .instrument_content .item {
 
 @media (min-width: 576px) {
   main#content #instrument .instrument_content .item {
-    height: calc(33vh - 100px);
+    height: calc(30vh - 100px);
   }
 }
 
-main#content #instrument .instrument_content .item .inst_img {
-  text-align: center;
+main#content #instrument .instrument_content .item .inst_img.img_L {
+  text-align: left;
+}
+
+main#content #instrument .instrument_content .item .inst_img.img_R {
+  text-align: right;
 }
 
 @media (max-width: 576px) {
@@ -378,11 +399,13 @@ main#content #instrument .instrument_content .item .inst_article .inst_article_t
 }
 
 main#content #instrument .instrument_content .item .inst_article .inst_article_content.padd_L {
-  padding-left: 50px;
+  padding-left: 70px;
+  text-align: justify;
 }
 
 main#content #instrument .instrument_content .item .inst_article .inst_article_content.padd_R {
-  padding-right: 50px;
+  padding-right: 70px;
+  text-align: justify;
 }
 
 @media (max-width: 576px) {
@@ -394,6 +417,12 @@ main#content #instrument .instrument_content .item .inst_article .inst_article_c
 main#content #doctor {
   padding: 100px 0 200px;
   background-color: #D5D8DE;
+}
+
+@media (min-width: 1600px) {
+  main#content #doctor .doctor_content_1 {
+    height: calc(100vh - 100px);
+  }
 }
 
 main#content #doctor .title__ {
@@ -412,7 +441,7 @@ main#content #doctor .doctor_photo {
 }
 
 main#content #doctor .doctor_photo img {
-  width: 80%;
+  width: 85%;
 }
 
 main#content #doctor .doctor_article {
@@ -564,7 +593,7 @@ main#content #limit .limit_content .items .item {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
@@ -580,6 +609,7 @@ main#content #limit .limit_content .items .item {
 
 main#content #limit .limit_content .items .item .item_icon {
   margin-right: 50px;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -590,6 +620,7 @@ main#content #limit .limit_content .items .item .item_icon {
 
 main#content #limit .limit_content .items .item .item_icon img {
   max-width: 100px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 576px) {
@@ -613,15 +644,23 @@ main#content #type .type_content > .title__ {
 main#content #type .type_content > .subtitle__ {
   padding: 10px 8px;
   background-color: #f2f2f2;
+  text-align: left;
 }
 
 main#content #type .type_top .little_title__2 {
-  padding: 50px 0 20px 0;
+  padding: 30px 0 10px 0;
+  text-align: left;
 }
 
 main#content #type .type_top .type_top_items .item {
   display: inline-block;
   margin: 0 20px;
+}
+
+@media (min-width: 1500px) {
+  main#content #type .type_top .type_top_items .item.m__ {
+    margin: 0 3vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -638,7 +677,7 @@ main#content #type .type_top .type_top_items .item .item_content {
 }
 
 main#content #type .type_top .type_top_items .item .item_content .item_img img {
-  max-width: 100px;
+  max-width: 150px;
   margin-right: 5px;
 }
 
@@ -647,6 +686,7 @@ main#content #type .type_top .type_top_items .item .item_content .item_article {
   max-width: 250px;
   background-color: #f2f2f2;
   margin-bottom: 15px;
+  line-height: 1.2em;
 }
 
 @media (max-width: 768px) {
@@ -662,12 +702,14 @@ main#content #type .type_top .type_top_items .item .item_content .item_article .
 }
 
 main#content #type .type_bot .little_title__2 {
-  padding: 50px 0 20px 0;
+  padding: 30px 0 10px 0;
+  text-align: left;
 }
 
 main#content #type .type_bot .type_bot_items .item {
   display: inline-block;
   margin: 0 30px;
+  line-height: 1.2em;
 }
 
 @media (max-width: 768px) {
@@ -686,6 +728,7 @@ main#content #type .type_bot .type_bot_items .item .item_content {
 @media (max-width: 768px) {
   main#content #type .type_bot .type_bot_items .item .item_content {
     display: block;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -755,6 +798,10 @@ main#content #normal .normal_content .left .article {
   padding: 30px 15px;
 }
 
+main#content #normal .normal_content .left .article .p__ {
+  margin: 0;
+}
+
 @media (max-width: 996px) {
   main#content #normal .normal_content .right {
     margin-top: 50px;
@@ -803,9 +850,10 @@ main#content #timing .timing_content > .subtitle__ {
   padding: 10px 8px;
   background-color: #D5D8DE;
   margin-bottom: 50px;
+  text-align: justify;
 }
 
-main#content #timing .timing_content .L .L_titme {
+main#content #timing .timing_content .L .L_title {
   text-align: center;
 }
 
@@ -845,6 +893,10 @@ main#content #method .method_content .R_photo {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 996px) {
@@ -903,6 +955,11 @@ main#content #method .method_content .bot_article {
   background-color: #f2f2f2;
 }
 
+main#content #method .method_content .bot_article .bot_article_2 {
+  text-align: right;
+  margin-bottom: 0;
+}
+
 main#content #appliance {
   padding: 100px 0;
 }
@@ -934,6 +991,16 @@ main#content #appliance .appliance_content .item .item_L .img_ img {
   main#content #appliance .appliance_content .item .item_L .img_ img {
     width: 80%;
   }
+}
+
+main#content #appliance .appliance_content .bot_article {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #d5d8de;
+}
+
+main#content #appliance .appliance_content .bot_article .bot_article_1 {
+  margin-bottom: 0;
 }
 
 main#content #flow {
@@ -1021,6 +1088,14 @@ main#content #whitening .whitening_content .item .inst_img {
   text-align: center;
 }
 
+main#content #whitening .whitening_content .item .inst_img.img_L {
+  text-align: left;
+}
+
+main#content #whitening .whitening_content .item .inst_img.img_R {
+  text-align: right;
+}
+
 @media (max-width: 576px) {
   main#content #whitening .whitening_content .item .inst_img {
     margin-bottom: 15px;
@@ -1070,11 +1145,23 @@ main#content #whitening .whitening_content .item .inst_article .inst_article_tit
 }
 
 main#content #whitening .whitening_content .item .inst_article .inst_article_content.padd_L {
-  padding-left: 50px;
+  padding-left: 70px;
+}
+
+@media (max-width: 768px) {
+  main#content #whitening .whitening_content .item .inst_article .inst_article_content.padd_L {
+    padding-left: 0px;
+  }
 }
 
 main#content #whitening .whitening_content .item .inst_article .inst_article_content.padd_R {
-  padding-right: 50px;
+  padding-right: 70px;
+}
+
+@media (max-width: 768px) {
+  main#content #whitening .whitening_content .item .inst_article .inst_article_content.padd_R {
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1123,6 +1210,14 @@ main#content #gingiva .gingiva_content .item {
 
 main#content #gingiva .gingiva_content .item .inst_img {
   text-align: center;
+}
+
+main#content #gingiva .gingiva_content .item .inst_img.img_L {
+  text-align: left;
+}
+
+main#content #gingiva .gingiva_content .item .inst_img.img_R {
+  text-align: right;
 }
 
 @media (max-width: 576px) {
@@ -1223,6 +1318,10 @@ main#content #faq {
 main#content #faq .faq_content p {
   text-indent: -2.5em;
   padding-left: 2.5em;
+}
+
+main#content #faq .faq_content p span {
+  letter-spacing: 0.25em;
 }
 
 main#content #faq .faq_content .title {
