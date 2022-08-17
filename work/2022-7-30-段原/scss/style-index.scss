@@ -183,7 +183,8 @@ main#content{
     #about{
         background-color: #D5D8DE;
         padding: 150px 0;
-
+        height: 100vh;
+        
         @media (min-width:1600px) {
             height: 100vh;
         }
@@ -217,12 +218,20 @@ main#content{
 
     // 診所優勢
     #advantage{
-        padding: 100px 0;
+        padding: 100px 0 100px 0;
+
+        
+        height: 100vh;
+
         .photo{
             position: relative;
             text-align: center;
             img{
-                width: 90%;
+                width: 80%;
+
+                @media (max-width:576px) {
+                    width: 100%;
+                }
             }
             // padding: 400px 0 250px;
             // position: relative;
@@ -306,9 +315,16 @@ main#content{
                     // text-align: center;
                     &.img_L{
                         text-align: left;
+
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     &.img_R{
                         text-align: right;
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     @media (max-width:576px) {
                         margin-bottom: 15px;
@@ -329,6 +345,7 @@ main#content{
                         border-bottom: 1px solid;
                         display: flex;
                         justify-content: space-between;
+                        align-items: baseline;
 
                         .pc__{
                             display: block;
@@ -348,11 +365,19 @@ main#content{
                     .inst_article_content.padd_L{
                         padding-left:70px;
                         text-align: justify;
+
+                        @media (max-width:576px) {
+                            padding-left:unset ;
+                        }
                     }
 
                     .inst_article_content.padd_R{
                         padding-right:70px;
                         text-align: justify;
+
+                        @media (max-width:576px) {
+                            padding-right:unset ;
+                        }
 
                     }
 
@@ -390,6 +415,10 @@ main#content{
             text-align: center;
             img{
                 width:85%;
+
+                @media (max-width:576px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -512,6 +541,10 @@ main#content{
                     }
                     .big_p__{
                         margin-top: 50px;
+
+                        @media (max-width:576px) {
+                            margin-top: 10px;
+                        }
                     }
                 }
             }
@@ -521,7 +554,13 @@ main#content{
 
     // 矯正須知
     #limit{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
+
+        
         .limit_content{
             .title__{
                 text-align: center;
@@ -725,7 +764,11 @@ main#content{
 
     // 正常咬合
     #normal{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         .normal_content{
             .title__{
                 text-align: center;
@@ -786,7 +829,11 @@ main#content{
 
     // 矯正時機
     #timing{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         .timing_content{
             .title__{
                 text-align:center;
@@ -823,7 +870,11 @@ main#content{
     // 矯正方法
     #method{
         background-color: #D5D8DE ;
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         .method_content{
             .title__{
                 text-align: center;
@@ -898,7 +949,11 @@ main#content{
 
     // 矯正裝置
     #appliance{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         .appliance_content{
             .title__{
                 text-align: center;
@@ -939,7 +994,11 @@ main#content{
 
     // 矯正流程
     #flow{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         background-color: #D5D8DE;
         .flow_content{
             .title__{
@@ -1013,9 +1072,15 @@ main#content{
 
                     &.img_L{
                         text-align: left;
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     &.img_R{
                         text-align: right;
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     @media (max-width:576px) {
                         margin-bottom: 15px;
@@ -1083,6 +1148,9 @@ main#content{
     // 牙齦美容
     #gingiva{
         padding-bottom: 100px;
+        @media (max-width:576px) {
+            margin-top: 60px;
+        }
         .gingiva_banner{
             background-image: url(../img/index/gingivabg.jpg );
             background-position: center;
@@ -1115,9 +1183,15 @@ main#content{
                     text-align: center;
                     &.img_L{
                         text-align: left;
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     &.img_R{
                         text-align: right;
+                        @media (max-width:576px) {
+                            text-align: center;
+                        }
                     }
                     @media (max-width:576px) {
                         margin-bottom: 15px;
@@ -1188,12 +1262,20 @@ main#content{
     }
 
     #faq{
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
+
+        @media (max-width:576px) {
+            padding: 160px 0 100px 0;
+        }
         background-color: #D5D8DE;
         .faq_content{
             p{
                 text-indent: -2.5em;
                 padding-left: 2.5em;
+                @media (max-width:576px) {
+                    text-indent: -2.7em;
+                    padding-left: 2.7em;
+                }
                 span{
                     letter-spacing: 0.25em;
                 }

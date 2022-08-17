@@ -184,6 +184,7 @@ main#content #banner .swiper-container .swiper-wrapper .swiper-slide img.mobile_
 main#content #about {
   background-color: #D5D8DE;
   padding: 150px 0;
+  height: 100vh;
 }
 
 @media (min-width: 1600px) {
@@ -242,7 +243,8 @@ main#content #about .about_in .about_content .p__ {
 }
 
 main#content #advantage {
-  padding: 100px 0;
+  padding: 100px 0 100px 0;
+  height: 100vh;
 }
 
 main#content #advantage .photo {
@@ -251,7 +253,13 @@ main#content #advantage .photo {
 }
 
 main#content #advantage .photo img {
-  width: 90%;
+  width: 80%;
+}
+
+@media (max-width: 576px) {
+  main#content #advantage .photo img {
+    width: 100%;
+  }
 }
 
 main#content #advantage .photo .title__ {
@@ -346,8 +354,20 @@ main#content #instrument .instrument_content .item .inst_img.img_L {
   text-align: left;
 }
 
+@media (max-width: 576px) {
+  main#content #instrument .instrument_content .item .inst_img.img_L {
+    text-align: center;
+  }
+}
+
 main#content #instrument .instrument_content .item .inst_img.img_R {
   text-align: right;
+}
+
+@media (max-width: 576px) {
+  main#content #instrument .instrument_content .item .inst_img.img_R {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -376,6 +396,10 @@ main#content #instrument .instrument_content .item .inst_article .inst_article_t
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 main#content #instrument .instrument_content .item .inst_article .inst_article_title .pc__ {
@@ -403,9 +427,21 @@ main#content #instrument .instrument_content .item .inst_article .inst_article_c
   text-align: justify;
 }
 
+@media (max-width: 576px) {
+  main#content #instrument .instrument_content .item .inst_article .inst_article_content.padd_L {
+    padding-left: unset;
+  }
+}
+
 main#content #instrument .instrument_content .item .inst_article .inst_article_content.padd_R {
   padding-right: 70px;
   text-align: justify;
+}
+
+@media (max-width: 576px) {
+  main#content #instrument .instrument_content .item .inst_article .inst_article_content.padd_R {
+    padding-right: unset;
+  }
 }
 
 @media (max-width: 576px) {
@@ -442,6 +478,12 @@ main#content #doctor .doctor_photo {
 
 main#content #doctor .doctor_photo img {
   width: 85%;
+}
+
+@media (max-width: 576px) {
+  main#content #doctor .doctor_photo img {
+    width: 100%;
+  }
 }
 
 main#content #doctor .doctor_article {
@@ -575,8 +617,20 @@ main#content #ortho .container .ortho_items .ortho_item .big_p__ {
   margin-top: 50px;
 }
 
+@media (max-width: 576px) {
+  main#content #ortho .container .ortho_items .ortho_item .big_p__ {
+    margin-top: 10px;
+  }
+}
+
 main#content #limit {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+  main#content #limit {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #limit .limit_content .title__ {
@@ -780,7 +834,13 @@ main#content #type .type_bot .type_bot_items .item .item_content .item_article .
 }
 
 main#content #normal {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+  main#content #normal {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #normal .normal_content .title__ {
@@ -838,7 +898,13 @@ main#content #normal .normal_content .right .item .text .big_p__ {
 }
 
 main#content #timing {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+  main#content #timing {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #timing .timing_content .title__ {
@@ -873,7 +939,13 @@ main#content #timing .timing_content .R .item img {
 
 main#content #method {
   background-color: #D5D8DE;
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+  main#content #method {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #method .method_content .title__ {
@@ -961,7 +1033,13 @@ main#content #method .method_content .bot_article .bot_article_2 {
 }
 
 main#content #appliance {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+  main#content #appliance {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #appliance .appliance_content .title__ {
@@ -1004,8 +1082,14 @@ main#content #appliance .appliance_content .bot_article .bot_article_1 {
 }
 
 main#content #flow {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
   background-color: #D5D8DE;
+}
+
+@media (max-width: 576px) {
+  main#content #flow {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #flow .flow_content .title__ {
@@ -1092,8 +1176,20 @@ main#content #whitening .whitening_content .item .inst_img.img_L {
   text-align: left;
 }
 
+@media (max-width: 576px) {
+  main#content #whitening .whitening_content .item .inst_img.img_L {
+    text-align: center;
+  }
+}
+
 main#content #whitening .whitening_content .item .inst_img.img_R {
   text-align: right;
+}
+
+@media (max-width: 576px) {
+  main#content #whitening .whitening_content .item .inst_img.img_R {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1174,6 +1270,12 @@ main#content #gingiva {
   padding-bottom: 100px;
 }
 
+@media (max-width: 576px) {
+  main#content #gingiva {
+    margin-top: 60px;
+  }
+}
+
 main#content #gingiva .gingiva_banner {
   background-image: url(../img/index/gingivabg.jpg);
   background-position: center;
@@ -1216,8 +1318,20 @@ main#content #gingiva .gingiva_content .item .inst_img.img_L {
   text-align: left;
 }
 
+@media (max-width: 576px) {
+  main#content #gingiva .gingiva_content .item .inst_img.img_L {
+    text-align: center;
+  }
+}
+
 main#content #gingiva .gingiva_content .item .inst_img.img_R {
   text-align: right;
+}
+
+@media (max-width: 576px) {
+  main#content #gingiva .gingiva_content .item .inst_img.img_R {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1311,13 +1425,26 @@ main#content #gingiva .gingiva_content .item .inst_article .inst_article_content
 }
 
 main#content #faq {
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
   background-color: #D5D8DE;
+}
+
+@media (max-width: 576px) {
+  main#content #faq {
+    padding: 160px 0 100px 0;
+  }
 }
 
 main#content #faq .faq_content p {
   text-indent: -2.5em;
   padding-left: 2.5em;
+}
+
+@media (max-width: 576px) {
+  main#content #faq .faq_content p {
+    text-indent: -2.7em;
+    padding-left: 2.7em;
+  }
 }
 
 main#content #faq .faq_content p span {

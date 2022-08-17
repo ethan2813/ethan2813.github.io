@@ -317,7 +317,7 @@ footer#footer{
     padding-top: 162px;
 
     @media (max-width:$mobile_width) {
-        padding-top: 38px;
+        padding-top: 70px;
     }
 
     // 按鈕
@@ -367,9 +367,20 @@ footer#footer{
         
         .icon{
             margin: 0 10px;
+            @media (max-width:576px) {
+                margin: 0 5px;
+
+                    
+                }
 
             img{
                 max-width: 50px;
+                @media (max-width:576px) {
+                    max-width: 30px;
+                        
+                    }
+                
+
             }
         }
     }
@@ -381,10 +392,18 @@ footer#footer{
             background-color: #e8eaed;
             padding: 20px;
             display: inline-block;
+            @media (max-width:576px) {
+                padding: 10px 10px;
+                    
+                }
             tr{
                 td,th{
                     padding: 7px 7px;
                     color: #585959;
+                    @media (max-width:576px) {
+                    padding: 2px 7px;
+                        
+                    }
                 }
                 .table_bot{
                     text-align: right;
