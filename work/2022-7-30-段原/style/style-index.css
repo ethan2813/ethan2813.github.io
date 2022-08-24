@@ -247,6 +247,12 @@ main#content #advantage {
   height: 100vh;
 }
 
+@media (max-width: 1200px) {
+  main#content #advantage {
+    height: unset;
+  }
+}
+
 main#content #advantage .photo {
   position: relative;
   text-align: center;
@@ -342,12 +348,6 @@ main#content #instrument .instrument_content .title__ {
 
 main#content #instrument .instrument_content .item {
   margin-bottom: 50px;
-}
-
-@media (min-width: 576px) {
-  main#content #instrument .instrument_content .item {
-    height: calc(30vh - 100px);
-  }
 }
 
 main#content #instrument .instrument_content .item .inst_img.img_L {
@@ -698,7 +698,6 @@ main#content #type .type_content > .title__ {
 main#content #type .type_content > .subtitle__ {
   padding: 10px 8px;
   background-color: #f2f2f2;
-  text-align: left;
 }
 
 main#content #type .type_top .little_title__2 {
