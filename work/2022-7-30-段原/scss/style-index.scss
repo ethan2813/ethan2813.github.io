@@ -520,7 +520,8 @@ main#content{
         .ortho_content{
             .title__{
                 text-align: center;
-                padding: 50px 0 20px 0;
+                padding: 80px 0 50px 0;
+
             }
         }
         .container{
@@ -1066,10 +1067,10 @@ main#content{
         .whitening_content{
             .item{
                 margin-bottom: 50px;
-                @media (min-width:576px) {
-                    height: calc(33vh - 100px);
+                // @media (min-width:576px) {
+                //     height: calc(33vh - 100px);
                     
-                }
+                // }
                 // 圖片
                 .inst_img{
                     text-align: center;

@@ -585,7 +585,7 @@ main#content #ortho .ortho_banner .banner_text {
 
 main#content #ortho .ortho_content .title__ {
   text-align: center;
-  padding: 50px 0 20px 0;
+  padding: 80px 0 50px 0;
 }
 
 main#content #ortho .container {
@@ -1159,12 +1159,6 @@ main#content #whitening .whitening_banner .banner_text {
 
 main#content #whitening .whitening_content .item {
   margin-bottom: 50px;
-}
-
-@media (min-width: 576px) {
-  main#content #whitening .whitening_content .item {
-    height: calc(33vh - 100px);
-  }
 }
 
 main#content #whitening .whitening_content .item .inst_img {
